@@ -1,0 +1,347 @@
+// _grid.scss
+
+@import "normalize.min";
+
+*, *:after, *:before {
+	@include box-sizing( border-box );
+	// box-sizing: border-box;
+	// -webkit-box-sizing: border-box;
+	// -moz-box-sizing: border-box;
+	// -ms-box-sizing: border-box;
+	// -o-box-sizing: border-box;
+}
+
+// =============================
+// GRILLA (responsive)
+// Configuracion
+// =============================
+
+// Contenedor
+$container-width: 		93.75%;				// .container width
+$container-max-width: 	960px;				// .container max-width
+$container-full-width:	100%;				// biggest .col width
+// Grilla
+$grid-columns:			12;
+$grid-col-prefix: 		'c';
+$grid-offset-prefix:	'offset';
+$grid-pull-prefix:		'pull';
+// Columnas
+$offset:				0.9375em;			// Margen interno de base
+$col-offset:			$offset;			// Margen interno entre columnas
+$m-offset:				$offset;			// Margen interno en mobile
+// Ems base
+$base-em:				16px;				// 16px = 1em
+
+// =====================
+// ESTRUCTURA DEL SITIO
+// =====================
+
+// Rows
+.row {
+	width: auto;
+	margin-right: (-$col-offset);
+	margin-left: (-$col-offset);	
+	&.row-half 	{ margin-top: 0.5em; margin-bottom:0.5em; }
+	&.row-one 	{ margin-top: 1em; margin-bottom:1em; }
+	&.row-two 	{ margin-top: 2em; margin-bottom:2em; }
+	&.row-three { margin-top: 3em; margin-bottom:3em; }
+	// La .row no come los paddings de las columnas
+	&.collapse {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	// La .row come solo el padding derecho de las columnas
+	&.collapse-right {
+		margin-right: (-$col-offset);
+		margin-left: 0!important;
+	}
+	// La .row come solo el padding izquierdo de las columnas
+	&.collapse-left {
+		margin-left: (-$col-offset);
+		margin-right: 0!important;
+	}
+	// Clearfix
+	@include clear();
+}
+.box {
+	position: relative;
+	padding-left: $col-offset;
+	padding-right: $col-offset;
+	> .col, > .cols {
+		margin-left: (-$col-offset);
+		margin-right: (-$col-offset);
+	}
+}
+
+// Sections & Content Blocks
+.section {
+	position: relative;
+	display: block;
+}
+
+.container {
+	position: relative;
+	width: $container-width;
+	max-width: $container-max-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $col-offset;
+	padding-right: $col-offset;
+	.inner-container {
+		padding-left: $col-offset;
+		padding-right: $col-offset;
+	}
+	&.full {
+		width: 100%;
+		max-width: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&.collapse-right {
+		margin-right: -$col-offset;
+		margin-left: 0;
+	}
+	&.collapse-left {
+		margin-right: 0;
+		margin-left: -$col-offset;
+	}
+}
+
+// Debe permanecer vacia 
+// como una clase generica
+// para poder reutilizarla
+.content {}
+
+
+
+// ====================
+// Columnas
+// ====================
+.col, .cols, .column, .columns {
+	position: relative;
+	display: block;
+	padding-left: $col-offset;
+	padding-right: $col-offset;
+	float: left;
+	&:first-child {}
+	&:last-child {}
+	&.collapse { 
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+// Devuelve el ancho segun la cantidad de columnas
+@function col-width( $col-number, $max-cols: $grid-columns ) {
+	@return ($col-number * 100%) / $max-cols;
+}
+
+// Para crear una clase del tipo columna con su ancho
+@mixin col( $col-number, $max-cols: $grid-columns ) {
+	width:	col-width( $col-number, $max-cols );
+	// *width:	expression(Math.floor( col-width( $col-number ) * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
+}
+
+
+// Columnas
+@mixin generate-cols( $total-cols: $grid-columns, $extra-class:'', $extra-prefix: '' ) {
+	@for $i from 1 through $total-cols {
+		.#{$extra-prefix}#{$grid-col-prefix}#{$i}-#{$total-cols}#{$extra-class} {
+			@include col($i, $total-cols);		
+		}
+	}	
+}
+// Margen izquierdo 
+// (para compensar la ausencia de columnas a la izquierda)
+@mixin generate-offset( $total-cols: $grid-columns, $extra-class:'' ) {
+	@for $i from 1 through $total-cols {
+		.#{$grid-offset-prefix}-#{$i}-#{$total-cols}#{$extra-class} {
+			margin-left: col-width($i);
+		}
+	}	
+}
+// Margen derecho 
+// (para compensar la ausencia de columnas a la derecha)
+@mixin generate-pull( $total-cols: $grid-columns, $extra-class:'' ) {
+	@for $i from 1 through $total-cols {
+		.#{$grid-pull-prefix}-#{$i}-#{$total-cols}#{$extra-class} {
+			right: col-width($i);
+		}
+	}	
+}
+
+// Mixin para generar la grilla
+@mixin grid( $total-cols: $grid-columns, $extra-class:'' ) {
+	// Todas las resoluciones
+	@include generate-cols( $grid-columns );
+	@include generate-offset( $grid-columns );
+	@include generate-pull( $grid-columns );
+
+	// =============================================
+	// Tablet Devices (Layout, Modifications, etc)
+	// iPads (portrait and landscape)
+	// =============================================
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		
+		.container.tablet {}
+		
+		// Grilla para tablets
+		// =========================
+		.row {}
+		.col, .cols, .column, .columns {
+			display: block;
+			// width: col-width(12);
+		}
+		// Columnas que no colapsan en tablets
+		// Ej: .c6-12.tablet
+		@include generate-cols( $grid-columns, '.tablet' );
+		@include generate-offset( $grid-columns, '.tablet' );
+		@include generate-pull( $grid-columns, '.tablet' );
+
+		// Estructura
+		// =====================
+		.tablet-center {
+			margin-left: auto;
+			margin-right: auto;
+			float: none;
+			display: block;
+		}
+		.tablet-a-center {
+			display: block;
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			margin: auto;
+		}
+		.tablet-center-text {
+			text-align: center;
+		}
+
+		// Alineamiento
+		// =====================
+		.tablet-left 		{float: left; }
+		.tablet-right 		{float: right; }
+		.tablet-no-float 	{float: none; }
+		.hide-tablet 		{display: none; }
+		.show-tablet 		{display: block; }
+	} // End Tablet Media Query
+
+
+	// =============================================
+	// Mobile Devices (Layout, Modifications, etc)
+	// Smartphones (portrait and landscape)
+	// =============================================
+	@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+
+		// Grilla para mobile
+		// =========================
+		.row {
+			margin-left: -$m-offset;
+			margin-right: -$m-offset;
+			&.row-one 	{ margin-top: 0.25em; margin-bottom: 0.25em; }
+			&.row-two 	{ margin-top: 0.50em; margin-bottom: 0.50em; }
+			&.row-three { margin-top: 1em; margin-bottom: 1em; }
+		}
+		// Las columnas colapsan en mobile
+		.col, .cols, .column, .columns {
+			display: block;
+			width: col-width(12);
+			padding-left: $m-offset;
+			padding-right: $m-offset;
+			margin-left: 0!important; // Anula los efectos del @include grid-offset();
+			right: 0!important; // Anula los efectos del @include grid-pull();
+		}
+
+		// Columnas que no colapsan en mobile
+		// Ej: .c6-12.mobile
+		@include generate-cols( $grid-columns, '.mobile' );
+		@include generate-offset( $grid-columns, '.mobile' );
+		@include generate-pull( $grid-columns, '.mobile' );
+		.col, .cols, .column, .columns {
+			&.mobile { float: left; }
+		}
+
+		// Estructura
+		// =====================
+		.container:not(.mobile) {
+			width: 100%;
+			padding-left: $m-offset;
+			padding-right: $m-offset;
+		}
+		// Centrado solo en resolucion mobile
+		.mobile-center {
+			margin-left: auto;
+			margin-right: auto;
+			float: none;
+			display: block;
+		}
+		// Centrado solo en resolucion mobile
+		.mobile-a-center {
+			display: block;
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			margin: auto;
+		}
+		.mobile-center-text {
+			text-align: center;
+		}
+
+		// Alineacion
+		// =============================
+		.mobile-left 		{ float: left; }
+		.mobile-right 		{ float: right; }
+		.mobile-no-float 	{ float: none; }
+		// Tablas en mobile
+		table th, table td {
+			padding: 4px;
+		}
+		.hide-mobile 		{ display: none; }
+		.show-mobile 		{ display: block; }
+
+	} // End Mobile Media Query
+
+
+	// =========================
+	// Pantallas menores a 800
+	// =========================
+	@media only screen and (max-width: 800px) {
+		// @import "grid-800";
+
+		.container {
+			width: 100%;
+			max-width: none;
+			padding-left: $col-offset * 2; 
+			padding-right: $col-offset * 2; 
+		}
+
+		// Las columnas colapsan en esta resolucion
+		.col, .cols, .column, .columns {
+			@include col(12);
+			// float: none;
+			margin: 0!important; // Anula los efectos del @include grid-offset();
+			right: 0!important; // Anula los efectos del @include grid-pull();
+		}
+
+		// Ancho de columnas que se ejecuta cuando la resolucion
+		// Es menor a 800
+		// ====================
+		// @include generate-cols( $grid-columns, '', 'md-' );
+
+		.md-a-center {
+			display: block;
+			position: absolute!important;
+			top: 0; right: 0; bottom: 0; left: 0;
+			margin: auto!important;
+			float: none!important;
+		}
+		.md-v-center {
+			display: block;
+			position: absolute;
+			top: 0; right: auto; bottom: 0; left: auto;
+			margin: auto;
+			float: none;
+		}
+
+	} // End >800 screens Media Query
+
+	
+} // End of the grid() @mixin

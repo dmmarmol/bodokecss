@@ -1,0 +1,73 @@
+// _functions.scss
+
+// ======================
+// Functions
+// ======================
+@function black( $opacity:1, $output:'rgba' ) {
+	@if $opacity != 1 {
+		@return rgba(0, 0, 0, $opacity);
+	} @else {
+		@if $output == 'hex' {
+			@return #000;			
+		} @elseif $output == 'hls' {
+			@return hls(0, 0, 0);
+		} @elseif $output == 'rgb' {
+			@return rgb(0, 0, 0);
+		} @else {
+			@return rgba(0, 0, 0, 1);			
+		}
+	}
+}
+@function white( $opacity:1, $output: 'rgba' ) {
+	@if $opacity != 1 {
+		@return rgba(255, 255, 255, $opacity);		
+	} @else {
+		@if $output == 'hex' {
+			@return #FFF;			
+		} @elseif $output == 'hls' {
+			@return hls(0, 100, 0);
+		} @elseif $output == 'rgb' {
+			@return rgb(255, 255, 255);
+		} @else {
+			@return rgba(255, 255, 255, 1);
+		}
+		@return #FFF;
+	}
+}
+
+$imgPath: '../img/';
+@function img( $path ) {
+	@return url( $imgPath + $path);
+}
+@function institucional( $path ) {
+	@return url( $imgPath + 'institucional/' + $path);
+}
+@function placeholder( $path ) {
+	@return url( $imgPath + 'placeholder/' + $path);
+}
+@function bg( $path ) {
+	@return url( $imgPath + 'background/' + $path);
+}
+
+// Strip Number Unit
+@function strip-units($number) {
+	@return $number / ($number * 0 + 1);
+}
+
+// $base-em:	16px;
+@function em($target, $context: $base-em) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+@function px($target, $round: false, $context: $base-em){
+	$number: strip-units( $target );
+	$number: ($number * $context) + 0px;
+	@if $round == 'round' {
+		$number: round($number);
+	} @elseif $round == 'floor' {
+		$number: floor($number);
+	} @elseif $round == 'ceil' {
+		$number: ceil($number);
+	}
+	@return $number;
+}

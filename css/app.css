@@ -1,0 +1,5632 @@
+@charset "UTF-8";
+/*
+ * Bodoke.css
+ * ----------
+ * Sexy & simple css framework made in SASS with easy configuration
+ *
+ *
+ * author: 			Diego Martin Marmol
+ * website: 		www.diegomarmol.com.ar
+ * version:			0.2
+ * release date:	20/05/14		
+ * contributors: 	Leonardo Pittelli, Nicolas Oliva Velez
+ * developed at:	Convoy S.R.L - www.convoy.me
+*/
+@font-face {
+  font-family: "Bodoke";
+  src: url("../font/Bodoke.tff");
+  src: url("../font/Bodoke.tff") format("eot"), url("../font/Bodoke.tff") format("truetype");
+}
+
+/*
+    Example usage: 
+    @include animation( animationName 10s 5s, true)
+ */
+/* 
+ * Animation Delay
+ * Single animation delay property
+ */
+/* 
+ * Calculate aspect ratio for images
+ *
+ * The image/video needs to be inside a container
+ * @include the @mixin in the container and asign
+ * the element to be affected in the second argument.
+ *
+ * @args
+ * $value: Custom value in percentage
+ * $element: The <tag> element to be affected by the aspect ratio
+ */
+/*
+ * Target all the IE versions
+ */
+/* line 72, ../scss/bodoke/settings/_colors.scss */
+* {
+  color: #333333;
+}
+
+/* line 76, ../scss/bodoke/settings/_colors.scss */
+a {
+  color: #69afeb;
+}
+
+/* line 80, ../scss/bodoke/settings/_colors.scss */
+hr {
+  background-color: #d1d1d1;
+}
+
+/* line 84, ../scss/bodoke/settings/_colors.scss */
+::-moz-selection, ::selection {
+  background: #d1d1d1;
+  color: #FFF;
+  text-shadow: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@font-face {
+  font-family: "Bodoke";
+  src: url("../font/Bodoke.tff");
+  src: url("../font/Bodoke.tff") format("eot"), url("../font/Bodoke.tff") format("truetype");
+}
+
+/*! normalize.css v1.1.2 | MIT License | git.io/normalize */
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+html, button, input, select, textarea {
+  font-family: sans-serif;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+body {
+  margin: 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+h2 {
+  font-size: 1.5em;
+  margin: .83em 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+h5 {
+  font-size: .83em;
+  margin: 1.67em 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+h6 {
+  font-size: .67em;
+  margin: 2.33em 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+p, pre {
+  margin: 1em 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+code, kbd, pre, samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new',monospace;
+  font-size: 1em;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+q {
+  quotes: none;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+dl, menu, ol, ul {
+  margin: 1em 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+menu, ol, ul {
+  padding: 0 0 0 40px;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+figure {
+  margin: 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+form {
+  margin: 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 3, ../scss/bodoke/grid/_normalize.min.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 5, ../scss/bodoke/grid/_grid.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 40, ../scss/bodoke/grid/_grid.scss */
+.row {
+  width: auto;
+  margin-right: -0.9375em;
+  margin-left: -0.9375em;
+  *zoom: 1;
+}
+/* line 44, ../scss/bodoke/grid/_grid.scss */
+.row.row-half {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+/* line 45, ../scss/bodoke/grid/_grid.scss */
+.row.row-one {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* line 46, ../scss/bodoke/grid/_grid.scss */
+.row.row-two {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+/* line 47, ../scss/bodoke/grid/_grid.scss */
+.row.row-three {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+/* line 49, ../scss/bodoke/grid/_grid.scss */
+.row.collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+/* line 54, ../scss/bodoke/grid/_grid.scss */
+.row.collapse-right {
+  margin-right: -0.9375em;
+  margin-left: 0 !important;
+}
+/* line 59, ../scss/bodoke/grid/_grid.scss */
+.row.collapse-left {
+  margin-left: -0.9375em;
+  margin-right: 0 !important;
+}
+/* line 13, ../scss/bodoke/settings/_mixins.scss */
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+/* line 14, ../scss/bodoke/settings/_mixins.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 66, ../scss/bodoke/grid/_grid.scss */
+.box {
+  position: relative;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+/* line 70, ../scss/bodoke/grid/_grid.scss */
+.box > .col, .box > .cols {
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+}
+
+/* line 77, ../scss/bodoke/grid/_grid.scss */
+.section {
+  position: relative;
+  display: block;
+}
+
+/* line 82, ../scss/bodoke/grid/_grid.scss */
+.container {
+  position: relative;
+  width: 93.75%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+/* line 90, ../scss/bodoke/grid/_grid.scss */
+.container .inner-container {
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+/* line 94, ../scss/bodoke/grid/_grid.scss */
+.container.full {
+  width: 100%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 100, ../scss/bodoke/grid/_grid.scss */
+.container.collapse-right {
+  margin-right: -0.9375em;
+  margin-left: 0;
+}
+/* line 104, ../scss/bodoke/grid/_grid.scss */
+.container.collapse-left {
+  margin-right: 0;
+  margin-left: -0.9375em;
+}
+
+/* line 120, ../scss/bodoke/grid/_grid.scss */
+.col, .cols, .column, .columns {
+  position: relative;
+  display: block;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  float: left;
+}
+/* line 128, ../scss/bodoke/grid/_grid.scss */
+.col.collapse, .cols.collapse, .column.collapse, .columns.collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 18, ../scss/bodoke/object/_buttons.scss */
+.button {
+  display: block;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  font-size: 11px;
+  border: 0;
+  background-color: transparent;
+  background-color: #e6e6e6;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE6E6E6,endColorstr=#FFE6E6E6);
+  zoom: 1;
+  color: #333333;
+  -webkit-box-shadow: 0 3px 0 0 #a6a6a6;
+  -moz-box-shadow: 0 3px 0 0 #a6a6a6;
+  box-shadow: 0 3px 0 0 #a6a6a6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background 0.35s ease;
+  -moz-transition: background 0.35s ease;
+  -o-transition: background 0.35s ease;
+  transition: background 0.35s ease;
+  *zoom: 1;
+}
+/* line 32, ../scss/bodoke/object/_buttons.scss */
+.button:hover, .button:active {
+  background: #cccccc;
+}
+/* line 35, ../scss/bodoke/object/_buttons.scss */
+.button:active, .button.active {
+  -webkit-transform: translateY(3px);
+  -moz-transform: translateY(3px);
+  -ms-transform: translateY(3px);
+  -o-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 39, ../scss/bodoke/object/_buttons.scss */
+.button:focus {
+  outline: none;
+}
+/* line 42, ../scss/bodoke/object/_buttons.scss */
+.button[disabled], .button.disabled {
+  color: #999;
+  background-color: transparent;
+  background-color: #f1f1f1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF1F1F1,endColorstr=#FFF1F1F1);
+  zoom: 1;
+}
+/* line 47, ../scss/bodoke/object/_buttons.scss */
+.button.clear {
+  height: auto;
+  padding: 0;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #333333;
+  text-decoration: none;
+  outline: 0;
+  border: 0 !important;
+  background: transparent !important;
+  cursor: pointer;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
+}
+/* line 60, ../scss/bodoke/object/_buttons.scss */
+.button.clear:hover {
+  text-decoration: none;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
+  zoom: 1;
+}
+/* line 64, ../scss/bodoke/object/_buttons.scss */
+.button.clear:active {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+/* line 67, ../scss/bodoke/object/_buttons.scss */
+.button.clear[disabled], .button.clear.disabled {
+  text-decoration: none;
+  color: #999;
+}
+/* line 74, ../scss/bodoke/object/_buttons.scss */
+.button.inline-block {
+  float: none;
+  display: inline-block;
+}
+/* line 78, ../scss/bodoke/object/_buttons.scss */
+.button.inline {
+  float: none;
+  display: inline;
+}
+
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.white {
+  color: #333333;
+  background-color: transparent;
+  background-color: #f7f7f7;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF7F7F7,endColorstr=#FFF7F7F7);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(196, 196, 196, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #d1d1d1;
+  -moz-box-shadow: 0 3px 0 0 #d1d1d1;
+  box-shadow: 0 3px 0 0 #d1d1d1;
+  text-shadow: 0px 1px 0px rgba(196, 196, 196, 0.8);
+}
+/* line 106, ../scss/bodoke/object/_buttons.scss */
+.button.white:hover {
+  background-color: transparent;
+  background-color: #dedede;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDEDEDE,endColorstr=#FFDEDEDE);
+  zoom: 1;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.white:active, .button.white.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #d1d1d1;
+  -moz-box-shadow: inset 0 3px 0px 0px #d1d1d1;
+  box-shadow: inset 0 3px 0px 0px #d1d1d1;
+}
+/* line 112, ../scss/bodoke/object/_buttons.scss */
+.button.white.clear {
+  color: #FFF;
+}
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.yellow {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #fcb608;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFCB608,endColorstr=#FFFCB608);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #b58202;
+  -moz-box-shadow: 0 3px 0 0 #b58202;
+  box-shadow: 0 3px 0 0 #b58202;
+  text-shadow: 0px 1px 0px rgba(156, 112, 2, 0.8);
+}
+/* line 106, ../scss/bodoke/object/_buttons.scss */
+.button.yellow:hover {
+  background-color: transparent;
+  background-color: #ce9403;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFCE9403,endColorstr=#FFCE9403);
+  zoom: 1;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.yellow:active, .button.yellow.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #b58202;
+  -moz-box-shadow: inset 0 3px 0px 0px #b58202;
+  box-shadow: inset 0 3px 0px 0px #b58202;
+}
+/* line 112, ../scss/bodoke/object/_buttons.scss */
+.button.yellow.clear {
+  color: #FFF;
+}
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.blue {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #69afeb;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF69AFEB,endColorstr=#FF69AFEB);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(28, 126, 210, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #258be2;
+  -moz-box-shadow: 0 3px 0 0 #258be2;
+  box-shadow: 0 3px 0 0 #258be2;
+  text-shadow: 0px 1px 0px rgba(28, 126, 210, 0.8);
+}
+/* line 106, ../scss/bodoke/object/_buttons.scss */
+.button.blue:hover {
+  background-color: transparent;
+  background-color: #3c97e5;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3C97E5,endColorstr=#FF3C97E5);
+  zoom: 1;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.blue:active, .button.blue.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #258be2;
+  -moz-box-shadow: inset 0 3px 0px 0px #258be2;
+  box-shadow: inset 0 3px 0px 0px #258be2;
+}
+/* line 112, ../scss/bodoke/object/_buttons.scss */
+.button.blue.clear {
+  color: #FFF;
+}
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.dark-blue {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #2362ff;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF2362FF,endColorstr=#FF2362FF);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(0, 54, 188, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #003dd5;
+  -moz-box-shadow: 0 3px 0 0 #003dd5;
+  box-shadow: 0 3px 0 0 #003dd5;
+  text-shadow: 0px 1px 0px rgba(0, 54, 188, 0.8);
+}
+/* line 106, ../scss/bodoke/object/_buttons.scss */
+.button.dark-blue:hover {
+  background-color: transparent;
+  background-color: #0044ef;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0044EF,endColorstr=#FF0044EF);
+  zoom: 1;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.dark-blue:active, .button.dark-blue.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #003dd5;
+  -moz-box-shadow: inset 0 3px 0px 0px #003dd5;
+  box-shadow: inset 0 3px 0px 0px #003dd5;
+}
+/* line 112, ../scss/bodoke/object/_buttons.scss */
+.button.dark-blue.clear {
+  color: #FFF;
+}
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.red {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #dd4a3a;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDD4A3A,endColorstr=#FFDD4A3A);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #ad2c1e;
+  -moz-box-shadow: 0 3px 0 0 #ad2c1e;
+  box-shadow: 0 3px 0 0 #ad2c1e;
+  text-shadow: 0px 1px 0px rgba(151, 38, 26, 0.8);
+}
+/* line 106, ../scss/bodoke/object/_buttons.scss */
+.button.red:hover {
+  background-color: transparent;
+  background-color: #c23122;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFC23122,endColorstr=#FFC23122);
+  zoom: 1;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.red:active, .button.red.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #ad2c1e;
+  -moz-box-shadow: inset 0 3px 0px 0px #ad2c1e;
+  box-shadow: inset 0 3px 0px 0px #ad2c1e;
+}
+/* line 112, ../scss/bodoke/object/_buttons.scss */
+.button.red.clear {
+  color: #FFF;
+}
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.green {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #00a25f;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF00A25F,endColorstr=#FF00A25F);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(0, 60, 35, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #005532;
+  -moz-box-shadow: 0 3px 0 0 #005532;
+  box-shadow: 0 3px 0 0 #005532;
+  text-shadow: 0px 1px 0px rgba(0, 60, 35, 0.8);
+}
+/* line 106, ../scss/bodoke/object/_buttons.scss */
+.button.green:hover {
+  background-color: transparent;
+  background-color: #006f41;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF006F41,endColorstr=#FF006F41);
+  zoom: 1;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.green:active, .button.green.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #005532;
+  -moz-box-shadow: inset 0 3px 0px 0px #005532;
+  box-shadow: inset 0 3px 0px 0px #005532;
+}
+/* line 112, ../scss/bodoke/object/_buttons.scss */
+.button.green.clear {
+  color: #FFF;
+}
+
+/* line 119, ../scss/bodoke/object/_buttons.scss */
+.button-group.yellow .button {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #fcb608;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFCB608,endColorstr=#FFFCB608);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #b58202;
+  -moz-box-shadow: 0 3px 0 0 #b58202;
+  box-shadow: 0 3px 0 0 #b58202;
+}
+/* line 129, ../scss/bodoke/object/_buttons.scss */
+.button-group.yellow .button:hover {
+  background-color: transparent;
+  background-color: #ce9403;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFCE9403,endColorstr=#FFCE9403);
+  zoom: 1;
+}
+/* line 132, ../scss/bodoke/object/_buttons.scss */
+.button-group.yellow .button:active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #b58202;
+  -moz-box-shadow: inset 0 3px 0px 0px #b58202;
+  box-shadow: inset 0 3px 0px 0px #b58202;
+}
+/* line 119, ../scss/bodoke/object/_buttons.scss */
+.button-group.blue .button {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #69afeb;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF69AFEB,endColorstr=#FF69AFEB);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(28, 126, 210, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #258be2;
+  -moz-box-shadow: 0 3px 0 0 #258be2;
+  box-shadow: 0 3px 0 0 #258be2;
+}
+/* line 129, ../scss/bodoke/object/_buttons.scss */
+.button-group.blue .button:hover {
+  background-color: transparent;
+  background-color: #3c97e5;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3C97E5,endColorstr=#FF3C97E5);
+  zoom: 1;
+}
+/* line 132, ../scss/bodoke/object/_buttons.scss */
+.button-group.blue .button:active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #258be2;
+  -moz-box-shadow: inset 0 3px 0px 0px #258be2;
+  box-shadow: inset 0 3px 0px 0px #258be2;
+}
+/* line 119, ../scss/bodoke/object/_buttons.scss */
+.button-group.red .button {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #dd4a3a;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDD4A3A,endColorstr=#FFDD4A3A);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #ad2c1e;
+  -moz-box-shadow: 0 3px 0 0 #ad2c1e;
+  box-shadow: 0 3px 0 0 #ad2c1e;
+}
+/* line 129, ../scss/bodoke/object/_buttons.scss */
+.button-group.red .button:hover {
+  background-color: transparent;
+  background-color: #c23122;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFC23122,endColorstr=#FFC23122);
+  zoom: 1;
+}
+/* line 132, ../scss/bodoke/object/_buttons.scss */
+.button-group.red .button:active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #ad2c1e;
+  -moz-box-shadow: inset 0 3px 0px 0px #ad2c1e;
+  box-shadow: inset 0 3px 0px 0px #ad2c1e;
+}
+/* line 119, ../scss/bodoke/object/_buttons.scss */
+.button-group.green .button {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #00a25f;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF00A25F,endColorstr=#FF00A25F);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(0, 60, 35, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #005532;
+  -moz-box-shadow: 0 3px 0 0 #005532;
+  box-shadow: 0 3px 0 0 #005532;
+}
+/* line 129, ../scss/bodoke/object/_buttons.scss */
+.button-group.green .button:hover {
+  background-color: transparent;
+  background-color: #006f41;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF006F41,endColorstr=#FF006F41);
+  zoom: 1;
+}
+/* line 132, ../scss/bodoke/object/_buttons.scss */
+.button-group.green .button:active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #005532;
+  -moz-box-shadow: inset 0 3px 0px 0px #005532;
+  box-shadow: inset 0 3px 0px 0px #005532;
+}
+
+/* line 164, ../scss/bodoke/object/_buttons.scss */
+.button {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+/* line 169, ../scss/bodoke/object/_buttons.scss */
+.button.slim {
+  padding-left: 0.46875em;
+  padding-right: 0.46875em;
+}
+/* line 173, ../scss/bodoke/object/_buttons.scss */
+.button.medium {
+  padding-left: 1.17188em;
+  padding-right: 1.17188em;
+  font-size: 16px;
+  line-height: 40px;
+}
+/* line 179, ../scss/bodoke/object/_buttons.scss */
+.button.large {
+  padding-top: 0.53571em;
+  padding-bottom: 0.53571em;
+  padding-left: 1.40625em;
+  padding-right: 1.40625em;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+/* line 197, ../scss/bodoke/object/_buttons.scss */
+.button-group {
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  background: transparent;
+}
+/* line 203, ../scss/bodoke/object/_buttons.scss */
+.button-group .button {
+  border-right: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 206, ../scss/bodoke/object/_buttons.scss */
+.button-group .button:first-child {
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+/* line 209, ../scss/bodoke/object/_buttons.scss */
+.button-group .button:last-child {
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+/* line 214, ../scss/bodoke/object/_buttons.scss */
+.button-group .button a, .button-group .button button {
+  display: block;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+/* line 224, ../scss/bodoke/object/_buttons.scss */
+.button-group a.button, .button-group button.button {
+  display: block;
+}
+/* line 229, ../scss/bodoke/object/_buttons.scss */
+.button-group.vertical .button, .button-group.v .button {
+  float: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 10, ../scss/bodoke/object/_icons.scss */
+.icon {
+  display: block;
+  background-image: url("../img/institucional/icons.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* line 24, ../scss/bodoke/object/_icons.scss */
+.icon {
+  width: 24px;
+  height: 24px;
+  background-size: 528px 384px;
+}
+/* line 30, ../scss/bodoke/object/_icons.scss */
+.icon.start {
+  width: 120px;
+  height: 120px;
+  background-position: 0 0;
+}
+/* line 34, ../scss/bodoke/object/_icons.scss */
+.icon.start.red {
+  width: 72px;
+  height: 72px;
+  background-position: 0 -120px;
+}
+/* line 38, ../scss/bodoke/object/_icons.scss */
+.icon.start.red.right {
+  background-position: -72px -120px;
+}
+/* line 53, ../scss/bodoke/object/_icons.scss */
+.icon.flag.usa {
+  background-position: -120px 0;
+}
+/* line 53, ../scss/bodoke/object/_icons.scss */
+.icon.flag.eeuu {
+  background-position: -120px 0;
+}
+/* line 53, ../scss/bodoke/object/_icons.scss */
+.icon.flag.ee-uu {
+  background-position: -120px 0;
+}
+/* line 53, ../scss/bodoke/object/_icons.scss */
+.icon.flag.estados-unidos {
+  background-position: -120px 0;
+}
+/* line 53, ../scss/bodoke/object/_icons.scss */
+.icon.flag.silicon-valley {
+  background-position: -120px 0;
+}
+/* line 53, ../scss/bodoke/object/_icons.scss */
+.icon.flag.sil-valley {
+  background-position: -120px 0;
+}
+/* line 56, ../scss/bodoke/object/_icons.scss */
+.icon.flag.spa {
+  background-position: -120px -48px;
+}
+/* line 56, ../scss/bodoke/object/_icons.scss */
+.icon.flag.espana {
+  background-position: -120px -48px;
+}
+/* line 56, ../scss/bodoke/object/_icons.scss */
+.icon.flag.españa {
+  background-position: -120px -48px;
+}
+/* line 56, ../scss/bodoke/object/_icons.scss */
+.icon.flag.spain {
+  background-position: -120px -48px;
+}
+/* line 59, ../scss/bodoke/object/_icons.scss */
+.icon.flag.bra {
+  background-position: -120px -24px;
+}
+/* line 59, ../scss/bodoke/object/_icons.scss */
+.icon.flag.brasil {
+  background-position: -120px -24px;
+}
+/* line 59, ../scss/bodoke/object/_icons.scss */
+.icon.flag.brazil {
+  background-position: -120px -24px;
+}
+/* line 59, ../scss/bodoke/object/_icons.scss */
+.icon.flag.sao-paulo {
+  background-position: -120px -24px;
+}
+/* line 59, ../scss/bodoke/object/_icons.scss */
+.icon.flag.san-pablo {
+  background-position: -120px -24px;
+}
+/* line 59, ../scss/bodoke/object/_icons.scss */
+.icon.flag.rio-de-janeiro {
+  background-position: -120px -24px;
+}
+/* line 62, ../scss/bodoke/object/_icons.scss */
+.icon.flag.arg {
+  background-position: -120px -72px;
+}
+/* line 62, ../scss/bodoke/object/_icons.scss */
+.icon.flag.argentina {
+  background-position: -120px -72px;
+}
+/* line 62, ../scss/bodoke/object/_icons.scss */
+.icon.flag.buenos-aires {
+  background-position: -120px -72px;
+}
+/* line 62, ../scss/bodoke/object/_icons.scss */
+.icon.flag.bs-as {
+  background-position: -120px -72px;
+}
+/* line 65, ../scss/bodoke/object/_icons.scss */
+.icon.flag.col {
+  background-position: -120px -96px;
+}
+/* line 65, ../scss/bodoke/object/_icons.scss */
+.icon.flag.colombia {
+  background-position: -120px -96px;
+}
+/* line 65, ../scss/bodoke/object/_icons.scss */
+.icon.flag.bogota {
+  background-position: -120px -96px;
+}
+/* line 68, ../scss/bodoke/object/_icons.scss */
+.icon.flag.mex {
+  background-position: -144px 0;
+}
+/* line 68, ../scss/bodoke/object/_icons.scss */
+.icon.flag.mexico {
+  background-position: -144px 0;
+}
+/* line 68, ../scss/bodoke/object/_icons.scss */
+.icon.flag.mexico-df {
+  background-position: -144px 0;
+}
+/* line 70, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big {
+  width: 72px;
+  height: 48px;
+}
+/* line 74, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.arg {
+  background-position: -168px 0;
+}
+/* line 74, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.argentina {
+  background-position: -168px 0;
+}
+/* line 74, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.buenos-aires {
+  background-position: -168px 0;
+}
+/* line 74, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.bs-as {
+  background-position: -168px 0;
+}
+/* line 77, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.bra {
+  background-position: -240px 0;
+}
+/* line 77, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.brasil {
+  background-position: -240px 0;
+}
+/* line 77, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.brazil {
+  background-position: -240px 0;
+}
+/* line 77, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.sao-paulo {
+  background-position: -240px 0;
+}
+/* line 77, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.san-pablo {
+  background-position: -240px 0;
+}
+/* line 77, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.rio-de-janeiro {
+  background-position: -240px 0;
+}
+/* line 80, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.col {
+  background-position: -240px -96px;
+}
+/* line 80, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.colombia {
+  background-position: -240px -96px;
+}
+/* line 80, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.bogota {
+  background-position: -240px -96px;
+}
+/* line 83, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.mex {
+  background-position: -168px -48px;
+}
+/* line 83, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.mexico {
+  background-position: -168px -48px;
+}
+/* line 83, ../scss/bodoke/object/_icons.scss */
+.icon.flag.big.mexico-df {
+  background-position: -168px -48px;
+}
+/* line 89, ../scss/bodoke/object/_icons.scss */
+.icon.video.play {
+  background-position: 0 -264px;
+}
+/* line 92, ../scss/bodoke/object/_icons.scss */
+.icon.video.record {
+  background-position: -24px -264px;
+}
+/* line 97, ../scss/bodoke/object/_icons.scss */
+.icon.arrow-dropdown {
+  background-position: -48px -264px;
+}
+/* line 102, ../scss/bodoke/object/_icons.scss */
+.icon.status.pending {
+  background-position: -72px -264px;
+}
+/* line 103, ../scss/bodoke/object/_icons.scss */
+.icon.status.complete {
+  background-position: -96px -264px;
+}
+/* line 104, ../scss/bodoke/object/_icons.scss */
+.icon.status.wrong {
+  background-position: -120px -264px;
+}
+/* line 108, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.top {
+  background-position: 0 -288px;
+}
+/* line 110, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.top.black {
+  background-position: 0 -312px;
+}
+/* line 112, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.right {
+  background-position: -24px -288px;
+}
+/* line 114, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.right.black {
+  background-position: -24px -312px;
+}
+/* line 116, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.bottom {
+  background-position: -48px -288px;
+}
+/* line 118, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.bottom.black {
+  background-position: -48px -312px;
+}
+/* line 120, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.left {
+  background-position: -72px -288px;
+}
+/* line 122, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.left.black {
+  background-position: -72px -312px;
+}
+/* line 125, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.small.down {
+  background-position: -288px -192px;
+}
+/* line 126, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.small.right {
+  background-position: -312px -192px;
+}
+/* line 127, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.small.up {
+  background-position: -288px -216px;
+}
+/* line 128, ../scss/bodoke/object/_icons.scss */
+.icon.arrow.small.left {
+  background-position: -312px -216px;
+}
+/* line 132, ../scss/bodoke/object/_icons.scss */
+.icon.live {
+  background-position: -144px -264px;
+}
+/* line 136, ../scss/bodoke/object/_icons.scss */
+.icon.calendar {
+  width: 48px;
+  height: 48px;
+  background-position: -192px -264px;
+}
+/* line 142, ../scss/bodoke/object/_icons.scss */
+.icon.face {
+  height: 72px;
+  width: 72px;
+}
+/* line 145, ../scss/bodoke/object/_icons.scss */
+.icon.face.sad {
+  background-position: -96px -312px;
+}
+/* line 146, ../scss/bodoke/object/_icons.scss */
+.icon.face.smile {
+  background-position: -168px -312px;
+}
+/* line 149, ../scss/bodoke/object/_icons.scss */
+.icon.close {
+  background-position: -240px -264px;
+}
+/* line 153, ../scss/bodoke/object/_icons.scss */
+.icon.notebook {
+  background-position: 0 -336px;
+}
+/* line 154, ../scss/bodoke/object/_icons.scss */
+.icon.user {
+  background-position: -24px -336px;
+}
+
+@media only screen and (max-height: 600px) {
+  /* 
+   * Hasta 1024px 
+   */
+  /* Netbook size icons - Hasta 600 de alto  */
+  /* line 24, ../scss/bodoke/object/_icons.scss */
+  .sm-icon {
+    width: 16px;
+    height: 16px;
+    background-size: 352px 256px;
+  }
+  /* line 30, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.start {
+    width: 80px;
+    height: 80px;
+    background-position: 0 0;
+  }
+  /* line 34, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.start.red {
+    width: 48px;
+    height: 48px;
+    background-position: 0 -80px;
+  }
+  /* line 38, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.start.red.right {
+    background-position: -48px -80px;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.usa {
+    background-position: -80px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.eeuu {
+    background-position: -80px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.ee-uu {
+    background-position: -80px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.estados-unidos {
+    background-position: -80px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.silicon-valley {
+    background-position: -80px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.sil-valley {
+    background-position: -80px 0;
+  }
+  /* line 56, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.spa {
+    background-position: -80px -32px;
+  }
+  /* line 56, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.espana {
+    background-position: -80px -32px;
+  }
+  /* line 56, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.españa {
+    background-position: -80px -32px;
+  }
+  /* line 56, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.spain {
+    background-position: -80px -32px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.bra {
+    background-position: -80px -16px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.brasil {
+    background-position: -80px -16px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.brazil {
+    background-position: -80px -16px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.sao-paulo {
+    background-position: -80px -16px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.san-pablo {
+    background-position: -80px -16px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.rio-de-janeiro {
+    background-position: -80px -16px;
+  }
+  /* line 62, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.arg {
+    background-position: -80px -48px;
+  }
+  /* line 62, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.argentina {
+    background-position: -80px -48px;
+  }
+  /* line 62, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.buenos-aires {
+    background-position: -80px -48px;
+  }
+  /* line 62, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.bs-as {
+    background-position: -80px -48px;
+  }
+  /* line 65, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.col {
+    background-position: -80px -64px;
+  }
+  /* line 65, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.colombia {
+    background-position: -80px -64px;
+  }
+  /* line 65, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.bogota {
+    background-position: -80px -64px;
+  }
+  /* line 68, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.mex {
+    background-position: -96px 0;
+  }
+  /* line 68, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.mexico {
+    background-position: -96px 0;
+  }
+  /* line 68, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.mexico-df {
+    background-position: -96px 0;
+  }
+  /* line 70, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big {
+    width: 48px;
+    height: 32px;
+  }
+  /* line 74, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.arg {
+    background-position: -112px 0;
+  }
+  /* line 74, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.argentina {
+    background-position: -112px 0;
+  }
+  /* line 74, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.buenos-aires {
+    background-position: -112px 0;
+  }
+  /* line 74, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.bs-as {
+    background-position: -112px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.bra {
+    background-position: -160px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.brasil {
+    background-position: -160px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.brazil {
+    background-position: -160px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.sao-paulo {
+    background-position: -160px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.san-pablo {
+    background-position: -160px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.rio-de-janeiro {
+    background-position: -160px 0;
+  }
+  /* line 80, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.col {
+    background-position: -160px -64px;
+  }
+  /* line 80, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.colombia {
+    background-position: -160px -64px;
+  }
+  /* line 80, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.bogota {
+    background-position: -160px -64px;
+  }
+  /* line 83, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.mex {
+    background-position: -112px -32px;
+  }
+  /* line 83, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.mexico {
+    background-position: -112px -32px;
+  }
+  /* line 83, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.flag.big.mexico-df {
+    background-position: -112px -32px;
+  }
+  /* line 89, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.video.play {
+    background-position: 0 -176px;
+  }
+  /* line 92, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.video.record {
+    background-position: -16px -176px;
+  }
+  /* line 97, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow-dropdown {
+    background-position: -32px -176px;
+  }
+  /* line 102, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.status.pending {
+    background-position: -48px -176px;
+  }
+  /* line 103, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.status.complete {
+    background-position: -64px -176px;
+  }
+  /* line 104, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.status.wrong {
+    background-position: -80px -176px;
+  }
+  /* line 108, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.top {
+    background-position: 0 -192px;
+  }
+  /* line 110, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.top.black {
+    background-position: 0 -208px;
+  }
+  /* line 112, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.right {
+    background-position: -16px -192px;
+  }
+  /* line 114, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.right.black {
+    background-position: -16px -208px;
+  }
+  /* line 116, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.bottom {
+    background-position: -32px -192px;
+  }
+  /* line 118, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.bottom.black {
+    background-position: -32px -208px;
+  }
+  /* line 120, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.left {
+    background-position: -48px -192px;
+  }
+  /* line 122, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.left.black {
+    background-position: -48px -208px;
+  }
+  /* line 125, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.small.down {
+    background-position: -192px -128px;
+  }
+  /* line 126, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.small.right {
+    background-position: -208px -128px;
+  }
+  /* line 127, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.small.up {
+    background-position: -192px -144px;
+  }
+  /* line 128, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.arrow.small.left {
+    background-position: -208px -144px;
+  }
+  /* line 132, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.live {
+    background-position: -96px -176px;
+  }
+  /* line 136, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.calendar {
+    width: 32px;
+    height: 32px;
+    background-position: -128px -176px;
+  }
+  /* line 142, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.face {
+    height: 48px;
+    width: 48px;
+  }
+  /* line 145, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.face.sad {
+    background-position: -64px -208px;
+  }
+  /* line 146, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.face.smile {
+    background-position: -112px -208px;
+  }
+  /* line 149, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.close {
+    background-position: -160px -176px;
+  }
+  /* line 153, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.notebook {
+    background-position: 0 -224px;
+  }
+  /* line 154, ../scss/bodoke/object/_icons.scss */
+  .sm-icon.user {
+    background-position: -16px -224px;
+  }
+
+  /* line 24, ../scss/bodoke/object/_icons.scss */
+  .md-icon {
+    width: 24px;
+    height: 24px;
+    background-size: 528px 384px;
+  }
+  /* line 30, ../scss/bodoke/object/_icons.scss */
+  .md-icon.start {
+    width: 120px;
+    height: 120px;
+    background-position: 0 0;
+  }
+  /* line 34, ../scss/bodoke/object/_icons.scss */
+  .md-icon.start.red {
+    width: 72px;
+    height: 72px;
+    background-position: 0 -120px;
+  }
+  /* line 38, ../scss/bodoke/object/_icons.scss */
+  .md-icon.start.red.right {
+    background-position: -72px -120px;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.usa {
+    background-position: -120px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.eeuu {
+    background-position: -120px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.ee-uu {
+    background-position: -120px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.estados-unidos {
+    background-position: -120px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.silicon-valley {
+    background-position: -120px 0;
+  }
+  /* line 53, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.sil-valley {
+    background-position: -120px 0;
+  }
+  /* line 56, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.spa {
+    background-position: -120px -48px;
+  }
+  /* line 56, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.espana {
+    background-position: -120px -48px;
+  }
+  /* line 56, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.españa {
+    background-position: -120px -48px;
+  }
+  /* line 56, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.spain {
+    background-position: -120px -48px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.bra {
+    background-position: -120px -24px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.brasil {
+    background-position: -120px -24px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.brazil {
+    background-position: -120px -24px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.sao-paulo {
+    background-position: -120px -24px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.san-pablo {
+    background-position: -120px -24px;
+  }
+  /* line 59, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.rio-de-janeiro {
+    background-position: -120px -24px;
+  }
+  /* line 62, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.arg {
+    background-position: -120px -72px;
+  }
+  /* line 62, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.argentina {
+    background-position: -120px -72px;
+  }
+  /* line 62, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.buenos-aires {
+    background-position: -120px -72px;
+  }
+  /* line 62, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.bs-as {
+    background-position: -120px -72px;
+  }
+  /* line 65, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.col {
+    background-position: -120px -96px;
+  }
+  /* line 65, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.colombia {
+    background-position: -120px -96px;
+  }
+  /* line 65, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.bogota {
+    background-position: -120px -96px;
+  }
+  /* line 68, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.mex {
+    background-position: -144px 0;
+  }
+  /* line 68, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.mexico {
+    background-position: -144px 0;
+  }
+  /* line 68, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.mexico-df {
+    background-position: -144px 0;
+  }
+  /* line 70, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big {
+    width: 72px;
+    height: 48px;
+  }
+  /* line 74, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.arg {
+    background-position: -168px 0;
+  }
+  /* line 74, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.argentina {
+    background-position: -168px 0;
+  }
+  /* line 74, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.buenos-aires {
+    background-position: -168px 0;
+  }
+  /* line 74, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.bs-as {
+    background-position: -168px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.bra {
+    background-position: -240px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.brasil {
+    background-position: -240px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.brazil {
+    background-position: -240px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.sao-paulo {
+    background-position: -240px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.san-pablo {
+    background-position: -240px 0;
+  }
+  /* line 77, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.rio-de-janeiro {
+    background-position: -240px 0;
+  }
+  /* line 80, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.col {
+    background-position: -240px -96px;
+  }
+  /* line 80, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.colombia {
+    background-position: -240px -96px;
+  }
+  /* line 80, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.bogota {
+    background-position: -240px -96px;
+  }
+  /* line 83, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.mex {
+    background-position: -168px -48px;
+  }
+  /* line 83, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.mexico {
+    background-position: -168px -48px;
+  }
+  /* line 83, ../scss/bodoke/object/_icons.scss */
+  .md-icon.flag.big.mexico-df {
+    background-position: -168px -48px;
+  }
+  /* line 89, ../scss/bodoke/object/_icons.scss */
+  .md-icon.video.play {
+    background-position: 0 -264px;
+  }
+  /* line 92, ../scss/bodoke/object/_icons.scss */
+  .md-icon.video.record {
+    background-position: -24px -264px;
+  }
+  /* line 97, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow-dropdown {
+    background-position: -48px -264px;
+  }
+  /* line 102, ../scss/bodoke/object/_icons.scss */
+  .md-icon.status.pending {
+    background-position: -72px -264px;
+  }
+  /* line 103, ../scss/bodoke/object/_icons.scss */
+  .md-icon.status.complete {
+    background-position: -96px -264px;
+  }
+  /* line 104, ../scss/bodoke/object/_icons.scss */
+  .md-icon.status.wrong {
+    background-position: -120px -264px;
+  }
+  /* line 108, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.top {
+    background-position: 0 -288px;
+  }
+  /* line 110, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.top.black {
+    background-position: 0 -312px;
+  }
+  /* line 112, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.right {
+    background-position: -24px -288px;
+  }
+  /* line 114, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.right.black {
+    background-position: -24px -312px;
+  }
+  /* line 116, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.bottom {
+    background-position: -48px -288px;
+  }
+  /* line 118, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.bottom.black {
+    background-position: -48px -312px;
+  }
+  /* line 120, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.left {
+    background-position: -72px -288px;
+  }
+  /* line 122, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.left.black {
+    background-position: -72px -312px;
+  }
+  /* line 125, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.small.down {
+    background-position: -288px -192px;
+  }
+  /* line 126, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.small.right {
+    background-position: -312px -192px;
+  }
+  /* line 127, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.small.up {
+    background-position: -288px -216px;
+  }
+  /* line 128, ../scss/bodoke/object/_icons.scss */
+  .md-icon.arrow.small.left {
+    background-position: -312px -216px;
+  }
+  /* line 132, ../scss/bodoke/object/_icons.scss */
+  .md-icon.live {
+    background-position: -144px -264px;
+  }
+  /* line 136, ../scss/bodoke/object/_icons.scss */
+  .md-icon.calendar {
+    width: 48px;
+    height: 48px;
+    background-position: -192px -264px;
+  }
+  /* line 142, ../scss/bodoke/object/_icons.scss */
+  .md-icon.face {
+    height: 72px;
+    width: 72px;
+  }
+  /* line 145, ../scss/bodoke/object/_icons.scss */
+  .md-icon.face.sad {
+    background-position: -96px -312px;
+  }
+  /* line 146, ../scss/bodoke/object/_icons.scss */
+  .md-icon.face.smile {
+    background-position: -168px -312px;
+  }
+  /* line 149, ../scss/bodoke/object/_icons.scss */
+  .md-icon.close {
+    background-position: -240px -264px;
+  }
+  /* line 153, ../scss/bodoke/object/_icons.scss */
+  .md-icon.notebook {
+    background-position: 0 -336px;
+  }
+  /* line 154, ../scss/bodoke/object/_icons.scss */
+  .md-icon.user {
+    background-position: -24px -336px;
+  }
+}
+/* 
+ * Fade In
+ * (without affecting display property)
+ */
+@-webkit-keyframes fadeIn {
+  /* line 9, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 12, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  /* line 9, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 12, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  /* line 9, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 12, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  /* line 9, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 12, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* line 16, ../scss/bodoke/object/_animations.scss */
+.fadeIn {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Fade In Left
+ * (without affecting display property)
+ */
+@-webkit-keyframes fadeInLeft {
+  /* line 24, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -moz-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    -o-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    opacity: 0;
+  }
+
+  /* line 28, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeInLeft {
+  /* line 24, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -moz-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    -o-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    opacity: 0;
+  }
+
+  /* line 28, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeInLeft {
+  /* line 24, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -moz-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    -o-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    opacity: 0;
+  }
+
+  /* line 28, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  /* line 24, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -moz-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    -o-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    opacity: 0;
+  }
+
+  /* line 28, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+}
+
+/* line 33, ../scss/bodoke/object/_animations.scss */
+.fadeInLeft {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: fadeInLeft 1s;
+  animation: fadeInLeft 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Fade In Left Display
+ *
+ */
+@-webkit-keyframes fadeInLeftDisplay {
+  /* line 41, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -moz-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    -o-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    opacity: 0;
+    display: none;
+  }
+
+  /* line 46, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+    display: block;
+  }
+}
+
+@-moz-keyframes fadeInLeftDisplay {
+  /* line 41, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -moz-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    -o-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    opacity: 0;
+    display: none;
+  }
+
+  /* line 46, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+    display: block;
+  }
+}
+
+@-o-keyframes fadeInLeftDisplay {
+  /* line 41, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -moz-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    -o-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    opacity: 0;
+    display: none;
+  }
+
+  /* line 46, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes fadeInLeftDisplay {
+  /* line 41, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    -moz-transform: translate3d(-10px, 0, 0);
+    -ms-transform: translate3d(-10px, 0, 0);
+    -o-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    opacity: 0;
+    display: none;
+  }
+
+  /* line 46, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    opacity: 1;
+    display: block;
+  }
+}
+
+/* line 52, ../scss/bodoke/object/_animations.scss */
+.fadeInLeftDisplay {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: fadeInLeftDisplay 1s;
+  animation: fadeInLeftDisplay 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Bounce Up
+ *
+ */
+@-webkit-keyframes bounceUp {
+  /* line 60, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  /* line 63, ../scss/bodoke/object/_animations.scss */
+  50% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    -moz-transform: translate3d(0, 10px, 0);
+    -ms-transform: translate3d(0, 10px, 0);
+    -o-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  /* line 66, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@-moz-keyframes bounceUp {
+  /* line 60, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  /* line 63, ../scss/bodoke/object/_animations.scss */
+  50% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    -moz-transform: translate3d(0, 10px, 0);
+    -ms-transform: translate3d(0, 10px, 0);
+    -o-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  /* line 66, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@-o-keyframes bounceUp {
+  /* line 60, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  /* line 63, ../scss/bodoke/object/_animations.scss */
+  50% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    -moz-transform: translate3d(0, 10px, 0);
+    -ms-transform: translate3d(0, 10px, 0);
+    -o-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  /* line 66, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes bounceUp {
+  /* line 60, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  /* line 63, ../scss/bodoke/object/_animations.scss */
+  50% {
+    -webkit-transform: translate3d(0, 10px, 0);
+    -moz-transform: translate3d(0, 10px, 0);
+    -ms-transform: translate3d(0, 10px, 0);
+    -o-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+
+  /* line 66, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+/* line 70, ../scss/bodoke/object/_animations.scss */
+.bounceUp {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: bounceUp 1s;
+  animation: bounceUp 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Pulse
+ *
+ */
+@-webkit-keyframes pulse {
+  /* line 79, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  /* line 82, ../scss/bodoke/object/_animations.scss */
+  50% {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+
+  /* line 85, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  /* line 79, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  /* line 82, ../scss/bodoke/object/_animations.scss */
+  50% {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+
+  /* line 85, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-o-keyframes pulse {
+  /* line 79, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  /* line 82, ../scss/bodoke/object/_animations.scss */
+  50% {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+
+  /* line 85, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  /* line 79, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  /* line 82, ../scss/bodoke/object/_animations.scss */
+  50% {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+
+  /* line 85, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* line 89, ../scss/bodoke/object/_animations.scss */
+.pulse {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: pulse 1s;
+  animation: pulse 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Show from right
+ * Normal Distance
+ */
+@-webkit-keyframes showFromRight-1 {
+  /* line 102, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(6000px);
+    -moz-transform: translateX(6000px);
+    -ms-transform: translateX(6000px);
+    -o-transform: translateX(6000px);
+    transform: translateX(6000px);
+  }
+
+  /* line 103, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes showFromRight-1 {
+  /* line 102, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(6000px);
+    -moz-transform: translateX(6000px);
+    -ms-transform: translateX(6000px);
+    -o-transform: translateX(6000px);
+    transform: translateX(6000px);
+  }
+
+  /* line 103, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes showFromRight-1 {
+  /* line 102, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(6000px);
+    -moz-transform: translateX(6000px);
+    -ms-transform: translateX(6000px);
+    -o-transform: translateX(6000px);
+    transform: translateX(6000px);
+  }
+
+  /* line 103, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes showFromRight-1 {
+  /* line 102, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(6000px);
+    -moz-transform: translateX(6000px);
+    -ms-transform: translateX(6000px);
+    -o-transform: translateX(6000px);
+    transform: translateX(6000px);
+  }
+
+  /* line 103, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 105, ../scss/bodoke/object/_animations.scss */
+.showFromRight-1 {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: showFromRight-1 1s;
+  animation: showFromRight-1 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Show from right
+ * Far distance
+ */
+@-webkit-keyframes showFromRight-2 {
+  /* line 111, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(8500px);
+    -moz-transform: translateX(8500px);
+    -ms-transform: translateX(8500px);
+    -o-transform: translateX(8500px);
+    transform: translateX(8500px);
+  }
+
+  /* line 112, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes showFromRight-2 {
+  /* line 111, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(8500px);
+    -moz-transform: translateX(8500px);
+    -ms-transform: translateX(8500px);
+    -o-transform: translateX(8500px);
+    transform: translateX(8500px);
+  }
+
+  /* line 112, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes showFromRight-2 {
+  /* line 111, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(8500px);
+    -moz-transform: translateX(8500px);
+    -ms-transform: translateX(8500px);
+    -o-transform: translateX(8500px);
+    transform: translateX(8500px);
+  }
+
+  /* line 112, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes showFromRight-2 {
+  /* line 111, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(8500px);
+    -moz-transform: translateX(8500px);
+    -ms-transform: translateX(8500px);
+    -o-transform: translateX(8500px);
+    transform: translateX(8500px);
+  }
+
+  /* line 112, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 114, ../scss/bodoke/object/_animations.scss */
+.showFromRight-2 {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: showFromRight-2 1s;
+  animation: showFromRight-2 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Show from right
+ * So much far distance
+ */
+@-webkit-keyframes showFromRight-3 {
+  /* line 120, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(15000px);
+    -moz-transform: translateX(15000px);
+    -ms-transform: translateX(15000px);
+    -o-transform: translateX(15000px);
+    transform: translateX(15000px);
+  }
+
+  /* line 121, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes showFromRight-3 {
+  /* line 120, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(15000px);
+    -moz-transform: translateX(15000px);
+    -ms-transform: translateX(15000px);
+    -o-transform: translateX(15000px);
+    transform: translateX(15000px);
+  }
+
+  /* line 121, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes showFromRight-3 {
+  /* line 120, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(15000px);
+    -moz-transform: translateX(15000px);
+    -ms-transform: translateX(15000px);
+    -o-transform: translateX(15000px);
+    transform: translateX(15000px);
+  }
+
+  /* line 121, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes showFromRight-3 {
+  /* line 120, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(15000px);
+    -moz-transform: translateX(15000px);
+    -ms-transform: translateX(15000px);
+    -o-transform: translateX(15000px);
+    transform: translateX(15000px);
+  }
+
+  /* line 121, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 123, ../scss/bodoke/object/_animations.scss */
+.showFromRight-3 {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: showFromRight-3 1s;
+  animation: showFromRight-3 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Show from right
+ * Normal Distance
+ */
+@-webkit-keyframes showFromRightPos-1 {
+  /* line 130, ../scss/bodoke/object/_animations.scss */
+  0% {
+    left: 6000px;
+  }
+
+  /* line 131, ../scss/bodoke/object/_animations.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-moz-keyframes showFromRightPos-1 {
+  /* line 130, ../scss/bodoke/object/_animations.scss */
+  0% {
+    left: 6000px;
+  }
+
+  /* line 131, ../scss/bodoke/object/_animations.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-o-keyframes showFromRightPos-1 {
+  /* line 130, ../scss/bodoke/object/_animations.scss */
+  0% {
+    left: 6000px;
+  }
+
+  /* line 131, ../scss/bodoke/object/_animations.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes showFromRightPos-1 {
+  /* line 130, ../scss/bodoke/object/_animations.scss */
+  0% {
+    left: 6000px;
+  }
+
+  /* line 131, ../scss/bodoke/object/_animations.scss */
+  100% {
+    left: 0;
+  }
+}
+
+/* line 133, ../scss/bodoke/object/_animations.scss */
+.showFromRightPos-1 {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: showFromRightPos-1 1s;
+  animation: showFromRightPos-1 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Show from left
+ * Normal Distance
+ */
+@-webkit-keyframes showFromLeft-1 {
+  /* line 144, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-6000px);
+    -moz-transform: translateX(-6000px);
+    -ms-transform: translateX(-6000px);
+    -o-transform: translateX(-6000px);
+    transform: translateX(-6000px);
+  }
+
+  /* line 145, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes showFromLeft-1 {
+  /* line 144, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-6000px);
+    -moz-transform: translateX(-6000px);
+    -ms-transform: translateX(-6000px);
+    -o-transform: translateX(-6000px);
+    transform: translateX(-6000px);
+  }
+
+  /* line 145, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes showFromLeft-1 {
+  /* line 144, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-6000px);
+    -moz-transform: translateX(-6000px);
+    -ms-transform: translateX(-6000px);
+    -o-transform: translateX(-6000px);
+    transform: translateX(-6000px);
+  }
+
+  /* line 145, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes showFromLeft-1 {
+  /* line 144, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-6000px);
+    -moz-transform: translateX(-6000px);
+    -ms-transform: translateX(-6000px);
+    -o-transform: translateX(-6000px);
+    transform: translateX(-6000px);
+  }
+
+  /* line 145, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 147, ../scss/bodoke/object/_animations.scss */
+.showFromLeft-1 {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: showFromLeft-1 0.7s;
+  animation: showFromLeft-1 0.7s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Show from left
+ * Far distance
+ */
+@-webkit-keyframes showFromLeft-2 {
+  /* line 153, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-8500px);
+    -moz-transform: translateX(-8500px);
+    -ms-transform: translateX(-8500px);
+    -o-transform: translateX(-8500px);
+    transform: translateX(-8500px);
+  }
+
+  /* line 154, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes showFromLeft-2 {
+  /* line 153, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-8500px);
+    -moz-transform: translateX(-8500px);
+    -ms-transform: translateX(-8500px);
+    -o-transform: translateX(-8500px);
+    transform: translateX(-8500px);
+  }
+
+  /* line 154, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes showFromLeft-2 {
+  /* line 153, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-8500px);
+    -moz-transform: translateX(-8500px);
+    -ms-transform: translateX(-8500px);
+    -o-transform: translateX(-8500px);
+    transform: translateX(-8500px);
+  }
+
+  /* line 154, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes showFromLeft-2 {
+  /* line 153, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-8500px);
+    -moz-transform: translateX(-8500px);
+    -ms-transform: translateX(-8500px);
+    -o-transform: translateX(-8500px);
+    transform: translateX(-8500px);
+  }
+
+  /* line 154, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 156, ../scss/bodoke/object/_animations.scss */
+.showFromLeft-2 {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: showFromLeft-2 1.4s;
+  animation: showFromLeft-2 1.4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * Show from left
+ * So much far distance
+ */
+@-webkit-keyframes showFromLeft-3 {
+  /* line 162, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-15000px);
+    -moz-transform: translateX(-15000px);
+    -ms-transform: translateX(-15000px);
+    -o-transform: translateX(-15000px);
+    transform: translateX(-15000px);
+  }
+
+  /* line 163, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes showFromLeft-3 {
+  /* line 162, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-15000px);
+    -moz-transform: translateX(-15000px);
+    -ms-transform: translateX(-15000px);
+    -o-transform: translateX(-15000px);
+    transform: translateX(-15000px);
+  }
+
+  /* line 163, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes showFromLeft-3 {
+  /* line 162, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-15000px);
+    -moz-transform: translateX(-15000px);
+    -ms-transform: translateX(-15000px);
+    -o-transform: translateX(-15000px);
+    transform: translateX(-15000px);
+  }
+
+  /* line 163, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes showFromLeft-3 {
+  /* line 162, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-15000px);
+    -moz-transform: translateX(-15000px);
+    -ms-transform: translateX(-15000px);
+    -o-transform: translateX(-15000px);
+    transform: translateX(-15000px);
+  }
+
+  /* line 163, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 165, ../scss/bodoke/object/_animations.scss */
+.showFromLeft-3 {
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: showFromLeft-3 2.1s;
+  animation: showFromLeft-3 2.1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* 
+ * FadeIn from left
+ * Normal Distance
+ */
+@-webkit-keyframes fadeFromRight-1 {
+  /* line 177, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(6000px);
+    -moz-transform: translateX(6000px);
+    -ms-transform: translateX(6000px);
+    -o-transform: translateX(6000px);
+    transform: translateX(6000px);
+  }
+
+  /* line 178, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeFromRight-1 {
+  /* line 177, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(6000px);
+    -moz-transform: translateX(6000px);
+    -ms-transform: translateX(6000px);
+    -o-transform: translateX(6000px);
+    transform: translateX(6000px);
+  }
+
+  /* line 178, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeFromRight-1 {
+  /* line 177, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(6000px);
+    -moz-transform: translateX(6000px);
+    -ms-transform: translateX(6000px);
+    -o-transform: translateX(6000px);
+    transform: translateX(6000px);
+  }
+
+  /* line 178, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromRight-1 {
+  /* line 177, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(6000px);
+    -moz-transform: translateX(6000px);
+    -ms-transform: translateX(6000px);
+    -o-transform: translateX(6000px);
+    transform: translateX(6000px);
+  }
+
+  /* line 178, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 180, ../scss/bodoke/object/_animations.scss */
+.fadeFromRight-1 {
+  opacity: 0;
+  /* CSS3 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE6+ */
+  zoom: 1;
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: fadeFromRight-1;
+  animation: fadeFromRight-1;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* 
+ * FadeIn from left
+ * Far distance
+ */
+@-webkit-keyframes fadeFromRight-2 {
+  /* line 186, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(8500px);
+    -moz-transform: translateX(8500px);
+    -ms-transform: translateX(8500px);
+    -o-transform: translateX(8500px);
+    transform: translateX(8500px);
+  }
+
+  /* line 187, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeFromRight-2 {
+  /* line 186, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(8500px);
+    -moz-transform: translateX(8500px);
+    -ms-transform: translateX(8500px);
+    -o-transform: translateX(8500px);
+    transform: translateX(8500px);
+  }
+
+  /* line 187, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeFromRight-2 {
+  /* line 186, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(8500px);
+    -moz-transform: translateX(8500px);
+    -ms-transform: translateX(8500px);
+    -o-transform: translateX(8500px);
+    transform: translateX(8500px);
+  }
+
+  /* line 187, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromRight-2 {
+  /* line 186, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(8500px);
+    -moz-transform: translateX(8500px);
+    -ms-transform: translateX(8500px);
+    -o-transform: translateX(8500px);
+    transform: translateX(8500px);
+  }
+
+  /* line 187, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 189, ../scss/bodoke/object/_animations.scss */
+.fadeFromRight-2 {
+  opacity: 0;
+  /* CSS3 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE6+ */
+  zoom: 1;
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: fadeFromRight-2;
+  animation: fadeFromRight-2;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* 
+ * FadeIn from left
+ * So much far distance
+ */
+@-webkit-keyframes fadeFromRight-3 {
+  /* line 195, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(15000px);
+    -moz-transform: translateX(15000px);
+    -ms-transform: translateX(15000px);
+    -o-transform: translateX(15000px);
+    transform: translateX(15000px);
+  }
+
+  /* line 196, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeFromRight-3 {
+  /* line 195, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(15000px);
+    -moz-transform: translateX(15000px);
+    -ms-transform: translateX(15000px);
+    -o-transform: translateX(15000px);
+    transform: translateX(15000px);
+  }
+
+  /* line 196, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeFromRight-3 {
+  /* line 195, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(15000px);
+    -moz-transform: translateX(15000px);
+    -ms-transform: translateX(15000px);
+    -o-transform: translateX(15000px);
+    transform: translateX(15000px);
+  }
+
+  /* line 196, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromRight-3 {
+  /* line 195, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(15000px);
+    -moz-transform: translateX(15000px);
+    -ms-transform: translateX(15000px);
+    -o-transform: translateX(15000px);
+    transform: translateX(15000px);
+  }
+
+  /* line 196, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=100);
+    /* IE6+ */
+    zoom: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 198, ../scss/bodoke/object/_animations.scss */
+.fadeFromRight-3 {
+  opacity: 0;
+  /* CSS3 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE6+ */
+  zoom: 1;
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: fadeFromRight-3;
+  animation: fadeFromRight-3;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* 
+ * FadeIn from left
+ * Normal Distance
+ */
+@-webkit-keyframes fadeFromLeft-1 {
+  /* line 210, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-6000px);
+    -moz-transform: translateX(-6000px);
+    -ms-transform: translateX(-6000px);
+    -o-transform: translateX(-6000px);
+    transform: translateX(-6000px);
+  }
+
+  /* line 211, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeFromLeft-1 {
+  /* line 210, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-6000px);
+    -moz-transform: translateX(-6000px);
+    -ms-transform: translateX(-6000px);
+    -o-transform: translateX(-6000px);
+    transform: translateX(-6000px);
+  }
+
+  /* line 211, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeFromLeft-1 {
+  /* line 210, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-6000px);
+    -moz-transform: translateX(-6000px);
+    -ms-transform: translateX(-6000px);
+    -o-transform: translateX(-6000px);
+    transform: translateX(-6000px);
+  }
+
+  /* line 211, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromLeft-1 {
+  /* line 210, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-6000px);
+    -moz-transform: translateX(-6000px);
+    -ms-transform: translateX(-6000px);
+    -o-transform: translateX(-6000px);
+    transform: translateX(-6000px);
+  }
+
+  /* line 211, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 213, ../scss/bodoke/object/_animations.scss */
+.fadeFromLeft-1 {
+  opacity: 0;
+  /* CSS3 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE6+ */
+  zoom: 1;
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: fadeFromLeft-1;
+  animation: fadeFromLeft-1;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* 
+ * FadeIn from left
+ * Far distance
+ */
+@-webkit-keyframes fadeFromLeft-2 {
+  /* line 219, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-8500px);
+    -moz-transform: translateX(-8500px);
+    -ms-transform: translateX(-8500px);
+    -o-transform: translateX(-8500px);
+    transform: translateX(-8500px);
+  }
+
+  /* line 220, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeFromLeft-2 {
+  /* line 219, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-8500px);
+    -moz-transform: translateX(-8500px);
+    -ms-transform: translateX(-8500px);
+    -o-transform: translateX(-8500px);
+    transform: translateX(-8500px);
+  }
+
+  /* line 220, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeFromLeft-2 {
+  /* line 219, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-8500px);
+    -moz-transform: translateX(-8500px);
+    -ms-transform: translateX(-8500px);
+    -o-transform: translateX(-8500px);
+    transform: translateX(-8500px);
+  }
+
+  /* line 220, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromLeft-2 {
+  /* line 219, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-8500px);
+    -moz-transform: translateX(-8500px);
+    -ms-transform: translateX(-8500px);
+    -o-transform: translateX(-8500px);
+    transform: translateX(-8500px);
+  }
+
+  /* line 220, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 222, ../scss/bodoke/object/_animations.scss */
+.fadeFromLeft-2 {
+  opacity: 0;
+  /* CSS3 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE6+ */
+  zoom: 1;
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: fadeFromLeft-2;
+  animation: fadeFromLeft-2;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* 
+ * FadeIn from left
+ * So much far distance
+ */
+@-webkit-keyframes fadeFromLeft-3 {
+  /* line 228, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-15000px);
+    -moz-transform: translateX(-15000px);
+    -ms-transform: translateX(-15000px);
+    -o-transform: translateX(-15000px);
+    transform: translateX(-15000px);
+  }
+
+  /* line 229, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes fadeFromLeft-3 {
+  /* line 228, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-15000px);
+    -moz-transform: translateX(-15000px);
+    -ms-transform: translateX(-15000px);
+    -o-transform: translateX(-15000px);
+    transform: translateX(-15000px);
+  }
+
+  /* line 229, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-o-keyframes fadeFromLeft-3 {
+  /* line 228, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-15000px);
+    -moz-transform: translateX(-15000px);
+    -ms-transform: translateX(-15000px);
+    -o-transform: translateX(-15000px);
+    transform: translateX(-15000px);
+  }
+
+  /* line 229, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeFromLeft-3 {
+  /* line 228, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-15000px);
+    -moz-transform: translateX(-15000px);
+    -ms-transform: translateX(-15000px);
+    -o-transform: translateX(-15000px);
+    transform: translateX(-15000px);
+  }
+
+  /* line 229, ../scss/bodoke/object/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* line 231, ../scss/bodoke/object/_animations.scss */
+.fadeFromLeft-3 {
+  opacity: 0;
+  /* CSS3 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=0);
+  /* IE6+ */
+  zoom: 1;
+  /* 
+   * animation-name
+   * animation-duration
+   * animation-timing-function
+   * animation-delay
+   * animation-iteration-count
+   * animation-direction.
+   */
+  -webkit-animation: fadeFromLeft-3;
+  animation: fadeFromLeft-3;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* 
+ * Delay Clases
+ */
+/* line 241, ../scss/bodoke/object/_animations.scss */
+.delay-1 {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  /* Safari and Chrome */
+}
+
+/* line 241, ../scss/bodoke/object/_animations.scss */
+.delay-2 {
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  /* Safari and Chrome */
+}
+
+/* line 241, ../scss/bodoke/object/_animations.scss */
+.delay-3 {
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  /* Safari and Chrome */
+}
+
+/* line 241, ../scss/bodoke/object/_animations.scss */
+.delay-4 {
+  animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  /* Safari and Chrome */
+}
+
+/* line 241, ../scss/bodoke/object/_animations.scss */
+.delay-5 {
+  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  /* Safari and Chrome */
+}
+
+/* line 241, ../scss/bodoke/object/_animations.scss */
+.delay-6 {
+  animation-delay: 6s;
+  -webkit-animation-delay: 6s;
+  /* Safari and Chrome */
+}
+
+/* line 241, ../scss/bodoke/object/_animations.scss */
+.delay-7 {
+  animation-delay: 7s;
+  -webkit-animation-delay: 7s;
+  /* Safari and Chrome */
+}
+
+/* line 241, ../scss/bodoke/object/_animations.scss */
+.delay-8 {
+  animation-delay: 8s;
+  -webkit-animation-delay: 8s;
+  /* Safari and Chrome */
+}
+
+/* line 4, ../scss/bodoke/object/_titles.scss */
+.title {
+  font-size: 2.8em;
+  line-height: 1em;
+  font-weight: 300;
+}
+/* line 10, ../scss/bodoke/object/_titles.scss */
+.title span.yellow {
+  color: #fcb608;
+}
+
+/* line 19, ../scss/bodoke/object/_titles.scss */
+.title.small {
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+/* line 25, ../scss/bodoke/object/_titles.scss */
+.title.medium {
+  font-size: 2em;
+}
+/* line 28, ../scss/bodoke/object/_titles.scss */
+.title.bigger {
+  font-size: 3.7em;
+  line-height: 1.1em;
+}
+
+/* line 39, ../scss/bodoke/object/_titles.scss */
+.title.yellow {
+  color: #fcb608;
+}
+/* line 40, ../scss/bodoke/object/_titles.scss */
+.title.blue {
+  color: #69afeb;
+}
+/* line 41, ../scss/bodoke/object/_titles.scss */
+.title.red {
+  color: #dd4a3a;
+}
+/* line 42, ../scss/bodoke/object/_titles.scss */
+.title.green {
+  color: #00a25f;
+}
+/* line 43, ../scss/bodoke/object/_titles.scss */
+.title.black {
+  color: #333333;
+}
+
+/* line 4, ../scss/bodoke/object/_text.scss */
+p.lead {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+/* line 4, ../scss/bodoke/object/_menu.scss */
+nav ul, nav ol {
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 11, ../scss/bodoke/object/_menu.scss */
+nav ul.horizontal li, nav ul.horz li, nav ol.horizontal li, nav ol.horz li {
+  float: left;
+}
+/* line 12, ../scss/bodoke/object/_menu.scss */
+nav ul.horizontal.centered, nav ul.horizontal.inline, nav ul.horz.centered, nav ul.horz.inline, nav ol.horizontal.centered, nav ol.horizontal.inline, nav ol.horz.centered, nav ol.horz.inline {
+  text-align: center;
+}
+/* line 14, ../scss/bodoke/object/_menu.scss */
+nav ul.horizontal.centered li, nav ul.horizontal.inline li, nav ul.horz.centered li, nav ul.horz.inline li, nav ol.horizontal.centered li, nav ol.horizontal.inline li, nav ol.horz.centered li, nav ol.horz.inline li {
+  float: none;
+  display: inline-block;
+}
+/* line 21, ../scss/bodoke/object/_menu.scss */
+nav ul.vertical li, nav ul.v li, nav ol.vertical li, nav ol.v li {
+  margin: 0;
+  display: block;
+  float: none;
+}
+/* line 27, ../scss/bodoke/object/_menu.scss */
+nav ul li, nav ol li {
+  *zoom: 1;
+}
+/* line 13, ../scss/bodoke/settings/_mixins.scss */
+nav ul li:before, nav ul li:after, nav ol li:before, nav ol li:after {
+  content: "";
+  display: table;
+}
+/* line 14, ../scss/bodoke/settings/_mixins.scss */
+nav ul li:after, nav ol li:after {
+  clear: both;
+}
+
+/* line 34, ../scss/bodoke/object/_menu.scss */
+.menu {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+/* line 42, ../scss/bodoke/object/_menu.scss */
+.menu ul, .menu ol, .menu nav {
+  margin: 0;
+  padding: 0;
+}
+/* line 46, ../scss/bodoke/object/_menu.scss */
+.menu.fixed {
+  position: fixed;
+}
+/* line 47, ../scss/bodoke/object/_menu.scss */
+.menu.absolute {
+  position: absolute;
+}
+/* line 48, ../scss/bodoke/object/_menu.scss */
+.menu.static {
+  position: static;
+}
+/* line 50, ../scss/bodoke/object/_menu.scss */
+.menu.top {
+  top: 0;
+}
+/* line 51, ../scss/bodoke/object/_menu.scss */
+.menu.left {
+  left: 0;
+}
+/* line 52, ../scss/bodoke/object/_menu.scss */
+.menu.bottom {
+  bottom: 0;
+}
+/* line 53, ../scss/bodoke/object/_menu.scss */
+.menu.right {
+  right: 0;
+}
+
+/* line 3, ../scss/bodoke/object/_dropdown.scss */
+.dropdown {
+  list-style-image: none;
+  list-style-type: none;
+  position: relative;
+  min-width: 150px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  color: #333333;
+  background-color: #e6e6e6;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6);
+}
+/* line 17, ../scss/bodoke/object/_dropdown.scss */
+.dropdown .handler, .dropdown li, .dropdown > div, .dropdown .item {
+  line-height: 2.4em;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+  background-color: #f7f7f7;
+}
+/* line 24, ../scss/bodoke/object/_dropdown.scss */
+.dropdown li:hover, .dropdown .item:hover {
+  background-color: white;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+/* line 29, ../scss/bodoke/object/_dropdown.scss */
+.dropdown .handler {
+  position: relative;
+  background-color: #00a25f;
+  color: #FFF;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+/* line 35, ../scss/bodoke/object/_dropdown.scss */
+.dropdown .handler .icon {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+/* line 47, ../scss/bodoke/object/_dropdown.scss */
+.dropdown.open .list {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 54, ../scss/bodoke/object/_dropdown.scss */
+.dropdown .list {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transform: translateY(-3px);
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+/* line 65, ../scss/bodoke/object/_dropdown.scss */
+.dropdown .list a {
+  display: block;
+  color: #333333;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* line 10, ../scss/bodoke/object/_table.scss */
+table thead th {
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 2.5em;
+  padding: 0;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+/* line 23, ../scss/bodoke/object/_table.scss */
+table tr {
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+  border: none;
+}
+/* line 34, ../scss/bodoke/object/_table.scss */
+table td {
+  border: none;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 3em;
+  padding: 0;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+/* line 44, ../scss/bodoke/object/_table.scss */
+table td:last-child {
+  border-right: none;
+}
+/* line 47, ../scss/bodoke/object/_table.scss */
+table td.title {
+  font-weight: 500px;
+  font-size: 1em;
+  line-height: 3em;
+}
+
+/* line 64, ../scss/bodoke/object/_table.scss */
+table.blue thead th {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3198f0), to(#107fde));
+  background: -moz-linear-gradient(top, #3198f0, #107fde);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3198f0', endColorstr='#107fde');
+}
+/* line 69, ../scss/bodoke/object/_table.scss */
+table.blue tbody, table.blue th {
+  color: #FFF;
+}
+/* line 76, ../scss/bodoke/object/_table.scss */
+table.blue tbody {
+  text-shadow: 0 1px 0 rgba(16, 127, 222, 0.7);
+}
+/* line 83, ../scss/bodoke/object/_table.scss */
+table.blue tr {
+  background-color: transparent;
+  background-color: #90c7f7;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF90C7F7,endColorstr=#FF90C7F7);
+  zoom: 1;
+}
+/* line 88, ../scss/bodoke/object/_table.scss */
+table.blue tr.even {
+  background-color: transparent;
+  background-color: #7dbef6;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF7DBEF6,endColorstr=#FF7DBEF6);
+  zoom: 1;
+}
+/* line 95, ../scss/bodoke/object/_table.scss */
+table.blue tr:hover {
+  background-color: transparent;
+  background-color: #55aaf3;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF55AAF3,endColorstr=#FF55AAF3);
+  zoom: 1;
+}
+/* line 100, ../scss/bodoke/object/_table.scss */
+table.blue td {
+  border-right-color: #60b0f3;
+}
+/* line 64, ../scss/bodoke/object/_table.scss */
+table.dark-blue thead th {
+  background: -webkit-gradient(linear, left top, left bottom, from(#212f60), to(#141d3a));
+  background: -moz-linear-gradient(top, #212f60, #141d3a);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#212f60', endColorstr='#141d3a');
+}
+/* line 69, ../scss/bodoke/object/_table.scss */
+table.dark-blue tbody, table.dark-blue th {
+  color: #FFF;
+}
+/* line 76, ../scss/bodoke/object/_table.scss */
+table.dark-blue tbody {
+  text-shadow: 0 1px 0 rgba(20, 29, 58, 0.7);
+}
+/* line 83, ../scss/bodoke/object/_table.scss */
+table.dark-blue tr {
+  background-color: transparent;
+  background-color: #3b55ac;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3B55AC,endColorstr=#FF3B55AC);
+  zoom: 1;
+}
+/* line 88, ../scss/bodoke/object/_table.scss */
+table.dark-blue tr.even {
+  background-color: transparent;
+  background-color: #364d9d;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF364D9D,endColorstr=#FF364D9D);
+  zoom: 1;
+}
+/* line 95, ../scss/bodoke/object/_table.scss */
+table.dark-blue tr:hover {
+  background-color: transparent;
+  background-color: #2b3d7d;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF2B3D7D,endColorstr=#FF2B3D7D);
+  zoom: 1;
+}
+/* line 100, ../scss/bodoke/object/_table.scss */
+table.dark-blue td {
+  border-right-color: #2e4286;
+}
+/* line 64, ../scss/bodoke/object/_table.scss */
+table.light-gray thead th {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d1c7c7), to(#baabab));
+  background: -moz-linear-gradient(top, #d1c7c7, #baabab);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1c7c7', endColorstr='#baabab');
+}
+/* line 69, ../scss/bodoke/object/_table.scss */
+table.light-gray tbody, table.light-gray th {
+  color: #333333;
+}
+/* line 76, ../scss/bodoke/object/_table.scss */
+table.light-gray tbody {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+/* line 83, ../scss/bodoke/object/_table.scss */
+table.light-gray tr {
+  background-color: transparent;
+  background-color: white;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF,endColorstr=#FFFFFFFF);
+  zoom: 1;
+}
+/* line 88, ../scss/bodoke/object/_table.scss */
+table.light-gray tr.even {
+  background-color: transparent;
+  background-color: #f6f4f4;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF6F4F4,endColorstr=#FFF6F4F4);
+  zoom: 1;
+}
+/* line 95, ../scss/bodoke/object/_table.scss */
+table.light-gray tr:hover {
+  background-color: transparent;
+  background-color: #e2dcdc;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE2DCDC,endColorstr=#FFE2DCDC);
+  zoom: 1;
+}
+/* line 100, ../scss/bodoke/object/_table.scss */
+table.light-gray td {
+  border-right-color: #e8e3e3;
+}
+
+/* line 7, ../scss/bodoke/object/_slide-detail.scss */
+.slide-detail {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  z-index: 10;
+  height: 100%;
+  width: 50%;
+  -webkit-box-shadow: -4px 0 10px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: -4px 0 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: -4px 0 10px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transition: right 1.4s ease-out;
+  -moz-transition: right 1.4s ease-out;
+  -o-transition: right 1.4s ease-out;
+  transition: right 1.4s ease-out;
+  background-color: transparent;
+  background-color: white;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF,endColorstr=#FFFFFFFF);
+  zoom: 1;
+}
+/* line 17, ../scss/bodoke/object/_slide-detail.scss */
+.slide-detail.open {
+  right: 0;
+}
+/* line 24, ../scss/bodoke/object/_slide-detail.scss */
+.slide-detail .back {
+  display: block;
+  position: absolute;
+  left: -12px;
+  top: 50px;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 1 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 1 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 1 3px rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000);
+  zoom: 1;
+  z-index: 2;
+}
+/* line 41, ../scss/bodoke/object/_slide-detail.scss */
+.slide-detail .detail-image {
+  position: relative;
+  margin-bottom: 0.9375em;
+}
+/* line 189, ../scss/bodoke/settings/_mixins.scss */
+.slide-detail .detail-image:before {
+  padding-top: 50%;
+  content: '';
+  display: block;
+}
+/* line 196, ../scss/bodoke/settings/_mixins.scss */
+.slide-detail .detail-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 49, ../scss/bodoke/object/_slide-detail.scss */
+.slide-detail .g-plus-button {
+  position: absolute;
+  right: -15px;
+  bottom: 20px;
+  z-index: 10;
+}
+
+@media only screen and (max-height: 600px) {
+  /* 
+   * Hasta 1024px 
+   */
+  /* line 72, ../scss/bodoke/object/_slide-detail.scss */
+  .slide-detail {
+    font-size: 12px;
+  }
+}
+/* line 3, ../scss/bodoke/object/_code.scss */
+pre, code {
+  font-family: "Courrier", "courrier new", monospace;
+}
+
+/* line 7, ../scss/bodoke/object/_code.scss */
+pre {
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+  white-space: pre-wrap;
+  /* css-3 */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  background-color: #e6e6e6;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE6E6E6,endColorstr=#FFE6E6E6);
+  zoom: 1;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  border: 1px solid #b3b3b3;
+  padding: 10px 12px;
+  overflow: auto;
+  text-align: left;
+}
+/* line 20, ../scss/bodoke/object/_code.scss */
+pre:hover {
+  position: relative;
+  z-index: 99;
+  -webkit-box-shadow: 0 0 5px 1px #69afeb;
+  -moz-box-shadow: 0 0 5px 1px #69afeb;
+  box-shadow: 0 0 5px 1px #69afeb;
+}
+
+/* line 3, ../scss/bodoke/object/_bodoke-example.scss */
+.example-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  background-color: #69afeb;
+  text-shadow: 0 1px 0 #1971bb;
+}
+/* line 9, ../scss/bodoke/object/_bodoke-example.scss */
+.example-header h1 {
+  color: white;
+  line-height: 1em;
+  text-indent: -4px;
+  font-size: 3.7em;
+  font-weight: 500;
+  font-family: "Bodoke";
+}
+/* line 17, ../scss/bodoke/object/_bodoke-example.scss */
+.example-header small {
+  color: white;
+}
+
+/* line 25, ../scss/bodoke/object/_bodoke-example.scss */
+.example-content {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 30, ../scss/bodoke/object/_bodoke-example.scss */
+.mobile.col, .mobile.cols, .mobile.column, .mobile.columns {
+  background-color: #69afeb;
+}
+
+/* line 35, ../scss/bodoke/object/_bodoke-example.scss */
+.row.example {
+  border-top: 1px solid #b3b3b3;
+  border-bottom: 1px solid #b3b3b3;
+}
+/* line 38, ../scss/bodoke/object/_bodoke-example.scss */
+.row.example .col, .row.example .cols, .row.example .column, .row.example .columns {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #f2f2f2;
+  border-left: 1px solid #b3b3b3;
+  border-right: 1px solid #b3b3b3;
+  font-weight: 600;
+  color: #595959;
+}
+/* line 46, ../scss/bodoke/object/_bodoke-example.scss */
+.row.example .col .col, .row.example .col .cols, .row.example .col .column, .row.example .col .columns, .row.example .cols .col, .row.example .cols .cols, .row.example .cols .column, .row.example .cols .columns, .row.example .column .col, .row.example .column .cols, .row.example .column .column, .row.example .column .columns, .row.example .columns .col, .row.example .columns .cols, .row.example .columns .column, .row.example .columns .columns {
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+}
+
+/*
+* _helpers.scss
+* Helper clases
+*/
+/* line 6, ../scss/bodoke/settings/_helpers.scss */
+.loading {
+  background-image: url("../img/preloader.gif");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  height: 100%;
+  position: relative;
+}
+/* line 14, ../scss/bodoke/settings/_helpers.scss */
+.loading:before {
+  content: "Loading" !important;
+  position: absolute !important;
+  height: 20px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 70px;
+  width: 100px !important;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 26, ../scss/bodoke/settings/_helpers.scss */
+.loading .fade-container {
+  min-height: 300px;
+  opacity: 1;
+  position: relative;
+}
+
+/* Alert */
+/* line 38, ../scss/bodoke/settings/_helpers.scss */
+.alert {
+  background-color: #ffc;
+  display: block;
+  padding: 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 44, ../scss/bodoke/settings/_helpers.scss */
+.no-desktop {
+  display: none;
+}
+
+/* line 51, ../scss/bodoke/settings/_helpers.scss */
+.float-left, .left {
+  float: left !important;
+}
+
+/* line 53, ../scss/bodoke/settings/_helpers.scss */
+.float-right, .right {
+  float: right !important;
+}
+
+/* line 55, ../scss/bodoke/settings/_helpers.scss */
+.center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  float: none !important;
+  display: block !important;
+}
+
+/* line 61, ../scss/bodoke/settings/_helpers.scss */
+.a-center {
+  display: block;
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto !important;
+  float: none !important;
+}
+
+/* line 68, ../scss/bodoke/settings/_helpers.scss */
+.v-center {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  float: none;
+}
+
+/* line 80, ../scss/bodoke/settings/_helpers.scss */
+.inline {
+  display: inline;
+  float: none;
+}
+
+/* line 84, ../scss/bodoke/settings/_helpers.scss */
+.strong {
+  font-weight: bold;
+}
+
+/* line 87, ../scss/bodoke/settings/_helpers.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 90, ../scss/bodoke/settings/_helpers.scss */
+.center-text {
+  text-align: center;
+}
+
+/* line 98, ../scss/bodoke/settings/_helpers.scss */
+.block {
+  display: block;
+}
+
+/* line 101, ../scss/bodoke/settings/_helpers.scss */
+.inline-block {
+  display: inline-block;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 106, ../scss/bodoke/settings/_helpers.scss */
+.clear-both {
+  clear: both;
+  float: none;
+}
+
+/* line 115, ../scss/bodoke/settings/_helpers.scss */
+.none, [hidden], .hidden, .hide {
+  display: none;
+}
+
+/* line 119, ../scss/bodoke/settings/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/* line 129, ../scss/bodoke/settings/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* line 140, ../scss/bodoke/settings/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 144, ../scss/bodoke/settings/_helpers.scss */
+.visuallyvisible {
+  clip: auto;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  left: 0;
+}
+
+/* line 151, ../scss/bodoke/settings/_helpers.scss */
+.fh, .full-height {
+  height: 100%;
+}
+
+/* line 158, ../scss/bodoke/settings/_helpers.scss */
+.image-left {
+  margin-right: 20px;
+}
+
+/* line 161, ../scss/bodoke/settings/_helpers.scss */
+.image-right {
+  margin-left: 20px;
+}
+
+/* line 170, ../scss/bodoke/settings/_helpers.scss */
+.clear,
+.clearfix {
+  *zoom: 1;
+}
+/* line 172, ../scss/bodoke/settings/_helpers.scss */
+.clear:before, .clear:after,
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 173, ../scss/bodoke/settings/_helpers.scss */
+.clear:after,
+.clearfix:after {
+  clear: both;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c1-12 {
+  width: 8.33333%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c2-12 {
+  width: 16.66667%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c3-12 {
+  width: 25%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c4-12 {
+  width: 33.33333%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c5-12 {
+  width: 41.66667%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c6-12 {
+  width: 50%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c7-12 {
+  width: 58.33333%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c8-12 {
+  width: 66.66667%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c9-12 {
+  width: 75%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c10-12 {
+  width: 83.33333%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c11-12 {
+  width: 91.66667%;
+}
+
+/* line 149, ../scss/bodoke/grid/_grid.scss */
+.c12-12 {
+  width: 100%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-1-12 {
+  margin-left: 8.33333%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-2-12 {
+  margin-left: 16.66667%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-3-12 {
+  margin-left: 25%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-4-12 {
+  margin-left: 33.33333%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-5-12 {
+  margin-left: 41.66667%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-6-12 {
+  margin-left: 50%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-7-12 {
+  margin-left: 58.33333%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-8-12 {
+  margin-left: 66.66667%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-9-12 {
+  margin-left: 75%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-10-12 {
+  margin-left: 83.33333%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-11-12 {
+  margin-left: 91.66667%;
+}
+
+/* line 158, ../scss/bodoke/grid/_grid.scss */
+.offset-12-12 {
+  margin-left: 100%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-1-12 {
+  right: 8.33333%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-2-12 {
+  right: 16.66667%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-3-12 {
+  right: 25%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-4-12 {
+  right: 33.33333%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-5-12 {
+  right: 41.66667%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-6-12 {
+  right: 50%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-7-12 {
+  right: 58.33333%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-8-12 {
+  right: 66.66667%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-9-12 {
+  right: 75%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-10-12 {
+  right: 83.33333%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-11-12 {
+  right: 91.66667%;
+}
+
+/* line 167, ../scss/bodoke/grid/_grid.scss */
+.pull-12-12 {
+  right: 100%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 191, ../scss/bodoke/grid/_grid.scss */
+  .col, .cols, .column, .columns {
+    display: block;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c1-12.tablet {
+    width: 8.33333%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c2-12.tablet {
+    width: 16.66667%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c3-12.tablet {
+    width: 25%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c4-12.tablet {
+    width: 33.33333%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c5-12.tablet {
+    width: 41.66667%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c6-12.tablet {
+    width: 50%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c7-12.tablet {
+    width: 58.33333%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c8-12.tablet {
+    width: 66.66667%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c9-12.tablet {
+    width: 75%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c10-12.tablet {
+    width: 83.33333%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c11-12.tablet {
+    width: 91.66667%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c12-12.tablet {
+    width: 100%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-1-12.tablet {
+    margin-left: 8.33333%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-2-12.tablet {
+    margin-left: 16.66667%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-3-12.tablet {
+    margin-left: 25%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-4-12.tablet {
+    margin-left: 33.33333%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-5-12.tablet {
+    margin-left: 41.66667%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-6-12.tablet {
+    margin-left: 50%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-7-12.tablet {
+    margin-left: 58.33333%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-8-12.tablet {
+    margin-left: 66.66667%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-9-12.tablet {
+    margin-left: 75%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-10-12.tablet {
+    margin-left: 83.33333%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-11-12.tablet {
+    margin-left: 91.66667%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-12-12.tablet {
+    margin-left: 100%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-1-12.tablet {
+    right: 8.33333%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-2-12.tablet {
+    right: 16.66667%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-3-12.tablet {
+    right: 25%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-4-12.tablet {
+    right: 33.33333%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-5-12.tablet {
+    right: 41.66667%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-6-12.tablet {
+    right: 50%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-7-12.tablet {
+    right: 58.33333%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-8-12.tablet {
+    right: 66.66667%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-9-12.tablet {
+    right: 75%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-10-12.tablet {
+    right: 83.33333%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-11-12.tablet {
+    right: 91.66667%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-12-12.tablet {
+    right: 100%;
+  }
+
+  /* line 203, ../scss/bodoke/grid/_grid.scss */
+  .tablet-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+  }
+
+  /* line 209, ../scss/bodoke/grid/_grid.scss */
+  .tablet-a-center {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  /* line 215, ../scss/bodoke/grid/_grid.scss */
+  .tablet-center-text {
+    text-align: center;
+  }
+
+  /* line 221, ../scss/bodoke/grid/_grid.scss */
+  .tablet-left {
+    float: left;
+  }
+
+  /* line 222, ../scss/bodoke/grid/_grid.scss */
+  .tablet-right {
+    float: right;
+  }
+
+  /* line 223, ../scss/bodoke/grid/_grid.scss */
+  .tablet-no-float {
+    float: none;
+  }
+
+  /* line 224, ../scss/bodoke/grid/_grid.scss */
+  .hide-tablet {
+    display: none;
+  }
+
+  /* line 225, ../scss/bodoke/grid/_grid.scss */
+  .show-tablet {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  /* line 237, ../scss/bodoke/grid/_grid.scss */
+  .row {
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+  }
+  /* line 240, ../scss/bodoke/grid/_grid.scss */
+  .row.row-one {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+  }
+  /* line 241, ../scss/bodoke/grid/_grid.scss */
+  .row.row-two {
+    margin-top: 0.50em;
+    margin-bottom: 0.50em;
+  }
+  /* line 242, ../scss/bodoke/grid/_grid.scss */
+  .row.row-three {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  /* line 245, ../scss/bodoke/grid/_grid.scss */
+  .col, .cols, .column, .columns {
+    display: block;
+    width: 100%;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    margin-left: 0 !important;
+    right: 0 !important;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c1-12.mobile {
+    width: 8.33333%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c2-12.mobile {
+    width: 16.66667%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c3-12.mobile {
+    width: 25%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c4-12.mobile {
+    width: 33.33333%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c5-12.mobile {
+    width: 41.66667%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c6-12.mobile {
+    width: 50%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c7-12.mobile {
+    width: 58.33333%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c8-12.mobile {
+    width: 66.66667%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c9-12.mobile {
+    width: 75%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c10-12.mobile {
+    width: 83.33333%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c11-12.mobile {
+    width: 91.66667%;
+  }
+
+  /* line 149, ../scss/bodoke/grid/_grid.scss */
+  .c12-12.mobile {
+    width: 100%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-1-12.mobile {
+    margin-left: 8.33333%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-2-12.mobile {
+    margin-left: 16.66667%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-3-12.mobile {
+    margin-left: 25%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-4-12.mobile {
+    margin-left: 33.33333%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-5-12.mobile {
+    margin-left: 41.66667%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-6-12.mobile {
+    margin-left: 50%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-7-12.mobile {
+    margin-left: 58.33333%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-8-12.mobile {
+    margin-left: 66.66667%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-9-12.mobile {
+    margin-left: 75%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-10-12.mobile {
+    margin-left: 83.33333%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-11-12.mobile {
+    margin-left: 91.66667%;
+  }
+
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .offset-12-12.mobile {
+    margin-left: 100%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-1-12.mobile {
+    right: 8.33333%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-2-12.mobile {
+    right: 16.66667%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-3-12.mobile {
+    right: 25%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-4-12.mobile {
+    right: 33.33333%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-5-12.mobile {
+    right: 41.66667%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-6-12.mobile {
+    right: 50%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-7-12.mobile {
+    right: 58.33333%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-8-12.mobile {
+    right: 66.66667%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-9-12.mobile {
+    right: 75%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-10-12.mobile {
+    right: 83.33333%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-11-12.mobile {
+    right: 91.66667%;
+  }
+
+  /* line 167, ../scss/bodoke/grid/_grid.scss */
+  .pull-12-12.mobile {
+    right: 100%;
+  }
+
+  /* line 260, ../scss/bodoke/grid/_grid.scss */
+  .col.mobile, .cols.mobile, .column.mobile, .columns.mobile {
+    float: left;
+  }
+
+  /* line 265, ../scss/bodoke/grid/_grid.scss */
+  .container:not(.mobile) {
+    width: 100%;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 271, ../scss/bodoke/grid/_grid.scss */
+  .mobile-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+  }
+
+  /* line 278, ../scss/bodoke/grid/_grid.scss */
+  .mobile-a-center {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  /* line 284, ../scss/bodoke/grid/_grid.scss */
+  .mobile-center-text {
+    text-align: center;
+  }
+
+  /* line 290, ../scss/bodoke/grid/_grid.scss */
+  .mobile-left {
+    float: left;
+  }
+
+  /* line 291, ../scss/bodoke/grid/_grid.scss */
+  .mobile-right {
+    float: right;
+  }
+
+  /* line 292, ../scss/bodoke/grid/_grid.scss */
+  .mobile-no-float {
+    float: none;
+  }
+
+  /* line 294, ../scss/bodoke/grid/_grid.scss */
+  table th, table td {
+    padding: 4px;
+  }
+
+  /* line 297, ../scss/bodoke/grid/_grid.scss */
+  .hide-mobile {
+    display: none;
+  }
+
+  /* line 298, ../scss/bodoke/grid/_grid.scss */
+  .show-mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* line 309, ../scss/bodoke/grid/_grid.scss */
+  .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 1.875em;
+    padding-right: 1.875em;
+  }
+
+  /* line 317, ../scss/bodoke/grid/_grid.scss */
+  .col, .cols, .column, .columns {
+    width: 100%;
+    margin: 0 !important;
+    right: 0 !important;
+  }
+
+  /* line 329, ../scss/bodoke/grid/_grid.scss */
+  .md-a-center {
+    display: block;
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto !important;
+    float: none !important;
+  }
+
+  /* line 336, ../scss/bodoke/grid/_grid.scss */
+  .md-v-center {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    margin: auto;
+    float: none;
+  }
+}
+/* line 36, ../scss/app.scss */
+html {
+  height: 100%;
+  /*
+  &, body {
+  	min-width: 1000px;
+  	min-height: 600px;
+  }
+  */
+}
+
+/* line 48, ../scss/app.scss */
+body {
+  position: relative;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+/* line 55, ../scss/app.scss */
+body.full, body.full .inner-container, body.full .container, body.full .container .inner-container {
+  height: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  /* 
+  * _1024.scss
+  * Resoluciones hasta 1024px
+  */
+}
+@media only screen and (max-height: 600px) {
+  /* 
+  * _netbook.scss
+  * Resoluciones hasta 600px de alto
+  */
+}
+@media only screen and (min-width: 320px) and (max-width: 640px) {
+  /* 
+  * _mobile.scss
+  * Resoluciones para mobile
+  */
+}
+@media print {
+  /*
+  * _print.scss
+  * Print Styles
+  */
+  /* line 6, ../scss/media/_print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 14, ../scss/media/_print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 18, ../scss/media/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 22, ../scss/media/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 32, ../scss/media/_print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 37, ../scss/media/_print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 42, ../scss/media/_print.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 47, ../scss/media/_print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 51, ../scss/media/_print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 61, ../scss/media/_print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 67, ../scss/media/_print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

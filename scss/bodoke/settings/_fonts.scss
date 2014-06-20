@@ -1,0 +1,28 @@
+// _fonts.scss
+
+// ==============================
+// FUENTES
+// ==============================
+
+// Path hacia la carpeta de fuentes
+// ==============================
+$font-path:				'../font/';
+
+
+// Lista de fuentes para utilizar
+// ==============================
+$open-sans:				'Open Sans', sans-serif;
+$open-sans-condensed:	'Open Sans Condensed', sans-serif;
+$fjalla-one:			'Fjalla One', sans-serif;
+$courrier:				'Courrier', 'courrier new', monospace;
+$font-bodoke:			'Bodoke'; //, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+// Carga las fuentes
+// ==============================
+// @include font-face( 'Bodoke', font-files('Bodoke.tff', 'ttf'), $font-path );
+@font-face {
+  font-family: "Bodoke";
+  src: url($font-path+'Bodoke.tff');
+  src: url($font-path+'Bodoke.tff') format('eot'), url($font-path+'Bodoke.tff') format('truetype');
+}

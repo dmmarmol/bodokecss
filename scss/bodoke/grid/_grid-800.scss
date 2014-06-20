@@ -1,0 +1,45 @@
+// _grid-800.scss
+
+.container {
+	width: 100%;
+	max-width: none;
+	padding-left: $col-offset * 2; 
+	padding-right: $col-offset * 2; 
+}
+
+.col, .cols, .column, .columns {
+	@include col(12);
+	float: none;
+}
+
+// Ancho de columnas que se ejecuta cuando la resolucion
+// Es menor a 800
+// ====================
+.md-one 	{ @include col(1); }
+.md-two 	{ @include col(2); }
+.md-three 	{ @include col(3); }
+.md-four 	{ @include col(4); }
+.md-five 	{ @include col(5); }
+.md-six 	{ @include col(6); }
+.md-seven 	{ @include col(7); }
+.md-eight 	{ @include col(8); }
+.md-nine 	{ @include col(9); }
+.md-ten 	{ @include col(10); }
+.md-eleven 	{ @include col(11); }
+.md-twelve 	{ @include col(12); }
+
+.md-a-center {
+	display: block;
+	position: absolute!important;
+	top: 0; right: 0; bottom: 0; left: 0;
+	margin: auto!important;
+	float: none!important;
+}
+.md-v-center {
+	display: block;
+	position: absolute;
+	top: 0; right: auto; bottom: 0; left: auto;
+	margin: auto;
+	float: none;
+}
+// .md-container-full

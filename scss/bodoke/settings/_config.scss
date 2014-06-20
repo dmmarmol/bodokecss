@@ -1,0 +1,40 @@
+// _vars.scss
+// Variables globales para todo el sitio
+
+
+// ======================
+// PATHS
+// ======================
+$imgPath: '../img/';
+
+
+// ======================
+// UNIDADES BASICAS
+// ======================
+
+// Tiempo
+$transition-time:		0.35s;		 		// Descontinuado en bodoke.css
+$transition-speed:		0.35s;
+
+
+// ======================
+// FUENTES / TIPOGRAFIA
+// ======================
+$global-font:			$open-sans;
+$global-font-size:		14px;
+
+$text-font:				$open-sans;
+$text-condensed:		$fjalla-one;
+
+// ======================
+// RESOLUCIONES
+// ======================
+// Aaspect Ratio
+$square-ratio:			4 / 3;
+$wide-ratio:			16 / 3;
+$aureo: 				(1 + sqrt(5) ) / 2;
+// Viewport Widths
+$screen-very-old:		800px;
+$screen-old:			1024px;
+$screen-laptop:			1366px;
+$screen-netbook:		600px;

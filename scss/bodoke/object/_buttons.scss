@@ -1,0 +1,264 @@
+// _buttons.scss
+
+// =================
+// CONFIGURACION
+// =================
+$button-height: 			32px;
+$button-offset: 			$col-offset;
+$button-pressed-offset:		3px;
+$button-border-width:		$button-pressed-offset;
+$button-default-bg:			$black_90;
+$button-default-text:		$text-color;
+$button-transition-time:	$transition-speed;
+
+
+// =================
+// EL BOTON
+// =================
+.button {
+	display: block;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	line-height: $button-height;
+	font-size: 11px; // 0.9em
+	border: 0; 
+	@include background( $button-default-bg );
+	color: $button-default-text;
+	@include box-shadow( 0 $button-border-width 0 0 darken($button-default-bg, 25%) );
+	@include border-radius( 5px );
+	@include transition( background $button-transition-time ease );
+	*zoom: 1;
+	&:hover, &:active {
+		background: darken($button-default-bg, 10%);		
+	}
+	&:active, &.active {
+		@include transform( translateY( $button-pressed-offset ) );
+		@include box-shadow( none );
+	}
+	&:focus {
+		outline: none;
+	}
+	&[disabled], &.disabled {
+		color: #999;
+		@include background( #f1f1f1 );
+	}
+	// No Style Button
+	&.clear {
+		height: auto;
+		padding: 0;
+		font-size: 0.9em;
+		font-weight: 300;
+		color: $text-color;
+		text-decoration: none;
+		outline: 0;
+		border: 0!important;
+		background: transparent!important;
+		cursor: pointer;
+		@include box-shadow( none!important );
+		@include text-shadow( 0 1px 0 black(0.8) );
+		&:hover {
+			text-decoration: none;
+			@include background( transparent );
+		}
+		&:active {
+			@include transform( none );
+		}
+		&[disabled], &.disabled {
+			text-decoration: none;
+			color: #999;
+		}
+	}
+	&, a, button {	}
+	// ALIGN
+	&.inline-block { 
+		float: none;
+		display: inline-block; 
+	}
+	&.inline { 
+		float: none;
+		display: inline; 
+	}
+}
+
+
+// =======================
+// BUTTON COLORS
+// =======================
+$shadow-alpha: 				0.8;
+$percent:					20%;
+$dark-button-text-color:	$black_97;
+@mixin button-shadow( $color ) {
+	@include text-shadow( 0px 1px 0px rgba( $color, $shadow-alpha ) );
+}
+@mixin button-color( $name, $color ) {
+	&.#{$name} {
+		@if lightness($color) > lightness(#aaa) {
+			color: $text-color;
+		} @else {
+			color: $dark-button-text-color;
+		}
+		@include background( $color );
+		// border-color: darken( $color, 15% );
+		@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+		@include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
+		@include button-shadow( darken( $color, $percent ) );
+		&:hover { 
+			@include background( darken($color, 10%) );
+		}
+		&:active, &.active {
+			@include box-shadow( inset 0 3px 0px 0px darken( $color, 15% ) );
+		}
+		&.clear {
+			color: #FFF;
+		}
+	}
+}
+@mixin button-group-color( $name, $color ) {
+	&.#{$name} {
+		.button {
+			@if lightness($color) > lightness(#aaa) {
+				color: $text-color;
+			} @else {
+				color: $dark-button-text-color;
+			}
+			@include background( $color );
+			// border-color: darken( $color, 15% );
+			@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+			@include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
+			&:hover { 
+				@include background( darken( $color, 10% ) );
+			}
+			&:active { 
+				@include box-shadow( inset 0 3px 0px 0px darken( $color, 15% ) );
+			}
+		}
+	}	
+}
+
+
+.button {
+	@include button-color( 'white', $google-gray );
+	@include button-color( 'yellow', $google-yellow );
+	@include button-color( 'blue', $google-light-blue );
+	@include button-color( 'dark-blue', $google-blue );
+	@include button-color( 'red', $google-red );
+	@include button-color( 'green', $google-green );
+}
+
+
+// ==========================
+// BUTTON GROUP COLORS
+// ==========================
+.button-group {
+	@include button-group-color( 'yellow', $google-yellow );
+	@include button-group-color( 'blue', $google-light-blue );
+	@include button-group-color( 'red', $google-red );
+	@include button-group-color( 'green', $google-green );
+}
+
+
+// =================
+// BUTTON SIZES
+// =================
+.button {
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: $button-offset;
+	padding-right: $button-offset;
+	&.slim {
+		padding-left: $button-offset / 2;
+		padding-right: $button-offset / 2;		
+	}
+	&.medium {
+		padding-left: $button-offset * 1.25;
+		padding-right: $button-offset * 1.25;
+		font-size: 16px;
+		line-height: 40px;
+	}
+	&.large {
+		padding-top: $button-offset / 1.75;
+		padding-bottom: $button-offset / 1.75;
+		padding-left: $button-offset * 1.5;
+		padding-right: $button-offset * 1.5;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 20px;
+	}
+	&.big {
+
+	}
+}
+
+
+// ==========================
+// BUTTON GROUP
+// ==========================
+.button-group {
+	padding: 0;
+	margin: 0;
+	line-height: $button-height;
+	background: transparent;
+	// A simple button inside the group
+	.button {
+		border-right: none;
+		@include border-radius( 0 );
+		&:first-child { 
+			@include border-radius( 5px 0 0 5px ); 
+		}
+		&:last-child { 
+			// border-right-width: 3px;
+			// border-right-style: solid;
+			@include border-radius( 0 5px 5px 0 ); 
+		}
+		a, button {
+			display: block;
+			padding-left: $offset;
+			padding-right: $offset;
+		}
+		&:active {
+			// margin-left: -$button-pressed-offset; // Para ocultar el espacio en blanco que genera el translate3d en el eje X que tienen los .button
+		}
+	}
+	// And if the button is a link?
+	a.button, button.button {
+		display: block;		
+	}
+	// What happens if the group turns vertical?
+	&.vertical, &.v {
+		.button {
+			float: none;
+			@include border-radius( 0 );
+			// &:first-child { @include border-radius( 5px 5px 0 0 ); }
+			// &:last-child { @include border-radius( 0 0 5px 5px ); }			
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
