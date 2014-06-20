@@ -10,6 +10,7 @@
 		<title>Bodoke | Framework</title>
 		<link rel="stylesheet" href="css/app.css" />
 
+
 		<!-- SCRIPT -->
 		<!-- <script src="js/vendor/jquery.js" type="text/javascript" charset="utf-8" async defer></script> -->
 		<script src="js/vendor/jquery.min.js" type="text/javascript" charset="utf-8" async defer></script>
