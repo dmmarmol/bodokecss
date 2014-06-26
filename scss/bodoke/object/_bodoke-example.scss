@@ -1,5 +1,9 @@
 // _bodoke-example.scss
 
+body.example {
+	padding-bottom: $col-offset * 3;
+}
+
 .example-header {
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -18,13 +22,14 @@
 		color: white;
 	}
 }
-// .example-container {
-	// padding-left: $col-offset * 2;
-	// padding-right: $col-offset * 2;
-// }
 .example-content {
 	margin-top: 1em;
-	margin-bottom: 1em;
+	margin-bottom: $col-offset * 5;
+	padding-left: $col-offset;
+	padding-right: $col-offset;
+	padding-bottom: $col-offset;
+	border-bottom: 1px solid hsl(0, 0, 92%);
+
 }
 .mobile {
 	&.col, &.cols, &.column, &.columns {
@@ -43,6 +48,7 @@
 		border-right: 1px solid hsl(0, 0, 70%);
 		font-weight: 600;
 		color: hsl(0, 0, 35%);
+		@include truncate-line();
 		.col, .cols, .column, .columns {
 			padding-top: 0;
 			padding-bottom: 0;

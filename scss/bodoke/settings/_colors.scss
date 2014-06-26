@@ -41,15 +41,47 @@ $cyan: 			#69afeb;
 $blue:			#2362ff;
 $dark-blue:		#37477D;
 $green: 		#00a25f;
+$pale-blue:		#07A3AA;
 
 
-// BORRAR
-$google-gray:		$black_97;
-$google-blue:		$blue;
-$google-light-blue:	$cyan;
+$google-gray:		$black_95;
+$google-blue:		$cyan;
 $google-red: 		$red;
 $google-yellow:		$yellow;
 $google-green: 		$green;
+
+// Paleta completa
+// (class, color)
+$color-pallete:	(
+	('white', 		$google-gray), 
+	('yellow', 		$google-yellow), 
+	('blue', 		$google-blue),
+	('red', 		$google-red),
+	('green', 		$google-green),
+	('pale-blue', 	$pale-blue),
+	('gray', 		$google-gray)
+);
+
+// Paleta para los botones
+// (class, color)
+$buttons-color-pallete:	(
+	('yellow', 		$google-yellow), 
+	('blue', 		$google-blue),
+	('red', 		$google-red),
+	('green', 		$google-green),
+	('gray', 		$google-gray)
+);
+
+
+// ======================
+// ALERTAS
+// ======================
+$alerts-color-pallete: (
+	('warning', $red),
+	('alert', $yellow),
+	('success', $green)
+);
+
 
 
 // ======================
@@ -65,9 +97,9 @@ $text-color:			$black_20;
 // ==============================
 // COLORES GENERALES APLICADOS
 // ==============================
-$color-1:	$cyan;		// Primer color corporativo 
-$color-2:	$black_82;  // Segundo color corporativo
-$color-3:	$black_20; 	// Color del texto
+$color-1:	$cyan;				// Primer color corporativo 
+$color-2:	hsl(0, 0, 90%);  	// Segundo color corporativo
+$color-3:	$black_15; 			// Color del texto
 
 * {
 	color: $color-3;
