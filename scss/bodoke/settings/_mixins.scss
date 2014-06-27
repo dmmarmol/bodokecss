@@ -444,3 +444,57 @@ $default-transition-delay    : false;
 		}
 	}
 }
+
+
+// Version 1.1.0
+// ===============================================
+
+// ======================= 
+// ALIGNMENT
+// =======================
+@mixin center($important: false){
+	margin-left: auto;
+	margin-right: auto; 
+	float: none;
+	display: block;	
+}
+@mixin v-center($important: false){
+	display: block;
+	@if $important { position: absolute!important; } @else { position: absolute; } 
+	top: 0; right: auto; bottom: 0; left: auto;
+	margin: auto;
+	@if $important { float: none!important; } @else { float: none; } 
+}
+@mixin a-center($important: false){
+	display: block;
+	@if $important { position: absolute!important; } @else { position: absolute; } 
+	top: 0; right: 0; bottom: 0; left: 0;
+	margin: auto;
+	@if $important { float: none!important; } @else { float: none; } 
+}
+
+// ========================
+// TEXT
+// ========================
+@mixin text-stroke($stroke-width, $stroke-color: false, $stroke-fill: auto) {
+	-webkit-text-stroke-width: $stroke-width;
+	-webkit-text-stroke-color: $stroke-color;
+	-webkit-text-fill-color: $stroke-fill;
+}
+
+
+// Version 1.1.1
+// ===============================================
+@mixin prefixer( $name, $argument  ) {
+	-webkit-#{$name}: #{$argument};
+	-ms-#{$name}: #{$argument};
+	-moz-#{$name}: #{$argument};
+	-o-#{$name}: #{$argument};
+	#{$name}: #{$argument};
+}
+$prefix-transform: ('-webkit-', '-ms-', '-moz-', '-o-');
+@mixin transition-transform( $values ) {
+	@each $p in $prefix-transform {
+		@include transition( #{$p}transform $values );
+	}
+}
