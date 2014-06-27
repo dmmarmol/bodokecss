@@ -7,7 +7,7 @@
  *
  * author: 			Diego Martin Marmol
  * website: 		www.diegomarmol.com.ar
- * version:			0.2
+ * version:			1.1.1
  * release date:	20/05/14		
  * contributors: 	Leonardo Pittelli, Nicolas Oliva Velez
  * developed at:	Convoy S.R.L - www.convoy.me
@@ -40,22 +40,22 @@
 /*
  * Target all the IE versions
  */
-/* line 72, ../scss/bodoke/settings/_colors.scss */
+/* line 138, ../scss/bodoke/settings/_colors.scss */
 * {
   color: #333333;
 }
 
-/* line 76, ../scss/bodoke/settings/_colors.scss */
+/* line 142, ../scss/bodoke/settings/_colors.scss */
 a {
   color: #69afeb;
 }
 
-/* line 80, ../scss/bodoke/settings/_colors.scss */
+/* line 146, ../scss/bodoke/settings/_colors.scss */
 hr {
   background-color: #d1d1d1;
 }
 
-/* line 84, ../scss/bodoke/settings/_colors.scss */
+/* line 150, ../scss/bodoke/settings/_colors.scss */
 ::-moz-selection, ::selection {
   background: #d1d1d1;
   color: #FFF;
@@ -374,44 +374,44 @@ table {
   box-sizing: border-box;
 }
 
-/* line 40, ../scss/bodoke/grid/_grid.scss */
+/* line 38, ../scss/bodoke/grid/_grid.scss */
 .row {
   width: auto;
   margin-right: -0.9375em;
   margin-left: -0.9375em;
   *zoom: 1;
 }
-/* line 44, ../scss/bodoke/grid/_grid.scss */
+/* line 42, ../scss/bodoke/grid/_grid.scss */
 .row.row-half {
-  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
-/* line 45, ../scss/bodoke/grid/_grid.scss */
+/* line 43, ../scss/bodoke/grid/_grid.scss */
 .row.row-one {
-  margin-top: 1em;
   margin-bottom: 1em;
 }
-/* line 46, ../scss/bodoke/grid/_grid.scss */
+/* line 44, ../scss/bodoke/grid/_grid.scss */
 .row.row-two {
-  margin-top: 2em;
   margin-bottom: 2em;
 }
-/* line 47, ../scss/bodoke/grid/_grid.scss */
+/* line 45, ../scss/bodoke/grid/_grid.scss */
 .row.row-three {
-  margin-top: 3em;
   margin-bottom: 3em;
 }
-/* line 49, ../scss/bodoke/grid/_grid.scss */
+/* line 46, ../scss/bodoke/grid/_grid.scss */
+.row.row-four {
+  margin-bottom: 4em;
+}
+/* line 48, ../scss/bodoke/grid/_grid.scss */
 .row.collapse {
   margin-right: 0;
   margin-left: 0;
 }
-/* line 54, ../scss/bodoke/grid/_grid.scss */
+/* line 53, ../scss/bodoke/grid/_grid.scss */
 .row.collapse-right {
   margin-right: -0.9375em;
   margin-left: 0 !important;
 }
-/* line 59, ../scss/bodoke/grid/_grid.scss */
+/* line 58, ../scss/bodoke/grid/_grid.scss */
 .row.collapse-left {
   margin-left: -0.9375em;
   margin-right: 0 !important;
@@ -426,25 +426,13 @@ table {
   clear: both;
 }
 
-/* line 66, ../scss/bodoke/grid/_grid.scss */
-.box {
-  position: relative;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
-}
-/* line 70, ../scss/bodoke/grid/_grid.scss */
-.box > .col, .box > .cols {
-  margin-left: -0.9375em;
-  margin-right: -0.9375em;
-}
-
-/* line 77, ../scss/bodoke/grid/_grid.scss */
+/* line 67, ../scss/bodoke/grid/_grid.scss */
 .section {
   position: relative;
   display: block;
 }
 
-/* line 82, ../scss/bodoke/grid/_grid.scss */
+/* line 72, ../scss/bodoke/grid/_grid.scss */
 .container {
   position: relative;
   width: 93.75%;
@@ -454,30 +442,30 @@ table {
   padding-left: 0.9375em;
   padding-right: 0.9375em;
 }
-/* line 90, ../scss/bodoke/grid/_grid.scss */
+/* line 80, ../scss/bodoke/grid/_grid.scss */
 .container .inner-container {
   padding-left: 0.9375em;
   padding-right: 0.9375em;
 }
-/* line 94, ../scss/bodoke/grid/_grid.scss */
+/* line 84, ../scss/bodoke/grid/_grid.scss */
 .container.full {
   width: 100%;
   max-width: none;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 100, ../scss/bodoke/grid/_grid.scss */
+/* line 90, ../scss/bodoke/grid/_grid.scss */
 .container.collapse-right {
   margin-right: -0.9375em;
   margin-left: 0;
 }
-/* line 104, ../scss/bodoke/grid/_grid.scss */
+/* line 94, ../scss/bodoke/grid/_grid.scss */
 .container.collapse-left {
   margin-right: 0;
   margin-left: -0.9375em;
 }
 
-/* line 120, ../scss/bodoke/grid/_grid.scss */
+/* line 110, ../scss/bodoke/grid/_grid.scss */
 .col, .cols, .column, .columns {
   position: relative;
   display: block;
@@ -485,20 +473,465 @@ table {
   padding-right: 0.9375em;
   float: left;
 }
-/* line 128, ../scss/bodoke/grid/_grid.scss */
+/* line 118, ../scss/bodoke/grid/_grid.scss */
 .col.collapse, .cols.collapse, .column.collapse, .columns.collapse {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 18, ../scss/bodoke/object/_buttons.scss */
+/* line 26, ../scss/bodoke/object/_buttons.scss */
+.button.yellow {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #fcb608;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFCB608,endColorstr=#FFFCB608);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #b58202;
+  -moz-box-shadow: 0 3px 0 0 #b58202;
+  box-shadow: 0 3px 0 0 #b58202;
+  text-shadow: 0px 1px 0px rgba(156, 112, 2, 0.8);
+}
+/* line 37, ../scss/bodoke/object/_buttons.scss */
+.button.yellow:hover {
+  background-color: transparent;
+  background-color: #ce9403;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFCE9403,endColorstr=#FFCE9403);
+  zoom: 1;
+}
+/* line 40, ../scss/bodoke/object/_buttons.scss */
+.button.yellow:active, .button.yellow.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #b58202;
+  -moz-box-shadow: inset 0 3px 0px 0px #b58202;
+  box-shadow: inset 0 3px 0px 0px #b58202;
+}
+/* line 26, ../scss/bodoke/object/_buttons.scss */
+.button.blue {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #69afeb;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF69AFEB,endColorstr=#FF69AFEB);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(28, 126, 210, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #258be2;
+  -moz-box-shadow: 0 3px 0 0 #258be2;
+  box-shadow: 0 3px 0 0 #258be2;
+  text-shadow: 0px 1px 0px rgba(28, 126, 210, 0.8);
+}
+/* line 37, ../scss/bodoke/object/_buttons.scss */
+.button.blue:hover {
+  background-color: transparent;
+  background-color: #3c97e5;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3C97E5,endColorstr=#FF3C97E5);
+  zoom: 1;
+}
+/* line 40, ../scss/bodoke/object/_buttons.scss */
+.button.blue:active, .button.blue.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #258be2;
+  -moz-box-shadow: inset 0 3px 0px 0px #258be2;
+  box-shadow: inset 0 3px 0px 0px #258be2;
+}
+/* line 26, ../scss/bodoke/object/_buttons.scss */
+.button.red {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #dd4a3a;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDD4A3A,endColorstr=#FFDD4A3A);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #ad2c1e;
+  -moz-box-shadow: 0 3px 0 0 #ad2c1e;
+  box-shadow: 0 3px 0 0 #ad2c1e;
+  text-shadow: 0px 1px 0px rgba(151, 38, 26, 0.8);
+}
+/* line 37, ../scss/bodoke/object/_buttons.scss */
+.button.red:hover {
+  background-color: transparent;
+  background-color: #c23122;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFC23122,endColorstr=#FFC23122);
+  zoom: 1;
+}
+/* line 40, ../scss/bodoke/object/_buttons.scss */
+.button.red:active, .button.red.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #ad2c1e;
+  -moz-box-shadow: inset 0 3px 0px 0px #ad2c1e;
+  box-shadow: inset 0 3px 0px 0px #ad2c1e;
+}
+/* line 26, ../scss/bodoke/object/_buttons.scss */
+.button.green {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #00a25f;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF00A25F,endColorstr=#FF00A25F);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(0, 60, 35, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #005532;
+  -moz-box-shadow: 0 3px 0 0 #005532;
+  box-shadow: 0 3px 0 0 #005532;
+  text-shadow: 0px 1px 0px rgba(0, 60, 35, 0.8);
+}
+/* line 37, ../scss/bodoke/object/_buttons.scss */
+.button.green:hover {
+  background-color: transparent;
+  background-color: #006f41;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF006F41,endColorstr=#FF006F41);
+  zoom: 1;
+}
+/* line 40, ../scss/bodoke/object/_buttons.scss */
+.button.green:active, .button.green.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #005532;
+  -moz-box-shadow: inset 0 3px 0px 0px #005532;
+  box-shadow: inset 0 3px 0px 0px #005532;
+}
+/* line 26, ../scss/bodoke/object/_buttons.scss */
+.button.gray {
+  color: #333333;
+  background-color: transparent;
+  background-color: #f2f2f2;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF2F2F2,endColorstr=#FFF2F2F2);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(191, 191, 191, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #cccccc;
+  -moz-box-shadow: 0 3px 0 0 #cccccc;
+  box-shadow: 0 3px 0 0 #cccccc;
+  text-shadow: 0px 1px 0px rgba(191, 191, 191, 0.8);
+}
+/* line 37, ../scss/bodoke/object/_buttons.scss */
+.button.gray:hover {
+  background-color: transparent;
+  background-color: #d9d9d9;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFD9D9D9,endColorstr=#FFD9D9D9);
+  zoom: 1;
+}
+/* line 40, ../scss/bodoke/object/_buttons.scss */
+.button.gray:active, .button.gray.active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #cccccc;
+  -moz-box-shadow: inset 0 3px 0px 0px #cccccc;
+  box-shadow: inset 0 3px 0px 0px #cccccc;
+}
+
+/* line 68, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.yellow {
+  -webkit-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -moz-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -o-transition: background 0.35s ease, text-shadow 0.35s ease;
+  transition: background 0.35s ease, text-shadow 0.35s ease;
+}
+/* line 74, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.yellow:hover {
+  color: #f7f7f7;
+  text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8);
+  background-color: transparent;
+  background-color: #fcb608;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFCB608,endColorstr=#FFFCB608);
+  zoom: 1;
+}
+/* line 68, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.blue {
+  -webkit-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -moz-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -o-transition: background 0.35s ease, text-shadow 0.35s ease;
+  transition: background 0.35s ease, text-shadow 0.35s ease;
+}
+/* line 74, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.blue:hover {
+  color: #f7f7f7;
+  text-shadow: 0 1px 0 rgba(28, 126, 210, 0.8);
+  background-color: transparent;
+  background-color: #69afeb;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF69AFEB,endColorstr=#FF69AFEB);
+  zoom: 1;
+}
+/* line 68, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.red {
+  -webkit-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -moz-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -o-transition: background 0.35s ease, text-shadow 0.35s ease;
+  transition: background 0.35s ease, text-shadow 0.35s ease;
+}
+/* line 74, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.red:hover {
+  color: #f7f7f7;
+  text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8);
+  background-color: transparent;
+  background-color: #dd4a3a;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDD4A3A,endColorstr=#FFDD4A3A);
+  zoom: 1;
+}
+/* line 68, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.green {
+  -webkit-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -moz-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -o-transition: background 0.35s ease, text-shadow 0.35s ease;
+  transition: background 0.35s ease, text-shadow 0.35s ease;
+}
+/* line 74, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.green:hover {
+  color: #f7f7f7;
+  text-shadow: 0 1px 0 rgba(0, 60, 35, 0.8);
+  background-color: transparent;
+  background-color: #00a25f;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF00A25F,endColorstr=#FF00A25F);
+  zoom: 1;
+}
+/* line 68, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.gray {
+  -webkit-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -moz-transition: background 0.35s ease, text-shadow 0.35s ease;
+  -o-transition: background 0.35s ease, text-shadow 0.35s ease;
+  transition: background 0.35s ease, text-shadow 0.35s ease;
+}
+/* line 74, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.gray:hover {
+  color: #333333;
+  text-shadow: 0 1px 0 rgba(191, 191, 191, 0.8);
+  background-color: transparent;
+  background-color: #f2f2f2;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF2F2F2,endColorstr=#FFF2F2F2);
+  zoom: 1;
+}
+
+/* line 106, ../scss/bodoke/object/_buttons.scss */
+.button.link {
+  text-shadow: none;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.link.yellow {
+  color: #fcb608;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.link.blue {
+  color: #69afeb;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.link.red {
+  color: #dd4a3a;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.link.green {
+  color: #00a25f;
+}
+/* line 109, ../scss/bodoke/object/_buttons.scss */
+.button.link.gray {
+  color: #f2f2f2;
+}
+
+/* line 47, ../scss/bodoke/object/_buttons.scss */
+.button-group.yellow .button {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #fcb608;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFCB608,endColorstr=#FFFCB608);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #b58202;
+  -moz-box-shadow: 0 3px 0 0 #b58202;
+  box-shadow: 0 3px 0 0 #b58202;
+}
+/* line 57, ../scss/bodoke/object/_buttons.scss */
+.button-group.yellow .button:hover {
+  background-color: transparent;
+  background-color: #ce9403;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFCE9403,endColorstr=#FFCE9403);
+  zoom: 1;
+}
+/* line 60, ../scss/bodoke/object/_buttons.scss */
+.button-group.yellow .button:active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #b58202;
+  -moz-box-shadow: inset 0 3px 0px 0px #b58202;
+  box-shadow: inset 0 3px 0px 0px #b58202;
+}
+/* line 47, ../scss/bodoke/object/_buttons.scss */
+.button-group.blue .button {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #69afeb;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF69AFEB,endColorstr=#FF69AFEB);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(28, 126, 210, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #258be2;
+  -moz-box-shadow: 0 3px 0 0 #258be2;
+  box-shadow: 0 3px 0 0 #258be2;
+}
+/* line 57, ../scss/bodoke/object/_buttons.scss */
+.button-group.blue .button:hover {
+  background-color: transparent;
+  background-color: #3c97e5;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3C97E5,endColorstr=#FF3C97E5);
+  zoom: 1;
+}
+/* line 60, ../scss/bodoke/object/_buttons.scss */
+.button-group.blue .button:active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #258be2;
+  -moz-box-shadow: inset 0 3px 0px 0px #258be2;
+  box-shadow: inset 0 3px 0px 0px #258be2;
+}
+/* line 47, ../scss/bodoke/object/_buttons.scss */
+.button-group.red .button {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #dd4a3a;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDD4A3A,endColorstr=#FFDD4A3A);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #ad2c1e;
+  -moz-box-shadow: 0 3px 0 0 #ad2c1e;
+  box-shadow: 0 3px 0 0 #ad2c1e;
+}
+/* line 57, ../scss/bodoke/object/_buttons.scss */
+.button-group.red .button:hover {
+  background-color: transparent;
+  background-color: #c23122;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFC23122,endColorstr=#FFC23122);
+  zoom: 1;
+}
+/* line 60, ../scss/bodoke/object/_buttons.scss */
+.button-group.red .button:active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #ad2c1e;
+  -moz-box-shadow: inset 0 3px 0px 0px #ad2c1e;
+  box-shadow: inset 0 3px 0px 0px #ad2c1e;
+}
+/* line 47, ../scss/bodoke/object/_buttons.scss */
+.button-group.green .button {
+  color: #f7f7f7;
+  background-color: transparent;
+  background-color: #00a25f;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF00A25F,endColorstr=#FF00A25F);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(0, 60, 35, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #005532;
+  -moz-box-shadow: 0 3px 0 0 #005532;
+  box-shadow: 0 3px 0 0 #005532;
+}
+/* line 57, ../scss/bodoke/object/_buttons.scss */
+.button-group.green .button:hover {
+  background-color: transparent;
+  background-color: #006f41;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF006F41,endColorstr=#FF006F41);
+  zoom: 1;
+}
+/* line 60, ../scss/bodoke/object/_buttons.scss */
+.button-group.green .button:active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #005532;
+  -moz-box-shadow: inset 0 3px 0px 0px #005532;
+  box-shadow: inset 0 3px 0px 0px #005532;
+}
+/* line 47, ../scss/bodoke/object/_buttons.scss */
+.button-group.gray .button {
+  color: #333333;
+  background-color: transparent;
+  background-color: #f2f2f2;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF2F2F2,endColorstr=#FFF2F2F2);
+  zoom: 1;
+  text-shadow: 0 1px 0 rgba(191, 191, 191, 0.8);
+  -webkit-box-shadow: 0 3px 0 0 #cccccc;
+  -moz-box-shadow: 0 3px 0 0 #cccccc;
+  box-shadow: 0 3px 0 0 #cccccc;
+}
+/* line 57, ../scss/bodoke/object/_buttons.scss */
+.button-group.gray .button:hover {
+  background-color: transparent;
+  background-color: #d9d9d9;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFD9D9D9,endColorstr=#FFD9D9D9);
+  zoom: 1;
+}
+/* line 60, ../scss/bodoke/object/_buttons.scss */
+.button-group.gray .button:active {
+  -webkit-box-shadow: inset 0 3px 0px 0px #cccccc;
+  -moz-box-shadow: inset 0 3px 0px 0px #cccccc;
+  box-shadow: inset 0 3px 0px 0px #cccccc;
+}
+
+/* line 123, ../scss/bodoke/object/_buttons.scss */
+.button {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+/* line 128, ../scss/bodoke/object/_buttons.scss */
+.button.slim {
+  padding-left: 0.46875em;
+  padding-right: 0.46875em;
+}
+/* line 132, ../scss/bodoke/object/_buttons.scss */
+.button.medium {
+  padding-left: 1.17188em;
+  padding-right: 1.17188em;
+  font-size: 16px;
+  line-height: 40px;
+}
+/* line 138, ../scss/bodoke/object/_buttons.scss */
+.button.large {
+  padding-top: 0.53571em;
+  padding-bottom: 0.53571em;
+  padding-left: 1.40625em;
+  padding-right: 1.40625em;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+/* line 156, ../scss/bodoke/object/_buttons.scss */
+.button-group {
+  padding: 0;
+  margin: 0;
+  line-height: 32px;
+  background: transparent;
+}
+/* line 162, ../scss/bodoke/object/_buttons.scss */
+.button-group .button {
+  border-right: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 165, ../scss/bodoke/object/_buttons.scss */
+.button-group .button:first-child {
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+/* line 168, ../scss/bodoke/object/_buttons.scss */
+.button-group .button:last-child {
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+/* line 173, ../scss/bodoke/object/_buttons.scss */
+.button-group .button a, .button-group .button button {
+  display: block;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+/* line 183, ../scss/bodoke/object/_buttons.scss */
+.button-group a.button, .button-group button.button {
+  display: block;
+}
+/* line 188, ../scss/bodoke/object/_buttons.scss */
+.button-group.vertical .button, .button-group.v .button {
+  float: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 200, ../scss/bodoke/object/_buttons.scss */
 .button {
   display: block;
   float: left;
   text-decoration: none;
   text-align: center;
   line-height: 32px;
-  font-size: 11px;
+  font-size: 13px;
   border: 0;
   background-color: transparent;
   background-color: #e6e6e6;
@@ -519,11 +952,11 @@ table {
   transition: background 0.35s ease;
   *zoom: 1;
 }
-/* line 32, ../scss/bodoke/object/_buttons.scss */
+/* line 214, ../scss/bodoke/object/_buttons.scss */
 .button:hover, .button:active {
   background: #cccccc;
 }
-/* line 35, ../scss/bodoke/object/_buttons.scss */
+/* line 217, ../scss/bodoke/object/_buttons.scss */
 .button:active, .button.active {
   -webkit-transform: translateY(3px);
   -moz-transform: translateY(3px);
@@ -534,11 +967,11 @@ table {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 39, ../scss/bodoke/object/_buttons.scss */
+/* line 221, ../scss/bodoke/object/_buttons.scss */
 .button:focus {
   outline: none;
 }
-/* line 42, ../scss/bodoke/object/_buttons.scss */
+/* line 224, ../scss/bodoke/object/_buttons.scss */
 .button[disabled], .button.disabled {
   color: #999;
   background-color: transparent;
@@ -546,417 +979,60 @@ table {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF1F1F1,endColorstr=#FFF1F1F1);
   zoom: 1;
 }
-/* line 47, ../scss/bodoke/object/_buttons.scss */
+/* line 229, ../scss/bodoke/object/_buttons.scss */
 .button.clear {
-  height: auto;
-  padding: 0;
-  font-size: 0.9em;
-  font-weight: 300;
   color: #333333;
-  text-decoration: none;
-  outline: 0;
-  border: 0 !important;
-  background: transparent !important;
-  cursor: pointer;
-  -webkit-box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  box-shadow: none !important;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.8);
 }
-/* line 60, ../scss/bodoke/object/_buttons.scss */
-.button.clear:hover {
+/* line 233, ../scss/bodoke/object/_buttons.scss */
+.button.link {
+  padding: 0;
+  line-height: inherit;
+  font-size: 0.9em;
+}
+/* line 238, ../scss/bodoke/object/_buttons.scss */
+.button.clear, .button.link {
+  height: auto;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
+  zoom: 1;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+/* line 245, ../scss/bodoke/object/_buttons.scss */
+.button.clear:hover, .button.link:hover {
   text-decoration: none;
   background-color: transparent;
   background-color: rgba(0, 0, 0, 0);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00000000,endColorstr=#00000000);
   zoom: 1;
 }
-/* line 64, ../scss/bodoke/object/_buttons.scss */
-.button.clear:active {
+/* line 249, ../scss/bodoke/object/_buttons.scss */
+.button.clear:active, .button.link:active {
   -webkit-transform: none;
   -moz-transform: none;
   -ms-transform: none;
   -o-transform: none;
   transform: none;
 }
-/* line 67, ../scss/bodoke/object/_buttons.scss */
-.button.clear[disabled], .button.clear.disabled {
+/* line 252, ../scss/bodoke/object/_buttons.scss */
+.button.clear[disabled], .button.clear.disabled, .button.link[disabled], .button.link.disabled {
   text-decoration: none;
   color: #999;
 }
-/* line 74, ../scss/bodoke/object/_buttons.scss */
+/* line 259, ../scss/bodoke/object/_buttons.scss */
 .button.inline-block {
   float: none;
   display: inline-block;
 }
-/* line 78, ../scss/bodoke/object/_buttons.scss */
+/* line 263, ../scss/bodoke/object/_buttons.scss */
 .button.inline {
   float: none;
   display: inline;
-}
-
-/* line 95, ../scss/bodoke/object/_buttons.scss */
-.button.white {
-  color: #333333;
-  background-color: transparent;
-  background-color: #f7f7f7;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF7F7F7,endColorstr=#FFF7F7F7);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(196, 196, 196, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #d1d1d1;
-  -moz-box-shadow: 0 3px 0 0 #d1d1d1;
-  box-shadow: 0 3px 0 0 #d1d1d1;
-  text-shadow: 0px 1px 0px rgba(196, 196, 196, 0.8);
-}
-/* line 106, ../scss/bodoke/object/_buttons.scss */
-.button.white:hover {
-  background-color: transparent;
-  background-color: #dedede;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDEDEDE,endColorstr=#FFDEDEDE);
-  zoom: 1;
-}
-/* line 109, ../scss/bodoke/object/_buttons.scss */
-.button.white:active, .button.white.active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #d1d1d1;
-  -moz-box-shadow: inset 0 3px 0px 0px #d1d1d1;
-  box-shadow: inset 0 3px 0px 0px #d1d1d1;
-}
-/* line 112, ../scss/bodoke/object/_buttons.scss */
-.button.white.clear {
-  color: #FFF;
-}
-/* line 95, ../scss/bodoke/object/_buttons.scss */
-.button.yellow {
-  color: #f7f7f7;
-  background-color: transparent;
-  background-color: #fcb608;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFCB608,endColorstr=#FFFCB608);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #b58202;
-  -moz-box-shadow: 0 3px 0 0 #b58202;
-  box-shadow: 0 3px 0 0 #b58202;
-  text-shadow: 0px 1px 0px rgba(156, 112, 2, 0.8);
-}
-/* line 106, ../scss/bodoke/object/_buttons.scss */
-.button.yellow:hover {
-  background-color: transparent;
-  background-color: #ce9403;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFCE9403,endColorstr=#FFCE9403);
-  zoom: 1;
-}
-/* line 109, ../scss/bodoke/object/_buttons.scss */
-.button.yellow:active, .button.yellow.active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #b58202;
-  -moz-box-shadow: inset 0 3px 0px 0px #b58202;
-  box-shadow: inset 0 3px 0px 0px #b58202;
-}
-/* line 112, ../scss/bodoke/object/_buttons.scss */
-.button.yellow.clear {
-  color: #FFF;
-}
-/* line 95, ../scss/bodoke/object/_buttons.scss */
-.button.blue {
-  color: #f7f7f7;
-  background-color: transparent;
-  background-color: #69afeb;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF69AFEB,endColorstr=#FF69AFEB);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(28, 126, 210, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #258be2;
-  -moz-box-shadow: 0 3px 0 0 #258be2;
-  box-shadow: 0 3px 0 0 #258be2;
-  text-shadow: 0px 1px 0px rgba(28, 126, 210, 0.8);
-}
-/* line 106, ../scss/bodoke/object/_buttons.scss */
-.button.blue:hover {
-  background-color: transparent;
-  background-color: #3c97e5;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3C97E5,endColorstr=#FF3C97E5);
-  zoom: 1;
-}
-/* line 109, ../scss/bodoke/object/_buttons.scss */
-.button.blue:active, .button.blue.active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #258be2;
-  -moz-box-shadow: inset 0 3px 0px 0px #258be2;
-  box-shadow: inset 0 3px 0px 0px #258be2;
-}
-/* line 112, ../scss/bodoke/object/_buttons.scss */
-.button.blue.clear {
-  color: #FFF;
-}
-/* line 95, ../scss/bodoke/object/_buttons.scss */
-.button.dark-blue {
-  color: #f7f7f7;
-  background-color: transparent;
-  background-color: #2362ff;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF2362FF,endColorstr=#FF2362FF);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(0, 54, 188, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #003dd5;
-  -moz-box-shadow: 0 3px 0 0 #003dd5;
-  box-shadow: 0 3px 0 0 #003dd5;
-  text-shadow: 0px 1px 0px rgba(0, 54, 188, 0.8);
-}
-/* line 106, ../scss/bodoke/object/_buttons.scss */
-.button.dark-blue:hover {
-  background-color: transparent;
-  background-color: #0044ef;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF0044EF,endColorstr=#FF0044EF);
-  zoom: 1;
-}
-/* line 109, ../scss/bodoke/object/_buttons.scss */
-.button.dark-blue:active, .button.dark-blue.active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #003dd5;
-  -moz-box-shadow: inset 0 3px 0px 0px #003dd5;
-  box-shadow: inset 0 3px 0px 0px #003dd5;
-}
-/* line 112, ../scss/bodoke/object/_buttons.scss */
-.button.dark-blue.clear {
-  color: #FFF;
-}
-/* line 95, ../scss/bodoke/object/_buttons.scss */
-.button.red {
-  color: #f7f7f7;
-  background-color: transparent;
-  background-color: #dd4a3a;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDD4A3A,endColorstr=#FFDD4A3A);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #ad2c1e;
-  -moz-box-shadow: 0 3px 0 0 #ad2c1e;
-  box-shadow: 0 3px 0 0 #ad2c1e;
-  text-shadow: 0px 1px 0px rgba(151, 38, 26, 0.8);
-}
-/* line 106, ../scss/bodoke/object/_buttons.scss */
-.button.red:hover {
-  background-color: transparent;
-  background-color: #c23122;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFC23122,endColorstr=#FFC23122);
-  zoom: 1;
-}
-/* line 109, ../scss/bodoke/object/_buttons.scss */
-.button.red:active, .button.red.active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #ad2c1e;
-  -moz-box-shadow: inset 0 3px 0px 0px #ad2c1e;
-  box-shadow: inset 0 3px 0px 0px #ad2c1e;
-}
-/* line 112, ../scss/bodoke/object/_buttons.scss */
-.button.red.clear {
-  color: #FFF;
-}
-/* line 95, ../scss/bodoke/object/_buttons.scss */
-.button.green {
-  color: #f7f7f7;
-  background-color: transparent;
-  background-color: #00a25f;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF00A25F,endColorstr=#FF00A25F);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(0, 60, 35, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #005532;
-  -moz-box-shadow: 0 3px 0 0 #005532;
-  box-shadow: 0 3px 0 0 #005532;
-  text-shadow: 0px 1px 0px rgba(0, 60, 35, 0.8);
-}
-/* line 106, ../scss/bodoke/object/_buttons.scss */
-.button.green:hover {
-  background-color: transparent;
-  background-color: #006f41;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF006F41,endColorstr=#FF006F41);
-  zoom: 1;
-}
-/* line 109, ../scss/bodoke/object/_buttons.scss */
-.button.green:active, .button.green.active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #005532;
-  -moz-box-shadow: inset 0 3px 0px 0px #005532;
-  box-shadow: inset 0 3px 0px 0px #005532;
-}
-/* line 112, ../scss/bodoke/object/_buttons.scss */
-.button.green.clear {
-  color: #FFF;
-}
-
-/* line 119, ../scss/bodoke/object/_buttons.scss */
-.button-group.yellow .button {
-  color: #f7f7f7;
-  background-color: transparent;
-  background-color: #fcb608;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFCB608,endColorstr=#FFFCB608);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #b58202;
-  -moz-box-shadow: 0 3px 0 0 #b58202;
-  box-shadow: 0 3px 0 0 #b58202;
-}
-/* line 129, ../scss/bodoke/object/_buttons.scss */
-.button-group.yellow .button:hover {
-  background-color: transparent;
-  background-color: #ce9403;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFCE9403,endColorstr=#FFCE9403);
-  zoom: 1;
-}
-/* line 132, ../scss/bodoke/object/_buttons.scss */
-.button-group.yellow .button:active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #b58202;
-  -moz-box-shadow: inset 0 3px 0px 0px #b58202;
-  box-shadow: inset 0 3px 0px 0px #b58202;
-}
-/* line 119, ../scss/bodoke/object/_buttons.scss */
-.button-group.blue .button {
-  color: #f7f7f7;
-  background-color: transparent;
-  background-color: #69afeb;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF69AFEB,endColorstr=#FF69AFEB);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(28, 126, 210, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #258be2;
-  -moz-box-shadow: 0 3px 0 0 #258be2;
-  box-shadow: 0 3px 0 0 #258be2;
-}
-/* line 129, ../scss/bodoke/object/_buttons.scss */
-.button-group.blue .button:hover {
-  background-color: transparent;
-  background-color: #3c97e5;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3C97E5,endColorstr=#FF3C97E5);
-  zoom: 1;
-}
-/* line 132, ../scss/bodoke/object/_buttons.scss */
-.button-group.blue .button:active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #258be2;
-  -moz-box-shadow: inset 0 3px 0px 0px #258be2;
-  box-shadow: inset 0 3px 0px 0px #258be2;
-}
-/* line 119, ../scss/bodoke/object/_buttons.scss */
-.button-group.red .button {
-  color: #f7f7f7;
-  background-color: transparent;
-  background-color: #dd4a3a;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFDD4A3A,endColorstr=#FFDD4A3A);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #ad2c1e;
-  -moz-box-shadow: 0 3px 0 0 #ad2c1e;
-  box-shadow: 0 3px 0 0 #ad2c1e;
-}
-/* line 129, ../scss/bodoke/object/_buttons.scss */
-.button-group.red .button:hover {
-  background-color: transparent;
-  background-color: #c23122;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFC23122,endColorstr=#FFC23122);
-  zoom: 1;
-}
-/* line 132, ../scss/bodoke/object/_buttons.scss */
-.button-group.red .button:active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #ad2c1e;
-  -moz-box-shadow: inset 0 3px 0px 0px #ad2c1e;
-  box-shadow: inset 0 3px 0px 0px #ad2c1e;
-}
-/* line 119, ../scss/bodoke/object/_buttons.scss */
-.button-group.green .button {
-  color: #f7f7f7;
-  background-color: transparent;
-  background-color: #00a25f;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF00A25F,endColorstr=#FF00A25F);
-  zoom: 1;
-  text-shadow: 0 1px 0 rgba(0, 60, 35, 0.8);
-  -webkit-box-shadow: 0 3px 0 0 #005532;
-  -moz-box-shadow: 0 3px 0 0 #005532;
-  box-shadow: 0 3px 0 0 #005532;
-}
-/* line 129, ../scss/bodoke/object/_buttons.scss */
-.button-group.green .button:hover {
-  background-color: transparent;
-  background-color: #006f41;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF006F41,endColorstr=#FF006F41);
-  zoom: 1;
-}
-/* line 132, ../scss/bodoke/object/_buttons.scss */
-.button-group.green .button:active {
-  -webkit-box-shadow: inset 0 3px 0px 0px #005532;
-  -moz-box-shadow: inset 0 3px 0px 0px #005532;
-  box-shadow: inset 0 3px 0px 0px #005532;
-}
-
-/* line 164, ../scss/bodoke/object/_buttons.scss */
-.button {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
-}
-/* line 169, ../scss/bodoke/object/_buttons.scss */
-.button.slim {
-  padding-left: 0.46875em;
-  padding-right: 0.46875em;
-}
-/* line 173, ../scss/bodoke/object/_buttons.scss */
-.button.medium {
-  padding-left: 1.17188em;
-  padding-right: 1.17188em;
-  font-size: 16px;
-  line-height: 40px;
-}
-/* line 179, ../scss/bodoke/object/_buttons.scss */
-.button.large {
-  padding-top: 0.53571em;
-  padding-bottom: 0.53571em;
-  padding-left: 1.40625em;
-  padding-right: 1.40625em;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 20px;
-}
-
-/* line 197, ../scss/bodoke/object/_buttons.scss */
-.button-group {
-  padding: 0;
-  margin: 0;
-  line-height: 32px;
-  background: transparent;
-}
-/* line 203, ../scss/bodoke/object/_buttons.scss */
-.button-group .button {
-  border-right: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-}
-/* line 206, ../scss/bodoke/object/_buttons.scss */
-.button-group .button:first-child {
-  -webkit-border-radius: 5px 0 0 5px;
-  -moz-border-radius: 5px 0 0 5px;
-  -ms-border-radius: 5px 0 0 5px;
-  -o-border-radius: 5px 0 0 5px;
-  border-radius: 5px 0 0 5px;
-}
-/* line 209, ../scss/bodoke/object/_buttons.scss */
-.button-group .button:last-child {
-  -webkit-border-radius: 0 5px 5px 0;
-  -moz-border-radius: 0 5px 5px 0;
-  -ms-border-radius: 0 5px 5px 0;
-  -o-border-radius: 0 5px 5px 0;
-  border-radius: 0 5px 5px 0;
-}
-/* line 214, ../scss/bodoke/object/_buttons.scss */
-.button-group .button a, .button-group .button button {
-  display: block;
-  padding-left: 0.9375em;
-  padding-right: 0.9375em;
-}
-/* line 224, ../scss/bodoke/object/_buttons.scss */
-.button-group a.button, .button-group button.button {
-  display: block;
-}
-/* line 229, ../scss/bodoke/object/_buttons.scss */
-.button-group.vertical .button, .button-group.v .button {
-  float: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
 }
 
 /* line 10, ../scss/bodoke/object/_icons.scss */
@@ -4017,30 +4093,30 @@ table {
   color: #fcb608;
 }
 
-/* line 19, ../scss/bodoke/object/_titles.scss */
+/* line 20, ../scss/bodoke/object/_titles.scss */
 .title.small {
   font-size: 1.4em;
   line-height: 1.3em;
 }
-/* line 25, ../scss/bodoke/object/_titles.scss */
+/* line 26, ../scss/bodoke/object/_titles.scss */
 .title.medium {
   font-size: 2em;
 }
-/* line 28, ../scss/bodoke/object/_titles.scss */
+/* line 29, ../scss/bodoke/object/_titles.scss */
 .title.bigger {
   font-size: 3.7em;
   line-height: 1.1em;
 }
 
-/* line 39, ../scss/bodoke/object/_titles.scss */
+/* line 42, ../scss/bodoke/object/_titles.scss */
 .title.yellow {
   color: #fcb608;
 }
-/* line 40, ../scss/bodoke/object/_titles.scss */
+/* line 42, ../scss/bodoke/object/_titles.scss */
 .title.blue {
   color: #69afeb;
 }
-/* line 41, ../scss/bodoke/object/_titles.scss */
+/* line 42, ../scss/bodoke/object/_titles.scss */
 .title.red {
   color: #dd4a3a;
 }
@@ -4048,9 +4124,9 @@ table {
 .title.green {
   color: #00a25f;
 }
-/* line 43, ../scss/bodoke/object/_titles.scss */
-.title.black {
-  color: #333333;
+/* line 42, ../scss/bodoke/object/_titles.scss */
+.title.gray {
+  color: #f2f2f2;
 }
 
 /* line 4, ../scss/bodoke/object/_text.scss */
@@ -4165,7 +4241,7 @@ nav ul li:after, nav ol li:after {
   line-height: 2.4em;
   padding-left: 0.9375em;
   padding-right: 0.9375em;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
 }
 /* line 24, ../scss/bodoke/object/_dropdown.scss */
 .dropdown li:hover, .dropdown .item:hover {
@@ -4266,6 +4342,45 @@ table td.title {
 }
 
 /* line 64, ../scss/bodoke/object/_table.scss */
+table.yellow thead th {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d19500), to(#9e7100));
+  background: -moz-linear-gradient(top, #d19500, #9e7100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d19500', endColorstr='#9e7100');
+}
+/* line 69, ../scss/bodoke/object/_table.scss */
+table.yellow tbody, table.yellow th {
+  color: #FFF;
+}
+/* line 76, ../scss/bodoke/object/_table.scss */
+table.yellow tbody {
+  text-shadow: 0 1px 0 rgba(158, 113, 0, 0.7);
+}
+/* line 83, ../scss/bodoke/object/_table.scss */
+table.yellow tr {
+  background-color: transparent;
+  background-color: #ffc638;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFC638,endColorstr=#FFFFC638);
+  zoom: 1;
+}
+/* line 88, ../scss/bodoke/object/_table.scss */
+table.yellow tr.even {
+  background-color: transparent;
+  background-color: #ffc024;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFC024,endColorstr=#FFFFC024);
+  zoom: 1;
+}
+/* line 95, ../scss/bodoke/object/_table.scss */
+table.yellow tr:hover {
+  background-color: transparent;
+  background-color: #f7b000;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF7B000,endColorstr=#FFF7B000);
+  zoom: 1;
+}
+/* line 100, ../scss/bodoke/object/_table.scss */
+table.yellow td {
+  border-right-color: #ffb705;
+}
+/* line 64, ../scss/bodoke/object/_table.scss */
 table.blue thead th {
   background: -webkit-gradient(linear, left top, left bottom, from(#3198f0), to(#107fde));
   background: -moz-linear-gradient(top, #3198f0, #107fde);
@@ -4305,81 +4420,120 @@ table.blue td {
   border-right-color: #60b0f3;
 }
 /* line 64, ../scss/bodoke/object/_table.scss */
-table.dark-blue thead th {
-  background: -webkit-gradient(linear, left top, left bottom, from(#212f60), to(#141d3a));
-  background: -moz-linear-gradient(top, #212f60, #141d3a);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#212f60', endColorstr='#141d3a');
+table.red thead th {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ce2816), to(#a01f11));
+  background: -moz-linear-gradient(top, #ce2816, #a01f11);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce2816', endColorstr='#a01f11');
 }
 /* line 69, ../scss/bodoke/object/_table.scss */
-table.dark-blue tbody, table.dark-blue th {
+table.red tbody, table.red th {
   color: #FFF;
 }
 /* line 76, ../scss/bodoke/object/_table.scss */
-table.dark-blue tbody {
-  text-shadow: 0 1px 0 rgba(20, 29, 58, 0.7);
+table.red tbody {
+  text-shadow: 0 1px 0 rgba(160, 31, 17, 0.7);
 }
 /* line 83, ../scss/bodoke/object/_table.scss */
-table.dark-blue tr {
+table.red tr {
   background-color: transparent;
-  background-color: #3b55ac;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF3B55AC,endColorstr=#FF3B55AC);
+  background-color: #ee6b5c;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFEE6B5C,endColorstr=#FFEE6B5C);
   zoom: 1;
 }
 /* line 88, ../scss/bodoke/object/_table.scss */
-table.dark-blue tr.even {
+table.red tr.even {
   background-color: transparent;
-  background-color: #364d9d;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF364D9D,endColorstr=#FF364D9D);
+  background-color: #ec5a4a;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFEC5A4A,endColorstr=#FFEC5A4A);
   zoom: 1;
 }
 /* line 95, ../scss/bodoke/object/_table.scss */
-table.dark-blue tr:hover {
+table.red tr:hover {
   background-color: transparent;
-  background-color: #2b3d7d;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF2B3D7D,endColorstr=#FF2B3D7D);
+  background-color: #e73623;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE73623,endColorstr=#FFE73623);
   zoom: 1;
 }
 /* line 100, ../scss/bodoke/object/_table.scss */
-table.dark-blue td {
-  border-right-color: #2e4286;
+table.red td {
+  border-right-color: #e9412e;
 }
 /* line 64, ../scss/bodoke/object/_table.scss */
-table.light-gray thead th {
+table.green thead th {
+  background: -webkit-gradient(linear, left top, left bottom, from(#006f41), to(#003c23));
+  background: -moz-linear-gradient(top, #006f41, #003c23);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006f41', endColorstr='#003c23');
+}
+/* line 69, ../scss/bodoke/object/_table.scss */
+table.green tbody, table.green th {
+  color: #FFF;
+}
+/* line 76, ../scss/bodoke/object/_table.scss */
+table.green tbody {
+  text-shadow: 0 1px 0 rgba(0, 60, 35, 0.7);
+}
+/* line 83, ../scss/bodoke/object/_table.scss */
+table.green tr {
+  background-color: transparent;
+  background-color: #00d57d;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF00D57D,endColorstr=#FF00D57D);
+  zoom: 1;
+}
+/* line 88, ../scss/bodoke/object/_table.scss */
+table.green tr.even {
+  background-color: transparent;
+  background-color: #00c171;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF00C171,endColorstr=#FF00C171);
+  zoom: 1;
+}
+/* line 95, ../scss/bodoke/object/_table.scss */
+table.green tr:hover {
+  background-color: transparent;
+  background-color: #009558;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF009558,endColorstr=#FF009558);
+  zoom: 1;
+}
+/* line 100, ../scss/bodoke/object/_table.scss */
+table.green td {
+  border-right-color: #00a25f;
+}
+/* line 64, ../scss/bodoke/object/_table.scss */
+table.gray thead th {
   background: -webkit-gradient(linear, left top, left bottom, from(#d1c7c7), to(#baabab));
   background: -moz-linear-gradient(top, #d1c7c7, #baabab);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1c7c7', endColorstr='#baabab');
 }
 /* line 69, ../scss/bodoke/object/_table.scss */
-table.light-gray tbody, table.light-gray th {
+table.gray tbody, table.gray th {
   color: #333333;
 }
 /* line 76, ../scss/bodoke/object/_table.scss */
-table.light-gray tbody {
+table.gray tbody {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 /* line 83, ../scss/bodoke/object/_table.scss */
-table.light-gray tr {
+table.gray tr {
   background-color: transparent;
   background-color: white;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFFFF,endColorstr=#FFFFFFFF);
   zoom: 1;
 }
 /* line 88, ../scss/bodoke/object/_table.scss */
-table.light-gray tr.even {
+table.gray tr.even {
   background-color: transparent;
   background-color: #f6f4f4;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF6F4F4,endColorstr=#FFF6F4F4);
   zoom: 1;
 }
 /* line 95, ../scss/bodoke/object/_table.scss */
-table.light-gray tr:hover {
+table.gray tr:hover {
   background-color: transparent;
   background-color: #e2dcdc;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFE2DCDC,endColorstr=#FFE2DCDC);
   zoom: 1;
 }
 /* line 100, ../scss/bodoke/object/_table.scss */
-table.light-gray td {
+table.gray td {
   border-right-color: #e8e3e3;
 }
 
@@ -4566,10 +4720,6 @@ pre:hover {
   border: none;
 }
 
-/*
-* _helpers.scss
-* Helper clases
-*/
 /* line 6, ../scss/bodoke/settings/_helpers.scss */
 .loading {
   background-image: url("../img/preloader.gif");
@@ -4578,10 +4728,11 @@ pre:hover {
   background-size: 32px 32px;
   height: 100%;
   position: relative;
+  min-height: 128px;
 }
 /* line 14, ../scss/bodoke/settings/_helpers.scss */
 .loading:before {
-  content: "Loading" !important;
+  content: "Loading..." !important;
   position: absolute !important;
   height: 20px;
   margin: auto;
@@ -4589,7 +4740,7 @@ pre:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  top: 70px;
+  top: 80px;
   width: 100px !important;
   font-size: 14px;
   font-weight: bold;
@@ -4597,48 +4748,389 @@ pre:hover {
 }
 /* line 26, ../scss/bodoke/settings/_helpers.scss */
 .loading .fade-container {
-  min-height: 300px;
   opacity: 1;
   position: relative;
+  min-height: 300px;
 }
 
-/* Alert */
-/* line 38, ../scss/bodoke/settings/_helpers.scss */
-.alert {
-  background-color: #ffc;
-  display: block;
-  padding: 8px;
+/* line 40, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error {
+  z-index: 100;
+}
+/* line 42, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel {
+  position: relative;
+  -webkit-transition: opacity 0.35s ease;
+  -moz-transition: opacity 0.35s ease;
+  -o-transition: opacity 0.35s ease;
+  transition: opacity 0.35s ease;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
+  -webkit-transition: background 0.35s ease;
+  -moz-transition: background 0.35s ease;
+  -o-transition: background 0.35s ease;
+  transition: background 0.35s ease;
+  background-color: #cccccc;
 }
-
-/* line 44, ../scss/bodoke/settings/_helpers.scss */
-.no-desktop {
-  display: none;
-}
-
 /* line 51, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.warning {
+  background-color: #dd4a3a;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.warning.arrow.up {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #dd4a3a;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.warning.arrow.up:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.warning.arrow.right {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #dd4a3a;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.warning.arrow.right:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+  left: 100%;
+  top: 50%;
+  margin-top: -8px;
+  border-left-color: #dd4a3a;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.warning.arrow.down {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #dd4a3a;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.warning.arrow.down:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.warning.arrow.left {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #dd4a3a;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.warning.arrow.left:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+  right: 100%;
+  top: 50%;
+  margin-top: -8px;
+  border-right-color: #dd4a3a;
+}
+/* line 62, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel .message {
+  color: white;
+}
+/* line 51, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.alert {
+  background-color: #fcb608;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.alert.arrow.up {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #fcb608;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.alert.arrow.up:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.alert.arrow.right {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #fcb608;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.alert.arrow.right:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+  left: 100%;
+  top: 50%;
+  margin-top: -8px;
+  border-left-color: #fcb608;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.alert.arrow.down {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #fcb608;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.alert.arrow.down:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.alert.arrow.left {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #fcb608;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.alert.arrow.left:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+  right: 100%;
+  top: 50%;
+  margin-top: -8px;
+  border-right-color: #fcb608;
+}
+/* line 62, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel .message {
+  color: white;
+}
+/* line 51, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.success {
+  background-color: #00a25f;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.success.arrow.up {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #00a25f;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.success.arrow.up:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.success.arrow.right {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #00a25f;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.success.arrow.right:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+  left: 100%;
+  top: 50%;
+  margin-top: -8px;
+  border-left-color: #00a25f;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.success.arrow.down {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #00a25f;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.success.arrow.down:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+}
+/* line 56, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel.success.arrow.left {
+  /**
+   * $color:			Hex, rgb, rgba
+   * $size:			value of the arrow height in pixels			|default: 10px
+   * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+   * $position:		value of the arrow position in percent 		|default: 'default'
+   * $border:			value of the arrow border width in pixels 	|default: 'none'
+   * $border-color:	Hex, rgb, rgba 								|default: #444
+  */
+  background-color: #00a25f;
+}
+/* line 342, ../scss/bodoke/settings/_mixins.scss */
+.bdk-error .error-panel.success.arrow.left:after {
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-width: 8px;
+  right: 100%;
+  top: 50%;
+  margin-top: -8px;
+  border-right-color: #00a25f;
+}
+/* line 62, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel .message {
+  color: white;
+}
+/* line 71, ../scss/bodoke/settings/_helpers.scss */
+.bdk-error .error-panel .message {
+  width: 100%;
+  margin: 0;
+  padding-top: 0.9375em;
+  padding-bottom: 0.9375em;
+  text-align: center;
+  font-family: "Courrier", "courrier new", monospace;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/* line 94, ../scss/bodoke/settings/_helpers.scss */
 .float-left, .left {
   float: left !important;
 }
 
-/* line 53, ../scss/bodoke/settings/_helpers.scss */
+/* line 96, ../scss/bodoke/settings/_helpers.scss */
 .float-right, .right {
   float: right !important;
 }
 
-/* line 55, ../scss/bodoke/settings/_helpers.scss */
+/* line 98, ../scss/bodoke/settings/_helpers.scss */
 .center {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  float: none !important;
   display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
 }
 
-/* line 61, ../scss/bodoke/settings/_helpers.scss */
+/* line 104, ../scss/bodoke/settings/_helpers.scss */
 .a-center {
   display: block;
   position: absolute !important;
@@ -4650,7 +5142,7 @@ pre:hover {
   float: none !important;
 }
 
-/* line 68, ../scss/bodoke/settings/_helpers.scss */
+/* line 111, ../scss/bodoke/settings/_helpers.scss */
 .v-center {
   display: block;
   position: absolute;
@@ -4662,51 +5154,61 @@ pre:hover {
   float: none;
 }
 
-/* line 80, ../scss/bodoke/settings/_helpers.scss */
+/* line 124, ../scss/bodoke/settings/_helpers.scss */
 .inline {
   display: inline;
   float: none;
 }
 
-/* line 84, ../scss/bodoke/settings/_helpers.scss */
-.strong {
+/* line 128, ../scss/bodoke/settings/_helpers.scss */
+.strong, .bold {
   font-weight: bold;
 }
 
-/* line 87, ../scss/bodoke/settings/_helpers.scss */
+/* line 131, ../scss/bodoke/settings/_helpers.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 90, ../scss/bodoke/settings/_helpers.scss */
+/* line 134, ../scss/bodoke/settings/_helpers.scss */
 .center-text {
   text-align: center;
 }
 
-/* line 98, ../scss/bodoke/settings/_helpers.scss */
+/* line 137, ../scss/bodoke/settings/_helpers.scss */
+.right-text {
+  text-align: right;
+}
+
+/* line 140, ../scss/bodoke/settings/_helpers.scss */
+.left-text {
+  text-align: left;
+}
+
+/* line 149, ../scss/bodoke/settings/_helpers.scss */
 .block {
   display: block;
 }
 
-/* line 101, ../scss/bodoke/settings/_helpers.scss */
+/* line 152, ../scss/bodoke/settings/_helpers.scss */
 .inline-block {
   display: inline-block;
   *zoom: 1;
   *display: inline;
 }
 
-/* line 106, ../scss/bodoke/settings/_helpers.scss */
+/* line 157, ../scss/bodoke/settings/_helpers.scss */
 .clear-both {
   clear: both;
   float: none;
 }
 
-/* line 115, ../scss/bodoke/settings/_helpers.scss */
-.none, [hidden], .hidden, .hide {
+/* line 167, ../scss/bodoke/settings/_helpers.scss */
+.none, [hidden], .hidden, .hide, .no-desktop {
   display: none;
 }
 
-/* line 119, ../scss/bodoke/settings/_helpers.scss */
+/* line 171, ../scss/bodoke/settings/_helpers.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -4717,7 +5219,7 @@ pre:hover {
   position: absolute;
   width: 1px;
 }
-/* line 129, ../scss/bodoke/settings/_helpers.scss */
+/* line 181, ../scss/bodoke/settings/_helpers.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -4727,12 +5229,12 @@ pre:hover {
   width: auto;
 }
 
-/* line 140, ../scss/bodoke/settings/_helpers.scss */
+/* line 192, ../scss/bodoke/settings/_helpers.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 144, ../scss/bodoke/settings/_helpers.scss */
+/* line 196, ../scss/bodoke/settings/_helpers.scss */
 .visuallyvisible {
   clip: auto;
   width: auto;
@@ -4741,734 +5243,258 @@ pre:hover {
   left: 0;
 }
 
-/* line 151, ../scss/bodoke/settings/_helpers.scss */
+/* line 203, ../scss/bodoke/settings/_helpers.scss */
 .fh, .full-height {
   height: 100%;
 }
 
-/* line 158, ../scss/bodoke/settings/_helpers.scss */
-.image-left {
-  margin-right: 20px;
-}
-
-/* line 161, ../scss/bodoke/settings/_helpers.scss */
-.image-right {
-  margin-left: 20px;
-}
-
-/* line 170, ../scss/bodoke/settings/_helpers.scss */
-.clear,
-.clearfix {
+/* line 218, ../scss/bodoke/settings/_helpers.scss */
+.clear, .clearfix {
   *zoom: 1;
 }
-/* line 172, ../scss/bodoke/settings/_helpers.scss */
-.clear:before, .clear:after,
-.clearfix:before,
-.clearfix:after {
+/* line 220, ../scss/bodoke/settings/_helpers.scss */
+.clear:before, .clear:after, .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
-/* line 173, ../scss/bodoke/settings/_helpers.scss */
-.clear:after,
-.clearfix:after {
+/* line 221, ../scss/bodoke/settings/_helpers.scss */
+.clear:after, .clearfix:after {
   clear: both;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 229, ../scss/bodoke/settings/_helpers.scss */
+.panel {
+  position: relative;
+  background-color: #f2f2f2;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding-top: 0.46875em;
+  padding-bottom: 0.46875em;
+  padding-left: 0.46875em;
+  padding-right: 0.46875em;
+}
+/* line 238, ../scss/bodoke/settings/_helpers.scss */
+.panel.cols, .panel.cols, .panel.column, .panel.columns {
+  padding-left: 0.9375em;
+  padding-right: 0.9375em;
+}
+
+@media only screen and (max-width: 739px) {
+  /* line 245, ../scss/bodoke/settings/_helpers.scss */
+  .panel.cols, .panel.cols, .panel.column, .panel.columns {
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+  }
+}
+/* line 254, ../scss/bodoke/settings/_helpers.scss */
+.alert {
+  display: block;
+}
+
+/* line 261, ../scss/bodoke/settings/_helpers.scss */
+.warning {
+  background-color: #dd4a3a;
+  color: white;
+}
+
+/* line 261, ../scss/bodoke/settings/_helpers.scss */
+.alert {
+  background-color: #fcb608;
+  color: white;
+}
+
+/* line 261, ../scss/bodoke/settings/_helpers.scss */
+.success {
+  background-color: #00a25f;
+  color: white;
+}
+
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c1-12 {
   width: 8.33333%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c2-12 {
   width: 16.66667%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c3-12 {
   width: 25%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c4-12 {
   width: 33.33333%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c5-12 {
   width: 41.66667%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c6-12 {
   width: 50%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c7-12 {
   width: 58.33333%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c8-12 {
   width: 66.66667%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c9-12 {
   width: 75%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c10-12 {
   width: 83.33333%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c11-12 {
   width: 91.66667%;
 }
 
-/* line 149, ../scss/bodoke/grid/_grid.scss */
+/* line 139, ../scss/bodoke/grid/_grid.scss */
 .c12-12 {
   width: 100%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-1-12 {
   margin-left: 8.33333%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-2-12 {
   margin-left: 16.66667%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-3-12 {
   margin-left: 25%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-4-12 {
   margin-left: 33.33333%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-5-12 {
   margin-left: 41.66667%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-6-12 {
   margin-left: 50%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-7-12 {
   margin-left: 58.33333%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-8-12 {
   margin-left: 66.66667%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-9-12 {
   margin-left: 75%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-10-12 {
   margin-left: 83.33333%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-11-12 {
   margin-left: 91.66667%;
 }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 148, ../scss/bodoke/grid/_grid.scss */
 .offset-12-12 {
   margin-left: 100%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-1-12 {
-  right: 8.33333%;
+  margin-right: 8.33333%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-2-12 {
-  right: 16.66667%;
+  margin-right: 16.66667%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-3-12 {
-  right: 25%;
+  margin-right: 25%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-4-12 {
-  right: 33.33333%;
+  margin-right: 33.33333%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-5-12 {
-  right: 41.66667%;
+  margin-right: 41.66667%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-6-12 {
-  right: 50%;
+  margin-right: 50%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-7-12 {
-  right: 58.33333%;
+  margin-right: 58.33333%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-8-12 {
-  right: 66.66667%;
+  margin-right: 66.66667%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-9-12 {
-  right: 75%;
+  margin-right: 75%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-10-12 {
-  right: 83.33333%;
+  margin-right: 83.33333%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-11-12 {
-  right: 91.66667%;
+  margin-right: 91.66667%;
 }
 
-/* line 167, ../scss/bodoke/grid/_grid.scss */
+/* line 157, ../scss/bodoke/grid/_grid.scss */
 .pull-12-12 {
-  right: 100%;
+  margin-right: 100%;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* line 191, ../scss/bodoke/grid/_grid.scss */
-  .col, .cols, .column, .columns {
-    display: block;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c1-12.tablet {
-    width: 8.33333%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c2-12.tablet {
-    width: 16.66667%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c3-12.tablet {
-    width: 25%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c4-12.tablet {
-    width: 33.33333%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c5-12.tablet {
-    width: 41.66667%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c6-12.tablet {
-    width: 50%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c7-12.tablet {
-    width: 58.33333%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c8-12.tablet {
-    width: 66.66667%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c9-12.tablet {
-    width: 75%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c10-12.tablet {
-    width: 83.33333%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c11-12.tablet {
-    width: 91.66667%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c12-12.tablet {
-    width: 100%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-1-12.tablet {
-    margin-left: 8.33333%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-2-12.tablet {
-    margin-left: 16.66667%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-3-12.tablet {
-    margin-left: 25%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-4-12.tablet {
-    margin-left: 33.33333%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-5-12.tablet {
-    margin-left: 41.66667%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-6-12.tablet {
-    margin-left: 50%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-7-12.tablet {
-    margin-left: 58.33333%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-8-12.tablet {
-    margin-left: 66.66667%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-9-12.tablet {
-    margin-left: 75%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-10-12.tablet {
-    margin-left: 83.33333%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-11-12.tablet {
-    margin-left: 91.66667%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-12-12.tablet {
-    margin-left: 100%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-1-12.tablet {
-    right: 8.33333%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-2-12.tablet {
-    right: 16.66667%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-3-12.tablet {
-    right: 25%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-4-12.tablet {
-    right: 33.33333%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-5-12.tablet {
-    right: 41.66667%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-6-12.tablet {
-    right: 50%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-7-12.tablet {
-    right: 58.33333%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-8-12.tablet {
-    right: 66.66667%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-9-12.tablet {
-    right: 75%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-10-12.tablet {
-    right: 83.33333%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-11-12.tablet {
-    right: 91.66667%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-12-12.tablet {
-    right: 100%;
-  }
-
-  /* line 203, ../scss/bodoke/grid/_grid.scss */
-  .tablet-center {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-    display: block;
-  }
-
-  /* line 209, ../scss/bodoke/grid/_grid.scss */
-  .tablet-a-center {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-  }
-
-  /* line 215, ../scss/bodoke/grid/_grid.scss */
-  .tablet-center-text {
-    text-align: center;
-  }
-
-  /* line 221, ../scss/bodoke/grid/_grid.scss */
-  .tablet-left {
-    float: left;
-  }
-
-  /* line 222, ../scss/bodoke/grid/_grid.scss */
-  .tablet-right {
-    float: right;
-  }
-
-  /* line 223, ../scss/bodoke/grid/_grid.scss */
-  .tablet-no-float {
-    float: none;
-  }
-
-  /* line 224, ../scss/bodoke/grid/_grid.scss */
-  .hide-tablet {
-    display: none;
-  }
-
-  /* line 225, ../scss/bodoke/grid/_grid.scss */
-  .show-tablet {
-    display: block;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
-  /* line 237, ../scss/bodoke/grid/_grid.scss */
-  .row {
-    margin-left: -0.9375em;
-    margin-right: -0.9375em;
-  }
-  /* line 240, ../scss/bodoke/grid/_grid.scss */
-  .row.row-one {
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-  }
-  /* line 241, ../scss/bodoke/grid/_grid.scss */
-  .row.row-two {
-    margin-top: 0.50em;
-    margin-bottom: 0.50em;
-  }
-  /* line 242, ../scss/bodoke/grid/_grid.scss */
-  .row.row-three {
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  /* line 245, ../scss/bodoke/grid/_grid.scss */
-  .col, .cols, .column, .columns {
-    display: block;
-    width: 100%;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-    margin-left: 0 !important;
-    right: 0 !important;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c1-12.mobile {
-    width: 8.33333%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c2-12.mobile {
-    width: 16.66667%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c3-12.mobile {
-    width: 25%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c4-12.mobile {
-    width: 33.33333%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c5-12.mobile {
-    width: 41.66667%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c6-12.mobile {
-    width: 50%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c7-12.mobile {
-    width: 58.33333%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c8-12.mobile {
-    width: 66.66667%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c9-12.mobile {
-    width: 75%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c10-12.mobile {
-    width: 83.33333%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c11-12.mobile {
-    width: 91.66667%;
-  }
-
-  /* line 149, ../scss/bodoke/grid/_grid.scss */
-  .c12-12.mobile {
-    width: 100%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-1-12.mobile {
-    margin-left: 8.33333%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-2-12.mobile {
-    margin-left: 16.66667%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-3-12.mobile {
-    margin-left: 25%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-4-12.mobile {
-    margin-left: 33.33333%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-5-12.mobile {
-    margin-left: 41.66667%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-6-12.mobile {
-    margin-left: 50%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-7-12.mobile {
-    margin-left: 58.33333%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-8-12.mobile {
-    margin-left: 66.66667%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-9-12.mobile {
-    margin-left: 75%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-10-12.mobile {
-    margin-left: 83.33333%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-11-12.mobile {
-    margin-left: 91.66667%;
-  }
-
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .offset-12-12.mobile {
-    margin-left: 100%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-1-12.mobile {
-    right: 8.33333%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-2-12.mobile {
-    right: 16.66667%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-3-12.mobile {
-    right: 25%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-4-12.mobile {
-    right: 33.33333%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-5-12.mobile {
-    right: 41.66667%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-6-12.mobile {
-    right: 50%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-7-12.mobile {
-    right: 58.33333%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-8-12.mobile {
-    right: 66.66667%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-9-12.mobile {
-    right: 75%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-10-12.mobile {
-    right: 83.33333%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-11-12.mobile {
-    right: 91.66667%;
-  }
-
-  /* line 167, ../scss/bodoke/grid/_grid.scss */
-  .pull-12-12.mobile {
-    right: 100%;
-  }
-
-  /* line 260, ../scss/bodoke/grid/_grid.scss */
-  .col.mobile, .cols.mobile, .column.mobile, .columns.mobile {
-    float: left;
-  }
-
-  /* line 265, ../scss/bodoke/grid/_grid.scss */
-  .container:not(.mobile) {
-    width: 100%;
-    padding-left: 0.9375em;
-    padding-right: 0.9375em;
-  }
-
-  /* line 271, ../scss/bodoke/grid/_grid.scss */
-  .mobile-center {
-    margin-left: auto;
-    margin-right: auto;
-    float: none;
-    display: block;
-  }
-
-  /* line 278, ../scss/bodoke/grid/_grid.scss */
-  .mobile-a-center {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-  }
-
-  /* line 284, ../scss/bodoke/grid/_grid.scss */
-  .mobile-center-text {
-    text-align: center;
-  }
-
-  /* line 290, ../scss/bodoke/grid/_grid.scss */
-  .mobile-left {
-    float: left;
-  }
-
-  /* line 291, ../scss/bodoke/grid/_grid.scss */
-  .mobile-right {
-    float: right;
-  }
-
-  /* line 292, ../scss/bodoke/grid/_grid.scss */
-  .mobile-no-float {
-    float: none;
-  }
-
-  /* line 294, ../scss/bodoke/grid/_grid.scss */
-  table th, table td {
-    padding: 4px;
-  }
-
-  /* line 297, ../scss/bodoke/grid/_grid.scss */
-  .hide-mobile {
-    display: none;
-  }
-
-  /* line 298, ../scss/bodoke/grid/_grid.scss */
-  .show-mobile {
-    display: block;
-  }
-}
 @media only screen and (max-width: 800px) {
-  /* line 309, ../scss/bodoke/grid/_grid.scss */
+  /* line 179, ../scss/bodoke/grid/_grid.scss */
   .container {
     width: 100%;
     max-width: none;
@@ -5476,14 +5502,211 @@ pre:hover {
     padding-right: 1.875em;
   }
 
-  /* line 317, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .col, .cols, .column, .columns {
     width: 100%;
-    margin: 0 !important;
-    right: 0 !important;
   }
 
-  /* line 329, ../scss/bodoke/grid/_grid.scss */
+  /* line 193, ../scss/bodoke/grid/_grid.scss */
+  [class*="offset-"] {
+    margin-left: 0;
+  }
+
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
+  [class*="pull-"] {
+    margin-right: 0;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c1-12 {
+    width: 8.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c2-12 {
+    width: 16.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c3-12 {
+    width: 25%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c4-12 {
+    width: 33.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c5-12 {
+    width: 41.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c6-12 {
+    width: 50%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c7-12 {
+    width: 58.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c8-12 {
+    width: 66.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c9-12 {
+    width: 75%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c10-12 {
+    width: 83.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c11-12 {
+    width: 91.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .md-c12-12 {
+    width: 100%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-1-12 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-2-12 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-3-12 {
+    margin-left: 25%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-4-12 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-5-12 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-6-12 {
+    margin-left: 50%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-7-12 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-8-12 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-9-12 {
+    margin-left: 75%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-10-12 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-11-12 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-12-12 {
+    margin-left: 100%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-1-12 {
+    margin-right: 8.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-2-12 {
+    margin-right: 16.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-3-12 {
+    margin-right: 25%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-4-12 {
+    margin-right: 33.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-5-12 {
+    margin-right: 41.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-6-12 {
+    margin-right: 50%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-7-12 {
+    margin-right: 58.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-8-12 {
+    margin-right: 66.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-9-12 {
+    margin-right: 75%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-10-12 {
+    margin-right: 83.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-11-12 {
+    margin-right: 91.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-12-12 {
+    margin-right: 100%;
+  }
+
+  /* line 210, ../scss/bodoke/grid/_grid.scss */
+  .md-center {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+  }
+
+  /* line 217, ../scss/bodoke/grid/_grid.scss */
   .md-a-center {
     display: block;
     position: absolute !important;
@@ -5495,7 +5718,7 @@ pre:hover {
     float: none !important;
   }
 
-  /* line 336, ../scss/bodoke/grid/_grid.scss */
+  /* line 224, ../scss/bodoke/grid/_grid.scss */
   .md-v-center {
     display: block;
     position: absolute;
@@ -5505,6 +5728,595 @@ pre:hover {
     left: auto;
     margin: auto;
     float: none;
+  }
+
+  /* line 234, ../scss/bodoke/grid/_grid.scss */
+  .md-left-text {
+    text-align: left;
+  }
+
+  /* line 235, ../scss/bodoke/grid/_grid.scss */
+  .md-center-text {
+    text-align: center;
+  }
+
+  /* line 236, ../scss/bodoke/grid/_grid.scss */
+  .md-height-auto {
+    height: auto;
+  }
+
+  /* line 237, ../scss/bodoke/grid/_grid.scss */
+  .md-fh {
+    height: 100%;
+  }
+
+  /* line 241, ../scss/bodoke/grid/_grid.scss */
+  .md-left {
+    float: left;
+  }
+
+  /* line 242, ../scss/bodoke/grid/_grid.scss */
+  .md-right {
+    float: right;
+  }
+
+  /* line 243, ../scss/bodoke/grid/_grid.scss */
+  .md-no-float {
+    float: none;
+  }
+
+  /* line 244, ../scss/bodoke/grid/_grid.scss */
+  .hide-md {
+    display: none;
+  }
+
+  /* line 245, ../scss/bodoke/grid/_grid.scss */
+  .show-md {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 261, ../scss/bodoke/grid/_grid.scss */
+  .col, .cols, .column, .columns, [class="md-"] {
+    display: block;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c1-12 {
+    width: 8.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c2-12 {
+    width: 16.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c3-12 {
+    width: 25%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c4-12 {
+    width: 33.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c5-12 {
+    width: 41.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c6-12 {
+    width: 50%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c7-12 {
+    width: 58.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c8-12 {
+    width: 66.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c9-12 {
+    width: 75%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c10-12 {
+    width: 83.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c11-12 {
+    width: 91.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c12-12 {
+    width: 100%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-1-12 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-2-12 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-3-12 {
+    margin-left: 25%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-4-12 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-5-12 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-6-12 {
+    margin-left: 50%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-7-12 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-8-12 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-9-12 {
+    margin-left: 75%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-10-12 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-11-12 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-12-12 {
+    margin-left: 100%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-1-12 {
+    margin-right: 8.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-2-12 {
+    margin-right: 16.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-3-12 {
+    margin-right: 25%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-4-12 {
+    margin-right: 33.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-5-12 {
+    margin-right: 41.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-6-12 {
+    margin-right: 50%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-7-12 {
+    margin-right: 58.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-8-12 {
+    margin-right: 66.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-9-12 {
+    margin-right: 75%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-10-12 {
+    margin-right: 83.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-11-12 {
+    margin-right: 91.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-12-12 {
+    margin-right: 100%;
+  }
+
+  /* line 278, ../scss/bodoke/grid/_grid.scss */
+  .tablet-center, [class="pull-"], [class="offset-"] {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+  }
+
+  /* line 284, ../scss/bodoke/grid/_grid.scss */
+  .tablet-a-center {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  /* line 290, ../scss/bodoke/grid/_grid.scss */
+  .tablet-center-text {
+    text-align: center;
+  }
+
+  /* line 293, ../scss/bodoke/grid/_grid.scss */
+  .tablet-height-auto {
+    height: auto;
+  }
+
+  /* line 296, ../scss/bodoke/grid/_grid.scss */
+  .tablet-fh {
+    height: 100%;
+  }
+
+  /* line 302, ../scss/bodoke/grid/_grid.scss */
+  .tablet-left {
+    float: left;
+  }
+
+  /* line 303, ../scss/bodoke/grid/_grid.scss */
+  .tablet-right {
+    float: right;
+  }
+
+  /* line 304, ../scss/bodoke/grid/_grid.scss */
+  .tablet-no-float {
+    float: none;
+  }
+
+  /* line 305, ../scss/bodoke/grid/_grid.scss */
+  .hide-tablet {
+    display: none;
+  }
+
+  /* line 306, ../scss/bodoke/grid/_grid.scss */
+  .show-tablet {
+    display: block;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
+  /* line 318, ../scss/bodoke/grid/_grid.scss */
+  .row {
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+  }
+  /* line 321, ../scss/bodoke/grid/_grid.scss */
+  .row.row-one {
+    margin-bottom: 0.50em;
+  }
+  /* line 322, ../scss/bodoke/grid/_grid.scss */
+  .row.row-two {
+    margin-bottom: 0.75em;
+  }
+  /* line 323, ../scss/bodoke/grid/_grid.scss */
+  .row.row-three {
+    margin-bottom: 1em;
+  }
+  /* line 324, ../scss/bodoke/grid/_grid.scss */
+  .row.row-four {
+    margin-bottom: 1.25em;
+  }
+
+  /* line 327, ../scss/bodoke/grid/_grid.scss */
+  .col, .cols, .column, .columns, [class*="md-"] {
+    display: block;
+    width: 100%;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 336, ../scss/bodoke/grid/_grid.scss */
+  [class*="offset-"] {
+    margin-left: 0;
+  }
+
+  /* line 340, ../scss/bodoke/grid/_grid.scss */
+  [class*="pull-"] {
+    margin-right: 0;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c1-12 {
+    width: 8.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c2-12 {
+    width: 16.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c3-12 {
+    width: 25%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c4-12 {
+    width: 33.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c5-12 {
+    width: 41.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c6-12 {
+    width: 50%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c7-12 {
+    width: 58.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c8-12 {
+    width: 66.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c9-12 {
+    width: 75%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c10-12 {
+    width: 83.33333%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c11-12 {
+    width: 91.66667%;
+  }
+
+  /* line 139, ../scss/bodoke/grid/_grid.scss */
+  .mobile-c12-12 {
+    width: 100%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-1-12 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-2-12 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-3-12 {
+    margin-left: 25%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-4-12 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-5-12 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-6-12 {
+    margin-left: 50%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-7-12 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-8-12 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-9-12 {
+    margin-left: 75%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-10-12 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-11-12 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  .mobile-offset-12-12 {
+    margin-left: 100%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-1-12 {
+    margin-right: 8.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-2-12 {
+    margin-right: 16.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-3-12 {
+    margin-right: 25%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-4-12 {
+    margin-right: 33.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-5-12 {
+    margin-right: 41.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-6-12 {
+    margin-right: 50%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-7-12 {
+    margin-right: 58.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-8-12 {
+    margin-right: 66.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-9-12 {
+    margin-right: 75%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-10-12 {
+    margin-right: 83.33333%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-11-12 {
+    margin-right: 91.66667%;
+  }
+
+  /* line 157, ../scss/bodoke/grid/_grid.scss */
+  .mobile-pull-12-12 {
+    margin-right: 100%;
+  }
+
+  /* line 355, ../scss/bodoke/grid/_grid.scss */
+  .col.mobile, .cols.mobile, .column.mobile, .columns.mobile {
+    float: left;
+  }
+
+  /* line 360, ../scss/bodoke/grid/_grid.scss */
+  .container:not(.mobile) {
+    width: 100%;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+  }
+
+  /* line 366, ../scss/bodoke/grid/_grid.scss */
+  .mobile-center {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    display: block;
+  }
+
+  /* line 373, ../scss/bodoke/grid/_grid.scss */
+  .mobile-a-center {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  /* line 379, ../scss/bodoke/grid/_grid.scss */
+  .mobile-center-text {
+    text-align: center;
+  }
+
+  /* line 382, ../scss/bodoke/grid/_grid.scss */
+  .mobile-height-auto {
+    height: auto;
+  }
+
+  /* line 385, ../scss/bodoke/grid/_grid.scss */
+  .mobile-fh {
+    height: 100%;
+  }
+
+  /* line 391, ../scss/bodoke/grid/_grid.scss */
+  .mobile-left {
+    float: left;
+  }
+
+  /* line 392, ../scss/bodoke/grid/_grid.scss */
+  .mobile-right {
+    float: right;
+  }
+
+  /* line 393, ../scss/bodoke/grid/_grid.scss */
+  .mobile-no-float {
+    float: none;
+  }
+
+  /* line 395, ../scss/bodoke/grid/_grid.scss */
+  table th, table td {
+    padding: 4px;
+  }
+
+  /* line 398, ../scss/bodoke/grid/_grid.scss */
+  .hide-mobile {
+    display: none;
+  }
+
+  /* line 399, ../scss/bodoke/grid/_grid.scss */
+  .show-mobile {
+    display: block;
   }
 }
 /* line 36, ../scss/app.scss */

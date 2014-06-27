@@ -103,8 +103,12 @@ table {
 	}	
 }
 
+
+// ==================
+// TABLE COLORS
+// ==================
 table {
-	@include table-color( 'blue', $google-light-blue );
-	@include table-color( 'dark-blue', $dark-blue );
-	@include table-color( 'light-gray', $google-gray );
+	@each $single-color in $tables-color-pallete {
+		@include table-color(  nth($single-color, 1), nth($single-color, 2) );
+	}
 }

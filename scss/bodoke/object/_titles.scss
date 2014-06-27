@@ -7,9 +7,10 @@
 	line-height: 1em;
 	font-weight: 300;
 	span {
-		&.yellow { color: $google-yellow; }
+		&.yellow { color: $yellow; }
 	}
 }
+
 
 
 // =========================
@@ -32,13 +33,14 @@
 }
 
 
+
 // =========================
 // Colors
 // =========================
 .title {
-	&.yellow  	{ color: $google-yellow; }
-	&.blue  	{ color: $google-light-blue; }
-	&.red  		{ color: $google-red; }
-	&.green 	{ color: $google-green; }
-	&.black		{ color: $text-color; }
+	@each $single-color in $titles-color-pallete {
+		&.#{nth($single-color, 1)} {
+			color: nth($single-color, 2);
+		} 
+	}
 }

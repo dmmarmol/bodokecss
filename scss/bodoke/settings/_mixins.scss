@@ -405,8 +405,8 @@ $default-transition-delay    : false;
 		@content;
 	}
 }
-@mixin mobile( $width, $height ) {
-	@media only screen and (max-width: 739px) {
+@mixin mobile( $width:739px ) {
+	@media only screen and (max-width: $width) {
 		@content;
 	}
 }

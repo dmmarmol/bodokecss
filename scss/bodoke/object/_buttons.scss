@@ -4,82 +4,15 @@
 // CONFIGURACION
 // =================
 $button-height: 			32px;
+$button-font-size:			13px;
 $button-offset: 			$col-offset;
 $button-pressed-offset:		3px;
 $button-border-width:		$button-pressed-offset;
 $button-default-bg:			$black_90;
 $button-default-text:		$text-color;
-$button-transition-time:	$transition-speed;
+$button-transition-time:	$transition-speed; // config.scss
+$button-colors:				$buttons-color-pallete;	// colors.scss
 
-
-// =================
-// EL BOTON
-// =================
-.button {
-	display: block;
-	float: left;
-	text-decoration: none;
-	text-align: center;
-	line-height: $button-height;
-	font-size: 11px; // 0.9em
-	border: 0; 
-	@include background( $button-default-bg );
-	color: $button-default-text;
-	@include box-shadow( 0 $button-border-width 0 0 darken($button-default-bg, 25%) );
-	@include border-radius( 5px );
-	@include transition( background $button-transition-time ease );
-	*zoom: 1;
-	&:hover, &:active {
-		background: darken($button-default-bg, 10%);		
-	}
-	&:active, &.active {
-		@include transform( translateY( $button-pressed-offset ) );
-		@include box-shadow( none );
-	}
-	&:focus {
-		outline: none;
-	}
-	&[disabled], &.disabled {
-		color: #999;
-		@include background( #f1f1f1 );
-	}
-	// No Style Button
-	&.clear {
-		height: auto;
-		padding: 0;
-		font-size: 0.9em;
-		font-weight: 300;
-		color: $text-color;
-		text-decoration: none;
-		outline: 0;
-		border: 0!important;
-		background: transparent!important;
-		cursor: pointer;
-		@include box-shadow( none!important );
-		@include text-shadow( 0 1px 0 black(0.8) );
-		&:hover {
-			text-decoration: none;
-			@include background( transparent );
-		}
-		&:active {
-			@include transform( none );
-		}
-		&[disabled], &.disabled {
-			text-decoration: none;
-			color: #999;
-		}
-	}
-	&, a, button {	}
-	// ALIGN
-	&.inline-block { 
-		float: none;
-		display: inline-block; 
-	}
-	&.inline { 
-		float: none;
-		display: inline; 
-	}
-}
 
 
 // =======================
@@ -88,9 +21,7 @@ $button-transition-time:	$transition-speed;
 $shadow-alpha: 				0.8;
 $percent:					20%;
 $dark-button-text-color:	$black_97;
-@mixin button-shadow( $color ) {
-	@include text-shadow( 0px 1px 0px rgba( $color, $shadow-alpha ) );
-}
+
 @mixin button-color( $name, $color ) {
 	&.#{$name} {
 		@if lightness($color) > lightness(#aaa) {
@@ -102,15 +33,12 @@ $dark-button-text-color:	$black_97;
 		// border-color: darken( $color, 15% );
 		@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
 		@include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
-		@include button-shadow( darken( $color, $percent ) );
+		@include text-shadow( 0px 1px 0px rgba( darken( $color, $percent ), $shadow-alpha ) );
 		&:hover { 
 			@include background( darken($color, 10%) );
 		}
 		&:active, &.active {
 			@include box-shadow( inset 0 3px 0px 0px darken( $color, 15% ) );
-		}
-		&.clear {
-			color: #FFF;
 		}
 	}
 }
@@ -135,26 +63,57 @@ $dark-button-text-color:	$black_97;
 		}
 	}	
 }
-
-
-.button {
-	@include button-color( 'white', $google-gray );
-	@include button-color( 'yellow', $google-yellow );
-	@include button-color( 'blue', $google-light-blue );
-	@include button-color( 'dark-blue', $google-blue );
-	@include button-color( 'red', $google-red );
-	@include button-color( 'green', $google-green );
+// Clear button hover colors
+@mixin clear-hover-color( $name, $color ) {
+	&.#{$name} {
+		@include transition( 
+			background $button-transition-time ease,
+			text-shadow $button-transition-time ease 
+		);
+		// @include transition( box-shadow $button-transition-time ease );
+		&:hover {
+			@if lightness($color) > lightness(#aaa) {
+				color: $text-color;
+			} @else {
+				color: $dark-button-text-color;
+			}
+			@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+			// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
+			@include background( $color );			
+		}
+	}
 }
 
 
 // ==========================
-// BUTTON GROUP COLORS
+// COLORES
 // ==========================
+// Botones comunes
+.button {
+	@each $single-color in $button-colors {
+		@include button-color( nth($single-color, 1), nth($single-color, 2) );
+	}
+}
+// Botones sin fondo
+.button.clear {
+	&.hover { // ES CLASE, NO PSEUDO HOVER!
+		@each $single-color in $button-colors {
+			@include clear-hover-color( nth($single-color, 1), nth($single-color, 2) );
+		}
+	}
+}
+// Link button colors
+.button.link {
+	@include text-shadow(none);
+	@each $single-color in $button-colors {
+		&.#{nth($single-color, 1)}	{ color: nth($single-color, 2); }
+	}
+}
+// Botones en grupo
 .button-group {
-	@include button-group-color( 'yellow', $google-yellow );
-	@include button-group-color( 'blue', $google-light-blue );
-	@include button-group-color( 'red', $google-red );
-	@include button-group-color( 'green', $google-green );
+	@each $single-color in $button-colors {
+		@include button-group-color( nth($single-color, 1), nth($single-color, 2) );
+	}
 }
 
 
@@ -235,30 +194,75 @@ $dark-button-text-color:	$black_97;
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// =================
+// EL BOTON
+// =================
+.button {
+	display: block;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	line-height: $button-height;
+	font-size: $button-font-size; // 0.9em
+	border: 0; 
+	@include background( $button-default-bg );
+	color: $button-default-text;
+	@include box-shadow( 0 $button-border-width 0 0 darken($button-default-bg, 25%) );
+	@include border-radius( 5px );
+	@include transition( background $button-transition-time ease );
+	*zoom: 1;
+	&:hover, &:active {
+		background: darken($button-default-bg, 10%);		
+	}
+	&:active, &.active {
+		@include transform( translateY( $button-pressed-offset ) );
+		@include box-shadow( none );
+	}
+	&:focus {
+		outline: none;
+	}
+	&[disabled], &.disabled {
+		color: #999;
+		@include background( #f1f1f1 );
+	}
+	// Boton sin background
+	&.clear {
+		color: $text-color;
+	}
+	// No Style Button
+	&.link {
+		padding: 0;
+		line-height: inherit;
+		font-size: 0.9em;
+	}
+	&.clear, &.link {
+		height: auto;
+		outline: 0;
+		border: 0;
+		@include background( transparent );
+		@include box-shadow( none );
+		@include text-shadow( none );
+		&:hover {
+			text-decoration: none;
+			@include background( transparent );
+		}
+		&:active {
+			@include transform( none );
+		}
+		&[disabled], &.disabled {
+			text-decoration: none;
+			color: #999;
+		}
+	}
+	&, a, button {	}
+	// ALIGN
+	&.inline-block { 
+		float: none;
+		display: inline-block; 
+	}
+	&.inline { 
+		float: none;
+		display: inline; 
+	}
+}
 

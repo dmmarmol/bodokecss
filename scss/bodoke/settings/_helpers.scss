@@ -1,62 +1,105 @@
-/*
-* _helpers.scss
-* Helper clases
-*/ 
+//
+// _helpers.scss
+// Helper clases
+// 
 
 .loading {
 	background-image: img('preloader.gif');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: 32px 32px;
-	// width: 100%;
 	height: 100%;
 	position: relative;
+	min-height: 32px * 4;
 	&:before {
-		content: 'Loading'!important;
+		content: 'Loading...'!important;
 		position: absolute!important;
 		height: 20px;
 		margin: auto;
 		top: 0;
-		left: 0; right: 0; bottom: 0; top: 70px;
+		left: 0; right: 0; bottom: 0; top: 80px;
 		width: 100px!important;
 		font-size: 14px;
 		font-weight: bold;
 		text-align: center;
 	}
 	.fade-container {
-		min-height: 300px;
 		opacity: 1;
 		position: relative;
+		min-height: 300px;
 	}
 }
 
 
+
 // ====================
-// Helpers
+// ERRORS
 // ====================
-/* Alert */
-.alert {
-	background-color: #ffc;
-	display: block;
-	padding: 8px;
-	@include border-radius( 5px );
-}
-.no-desktop {
-	display: none;
+// bdk-error
+$error-arrow-directions: ('up', 'right', 'down', 'left');
+.#{$bodoke-prefix}-error {
+	z-index: 100;
+	.error-panel {
+		position: relative;
+		@include transition( opacity $transition-speed ease );
+		@include border-radius( 5px );
+		@include transition( background $transition-speed ease );
+		// Fondo por default
+		background-color: hsl(0, 0, 80%); 
+		// Colores para el alert/error
+		@each $alert in $alerts-color-pallete {
+			&.#{nth( $alert, 1 )} {
+				background-color: nth($alert, 2);
+				// Flechitas
+				&.arrow {
+					@each $direction in $error-arrow-directions {
+						&.#{$direction} {
+							@include arrow(nth($alert, 2), 8px, $direction);					
+						}
+					}
+				}
+			}
+			.message {
+				@if lightness( nth($alert,2) ) > lightness(#aaa) {
+					color: $text-color;
+				} @else {
+					color: white();
+				}
+			}
+		}
+
+		.message {
+			width: 100%;
+			margin: 0;
+			padding-top: $col-offset;
+			padding-bottom: $col-offset;
+			text-align: center;
+			font-family: $courrier;
+			font-weight: 300;
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
 }
 
+// ====================
+// HELPERS
+// ====================
+
+
+
 // =============================
-// Align Class
+// ALIGNMENT CLASSES
 // =============================
 .float-left, .left { float: left!important; }
 
 .float-right, .right { float: right!important; }
 
 .center {
-	margin-left: auto!important;
-	margin-right: auto!important;
-	float: none!important;
 	display: block!important;
+	margin-left: auto;
+	margin-right: auto;
+	float: none!important;
 }
 .a-center {
 	display: block;
@@ -74,14 +117,15 @@
 }
 
 
+
 // ====================
-// TEXTO
+// TEXT
 // ====================
 .inline {
 	display: inline;
 	float: none;
 }
-.strong {
+.strong, .bold {
 	font-weight: bold;
 }
 .italic {
@@ -90,10 +134,17 @@
 .center-text {
 	text-align: center;
 }
+.right-text {
+	text-align: right; 
+}
+.left-text {
+	text-align: left; 
+}
+
 
 
 // =============================
-// COMPORTAMIENTO DE LOS OBJETOS
+// OBJECT BEHAVIOR
 // =============================
 .block {
 	display: block;
@@ -109,10 +160,11 @@
 }
 
 
+
 // ==============================
-// VISIBILIDAD DE LOS OBJETOS
+// OBJECT VISIBILITY
 // ==============================
-.none, [hidden], .hidden, .hide {
+.none, [hidden], .hidden, .hide, .no-desktop {
 	display: none;
 }
 
@@ -152,26 +204,70 @@
 	height: 100%;
 }
 
+
+
 // ====================
-// IMAGENES
+// IMAGES
 // ====================
-.image-left {
-	margin-right: 20px;
-}
-.image-right {
-	margin-left: 20px;
-}
+
 
 
 // ====================
 // Micro Clearfix
 // ====================
-.clear, 
-.clearfix {
+.clear, .clearfix {
 	*zoom: 1;
 	&:before, &:after { content: ""; display: table; }
 	&:after { clear: both; }
 }
+
+
+
+// ====================
+// CAJAS DE COLORES
+// ====================
+.panel {
+	position: relative;
+	background-color: $black_95;
+	border: 1px solid hsl(0, 0, 90%);
+	@include border-radius( 5px );
+	padding-top: $col-offset / 2;
+	padding-bottom: $col-offset / 2;		
+	padding-left: $col-offset / 2;
+	padding-right: $col-offset / 2;		
+	&.cols, &.cols, &.column, &.columns {
+		padding-left: $col-offset;
+		padding-right: $col-offset;
+	}
+}
+@include mobile() {
+	.panel {
+		&.cols, &.cols, &.column, &.columns {
+			padding-left: $m-offset;
+			padding-right: $m-offset;
+		}
+	}
+}
+
+
+// Alert
+.alert {
+	display: block;
+	// background-color: #ffc;
+	// padding: 8px;
+	// @include border-radius( 5px );
+}
+@each $alert in $alerts-color-pallete {
+	.#{nth( $alert, 1 )} {
+		background-color: nth($alert, 2);
+		@if lightness( nth($alert,2) ) > lightness(#aaa) {
+			color: $text-color;
+		} @else {
+			color: white();
+		}
+	}
+}
+
 
 
 
