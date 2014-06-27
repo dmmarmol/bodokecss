@@ -1,18 +1,13 @@
 // _mixins.scss
-// 
-// Custom BodokeCSS SCSS Mixins
-//
-// If you need more mixins check the compass CSS3 docs
-// http://compass-style.org/reference/compass/css3/
 
 
-// Row Collapse with custom offset
+
+// CLEARFIX
 @mixin collapse( $custom-offset: $col-offset ) {
 	width: auto;
 	margin-right: (-$custom-offset);
 	margin-left: (-$custom-offset);	
 }
-// CLEARFIX
 @mixin clear() {
 	*zoom: 1;
 	&:before, &:after { content: ""; display: table; }
@@ -30,8 +25,9 @@
 }
 
 
+
 // ======================
-// General Mixins
+// Mixins
 // ======================
 $default-text-shadow-color :	#aaaaaa;
 $default-text-shadow-h-offset:	0px;
@@ -125,11 +121,20 @@ $default-transition-delay    : false;
     @keyframes $animation_name { @content; }
 }
 
-//
-//  Example: 
-//  @include animation( animationName 10s 5s, true)
-//
+/*
+    Example usage: 
+    @include animation( animationName 10s 5s, true)
+ */
 @mixin animation( $animation-arguments, $repeat: false) {
+	/* 
+	 * animation-name
+	 * animation-duration
+	 * animation-timing-function
+	 * animation-delay
+	 * animation-iteration-count
+	 * animation-direction.
+	 */
+
 	@if $animation-arguments == none {
 		// There is no animation
 		-webkit-animation: none;
@@ -148,11 +153,10 @@ $default-transition-delay    : false;
 	}
 }
 
-
-// 
-// Animation Delay
-// Single animation delay property
-//
+/* 
+ * Animation Delay
+ * Single animation delay property
+ */
 @mixin animation-delay( $value: 0 ) {
 	animation-delay: $value;
 	-webkit-animation-delay: $value; /* Safari and Chrome */
@@ -162,17 +166,17 @@ $default-transition-delay    : false;
 // ======================
 // Aspect Ratio
 // ======================
-// 
-// Calculate aspect ratio for images
-//
-// The image/video needs to be inside a container
-// @include the @mixin in the container and asign
-// the element to be affected in the second argument.
-//
-// @args
-// $value: Custom value in percentage
-// $element: The <tag> element to be affected by the aspect ratio
-//
+/* 
+ * Calculate aspect ratio for images
+ *
+ * The image/video needs to be inside a container
+ * @include the @mixin in the container and asign
+ * the element to be affected in the second argument.
+ *
+ * @args
+ * $value: Custom value in percentage
+ * $element: The <tag> element to be affected by the aspect ratio
+ */
 @mixin aspect-ratio($value, $element: false){
 
 	// Ratios
@@ -234,7 +238,8 @@ $default-transition-delay    : false;
 	-webkit-line-clamp: $line;
 	-webkit-box-orient: vertical; 
 }
-@mixin truncate-line() {
+@mixin truncate-line( $width:100% ) {
+	width: $width;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -400,8 +405,8 @@ $default-transition-delay    : false;
 		@content;
 	}
 }
-@mixin mobile( $width, $height ) {
-	@media only screen and (max-width: 739px) {
+@mixin mobile( $width:739px ) {
+	@media only screen and (max-width: $width) {
 		@content;
 	}
 }
@@ -411,25 +416,24 @@ $default-transition-delay    : false;
 	}
 }
 @mixin firefox() {
-	// Firefox Only Styling
+	/*
+	 * Firefox Only Styling
+	*/
 	@-moz-document url-prefix() {
 		@content;
 	}
 }
-//
-// Target all the IE versions
-//
+/*
+ * Target all the IE versions
+ */
 @mixin ie($version:false) {
-	// Set the Ie Version
-	@if $version == 8 {
-		$version: '.lt-ie9';
-	} @elseif $version == 7 {
-		$version: '.lt-ie8 .lt-ie9';
-	} @elseif $version == 6 {
-		$version: '.lt-ie7 .lt-ie8 .lt-ie9';
-	}
-	// Place the style inside 
-	// the specific "ie-version" class
+		@if $version == 8 {
+			$version: '.lt-ie9';
+		} @elseif $version == 7 {
+			$version: '.lt-ie8 .lt-ie9';
+		} @elseif $version == 6 {
+			$version: '.lt-ie7 .lt-ie8 .lt-ie9';
+		}
 	html.ie {
 		@if $version != false {
 			&#{$version} {
@@ -438,66 +442,5 @@ $default-transition-delay    : false;
 		} @else {
 			@content;
 		}
-	}
-}
-
-
-// 1.1.0
-// ===============================================
-
-// ==================
-// Aligneación
-// ==================
-// Relative horizontal center
-@mixin center($important: false){
-	margin-left: auto;
-	margin-right: auto; 
-	float: none;
-	display: block;	
-}
-// Absolute vertical center
-@mixin v-center($important: false){
-	display: block;
-	@if $important { position: absolute!important; } @else { position: absolute; } 
-	top: 0; right: auto; bottom: 0; left: auto;
-	margin: auto;
-	@if $important { float: none!important; } @else { float: none; } 
-}
-// Absolute vertical & horizontal center
-@mixin a-center($important: false){
-	display: block;
-	@if $important { position: absolute!important; } @else { position: absolute; } 
-	top: 0; right: 0; bottom: 0; left: 0;
-	margin: auto;
-	@if $important { float: none!important; } @else { float: none; } 
-}
-
-// ==================
-// Text
-// ==================
-// Text stroke (only webkit)
-@mixin text-stroke($stroke-width, $stroke-color: false, $stroke-fill: auto) {
-	-webkit-text-stroke-width: $stroke-width;
-	-webkit-text-stroke-color: $stroke-color;
-	-webkit-text-fill-color: $stroke-fill;
-}
-
-
-// 1.1.1
-// ===============================================
-
-// adds most common prefixs to css properties
-@mixin prefixer( $name, $argument  ) {
-	-webkit-#{$name}: #{$argument};
-	-ms-#{$name}: #{$argument};
-	-moz-#{$name}: #{$argument};
-	-o-#{$name}: #{$argument};
-	#{$name}: #{$argument};
-}
-// Transform prefixs
-$prefix-transform: ('-webkit-', '-ms-', '-moz-', '-o-');
-@mixin transition-transform( $values ) {
-	@each $p in $prefix-transform {
-		@include transition( #{$p}transform $values );
 	}
 }
