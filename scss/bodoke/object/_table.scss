@@ -22,11 +22,19 @@ table {
 	}
 	tr {
 		@include transition( background-color 0.25s ease );
+		// border-right-width: 1px;
+		// border-right-style: solid;
+		// border-left-width: 1px;
+		// border-left-style: solid;
+		// border-bottom-width: 1px;
+		// border-bottom-style: solid;
 		border:none;
 		&:hover {  }
 	}
 	td {
 		border: none;
+		// border-right-width: 1px;
+		// border-right-style: solid;
 		font-size: 1em;
 		font-weight: 300;
 		line-height: $row-size;
@@ -54,9 +62,7 @@ table {
 	&.#{$color-name} {
 		thead {
 			th {
-				// Bevel
 				@include gradient( darken( $table-bg, 20%), darken( $table-bg, 30% ) );
-				// Flat
 				// @include background( darken( $table-bg, 30% ) );
 			}
 		}
@@ -98,11 +104,11 @@ table {
 }
 
 
-// =========================
-// Genera estilos de tablas 
-// en base a un color maestro
-// =========================
+// ==================
+// TABLE COLORS
+// ==================
 table {
-	@include table-color( 'dark-blue', $dark-blue );
-	@include table-color( 'light-gray', $google-gray );
+	@each $single-color in $tables-color-pallete {
+		@include table-color(  nth($single-color, 1), nth($single-color, 2) );
+	}
 }

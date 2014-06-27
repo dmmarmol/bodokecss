@@ -6,7 +6,11 @@
 	font-size: $normal;
 	line-height: 1em;
 	font-weight: 300;
+	span {
+		&.yellow { color: $yellow; }
+	}
 }
+
 
 
 // =========================
@@ -29,8 +33,14 @@
 }
 
 
+
 // =========================
 // Colors
 // =========================
 .title {
+	@each $single-color in $titles-color-pallete {
+		&.#{nth($single-color, 1)} {
+			color: nth($single-color, 2);
+		} 
+	}
 }
