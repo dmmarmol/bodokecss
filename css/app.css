@@ -12,10 +12,19 @@
  * contributors: 	Leonardo Pittelli, Nicolas Oliva Velez
  * developed at:	Convoy S.R.L - www.convoy.me
 */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 @font-face {
   font-family: "Bodoke";
   src: url("../font/Bodoke.tff");
   src: url("../font/Bodoke.tff") format("eot"), url("../font/Bodoke.tff") format("truetype");
+}
+
+/* line 32, ../scss/bodoke/settings/_fonts.scss */
+[class*="fontawesome-"]:before,
+[class*="fa-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
 }
 
 /*
@@ -66,6 +75,13 @@ hr {
   font-family: "Bodoke";
   src: url("../font/Bodoke.tff");
   src: url("../font/Bodoke.tff") format("eot"), url("../font/Bodoke.tff") format("truetype");
+}
+
+/* line 32, ../scss/bodoke/settings/_fonts.scss */
+[class*="fontawesome-"]:before,
+[class*="fa-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-style: normal;
 }
 
 /*! normalize.css v1.1.2 | MIT License | git.io/normalize */
@@ -2389,6 +2405,13 @@ table {
 }
 
 /* line 4, ../scss/bodoke/object/_text.scss */
+p {
+  font-size: 0.9em;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+/* line 12, ../scss/bodoke/object/_text.scss */
 p.lead {
   margin-bottom: 20px;
   font-size: 1.2em;
