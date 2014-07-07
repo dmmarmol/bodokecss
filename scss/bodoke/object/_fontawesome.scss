@@ -12,8 +12,8 @@
 @import "font-icons";
 
 $fa-font-path: 	'../fonts';
-$fa-css-prefix:	'fontawesome';
-$fa-version:	$bodoke-version;
+$fa-css-prefix:	'fa';
+$fa-version:	4.1.0;
 
 @font-face {
 	font-family: 'FontAwesome';
@@ -39,7 +39,7 @@ $fa-version:	$bodoke-version;
 }
 
 @mixin fa {
-	[class*="fontawesome"] {
+	[class*=#{$fa-css-prefix}] {
 		@content;
 	}
 }
