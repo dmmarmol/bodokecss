@@ -5,16 +5,24 @@
 // ======================
 // PATHS
 // ======================
-$imgPath: '../img/';
+$IMGPATH: 				'../images/';
+$FONTPATH:				'../font/';
 
 
 // ======================
 // UNIDADES BASICAS
 // ======================
 
+// Ems base
+$base-em:				16px;				// 16px = 1em
+
 // Tiempo
 $transition-time:		0.35s;		 		// Descontinuado en bodoke.css
 $transition-speed:		0.35s;
+// Icons
+$base-icon-size:		24px;
+$em-icon-size:			em($base-icon-size / $base-em);
+$icon-size:				$base-icon-size;
 
 
 // ======================

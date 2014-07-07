@@ -7,7 +7,7 @@
  *
  * author: 			Diego Martin Marmol
  * website: 		www.diegomarmol.com.ar
- * version:			1.1.1
+ * version:			1.1.2
  * release date:	20/05/14		
  * contributors: 	Leonardo Pittelli, Nicolas Oliva Velez
  * developed at:	Convoy S.R.L - www.convoy.me
@@ -5676,7 +5676,7 @@ table {
 /* line 10, ../scss/bodoke/object/_icons.scss */
 .icon {
   display: block;
-  background-image: url("../img/institucional/icons.png");
+  background-image: url("../images/institucional/icons.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -9277,7 +9277,7 @@ body.example {
 
 /* line 6, ../scss/bodoke/settings/_helpers.scss */
 .loading {
-  background-image: url("../img/preloader.gif");
+  background-image: url("../images/preloader.gif");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 32px 32px;

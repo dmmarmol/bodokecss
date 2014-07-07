@@ -35,18 +35,17 @@
 	}
 }
 
-$imgPath: '../img/';
 @function img( $path ) {
-	@return url( $imgPath + $path);
+	@return url( $IMGPATH + $path);
 }
 @function institucional( $path ) {
-	@return url( $imgPath + 'institucional/' + $path);
+	@return url( $IMGPATH + 'institucional/' + $path);
 }
 @function placeholder( $path ) {
-	@return url( $imgPath + 'placeholder/' + $path);
+	@return url( $IMGPATH + 'placeholder/' + $path);
 }
 @function bg( $path ) {
-	@return url( $imgPath + 'background/' + $path);
+	@return url( $IMGPATH + 'background/' + $path);
 }
 
 // Strip Number Unit

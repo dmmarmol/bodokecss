@@ -4,10 +4,6 @@
 // FUENTES
 // ==============================
 
-// Path hacia la carpeta de fuentes
-// ==============================
-$font-path:				'../font/';
-
 
 // Lista de fuentes para utilizar
 // ==============================
@@ -19,7 +15,7 @@ $lucida-sans:			'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 $verdana:				Verdana, Helvetica, Geneva, sans-serif;
 $fontAwesome:			'FontAwesome', sans-serif;
 
-$font-bodoke:			'Bodoke'; // 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$bodoke-font:			'Bodoke';
 
 $text-font:				$verdana;
 $number-font:			$lucida-sans;
@@ -35,18 +31,18 @@ $icon-font:				$fontAwesome;
 
 // Carga las fuentes
 // ==============================
-// @include font-face( 'Bodoke', font-files('Bodoke.tff', 'ttf'), $font-path );
+// @include font-face( 'Bodoke', font-files('Bodoke.tff', 'ttf'), $FONTPATH );
 @font-face {
-	font-family: "Bodoke";
-	src: url($font-path+'Bodoke.tff');
-	src: url($font-path+'Bodoke.tff') format('eot'), url($font-path+'Bodoke.tff') format('truetype');
+	font-family: $bodoke-font;
+	src: url($FONTPATH+'Bodoke.tff');
+	src: url($FONTPATH+'Bodoke.tff') format('eot'), url($FONTPATH+'Bodoke.tff') format('truetype');
 }
 
 
 // ==============================
-// FontAwesome
-// ==============================
 // Icon fonts
+// ==============================
+// FontAwesome
 @import "../object/fontawesome";
 
 
