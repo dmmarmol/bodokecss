@@ -9222,11 +9222,11 @@ body.example {
 /* line 13, ../scss/bodoke/object/_bodoke-example.scss */
 .example-header h1 {
   color: white;
-  line-height: 1em;
+  line-height: 1;
   text-indent: -4px;
   font-size: 3.7em;
   font-weight: 500;
-  font-family: "Bodoke";
+  font-family: "Bodoke" "Open Sans", sans-serif;
 }
 /* line 21, ../scss/bodoke/object/_bodoke-example.scss */
 .example-header small {
