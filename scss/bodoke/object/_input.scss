@@ -1,0 +1,79 @@
+// _input.scss
+
+$input-height: 3em;
+$input-padding-y:	($input-height - ($input-height / 2)) / 2;
+$input-line-height: $input-height - ($input-height / 2);
+
+input, select, textarea 
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"]
+{
+	-webkit-appearance: none;
+	position: relative;
+	width: 100%;
+	font-size: 0.9em;
+	font-weight: 300;	
+	border: 1px solid $gray-border;
+	background: #FFF;
+	padding-top: $input-padding-y;
+	padding-bottom: $input-padding-y;
+	padding-right: $col-offset;
+	padding-left: $col-offset;
+	@include box-shadow( none );
+	@include border-radius( 5px );
+	@include placeholder {
+		color: hsl(0, 0, 60%);
+		text-transform: uppercase;
+	}
+}
+input, select {
+	line-height: $input-line-height;	
+}
+select {
+	height: $input-height;
+}
+input {
+
+}
+
+
+// ================================
+// RADIO AND CHECK BUTTONS
+// ================================
+input[type="radio"],
+input[type="checkbox"] {
+	&:checked {
+		border: 7px solid white;
+		background-color: $gray-dark;			
+	}
+}
+
+
+// ================================
+// INPUT STRUCTURE
+// ================================
+$input-offset:	1em;
+.input-row {
+	margin-bottom: $input-offset;
+	@include clear;
+	.label-title {
+		color: $text-color;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.input-box {
+	padding-top: $input-offset;
+}

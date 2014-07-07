@@ -233,13 +233,14 @@ $default-transition-delay    : false;
 // ========================
 // LINE CLAMP / CUT STRING
 // ========================
+// Cuts a line and add ellipsis
 @mixin line-clamp( $line ) {
 	display: -webkit-box;
 	-webkit-line-clamp: $line;
 	-webkit-box-orient: vertical; 
 }
-@mixin truncate-line( $width:100% ) {
-	width: $width;
+// Cuts a single line of text and add ellipsis
+@mixin truncate-line() {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -496,5 +497,30 @@ $prefix-transform: ('-webkit-', '-ms-', '-moz-', '-o-');
 @mixin transition-transform( $values ) {
 	@each $p in $prefix-transform {
 		@include transition( #{$p}transform $values );
+	}
+}
+
+
+// Version 1.1.2
+// ===============================================
+@mixin h-center() {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+@mixin placeholder {
+	&.placeholder				 { @content }
+	&::-webkit-input-placeholder { @content }
+	&:-moz-placeholder           { @content }
+	&::-moz-placeholder          { @content }
+	&:-ms-input-placeholder      { @content }
+}
+@mixin reset-search() {
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button,
+	&::-webkit-search-results-button,
+	&::-webkit-search-results-decoration {
+		@content;
 	}
 }

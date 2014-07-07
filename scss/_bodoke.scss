@@ -12,7 +12,7 @@
  * developed at:	Convoy S.R.L - www.convoy.me
 */
 
-$bodoke-version:			1.1.1;
+$bodoke-version:			1.1.2;
 $bodoke-prefix:				'bdk';
 
 // Compass CSS3 Mixins
@@ -31,10 +31,12 @@ $bodoke-prefix:				'bdk';
 @import "bodoke/object/buttons";
 // @import 'bodoke/object/buttons-google';	 	// GOOGLE BUTTONS
 @import "bodoke/object/icons";
+
 @import "bodoke/object/animations";
 @import "bodoke/object/titles";
 @import "bodoke/object/text";
 @import "bodoke/object/menu";
+@import "bodoke/object/input";
 @import "bodoke/object/tooltip";
 @import "bodoke/object/dropdown";
 @import "bodoke/object/table";

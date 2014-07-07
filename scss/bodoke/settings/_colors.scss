@@ -26,7 +26,9 @@ $black_90:			hsl(0, 0, 90%);
 $black_95:			hsl(0, 0, 95%);
 $black_97:			hsl(0, 0, 97%);
 
-
+$gray:				$black_95;
+$gray-border:		hsl(0, 0, 90%);
+$gray-dark:			hsl(0, 0, 40%);
 
 // ======================
 // HOT COLORS
@@ -40,17 +42,21 @@ $orange:			#ff9900;
 // COLD COLORS
 // ======================
 $cyan: 				#69afeb;
-$blue:				#2362ff;
 $dark-blue:			#37477D;
-$green: 			#00a25f;
+$green: 			#639728; // #649827;
 $pale-blue:			#07A3AA;
+$navy-blue:			#1079bb;	// La Caja
+$blue:				#2362ff;
+$light-blue:		#55a0cf;
+// $blue:				dark($navy-blue);
 
 
-$google-gray:		$black_95;
-$google-blue:		$cyan;
+
+$google-gray:		$gray;
+$google-blue:		#2362ff;
 $google-red: 		$red;
 $google-yellow:		$yellow;
-$google-green: 		$green;
+$google-green: 		#00a25f;
 
 
 // ======================
@@ -60,13 +66,25 @@ $google-green: 		$green;
 $color-pallete:	(
 	('white', 		$google-gray), 
 	('yellow', 		$google-yellow), 
-	('blue', 		$google-blue),
+	('blue', 		$blue),
 	('red', 		$google-red),
-	('green', 		$google-green),
+	('green', 		$green),
 	('pale-blue', 	$pale-blue),
-	('gray', 		$google-gray)
+	('gray', 		$google-gray),
+	('dark-gray', 	$gray-dark)
 );
-
+// Background Colors
+@each $color in $color-pallete {
+	.#{nth($color, 1)} {
+		background-color: nth($color, 2);					
+	}
+}
+// Text Colors
+@each $color in $color-pallete {
+	.#{nth($color, 1)}-text {
+		color: nth($color, 2);					
+	}
+}
 
 // ======================
 // BUTTON COLOR PALLETE
@@ -74,9 +92,9 @@ $color-pallete:	(
 // (class, color)
 $buttons-color-pallete:	(
 	('yellow', 		$google-yellow), 
-	('blue', 		$google-blue),
+	('blue', 		$light-blue),
 	('red', 		$google-red),
-	('green', 		$google-green),
+	('green', 		$green),
 	('gray', 		$google-gray)
 );
 
@@ -87,9 +105,9 @@ $buttons-color-pallete:	(
 // (class, color)
 $titles-color-pallete:	(
 	('yellow', 		$google-yellow), 
-	('blue', 		$google-blue),
+	('blue', 		$blue),
 	('red', 		$google-red),
-	('green', 		$google-green),
+	('green', 		$green),
 	('gray', 		$google-gray)
 );
 
@@ -100,9 +118,9 @@ $titles-color-pallete:	(
 // (class, color)
 $tables-color-pallete:	(
 	('yellow', 		$google-yellow), 
-	('blue', 		$google-blue),
+	('blue', 		$blue),
 	('red', 		$google-red),
-	('green', 		$google-green),
+	('green', 		$green),
 	('gray', 		$google-gray)
 );
 
@@ -113,7 +131,7 @@ $tables-color-pallete:	(
 $alerts-color-pallete: (
 	('warning', $red),
 	('alert', $yellow),
-	('success', $green)
+	('success', $google-green)
 );
 
 
@@ -125,6 +143,7 @@ $alerts-color-pallete: (
 // Texto Negro 			- #444
 // Texto Gris 			- #91959C
 $text-color:			$black_20;
+
 
 
 

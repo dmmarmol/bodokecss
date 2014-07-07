@@ -15,8 +15,23 @@ $open-sans:				'Open Sans', sans-serif;
 $open-sans-condensed:	'Open Sans Condensed', sans-serif;
 $fjalla-one:			'Fjalla One', sans-serif;
 $courrier:				'Courrier', 'courrier new', monospace;
-$font-bodoke:			'Bodoke'; //, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$icon-font:				'FontAwesome', sans-serif;
+$lucida-sans:			'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+$verdana:				Verdana, Helvetica, Geneva, sans-serif;
+$fontAwesome:			'FontAwesome', sans-serif;
+
+$font-bodoke:			'Bodoke'; // 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$text-font:				$verdana;
+$number-font:			$lucida-sans;
+$text-condensed:		$fjalla-one;
+
+
+// ======================
+// FUENTES / TIPOGRAFIA
+// ======================
+$global-font:			$text-font;
+$global-font-size:		14px;
+$icon-font:				$fontAwesome;
 
 // Carga las fuentes
 // ==============================
@@ -26,10 +41,12 @@ $icon-font:				'FontAwesome', sans-serif;
 	src: url($font-path+'Bodoke.tff');
 	src: url($font-path+'Bodoke.tff') format('eot'), url($font-path+'Bodoke.tff') format('truetype');
 }
-@import url(http://weloveiconfonts.com/api/?family=fontawesome); // Font Awesome
-// fontawesome
-[class*="fontawesome-"]:before,
-[class*="fa-"]:before {
-	font-family: 'FontAwesome', sans-serif;
-	font-style: normal;
-}
+
+
+// ==============================
+// FontAwesome
+// ==============================
+// Icon fonts
+@import "../object/fontawesome";
+
+
