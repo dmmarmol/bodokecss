@@ -6,6 +6,7 @@
 $button-height: 			32px;
 $button-font-size:			13px;
 $button-offset: 			$col-offset;
+$button-radius:				3px;
 $button-pressed-offset:		3px;
 $button-border-width:		$button-pressed-offset;
 $button-default-bg:			$black_90;
@@ -29,7 +30,11 @@ $dark-button-text-color:	$black_97;
 		} @else {
 			color: $dark-button-text-color;
 		}
+		// Flat Button
 		@include background( $color );
+		// Gradient Button
+		// @include background( linear-gradient( top center, $color, darken($color, 10%) ) );
+
 		// border-color: darken( $color, 15% );
 		@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
 		@include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
@@ -163,12 +168,12 @@ $dark-button-text-color:	$black_97;
 		border-right: none;
 		@include border-radius( 0 );
 		&:first-child { 
-			@include border-radius( 5px 0 0 5px ); 
+			@include border-radius( $button-radius 0 0 $button-radius ); 
 		}
 		&:last-child { 
 			// border-right-width: 3px;
 			// border-right-style: solid;
-			@include border-radius( 0 5px 5px 0 ); 
+			@include border-radius( 0 $button-radius $button-radius 0 ); 
 		}
 		a, button {
 			display: block;
@@ -188,8 +193,8 @@ $dark-button-text-color:	$black_97;
 		.button {
 			float: none;
 			@include border-radius( 0 );
-			// &:first-child { @include border-radius( 5px 5px 0 0 ); }
-			// &:last-child { @include border-radius( 0 0 5px 5px ); }			
+			// &:first-child { @include border-radius( $button-radius $button-radius 0 0 ); }
+			// &:last-child { @include border-radius( 0 0 $button-radius $button-radius ); }			
 		}
 	}
 }
@@ -204,11 +209,12 @@ $dark-button-text-color:	$black_97;
 	text-align: center;
 	line-height: $button-height;
 	font-size: $button-font-size; // 0.9em
-	border: 0; 
+	border: 0;
+	cursor: pointer;
 	@include background( $button-default-bg );
 	color: $button-default-text;
 	@include box-shadow( 0 $button-border-width 0 0 darken($button-default-bg, 25%) );
-	@include border-radius( 5px );
+	@include border-radius( $button-radius );
 	@include transition( background $button-transition-time ease );
 	*zoom: 1;
 	&:hover, &:active {
@@ -237,7 +243,7 @@ $dark-button-text-color:	$black_97;
 	}
 	&.clear, &.link {
 		height: auto;
-		outline: 0;
+		outline: none;
 		border: 0;
 		@include background( transparent );
 		@include box-shadow( none );

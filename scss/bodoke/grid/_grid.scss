@@ -119,22 +119,28 @@ $base-em:				16px;				// 16px = 1em
 		padding-left: 0;
 		padding-right: 0;
 	}
+	&.collapse-right {
+		padding-right: 0;
+	}
+	&.collapse-left {
+		padding-left: 0;
+	}
 }
 
 // Devuelve el ancho segun la cantidad de columnas
-@function col-width( $col-number, $max-cols: $grid-columns ) {
+@function col-width( $col-number, $max-cols ) {
 	@return ($col-number * 100%) / $max-cols;
 }
 
 // Para crear una clase del tipo columna con su ancho
-@mixin col( $col-number, $max-cols: $grid-columns ) {
+@mixin col( $col-number, $max-cols ) {
 	width:	col-width( $col-number, $max-cols );
 	// *width:	expression(Math.floor( col-width( $col-number ) * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
 }
 
 
 // Columnas
-@mixin generate-cols( $total-cols: $grid-columns, $extra-class:'', $extra-prefix: '' ) {
+@mixin generate-cols( $total-cols, $extra-class:'', $extra-prefix: '' ) {
 	@for $i from 1 through $total-cols {
 		.#{$extra-prefix}#{$grid-col-prefix}#{$i}-#{$total-cols}#{$extra-class} {
 			@include col($i, $total-cols);		
@@ -143,29 +149,35 @@ $base-em:				16px;				// 16px = 1em
 }
 // Margen izquierdo 
 // (para compensar la ausencia de columnas a la izquierda)
-@mixin generate-offset( $total-cols: $grid-columns, $extra-class:'', $extra-prefix: '' ) {
+@mixin generate-offset( $total-cols, $extra-class:'', $extra-prefix: '' ) {
 	@for $i from 1 through $total-cols {
 		.#{$extra-prefix}#{$grid-offset-prefix}-#{$i}-#{$total-cols}#{$extra-class} {
-			margin-left: col-width($i);
+			margin-left: col-width($i, $total-cols);
 		}
 	}	
 }
 // Margen derecho 
 // (para compensar la ausencia de columnas a la derecha)
-@mixin generate-pull( $total-cols: $grid-columns, $extra-class:'', $extra-prefix: '' ) {
+@mixin generate-pull( $total-cols, $extra-class:'', $extra-prefix: '' ) {
 	@for $i from 1 through $total-cols {
 		.#{$extra-prefix}#{$grid-pull-prefix}-#{$i}-#{$total-cols}#{$extra-class} {
-			margin-right: col-width($i);
+			margin-right: col-width($i, $total-cols);
 		}
 	}	
 }
 
 // Mixin para generar la grilla
 @mixin grid( $total-cols: $grid-columns ) {
+	$columns: '';
+	@if $total-cols != $grid-columns {
+		$columns: $total-cols;
+	} @else {
+		$columns: $grid-columns;
+	}
 	// Todas las resoluciones
-	@include generate-cols( $grid-columns );
-	@include generate-offset( $grid-columns );
-	@include generate-pull( $grid-columns );
+	@include generate-cols( $columns );
+	@include generate-offset( $columns );
+	@include generate-pull( $columns );
 
 	
 
@@ -202,9 +214,9 @@ $base-em:				16px;				// 16px = 1em
 		// Es menor a 800
 		// ====================
 		// @include generate-cols( $grid-columns, '', 'md-' );
-		@include generate-cols( $grid-columns, '', $grid-medium-prefix );
-		@include generate-offset( $grid-columns, '', $grid-medium-prefix );
-		@include generate-pull( $grid-columns, '', $grid-medium-prefix );
+		@include generate-cols( $columns, '', $grid-medium-prefix );
+		@include generate-offset( $columns, '', $grid-medium-prefix );
+		@include generate-pull( $columns, '', $grid-medium-prefix );
 
 
 		.md-center {
@@ -267,13 +279,13 @@ $base-em:				16px;				// 16px = 1em
 
 		// Columnas que no colapsan en tablets
 		// Ej: .c6-12.tablet
-		// @include generate-cols( $grid-columns, '.tablet' );
-		// @include generate-offset( $grid-columns, '.tablet' );
-		// @include generate-pull( $grid-columns, '.tablet' );
+		// @include generate-cols( $columns, '.tablet' );
+		// @include generate-offset( $columns, '.tablet' );
+		// @include generate-pull( $columns, '.tablet' );
 
-		@include generate-cols( $grid-columns, '', $grid-tablet-prefix );
-		@include generate-offset( $grid-columns, '', $grid-tablet-prefix );
-		@include generate-pull( $grid-columns, '', $grid-tablet-prefix );
+		@include generate-cols( $columns, '', $grid-tablet-prefix );
+		@include generate-offset( $columns, '', $grid-tablet-prefix );
+		@include generate-pull( $columns, '', $grid-tablet-prefix );
 
 
 
@@ -331,7 +343,7 @@ $base-em:				16px;				// 16px = 1em
 		// Las columnas colapsan en mobile
 		.col, .cols, .column, .columns, [class*="md-"] {
 			display: block;
-			// width: col-width($grid-columns);
+			// width: col-width($columns);
 			width: 100%;
 			padding-left: $m-offset;
 			padding-right: $m-offset;
@@ -349,15 +361,15 @@ $base-em:				16px;				// 16px = 1em
 
 		// Columnas que no colapsan en mobile
 		// Ej: .c6-12.mobile
-		// @include generate-cols( $grid-columns, '.mobile' );
-		// @include generate-offset( $grid-columns, '.mobile' );
-		// @include generate-pull( $grid-columns, '.mobile' );
+		// @include generate-cols( $columns, '.mobile' );
+		// @include generate-offset( $columns, '.mobile' );
+		// @include generate-pull( $columns, '.mobile' );
 
 		// Columnas para mobile
 		// Ej: .mobile-c6-12
-		@include generate-cols( $grid-columns, '', $grid-mobile-prefix );
-		@include generate-offset( $grid-columns, '', $grid-mobile-prefix );
-		@include generate-pull( $grid-columns, '', $grid-mobile-prefix );
+		@include generate-cols( $columns, '', $grid-mobile-prefix );
+		@include generate-offset( $columns, '', $grid-mobile-prefix );
+		@include generate-pull( $columns, '', $grid-mobile-prefix );
 		.col, .cols, .column, .columns {
 			&.mobile { float: left; }
 		}

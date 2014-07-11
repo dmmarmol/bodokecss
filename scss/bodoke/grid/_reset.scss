@@ -9,6 +9,9 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+*:focus {
+	outline: none;
+}
 article,
 aside,
 details,

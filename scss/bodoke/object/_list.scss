@@ -1,0 +1,26 @@
+// _list.scss
+
+ul, ol {
+	&.horizontal, &.horz {
+		li { 
+			float: left; 
+		}
+		&.centered, &.inline {
+			text-align: center;
+			li {
+				float: none;
+				display: inline-block;				
+			}
+		}
+	}
+	&.vertical, &.vert {
+		li {
+			margin: 0;
+			display: block;
+			float: none;
+		}
+	}
+	li {
+		@include clear();
+	}
+}

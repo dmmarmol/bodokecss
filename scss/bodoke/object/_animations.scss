@@ -15,6 +15,7 @@ $animation-fadeInUp:			true;
 // Efectos
 $animation-bounceUp:			false;
 $animation-pulse:				false;
+$animation-spin:				false;
 
 // Entradas
 $animation-showFromRight:		false;
@@ -112,6 +113,20 @@ $animation-delay-count:			8;
 	.#{$animation-name} { @include animation( $animation-name 1s ); }	
 }
 
+// Spin
+@if ( $animation-spin ) {
+	$animation-name: spin;
+	@include keyframes($animation-name) {
+		0% 	 {
+			@include transform( rotate(0) ); 
+		}
+		100% {
+			@include transform( rotate(359.9deg) ); 
+		}
+	}
+	.#{$animation-name} { @include animation( $animation-name 1s, true ); }	
+}
+
 // Pulse
 @if ( $animation-pulse ) {
 	$animation-name: pulse;
@@ -128,7 +143,6 @@ $animation-delay-count:			8;
 	}
 	.#{$animation-name} { @include animation( $animation-name 1s ); }	
 }
-
 
 
 // =====================

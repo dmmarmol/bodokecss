@@ -54,9 +54,20 @@
 }
 
 // $base-em:	16px;
-@function em($target, $context: $base-em) {
-   @if $target == 0 { @return 0 }
-   @return $target / $context + 0em;
+@function em($target, $round: false, $context: $base-em) {
+	@if $target == 0 { 
+		@return 0;
+	}
+	$number: strip-units( $target );
+	$number: ($number * $context) + 0px;
+	@if $round == 'round' {
+		$number: round($number);
+	} @elseif $round == 'floor' {
+		$number: floor($number);
+	} @elseif $round == 'ceil' {
+		$number: ceil($number);
+	}
+	@return $target / $context + 0em;
 }
 @function px($target, $round: false, $context: $base-em){
 	$number: strip-units( $target );

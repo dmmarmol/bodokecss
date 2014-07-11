@@ -73,7 +73,8 @@ $default-transition-delay    : false;
 
 // Background
 // ===============================================
-@mixin background($color, $alpha:1) {
+// 1.1.2 - nuevo nombre bg()
+@mixin bg($color, $alpha:1) {
 	$rgba: rgba(0, 0, 0, 0);
 	@if $color != transparent {
 		$rgba: rgba($color, $alpha);
@@ -121,19 +122,19 @@ $default-transition-delay    : false;
     @keyframes $animation_name { @content; }
 }
 
-/*
-    Example usage: 
-    @include animation( animationName 10s 5s, true)
- */
+//
+//  Example usage: 
+//  @include animation( animationName 10s 5s, true)
+//
 @mixin animation( $animation-arguments, $repeat: false) {
-	/* 
-	 * animation-name
-	 * animation-duration
-	 * animation-timing-function
-	 * animation-delay
-	 * animation-iteration-count
-	 * animation-direction.
-	 */
+	// 
+	// animation-name
+	// animation-duration
+	// animation-timing-function
+	// animation-delay
+	// animation-iteration-count
+	// animation-direction.
+	//
 
 	@if $animation-arguments == none {
 		// There is no animation
@@ -153,10 +154,10 @@ $default-transition-delay    : false;
 	}
 }
 
-/* 
- * Animation Delay
- * Single animation delay property
- */
+// 
+// Animation Delay
+// Single animation delay property
+//
 @mixin animation-delay( $value: 0 ) {
 	animation-delay: $value;
 	-webkit-animation-delay: $value; /* Safari and Chrome */
@@ -166,17 +167,17 @@ $default-transition-delay    : false;
 // ======================
 // Aspect Ratio
 // ======================
-/* 
- * Calculate aspect ratio for images
- *
- * The image/video needs to be inside a container
- * @include the @mixin in the container and asign
- * the element to be affected in the second argument.
- *
- * @args
- * $value: Custom value in percentage
- * $element: The <tag> element to be affected by the aspect ratio
- */
+// 
+// Calculate aspect ratio for images
+//
+// The image/video needs to be inside a container
+// @include the @mixin in the container and asign
+// the element to be affected in the second argument.
+//
+// @args
+// $value: Custom value in percentage
+// $element: The <tag> element to be affected by the aspect ratio
+//
 @mixin aspect-ratio($value, $element: false){
 
 	// Ratios
@@ -261,14 +262,14 @@ $default-transition-delay    : false;
 // ARROW BOX
 // ===================
 @mixin arrow( $color, $size: 10px, $direction: 'top', $position: 'default', $border: none, $border-color: none ) {
-	/**
-	 * $color:			Hex, rgb, rgba
-	 * $size:			value of the arrow height in pixels			|default: 10px
-	 * $direction:		'top', 'right', 'bottom', 'left'			|default: false
-	 * $position:		value of the arrow position in percent 		|default: 'default'
-	 * $border:			value of the arrow border width in pixels 	|default: 'none'
-	 * $border-color:	Hex, rgb, rgba 								|default: #444
-	*/
+	//
+	// $color:			Hex, rgb, rgba
+	// $size:			value of the arrow height in pixels			|default: 10px
+	// $direction:		'top', 'right', 'bottom', 'left'			|default: false
+	// $position:		value of the arrow position in percent 		|default: 'default'
+	// $border:			value of the arrow border width in pixels 	|default: 'none'
+	// $border-color:	Hex, rgb, rgba 								|default: #444
+	//
 
 	background-color: $color;
 	@if $border != none {
@@ -394,9 +395,9 @@ $default-transition-delay    : false;
 // ===================
 @mixin screen( $screen: 1024px, $condition: 'max-width' ) {
 	@media only screen and ($condition: $screen) {
-		/* 
-		 * Hasta 1024px 
-		 */
+		// 
+		// Hasta 1024px 
+		//
 		@content;
 	}
 }
@@ -417,16 +418,16 @@ $default-transition-delay    : false;
 	}
 }
 @mixin firefox() {
-	/*
-	 * Firefox Only Styling
-	*/
+	//
+	// Firefox Only Styling
+	//
 	@-moz-document url-prefix() {
 		@content;
 	}
 }
-/*
- * Target all the IE versions
- */
+//
+// Target all the IE versions
+//
 @mixin ie($version:false) {
 		@if $version == 8 {
 			$version: '.lt-ie9';
