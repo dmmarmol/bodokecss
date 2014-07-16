@@ -56,6 +56,22 @@ input {
 
 
 // ================================
+// REQUIREMENTS AND INFO
+// ================================
+sup, .sup {
+		top: 0;
+		color: $red;
+		font-size: 14px;
+	}
+.q {
+	position: relative;
+	bottom: 3px;
+	color: $gray-border;
+	font-size: 10px;
+	font-weight: 600;
+}
+
+// ================================
 // RADIO AND CHECK BUTTONS
 // ================================
 input[type="radio"],

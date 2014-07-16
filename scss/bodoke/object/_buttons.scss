@@ -30,10 +30,19 @@ $dark-button-text-color:	$black_97;
 		} @else {
 			color: $dark-button-text-color;
 		}
-		// Flat Button
+
+		// Compass stable release
+		// ============================
+		// - Gradient Button
+		// @include background-image(linear-gradient( center top, $color, darken($color, 10%) ) );
+		
+		// Compass 1.0.0 ALPHA
+		// ============================
+		// - Gradient Button
+		// @include background( linear-gradient( 180deg, $color, darken($color, 10%) ) );
+		
+		// - Flat Button
 		@include background( $color );
-		// Gradient Button
-		// @include background( linear-gradient( top center, $color, darken($color, 10%) ) );
 
 		// border-color: darken( $color, 15% );
 		@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );

@@ -128,16 +128,15 @@ $base-em:				16px;				// 16px = 1em
 }
 
 // Devuelve el ancho segun la cantidad de columnas
-@function col-width( $col-number, $max-cols ) {
+@function col-width( $col-number, $max-cols: $grid-columns ) {
 	@return ($col-number * 100%) / $max-cols;
 }
 
 // Para crear una clase del tipo columna con su ancho
-@mixin col( $col-number, $max-cols ) {
+@mixin col( $col-number, $max-cols: $grid-columns ) {
 	width:	col-width( $col-number, $max-cols );
 	// *width:	expression(Math.floor( col-width( $col-number ) * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
 }
-
 
 // Columnas
 @mixin generate-cols( $total-cols, $extra-class:'', $extra-prefix: '' ) {
@@ -147,6 +146,7 @@ $base-em:				16px;				// 16px = 1em
 		}
 	}	
 }
+
 // Margen izquierdo 
 // (para compensar la ausencia de columnas a la izquierda)
 @mixin generate-offset( $total-cols, $extra-class:'', $extra-prefix: '' ) {
@@ -156,6 +156,7 @@ $base-em:				16px;				// 16px = 1em
 		}
 	}	
 }
+
 // Margen derecho 
 // (para compensar la ausencia de columnas a la derecha)
 @mixin generate-pull( $total-cols, $extra-class:'', $extra-prefix: '' ) {

@@ -45,7 +45,7 @@ $cyan: 				#69afeb;
 $dark-blue:			#37477D;
 $green: 			#639728; // #649827;
 $pale-blue:			#07A3AA;
-$navy-blue:			#1079bb;	// La Caja
+$navy-blue:			#1079bb; // La Caja
 $blue:				#2362ff;
 $light-blue:		#55a0cf;
 // $blue:				dark($navy-blue);
@@ -70,6 +70,7 @@ $color-pallete:	(
 	('red', 		$google-red),
 	('green', 		$green),
 	('pale-blue', 	$pale-blue),
+	('light-gray', 	#fafafa),
 	('gray', 		$google-gray),
 	('dark-gray', 	$gray-dark)
 );

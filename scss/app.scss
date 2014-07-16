@@ -83,6 +83,12 @@ body {
 	@import "media/mobile";
 }
 
+// 1.1.2
+// @media smartphone in landscape position
+@media only screen and (min-width: 321px) {
+	@import "media/mobile-landscape";
+}
+
 
 // ============================================
 // Print styles

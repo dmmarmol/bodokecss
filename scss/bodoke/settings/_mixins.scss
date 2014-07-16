@@ -73,8 +73,8 @@ $default-transition-delay    : false;
 
 // Background
 // ===============================================
-// 1.1.2 - nuevo nombre bg()
-@mixin bg($color, $alpha:1) {
+// 1.1.2 - nuevo nombre bdk-background()
+@mixin bdk-background($color, $alpha:1) {
 	$rgba: rgba(0, 0, 0, 0);
 	@if $color != transparent {
 		$rgba: rgba($color, $alpha);

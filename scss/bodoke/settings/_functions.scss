@@ -44,6 +44,9 @@
 @function placeholder( $path ) {
 	@return url( $IMGPATH + 'placeholder/' + $path);
 }
+@function input( $path ) {
+	@return url( $IMGPATH + 'input/' + $path);
+}
 @function bg( $path ) {
 	@return url( $IMGPATH + 'background/' + $path);
 }
