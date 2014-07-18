@@ -5563,7 +5563,7 @@ table {
   display: inline;
 }
 
-/* line 10, ../scss/bodoke/object/_icons.scss */
+/* line 7, ../scss/bodoke/object/_icons.scss */
 .icon {
   display: block;
   background-image: url("../images/institucional/icons.png");
@@ -5571,913 +5571,913 @@ table {
   background-repeat: no-repeat;
 }
 
-/* line 24, ../scss/bodoke/object/_icons.scss */
+/* line 21, ../scss/bodoke/object/_icons.scss */
 .icon {
   width: 24px;
   height: 24px;
   background-size: 528px 384px;
 }
-/* line 30, ../scss/bodoke/object/_icons.scss */
+/* line 27, ../scss/bodoke/object/_icons.scss */
 .icon.start {
   width: 120px;
   height: 120px;
   background-position: 0 0;
 }
-/* line 34, ../scss/bodoke/object/_icons.scss */
+/* line 31, ../scss/bodoke/object/_icons.scss */
 .icon.start.red {
   width: 72px;
   height: 72px;
   background-position: 0 -120px;
 }
-/* line 38, ../scss/bodoke/object/_icons.scss */
+/* line 35, ../scss/bodoke/object/_icons.scss */
 .icon.start.red.right {
   background-position: -72px -120px;
 }
-/* line 53, ../scss/bodoke/object/_icons.scss */
+/* line 50, ../scss/bodoke/object/_icons.scss */
 .icon.flag.usa {
   background-position: -120px 0;
 }
-/* line 53, ../scss/bodoke/object/_icons.scss */
+/* line 50, ../scss/bodoke/object/_icons.scss */
 .icon.flag.eeuu {
   background-position: -120px 0;
 }
-/* line 53, ../scss/bodoke/object/_icons.scss */
+/* line 50, ../scss/bodoke/object/_icons.scss */
 .icon.flag.ee-uu {
   background-position: -120px 0;
 }
-/* line 53, ../scss/bodoke/object/_icons.scss */
+/* line 50, ../scss/bodoke/object/_icons.scss */
 .icon.flag.estados-unidos {
   background-position: -120px 0;
 }
-/* line 53, ../scss/bodoke/object/_icons.scss */
+/* line 50, ../scss/bodoke/object/_icons.scss */
 .icon.flag.silicon-valley {
   background-position: -120px 0;
 }
-/* line 53, ../scss/bodoke/object/_icons.scss */
+/* line 50, ../scss/bodoke/object/_icons.scss */
 .icon.flag.sil-valley {
   background-position: -120px 0;
 }
-/* line 56, ../scss/bodoke/object/_icons.scss */
+/* line 53, ../scss/bodoke/object/_icons.scss */
 .icon.flag.spa {
   background-position: -120px -48px;
 }
-/* line 56, ../scss/bodoke/object/_icons.scss */
+/* line 53, ../scss/bodoke/object/_icons.scss */
 .icon.flag.espana {
   background-position: -120px -48px;
 }
-/* line 56, ../scss/bodoke/object/_icons.scss */
+/* line 53, ../scss/bodoke/object/_icons.scss */
 .icon.flag.españa {
   background-position: -120px -48px;
 }
-/* line 56, ../scss/bodoke/object/_icons.scss */
+/* line 53, ../scss/bodoke/object/_icons.scss */
 .icon.flag.spain {
   background-position: -120px -48px;
 }
-/* line 59, ../scss/bodoke/object/_icons.scss */
+/* line 56, ../scss/bodoke/object/_icons.scss */
 .icon.flag.bra {
   background-position: -120px -24px;
 }
-/* line 59, ../scss/bodoke/object/_icons.scss */
+/* line 56, ../scss/bodoke/object/_icons.scss */
 .icon.flag.brasil {
   background-position: -120px -24px;
 }
-/* line 59, ../scss/bodoke/object/_icons.scss */
+/* line 56, ../scss/bodoke/object/_icons.scss */
 .icon.flag.brazil {
   background-position: -120px -24px;
 }
-/* line 59, ../scss/bodoke/object/_icons.scss */
+/* line 56, ../scss/bodoke/object/_icons.scss */
 .icon.flag.sao-paulo {
   background-position: -120px -24px;
 }
-/* line 59, ../scss/bodoke/object/_icons.scss */
+/* line 56, ../scss/bodoke/object/_icons.scss */
 .icon.flag.san-pablo {
   background-position: -120px -24px;
 }
-/* line 59, ../scss/bodoke/object/_icons.scss */
+/* line 56, ../scss/bodoke/object/_icons.scss */
 .icon.flag.rio-de-janeiro {
   background-position: -120px -24px;
 }
-/* line 62, ../scss/bodoke/object/_icons.scss */
+/* line 59, ../scss/bodoke/object/_icons.scss */
 .icon.flag.arg {
   background-position: -120px -72px;
 }
-/* line 62, ../scss/bodoke/object/_icons.scss */
+/* line 59, ../scss/bodoke/object/_icons.scss */
 .icon.flag.argentina {
   background-position: -120px -72px;
 }
-/* line 62, ../scss/bodoke/object/_icons.scss */
+/* line 59, ../scss/bodoke/object/_icons.scss */
 .icon.flag.buenos-aires {
   background-position: -120px -72px;
 }
-/* line 62, ../scss/bodoke/object/_icons.scss */
+/* line 59, ../scss/bodoke/object/_icons.scss */
 .icon.flag.bs-as {
   background-position: -120px -72px;
 }
-/* line 65, ../scss/bodoke/object/_icons.scss */
+/* line 62, ../scss/bodoke/object/_icons.scss */
 .icon.flag.col {
   background-position: -120px -96px;
 }
-/* line 65, ../scss/bodoke/object/_icons.scss */
+/* line 62, ../scss/bodoke/object/_icons.scss */
 .icon.flag.colombia {
   background-position: -120px -96px;
 }
-/* line 65, ../scss/bodoke/object/_icons.scss */
+/* line 62, ../scss/bodoke/object/_icons.scss */
 .icon.flag.bogota {
   background-position: -120px -96px;
 }
-/* line 68, ../scss/bodoke/object/_icons.scss */
+/* line 65, ../scss/bodoke/object/_icons.scss */
 .icon.flag.mex {
   background-position: -144px 0;
 }
-/* line 68, ../scss/bodoke/object/_icons.scss */
+/* line 65, ../scss/bodoke/object/_icons.scss */
 .icon.flag.mexico {
   background-position: -144px 0;
 }
-/* line 68, ../scss/bodoke/object/_icons.scss */
+/* line 65, ../scss/bodoke/object/_icons.scss */
 .icon.flag.mexico-df {
   background-position: -144px 0;
 }
-/* line 70, ../scss/bodoke/object/_icons.scss */
+/* line 67, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big {
   width: 72px;
   height: 48px;
 }
-/* line 74, ../scss/bodoke/object/_icons.scss */
+/* line 71, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.arg {
   background-position: -168px 0;
 }
-/* line 74, ../scss/bodoke/object/_icons.scss */
+/* line 71, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.argentina {
   background-position: -168px 0;
 }
-/* line 74, ../scss/bodoke/object/_icons.scss */
+/* line 71, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.buenos-aires {
   background-position: -168px 0;
 }
-/* line 74, ../scss/bodoke/object/_icons.scss */
+/* line 71, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.bs-as {
   background-position: -168px 0;
 }
-/* line 77, ../scss/bodoke/object/_icons.scss */
+/* line 74, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.bra {
   background-position: -240px 0;
 }
-/* line 77, ../scss/bodoke/object/_icons.scss */
+/* line 74, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.brasil {
   background-position: -240px 0;
 }
-/* line 77, ../scss/bodoke/object/_icons.scss */
+/* line 74, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.brazil {
   background-position: -240px 0;
 }
-/* line 77, ../scss/bodoke/object/_icons.scss */
+/* line 74, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.sao-paulo {
   background-position: -240px 0;
 }
-/* line 77, ../scss/bodoke/object/_icons.scss */
+/* line 74, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.san-pablo {
   background-position: -240px 0;
 }
-/* line 77, ../scss/bodoke/object/_icons.scss */
+/* line 74, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.rio-de-janeiro {
   background-position: -240px 0;
 }
-/* line 80, ../scss/bodoke/object/_icons.scss */
+/* line 77, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.col {
   background-position: -240px -96px;
 }
-/* line 80, ../scss/bodoke/object/_icons.scss */
+/* line 77, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.colombia {
   background-position: -240px -96px;
 }
-/* line 80, ../scss/bodoke/object/_icons.scss */
+/* line 77, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.bogota {
   background-position: -240px -96px;
 }
-/* line 83, ../scss/bodoke/object/_icons.scss */
+/* line 80, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.mex {
   background-position: -168px -48px;
 }
-/* line 83, ../scss/bodoke/object/_icons.scss */
+/* line 80, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.mexico {
   background-position: -168px -48px;
 }
-/* line 83, ../scss/bodoke/object/_icons.scss */
+/* line 80, ../scss/bodoke/object/_icons.scss */
 .icon.flag.big.mexico-df {
   background-position: -168px -48px;
 }
-/* line 89, ../scss/bodoke/object/_icons.scss */
+/* line 86, ../scss/bodoke/object/_icons.scss */
 .icon.video.play {
   background-position: 0 -264px;
 }
-/* line 92, ../scss/bodoke/object/_icons.scss */
+/* line 89, ../scss/bodoke/object/_icons.scss */
 .icon.video.record {
   background-position: -24px -264px;
 }
-/* line 97, ../scss/bodoke/object/_icons.scss */
+/* line 94, ../scss/bodoke/object/_icons.scss */
 .icon.arrow-dropdown {
   background-position: -48px -264px;
 }
-/* line 102, ../scss/bodoke/object/_icons.scss */
+/* line 99, ../scss/bodoke/object/_icons.scss */
 .icon.status.pending {
   background-position: -72px -264px;
 }
-/* line 103, ../scss/bodoke/object/_icons.scss */
+/* line 100, ../scss/bodoke/object/_icons.scss */
 .icon.status.complete {
   background-position: -96px -264px;
 }
-/* line 104, ../scss/bodoke/object/_icons.scss */
+/* line 101, ../scss/bodoke/object/_icons.scss */
 .icon.status.wrong {
   background-position: -120px -264px;
 }
-/* line 108, ../scss/bodoke/object/_icons.scss */
+/* line 105, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.top {
   background-position: 0 -288px;
 }
-/* line 110, ../scss/bodoke/object/_icons.scss */
+/* line 107, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.top.black {
   background-position: 0 -312px;
 }
-/* line 112, ../scss/bodoke/object/_icons.scss */
+/* line 109, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.right {
   background-position: -24px -288px;
 }
-/* line 114, ../scss/bodoke/object/_icons.scss */
+/* line 111, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.right.black {
   background-position: -24px -312px;
 }
-/* line 116, ../scss/bodoke/object/_icons.scss */
+/* line 113, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.bottom {
   background-position: -48px -288px;
 }
-/* line 118, ../scss/bodoke/object/_icons.scss */
+/* line 115, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.bottom.black {
   background-position: -48px -312px;
 }
-/* line 120, ../scss/bodoke/object/_icons.scss */
+/* line 117, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.left {
   background-position: -72px -288px;
 }
-/* line 122, ../scss/bodoke/object/_icons.scss */
+/* line 119, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.left.black {
   background-position: -72px -312px;
 }
-/* line 125, ../scss/bodoke/object/_icons.scss */
+/* line 122, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.small.down {
   background-position: -288px -192px;
 }
-/* line 126, ../scss/bodoke/object/_icons.scss */
+/* line 123, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.small.right {
   background-position: -312px -192px;
 }
-/* line 127, ../scss/bodoke/object/_icons.scss */
+/* line 124, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.small.up {
   background-position: -288px -216px;
 }
-/* line 128, ../scss/bodoke/object/_icons.scss */
+/* line 125, ../scss/bodoke/object/_icons.scss */
 .icon.arrow.small.left {
   background-position: -312px -216px;
 }
-/* line 132, ../scss/bodoke/object/_icons.scss */
+/* line 129, ../scss/bodoke/object/_icons.scss */
 .icon.live {
   background-position: -144px -264px;
 }
-/* line 136, ../scss/bodoke/object/_icons.scss */
+/* line 133, ../scss/bodoke/object/_icons.scss */
 .icon.calendar {
   width: 48px;
   height: 48px;
   background-position: -192px -264px;
 }
-/* line 142, ../scss/bodoke/object/_icons.scss */
+/* line 139, ../scss/bodoke/object/_icons.scss */
 .icon.face {
   height: 72px;
   width: 72px;
 }
-/* line 145, ../scss/bodoke/object/_icons.scss */
+/* line 142, ../scss/bodoke/object/_icons.scss */
 .icon.face.sad {
   background-position: -96px -312px;
 }
-/* line 146, ../scss/bodoke/object/_icons.scss */
+/* line 143, ../scss/bodoke/object/_icons.scss */
 .icon.face.smile {
   background-position: -168px -312px;
 }
-/* line 149, ../scss/bodoke/object/_icons.scss */
+/* line 146, ../scss/bodoke/object/_icons.scss */
 .icon.close {
   background-position: -240px -264px;
 }
-/* line 153, ../scss/bodoke/object/_icons.scss */
+/* line 150, ../scss/bodoke/object/_icons.scss */
 .icon.notebook {
   background-position: 0 -336px;
 }
-/* line 154, ../scss/bodoke/object/_icons.scss */
+/* line 151, ../scss/bodoke/object/_icons.scss */
 .icon.user {
   background-position: -24px -336px;
 }
 
 @media only screen and (max-height: 600px) {
   /* Netbook size icons - Hasta 600 de alto  */
-  /* line 24, ../scss/bodoke/object/_icons.scss */
+  /* line 21, ../scss/bodoke/object/_icons.scss */
   .sm-icon {
     width: 16px;
     height: 16px;
     background-size: 352px 256px;
   }
-  /* line 30, ../scss/bodoke/object/_icons.scss */
+  /* line 27, ../scss/bodoke/object/_icons.scss */
   .sm-icon.start {
     width: 80px;
     height: 80px;
     background-position: 0 0;
   }
-  /* line 34, ../scss/bodoke/object/_icons.scss */
+  /* line 31, ../scss/bodoke/object/_icons.scss */
   .sm-icon.start.red {
     width: 48px;
     height: 48px;
     background-position: 0 -80px;
   }
-  /* line 38, ../scss/bodoke/object/_icons.scss */
+  /* line 35, ../scss/bodoke/object/_icons.scss */
   .sm-icon.start.red.right {
     background-position: -48px -80px;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.usa {
     background-position: -80px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.eeuu {
     background-position: -80px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.ee-uu {
     background-position: -80px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.estados-unidos {
     background-position: -80px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.silicon-valley {
     background-position: -80px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.sil-valley {
     background-position: -80px 0;
   }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
+  /* line 53, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.spa {
     background-position: -80px -32px;
   }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
+  /* line 53, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.espana {
     background-position: -80px -32px;
   }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
+  /* line 53, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.españa {
     background-position: -80px -32px;
   }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
+  /* line 53, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.spain {
     background-position: -80px -32px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.bra {
     background-position: -80px -16px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.brasil {
     background-position: -80px -16px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.brazil {
     background-position: -80px -16px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.sao-paulo {
     background-position: -80px -16px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.san-pablo {
     background-position: -80px -16px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.rio-de-janeiro {
     background-position: -80px -16px;
   }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
+  /* line 59, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.arg {
     background-position: -80px -48px;
   }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
+  /* line 59, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.argentina {
     background-position: -80px -48px;
   }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
+  /* line 59, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.buenos-aires {
     background-position: -80px -48px;
   }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
+  /* line 59, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.bs-as {
     background-position: -80px -48px;
   }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
+  /* line 62, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.col {
     background-position: -80px -64px;
   }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
+  /* line 62, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.colombia {
     background-position: -80px -64px;
   }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
+  /* line 62, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.bogota {
     background-position: -80px -64px;
   }
-  /* line 68, ../scss/bodoke/object/_icons.scss */
+  /* line 65, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.mex {
     background-position: -96px 0;
   }
-  /* line 68, ../scss/bodoke/object/_icons.scss */
+  /* line 65, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.mexico {
     background-position: -96px 0;
   }
-  /* line 68, ../scss/bodoke/object/_icons.scss */
+  /* line 65, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.mexico-df {
     background-position: -96px 0;
   }
-  /* line 70, ../scss/bodoke/object/_icons.scss */
+  /* line 67, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big {
     width: 48px;
     height: 32px;
   }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
+  /* line 71, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.arg {
     background-position: -112px 0;
   }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
+  /* line 71, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.argentina {
     background-position: -112px 0;
   }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
+  /* line 71, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.buenos-aires {
     background-position: -112px 0;
   }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
+  /* line 71, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.bs-as {
     background-position: -112px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.bra {
     background-position: -160px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.brasil {
     background-position: -160px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.brazil {
     background-position: -160px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.sao-paulo {
     background-position: -160px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.san-pablo {
     background-position: -160px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.rio-de-janeiro {
     background-position: -160px 0;
   }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
+  /* line 77, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.col {
     background-position: -160px -64px;
   }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
+  /* line 77, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.colombia {
     background-position: -160px -64px;
   }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
+  /* line 77, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.bogota {
     background-position: -160px -64px;
   }
-  /* line 83, ../scss/bodoke/object/_icons.scss */
+  /* line 80, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.mex {
     background-position: -112px -32px;
   }
-  /* line 83, ../scss/bodoke/object/_icons.scss */
+  /* line 80, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.mexico {
     background-position: -112px -32px;
   }
-  /* line 83, ../scss/bodoke/object/_icons.scss */
+  /* line 80, ../scss/bodoke/object/_icons.scss */
   .sm-icon.flag.big.mexico-df {
     background-position: -112px -32px;
   }
-  /* line 89, ../scss/bodoke/object/_icons.scss */
+  /* line 86, ../scss/bodoke/object/_icons.scss */
   .sm-icon.video.play {
     background-position: 0 -176px;
   }
-  /* line 92, ../scss/bodoke/object/_icons.scss */
+  /* line 89, ../scss/bodoke/object/_icons.scss */
   .sm-icon.video.record {
     background-position: -16px -176px;
   }
-  /* line 97, ../scss/bodoke/object/_icons.scss */
+  /* line 94, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow-dropdown {
     background-position: -32px -176px;
   }
-  /* line 102, ../scss/bodoke/object/_icons.scss */
+  /* line 99, ../scss/bodoke/object/_icons.scss */
   .sm-icon.status.pending {
     background-position: -48px -176px;
   }
-  /* line 103, ../scss/bodoke/object/_icons.scss */
+  /* line 100, ../scss/bodoke/object/_icons.scss */
   .sm-icon.status.complete {
     background-position: -64px -176px;
   }
-  /* line 104, ../scss/bodoke/object/_icons.scss */
+  /* line 101, ../scss/bodoke/object/_icons.scss */
   .sm-icon.status.wrong {
     background-position: -80px -176px;
   }
-  /* line 108, ../scss/bodoke/object/_icons.scss */
+  /* line 105, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.top {
     background-position: 0 -192px;
   }
-  /* line 110, ../scss/bodoke/object/_icons.scss */
+  /* line 107, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.top.black {
     background-position: 0 -208px;
   }
-  /* line 112, ../scss/bodoke/object/_icons.scss */
+  /* line 109, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.right {
     background-position: -16px -192px;
   }
-  /* line 114, ../scss/bodoke/object/_icons.scss */
+  /* line 111, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.right.black {
     background-position: -16px -208px;
   }
-  /* line 116, ../scss/bodoke/object/_icons.scss */
+  /* line 113, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.bottom {
     background-position: -32px -192px;
   }
-  /* line 118, ../scss/bodoke/object/_icons.scss */
+  /* line 115, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.bottom.black {
     background-position: -32px -208px;
   }
-  /* line 120, ../scss/bodoke/object/_icons.scss */
+  /* line 117, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.left {
     background-position: -48px -192px;
   }
-  /* line 122, ../scss/bodoke/object/_icons.scss */
+  /* line 119, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.left.black {
     background-position: -48px -208px;
   }
-  /* line 125, ../scss/bodoke/object/_icons.scss */
+  /* line 122, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.small.down {
     background-position: -192px -128px;
   }
-  /* line 126, ../scss/bodoke/object/_icons.scss */
+  /* line 123, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.small.right {
     background-position: -208px -128px;
   }
-  /* line 127, ../scss/bodoke/object/_icons.scss */
+  /* line 124, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.small.up {
     background-position: -192px -144px;
   }
-  /* line 128, ../scss/bodoke/object/_icons.scss */
+  /* line 125, ../scss/bodoke/object/_icons.scss */
   .sm-icon.arrow.small.left {
     background-position: -208px -144px;
   }
-  /* line 132, ../scss/bodoke/object/_icons.scss */
+  /* line 129, ../scss/bodoke/object/_icons.scss */
   .sm-icon.live {
     background-position: -96px -176px;
   }
-  /* line 136, ../scss/bodoke/object/_icons.scss */
+  /* line 133, ../scss/bodoke/object/_icons.scss */
   .sm-icon.calendar {
     width: 32px;
     height: 32px;
     background-position: -128px -176px;
   }
-  /* line 142, ../scss/bodoke/object/_icons.scss */
+  /* line 139, ../scss/bodoke/object/_icons.scss */
   .sm-icon.face {
     height: 48px;
     width: 48px;
   }
-  /* line 145, ../scss/bodoke/object/_icons.scss */
+  /* line 142, ../scss/bodoke/object/_icons.scss */
   .sm-icon.face.sad {
     background-position: -64px -208px;
   }
-  /* line 146, ../scss/bodoke/object/_icons.scss */
+  /* line 143, ../scss/bodoke/object/_icons.scss */
   .sm-icon.face.smile {
     background-position: -112px -208px;
   }
-  /* line 149, ../scss/bodoke/object/_icons.scss */
+  /* line 146, ../scss/bodoke/object/_icons.scss */
   .sm-icon.close {
     background-position: -160px -176px;
   }
-  /* line 153, ../scss/bodoke/object/_icons.scss */
+  /* line 150, ../scss/bodoke/object/_icons.scss */
   .sm-icon.notebook {
     background-position: 0 -224px;
   }
-  /* line 154, ../scss/bodoke/object/_icons.scss */
+  /* line 151, ../scss/bodoke/object/_icons.scss */
   .sm-icon.user {
     background-position: -16px -224px;
   }
 
-  /* line 24, ../scss/bodoke/object/_icons.scss */
+  /* line 21, ../scss/bodoke/object/_icons.scss */
   .md-icon {
     width: 24px;
     height: 24px;
     background-size: 528px 384px;
   }
-  /* line 30, ../scss/bodoke/object/_icons.scss */
+  /* line 27, ../scss/bodoke/object/_icons.scss */
   .md-icon.start {
     width: 120px;
     height: 120px;
     background-position: 0 0;
   }
-  /* line 34, ../scss/bodoke/object/_icons.scss */
+  /* line 31, ../scss/bodoke/object/_icons.scss */
   .md-icon.start.red {
     width: 72px;
     height: 72px;
     background-position: 0 -120px;
   }
-  /* line 38, ../scss/bodoke/object/_icons.scss */
+  /* line 35, ../scss/bodoke/object/_icons.scss */
   .md-icon.start.red.right {
     background-position: -72px -120px;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.usa {
     background-position: -120px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.eeuu {
     background-position: -120px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.ee-uu {
     background-position: -120px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.estados-unidos {
     background-position: -120px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.silicon-valley {
     background-position: -120px 0;
   }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
+  /* line 50, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.sil-valley {
     background-position: -120px 0;
   }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
+  /* line 53, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.spa {
     background-position: -120px -48px;
   }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
+  /* line 53, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.espana {
     background-position: -120px -48px;
   }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
+  /* line 53, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.españa {
     background-position: -120px -48px;
   }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
+  /* line 53, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.spain {
     background-position: -120px -48px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.bra {
     background-position: -120px -24px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.brasil {
     background-position: -120px -24px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.brazil {
     background-position: -120px -24px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.sao-paulo {
     background-position: -120px -24px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.san-pablo {
     background-position: -120px -24px;
   }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
+  /* line 56, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.rio-de-janeiro {
     background-position: -120px -24px;
   }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
+  /* line 59, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.arg {
     background-position: -120px -72px;
   }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
+  /* line 59, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.argentina {
     background-position: -120px -72px;
   }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
+  /* line 59, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.buenos-aires {
     background-position: -120px -72px;
   }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
+  /* line 59, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.bs-as {
     background-position: -120px -72px;
   }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
+  /* line 62, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.col {
     background-position: -120px -96px;
   }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
+  /* line 62, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.colombia {
     background-position: -120px -96px;
   }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
+  /* line 62, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.bogota {
     background-position: -120px -96px;
   }
-  /* line 68, ../scss/bodoke/object/_icons.scss */
+  /* line 65, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.mex {
     background-position: -144px 0;
   }
-  /* line 68, ../scss/bodoke/object/_icons.scss */
+  /* line 65, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.mexico {
     background-position: -144px 0;
   }
-  /* line 68, ../scss/bodoke/object/_icons.scss */
+  /* line 65, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.mexico-df {
     background-position: -144px 0;
   }
-  /* line 70, ../scss/bodoke/object/_icons.scss */
+  /* line 67, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big {
     width: 72px;
     height: 48px;
   }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
+  /* line 71, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.arg {
     background-position: -168px 0;
   }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
+  /* line 71, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.argentina {
     background-position: -168px 0;
   }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
+  /* line 71, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.buenos-aires {
     background-position: -168px 0;
   }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
+  /* line 71, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.bs-as {
     background-position: -168px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.bra {
     background-position: -240px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.brasil {
     background-position: -240px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.brazil {
     background-position: -240px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.sao-paulo {
     background-position: -240px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.san-pablo {
     background-position: -240px 0;
   }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
+  /* line 74, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.rio-de-janeiro {
     background-position: -240px 0;
   }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
+  /* line 77, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.col {
     background-position: -240px -96px;
   }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
+  /* line 77, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.colombia {
     background-position: -240px -96px;
   }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
+  /* line 77, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.bogota {
     background-position: -240px -96px;
   }
-  /* line 83, ../scss/bodoke/object/_icons.scss */
+  /* line 80, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.mex {
     background-position: -168px -48px;
   }
-  /* line 83, ../scss/bodoke/object/_icons.scss */
+  /* line 80, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.mexico {
     background-position: -168px -48px;
   }
-  /* line 83, ../scss/bodoke/object/_icons.scss */
+  /* line 80, ../scss/bodoke/object/_icons.scss */
   .md-icon.flag.big.mexico-df {
     background-position: -168px -48px;
   }
-  /* line 89, ../scss/bodoke/object/_icons.scss */
+  /* line 86, ../scss/bodoke/object/_icons.scss */
   .md-icon.video.play {
     background-position: 0 -264px;
   }
-  /* line 92, ../scss/bodoke/object/_icons.scss */
+  /* line 89, ../scss/bodoke/object/_icons.scss */
   .md-icon.video.record {
     background-position: -24px -264px;
   }
-  /* line 97, ../scss/bodoke/object/_icons.scss */
+  /* line 94, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow-dropdown {
     background-position: -48px -264px;
   }
-  /* line 102, ../scss/bodoke/object/_icons.scss */
+  /* line 99, ../scss/bodoke/object/_icons.scss */
   .md-icon.status.pending {
     background-position: -72px -264px;
   }
-  /* line 103, ../scss/bodoke/object/_icons.scss */
+  /* line 100, ../scss/bodoke/object/_icons.scss */
   .md-icon.status.complete {
     background-position: -96px -264px;
   }
-  /* line 104, ../scss/bodoke/object/_icons.scss */
+  /* line 101, ../scss/bodoke/object/_icons.scss */
   .md-icon.status.wrong {
     background-position: -120px -264px;
   }
-  /* line 108, ../scss/bodoke/object/_icons.scss */
+  /* line 105, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.top {
     background-position: 0 -288px;
   }
-  /* line 110, ../scss/bodoke/object/_icons.scss */
+  /* line 107, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.top.black {
     background-position: 0 -312px;
   }
-  /* line 112, ../scss/bodoke/object/_icons.scss */
+  /* line 109, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.right {
     background-position: -24px -288px;
   }
-  /* line 114, ../scss/bodoke/object/_icons.scss */
+  /* line 111, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.right.black {
     background-position: -24px -312px;
   }
-  /* line 116, ../scss/bodoke/object/_icons.scss */
+  /* line 113, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.bottom {
     background-position: -48px -288px;
   }
-  /* line 118, ../scss/bodoke/object/_icons.scss */
+  /* line 115, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.bottom.black {
     background-position: -48px -312px;
   }
-  /* line 120, ../scss/bodoke/object/_icons.scss */
+  /* line 117, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.left {
     background-position: -72px -288px;
   }
-  /* line 122, ../scss/bodoke/object/_icons.scss */
+  /* line 119, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.left.black {
     background-position: -72px -312px;
   }
-  /* line 125, ../scss/bodoke/object/_icons.scss */
+  /* line 122, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.small.down {
     background-position: -288px -192px;
   }
-  /* line 126, ../scss/bodoke/object/_icons.scss */
+  /* line 123, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.small.right {
     background-position: -312px -192px;
   }
-  /* line 127, ../scss/bodoke/object/_icons.scss */
+  /* line 124, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.small.up {
     background-position: -288px -216px;
   }
-  /* line 128, ../scss/bodoke/object/_icons.scss */
+  /* line 125, ../scss/bodoke/object/_icons.scss */
   .md-icon.arrow.small.left {
     background-position: -312px -216px;
   }
-  /* line 132, ../scss/bodoke/object/_icons.scss */
+  /* line 129, ../scss/bodoke/object/_icons.scss */
   .md-icon.live {
     background-position: -144px -264px;
   }
-  /* line 136, ../scss/bodoke/object/_icons.scss */
+  /* line 133, ../scss/bodoke/object/_icons.scss */
   .md-icon.calendar {
     width: 48px;
     height: 48px;
     background-position: -192px -264px;
   }
-  /* line 142, ../scss/bodoke/object/_icons.scss */
+  /* line 139, ../scss/bodoke/object/_icons.scss */
   .md-icon.face {
     height: 72px;
     width: 72px;
   }
-  /* line 145, ../scss/bodoke/object/_icons.scss */
+  /* line 142, ../scss/bodoke/object/_icons.scss */
   .md-icon.face.sad {
     background-position: -96px -312px;
   }
-  /* line 146, ../scss/bodoke/object/_icons.scss */
+  /* line 143, ../scss/bodoke/object/_icons.scss */
   .md-icon.face.smile {
     background-position: -168px -312px;
   }
-  /* line 149, ../scss/bodoke/object/_icons.scss */
+  /* line 146, ../scss/bodoke/object/_icons.scss */
   .md-icon.close {
     background-position: -240px -264px;
   }
-  /* line 153, ../scss/bodoke/object/_icons.scss */
+  /* line 150, ../scss/bodoke/object/_icons.scss */
   .md-icon.notebook {
     background-position: 0 -336px;
   }
-  /* line 154, ../scss/bodoke/object/_icons.scss */
+  /* line 151, ../scss/bodoke/object/_icons.scss */
   .md-icon.user {
     background-position: -24px -336px;
   }
