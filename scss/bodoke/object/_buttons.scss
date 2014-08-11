@@ -243,6 +243,9 @@ $dark-button-text-color:	$black_97;
 	// Boton sin background
 	&.clear {
 		color: $text-color;
+		&:active, &.active {
+			@include transform( none );
+		}
 	}
 	// No Style Button
 	&.link {

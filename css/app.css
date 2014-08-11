@@ -3,21 +3,22 @@
  * Bodoke.css
  * ----------
  * Sexy & simple css framework made in SASS with easy configuration
+ * Inlcude FontAwesome!
  *
  *
  * author: 			Diego Martin Marmol
  * website: 		www.diegomarmol.com.ar
  * version:			1.1.2
  * release date:	20/05/14	
- * contributors: 	Leonardo Pittelli, Nicolas Oliva Velez
+ * contributors: 	Leonardo Pittelli
  * developed at:	Convoy S.R.L - www.convoy.me
  * Compass:			1.0.0.alpha.20
  * SASS:			3.3.10 (Maptastic Maple)
 */
 @font-face {
   font-family: "Bodoke";
-  src: url("../font/Bodoke.tff");
-  src: url("../font/Bodoke.tff") format("eot"), url("../font/Bodoke.tff") format("truetype");
+  src: url("../fonts/Bodoke.tff");
+  src: url("../fonts/Bodoke.tff") format("eot"), url("../fonts/Bodoke.tff") format("truetype");
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
@@ -2282,8 +2283,8 @@
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.1 0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1 0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.1 0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.1 0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1 0#fontawesomeregular") format("svg");
+  src: url("../fonts//fontawesome-webfont.eot?v=4.1 0");
+  src: url("../fonts//fontawesome-webfont.eot?#iefix&v=4.1 0") format("embedded-opentype"), url("../fonts//fontawesome-webfont.woff?v=4.1 0") format("woff"), url("../fonts//fontawesome-webfont.ttf?v=4.1 0") format("truetype"), url("../fonts//fontawesome-webfont.svg?v=4.1 0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -2411,8 +2412,8 @@ hr {
 
 @font-face {
   font-family: "Bodoke";
-  src: url("../font/Bodoke.tff");
-  src: url("../font/Bodoke.tff") format("eot"), url("../font/Bodoke.tff") format("truetype");
+  src: url("../fonts/Bodoke.tff");
+  src: url("../fonts/Bodoke.tff") format("eot"), url("../fonts/Bodoke.tff") format("truetype");
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
@@ -4677,8 +4678,8 @@ hr {
 
 @font-face {
   font-family: 'FontAwesome';
-  src: url("../fonts/fontawesome-webfont.eot?v=4.1 0");
-  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.1 0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.1 0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.1 0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.1 0#fontawesomeregular") format("svg");
+  src: url("../fonts//fontawesome-webfont.eot?v=4.1 0");
+  src: url("../fonts//fontawesome-webfont.eot?#iefix&v=4.1 0") format("embedded-opentype"), url("../fonts//fontawesome-webfont.woff?v=4.1 0") format("woff"), url("../fonts//fontawesome-webfont.ttf?v=4.1 0") format("truetype"), url("../fonts//fontawesome-webfont.svg?v=4.1 0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -5766,767 +5767,55 @@ table {
 .icon.flag.big.mexico-df {
   background-position: -168px -48px;
 }
-/* line 86, ../scss/bodoke/object/_icons.scss */
-.icon.video.play {
-  background-position: 0 -264px;
-}
-/* line 89, ../scss/bodoke/object/_icons.scss */
-.icon.video.record {
-  background-position: -24px -264px;
-}
-/* line 94, ../scss/bodoke/object/_icons.scss */
-.icon.arrow-dropdown {
-  background-position: -48px -264px;
-}
-/* line 99, ../scss/bodoke/object/_icons.scss */
-.icon.status.pending {
-  background-position: -72px -264px;
-}
-/* line 100, ../scss/bodoke/object/_icons.scss */
-.icon.status.complete {
-  background-position: -96px -264px;
-}
-/* line 101, ../scss/bodoke/object/_icons.scss */
-.icon.status.wrong {
-  background-position: -120px -264px;
-}
-/* line 105, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.top {
-  background-position: 0 -288px;
-}
-/* line 107, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.top.black {
-  background-position: 0 -312px;
-}
-/* line 109, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.right {
-  background-position: -24px -288px;
-}
-/* line 111, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.right.black {
-  background-position: -24px -312px;
-}
-/* line 113, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.bottom {
-  background-position: -48px -288px;
-}
-/* line 115, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.bottom.black {
-  background-position: -48px -312px;
-}
-/* line 117, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.left {
-  background-position: -72px -288px;
-}
-/* line 119, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.left.black {
-  background-position: -72px -312px;
-}
-/* line 122, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.small.down {
-  background-position: -288px -192px;
-}
-/* line 123, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.small.right {
-  background-position: -312px -192px;
-}
-/* line 124, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.small.up {
-  background-position: -288px -216px;
-}
-/* line 125, ../scss/bodoke/object/_icons.scss */
-.icon.arrow.small.left {
-  background-position: -312px -216px;
-}
-/* line 129, ../scss/bodoke/object/_icons.scss */
-.icon.live {
-  background-position: -144px -264px;
-}
-/* line 133, ../scss/bodoke/object/_icons.scss */
-.icon.calendar {
-  width: 48px;
-  height: 48px;
-  background-position: -192px -264px;
-}
-/* line 139, ../scss/bodoke/object/_icons.scss */
-.icon.face {
-  height: 72px;
-  width: 72px;
-}
-/* line 142, ../scss/bodoke/object/_icons.scss */
-.icon.face.sad {
-  background-position: -96px -312px;
-}
-/* line 143, ../scss/bodoke/object/_icons.scss */
-.icon.face.smile {
-  background-position: -168px -312px;
-}
-/* line 146, ../scss/bodoke/object/_icons.scss */
-.icon.close {
-  background-position: -240px -264px;
-}
-/* line 150, ../scss/bodoke/object/_icons.scss */
-.icon.notebook {
-  background-position: 0 -336px;
-}
-/* line 151, ../scss/bodoke/object/_icons.scss */
-.icon.user {
-  background-position: -24px -336px;
-}
 
 @media only screen and (max-height: 600px) {
   /* Netbook size icons - Hasta 600 de alto  */
-  /* line 21, ../scss/bodoke/object/_icons.scss */
-  .sm-icon {
-    width: 16px;
-    height: 16px;
-    background-size: 352px 256px;
-  }
-  /* line 27, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.start {
-    width: 80px;
-    height: 80px;
-    background-position: 0 0;
-  }
-  /* line 31, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.start.red {
-    width: 48px;
-    height: 48px;
-    background-position: 0 -80px;
-  }
-  /* line 35, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.start.red.right {
-    background-position: -48px -80px;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.usa {
-    background-position: -80px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.eeuu {
-    background-position: -80px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.ee-uu {
-    background-position: -80px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.estados-unidos {
-    background-position: -80px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.silicon-valley {
-    background-position: -80px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.sil-valley {
-    background-position: -80px 0;
-  }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.spa {
-    background-position: -80px -32px;
-  }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.espana {
-    background-position: -80px -32px;
-  }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.españa {
-    background-position: -80px -32px;
-  }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.spain {
-    background-position: -80px -32px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.bra {
-    background-position: -80px -16px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.brasil {
-    background-position: -80px -16px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.brazil {
-    background-position: -80px -16px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.sao-paulo {
-    background-position: -80px -16px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.san-pablo {
-    background-position: -80px -16px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.rio-de-janeiro {
-    background-position: -80px -16px;
-  }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.arg {
-    background-position: -80px -48px;
-  }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.argentina {
-    background-position: -80px -48px;
-  }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.buenos-aires {
-    background-position: -80px -48px;
-  }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.bs-as {
-    background-position: -80px -48px;
-  }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.col {
-    background-position: -80px -64px;
-  }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.colombia {
-    background-position: -80px -64px;
-  }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.bogota {
-    background-position: -80px -64px;
-  }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.mex {
-    background-position: -96px 0;
-  }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.mexico {
-    background-position: -96px 0;
-  }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.mexico-df {
-    background-position: -96px 0;
-  }
-  /* line 67, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big {
-    width: 48px;
-    height: 32px;
-  }
-  /* line 71, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.arg {
-    background-position: -112px 0;
-  }
-  /* line 71, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.argentina {
-    background-position: -112px 0;
-  }
-  /* line 71, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.buenos-aires {
-    background-position: -112px 0;
-  }
-  /* line 71, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.bs-as {
-    background-position: -112px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.bra {
-    background-position: -160px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.brasil {
-    background-position: -160px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.brazil {
-    background-position: -160px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.sao-paulo {
-    background-position: -160px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.san-pablo {
-    background-position: -160px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.rio-de-janeiro {
-    background-position: -160px 0;
-  }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.col {
-    background-position: -160px -64px;
-  }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.colombia {
-    background-position: -160px -64px;
-  }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.bogota {
-    background-position: -160px -64px;
-  }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.mex {
-    background-position: -112px -32px;
-  }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.mexico {
-    background-position: -112px -32px;
-  }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.flag.big.mexico-df {
-    background-position: -112px -32px;
-  }
-  /* line 86, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.video.play {
-    background-position: 0 -176px;
-  }
-  /* line 89, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.video.record {
-    background-position: -16px -176px;
-  }
-  /* line 94, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow-dropdown {
-    background-position: -32px -176px;
-  }
-  /* line 99, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.status.pending {
-    background-position: -48px -176px;
-  }
-  /* line 100, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.status.complete {
-    background-position: -64px -176px;
-  }
-  /* line 101, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.status.wrong {
-    background-position: -80px -176px;
-  }
-  /* line 105, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.top {
-    background-position: 0 -192px;
-  }
-  /* line 107, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.top.black {
-    background-position: 0 -208px;
-  }
-  /* line 109, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.right {
-    background-position: -16px -192px;
-  }
-  /* line 111, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.right.black {
-    background-position: -16px -208px;
-  }
-  /* line 113, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.bottom {
-    background-position: -32px -192px;
-  }
-  /* line 115, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.bottom.black {
-    background-position: -32px -208px;
-  }
-  /* line 117, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.left {
-    background-position: -48px -192px;
-  }
-  /* line 119, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.left.black {
-    background-position: -48px -208px;
-  }
-  /* line 122, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.small.down {
-    background-position: -192px -128px;
-  }
-  /* line 123, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.small.right {
-    background-position: -208px -128px;
-  }
-  /* line 124, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.small.up {
-    background-position: -192px -144px;
-  }
-  /* line 125, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.arrow.small.left {
-    background-position: -208px -144px;
-  }
-  /* line 129, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.live {
-    background-position: -96px -176px;
-  }
-  /* line 133, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.calendar {
-    width: 32px;
-    height: 32px;
-    background-position: -128px -176px;
-  }
-  /* line 139, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.face {
-    height: 48px;
-    width: 48px;
-  }
-  /* line 142, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.face.sad {
-    background-position: -64px -208px;
-  }
-  /* line 143, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.face.smile {
-    background-position: -112px -208px;
-  }
-  /* line 146, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.close {
-    background-position: -160px -176px;
-  }
-  /* line 150, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.notebook {
-    background-position: 0 -224px;
-  }
-  /* line 151, ../scss/bodoke/object/_icons.scss */
-  .sm-icon.user {
-    background-position: -16px -224px;
-  }
-
-  /* line 21, ../scss/bodoke/object/_icons.scss */
-  .md-icon {
-    width: 24px;
-    height: 24px;
-    background-size: 528px 384px;
-  }
-  /* line 27, ../scss/bodoke/object/_icons.scss */
-  .md-icon.start {
-    width: 120px;
-    height: 120px;
-    background-position: 0 0;
-  }
-  /* line 31, ../scss/bodoke/object/_icons.scss */
-  .md-icon.start.red {
-    width: 72px;
-    height: 72px;
-    background-position: 0 -120px;
-  }
-  /* line 35, ../scss/bodoke/object/_icons.scss */
-  .md-icon.start.red.right {
-    background-position: -72px -120px;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.usa {
-    background-position: -120px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.eeuu {
-    background-position: -120px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.ee-uu {
-    background-position: -120px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.estados-unidos {
-    background-position: -120px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.silicon-valley {
-    background-position: -120px 0;
-  }
-  /* line 50, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.sil-valley {
-    background-position: -120px 0;
-  }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.spa {
-    background-position: -120px -48px;
-  }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.espana {
-    background-position: -120px -48px;
-  }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.españa {
-    background-position: -120px -48px;
-  }
-  /* line 53, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.spain {
-    background-position: -120px -48px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.bra {
-    background-position: -120px -24px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.brasil {
-    background-position: -120px -24px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.brazil {
-    background-position: -120px -24px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.sao-paulo {
-    background-position: -120px -24px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.san-pablo {
-    background-position: -120px -24px;
-  }
-  /* line 56, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.rio-de-janeiro {
-    background-position: -120px -24px;
-  }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.arg {
-    background-position: -120px -72px;
-  }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.argentina {
-    background-position: -120px -72px;
-  }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.buenos-aires {
-    background-position: -120px -72px;
-  }
-  /* line 59, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.bs-as {
-    background-position: -120px -72px;
-  }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.col {
-    background-position: -120px -96px;
-  }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.colombia {
-    background-position: -120px -96px;
-  }
-  /* line 62, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.bogota {
-    background-position: -120px -96px;
-  }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.mex {
-    background-position: -144px 0;
-  }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.mexico {
-    background-position: -144px 0;
-  }
-  /* line 65, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.mexico-df {
-    background-position: -144px 0;
-  }
-  /* line 67, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big {
-    width: 72px;
-    height: 48px;
-  }
-  /* line 71, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.arg {
-    background-position: -168px 0;
-  }
-  /* line 71, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.argentina {
-    background-position: -168px 0;
-  }
-  /* line 71, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.buenos-aires {
-    background-position: -168px 0;
-  }
-  /* line 71, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.bs-as {
-    background-position: -168px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.bra {
-    background-position: -240px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.brasil {
-    background-position: -240px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.brazil {
-    background-position: -240px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.sao-paulo {
-    background-position: -240px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.san-pablo {
-    background-position: -240px 0;
-  }
-  /* line 74, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.rio-de-janeiro {
-    background-position: -240px 0;
-  }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.col {
-    background-position: -240px -96px;
-  }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.colombia {
-    background-position: -240px -96px;
-  }
-  /* line 77, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.bogota {
-    background-position: -240px -96px;
-  }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.mex {
-    background-position: -168px -48px;
-  }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.mexico {
-    background-position: -168px -48px;
-  }
-  /* line 80, ../scss/bodoke/object/_icons.scss */
-  .md-icon.flag.big.mexico-df {
-    background-position: -168px -48px;
-  }
-  /* line 86, ../scss/bodoke/object/_icons.scss */
-  .md-icon.video.play {
-    background-position: 0 -264px;
-  }
-  /* line 89, ../scss/bodoke/object/_icons.scss */
-  .md-icon.video.record {
-    background-position: -24px -264px;
-  }
-  /* line 94, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow-dropdown {
-    background-position: -48px -264px;
-  }
-  /* line 99, ../scss/bodoke/object/_icons.scss */
-  .md-icon.status.pending {
-    background-position: -72px -264px;
-  }
-  /* line 100, ../scss/bodoke/object/_icons.scss */
-  .md-icon.status.complete {
-    background-position: -96px -264px;
-  }
-  /* line 101, ../scss/bodoke/object/_icons.scss */
-  .md-icon.status.wrong {
-    background-position: -120px -264px;
-  }
-  /* line 105, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.top {
-    background-position: 0 -288px;
-  }
-  /* line 107, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.top.black {
-    background-position: 0 -312px;
-  }
-  /* line 109, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.right {
-    background-position: -24px -288px;
-  }
-  /* line 111, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.right.black {
-    background-position: -24px -312px;
-  }
-  /* line 113, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.bottom {
-    background-position: -48px -288px;
-  }
-  /* line 115, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.bottom.black {
-    background-position: -48px -312px;
-  }
-  /* line 117, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.left {
-    background-position: -72px -288px;
-  }
-  /* line 119, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.left.black {
-    background-position: -72px -312px;
-  }
-  /* line 122, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.small.down {
-    background-position: -288px -192px;
-  }
-  /* line 123, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.small.right {
-    background-position: -312px -192px;
-  }
-  /* line 124, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.small.up {
-    background-position: -288px -216px;
-  }
-  /* line 125, ../scss/bodoke/object/_icons.scss */
-  .md-icon.arrow.small.left {
-    background-position: -312px -216px;
-  }
-  /* line 129, ../scss/bodoke/object/_icons.scss */
-  .md-icon.live {
-    background-position: -144px -264px;
-  }
-  /* line 133, ../scss/bodoke/object/_icons.scss */
-  .md-icon.calendar {
-    width: 48px;
-    height: 48px;
-    background-position: -192px -264px;
-  }
-  /* line 139, ../scss/bodoke/object/_icons.scss */
-  .md-icon.face {
-    height: 72px;
-    width: 72px;
-  }
-  /* line 142, ../scss/bodoke/object/_icons.scss */
-  .md-icon.face.sad {
-    background-position: -96px -312px;
-  }
-  /* line 143, ../scss/bodoke/object/_icons.scss */
-  .md-icon.face.smile {
-    background-position: -168px -312px;
-  }
-  /* line 146, ../scss/bodoke/object/_icons.scss */
-  .md-icon.close {
-    background-position: -240px -264px;
-  }
-  /* line 150, ../scss/bodoke/object/_icons.scss */
-  .md-icon.notebook {
-    background-position: 0 -336px;
-  }
-  /* line 151, ../scss/bodoke/object/_icons.scss */
-  .md-icon.user {
-    background-position: -24px -336px;
-  }
 }
 @-webkit-keyframes fadeIn {
-  /* line 43, ../scss/bodoke/object/_animations.scss */
+  /* line 47, ../scss/bodoke/object/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 44, ../scss/bodoke/object/_animations.scss */
+  /* line 48, ../scss/bodoke/object/_animations.scss */
   100% {
     opacity: 1;
   }
 }
 @-moz-keyframes fadeIn {
-  /* line 43, ../scss/bodoke/object/_animations.scss */
+  /* line 47, ../scss/bodoke/object/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 44, ../scss/bodoke/object/_animations.scss */
+  /* line 48, ../scss/bodoke/object/_animations.scss */
   100% {
     opacity: 1;
   }
 }
 @-o-keyframes fadeIn {
-  /* line 43, ../scss/bodoke/object/_animations.scss */
+  /* line 47, ../scss/bodoke/object/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 44, ../scss/bodoke/object/_animations.scss */
+  /* line 48, ../scss/bodoke/object/_animations.scss */
   100% {
     opacity: 1;
   }
 }
 @keyframes fadeIn {
-  /* line 43, ../scss/bodoke/object/_animations.scss */
+  /* line 47, ../scss/bodoke/object/_animations.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 44, ../scss/bodoke/object/_animations.scss */
+  /* line 48, ../scss/bodoke/object/_animations.scss */
   100% {
     opacity: 1;
   }
 }
-/* line 46, ../scss/bodoke/object/_animations.scss */
+/* line 50, ../scss/bodoke/object/_animations.scss */
 .fadeIn {
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
@@ -6535,7 +5824,7 @@ table {
 }
 
 @-webkit-keyframes fadeInLeft {
-  /* line 53, ../scss/bodoke/object/_animations.scss */
+  /* line 57, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translate3d(-10px, 0, 0);
     -ms-transform: translate3d(-10px, 0, 0);
@@ -6544,7 +5833,7 @@ table {
     opacity: 0;
   }
 
-  /* line 57, ../scss/bodoke/object/_animations.scss */
+  /* line 61, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
@@ -6554,7 +5843,7 @@ table {
   }
 }
 @-moz-keyframes fadeInLeft {
-  /* line 53, ../scss/bodoke/object/_animations.scss */
+  /* line 57, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translate3d(-10px, 0, 0);
     -ms-transform: translate3d(-10px, 0, 0);
@@ -6563,7 +5852,7 @@ table {
     opacity: 0;
   }
 
-  /* line 57, ../scss/bodoke/object/_animations.scss */
+  /* line 61, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
@@ -6573,7 +5862,7 @@ table {
   }
 }
 @-o-keyframes fadeInLeft {
-  /* line 53, ../scss/bodoke/object/_animations.scss */
+  /* line 57, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translate3d(-10px, 0, 0);
     -ms-transform: translate3d(-10px, 0, 0);
@@ -6582,7 +5871,7 @@ table {
     opacity: 0;
   }
 
-  /* line 57, ../scss/bodoke/object/_animations.scss */
+  /* line 61, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
@@ -6592,7 +5881,7 @@ table {
   }
 }
 @keyframes fadeInLeft {
-  /* line 53, ../scss/bodoke/object/_animations.scss */
+  /* line 57, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translate3d(-10px, 0, 0);
     -ms-transform: translate3d(-10px, 0, 0);
@@ -6601,7 +5890,7 @@ table {
     opacity: 0;
   }
 
-  /* line 57, ../scss/bodoke/object/_animations.scss */
+  /* line 61, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
@@ -6610,7 +5899,7 @@ table {
     opacity: 1;
   }
 }
-/* line 62, ../scss/bodoke/object/_animations.scss */
+/* line 66, ../scss/bodoke/object/_animations.scss */
 .fadeInLeft {
   -webkit-animation: fadeInLeft 1s;
   animation: fadeInLeft 1s;
@@ -6619,7 +5908,7 @@ table {
 }
 
 @-webkit-keyframes fadeInLeftDisplay {
-  /* line 69, ../scss/bodoke/object/_animations.scss */
+  /* line 73, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translate3d(-10px, 0, 0);
     -ms-transform: translate3d(-10px, 0, 0);
@@ -6629,7 +5918,7 @@ table {
     display: none;
   }
 
-  /* line 74, ../scss/bodoke/object/_animations.scss */
+  /* line 78, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
@@ -6640,7 +5929,7 @@ table {
   }
 }
 @-moz-keyframes fadeInLeftDisplay {
-  /* line 69, ../scss/bodoke/object/_animations.scss */
+  /* line 73, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translate3d(-10px, 0, 0);
     -ms-transform: translate3d(-10px, 0, 0);
@@ -6650,7 +5939,7 @@ table {
     display: none;
   }
 
-  /* line 74, ../scss/bodoke/object/_animations.scss */
+  /* line 78, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
@@ -6661,7 +5950,7 @@ table {
   }
 }
 @-o-keyframes fadeInLeftDisplay {
-  /* line 69, ../scss/bodoke/object/_animations.scss */
+  /* line 73, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translate3d(-10px, 0, 0);
     -ms-transform: translate3d(-10px, 0, 0);
@@ -6671,7 +5960,7 @@ table {
     display: none;
   }
 
-  /* line 74, ../scss/bodoke/object/_animations.scss */
+  /* line 78, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
@@ -6682,7 +5971,7 @@ table {
   }
 }
 @keyframes fadeInLeftDisplay {
-  /* line 69, ../scss/bodoke/object/_animations.scss */
+  /* line 73, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translate3d(-10px, 0, 0);
     -ms-transform: translate3d(-10px, 0, 0);
@@ -6692,7 +5981,7 @@ table {
     display: none;
   }
 
-  /* line 74, ../scss/bodoke/object/_animations.scss */
+  /* line 78, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translate3d(0px, 0, 0);
     -ms-transform: translate3d(0px, 0, 0);
@@ -6702,7 +5991,7 @@ table {
     display: block;
   }
 }
-/* line 80, ../scss/bodoke/object/_animations.scss */
+/* line 84, ../scss/bodoke/object/_animations.scss */
 .fadeInLeftDisplay {
   -webkit-animation: fadeInLeftDisplay 1s;
   animation: fadeInLeftDisplay 1s;
@@ -6711,7 +6000,7 @@ table {
 }
 
 @-webkit-keyframes fadeInUp {
-  /* line 87, ../scss/bodoke/object/_animations.scss */
+  /* line 91, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
@@ -6720,7 +6009,7 @@ table {
     opacity: 0;
   }
 
-  /* line 91, ../scss/bodoke/object/_animations.scss */
+  /* line 95, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
@@ -6730,7 +6019,7 @@ table {
   }
 }
 @-moz-keyframes fadeInUp {
-  /* line 87, ../scss/bodoke/object/_animations.scss */
+  /* line 91, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
@@ -6739,7 +6028,7 @@ table {
     opacity: 0;
   }
 
-  /* line 91, ../scss/bodoke/object/_animations.scss */
+  /* line 95, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
@@ -6749,7 +6038,7 @@ table {
   }
 }
 @-o-keyframes fadeInUp {
-  /* line 87, ../scss/bodoke/object/_animations.scss */
+  /* line 91, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
@@ -6758,7 +6047,7 @@ table {
     opacity: 0;
   }
 
-  /* line 91, ../scss/bodoke/object/_animations.scss */
+  /* line 95, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
@@ -6768,7 +6057,7 @@ table {
   }
 }
 @keyframes fadeInUp {
-  /* line 87, ../scss/bodoke/object/_animations.scss */
+  /* line 91, ../scss/bodoke/object/_animations.scss */
   0% {
     -moz-transform: translateY(-10px);
     -ms-transform: translateY(-10px);
@@ -6777,7 +6066,7 @@ table {
     opacity: 0;
   }
 
-  /* line 91, ../scss/bodoke/object/_animations.scss */
+  /* line 95, ../scss/bodoke/object/_animations.scss */
   100% {
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
@@ -6786,10 +6075,330 @@ table {
     opacity: 1;
   }
 }
-/* line 96, ../scss/bodoke/object/_animations.scss */
+/* line 100, ../scss/bodoke/object/_animations.scss */
 .fadeInUp {
   -webkit-animation: fadeInUp 1s;
   animation: fadeInUp 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes spin {
+  /* line 124, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 127, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  /* line 124, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 127, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  /* line 124, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 127, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  /* line 124, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  /* line 127, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* line 131, ../scss/bodoke/object/_animations.scss */
+.spin {
+  -webkit-animation: spin 1s;
+  animation: spin 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes showSlideUp {
+  /* line 355, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -moz-transform: translateY(-10000px);
+    -ms-transform: translateY(-10000px);
+    -webkit-transform: translateY(-10000px);
+    transform: translateY(-10000px);
+  }
+
+  /* line 359, ../scss/bodoke/object/_animations.scss */
+  85%, 90% {
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  /* line 362, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes showSlideUp {
+  /* line 355, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -moz-transform: translateY(-10000px);
+    -ms-transform: translateY(-10000px);
+    -webkit-transform: translateY(-10000px);
+    transform: translateY(-10000px);
+  }
+
+  /* line 359, ../scss/bodoke/object/_animations.scss */
+  85%, 90% {
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  /* line 362, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-o-keyframes showSlideUp {
+  /* line 355, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -moz-transform: translateY(-10000px);
+    -ms-transform: translateY(-10000px);
+    -webkit-transform: translateY(-10000px);
+    transform: translateY(-10000px);
+  }
+
+  /* line 359, ../scss/bodoke/object/_animations.scss */
+  85%, 90% {
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  /* line 362, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes showSlideUp {
+  /* line 355, ../scss/bodoke/object/_animations.scss */
+  0% {
+    opacity: 0;
+    /* CSS3 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 8 */
+    filter: alpha(opacity=0);
+    /* IE6+ */
+    zoom: 1;
+    -moz-transform: translateY(-10000px);
+    -ms-transform: translateY(-10000px);
+    -webkit-transform: translateY(-10000px);
+    transform: translateY(-10000px);
+  }
+
+  /* line 359, ../scss/bodoke/object/_animations.scss */
+  85%, 90% {
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  /* line 362, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+/* line 366, ../scss/bodoke/object/_animations.scss */
+.showSlideUp {
+  -webkit-animation: showSlideUp 1s;
+  animation: showSlideUp 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hideSlideUp {
+  /* line 378, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 381, ../scss/bodoke/object/_animations.scss */
+  5%, 10% {
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  /* line 384, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: translateY(-10000px);
+    -ms-transform: translateY(-10000px);
+    -webkit-transform: translateY(-10000px);
+    transform: translateY(-10000px);
+  }
+}
+@-moz-keyframes hideSlideUp {
+  /* line 378, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 381, ../scss/bodoke/object/_animations.scss */
+  5%, 10% {
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  /* line 384, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: translateY(-10000px);
+    -ms-transform: translateY(-10000px);
+    -webkit-transform: translateY(-10000px);
+    transform: translateY(-10000px);
+  }
+}
+@-o-keyframes hideSlideUp {
+  /* line 378, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 381, ../scss/bodoke/object/_animations.scss */
+  5%, 10% {
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  /* line 384, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: translateY(-10000px);
+    -ms-transform: translateY(-10000px);
+    -webkit-transform: translateY(-10000px);
+    transform: translateY(-10000px);
+  }
+}
+@keyframes hideSlideUp {
+  /* line 378, ../scss/bodoke/object/_animations.scss */
+  0% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /* line 381, ../scss/bodoke/object/_animations.scss */
+  5%, 10% {
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+
+  /* line 384, ../scss/bodoke/object/_animations.scss */
+  100% {
+    -moz-transform: translateY(-10000px);
+    -ms-transform: translateY(-10000px);
+    -webkit-transform: translateY(-10000px);
+    transform: translateY(-10000px);
+  }
+}
+/* line 386, ../scss/bodoke/object/_animations.scss */
+.hideSlideUp {
+  -webkit-animation: hideSlideUp 1s;
+  animation: hideSlideUp 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -7514,16 +7123,16 @@ body.bdk-lightbox-active #bdk-blackout {
   color: white;
 }
 
-/* line 17, ../scss/bodoke/object/_slider.scss */
-.da-slider {
+/* line 31, ../scss/bodoke/object/_slider.scss */
+#slider {
   width: 100%;
   min-width: 100%;
-  height: 430px;
   position: relative;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3em;
-  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  background: #f2f2f2;
   -moz-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px -2px 1px white;
   -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px -2px 1px white;
   box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px -2px 1px white;
@@ -7531,112 +7140,59 @@ body.bdk-lightbox-active #bdk-blackout {
   -webkit-transition: background 1s ease-out;
   -webkit-transition-delay: 0.3s;
   transition: background 1s ease-out 0.3s;
-  background: #d1d1d1;
-  position: relative;
 }
-/* line 31, ../scss/bodoke/object/_slider.scss */
-.da-slider .da-slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  text-align: center;
+/* line 43, ../scss/bodoke/object/_slider.scss */
+#slider ul, #slider ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-/* line 41, ../scss/bodoke/object/_slider.scss */
-.da-slider .slide-link {
-  position: relative;
-  text-align: center;
-}
-
 /* line 50, ../scss/bodoke/object/_slider.scss */
-.da-slide .text-line, .da-slide .da-link {
+#slider .slide-link {
   position: relative;
-  left: 0;
-  opacity: 0;
-  /* CSS3 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  /* IE 8 */
-  filter: alpha(opacity=0);
-  /* IE6+ */
-  zoom: 1;
+  text-align: center;
 }
-/* line 56, ../scss/bodoke/object/_slider.scss */
-.da-slide .da-img {
-  position: absolute;
+/* line 55, ../scss/bodoke/object/_slider.scss */
+#slider .slide-image {
+  width: 100%;
 }
 
 /* line 64, ../scss/bodoke/object/_slider.scss */
-.da-slide.da-slide-current {
-  z-index: 1000;
-}
-/* line 66, ../scss/bodoke/object/_slider.scss */
-.da-slide.da-slide-current .text-line, .da-slide.da-slide-current .da-link, .da-slide.da-slide-current .da-img {
-  opacity: 1;
-  /* CSS3 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-  /* IE 8 */
-  filter: alpha(opacity=100);
-  /* IE6+ */
-  zoom: 1;
-}
-/* line 69, ../scss/bodoke/object/_slider.scss */
-.da-slide.da-slide-current .text-line, .da-slide.da-slide-current .da-link {
-  left: 0%;
-  opacity: 1;
-}
-/* line 74, ../scss/bodoke/object/_slider.scss */
-.da-slide.da-slide-current .da-img {
-  left: 60%;
-  opacity: 1;
+.slide {
+  position: relative;
+  float: left;
+  list-style: none;
+  z-index: 50;
 }
 
-/* line 85, ../scss/bodoke/object/_slider.scss */
-.da-slider-fb .da-slide {
-  left: 100%;
-}
-/* line 87, ../scss/bodoke/object/_slider.scss */
-.da-slider-fb .da-slide.da-slide-current {
-  left: 0px;
-}
-/* line 90, ../scss/bodoke/object/_slider.scss */
-.da-slider-fb .da-slide .text-line, .da-slider-fb .da-slide .da-link {
-  left: 0;
-  opacity: 1;
-}
-/* line 95, ../scss/bodoke/object/_slider.scss */
-.da-slider-fb .da-slide .da-img {
-  left: 60%;
-  opacity: 1;
-}
-
-/* line 105, ../scss/bodoke/object/_slider.scss */
-.da-slide .slide-text {
+/* line 83, ../scss/bodoke/object/_slider.scss */
+.slide .slide-text {
   position: relative;
   height: 100%;
   opacity: 1;
 }
-/* line 109, ../scss/bodoke/object/_slider.scss */
-.da-slide .slide-text p, .da-slide .slide-text span {
+/* line 87, ../scss/bodoke/object/_slider.scss */
+.slide .slide-text p, .slide .slide-text span {
   margin: 0;
 }
-/* line 111, ../scss/bodoke/object/_slider.scss */
-.da-slide .text-box {
+/* line 89, ../scss/bodoke/object/_slider.scss */
+.slide .text-box {
   color: #333333;
   max-height: 175px;
 }
-/* line 115, ../scss/bodoke/object/_slider.scss */
-.da-slide .text-line {
+/* line 93, ../scss/bodoke/object/_slider.scss */
+.slide .text-line {
   position: relative;
   color: #333333;
   margin-bottom: 1.5em;
 }
-/* line 122, ../scss/bodoke/object/_slider.scss */
-.da-slide .slide-secondary-text {
+/* line 100, ../scss/bodoke/object/_slider.scss */
+.slide .slide-secondary-text {
   color: #4d4d4d;
 }
-/* line 129, ../scss/bodoke/object/_slider.scss */
-.da-slide .da-img {
+/* line 107, ../scss/bodoke/object/_slider.scss */
+.slide .img {
   text-align: center;
   width: 40%;
   height: 100%;
@@ -7644,25 +7200,13 @@ body.bdk-lightbox-active #bdk-blackout {
   left: 150%;
   top: 0;
 }
-/* line 137, ../scss/bodoke/object/_slider.scss */
-.da-slide .da-img img {
+/* line 115, ../scss/bodoke/object/_slider.scss */
+.slide .img img {
   height: 100%;
 }
 
-/* line 146, ../scss/bodoke/object/_slider.scss */
-.da-slide .da-link {
-  color: #fff;
-  text-align: center;
-  display: inline-block;
-  float: none;
-  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-/* line 157, ../scss/bodoke/object/_slider.scss */
-.da-dots {
+/* line 140, ../scss/bodoke/object/_slider.scss */
+.bullets {
   width: 100%;
   position: absolute;
   text-align: center;
@@ -7672,8 +7216,8 @@ body.bdk-lightbox-active #bdk-blackout {
   -moz-user-select: none;
   -webkit-user-select: none;
 }
-/* line 166, ../scss/bodoke/object/_slider.scss */
-.da-dots span {
+/* line 149, ../scss/bodoke/object/_slider.scss */
+.bullets span {
   display: inline-block;
   position: relative;
   width: 12px;
@@ -7692,30 +7236,30 @@ body.bdk-lightbox-active #bdk-blackout {
   -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1);
 }
-/* line 182, ../scss/bodoke/object/_slider.scss */
-.da-dots span.da-dots-current {
+/* line 165, ../scss/bodoke/object/_slider.scss */
+.bullets span.current-bullet {
   border-color: white;
   background: #2362ff;
 }
 
-/* line 192, ../scss/bodoke/object/_slider.scss */
-.da-arrows {
+/* line 175, ../scss/bodoke/object/_slider.scss */
+#slider .slider-arrow {
+  display: block;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  float: none;
+  top: 6.5em;
+  height: 40%;
+  width: 60px;
+  z-index: 100;
   -moz-user-select: none;
   -webkit-user-select: none;
-}
-/* line 195, ../scss/bodoke/object/_slider.scss */
-.da-arrows span {
-  position: absolute;
-  display: block;
-  top: 50%;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  text-align: center;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-  z-index: 2000;
+  background-color: transparent;
   opacity: 0;
   /* CSS3 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -7723,62 +7267,56 @@ body.bdk-lightbox-active #bdk-blackout {
   filter: alpha(opacity=0);
   /* IE6+ */
   zoom: 1;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background: #2362ff;
-  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1);
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1);
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1);
-  -moz-transition: opacity 0.4s ease-in-out 0.2s;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -webkit-transition-delay: 0.2s;
-  transition: opacity 0.4s ease-in-out 0.2s;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
-/* line 215, ../scss/bodoke/object/_slider.scss */
-.da-arrows span:after {
-  content: '';
+/* line 189, ../scss/bodoke/object/_slider.scss */
+#slider .slider-arrow.slider-left {
+  left: 0;
+  -moz-transform: translateX(-60px);
+  -ms-transform: translateX(-60px);
+  -webkit-transform: translateX(-60px);
+  transform: translateX(-60px);
+}
+/* line 193, ../scss/bodoke/object/_slider.scss */
+#slider .slider-arrow.slider-right {
+  right: 0;
+  -moz-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  -webkit-transform: translateX(60px);
+  transform: translateX(60px);
+}
+/* line 197, ../scss/bodoke/object/_slider.scss */
+#slider .slider-arrow .arrow {
+  display: block;
   position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 5px;
-  left: 5px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  float: none;
+  font-size: 40px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0.5;
+  /* CSS3 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=50);
+  /* IE6+ */
+  zoom: 1;
+  -moz-transition: opacity 0.35s ease-in-out;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
 }
-/* line 225, ../scss/bodoke/object/_slider.scss */
-.da-arrows span:hover:after {
-  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-}
-/* line 228, ../scss/bodoke/object/_slider.scss */
-.da-arrows span:active:after {
-  -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-/* line 231, ../scss/bodoke/object/_slider.scss */
-.da-arrows span.da-arrows-prev {
-  left: 40px;
-  text-indent: -1px;
-}
-/* line 235, ../scss/bodoke/object/_slider.scss */
-.da-arrows span.da-arrows-next {
-  right: 40px;
-  text-indent: 1px;
-}
-/* line 238, ../scss/bodoke/object/_slider.scss */
-.da-arrows span.da-arrows-next:after {
-  background-position: top right;
-}
-
-/* line 245, ../scss/bodoke/object/_slider.scss */
-.da-slider:hover .da-arrows span {
+/* line 208, ../scss/bodoke/object/_slider.scss */
+#slider .slider-arrow .arrow:hover {
   opacity: 1;
   /* CSS3 */
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
@@ -7788,32 +7326,52 @@ body.bdk-lightbox-active #bdk-blackout {
   zoom: 1;
 }
 
-/* line 357, ../scss/bodoke/object/_slider.scss */
-.da-slide-fromright .slide-main-text {
+/* line 216, ../scss/bodoke/object/_slider.scss */
+#slider:hover .slider-arrow {
+  opacity: 1;
+  /* CSS3 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 8 */
+  filter: alpha(opacity=100);
+  /* IE6+ */
+  zoom: 1;
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  background-color: #333333;
+}
+/* line 220, ../scss/bodoke/object/_slider.scss */
+#slider:hover .slider-arrow .arrow {
+  color: white;
+}
+
+/* line 337, ../scss/bodoke/object/_slider.scss */
+.slide-fromright .slide-main-text {
   -webkit-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
   -moz-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
   -o-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
   -ms-animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
   animation: fromRightAnim1 0.6s ease-in-out 0.8s both;
 }
-/* line 364, ../scss/bodoke/object/_slider.scss */
-.da-slide-fromright .slide-secondary-text {
+/* line 344, ../scss/bodoke/object/_slider.scss */
+.slide-fromright .slide-secondary-text {
   -webkit-animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
   -moz-animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
   -o-animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
   -ms-animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
   animation: fromRightAnim2 0.6s ease-in-out 0.8s both;
 }
-/* line 371, ../scss/bodoke/object/_slider.scss */
-.da-slide-fromright .da-link {
+/* line 351, ../scss/bodoke/object/_slider.scss */
+.slide-fromright .link {
   -webkit-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
   -moz-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
   -o-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
   -ms-animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
   animation: fromRightAnim3 0.4s ease-in-out 1.2s both;
 }
-/* line 378, ../scss/bodoke/object/_slider.scss */
-.da-slide-fromright .da-img {
+/* line 358, ../scss/bodoke/object/_slider.scss */
+.slide-fromright .img {
   -webkit-animation: fromRightAnim4 0.6s ease-in-out 0.8s both;
   -moz-animation: fromRightAnim4 0.6s ease-in-out 0.8s both;
   -o-animation: fromRightAnim4 0.6s ease-in-out 0.8s both;
@@ -7822,263 +7380,263 @@ body.bdk-lightbox-active #bdk-blackout {
 }
 
 @-webkit-keyframes fromRightAnim1 {
-  /* line 387, ../scss/bodoke/object/_slider.scss */
+  /* line 367, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 388, ../scss/bodoke/object/_slider.scss */
+  /* line 368, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-moz-keyframes fromRightAnim1 {
-  /* line 387, ../scss/bodoke/object/_slider.scss */
+  /* line 367, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 388, ../scss/bodoke/object/_slider.scss */
+  /* line 368, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-o-keyframes fromRightAnim1 {
-  /* line 387, ../scss/bodoke/object/_slider.scss */
+  /* line 367, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 388, ../scss/bodoke/object/_slider.scss */
+  /* line 368, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @keyframes fromRightAnim1 {
-  /* line 387, ../scss/bodoke/object/_slider.scss */
+  /* line 367, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 388, ../scss/bodoke/object/_slider.scss */
+  /* line 368, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-webkit-keyframes fromRightAnim2 {
-  /* line 391, ../scss/bodoke/object/_slider.scss */
+  /* line 371, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 392, ../scss/bodoke/object/_slider.scss */
+  /* line 372, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-moz-keyframes fromRightAnim2 {
-  /* line 391, ../scss/bodoke/object/_slider.scss */
+  /* line 371, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 392, ../scss/bodoke/object/_slider.scss */
+  /* line 372, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-o-keyframes fromRightAnim2 {
-  /* line 391, ../scss/bodoke/object/_slider.scss */
+  /* line 371, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 392, ../scss/bodoke/object/_slider.scss */
+  /* line 372, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @keyframes fromRightAnim2 {
-  /* line 391, ../scss/bodoke/object/_slider.scss */
+  /* line 371, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 392, ../scss/bodoke/object/_slider.scss */
+  /* line 372, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-webkit-keyframes fromRightAnim3 {
-  /* line 395, ../scss/bodoke/object/_slider.scss */
+  /* line 375, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 396, ../scss/bodoke/object/_slider.scss */
+  /* line 376, ../scss/bodoke/object/_slider.scss */
   1% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 397, ../scss/bodoke/object/_slider.scss */
+  /* line 377, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-moz-keyframes fromRightAnim3 {
-  /* line 395, ../scss/bodoke/object/_slider.scss */
+  /* line 375, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 396, ../scss/bodoke/object/_slider.scss */
+  /* line 376, ../scss/bodoke/object/_slider.scss */
   1% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 397, ../scss/bodoke/object/_slider.scss */
+  /* line 377, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-o-keyframes fromRightAnim3 {
-  /* line 395, ../scss/bodoke/object/_slider.scss */
+  /* line 375, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 396, ../scss/bodoke/object/_slider.scss */
+  /* line 376, ../scss/bodoke/object/_slider.scss */
   1% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 397, ../scss/bodoke/object/_slider.scss */
+  /* line 377, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @keyframes fromRightAnim3 {
-  /* line 395, ../scss/bodoke/object/_slider.scss */
+  /* line 375, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 396, ../scss/bodoke/object/_slider.scss */
+  /* line 376, ../scss/bodoke/object/_slider.scss */
   1% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 397, ../scss/bodoke/object/_slider.scss */
+  /* line 377, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-webkit-keyframes fromRightAnim4 {
-  /* line 400, ../scss/bodoke/object/_slider.scss */
+  /* line 380, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 401, ../scss/bodoke/object/_slider.scss */
+  /* line 381, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 60%;
     opacity: 1;
   }
 }
 @-moz-keyframes fromRightAnim4 {
-  /* line 400, ../scss/bodoke/object/_slider.scss */
+  /* line 380, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 401, ../scss/bodoke/object/_slider.scss */
+  /* line 381, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 60%;
     opacity: 1;
   }
 }
 @-o-keyframes fromRightAnim4 {
-  /* line 400, ../scss/bodoke/object/_slider.scss */
+  /* line 380, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 401, ../scss/bodoke/object/_slider.scss */
+  /* line 381, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 60%;
     opacity: 1;
   }
 }
 @keyframes fromRightAnim4 {
-  /* line 400, ../scss/bodoke/object/_slider.scss */
+  /* line 380, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 110%;
     opacity: 0;
   }
 
-  /* line 401, ../scss/bodoke/object/_slider.scss */
+  /* line 381, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 60%;
     opacity: 1;
   }
 }
-/* line 408, ../scss/bodoke/object/_slider.scss */
-.da-slide-fromleft .slide-main-text {
+/* line 388, ../scss/bodoke/object/_slider.scss */
+.slide-fromleft .slide-main-text {
   -webkit-animation: fromLeftAnim1 0.6s ease-in-out 0.6s both;
   -moz-animation: fromLeftAnim1 0.6s ease-in-out 0.6s both;
   -o-animation: fromLeftAnim1 0.6s ease-in-out 0.6s both;
   -ms-animation: fromLeftAnim1 0.6s ease-in-out 0.6s both;
   animation: fromLeftAnim1 0.6s ease-in-out 0.6s both;
 }
-/* line 415, ../scss/bodoke/object/_slider.scss */
-.da-slide-fromleft .slide-secondary-text {
+/* line 395, ../scss/bodoke/object/_slider.scss */
+.slide-fromleft .slide-secondary-text {
   -webkit-animation: fromLeftAnim2 0.6s ease-in-out 0.4s both;
   -moz-animation: fromLeftAnim2 0.6s ease-in-out 0.4s both;
   -o-animation: fromLeftAnim2 0.6s ease-in-out 0.4s both;
   -ms-animation: fromLeftAnim2 0.6s ease-in-out 0.4s both;
   animation: fromLeftAnim2 0.6s ease-in-out 0.4s both;
 }
-/* line 422, ../scss/bodoke/object/_slider.scss */
-.da-slide-fromleft .da-link {
+/* line 402, ../scss/bodoke/object/_slider.scss */
+.slide-fromleft .link {
   -webkit-animation: fromLeftAnim3 0.4s ease-in-out 1.2s both;
   -moz-animation: fromLeftAnim3 0.4s ease-in-out 1.2s both;
   -o-animation: fromLeftAnim3 0.4s ease-in-out 1.2s both;
   -ms-animation: fromLeftAnim3 0.4s ease-in-out 1.2s both;
   animation: fromLeftAnim3 0.4s ease-in-out 1.2s both;
 }
-/* line 429, ../scss/bodoke/object/_slider.scss */
-.da-slide-fromleft .da-img {
+/* line 409, ../scss/bodoke/object/_slider.scss */
+.slide-fromleft .img {
   -webkit-animation: fromLeftAnim4 0.6s ease-in-out 1.1s both;
   -moz-animation: fromLeftAnim4 0.6s ease-in-out 1.1s both;
   -o-animation: fromLeftAnim4 0.6s ease-in-out 1.1s both;
@@ -8087,239 +7645,239 @@ body.bdk-lightbox-active #bdk-blackout {
 }
 
 @-webkit-keyframes fromLeftAnim1 {
-  /* line 438, ../scss/bodoke/object/_slider.scss */
+  /* line 418, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -110%;
     opacity: 0;
   }
 
-  /* line 439, ../scss/bodoke/object/_slider.scss */
+  /* line 419, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-moz-keyframes fromLeftAnim1 {
-  /* line 438, ../scss/bodoke/object/_slider.scss */
+  /* line 418, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -110%;
     opacity: 0;
   }
 
-  /* line 439, ../scss/bodoke/object/_slider.scss */
+  /* line 419, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-o-keyframes fromLeftAnim1 {
-  /* line 438, ../scss/bodoke/object/_slider.scss */
+  /* line 418, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -110%;
     opacity: 0;
   }
 
-  /* line 439, ../scss/bodoke/object/_slider.scss */
+  /* line 419, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @keyframes fromLeftAnim1 {
-  /* line 438, ../scss/bodoke/object/_slider.scss */
+  /* line 418, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -110%;
     opacity: 0;
   }
 
-  /* line 439, ../scss/bodoke/object/_slider.scss */
+  /* line 419, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-webkit-keyframes fromLeftAnim2 {
-  /* line 442, ../scss/bodoke/object/_slider.scss */
+  /* line 422, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -110%;
     opacity: 0;
   }
 
-  /* line 443, ../scss/bodoke/object/_slider.scss */
+  /* line 423, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-moz-keyframes fromLeftAnim2 {
-  /* line 442, ../scss/bodoke/object/_slider.scss */
+  /* line 422, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -110%;
     opacity: 0;
   }
 
-  /* line 443, ../scss/bodoke/object/_slider.scss */
+  /* line 423, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-o-keyframes fromLeftAnim2 {
-  /* line 442, ../scss/bodoke/object/_slider.scss */
+  /* line 422, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -110%;
     opacity: 0;
   }
 
-  /* line 443, ../scss/bodoke/object/_slider.scss */
+  /* line 423, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @keyframes fromLeftAnim2 {
-  /* line 442, ../scss/bodoke/object/_slider.scss */
+  /* line 422, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -110%;
     opacity: 0;
   }
 
-  /* line 443, ../scss/bodoke/object/_slider.scss */
+  /* line 423, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-webkit-keyframes fromLeftAnim3 {
-  /* line 447, ../scss/bodoke/object/_slider.scss */
+  /* line 427, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -10%;
     opacity: 0;
   }
 
-  /* line 448, ../scss/bodoke/object/_slider.scss */
+  /* line 428, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-moz-keyframes fromLeftAnim3 {
-  /* line 447, ../scss/bodoke/object/_slider.scss */
+  /* line 427, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -10%;
     opacity: 0;
   }
 
-  /* line 448, ../scss/bodoke/object/_slider.scss */
+  /* line 428, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-o-keyframes fromLeftAnim3 {
-  /* line 447, ../scss/bodoke/object/_slider.scss */
+  /* line 427, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -10%;
     opacity: 0;
   }
 
-  /* line 448, ../scss/bodoke/object/_slider.scss */
+  /* line 428, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @keyframes fromLeftAnim3 {
-  /* line 447, ../scss/bodoke/object/_slider.scss */
+  /* line 427, ../scss/bodoke/object/_slider.scss */
   0% {
     left: -10%;
     opacity: 0;
   }
 
-  /* line 448, ../scss/bodoke/object/_slider.scss */
+  /* line 428, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 0%;
     opacity: 1;
   }
 }
 @-webkit-keyframes fromLeftAnim4 {
-  /* line 451, ../scss/bodoke/object/_slider.scss */
+  /* line 431, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 452, ../scss/bodoke/object/_slider.scss */
+  /* line 432, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 60%;
     opacity: 1;
   }
 }
 @-moz-keyframes fromLeftAnim4 {
-  /* line 451, ../scss/bodoke/object/_slider.scss */
+  /* line 431, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 452, ../scss/bodoke/object/_slider.scss */
+  /* line 432, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 60%;
     opacity: 1;
   }
 }
 @-o-keyframes fromLeftAnim4 {
-  /* line 451, ../scss/bodoke/object/_slider.scss */
+  /* line 431, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 452, ../scss/bodoke/object/_slider.scss */
+  /* line 432, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 60%;
     opacity: 1;
   }
 }
 @keyframes fromLeftAnim4 {
-  /* line 451, ../scss/bodoke/object/_slider.scss */
+  /* line 431, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 452, ../scss/bodoke/object/_slider.scss */
+  /* line 432, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 60%;
     opacity: 1;
   }
 }
-/* line 459, ../scss/bodoke/object/_slider.scss */
-.da-slide-toright .slide-main-text {
+/* line 439, ../scss/bodoke/object/_slider.scss */
+.slide-toright .slide-main-text {
   -webkit-animation: toRightAnim1 0.6s ease-in-out 0.6s both;
   -moz-animation: toRightAnim1 0.6s ease-in-out 0.6s both;
   -o-animation: toRightAnim1 0.6s ease-in-out 0.6s both;
   -ms-animation: toRightAnim1 0.6s ease-in-out 0.6s both;
   animation: toRightAnim1 0.6s ease-in-out 0.6s both;
 }
-/* line 466, ../scss/bodoke/object/_slider.scss */
-.da-slide-toright .slide-secondary-text {
+/* line 446, ../scss/bodoke/object/_slider.scss */
+.slide-toright .slide-secondary-text {
   -webkit-animation: toRightAnim2 0.6s ease-in-out 0.3s both;
   -moz-animation: toRightAnim2 0.6s ease-in-out 0.3s both;
   -o-animation: toRightAnim2 0.6s ease-in-out 0.3s both;
   -ms-animation: toRightAnim2 0.6s ease-in-out 0.3s both;
   animation: toRightAnim2 0.6s ease-in-out 0.3s both;
 }
-/* line 473, ../scss/bodoke/object/_slider.scss */
-.da-slide-toright .da-link {
+/* line 453, ../scss/bodoke/object/_slider.scss */
+.slide-toright .link {
   -webkit-animation: toRightAnim3 0.4s ease-in-out both;
   -moz-animation: toRightAnim3 0.4s ease-in-out both;
   -o-animation: toRightAnim3 0.4s ease-in-out both;
   -ms-animation: toRightAnim3 0.4s ease-in-out both;
   animation: toRightAnim3 0.4s ease-in-out both;
 }
-/* line 480, ../scss/bodoke/object/_slider.scss */
-.da-slide-toright .da-img {
+/* line 460, ../scss/bodoke/object/_slider.scss */
+.slide-toright .img {
   -webkit-animation: toRightAnim4 0.6s ease-in-out both;
   -moz-animation: toRightAnim4 0.6s ease-in-out both;
   -o-animation: toRightAnim4 0.6s ease-in-out both;
@@ -8328,287 +7886,287 @@ body.bdk-lightbox-active #bdk-blackout {
 }
 
 @-webkit-keyframes toRightAnim1 {
-  /* line 489, ../scss/bodoke/object/_slider.scss */
+  /* line 469, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 490, ../scss/bodoke/object/_slider.scss */
+  /* line 470, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-moz-keyframes toRightAnim1 {
-  /* line 489, ../scss/bodoke/object/_slider.scss */
+  /* line 469, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 490, ../scss/bodoke/object/_slider.scss */
+  /* line 470, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-o-keyframes toRightAnim1 {
-  /* line 489, ../scss/bodoke/object/_slider.scss */
+  /* line 469, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 490, ../scss/bodoke/object/_slider.scss */
+  /* line 470, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @keyframes toRightAnim1 {
-  /* line 489, ../scss/bodoke/object/_slider.scss */
+  /* line 469, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 490, ../scss/bodoke/object/_slider.scss */
+  /* line 470, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-webkit-keyframes toRightAnim2 {
-  /* line 493, ../scss/bodoke/object/_slider.scss */
+  /* line 473, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 494, ../scss/bodoke/object/_slider.scss */
+  /* line 474, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-moz-keyframes toRightAnim2 {
-  /* line 493, ../scss/bodoke/object/_slider.scss */
+  /* line 473, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 494, ../scss/bodoke/object/_slider.scss */
+  /* line 474, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-o-keyframes toRightAnim2 {
-  /* line 493, ../scss/bodoke/object/_slider.scss */
+  /* line 473, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 494, ../scss/bodoke/object/_slider.scss */
+  /* line 474, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @keyframes toRightAnim2 {
-  /* line 493, ../scss/bodoke/object/_slider.scss */
+  /* line 473, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 494, ../scss/bodoke/object/_slider.scss */
+  /* line 474, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-webkit-keyframes toRightAnim3 {
-  /* line 497, ../scss/bodoke/object/_slider.scss */
+  /* line 477, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 498, ../scss/bodoke/object/_slider.scss */
+  /* line 478, ../scss/bodoke/object/_slider.scss */
   99% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 499, ../scss/bodoke/object/_slider.scss */
+  /* line 479, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-moz-keyframes toRightAnim3 {
-  /* line 497, ../scss/bodoke/object/_slider.scss */
+  /* line 477, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 498, ../scss/bodoke/object/_slider.scss */
+  /* line 478, ../scss/bodoke/object/_slider.scss */
   99% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 499, ../scss/bodoke/object/_slider.scss */
+  /* line 479, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-o-keyframes toRightAnim3 {
-  /* line 497, ../scss/bodoke/object/_slider.scss */
+  /* line 477, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 498, ../scss/bodoke/object/_slider.scss */
+  /* line 478, ../scss/bodoke/object/_slider.scss */
   99% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 499, ../scss/bodoke/object/_slider.scss */
+  /* line 479, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @keyframes toRightAnim3 {
-  /* line 497, ../scss/bodoke/object/_slider.scss */
+  /* line 477, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 498, ../scss/bodoke/object/_slider.scss */
+  /* line 478, ../scss/bodoke/object/_slider.scss */
   99% {
     left: 10%;
     opacity: 0;
   }
 
-  /* line 499, ../scss/bodoke/object/_slider.scss */
+  /* line 479, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-webkit-keyframes toRightAnim4 {
-  /* line 502, ../scss/bodoke/object/_slider.scss */
+  /* line 482, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 60%;
     opacity: 1;
   }
 
-  /* line 503, ../scss/bodoke/object/_slider.scss */
+  /* line 483, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 55%;
     opacity: 1;
   }
 
-  /* line 504, ../scss/bodoke/object/_slider.scss */
+  /* line 484, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-moz-keyframes toRightAnim4 {
-  /* line 502, ../scss/bodoke/object/_slider.scss */
+  /* line 482, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 60%;
     opacity: 1;
   }
 
-  /* line 503, ../scss/bodoke/object/_slider.scss */
+  /* line 483, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 55%;
     opacity: 1;
   }
 
-  /* line 504, ../scss/bodoke/object/_slider.scss */
+  /* line 484, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @-o-keyframes toRightAnim4 {
-  /* line 502, ../scss/bodoke/object/_slider.scss */
+  /* line 482, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 60%;
     opacity: 1;
   }
 
-  /* line 503, ../scss/bodoke/object/_slider.scss */
+  /* line 483, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 55%;
     opacity: 1;
   }
 
-  /* line 504, ../scss/bodoke/object/_slider.scss */
+  /* line 484, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
 @keyframes toRightAnim4 {
-  /* line 502, ../scss/bodoke/object/_slider.scss */
+  /* line 482, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 60%;
     opacity: 1;
   }
 
-  /* line 503, ../scss/bodoke/object/_slider.scss */
+  /* line 483, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 55%;
     opacity: 1;
   }
 
-  /* line 504, ../scss/bodoke/object/_slider.scss */
+  /* line 484, ../scss/bodoke/object/_slider.scss */
   100% {
     left: 100%;
     opacity: 0;
   }
 }
-/* line 511, ../scss/bodoke/object/_slider.scss */
-.da-slide-toleft .slide-main-text {
+/* line 491, ../scss/bodoke/object/_slider.scss */
+.slide-toleft .slide-main-text {
   -webkit-animation: toLeftAnim1 0.6s ease-in-out both;
   -moz-animation: toLeftAnim1 0.6s ease-in-out both;
   -o-animation: toLeftAnim1 0.6s ease-in-out both;
   -ms-animation: toLeftAnim1 0.6s ease-in-out both;
   animation: toLeftAnim1 0.6s ease-in-out both;
 }
-/* line 518, ../scss/bodoke/object/_slider.scss */
-.da-slide-toleft .slide-secondary-text {
+/* line 498, ../scss/bodoke/object/_slider.scss */
+.slide-toleft .slide-secondary-text {
   -webkit-animation: toLeftAnim2 0.6s ease-in-out 0.3s both;
   -moz-animation: toLeftAnim2 0.6s ease-in-out 0.3s both;
   -o-animation: toLeftAnim2 0.6s ease-in-out 0.3s both;
   -ms-animation: toLeftAnim2 0.6s ease-in-out 0.3s both;
   animation: toLeftAnim2 0.6s ease-in-out 0.3s both;
 }
-/* line 525, ../scss/bodoke/object/_slider.scss */
-.da-slide-toleft .da-link {
+/* line 505, ../scss/bodoke/object/_slider.scss */
+.slide-toleft .link {
   -webkit-animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
   -moz-animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
   -o-animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
   -ms-animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
   animation: toLeftAnim3 0.6s ease-in-out 0.6s both;
 }
-/* line 532, ../scss/bodoke/object/_slider.scss */
-.da-slide-toleft .da-img {
+/* line 512, ../scss/bodoke/object/_slider.scss */
+.slide-toleft .img {
   -webkit-animation: toLeftAnim4 0.6s ease-in-out 0.5s both;
   -moz-animation: toLeftAnim4 0.6s ease-in-out 0.5s both;
   -o-animation: toLeftAnim4 0.6s ease-in-out 0.5s both;
@@ -8617,280 +8175,280 @@ body.bdk-lightbox-active #bdk-blackout {
 }
 
 @-webkit-keyframes toLeftAnim1 {
-  /* line 541, ../scss/bodoke/object/_slider.scss */
+  /* line 521, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 542, ../scss/bodoke/object/_slider.scss */
+  /* line 522, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 15%;
     opacity: 1;
   }
 
-  /* line 543, ../scss/bodoke/object/_slider.scss */
+  /* line 523, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-moz-keyframes toLeftAnim1 {
-  /* line 541, ../scss/bodoke/object/_slider.scss */
+  /* line 521, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 542, ../scss/bodoke/object/_slider.scss */
+  /* line 522, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 15%;
     opacity: 1;
   }
 
-  /* line 543, ../scss/bodoke/object/_slider.scss */
+  /* line 523, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-o-keyframes toLeftAnim1 {
-  /* line 541, ../scss/bodoke/object/_slider.scss */
+  /* line 521, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 542, ../scss/bodoke/object/_slider.scss */
+  /* line 522, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 15%;
     opacity: 1;
   }
 
-  /* line 543, ../scss/bodoke/object/_slider.scss */
+  /* line 523, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @keyframes toLeftAnim1 {
-  /* line 541, ../scss/bodoke/object/_slider.scss */
+  /* line 521, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 542, ../scss/bodoke/object/_slider.scss */
+  /* line 522, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 15%;
     opacity: 1;
   }
 
-  /* line 543, ../scss/bodoke/object/_slider.scss */
+  /* line 523, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-webkit-keyframes toLeftAnim2 {
-  /* line 546, ../scss/bodoke/object/_slider.scss */
+  /* line 526, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 547, ../scss/bodoke/object/_slider.scss */
+  /* line 527, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 15%;
     opacity: 1;
   }
 
-  /* line 548, ../scss/bodoke/object/_slider.scss */
+  /* line 528, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-moz-keyframes toLeftAnim2 {
-  /* line 546, ../scss/bodoke/object/_slider.scss */
+  /* line 526, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 547, ../scss/bodoke/object/_slider.scss */
+  /* line 527, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 15%;
     opacity: 1;
   }
 
-  /* line 548, ../scss/bodoke/object/_slider.scss */
+  /* line 528, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-o-keyframes toLeftAnim2 {
-  /* line 546, ../scss/bodoke/object/_slider.scss */
+  /* line 526, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 547, ../scss/bodoke/object/_slider.scss */
+  /* line 527, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 15%;
     opacity: 1;
   }
 
-  /* line 548, ../scss/bodoke/object/_slider.scss */
+  /* line 528, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @keyframes toLeftAnim2 {
-  /* line 546, ../scss/bodoke/object/_slider.scss */
+  /* line 526, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 547, ../scss/bodoke/object/_slider.scss */
+  /* line 527, ../scss/bodoke/object/_slider.scss */
   30% {
     left: 15%;
     opacity: 1;
   }
 
-  /* line 548, ../scss/bodoke/object/_slider.scss */
+  /* line 528, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-webkit-keyframes toLeftAnim3 {
-  /* line 551, ../scss/bodoke/object/_slider.scss */
+  /* line 531, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 552, ../scss/bodoke/object/_slider.scss */
+  /* line 532, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-moz-keyframes toLeftAnim3 {
-  /* line 551, ../scss/bodoke/object/_slider.scss */
+  /* line 531, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 552, ../scss/bodoke/object/_slider.scss */
+  /* line 532, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-o-keyframes toLeftAnim3 {
-  /* line 551, ../scss/bodoke/object/_slider.scss */
+  /* line 531, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 552, ../scss/bodoke/object/_slider.scss */
+  /* line 532, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @keyframes toLeftAnim3 {
-  /* line 551, ../scss/bodoke/object/_slider.scss */
+  /* line 531, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 0;
     opacity: 1;
   }
 
-  /* line 552, ../scss/bodoke/object/_slider.scss */
+  /* line 532, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-webkit-keyframes toLeftAnim4 {
-  /* line 555, ../scss/bodoke/object/_slider.scss */
+  /* line 535, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 60%;
     opacity: 1;
   }
 
-  /* line 556, ../scss/bodoke/object/_slider.scss */
+  /* line 536, ../scss/bodoke/object/_slider.scss */
   70% {
     left: 30%;
     opacity: 0;
   }
 
-  /* line 557, ../scss/bodoke/object/_slider.scss */
+  /* line 537, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-moz-keyframes toLeftAnim4 {
-  /* line 555, ../scss/bodoke/object/_slider.scss */
+  /* line 535, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 60%;
     opacity: 1;
   }
 
-  /* line 556, ../scss/bodoke/object/_slider.scss */
+  /* line 536, ../scss/bodoke/object/_slider.scss */
   70% {
     left: 30%;
     opacity: 0;
   }
 
-  /* line 557, ../scss/bodoke/object/_slider.scss */
+  /* line 537, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @-o-keyframes toLeftAnim4 {
-  /* line 555, ../scss/bodoke/object/_slider.scss */
+  /* line 535, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 60%;
     opacity: 1;
   }
 
-  /* line 556, ../scss/bodoke/object/_slider.scss */
+  /* line 536, ../scss/bodoke/object/_slider.scss */
   70% {
     left: 30%;
     opacity: 0;
   }
 
-  /* line 557, ../scss/bodoke/object/_slider.scss */
+  /* line 537, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;
   }
 }
 @keyframes toLeftAnim4 {
-  /* line 555, ../scss/bodoke/object/_slider.scss */
+  /* line 535, ../scss/bodoke/object/_slider.scss */
   0% {
     left: 60%;
     opacity: 1;
   }
 
-  /* line 556, ../scss/bodoke/object/_slider.scss */
+  /* line 536, ../scss/bodoke/object/_slider.scss */
   70% {
     left: 30%;
     opacity: 0;
   }
 
-  /* line 557, ../scss/bodoke/object/_slider.scss */
+  /* line 537, ../scss/bodoke/object/_slider.scss */
   100% {
     left: -50%;
     opacity: 0;

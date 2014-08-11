@@ -15,13 +15,17 @@ $animation-fadeInUp:			true;
 // Efectos
 $animation-bounceUp:			false;
 $animation-pulse:				false;
-$animation-spin:				false;
+$animation-spin:				true;
 
 // Entradas
 $animation-showFromRight:		false;
 $animation-showFromLeft:		false;
 $animation-fadeFromRight:		false;
 $animation-fadeFromLeft:		false;
+$animation-showSlideDown:		true;
+
+// Salidas
+$animation-hideSlideUp:			true;
 
 // Delay en las animaciones
 $animation-delay:				false;
@@ -121,7 +125,7 @@ $animation-delay-count:			8;
 			@include transform( rotate(0) ); 
 		}
 		100% {
-			@include transform( rotate(359.9deg) ); 
+			@include transform( rotate(360deg) ); 
 		}
 	}
 	.#{$animation-name} { @include animation( $animation-name 1s, true ); }	
@@ -259,7 +263,7 @@ $animation-delay-count:			8;
 			@include transform( translateX(0) ); 
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name, 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
 	// FadeIn from left - Far distance
 	$animation-name: fadeFromRight-2;
 	@include keyframes($animation-name) {
@@ -272,7 +276,7 @@ $animation-delay-count:			8;
 			@include transform( translateX(0) ); 
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name, 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
 	// FadeIn from left - So much far distance
 	$animation-name: fadeFromRight-3;
 	@include keyframes($animation-name) {
@@ -285,7 +289,7 @@ $animation-delay-count:			8;
 			@include transform( translateX(0) ); 
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name, 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
 
 }
 
@@ -308,7 +312,7 @@ $animation-delay-count:			8;
 			@include transform( translateX(0) );
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name, 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
 	 
 	// FadeIn from left - Far distance
 	$animation-name: fadeFromLeft-2;
@@ -322,7 +326,7 @@ $animation-delay-count:			8;
 			@include transform( translateX(0) );
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name, 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
 	 
 	// FadeIn from left - So much far distance
 	$animation-name: fadeFromLeft-3;
@@ -336,9 +340,52 @@ $animation-delay-count:			8;
 			@include transform( translateX(0) );
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name, 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
 
 }
+
+
+
+// ===========================
+// SHOW SLIDE DOWN
+// ===========================
+@if ( $animation-showSlideDown ) {
+	$animation-name: showSlideUp;
+	@include keyframes($animation-name) {
+		0% 	 { 
+			@include opacity(0);
+			@include transform( translateY(-10000px) );
+		}
+		85%, 90% { 
+			@include transform( translateY(10px) ); 
+		}
+		100% { 
+			@include transform( translateY(0) ); 
+		}
+	}	
+	.#{$animation-name} { @include animation( $animation-name 1s ); }
+}
+
+
+
+
+// ===========================
+// HIDE SLIDE UP
+// ===========================
+@if ( $animation-hideSlideUp ) {
+	$animation-name: hideSlideUp;
+	@include keyframes($animation-name) {
+		0% 	 { 
+			@include transform( translateY(0) ); 
+		}
+		5%, 10%	 { 
+			@include transform( translateY(10px) ); 
+		}
+		100% { @include transform( translateY(-10000px) ); }
+	}	
+	.#{$animation-name} { @include animation( $animation-name 1s ); }
+}
+
 
 
 // ============================

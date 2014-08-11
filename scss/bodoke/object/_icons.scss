@@ -81,74 +81,6 @@ $y-grid: 384px / $grid-size;
 				}
 			}
 		}
-
-		&.video {
-			&.play {
-				background-position: 0 (-$icon-size * 11); 
-			}
-			&.record {
-				background-position: (-$icon-size) (-$icon-size * 11); 
-			}
-		}
-
-		&.arrow-dropdown {
-			background-position: (-$icon-size * 2) (-$icon-size * 11);
-		}
-
-		&.status {
-			&.pending 	{ background-position: (-$icon-size * 3) (-$icon-size * 11); }
-			&.complete 	{ background-position: (-$icon-size * 4) (-$icon-size * 11); }
-			&.wrong 	{ background-position: (-$icon-size * 5) (-$icon-size * 11); }
-		}
-
-		&.arrow {
-			&.top {
-				background-position: 0 (-$icon-size * 12);
-				&.black { background-position: 0 (-$icon-size * 13); }
-			}
-			&.right {
-				background-position: (-$icon-size) (-$icon-size * 12);
-				&.black { background-position: (-$icon-size) (-$icon-size * 13); }
-			}
-			&.bottom {
-				background-position: (-$icon-size * 2) (-$icon-size * 12);
-				&.black { background-position: (-$icon-size * 2) (-$icon-size * 13); }
-			}
-			&.left {
-				background-position: (-$icon-size * 3) (-$icon-size * 12);
-				&.black { background-position: (-$icon-size * 3) (-$icon-size * 13); }
-			}
-			&.small {
-				&.down 	{ background-position: (-$icon-size * 12) (-$icon-size * 8); }
-				&.right { background-position: (-$icon-size * 13) (-$icon-size * 8); }
-				&.up 	{ background-position: (-$icon-size * 12) (-$icon-size * 9); }
-				&.left 	{ background-position: (-$icon-size * 13) (-$icon-size * 9); }
-			}
-		}
-
-		&.live {
-			background-position: (-$icon-size * 6) (-$icon-size * 11);
-		}
-
-		&.calendar {
-			width: $icon-size * 2;
-			height: $icon-size * 2;
-			background-position: (-$icon-size * 8) (-$icon-size * 11);
-		}
-
-		&.face {
-			height: $icon-size * 3;
-			width: $icon-size * 3;
-			&.sad { background-position: (-$icon-size * 4) (-$icon-size * 13); }
-			&.smile { background-position: (-$icon-size * 7) (-$icon-size * 13); }
-		}
-
-		&.close {
-			background-position: (-$icon-size * 10) (-$icon-size * 11);
-		}
-
-		&.notebook 	{ background-position: 0 (-$icon-size * 14); }
-		&.user 		{ background-position: (-$icon-size) (-$icon-size * 14); }
 	}
 }
 		
@@ -158,9 +90,11 @@ $y-grid: 384px / $grid-size;
 
 @include netbook() {
 	/* Netbook size icons - Hasta 600 de alto  */
-	@include generate_icons( $sm-icon-size, 'sm' );
+	// @include generate_icons( $sm-icon-size, 'sm' );
+	
 	// Exception of medium size icons inside @media query
-	@include generate_icons( $md-icon-size, 'md' );
+	// @include generate_icons( $md-icon-size, 'md' );
+
 	// Large size icons inside @media query
 	// @include generate_icons( $lg-icon-size, 'lg' );	
 }

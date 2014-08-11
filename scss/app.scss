@@ -89,6 +89,12 @@ body {
 	@import "media/mobile-landscape";
 }
 
+// 1.1.3
+// @media para estilos que funcionan solo en Firefox
+@-moz-document url-prefix() {
+	@import "media/firefox";
+}
+
 
 // ============================================
 // Print styles

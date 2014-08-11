@@ -11,7 +11,7 @@
 @import "font-icons-variables";
 @import "font-icons";
 
-$fa-font-path: 	'../fonts';
+$fa-font-path: 	$FONTPATH;
 $fa-css-prefix:	'fa';
 $fa-version:	4.1.0;
 

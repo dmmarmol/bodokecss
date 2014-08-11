@@ -6,7 +6,7 @@
 // PATHS
 // ======================
 $IMGPATH: 				'../images/';
-$FONTPATH:				'../font/';
+$FONTPATH:				'../fonts/';
 
 
 // ======================
@@ -20,13 +20,12 @@ $base-em:				16px;				// 16px = 1em
 $transition-time:		0.35s;		 		// Descontinuado en bodoke.css
 $transition-speed:		0.35s;
 // Icons
-$base-icon-size:		24px;
+$px-icon-size:			24px;
+$em-icon-size:			em($px-icon-size / $base-em);
 
-$em-icon-size:			em($base-icon-size / $base-em);
-
-$md-icon-size:			$base-icon-size;
+$md-icon-size:			$px-icon-size;
 $sm-icon-size:			16px;
-$icon-size:				$base-icon-size;
+$icon-size:				$px-icon-size;
 
 
 // ======================
