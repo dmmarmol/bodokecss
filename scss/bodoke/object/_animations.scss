@@ -7,25 +7,25 @@
 // Activa/Desactiva animaciones
 
 // Fades
-$animation-fadeIn:				true;
-$animation-fadeInLeft:			true;
-$animation-fadeInLeftDisplay:	true;
-$animation-fadeInUp:			true;
+$animation-fadeIn:				false;
+$animation-fadeInLeft:			false;
+$animation-fadeInLeftDisplay:	false;
+$animation-fadeInUp:			false;
 
 // Efectos
 $animation-bounceUp:			false;
 $animation-pulse:				false;
-$animation-spin:				true;
+$animation-spin:				false;
 
 // Entradas
 $animation-showFromRight:		false;
 $animation-showFromLeft:		false;
 $animation-fadeFromRight:		false;
 $animation-fadeFromLeft:		false;
-$animation-showSlideDown:		true;
+$animation-showSlideDown:		false;
 
 // Salidas
-$animation-hideSlideUp:			true;
+$animation-hideSlideUp:			false;
 
 // Delay en las animaciones
 $animation-delay:				false;

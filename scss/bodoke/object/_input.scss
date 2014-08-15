@@ -42,7 +42,11 @@ button[type="search"]
 	&:focus { 
 		outline: none; 
 	}
-
+}
+button {
+	&:focus {
+		outline: none;
+	}
 }
 input, select {
 	line-height: $input-line-height;	

@@ -59,11 +59,11 @@ table {
 @mixin table-color( $color-name, $color ) {
 	$table-bg: 		saturate( lighten( $color, 10% ), 10% );
 	$border-color:	darken( $table-bg, 10% );
-	&.#{$color-name} {
+	&.table-#{$color-name} {
 		thead {
 			th {
-				@include gradient( darken( $table-bg, 20%), darken( $table-bg, 30% ) );
-				// @include background( darken( $table-bg, 30% ) );
+				// @include gradient( darken( $table-bg, 20%), darken( $table-bg, 30% ) );
+				@include background( darken( $table-bg, 30% ) );
 			}
 		}
 		tbody, th {

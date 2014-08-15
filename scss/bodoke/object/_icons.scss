@@ -85,7 +85,7 @@ $y-grid: 384px / $grid-size;
 }
 		
 // Medium size icons
-@include generate_icons( $md-icon-size );
+// @include generate_icons( $md-icon-size );
 
 
 @include netbook() {
@@ -101,4 +101,4 @@ $y-grid: 384px / $grid-size;
 
 // Redefiniendo la variable
 // para no destruir el resto del sitio
-$icon-size: 24px;
+// $icon-size: 24px;

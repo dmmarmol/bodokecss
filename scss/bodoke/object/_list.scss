@@ -1,26 +1,29 @@
 // _list.scss
 
-ul, ol {
-	&.horizontal, &.horz {
-		li { 
-			float: left; 
-		}
-		&.centered, &.inline {
-			text-align: center;
-			li {
-				float: none;
-				display: inline-block;				
-			}
-		}
-	}
-	&.vertical, &.vert {
-		li {
+.list {
+	@include clear();
+	&, &.vertical, &.vert {
+		margin: 0;
+		padding-left: 0;
+		.item {
 			margin: 0;
 			display: block;
 			float: none;
 		}
 	}
-	li {
+	&.horizontal, &.horz {
+		.item { 
+			float: left; 
+		}
+		&.centered, &.inline {
+			text-align: center;
+			.item {
+				float: none;
+				display: inline-block;				
+			}
+		}
+	}
+	.item {
 		@include clear();
 	}
 }

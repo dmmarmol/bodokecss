@@ -485,7 +485,7 @@ $default-transition-delay    : false;
 }
 
 
-// Version 1.1.1
+// Version 0.0.1
 // ===============================================
 @mixin prefixer( $name, $argument  ) {
 	-webkit-#{$name}: #{$argument};
@@ -502,7 +502,7 @@ $prefix-transform: ('-webkit-', '-ms-', '-moz-', '-o-');
 }
 
 
-// Version 1.1.2
+// Version 0.0.2
 // ===============================================
 @mixin h-center() {
 	position: absolute;
@@ -525,3 +525,8 @@ $prefix-transform: ('-webkit-', '-ms-', '-moz-', '-o-');
 		@content;
 	}
 }
+
+
+
+// Version 0.0.4
+// ===============================================

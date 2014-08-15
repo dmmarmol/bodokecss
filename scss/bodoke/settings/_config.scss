@@ -12,17 +12,14 @@ $FONTPATH:				'../fonts/';
 // ======================
 // UNIDADES BASICAS
 // ======================
-
 // Ems base
-$base-em:				16px;				// 16px = 1em
-
+$base-em:				16px; // 16px = 1em
 // Tiempo
-$transition-time:		0.35s;		 		// Descontinuado en bodoke.css
 $transition-speed:		0.35s;
 // Icons
 $px-icon-size:			24px;
 $em-icon-size:			em($px-icon-size / $base-em);
-
+// Icon sizes
 $md-icon-size:			$px-icon-size;
 $sm-icon-size:			16px;
 $icon-size:				$px-icon-size;
@@ -31,7 +28,7 @@ $icon-size:				$px-icon-size;
 // ======================
 // RESOLUCIONES
 // ======================
-// Aaspect Ratio
+// Aspect Ratio
 $ratio-square:			4 / 3;
 $ratio-wide:			16 / 3;
 $aureo: 				(1 + sqrt(5) ) / 2;
