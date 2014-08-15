@@ -38,8 +38,8 @@
 @function img( $path ) {
 	@return url( $IMGPATH + $path);
 }
-@function institucional( $path ) {
-	@return url( $IMGPATH + 'institucional/' + $path);
+@function icon( $path ) {
+	@return url( $IMGPATH + 'icon/' + $path);
 }
 @function placeholder( $path ) {
 	@return url( $IMGPATH + 'placeholder/' + $path);

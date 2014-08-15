@@ -7,29 +7,31 @@
 // Activa/Desactiva animaciones
 
 // Fades
-$animation-fadeIn:				false;
-$animation-fadeInLeft:			false;
-$animation-fadeInLeftDisplay:	false;
-$animation-fadeInUp:			false;
+$animation-fadeIn:					false;
+$animation-fadeInLeft:				false;
+$animation-fadeInLeftDisplay:		false;
+$animation-fadeInUp:				false;
+$animation-fadeInFromRightToLeft:	false;
+$animation-fadeInFromLeftToRight:	false;
 
 // Efectos
-$animation-bounceUp:			false;
-$animation-pulse:				false;
-$animation-spin:				false;
+$animation-bounceUp:				false;
+$animation-pulse:					false;
+$animation-spin:					false;
 
 // Entradas
-$animation-showFromRight:		false;
-$animation-showFromLeft:		false;
-$animation-fadeFromRight:		false;
-$animation-fadeFromLeft:		false;
-$animation-showSlideDown:		false;
+$animation-showFromRight:			false;
+$animation-showFromLeft:			false;
+$animation-fadeFromRight:			false;
+$animation-fadeFromLeft:			false;
+$animation-showSlideDown:			false;
 
 // Salidas
-$animation-hideSlideUp:			false;
+$animation-hideSlideUp:				false;
 
 // Delay en las animaciones
-$animation-delay:				false;
-$animation-delay-count:			8;
+$animation-delay:					true;
+$animation-delay-count:				8;
 
 
 
@@ -99,6 +101,42 @@ $animation-delay-count:			8;
 	}
 	.#{$animation-name} { @include animation( $animation-name 1s ); }	
 }
+
+// Fade in form Right to Left
+@if ( $animation-fadeInFromRightToLeft ) {
+	$animation-name: fadeInFromRightToLeft;
+	@include keyframes($animation-name) {
+		0%	 { 
+			@include transform( translateX(50px) );
+			opacity: 0; 
+		}
+		100% { 
+			@include transform( translateX(0px) );
+			opacity: 1; 
+		}
+	}
+	.#{$animation-name} { @include animation( $animation-name 1s ); }	
+}
+
+// Fade in form Left to Right
+@if ( $animation-fadeInFromLeftToRight ) {
+	$animation-name: fadeInFromLeftToRight;
+	@include keyframes($animation-name) {
+		0%	 { 
+			@include transform( translateX(-50px) );
+			opacity: 0; 
+		}
+		100% { 
+			@include transform( translateX(0px) );
+			opacity: 1; 
+		}
+	}
+	.#{$animation-name} { @include animation( $animation-name 1s ); }	
+}
+
+
+
+
 
 // Bounce Up
 @if ( $animation-bounceUp ) {

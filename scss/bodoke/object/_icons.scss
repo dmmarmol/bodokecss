@@ -1,17 +1,21 @@
 // _icons.scss
 
+
+// ==================
+// IMAGE ICONS
+// ==================
 $grid-size:	24px;
-$x-grid: 528px / $grid-size;
-$y-grid: 384px / $grid-size;
+$x-grid: 72px / $grid-size;
+$y-grid: 120px / $grid-size;
 
 .icon {
 	display: block;
-	background-image: institucional('icons.png');
+	background-image: icon('countries.png');
 	background-position: 0 0;
 	background-repeat: no-repeat;
 }
 
-@mixin generate_icons( $icon-size, $class-prefix:'' ) {
+@mixin flag-icons( $icon-size, $class-prefix:'' ) {
 	$icon-class: 'icon';
 	@if $class-prefix != '' {
 		$icon-class: '#{$class-prefix}-icon'
@@ -24,21 +28,7 @@ $y-grid: 384px / $grid-size;
 		background-size: ($icon-size * $x-grid) ($icon-size * $y-grid);
 		// background-size: ($icon-size * 22) ($icon-size * 16);
 
-		&.start {
-			width: ($icon-size * 5);
-			height: ($icon-size * 5);
-			background-position: 0 0;
-			&.red {
-				width: ($icon-size * 3);
-				height: ($icon-size * 3);
-				background-position: 0 (-$icon-size * 5);
-				&.right {
-					background-position: (-$icon-size * 3) (-$icon-size * 5);
-				}
-			}
-		}
-
-		$usa:		('usa', 'eeuu', 'ee-uu', 'estados-unidos', 'silicon-valley', 'sil-valley');
+		$usa:		('usa', 'eeuu', 'ee-uu', 'eng', 'estados-unidos', 'silicon-valley', 'sil-valley');
 		$spain:		('spa', 'espana', 'españa', 'spain');
 		$brasil: 	('bra', 'brasil', 'brazil', 'sao-paulo', 'san-pablo', 'rio-de-janeiro');
 		$argentina: ('arg', 'argentina', 'buenos-aires', 'bs-as');
@@ -46,46 +36,69 @@ $y-grid: 384px / $grid-size;
 		$mexico:	('mex', 'mexico', 'mexico-df');
 
 		&.flag {
-			@each $place in $usa {
-				&.#{$place}	{ background-position: (-$icon-size * 5) 0; }
-			}
 			@each $place in $spain {
-				&.#{$place}	{ background-position: (-$icon-size * 5) (-$icon-size * 2); }
+				&.#{$place}	{ background-position: 0 0; }
+			}
+			@each $place in $usa {
+				&.#{$place}	{ background-position: 0 (-$icon-size); }
 			}
 			@each $place in $brasil {
-				&.#{$place}	{ background-position: (-$icon-size * 5) (-$icon-size); }
+				&.#{$place}	{ background-position: 0 (-$icon-size * 2); }
 			}
 			@each $place in $argentina {
-				&.#{$place}	{ background-position: (-$icon-size * 5) (-$icon-size * 3); }
+				&.#{$place}	{ background-position: 0 (-$icon-size * 3); }
 			}
 			@each $place in $colombia {
-				&.#{$place}	{ background-position: (-$icon-size * 5) (-$icon-size * 4); }
+				&.#{$place}	{ background-position: 0 (-$icon-size * 4); }
 			}
 			@each $place in $mexico {
-				&.#{$place}	{ background-position: (-$icon-size * 6) 0; }
+				&.#{$place}	{ background-position: (-$icon-size) 0; }
 			}
-			&.big {
-				width: $icon-size * 3;
-				height: $icon-size * 2;
-				@each $place in $argentina {
-					&.#{$place}	{ background-position: (-$icon-size * 7) 0; }
-				}
-				@each $place in $brasil {
-					&.#{$place}	{ background-position: (-$icon-size * 10) 0; }
-				}
-				@each $place in $colombia {
-					&.#{$place}	{ background-position: (-$icon-size * 10) (-$icon-size * 4); }
-				}
-				@each $place in $mexico {
-					&.#{$place}	{ background-position: (-$icon-size * 7) (-$icon-size * 2); }
-				}
-			}
+			// &.big {
+			// 	width: $icon-size * 3;
+			// 	height: $icon-size * 2;
+			// 	@each $place in $argentina {
+			// 		&.#{$place}	{ background-position: (-$icon-size * 7) 0; }
+			// 	}
+			// 	@each $place in $brasil {
+			// 		&.#{$place}	{ background-position: (-$icon-size * 10) 0; }
+			// 	}
+			// 	@each $place in $colombia {
+			// 		&.#{$place}	{ background-position: (-$icon-size * 10) (-$icon-size * 4); }
+			// 	}
+			// 	@each $place in $mexico {
+			// 		&.#{$place}	{ background-position: (-$icon-size * 7) (-$icon-size * 2); }
+			// 	}
+			// }
 		}
 	}
 }
-		
 // Medium size icons
-// @include generate_icons( $md-icon-size );
+@include flag-icons( $md-icon-size );
+
+
+
+// ==================
+// FONT ICONS
+// ==================
+.ficon {
+	font-size: em(24px);
+	cursor: pointer;
+	&[disabled], &[disabled="disabled"], &.disabled {
+		cursor: default;
+		@include opacity(0.6);
+	}
+	&.small { font-size: em(16px); }
+	&.medium { font-size: em(32px); }
+	&.large { font-size: em(44px); }
+
+	.rounded {
+		@include border-radius( 50% );
+		padding: 3px;
+		.medium { padding: 5px; }
+		.large { padding: 8px; }
+	}
+}
 
 
 @include netbook() {
@@ -98,7 +111,3 @@ $y-grid: 384px / $grid-size;
 	// Large size icons inside @media query
 	// @include generate_icons( $lg-icon-size, 'lg' );	
 }
-
-// Redefiniendo la variable
-// para no destruir el resto del sitio
-// $icon-size: 24px;

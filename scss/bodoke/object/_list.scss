@@ -5,6 +5,10 @@
 	&, &.vertical, &.vert {
 		margin: 0;
 		padding-left: 0;
+		&.container {
+			margin-left: auto;
+			margin-right: auto;
+		}
 		.item {
 			margin: 0;
 			display: block;

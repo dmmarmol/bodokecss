@@ -1,0 +1,34 @@
+// _lang-dropdown.scss
+
+$lang-opt-height: 32px;
+$lang-opt-width: 48px;
+
+.lang {
+	position: relative;
+	width: $lang-opt-width;
+	height: $lang-opt-height;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	z-index: 100;
+	li, .item {
+		position: relative;
+		float: none;
+		width: $lang-opt-width;
+		height: $lang-opt-height;
+		border: transparent;
+		@include transition( opacity $transition-speed ease );
+		.icon {
+			@include a-center;
+		}
+		&:hover {
+			background-color: black(0.1);			
+		}
+	}
+	&:hover {
+		height: auto;
+		li, .item {
+			background-color: $white;
+		}
+	}
+}
