@@ -37,3 +37,12 @@ $screen-very-old:		800px;
 $screen-old:			1024px;
 $screen-laptop:			1366px;
 $screen-netbook:		600px;
+
+
+
+// ======================
+// PREFIJOX / PREFIX
+// ======================
+$prefix-css: 			('-webkit-', '-ms-', '-moz-', '-o-', 'khtml');
+$prefix-transform: 		('-webkit-', '-ms-', '-moz-', '-o-');
+$prefix-user-select: 	('-webkit-', '-ms-', '-moz-', '-khtml-');

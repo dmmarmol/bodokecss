@@ -83,7 +83,6 @@ $y-grid: 120px / $grid-size;
 // ==================
 .ficon {
 	font-size: em(24px);
-	cursor: pointer;
 	&[disabled], &[disabled="disabled"], &.disabled {
 		cursor: default;
 		@include opacity(0.6);

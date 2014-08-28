@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Bodoke.css ---------- Sexy & simple css framework made in SASS with easy configuration Inlcude FontAwesome!   author: 			Diego Martin Marmol website: 		www.diegomarmol.com.ar version:			0.0.4 release date:	20/05/14	 contributors: 	Leonardo Pittelli developed at:	Convoy S.R.L - www.convoy.me Compass:			1.0.0.alpha.20 SASS:			3.3.10 (Maptastic Maple)  Tunemypic.com Google DeveloperBus2014 Youtube/Edu Gadget Google ContentBox
+/* Bodoke.css ---------- Sexy & simple css framework made in SASS with easy configuration Inlcude FontAwesome!   author: 			Diego Martin Marmol website: 		www.diegomarmol.com.ar version:			0.0.5 release date:	20/05/14	 contributors: 	Leonardo Pittelli developed at:	Convoy S.R.L - www.convoy.me Compass:			1.0.0.alpha.20 SASS:			3.3.10 (Maptastic Maple)  Tunemypic.com 		// 0.0.1 La Caja				// 0.0.11 DeveloperBus2014		// 0.0.2 Youtube/Edu Gadget	// 0.0.3 Google ContentBox	// 0.0.5
 */
 @font-face { font-family: "Bodoke"; src: url("../fonts/Bodoke.tff"); src: url("../fonts/Bodoke.tff") format("eot"), url("../fonts/Bodoke.tff") format("truetype"); }
 @font-face { font-family: 'FontAwesome'; src: url("../fonts//fontawesome-webfont.eot?v=4.1 0"); src: url("../fonts//fontawesome-webfont.eot?#iefix&v=4.1 0") format("embedded-opentype"), url("../fonts//fontawesome-webfont.woff?v=4.1 0") format("woff"), url("../fonts//fontawesome-webfont.ttf?v=4.1 0") format("truetype"), url("../fonts//fontawesome-webfont.svg?v=4.1 0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
@@ -71,11 +71,6 @@ hr { background-color: #d1d1d1; }
 
 /* line 172, ../scss/bodoke/settings/_colors.scss */
 ::-moz-selection, ::selection { background: #d1d1d1; color: #FFF; text-shadow: 1px solid rgba(0, 0, 0, 0.2); }
-
-@font-face { font-family: "Bodoke"; src: url("../fonts/Bodoke.tff"); src: url("../fonts/Bodoke.tff") format("eot"), url("../fonts/Bodoke.tff") format("truetype"); }
-@font-face { font-family: 'FontAwesome'; src: url("../fonts//fontawesome-webfont.eot?v=4.1 0"); src: url("../fonts//fontawesome-webfont.eot?#iefix&v=4.1 0") format("embedded-opentype"), url("../fonts//fontawesome-webfont.woff?v=4.1 0") format("woff"), url("../fonts//fontawesome-webfont.ttf?v=4.1 0") format("truetype"), url("../fonts//fontawesome-webfont.svg?v=4.1 0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
-/* line 31, ../scss/bodoke/object/_fontawesome.scss */
-[class*="fa"]:before { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 /*! normalize.css v1.1.2 | MIT License | git.io/normalize */
 /* line 3, ../scss/bodoke/grid/_normalize.min.scss */
@@ -231,205 +226,188 @@ textarea { overflow: auto; vertical-align: top; }
 /* line 3, ../scss/bodoke/grid/_normalize.min.scss */
 table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 5, ../scss/bodoke/grid/_grid.scss */
+/* line 8, ../scss/bodoke/grid/_grid.scss */
 *, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 38, ../scss/bodoke/grid/_grid.scss */
-.row { width: auto; margin-right: -0.9375em; margin-left: -0.9375em; *zoom: 1; }
 /* line 42, ../scss/bodoke/grid/_grid.scss */
-.row.row-half { margin-bottom: 0.5em; }
-/* line 43, ../scss/bodoke/grid/_grid.scss */
-.row.row-one { margin-bottom: 1em; }
-/* line 44, ../scss/bodoke/grid/_grid.scss */
-.row.row-two { margin-bottom: 2em; }
-/* line 45, ../scss/bodoke/grid/_grid.scss */
-.row.row-three { margin-bottom: 3em; }
+.row { width: auto; margin-right: -0.9375em; margin-left: -0.9375em; *zoom: 1; }
 /* line 46, ../scss/bodoke/grid/_grid.scss */
-.row.row-four { margin-bottom: 4em; }
+.row.row-half { margin-bottom: 0.5em; }
+/* line 47, ../scss/bodoke/grid/_grid.scss */
+.row.row-one { margin-bottom: 1em; }
 /* line 48, ../scss/bodoke/grid/_grid.scss */
+.row.row-two { margin-bottom: 2em; }
+/* line 49, ../scss/bodoke/grid/_grid.scss */
+.row.row-three { margin-bottom: 3em; }
+/* line 50, ../scss/bodoke/grid/_grid.scss */
+.row.row-four { margin-bottom: 4em; }
+/* line 52, ../scss/bodoke/grid/_grid.scss */
 .row.collapse { margin-right: 0; margin-left: 0; }
-/* line 53, ../scss/bodoke/grid/_grid.scss */
+/* line 57, ../scss/bodoke/grid/_grid.scss */
 .row.collapse-right { margin-right: -0.9375em; margin-left: 0 !important; }
-/* line 58, ../scss/bodoke/grid/_grid.scss */
+/* line 62, ../scss/bodoke/grid/_grid.scss */
 .row.collapse-left { margin-left: -0.9375em; margin-right: 0 !important; }
 /* line 13, ../scss/bodoke/settings/_mixins.scss */
 .row:before, .row:after { content: ""; display: table; }
 /* line 14, ../scss/bodoke/settings/_mixins.scss */
 .row:after { clear: both; }
 
-/* line 67, ../scss/bodoke/grid/_grid.scss */
+/* line 71, ../scss/bodoke/grid/_grid.scss */
 .section { position: relative; display: block; }
 
-/* line 72, ../scss/bodoke/grid/_grid.scss */
+/* line 76, ../scss/bodoke/grid/_grid.scss */
 .container { position: relative; width: 93.75%; max-width: 960px; margin-left: auto; margin-right: auto; padding-left: 0.9375em; padding-right: 0.9375em; }
-/* line 80, ../scss/bodoke/grid/_grid.scss */
-.container .inner-container { padding-left: 0.9375em; padding-right: 0.9375em; }
 /* line 84, ../scss/bodoke/grid/_grid.scss */
+.container .inner-container { padding-left: 0.9375em; padding-right: 0.9375em; }
+/* line 88, ../scss/bodoke/grid/_grid.scss */
 .container.full { width: 100%; max-width: none; margin-left: auto; margin-right: auto; }
-/* line 90, ../scss/bodoke/grid/_grid.scss */
-.container.collapse { padding-left: 0; padding-right: 0; }
 /* line 94, ../scss/bodoke/grid/_grid.scss */
-.container.collapse-right { margin-right: -0.9375em; margin-left: 0; }
+.container.collapse { padding-left: 0; padding-right: 0; }
 /* line 98, ../scss/bodoke/grid/_grid.scss */
+.container.collapse-right { margin-right: -0.9375em; margin-left: 0; }
+/* line 102, ../scss/bodoke/grid/_grid.scss */
 .container.collapse-left { margin-right: 0; margin-left: -0.9375em; }
 
-/* line 114, ../scss/bodoke/grid/_grid.scss */
+/* line 118, ../scss/bodoke/grid/_grid.scss */
 .col, .cols, .column, .columns { position: relative; display: block; padding-left: 0.9375em; padding-right: 0.9375em; float: left; }
-/* line 122, ../scss/bodoke/grid/_grid.scss */
-.col.collapse, .cols.collapse, .column.collapse, .columns.collapse { padding-left: 0; padding-right: 0; }
 /* line 126, ../scss/bodoke/grid/_grid.scss */
+.col.collapse, .cols.collapse, .column.collapse, .columns.collapse { padding-left: 0; padding-right: 0; }
+/* line 130, ../scss/bodoke/grid/_grid.scss */
 .col.collapse-right, .cols.collapse-right, .column.collapse-right, .columns.collapse-right { padding-right: 0; }
-/* line 129, ../scss/bodoke/grid/_grid.scss */
+/* line 133, ../scss/bodoke/grid/_grid.scss */
 .col.collapse-left, .cols.collapse-left, .column.collapse-left, .columns.collapse-left { padding-left: 0; }
 
-/* line 27, ../scss/bodoke/object/_buttons.scss */
-.button.yellow { color: #f7f7f7; background: #fcb608; text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8); -moz-box-shadow: 0 3px 0 0 #b58202; -webkit-box-shadow: 0 3px 0 0 #b58202; box-shadow: 0 3px 0 0 #b58202; text-shadow: 0px 1px 0px rgba(156, 112, 2, 0.8); }
-/* line 51, ../scss/bodoke/object/_buttons.scss */
+/* line 28, ../scss/bodoke/object/_buttons.scss */
+.button.yellow { color: #f7f7f7; background: #fcb608; }
+/* line 54, ../scss/bodoke/object/_buttons.scss */
 .button.yellow:hover { background: #ce9403; }
+/* line 28, ../scss/bodoke/object/_buttons.scss */
+.button.blue { color: #f7f7f7; background: #55a0cf; }
 /* line 54, ../scss/bodoke/object/_buttons.scss */
-.button.yellow:active, .button.yellow.active { -moz-box-shadow: inset 0 3px 0px 0px #b58202; -webkit-box-shadow: inset 0 3px 0px 0px #b58202; box-shadow: inset 0 3px 0px 0px #b58202; }
-/* line 27, ../scss/bodoke/object/_buttons.scss */
-.button.blue { color: #f7f7f7; background: #55a0cf; text-shadow: 0 1px 0 rgba(42, 107, 148, 0.8); -moz-box-shadow: 0 3px 0 0 #2f7aa8; -webkit-box-shadow: 0 3px 0 0 #2f7aa8; box-shadow: 0 3px 0 0 #2f7aa8; text-shadow: 0px 1px 0px rgba(42, 107, 148, 0.8); }
-/* line 51, ../scss/bodoke/object/_buttons.scss */
 .button.blue:hover { background: #3588bc; }
+/* line 28, ../scss/bodoke/object/_buttons.scss */
+.button.red { color: #f7f7f7; background: #dd4a3a; }
 /* line 54, ../scss/bodoke/object/_buttons.scss */
-.button.blue:active, .button.blue.active { -moz-box-shadow: inset 0 3px 0px 0px #2f7aa8; -webkit-box-shadow: inset 0 3px 0px 0px #2f7aa8; box-shadow: inset 0 3px 0px 0px #2f7aa8; }
-/* line 27, ../scss/bodoke/object/_buttons.scss */
-.button.red { color: #f7f7f7; background: #dd4a3a; text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8); -moz-box-shadow: 0 3px 0 0 #ad2c1e; -webkit-box-shadow: 0 3px 0 0 #ad2c1e; box-shadow: 0 3px 0 0 #ad2c1e; text-shadow: 0px 1px 0px rgba(151, 38, 26, 0.8); }
-/* line 51, ../scss/bodoke/object/_buttons.scss */
 .button.red:hover { background: #c23122; }
+/* line 28, ../scss/bodoke/object/_buttons.scss */
+.button.green { color: #f7f7f7; background: #639728; }
 /* line 54, ../scss/bodoke/object/_buttons.scss */
-.button.red:active, .button.red.active { -moz-box-shadow: inset 0 3px 0px 0px #ad2c1e; -webkit-box-shadow: inset 0 3px 0px 0px #ad2c1e; box-shadow: inset 0 3px 0px 0px #ad2c1e; }
-/* line 27, ../scss/bodoke/object/_buttons.scss */
-.button.green { color: #f7f7f7; background: #639728; text-shadow: 0 1px 0 rgba(46, 70, 19, 0.8); -moz-box-shadow: 0 3px 0 0 #3b5b18; -webkit-box-shadow: 0 3px 0 0 #3b5b18; box-shadow: 0 3px 0 0 #3b5b18; text-shadow: 0px 1px 0px rgba(46, 70, 19, 0.8); }
-/* line 51, ../scss/bodoke/object/_buttons.scss */
 .button.green:hover { background: #496f1d; }
+/* line 28, ../scss/bodoke/object/_buttons.scss */
+.button.gray { color: #333333; background: #f2f2f2; }
 /* line 54, ../scss/bodoke/object/_buttons.scss */
-.button.green:active, .button.green.active { -moz-box-shadow: inset 0 3px 0px 0px #3b5b18; -webkit-box-shadow: inset 0 3px 0px 0px #3b5b18; box-shadow: inset 0 3px 0px 0px #3b5b18; }
-/* line 27, ../scss/bodoke/object/_buttons.scss */
-.button.gray { color: #333333; background: #f2f2f2; text-shadow: 0 1px 0 rgba(191, 191, 191, 0.8); -moz-box-shadow: 0 3px 0 0 #cccccc; -webkit-box-shadow: 0 3px 0 0 #cccccc; box-shadow: 0 3px 0 0 #cccccc; text-shadow: 0px 1px 0px rgba(191, 191, 191, 0.8); }
-/* line 51, ../scss/bodoke/object/_buttons.scss */
 .button.gray:hover { background: #d9d9d9; }
-/* line 54, ../scss/bodoke/object/_buttons.scss */
-.button.gray:active, .button.gray.active { -moz-box-shadow: inset 0 3px 0px 0px #cccccc; -webkit-box-shadow: inset 0 3px 0px 0px #cccccc; box-shadow: inset 0 3px 0px 0px #cccccc; }
 
-/* line 82, ../scss/bodoke/object/_buttons.scss */
+/* line 89, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.yellow { -moz-transition: background 0.35s ease, text-shadow 0.35s ease; -webkit-transition: background 0.35s ease, text-shadow 0.35s ease; transition: background 0.35s ease, text-shadow 0.35s ease; }
-/* line 88, ../scss/bodoke/object/_buttons.scss */
-.button.clear.hover.yellow:hover { color: #f7f7f7; text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8); background: #fcb608; }
-/* line 82, ../scss/bodoke/object/_buttons.scss */
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.yellow:hover { color: #f7f7f7; background: #fcb608; }
+/* line 89, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.blue { -moz-transition: background 0.35s ease, text-shadow 0.35s ease; -webkit-transition: background 0.35s ease, text-shadow 0.35s ease; transition: background 0.35s ease, text-shadow 0.35s ease; }
-/* line 88, ../scss/bodoke/object/_buttons.scss */
-.button.clear.hover.blue:hover { color: #f7f7f7; text-shadow: 0 1px 0 rgba(42, 107, 148, 0.8); background: #55a0cf; }
-/* line 82, ../scss/bodoke/object/_buttons.scss */
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.blue:hover { color: #f7f7f7; background: #55a0cf; }
+/* line 89, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.red { -moz-transition: background 0.35s ease, text-shadow 0.35s ease; -webkit-transition: background 0.35s ease, text-shadow 0.35s ease; transition: background 0.35s ease, text-shadow 0.35s ease; }
-/* line 88, ../scss/bodoke/object/_buttons.scss */
-.button.clear.hover.red:hover { color: #f7f7f7; text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8); background: #dd4a3a; }
-/* line 82, ../scss/bodoke/object/_buttons.scss */
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.red:hover { color: #f7f7f7; background: #dd4a3a; }
+/* line 89, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.green { -moz-transition: background 0.35s ease, text-shadow 0.35s ease; -webkit-transition: background 0.35s ease, text-shadow 0.35s ease; transition: background 0.35s ease, text-shadow 0.35s ease; }
-/* line 88, ../scss/bodoke/object/_buttons.scss */
-.button.clear.hover.green:hover { color: #f7f7f7; text-shadow: 0 1px 0 rgba(46, 70, 19, 0.8); background: #639728; }
-/* line 82, ../scss/bodoke/object/_buttons.scss */
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.green:hover { color: #f7f7f7; background: #639728; }
+/* line 89, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.gray { -moz-transition: background 0.35s ease, text-shadow 0.35s ease; -webkit-transition: background 0.35s ease, text-shadow 0.35s ease; transition: background 0.35s ease, text-shadow 0.35s ease; }
-/* line 88, ../scss/bodoke/object/_buttons.scss */
-.button.clear.hover.gray:hover { color: #333333; text-shadow: 0 1px 0 rgba(191, 191, 191, 0.8); background: #f2f2f2; }
+/* line 95, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.gray:hover { color: #333333; background: #f2f2f2; }
 
-/* line 120, ../scss/bodoke/object/_buttons.scss */
+/* line 129, ../scss/bodoke/object/_buttons.scss */
 .button.link { text-shadow: none; }
-/* line 123, ../scss/bodoke/object/_buttons.scss */
+/* line 132, ../scss/bodoke/object/_buttons.scss */
 .button.link.yellow { color: #fcb608; }
-/* line 123, ../scss/bodoke/object/_buttons.scss */
+/* line 132, ../scss/bodoke/object/_buttons.scss */
 .button.link.blue { color: #55a0cf; }
-/* line 123, ../scss/bodoke/object/_buttons.scss */
+/* line 132, ../scss/bodoke/object/_buttons.scss */
 .button.link.red { color: #dd4a3a; }
-/* line 123, ../scss/bodoke/object/_buttons.scss */
+/* line 132, ../scss/bodoke/object/_buttons.scss */
 .button.link.green { color: #639728; }
-/* line 123, ../scss/bodoke/object/_buttons.scss */
+/* line 132, ../scss/bodoke/object/_buttons.scss */
 .button.link.gray { color: #f2f2f2; }
 
-/* line 61, ../scss/bodoke/object/_buttons.scss */
-.button-group.yellow .button { color: #f7f7f7; background: #fcb608; text-shadow: 0 1px 0 rgba(156, 112, 2, 0.8); -moz-box-shadow: 0 3px 0 0 #b58202; -webkit-box-shadow: 0 3px 0 0 #b58202; box-shadow: 0 3px 0 0 #b58202; }
-/* line 71, ../scss/bodoke/object/_buttons.scss */
+/* line 65, ../scss/bodoke/object/_buttons.scss */
+.button-group.yellow .button { color: #f7f7f7; background: #fcb608; }
+/* line 77, ../scss/bodoke/object/_buttons.scss */
 .button-group.yellow .button:hover { background: #ce9403; }
-/* line 74, ../scss/bodoke/object/_buttons.scss */
-.button-group.yellow .button:active { -moz-box-shadow: inset 0 3px 0px 0px #b58202; -webkit-box-shadow: inset 0 3px 0px 0px #b58202; box-shadow: inset 0 3px 0px 0px #b58202; }
-/* line 61, ../scss/bodoke/object/_buttons.scss */
-.button-group.blue .button { color: #f7f7f7; background: #55a0cf; text-shadow: 0 1px 0 rgba(42, 107, 148, 0.8); -moz-box-shadow: 0 3px 0 0 #2f7aa8; -webkit-box-shadow: 0 3px 0 0 #2f7aa8; box-shadow: 0 3px 0 0 #2f7aa8; }
-/* line 71, ../scss/bodoke/object/_buttons.scss */
+/* line 65, ../scss/bodoke/object/_buttons.scss */
+.button-group.blue .button { color: #f7f7f7; background: #55a0cf; }
+/* line 77, ../scss/bodoke/object/_buttons.scss */
 .button-group.blue .button:hover { background: #3588bc; }
-/* line 74, ../scss/bodoke/object/_buttons.scss */
-.button-group.blue .button:active { -moz-box-shadow: inset 0 3px 0px 0px #2f7aa8; -webkit-box-shadow: inset 0 3px 0px 0px #2f7aa8; box-shadow: inset 0 3px 0px 0px #2f7aa8; }
-/* line 61, ../scss/bodoke/object/_buttons.scss */
-.button-group.red .button { color: #f7f7f7; background: #dd4a3a; text-shadow: 0 1px 0 rgba(151, 38, 26, 0.8); -moz-box-shadow: 0 3px 0 0 #ad2c1e; -webkit-box-shadow: 0 3px 0 0 #ad2c1e; box-shadow: 0 3px 0 0 #ad2c1e; }
-/* line 71, ../scss/bodoke/object/_buttons.scss */
+/* line 65, ../scss/bodoke/object/_buttons.scss */
+.button-group.red .button { color: #f7f7f7; background: #dd4a3a; }
+/* line 77, ../scss/bodoke/object/_buttons.scss */
 .button-group.red .button:hover { background: #c23122; }
-/* line 74, ../scss/bodoke/object/_buttons.scss */
-.button-group.red .button:active { -moz-box-shadow: inset 0 3px 0px 0px #ad2c1e; -webkit-box-shadow: inset 0 3px 0px 0px #ad2c1e; box-shadow: inset 0 3px 0px 0px #ad2c1e; }
-/* line 61, ../scss/bodoke/object/_buttons.scss */
-.button-group.green .button { color: #f7f7f7; background: #639728; text-shadow: 0 1px 0 rgba(46, 70, 19, 0.8); -moz-box-shadow: 0 3px 0 0 #3b5b18; -webkit-box-shadow: 0 3px 0 0 #3b5b18; box-shadow: 0 3px 0 0 #3b5b18; }
-/* line 71, ../scss/bodoke/object/_buttons.scss */
+/* line 65, ../scss/bodoke/object/_buttons.scss */
+.button-group.green .button { color: #f7f7f7; background: #639728; }
+/* line 77, ../scss/bodoke/object/_buttons.scss */
 .button-group.green .button:hover { background: #496f1d; }
-/* line 74, ../scss/bodoke/object/_buttons.scss */
-.button-group.green .button:active { -moz-box-shadow: inset 0 3px 0px 0px #3b5b18; -webkit-box-shadow: inset 0 3px 0px 0px #3b5b18; box-shadow: inset 0 3px 0px 0px #3b5b18; }
-/* line 61, ../scss/bodoke/object/_buttons.scss */
-.button-group.gray .button { color: #333333; background: #f2f2f2; text-shadow: 0 1px 0 rgba(191, 191, 191, 0.8); -moz-box-shadow: 0 3px 0 0 #cccccc; -webkit-box-shadow: 0 3px 0 0 #cccccc; box-shadow: 0 3px 0 0 #cccccc; }
-/* line 71, ../scss/bodoke/object/_buttons.scss */
+/* line 65, ../scss/bodoke/object/_buttons.scss */
+.button-group.gray .button { color: #333333; background: #f2f2f2; }
+/* line 77, ../scss/bodoke/object/_buttons.scss */
 .button-group.gray .button:hover { background: #d9d9d9; }
-/* line 74, ../scss/bodoke/object/_buttons.scss */
-.button-group.gray .button:active { -moz-box-shadow: inset 0 3px 0px 0px #cccccc; -webkit-box-shadow: inset 0 3px 0px 0px #cccccc; box-shadow: inset 0 3px 0px 0px #cccccc; }
 
-/* line 137, ../scss/bodoke/object/_buttons.scss */
-.button { padding-top: 0; padding-bottom: 0; padding-left: 0.9375em; padding-right: 0.9375em; }
-/* line 142, ../scss/bodoke/object/_buttons.scss */
-.button.slim { padding-left: 0.46875em; padding-right: 0.46875em; }
 /* line 146, ../scss/bodoke/object/_buttons.scss */
+.button { padding-top: 0; padding-bottom: 0; padding-left: 0.9375em; padding-right: 0.9375em; }
+/* line 151, ../scss/bodoke/object/_buttons.scss */
+.button.slim { padding-left: 0.46875em; padding-right: 0.46875em; }
+/* line 155, ../scss/bodoke/object/_buttons.scss */
 .button.medium { padding-left: 1.17188em; padding-right: 1.17188em; font-size: 16px; line-height: 40px; }
-/* line 152, ../scss/bodoke/object/_buttons.scss */
-.button.large { padding-top: 0.53571em; padding-bottom: 0.53571em; padding-left: 1.40625em; padding-right: 1.40625em; font-size: 24px; font-weight: 300; line-height: 20px; }
+/* line 161, ../scss/bodoke/object/_buttons.scss */
+.button.large { padding-top: 0.53571em; padding-bottom: 0.53571em; padding-left: 0.9375em; padding-right: 0.9375em; font-size: 24px; font-weight: 300; line-height: 20px; }
 
-/* line 170, ../scss/bodoke/object/_buttons.scss */
-.button-group { padding: 0; margin: 0; line-height: 32px; background: transparent; }
-/* line 176, ../scss/bodoke/object/_buttons.scss */
-.button-group .button { border-right: none; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
 /* line 179, ../scss/bodoke/object/_buttons.scss */
+.button-group { padding: 0; margin: 0; line-height: 32px; background: transparent; }
+/* line 185, ../scss/bodoke/object/_buttons.scss */
+.button-group .button { border-right: none; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+/* line 188, ../scss/bodoke/object/_buttons.scss */
 .button-group .button:first-child { -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px; border-radius: 3px 0 0 3px; }
-/* line 182, ../scss/bodoke/object/_buttons.scss */
+/* line 191, ../scss/bodoke/object/_buttons.scss */
 .button-group .button:last-child { -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0; border-radius: 0 3px 3px 0; }
-/* line 187, ../scss/bodoke/object/_buttons.scss */
+/* line 196, ../scss/bodoke/object/_buttons.scss */
 .button-group .button a, .button-group .button button { display: block; padding-left: 0.9375em; padding-right: 0.9375em; }
-/* line 197, ../scss/bodoke/object/_buttons.scss */
+/* line 206, ../scss/bodoke/object/_buttons.scss */
 .button-group a.button, .button-group button.button { display: block; }
-/* line 202, ../scss/bodoke/object/_buttons.scss */
+/* line 211, ../scss/bodoke/object/_buttons.scss */
 .button-group.vertical .button, .button-group.v .button { float: none; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
 
-/* line 214, ../scss/bodoke/object/_buttons.scss */
-.button { display: block; float: left; text-decoration: none; text-align: center; line-height: 32px; font-size: 13px; border: 0; cursor: pointer; background: #e6e6e6; color: #333333; -moz-box-shadow: 0 3px 0 0 #a6a6a6; -webkit-box-shadow: 0 3px 0 0 #a6a6a6; box-shadow: 0 3px 0 0 #a6a6a6; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-transition: background 0.35s ease; -webkit-transition: background 0.35s ease; transition: background 0.35s ease; *zoom: 1; }
-/* line 229, ../scss/bodoke/object/_buttons.scss */
-.button:hover, .button:active { background: #cccccc; }
-/* line 232, ../scss/bodoke/object/_buttons.scss */
-.button:active, .button.active { -moz-transform: translateY(3px); -ms-transform: translateY(3px); -webkit-transform: translateY(3px); transform: translateY(3px); -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
-/* line 236, ../scss/bodoke/object/_buttons.scss */
-.button:focus { outline: none; }
+/* line 223, ../scss/bodoke/object/_buttons.scss */
+.button { display: block; float: left; text-decoration: none; text-align: center; line-height: 2em; font-size: 13px; border: 0; cursor: pointer; background: #e6e6e6; color: #333333; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-transition: background 0.35s ease; -webkit-transition: background 0.35s ease; transition: background 0.35s ease; *zoom: 1; }
 /* line 239, ../scss/bodoke/object/_buttons.scss */
-.button[disabled], .button.disabled { color: #999; background: #f1f1f1; }
-/* line 244, ../scss/bodoke/object/_buttons.scss */
-.button.clear { color: #333333; }
+.button:hover, .button:active { background: #cccccc; }
+/* line 242, ../scss/bodoke/object/_buttons.scss */
+.button:active, .button.active { -moz-transform: translateY(3px); -ms-transform: translateY(3px); -webkit-transform: translateY(3px); transform: translateY(3px); -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
 /* line 246, ../scss/bodoke/object/_buttons.scss */
-.button.clear:active, .button.clear.active { -moz-transform: none; -ms-transform: none; -webkit-transform: none; transform: none; }
-/* line 251, ../scss/bodoke/object/_buttons.scss */
-.button.link { padding: 0; line-height: inherit; font-size: 0.9em; }
+.button:focus { outline: none; }
+/* line 249, ../scss/bodoke/object/_buttons.scss */
+.button[disabled], .button.disabled { color: #999; background: #f1f1f1; }
+/* line 254, ../scss/bodoke/object/_buttons.scss */
+.button.clear { color: #333333; }
 /* line 256, ../scss/bodoke/object/_buttons.scss */
+.button.clear:active, .button.clear.active { -moz-transform: none; -ms-transform: none; -webkit-transform: none; transform: none; }
+/* line 261, ../scss/bodoke/object/_buttons.scss */
+.button.link { padding: 0; line-height: inherit; font-size: 0.9em; }
+/* line 266, ../scss/bodoke/object/_buttons.scss */
 .button.clear, .button.link { height: auto; outline: none; border: 0; background: transparent; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; text-shadow: none; }
-/* line 263, ../scss/bodoke/object/_buttons.scss */
+/* line 273, ../scss/bodoke/object/_buttons.scss */
 .button.clear:hover, .button.link:hover { text-decoration: none; background: transparent; }
-/* line 267, ../scss/bodoke/object/_buttons.scss */
-.button.clear:active, .button.link:active { -moz-transform: none; -ms-transform: none; -webkit-transform: none; transform: none; }
-/* line 270, ../scss/bodoke/object/_buttons.scss */
-.button.clear[disabled], .button.clear.disabled, .button.link[disabled], .button.link.disabled { text-decoration: none; color: #999; }
 /* line 277, ../scss/bodoke/object/_buttons.scss */
+.button.clear:active, .button.link:active { -moz-transform: none; -ms-transform: none; -webkit-transform: none; transform: none; }
+/* line 280, ../scss/bodoke/object/_buttons.scss */
+.button.clear[disabled], .button.clear.disabled, .button.link[disabled], .button.link.disabled { text-decoration: none; color: #999; }
+/* line 287, ../scss/bodoke/object/_buttons.scss */
 .button.inline-block { float: none; display: inline-block; }
-/* line 281, ../scss/bodoke/object/_buttons.scss */
+/* line 291, ../scss/bodoke/object/_buttons.scss */
 .button.inline { float: none; display: inline; }
+
+/* line 302, ../scss/bodoke/object/_buttons.scss */
+.button .ficon { display: inline-block; font-style: normal; font-weight: normal; top: 0.05em; margin-right: 0.1em; -webkit-font-smoothing: antialiased; }
 
 /* line 11, ../scss/bodoke/object/_icons.scss */
 .icon { display: block; background-image: url("../images/icon/countries.png"); background-position: 0 0; background-repeat: no-repeat; }
@@ -492,23 +470,61 @@ table { border-collapse: collapse; border-spacing: 0; }
 .icon.flag.mexico-df { background-position: -24px 0; }
 
 /* line 84, ../scss/bodoke/object/_icons.scss */
-.ficon { font-size: 1.5em; cursor: pointer; }
-/* line 87, ../scss/bodoke/object/_icons.scss */
+.ficon { font-size: 1.5em; }
+/* line 86, ../scss/bodoke/object/_icons.scss */
 .ficon[disabled], .ficon[disabled="disabled"], .ficon.disabled { cursor: default; opacity: 0.6; /* CSS3 */ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */ filter: alpha(opacity=60); /* IE6+ */ zoom: 1; }
-/* line 91, ../scss/bodoke/object/_icons.scss */
+/* line 90, ../scss/bodoke/object/_icons.scss */
 .ficon.small { font-size: 1em; }
-/* line 92, ../scss/bodoke/object/_icons.scss */
+/* line 91, ../scss/bodoke/object/_icons.scss */
 .ficon.medium { font-size: 2em; }
-/* line 93, ../scss/bodoke/object/_icons.scss */
+/* line 92, ../scss/bodoke/object/_icons.scss */
 .ficon.large { font-size: 2.75em; }
-/* line 95, ../scss/bodoke/object/_icons.scss */
+/* line 94, ../scss/bodoke/object/_icons.scss */
 .ficon .rounded { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; padding: 3px; }
-/* line 98, ../scss/bodoke/object/_icons.scss */
+/* line 97, ../scss/bodoke/object/_icons.scss */
 .ficon .rounded .medium { padding: 5px; }
-/* line 99, ../scss/bodoke/object/_icons.scss */
+/* line 98, ../scss/bodoke/object/_icons.scss */
 .ficon .rounded .large { padding: 8px; }
 
 @media only screen and (max-height: 600px) { /* Netbook size icons - Hasta 600 de alto  */ }
+@-webkit-keyframes fadeInFromRightToLeft { /* line 109, ../scss/bodoke/object/_animations.scss */
+  0% { -moz-transform: translateX(50px); -ms-transform: translateX(50px); -webkit-transform: translateX(50px); transform: translateX(50px); opacity: 0; }
+  /* line 113, ../scss/bodoke/object/_animations.scss */
+  100% { -moz-transform: translateX(0px); -ms-transform: translateX(0px); -webkit-transform: translateX(0px); transform: translateX(0px); opacity: 1; } }
+@-moz-keyframes fadeInFromRightToLeft { /* line 109, ../scss/bodoke/object/_animations.scss */
+  0% { -moz-transform: translateX(50px); -ms-transform: translateX(50px); -webkit-transform: translateX(50px); transform: translateX(50px); opacity: 0; }
+  /* line 113, ../scss/bodoke/object/_animations.scss */
+  100% { -moz-transform: translateX(0px); -ms-transform: translateX(0px); -webkit-transform: translateX(0px); transform: translateX(0px); opacity: 1; } }
+@-o-keyframes fadeInFromRightToLeft { /* line 109, ../scss/bodoke/object/_animations.scss */
+  0% { -moz-transform: translateX(50px); -ms-transform: translateX(50px); -webkit-transform: translateX(50px); transform: translateX(50px); opacity: 0; }
+  /* line 113, ../scss/bodoke/object/_animations.scss */
+  100% { -moz-transform: translateX(0px); -ms-transform: translateX(0px); -webkit-transform: translateX(0px); transform: translateX(0px); opacity: 1; } }
+@keyframes fadeInFromRightToLeft { /* line 109, ../scss/bodoke/object/_animations.scss */
+  0% { -moz-transform: translateX(50px); -ms-transform: translateX(50px); -webkit-transform: translateX(50px); transform: translateX(50px); opacity: 0; }
+  /* line 113, ../scss/bodoke/object/_animations.scss */
+  100% { -moz-transform: translateX(0px); -ms-transform: translateX(0px); -webkit-transform: translateX(0px); transform: translateX(0px); opacity: 1; } }
+/* line 118, ../scss/bodoke/object/_animations.scss */
+.fadeInFromRightToLeft { -webkit-animation: fadeInFromRightToLeft 1s; animation: fadeInFromRightToLeft 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
+@-webkit-keyframes fadeInFromLeftToRight { /* line 125, ../scss/bodoke/object/_animations.scss */
+  0% { -moz-transform: translateX(-50px); -ms-transform: translateX(-50px); -webkit-transform: translateX(-50px); transform: translateX(-50px); opacity: 0; }
+  /* line 129, ../scss/bodoke/object/_animations.scss */
+  100% { -moz-transform: translateX(0px); -ms-transform: translateX(0px); -webkit-transform: translateX(0px); transform: translateX(0px); opacity: 1; } }
+@-moz-keyframes fadeInFromLeftToRight { /* line 125, ../scss/bodoke/object/_animations.scss */
+  0% { -moz-transform: translateX(-50px); -ms-transform: translateX(-50px); -webkit-transform: translateX(-50px); transform: translateX(-50px); opacity: 0; }
+  /* line 129, ../scss/bodoke/object/_animations.scss */
+  100% { -moz-transform: translateX(0px); -ms-transform: translateX(0px); -webkit-transform: translateX(0px); transform: translateX(0px); opacity: 1; } }
+@-o-keyframes fadeInFromLeftToRight { /* line 125, ../scss/bodoke/object/_animations.scss */
+  0% { -moz-transform: translateX(-50px); -ms-transform: translateX(-50px); -webkit-transform: translateX(-50px); transform: translateX(-50px); opacity: 0; }
+  /* line 129, ../scss/bodoke/object/_animations.scss */
+  100% { -moz-transform: translateX(0px); -ms-transform: translateX(0px); -webkit-transform: translateX(0px); transform: translateX(0px); opacity: 1; } }
+@keyframes fadeInFromLeftToRight { /* line 125, ../scss/bodoke/object/_animations.scss */
+  0% { -moz-transform: translateX(-50px); -ms-transform: translateX(-50px); -webkit-transform: translateX(-50px); transform: translateX(-50px); opacity: 0; }
+  /* line 129, ../scss/bodoke/object/_animations.scss */
+  100% { -moz-transform: translateX(0px); -ms-transform: translateX(0px); -webkit-transform: translateX(0px); transform: translateX(0px); opacity: 1; } }
+/* line 134, ../scss/bodoke/object/_animations.scss */
+.fadeInFromLeftToRight { -webkit-animation: fadeInFromLeftToRight 1s; animation: fadeInFromLeftToRight 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+
 /* line 434, ../scss/bodoke/object/_animations.scss */
 .delay-1 { animation-delay: 1s; -webkit-animation-delay: 1s; /* Safari and Chrome */ }
 
@@ -614,15 +630,15 @@ nav ul, nav ol { list-style: none; list-style-type: none; list-style-image: none
 
 /* line 8, ../scss/bodoke/object/_input.scss */
 input, select, textarea input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], button[type="submit"], button[type="search"] { -webkit-appearance: none; position: relative; width: auto; font-size: 0.9em; font-weight: 300; border: 1px solid #e6e6e6; background: #FFF; padding-top: 0.5em; padding-bottom: 0.5em; padding-right: 0.9375em; padding-left: 0.9375em; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
-/* line 514, ../scss/bodoke/settings/_mixins.scss */
+/* line 560, ../scss/bodoke/settings/_mixins.scss */
 input.placeholder, select.placeholder, textarea input[type="date"].placeholder, input[type="datetime"].placeholder, input[type="datetime-local"].placeholder, input[type="email"].placeholder, input[type="month"].placeholder, input[type="number"].placeholder, input[type="password"].placeholder, input[type="search"].placeholder, input[type="tel"].placeholder, input[type="text"].placeholder, input[type="time"].placeholder, input[type="url"].placeholder, input[type="week"].placeholder, button[type="submit"].placeholder, button[type="search"].placeholder { color: #999999; }
-/* line 515, ../scss/bodoke/settings/_mixins.scss */
+/* line 561, ../scss/bodoke/settings/_mixins.scss */
 input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, button[type="submit"]::-webkit-input-placeholder, button[type="search"]::-webkit-input-placeholder { color: #999999; }
-/* line 516, ../scss/bodoke/settings/_mixins.scss */
+/* line 562, ../scss/bodoke/settings/_mixins.scss */
 input:-moz-placeholder, select:-moz-placeholder, textarea input[type="date"]:-moz-placeholder, input[type="datetime"]:-moz-placeholder, input[type="datetime-local"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="month"]:-moz-placeholder, input[type="number"]:-moz-placeholder, input[type="password"]:-moz-placeholder, input[type="search"]:-moz-placeholder, input[type="tel"]:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="time"]:-moz-placeholder, input[type="url"]:-moz-placeholder, input[type="week"]:-moz-placeholder, button[type="submit"]:-moz-placeholder, button[type="search"]:-moz-placeholder { color: #999999; }
-/* line 517, ../scss/bodoke/settings/_mixins.scss */
+/* line 563, ../scss/bodoke/settings/_mixins.scss */
 input::-moz-placeholder, select::-moz-placeholder, textarea input[type="date"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="week"]::-moz-placeholder, button[type="submit"]::-moz-placeholder, button[type="search"]::-moz-placeholder { color: #999999; }
-/* line 518, ../scss/bodoke/settings/_mixins.scss */
+/* line 564, ../scss/bodoke/settings/_mixins.scss */
 input:-ms-input-placeholder, select:-ms-input-placeholder, textarea input[type="date"]:-ms-input-placeholder, input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder, button[type="submit"]:-ms-input-placeholder, button[type="search"]:-ms-input-placeholder { color: #999999; }
 /* line 42, ../scss/bodoke/object/_input.scss */
 input:focus, select:focus, textarea input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, button[type="submit"]:focus, button[type="search"]:focus { outline: none; }
@@ -684,81 +700,81 @@ table thead th { border: none; text-transform: uppercase; font-size: 1.2em; font
 /* line 23, ../scss/bodoke/object/_table.scss */
 table tr { -moz-transition: background-color 0.25s ease; -webkit-transition: background-color 0.25s ease; transition: background-color 0.25s ease; border: none; }
 /* line 34, ../scss/bodoke/object/_table.scss */
-table td { border: none; font-size: 1em; font-weight: 300; line-height: 3em; padding: 0; padding-left: 0.9375em; padding-right: 0.9375em; }
-/* line 44, ../scss/bodoke/object/_table.scss */
+table td { position: relative; border: none; font-size: 1em; font-weight: 300; line-height: 3em; padding: 0; padding-left: 0.9375em; padding-right: 0.9375em; }
+/* line 45, ../scss/bodoke/object/_table.scss */
 table td:last-child { border-right: none; }
-/* line 47, ../scss/bodoke/object/_table.scss */
+/* line 48, ../scss/bodoke/object/_table.scss */
 table td.title { font-weight: 500px; font-size: 1em; line-height: 3em; }
 
-/* line 64, ../scss/bodoke/object/_table.scss */
+/* line 65, ../scss/bodoke/object/_table.scss */
 table.table-yellow thead th { background: #9e7100; }
-/* line 69, ../scss/bodoke/object/_table.scss */
+/* line 70, ../scss/bodoke/object/_table.scss */
 table.table-yellow tbody, table.table-yellow th { color: #FFF; }
-/* line 76, ../scss/bodoke/object/_table.scss */
+/* line 77, ../scss/bodoke/object/_table.scss */
 table.table-yellow tbody { text-shadow: 0 1px 0 rgba(158, 113, 0, 0.7); }
-/* line 83, ../scss/bodoke/object/_table.scss */
+/* line 84, ../scss/bodoke/object/_table.scss */
 table.table-yellow tr { background: #ffc638; }
-/* line 88, ../scss/bodoke/object/_table.scss */
+/* line 89, ../scss/bodoke/object/_table.scss */
 table.table-yellow tr.even { background: #ffc024; }
-/* line 95, ../scss/bodoke/object/_table.scss */
+/* line 96, ../scss/bodoke/object/_table.scss */
 table.table-yellow tr:hover { background: #f7b000; }
-/* line 100, ../scss/bodoke/object/_table.scss */
+/* line 101, ../scss/bodoke/object/_table.scss */
 table.table-yellow td { border-right-color: #ffb705; }
-/* line 64, ../scss/bodoke/object/_table.scss */
+/* line 65, ../scss/bodoke/object/_table.scss */
 table.table-blue thead th { background: #0036bc; }
-/* line 69, ../scss/bodoke/object/_table.scss */
+/* line 70, ../scss/bodoke/object/_table.scss */
 table.table-blue tbody, table.table-blue th { color: #FFF; }
-/* line 76, ../scss/bodoke/object/_table.scss */
+/* line 77, ../scss/bodoke/object/_table.scss */
 table.table-blue tbody { text-shadow: 0 1px 0 rgba(0, 54, 188, 0.7); }
-/* line 83, ../scss/bodoke/object/_table.scss */
+/* line 84, ../scss/bodoke/object/_table.scss */
 table.table-blue tr { background: #5686ff; }
-/* line 88, ../scss/bodoke/object/_table.scss */
+/* line 89, ../scss/bodoke/object/_table.scss */
 table.table-blue tr.even { background: #4278ff; }
-/* line 95, ../scss/bodoke/object/_table.scss */
+/* line 96, ../scss/bodoke/object/_table.scss */
 table.table-blue tr:hover { background: #1659ff; }
-/* line 100, ../scss/bodoke/object/_table.scss */
+/* line 101, ../scss/bodoke/object/_table.scss */
 table.table-blue td { border-right-color: #2362ff; }
-/* line 64, ../scss/bodoke/object/_table.scss */
+/* line 65, ../scss/bodoke/object/_table.scss */
 table.table-red thead th { background: #a01f11; }
-/* line 69, ../scss/bodoke/object/_table.scss */
+/* line 70, ../scss/bodoke/object/_table.scss */
 table.table-red tbody, table.table-red th { color: #FFF; }
-/* line 76, ../scss/bodoke/object/_table.scss */
+/* line 77, ../scss/bodoke/object/_table.scss */
 table.table-red tbody { text-shadow: 0 1px 0 rgba(160, 31, 17, 0.7); }
-/* line 83, ../scss/bodoke/object/_table.scss */
+/* line 84, ../scss/bodoke/object/_table.scss */
 table.table-red tr { background: #ee6b5c; }
-/* line 88, ../scss/bodoke/object/_table.scss */
+/* line 89, ../scss/bodoke/object/_table.scss */
 table.table-red tr.even { background: #ec5a4a; }
-/* line 95, ../scss/bodoke/object/_table.scss */
+/* line 96, ../scss/bodoke/object/_table.scss */
 table.table-red tr:hover { background: #e73623; }
-/* line 100, ../scss/bodoke/object/_table.scss */
+/* line 101, ../scss/bodoke/object/_table.scss */
 table.table-red td { border-right-color: #e9412e; }
-/* line 64, ../scss/bodoke/object/_table.scss */
+/* line 65, ../scss/bodoke/object/_table.scss */
 table.table-green thead th { background: #2e4b0e; }
-/* line 69, ../scss/bodoke/object/_table.scss */
+/* line 70, ../scss/bodoke/object/_table.scss */
 table.table-green tbody, table.table-green th { color: #FFF; }
-/* line 76, ../scss/bodoke/object/_table.scss */
+/* line 77, ../scss/bodoke/object/_table.scss */
 table.table-green tbody { text-shadow: 0 1px 0 rgba(46, 75, 14, 0.7); }
-/* line 83, ../scss/bodoke/object/_table.scss */
+/* line 84, ../scss/bodoke/object/_table.scss */
 table.table-green tr { background: #7ecb27; }
-/* line 88, ../scss/bodoke/object/_table.scss */
+/* line 89, ../scss/bodoke/object/_table.scss */
 table.table-green tr.even { background: #74ba23; }
-/* line 95, ../scss/bodoke/object/_table.scss */
+/* line 96, ../scss/bodoke/object/_table.scss */
 table.table-green tr:hover { background: #5d961c; }
-/* line 100, ../scss/bodoke/object/_table.scss */
+/* line 101, ../scss/bodoke/object/_table.scss */
 table.table-green td { border-right-color: #64a11e; }
-/* line 64, ../scss/bodoke/object/_table.scss */
+/* line 65, ../scss/bodoke/object/_table.scss */
 table.table-gray thead th { background: #baabab; }
-/* line 69, ../scss/bodoke/object/_table.scss */
+/* line 70, ../scss/bodoke/object/_table.scss */
 table.table-gray tbody, table.table-gray th { color: #333333; }
-/* line 76, ../scss/bodoke/object/_table.scss */
+/* line 77, ../scss/bodoke/object/_table.scss */
 table.table-gray tbody { text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7); }
-/* line 83, ../scss/bodoke/object/_table.scss */
+/* line 84, ../scss/bodoke/object/_table.scss */
 table.table-gray tr { background: white; }
-/* line 88, ../scss/bodoke/object/_table.scss */
+/* line 89, ../scss/bodoke/object/_table.scss */
 table.table-gray tr.even { background: #f6f4f4; }
-/* line 95, ../scss/bodoke/object/_table.scss */
+/* line 96, ../scss/bodoke/object/_table.scss */
 table.table-gray tr:hover { background: #e2dcdc; }
-/* line 100, ../scss/bodoke/object/_table.scss */
+/* line 101, ../scss/bodoke/object/_table.scss */
 table.table-gray td { border-right-color: #e8e3e3; }
 
 /* line 5, ../scss/bodoke/object/_lightbox.scss */
@@ -777,54 +793,54 @@ body.bdk-lightbox-active #bdk-blackout { display: block; }
 .bdk-lightbox .close [class*=fa] { font-size: 14px; line-height: 30px; display: block; color: white; }
 
 /* line 35, ../scss/bodoke/object/_slider.scss */
-#slider { width: 100%; min-width: 100%; position: relative; overflow: hidden; margin-left: auto; margin-right: auto; border: 1px solid #e6e6e6; background: #f2f2f2; -moz-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px -2px 1px white; -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px -2px 1px white; box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px -2px 1px white; -moz-transition: background 1s ease-out 0.3s; -webkit-transition: background 1s ease-out; -webkit-transition-delay: 0.3s; transition: background 1s ease-out 0.3s; }
+#bdkslider { width: 100%; min-width: 100%; position: relative; overflow: hidden; margin-left: auto; margin-right: auto; border: 1px solid #e6e6e6; background: #f2f2f2; -moz-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px -2px 1px white; -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px -2px 1px white; box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.2), 0px -2px 1px white; -moz-transition: background 1s ease-out 0.3s; -webkit-transition: background 1s ease-out; -webkit-transition-delay: 0.3s; transition: background 1s ease-out 0.3s; }
 /* line 47, ../scss/bodoke/object/_slider.scss */
-#slider ul, #slider ol { list-style: none; padding: 0; margin-top: 0; margin-bottom: 0; }
+#bdkslider ul, #bdkslider ol { list-style: none; padding: 0; margin-top: 0; margin-bottom: 0; }
 /* line 54, ../scss/bodoke/object/_slider.scss */
-#slider .slide-link { position: relative; text-align: center; }
+#bdkslider .slide-link { position: relative; text-align: center; }
 /* line 59, ../scss/bodoke/object/_slider.scss */
-#slider .slide-image { width: 100%; }
+#bdkslider .slide-image { width: 100%; }
 
 /* line 68, ../scss/bodoke/object/_slider.scss */
-.slide { position: relative; float: left; list-style: none; z-index: 50; }
+.bdkslide { position: relative; float: left; list-style: none; z-index: 50; }
 
 /* line 87, ../scss/bodoke/object/_slider.scss */
-.slide .slide-text { position: relative; height: 100%; opacity: 1; }
+.bdkslide .slide-text { position: relative; height: 100%; opacity: 1; }
 /* line 91, ../scss/bodoke/object/_slider.scss */
-.slide .slide-text p, .slide .slide-text span { margin: 0; }
+.bdkslide .slide-text p, .bdkslide .slide-text span { margin: 0; }
 /* line 93, ../scss/bodoke/object/_slider.scss */
-.slide .text-box { color: #333333; max-height: 175px; }
+.bdkslide .text-box { color: #333333; max-height: 175px; }
 /* line 97, ../scss/bodoke/object/_slider.scss */
-.slide .text-line { position: relative; color: #333333; margin-bottom: 1.5em; }
+.bdkslide .text-line { position: relative; color: #333333; margin-bottom: 1.5em; }
 /* line 104, ../scss/bodoke/object/_slider.scss */
-.slide .slide-secondary-text { color: #4d4d4d; }
+.bdkslide .slide-secondary-text { color: #4d4d4d; }
 /* line 111, ../scss/bodoke/object/_slider.scss */
-.slide .img { text-align: center; width: 40%; height: 100%; line-height: 320px; left: 150%; top: 0; }
+.bdkslide .bdkimg { text-align: center; width: 40%; height: 100%; line-height: 320px; left: 150%; top: 0; }
 /* line 119, ../scss/bodoke/object/_slider.scss */
-.slide .img img { height: 100%; }
+.bdkslide .bdkimg img { height: 100%; }
 
 /* line 144, ../scss/bodoke/object/_slider.scss */
-.bullets { width: 100%; position: absolute; text-align: center; left: 0px; bottom: 20px; z-index: 2000; -moz-user-select: none; -webkit-user-select: none; }
+.bdkbullets { width: 100%; position: absolute; text-align: center; left: 0px; bottom: 20px; z-index: 2000; -moz-user-select: none; -webkit-user-select: none; }
 /* line 153, ../scss/bodoke/object/_slider.scss */
-.bullets span { display: inline-block; position: relative; width: 12px; height: 12px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: white; margin: 3px; cursor: pointer; border: 2px solid transparent; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1); -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1); box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1); }
+.bdkbullets span { display: inline-block; position: relative; width: 12px; height: 12px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: white; margin: 3px; cursor: pointer; border: 2px solid transparent; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1); -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1); box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1) inset, 1px 1px 1px rgba(255, 255, 255, 0.1); }
 /* line 169, ../scss/bodoke/object/_slider.scss */
-.bullets span.current-bullet { border-color: white; background: #2362ff; }
+.bdkbullets span.bdkcurrent-bullet { border-color: white; background: #2362ff; }
 
 /* line 179, ../scss/bodoke/object/_slider.scss */
-#slider .slider-arrow { display: block; display: block; position: absolute; top: 0; right: auto; bottom: 0; left: auto; margin: auto; float: none; height: 40%; width: 60px; z-index: 100; -moz-user-select: none; -webkit-user-select: none; background-color: transparent; opacity: 0; /* CSS3 */ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */ filter: alpha(opacity=0); /* IE6+ */ zoom: 1; -moz-transition: all 0.35s ease-in-out; -webkit-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
+#bdkslider .slider-arrow { display: block; display: block; position: absolute; top: 0; right: auto; bottom: 0; left: auto; margin: auto; float: none; height: 40%; width: 60px; z-index: 100; -moz-user-select: none; -webkit-user-select: none; background-color: transparent; opacity: 0; /* CSS3 */ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */ filter: alpha(opacity=0); /* IE6+ */ zoom: 1; -moz-transition: all 0.35s ease-in-out; -webkit-transition: all 0.35s ease-in-out; transition: all 0.35s ease-in-out; }
 /* line 193, ../scss/bodoke/object/_slider.scss */
-#slider .slider-arrow.slider-left { left: 0; -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0; border-radius: 0 3px 3px 0; -moz-transform: translateX(-60px); -ms-transform: translateX(-60px); -webkit-transform: translateX(-60px); transform: translateX(-60px); }
+#bdkslider .slider-arrow.slider-left { left: 0; -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0; border-radius: 0 3px 3px 0; -moz-transform: translateX(-60px); -ms-transform: translateX(-60px); -webkit-transform: translateX(-60px); transform: translateX(-60px); }
 /* line 198, ../scss/bodoke/object/_slider.scss */
-#slider .slider-arrow.slider-right { right: 0; -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px; border-radius: 3px 0 0 3px; -moz-transform: translateX(60px); -ms-transform: translateX(60px); -webkit-transform: translateX(60px); transform: translateX(60px); }
+#bdkslider .slider-arrow.slider-right { right: 0; -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px; border-radius: 3px 0 0 3px; -moz-transform: translateX(60px); -ms-transform: translateX(60px); -webkit-transform: translateX(60px); transform: translateX(60px); }
 /* line 203, ../scss/bodoke/object/_slider.scss */
-#slider .slider-arrow .arrow { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; float: none; font-size: 40px; height: 60px; width: 60px; line-height: 60px; text-align: center; cursor: pointer; z-index: 10; opacity: 0.5; /* CSS3 */ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */ filter: alpha(opacity=50); /* IE6+ */ zoom: 1; -moz-transition: opacity 0.35s ease-in-out; -webkit-transition: opacity 0.35s ease-in-out; transition: opacity 0.35s ease-in-out; }
+#bdkslider .slider-arrow .arrow { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; float: none; font-size: 40px; height: 60px; width: 60px; line-height: 60px; text-align: center; cursor: pointer; z-index: 10; opacity: 0.5; /* CSS3 */ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */ filter: alpha(opacity=50); /* IE6+ */ zoom: 1; -moz-transition: opacity 0.35s ease-in-out; -webkit-transition: opacity 0.35s ease-in-out; transition: opacity 0.35s ease-in-out; }
 /* line 214, ../scss/bodoke/object/_slider.scss */
-#slider .slider-arrow .arrow:hover { opacity: 1; /* CSS3 */ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */ filter: alpha(opacity=100); /* IE6+ */ zoom: 1; }
+#bdkslider .slider-arrow .arrow:hover { opacity: 1; /* CSS3 */ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */ filter: alpha(opacity=100); /* IE6+ */ zoom: 1; }
 
 /* line 222, ../scss/bodoke/object/_slider.scss */
-#slider:hover .slider-arrow { opacity: 1; /* CSS3 */ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */ filter: alpha(opacity=100); /* IE6+ */ zoom: 1; -moz-transform: translateX(0); -ms-transform: translateX(0); -webkit-transform: translateX(0); transform: translateX(0); background-color: #333333; }
+#bdkslider:hover .slider-arrow { opacity: 1; /* CSS3 */ -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */ filter: alpha(opacity=100); /* IE6+ */ zoom: 1; -moz-transform: translateX(0); -ms-transform: translateX(0); -webkit-transform: translateX(0); transform: translateX(0); background-color: #333333; }
 /* line 226, ../scss/bodoke/object/_slider.scss */
-#slider:hover .slider-arrow .arrow { color: white; }
+#bdkslider:hover .slider-arrow .arrow { color: white; }
 
 /* line 7, ../scss/bodoke/object/_slide-detail.scss */
 .slide-detail { position: absolute; top: 0; right: -100%; z-index: 10; height: 100%; width: 50%; -moz-box-shadow: -4px 0 10px 0 rgba(0, 0, 0, 0.4); -webkit-box-shadow: -4px 0 10px 0 rgba(0, 0, 0, 0.4); box-shadow: -4px 0 10px 0 rgba(0, 0, 0, 0.4); -moz-transition: right 1.4s ease-out; -webkit-transition: right 1.4s ease-out; transition: right 1.4s ease-out; background: white, 1; }
@@ -834,9 +850,9 @@ body.bdk-lightbox-active #bdk-blackout { display: block; }
 .slide-detail .back { display: block; position: absolute; left: -12px; top: 50px; width: 24px; height: 24px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 0 0 1 3px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0 0 1 3px rgba(0, 0, 0, 0.4); box-shadow: 0 0 1 3px rgba(0, 0, 0, 0.4); background: black, 0.9; z-index: 2; }
 /* line 41, ../scss/bodoke/object/_slide-detail.scss */
 .slide-detail .detail-image { position: relative; margin-bottom: 0.9375em; }
-/* line 190, ../scss/bodoke/settings/_mixins.scss */
+/* line 224, ../scss/bodoke/settings/_mixins.scss */
 .slide-detail .detail-image:before { padding-top: 50%; content: ''; display: block; }
-/* line 197, ../scss/bodoke/settings/_mixins.scss */
+/* line 231, ../scss/bodoke/settings/_mixins.scss */
 .slide-detail .detail-image img { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; }
 /* line 49, ../scss/bodoke/object/_slide-detail.scss */
 .slide-detail .g-plus-button { position: absolute; right: -15px; bottom: 20px; z-index: 10; }
@@ -851,18 +867,18 @@ pre { white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ white-space: -pre-wr
 /* line 20, ../scss/bodoke/object/_code.scss */
 pre:hover { position: relative; z-index: 99; -moz-box-shadow: 0 0 5px 1px #69afeb; -webkit-box-shadow: 0 0 5px 1px #69afeb; box-shadow: 0 0 5px 1px #69afeb; }
 
-/* line 6, ../scss/bodoke/object/_lang-dropdown.scss */
+/* line 9, ../scss/bodoke/object/_lang-dropdown.scss */
 .lang { position: relative; width: 48px; height: 32px; margin: 0; padding: 0; overflow: hidden; z-index: 100; }
-/* line 14, ../scss/bodoke/object/_lang-dropdown.scss */
-.lang li, .lang .item { position: relative; float: none; width: 48px; height: 32px; border: transparent; -moz-transition: opacity 0.35s ease; -webkit-transition: opacity 0.35s ease; transition: opacity 0.35s ease; }
-/* line 21, ../scss/bodoke/object/_lang-dropdown.scss */
-.lang li .icon, .lang .item .icon { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; float: none; }
+/* line 17, ../scss/bodoke/object/_lang-dropdown.scss */
+.lang li, .lang .item { position: relative; float: none; width: 48px; height: 32px; border: transparent; -moz-transition: background 0.35s ease; -webkit-transition: background 0.35s ease; transition: background 0.35s ease; }
 /* line 24, ../scss/bodoke/object/_lang-dropdown.scss */
+.lang li .icon, .lang .item .icon { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; float: none; }
+/* line 27, ../scss/bodoke/object/_lang-dropdown.scss */
 .lang li:hover, .lang .item:hover { background-color: rgba(0, 0, 0, 0.1); }
-/* line 28, ../scss/bodoke/object/_lang-dropdown.scss */
-.lang:hover { height: auto; }
 /* line 30, ../scss/bodoke/object/_lang-dropdown.scss */
-.lang:hover li, .lang:hover .item { background-color: #fafafa; }
+.lang li a, .lang li form, .lang .item a, .lang .item form { display: block; height: 100%; width: 100%; }
+/* line 36, ../scss/bodoke/object/_lang-dropdown.scss */
+.lang:hover { height: auto; background-color: #f0f0f0; -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2); box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2); }
 
 /* line 3, ../scss/bodoke/object/_bodoke-example.scss */
 body.example { padding-bottom: 2.8125em; }
@@ -902,19 +918,19 @@ body.example { padding-bottom: 2.8125em; }
 .bdk-error .error-panel.warning { background-color: #dd4a3a; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.up { background-color: #dd4a3a; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.right { background-color: #dd4a3a; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #dd4a3a; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.down { background-color: #dd4a3a; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.left { background-color: #dd4a3a; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #dd4a3a; }
 /* line 62, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
@@ -922,19 +938,19 @@ body.example { padding-bottom: 2.8125em; }
 .bdk-error .error-panel.alert { background-color: #fcb608; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.up { background-color: #fcb608; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.right { background-color: #fcb608; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #fcb608; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.down { background-color: #fcb608; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.left { background-color: #fcb608; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #fcb608; }
 /* line 62, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
@@ -942,19 +958,19 @@ body.example { padding-bottom: 2.8125em; }
 .bdk-error .error-panel.success { background-color: #00a25f; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.up { background-color: #00a25f; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.right { background-color: #00a25f; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #00a25f; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.down { background-color: #00a25f; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.left { background-color: #00a25f; }
-/* line 344, ../scss/bodoke/settings/_mixins.scss */
+/* line 406, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #00a25f; }
 /* line 62, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
@@ -1046,425 +1062,431 @@ body.example { padding-bottom: 2.8125em; }
 /* line 261, ../scss/bodoke/settings/_helpers.scss */
 .success { background-color: #00a25f; color: white; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c1-12 { width: 8.33333%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c2-12 { width: 16.66667%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c3-12 { width: 25%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c4-12 { width: 33.33333%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c5-12 { width: 41.66667%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c6-12 { width: 50%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c7-12 { width: 58.33333%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c8-12 { width: 66.66667%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c9-12 { width: 75%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c10-12 { width: 83.33333%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c11-12 { width: 91.66667%; }
 
-/* line 148, ../scss/bodoke/grid/_grid.scss */
+/* line 158, ../scss/bodoke/grid/_grid.scss */
 .c12-12 { width: 100%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-1-12 { margin-left: 8.33333%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-2-12 { margin-left: 16.66667%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-3-12 { margin-left: 25%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-4-12 { margin-left: 33.33333%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-5-12 { margin-left: 41.66667%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-6-12 { margin-left: 50%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-7-12 { margin-left: 58.33333%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-8-12 { margin-left: 66.66667%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-9-12 { margin-left: 75%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-10-12 { margin-left: 83.33333%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-11-12 { margin-left: 91.66667%; }
 
-/* line 158, ../scss/bodoke/grid/_grid.scss */
+/* line 168, ../scss/bodoke/grid/_grid.scss */
 .offset-12-12 { margin-left: 100%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-1-12 { margin-right: 8.33333%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-2-12 { margin-right: 16.66667%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-3-12 { margin-right: 25%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-4-12 { margin-right: 33.33333%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-5-12 { margin-right: 41.66667%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-6-12 { margin-right: 50%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-7-12 { margin-right: 58.33333%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-8-12 { margin-right: 66.66667%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-9-12 { margin-right: 75%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-10-12 { margin-right: 83.33333%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-11-12 { margin-right: 91.66667%; }
 
-/* line 168, ../scss/bodoke/grid/_grid.scss */
+/* line 178, ../scss/bodoke/grid/_grid.scss */
 .pull-12-12 { margin-right: 100%; }
 
-@media only screen and (max-width: 800px) { /* line 196, ../scss/bodoke/grid/_grid.scss */
+@media only screen and (max-width: 800px) { /* line 206, ../scss/bodoke/grid/_grid.scss */
   .container { width: 100%; max-width: none; padding-left: 1.875em; padding-right: 1.875em; }
-  /* line 204, ../scss/bodoke/grid/_grid.scss */
-  .col, .cols, .column, .columns { width: 100%; }
-  /* line 210, ../scss/bodoke/grid/_grid.scss */
-  [class*="offset-"] { margin-left: 0; }
   /* line 214, ../scss/bodoke/grid/_grid.scss */
-  [class*="pull-"] { margin-right: 0; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c1-12 { width: 8.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c2-12 { width: 16.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c3-12 { width: 25%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c4-12 { width: 33.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c5-12 { width: 41.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c6-12 { width: 50%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c7-12 { width: 58.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c8-12 { width: 66.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c9-12 { width: 75%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c10-12 { width: 83.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c11-12 { width: 91.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .md-c12-12 { width: 100%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-1-12 { margin-left: 8.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-2-12 { margin-left: 16.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-3-12 { margin-left: 25%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-4-12 { margin-left: 33.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-5-12 { margin-left: 41.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-6-12 { margin-left: 50%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-7-12 { margin-left: 58.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-8-12 { margin-left: 66.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-9-12 { margin-left: 75%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-10-12 { margin-left: 83.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-11-12 { margin-left: 91.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .md-offset-12-12 { margin-left: 100%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-1-12 { margin-right: 8.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-2-12 { margin-right: 16.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-3-12 { margin-right: 25%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-4-12 { margin-right: 33.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-5-12 { margin-right: 41.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-6-12 { margin-right: 50%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-7-12 { margin-right: 58.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-8-12 { margin-right: 66.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-9-12 { margin-right: 75%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-10-12 { margin-right: 83.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-11-12 { margin-right: 91.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .md-pull-12-12 { margin-right: 100%; }
-  /* line 227, ../scss/bodoke/grid/_grid.scss */
-  .md-center { display: block; position: relative; margin-left: auto; margin-right: auto; float: none; }
-  /* line 234, ../scss/bodoke/grid/_grid.scss */
-  .md-a-center { display: block; position: absolute !important; top: 0; right: 0; bottom: 0; left: 0; margin: auto !important; float: none !important; }
-  /* line 241, ../scss/bodoke/grid/_grid.scss */
-  .md-v-center { display: block; position: absolute; top: 0; right: auto; bottom: 0; left: auto; margin: auto; float: none; }
-  /* line 251, ../scss/bodoke/grid/_grid.scss */
-  .md-left-text { text-align: left; }
-  /* line 252, ../scss/bodoke/grid/_grid.scss */
-  .md-center-text { text-align: center; }
-  /* line 253, ../scss/bodoke/grid/_grid.scss */
-  .md-height-auto { height: auto; }
-  /* line 254, ../scss/bodoke/grid/_grid.scss */
-  .md-fh { height: 100%; }
-  /* line 258, ../scss/bodoke/grid/_grid.scss */
-  .md-left { float: left; }
-  /* line 259, ../scss/bodoke/grid/_grid.scss */
-  .md-right { float: right; }
-  /* line 260, ../scss/bodoke/grid/_grid.scss */
-  .md-no-float { float: none; }
-  /* line 261, ../scss/bodoke/grid/_grid.scss */
-  .hide-md { display: none; }
-  /* line 262, ../scss/bodoke/grid/_grid.scss */
-  .show-md { display: block; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { /* line 281, ../scss/bodoke/grid/_grid.scss */
-  [class*="md-"] { width: 100%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c1-12 { width: 8.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c2-12 { width: 16.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c3-12 { width: 25%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c4-12 { width: 33.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c5-12 { width: 41.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c6-12 { width: 50%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c7-12 { width: 58.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c8-12 { width: 66.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c9-12 { width: 75%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c10-12 { width: 83.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c11-12 { width: 91.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
-  .tablet-c12-12 { width: 100%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-1-12 { margin-left: 8.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-2-12 { margin-left: 16.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-3-12 { margin-left: 25%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-4-12 { margin-left: 33.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-5-12 { margin-left: 41.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-6-12 { margin-left: 50%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-7-12 { margin-left: 58.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-8-12 { margin-left: 66.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-9-12 { margin-left: 75%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-10-12 { margin-left: 83.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-11-12 { margin-left: 91.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
-  .tablet-offset-12-12 { margin-left: 100%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-1-12 { margin-right: 8.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-2-12 { margin-right: 16.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-3-12 { margin-right: 25%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-4-12 { margin-right: 33.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-5-12 { margin-right: 41.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-6-12 { margin-right: 50%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-7-12 { margin-right: 58.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-8-12 { margin-right: 66.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-9-12 { margin-right: 75%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-10-12 { margin-right: 83.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-11-12 { margin-right: 91.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
-  .tablet-pull-12-12 { margin-right: 100%; }
-  /* line 300, ../scss/bodoke/grid/_grid.scss */
-  .tablet-center, [class="pull-"], [class="offset-"] { margin-left: auto; margin-right: auto; float: none; display: block; }
-  /* line 306, ../scss/bodoke/grid/_grid.scss */
-  .tablet-a-center { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
-  /* line 312, ../scss/bodoke/grid/_grid.scss */
-  .tablet-center-text { text-align: center; }
-  /* line 315, ../scss/bodoke/grid/_grid.scss */
-  .tablet-height-auto { height: auto; }
-  /* line 318, ../scss/bodoke/grid/_grid.scss */
-  .tablet-fh { height: 100%; }
-  /* line 324, ../scss/bodoke/grid/_grid.scss */
-  .tablet-left { float: left; }
-  /* line 325, ../scss/bodoke/grid/_grid.scss */
-  .tablet-right { float: right; }
-  /* line 326, ../scss/bodoke/grid/_grid.scss */
-  .tablet-no-float { float: none; }
-  /* line 327, ../scss/bodoke/grid/_grid.scss */
-  .hide-tablet { display: none; }
-  /* line 328, ../scss/bodoke/grid/_grid.scss */
-  .show-tablet { display: block; } }
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) { /* line 340, ../scss/bodoke/grid/_grid.scss */
-  .row { margin-left: -0.9375em; margin-right: -0.9375em; }
-  /* line 343, ../scss/bodoke/grid/_grid.scss */
-  .row.row-one { margin-bottom: 0.50em; }
-  /* line 344, ../scss/bodoke/grid/_grid.scss */
-  .row.row-two { margin-bottom: 0.75em; }
-  /* line 345, ../scss/bodoke/grid/_grid.scss */
-  .row.row-three { margin-bottom: 1em; }
-  /* line 346, ../scss/bodoke/grid/_grid.scss */
-  .row.row-four { margin-bottom: 1.25em; }
-  /* line 349, ../scss/bodoke/grid/_grid.scss */
-  .col, .cols, .column, .columns, [class*="md-"] { display: block; width: 100%; padding-left: 0.9375em; padding-right: 0.9375em; margin-left: 0; margin-right: 0; }
-  /* line 359, ../scss/bodoke/grid/_grid.scss */
+  .col, .cols, .column, .columns { width: 100%; }
+  /* line 217, ../scss/bodoke/grid/_grid.scss */
+  .col.md-fall, .cols.md-fall, .column.md-fall, .columns.md-fall { width: 100%; float: none; }
+  /* line 222, ../scss/bodoke/grid/_grid.scss */
   [class*="offset-"] { margin-left: 0; }
-  /* line 363, ../scss/bodoke/grid/_grid.scss */
+  /* line 226, ../scss/bodoke/grid/_grid.scss */
   [class*="pull-"] { margin-right: 0; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c1-12 { width: 8.33333%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c2-12 { width: 16.66667%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c3-12 { width: 25%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c4-12 { width: 33.33333%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c5-12 { width: 41.66667%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c6-12 { width: 50%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c7-12 { width: 58.33333%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c8-12 { width: 66.66667%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c9-12 { width: 75%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c10-12 { width: 83.33333%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c11-12 { width: 91.66667%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .md-c12-12 { width: 100%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-1-12 { margin-left: 8.33333%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-2-12 { margin-left: 16.66667%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-3-12 { margin-left: 25%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-4-12 { margin-left: 33.33333%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-5-12 { margin-left: 41.66667%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-6-12 { margin-left: 50%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-7-12 { margin-left: 58.33333%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-8-12 { margin-left: 66.66667%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-9-12 { margin-left: 75%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-10-12 { margin-left: 83.33333%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-11-12 { margin-left: 91.66667%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .md-offset-12-12 { margin-left: 100%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-1-12 { margin-right: 8.33333%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-2-12 { margin-right: 16.66667%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-3-12 { margin-right: 25%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-4-12 { margin-right: 33.33333%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-5-12 { margin-right: 41.66667%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-6-12 { margin-right: 50%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-7-12 { margin-right: 58.33333%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-8-12 { margin-right: 66.66667%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-9-12 { margin-right: 75%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-10-12 { margin-right: 83.33333%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-11-12 { margin-right: 91.66667%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .md-pull-12-12 { margin-right: 100%; }
+  /* line 239, ../scss/bodoke/grid/_grid.scss */
+  .md-center { display: block; position: relative; margin-left: auto; margin-right: auto; float: none; }
+  /* line 246, ../scss/bodoke/grid/_grid.scss */
+  .md-a-center { display: block; position: absolute !important; top: 0; right: 0; bottom: 0; left: 0; margin: auto !important; float: none !important; }
+  /* line 253, ../scss/bodoke/grid/_grid.scss */
+  .md-v-center { display: block; position: absolute; top: 0; right: auto; bottom: 0; left: auto; margin: auto; float: none; }
+  /* line 263, ../scss/bodoke/grid/_grid.scss */
+  .md-left-text { text-align: left; }
+  /* line 264, ../scss/bodoke/grid/_grid.scss */
+  .md-center-text { text-align: center; }
+  /* line 265, ../scss/bodoke/grid/_grid.scss */
+  .md-height-auto { height: auto; }
+  /* line 266, ../scss/bodoke/grid/_grid.scss */
+  .md-fh { height: 100%; }
+  /* line 270, ../scss/bodoke/grid/_grid.scss */
+  .md-left { float: left; }
+  /* line 271, ../scss/bodoke/grid/_grid.scss */
+  .md-right { float: right; }
+  /* line 272, ../scss/bodoke/grid/_grid.scss */
+  .md-no-float { float: none; }
+  /* line 273, ../scss/bodoke/grid/_grid.scss */
+  .hide-md { display: none; }
+  /* line 274, ../scss/bodoke/grid/_grid.scss */
+  .show-md { display: block; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { /* line 292, ../scss/bodoke/grid/_grid.scss */
+  .col.tablet-fall, .cols.tablet-fall, .column.tablet-fall, .columns.tablet-fall { width: 100%; float: none; }
+  /* line 298, ../scss/bodoke/grid/_grid.scss */
+  [class*="md-"] { width: 100%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c1-12 { width: 8.33333%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c2-12 { width: 16.66667%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c3-12 { width: 25%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c4-12 { width: 33.33333%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c5-12 { width: 41.66667%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c6-12 { width: 50%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c7-12 { width: 58.33333%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c8-12 { width: 66.66667%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c9-12 { width: 75%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c10-12 { width: 83.33333%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c11-12 { width: 91.66667%; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  .tablet-c12-12 { width: 100%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-1-12 { margin-left: 8.33333%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-2-12 { margin-left: 16.66667%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-3-12 { margin-left: 25%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-4-12 { margin-left: 33.33333%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-5-12 { margin-left: 41.66667%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-6-12 { margin-left: 50%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-7-12 { margin-left: 58.33333%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-8-12 { margin-left: 66.66667%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-9-12 { margin-left: 75%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-10-12 { margin-left: 83.33333%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-11-12 { margin-left: 91.66667%; }
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  .tablet-offset-12-12 { margin-left: 100%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-1-12 { margin-right: 8.33333%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-2-12 { margin-right: 16.66667%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-3-12 { margin-right: 25%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-4-12 { margin-right: 33.33333%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-5-12 { margin-right: 41.66667%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-6-12 { margin-right: 50%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-7-12 { margin-right: 58.33333%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-8-12 { margin-right: 66.66667%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-9-12 { margin-right: 75%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-10-12 { margin-right: 83.33333%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-11-12 { margin-right: 91.66667%; }
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
+  .tablet-pull-12-12 { margin-right: 100%; }
+  /* line 317, ../scss/bodoke/grid/_grid.scss */
+  .tablet-center, [class="$grid-push-right-prefix"], [class="$grid-push-left-prefix"] { margin-left: auto; margin-right: auto; float: none; display: block; }
+  /* line 325, ../scss/bodoke/grid/_grid.scss */
+  .tablet-a-center { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
+  /* line 331, ../scss/bodoke/grid/_grid.scss */
+  .tablet-center-text { text-align: center; }
+  /* line 334, ../scss/bodoke/grid/_grid.scss */
+  .tablet-height-auto { height: auto; }
+  /* line 337, ../scss/bodoke/grid/_grid.scss */
+  .tablet-fh { height: 100%; }
+  /* line 343, ../scss/bodoke/grid/_grid.scss */
+  .tablet-left { float: left; }
+  /* line 344, ../scss/bodoke/grid/_grid.scss */
+  .tablet-right { float: right; }
+  /* line 345, ../scss/bodoke/grid/_grid.scss */
+  .tablet-no-float { float: none; }
+  /* line 346, ../scss/bodoke/grid/_grid.scss */
+  .hide-tablet { display: none; }
+  /* line 347, ../scss/bodoke/grid/_grid.scss */
+  .show-tablet { display: block; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) { /* line 359, ../scss/bodoke/grid/_grid.scss */
+  .row { margin-left: -0.9375em; margin-right: -0.9375em; }
+  /* line 362, ../scss/bodoke/grid/_grid.scss */
+  .row.row-one { margin-bottom: 0.50em; }
+  /* line 363, ../scss/bodoke/grid/_grid.scss */
+  .row.row-two { margin-bottom: 0.75em; }
+  /* line 364, ../scss/bodoke/grid/_grid.scss */
+  .row.row-three { margin-bottom: 1em; }
+  /* line 365, ../scss/bodoke/grid/_grid.scss */
+  .row.row-four { margin-bottom: 1.25em; }
+  /* line 368, ../scss/bodoke/grid/_grid.scss */
+  .col, .cols, .column, .columns, [class*="md-"] { display: block; width: 100%; padding-left: 0.9375em; padding-right: 0.9375em; margin-left: 0; margin-right: 0; }
+  /* line 377, ../scss/bodoke/grid/_grid.scss */
+  .col.mobile-fall, .cols.mobile-fall, .column.mobile-fall, .columns.mobile-fall, [class*="md-"].mobile-fall { width: 100%; float: none; }
+  /* line 382, ../scss/bodoke/grid/_grid.scss */
+  [class*="offset-"] { margin-left: 0; }
+  /* line 386, ../scss/bodoke/grid/_grid.scss */
+  [class*="pull-"] { margin-right: 0; }
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c1-12 { width: 8.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c2-12 { width: 16.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c3-12 { width: 25%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c4-12 { width: 33.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c5-12 { width: 41.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c6-12 { width: 50%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c7-12 { width: 58.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c8-12 { width: 66.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c9-12 { width: 75%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c10-12 { width: 83.33333%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c11-12 { width: 91.66667%; }
-  /* line 148, ../scss/bodoke/grid/_grid.scss */
+  /* line 158, ../scss/bodoke/grid/_grid.scss */
   .mobile-c12-12 { width: 100%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-1-12 { margin-left: 8.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-2-12 { margin-left: 16.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-3-12 { margin-left: 25%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-4-12 { margin-left: 33.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-5-12 { margin-left: 41.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-6-12 { margin-left: 50%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-7-12 { margin-left: 58.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-8-12 { margin-left: 66.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-9-12 { margin-left: 75%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-10-12 { margin-left: 83.33333%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-11-12 { margin-left: 91.66667%; }
-  /* line 158, ../scss/bodoke/grid/_grid.scss */
+  /* line 168, ../scss/bodoke/grid/_grid.scss */
   .mobile-offset-12-12 { margin-left: 100%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-1-12 { margin-right: 8.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-2-12 { margin-right: 16.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-3-12 { margin-right: 25%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-4-12 { margin-right: 33.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-5-12 { margin-right: 41.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-6-12 { margin-right: 50%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-7-12 { margin-right: 58.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-8-12 { margin-right: 66.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-9-12 { margin-right: 75%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-10-12 { margin-right: 83.33333%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-11-12 { margin-right: 91.66667%; }
-  /* line 168, ../scss/bodoke/grid/_grid.scss */
+  /* line 178, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull-12-12 { margin-right: 100%; }
-  /* line 379, ../scss/bodoke/grid/_grid.scss */
+  /* line 402, ../scss/bodoke/grid/_grid.scss */
   .col.mobile, .cols.mobile, .column.mobile, .columns.mobile { float: left; }
-  /* line 384, ../scss/bodoke/grid/_grid.scss */
+  /* line 407, ../scss/bodoke/grid/_grid.scss */
   .container:not(.mobile) { width: 100%; padding-left: 0.9375em; padding-right: 0.9375em; }
-  /* line 390, ../scss/bodoke/grid/_grid.scss */
+  /* line 413, ../scss/bodoke/grid/_grid.scss */
   .mobile-center { margin-left: auto; margin-right: auto; float: none; display: block; }
-  /* line 397, ../scss/bodoke/grid/_grid.scss */
+  /* line 420, ../scss/bodoke/grid/_grid.scss */
   .mobile-a-center { display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; }
-  /* line 403, ../scss/bodoke/grid/_grid.scss */
+  /* line 426, ../scss/bodoke/grid/_grid.scss */
   .mobile-center-text { text-align: center; }
-  /* line 406, ../scss/bodoke/grid/_grid.scss */
+  /* line 429, ../scss/bodoke/grid/_grid.scss */
   .mobile-height-auto { height: auto; }
-  /* line 409, ../scss/bodoke/grid/_grid.scss */
+  /* line 432, ../scss/bodoke/grid/_grid.scss */
   .mobile-fh { height: 100%; }
-  /* line 415, ../scss/bodoke/grid/_grid.scss */
+  /* line 438, ../scss/bodoke/grid/_grid.scss */
   .mobile-left { float: left; }
-  /* line 416, ../scss/bodoke/grid/_grid.scss */
+  /* line 439, ../scss/bodoke/grid/_grid.scss */
   .mobile-right { float: right; }
-  /* line 417, ../scss/bodoke/grid/_grid.scss */
+  /* line 440, ../scss/bodoke/grid/_grid.scss */
   .mobile-no-float { float: none; }
-  /* line 419, ../scss/bodoke/grid/_grid.scss */
+  /* line 442, ../scss/bodoke/grid/_grid.scss */
   table th, table td { padding: 4px; }
-  /* line 422, ../scss/bodoke/grid/_grid.scss */
+  /* line 445, ../scss/bodoke/grid/_grid.scss */
   .hide-mobile { display: none; }
-  /* line 423, ../scss/bodoke/grid/_grid.scss */
+  /* line 446, ../scss/bodoke/grid/_grid.scss */
   .show-mobile { display: block; } }
 /* line 36, ../scss/app.scss */
 html { height: 100%; /*

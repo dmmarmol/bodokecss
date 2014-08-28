@@ -13,6 +13,43 @@
 	&:before, &:after { content: ""; display: table; }
 	&:after { clear: both; }
 }
+// Version 0.0.1
+// =============
+@mixin prefixer( $name, $argument  ) {
+	-webkit-#{$name}: #{$argument};
+	-ms-#{$name}: #{$argument};
+	-moz-#{$name}: #{$argument};
+	-o-#{$name}: #{$argument};
+	#{$name}: #{$argument};
+}
+@mixin transition-transform( $values ) {
+	@each $p in $prefix-transform {
+		@include transition( #{$p}transform $values );
+	}
+}
+// Version 0.0.4
+// =============
+@mixin user-select( $value ) {
+	@each $p in $prefix-user-select {
+		#{$p}user-select: $value;
+	}
+	user-select: $value;
+}
+// Version 0.0.4
+// =============
+@mixin row($offset: $col-offset) {
+	width: auto;
+	margin-right: (-$offset);
+	margin-left: (-$offset);
+}
+@mixin cols($offset: $col-offset) {
+	position: relative;
+	display: block;
+	padding-left: $offset;
+	padding-right: $offset;
+	float: left;
+}
+
 
 
 // ======================
@@ -25,18 +62,6 @@
 }
 
 
-
-// ======================
-// Mixins
-// ======================
-$default-text-shadow-color :	#aaaaaa;
-$default-text-shadow-h-offset:	0px;
-$default-text-shadow-v-offset:	0px;
-$default-text-shadow-blur:	 	1px;
-$default-text-shadow-spread:	false;
-@mixin text-drop-shadow( $values... ) {
-	text-shadow: $values;
-}
 
 // Box Shadow
 // ===============================================
@@ -51,9 +76,12 @@ $default-box-shadow-inset:		false;
 	-webkit-box-shadow: $values;
 }
 
+
+
 // Border Radius
 // ===============================================
 $default-border-radius: 5px;
+
 
 
 // Trantision
@@ -71,9 +99,14 @@ $default-transition-delay    : false;
     transition-delay: $value;
 }
 
+
+
+// ===============================================
 // Background
 // ===============================================
-// 1.1.2 - nuevo nombre bdk-background()
+// Version 0.0.2
+// =============
+// - nuevo nombre bdk-background()
 @mixin bdk-background($color, $alpha:1) {
 	$rgba: rgba(0, 0, 0, 0);
 	@if $color != transparent {
@@ -164,6 +197,7 @@ $default-transition-delay    : false;
 }
 
 
+
 // ======================
 // Aspect Ratio
 // ======================
@@ -217,6 +251,7 @@ $default-transition-delay    : false;
 }
 
 
+
 // ========================
 // OPACITY WITH IE8 SUPPORT
 // ========================
@@ -229,6 +264,7 @@ $default-transition-delay    : false;
 	filter: alpha(opacity= $ie-value ); /* IE6+ */
 	zoom: 1;
 }
+
 
 
 // ========================
@@ -254,6 +290,32 @@ $default-transition-delay    : false;
 	@if ( $ellipsis ) {
 		@include line-clamp( $num-of-lines );
 	}
+}
+
+
+
+// ========================
+// TEXT
+// ========================
+// - COMPASS text shadow
+$default-text-shadow-color :	#aaaaaa;
+$default-text-shadow-h-offset:	0px;
+$default-text-shadow-v-offset:	0px;
+$default-text-shadow-blur:	 	1px;
+$default-text-shadow-spread:	false;
+
+// Version 0.0.1
+// =============
+// - Multiple text shadow
+@mixin text-drop-shadow( $values... ) {
+	text-shadow: $values;
+}
+// Version 0.0.1
+// =============
+@mixin text-stroke($stroke-width, $stroke-color: false, $stroke-fill: auto) {
+	-webkit-text-stroke-width: $stroke-width;
+	-webkit-text-stroke-color: $stroke-color;
+	-webkit-text-fill-color: $stroke-fill;
 }
 
 
@@ -393,41 +455,37 @@ $default-transition-delay    : false;
 // ===================
 // MEDIA QUERIES
 // ===================
+// - Hasta 1024px 
 @mixin screen( $screen: 1024px, $condition: 'max-width' ) {
 	@media only screen and ($condition: $screen) {
-		// 
-		// Hasta 1024px 
-		//
 		@content;
 	}
 }
+// $netbook: 600px;
 @mixin netbook() {
-	// $netbook: 600px;
 	@include screen( 600px, 'max-height' ) {
 		@content;
 	}
 }
+// - Mobile
 @mixin mobile( $width:739px ) {
 	@media only screen and (max-width: $width) {
 		@content;
 	}
 }
+// - Media query para maximo en altura
 @mixin max-screen-height( $height ) {
 	@include screen( $height, 'max-height' ) {
 		@content;
 	}
 }
+// - Firefox Only Styling
 @mixin firefox() {
-	//
-	// Firefox Only Styling
-	//
 	@-moz-document url-prefix() {
 		@content;
 	}
 }
-//
-// Target all the IE versions
-//
+// - Target all the IE versions
 @mixin ie($version:false) {
 		@if $version == 8 {
 			$version: '.lt-ie9';
@@ -447,13 +505,23 @@ $default-transition-delay    : false;
 	}
 }
 
+// Version 0.0.4
+// =============
+// - Media query para capturar un espectro entre dos (2) anchos
+@mixin media-between-width( $min-width, $max-width: 1680px ) {
+	@media only screen and (min-width: $min-width) and (max-width: $max-width ) {
+		@content;
+	}
+}
 
-// Version 1.1.0
-// ===============================================
+
 
 // ======================= 
 // ALIGNMENT
 // =======================
+
+// Version 0.0.1
+// =============
 @mixin center($important: false){
 	margin-left: auto;
 	margin-right: auto; 
@@ -474,42 +542,20 @@ $default-transition-delay    : false;
 	margin: auto;
 	@if $important { float: none!important; } @else { float: none; } 
 }
-
-// ========================
-// TEXT
-// ========================
-@mixin text-stroke($stroke-width, $stroke-color: false, $stroke-fill: auto) {
-	-webkit-text-stroke-width: $stroke-width;
-	-webkit-text-stroke-color: $stroke-color;
-	-webkit-text-fill-color: $stroke-fill;
-}
-
-
-// Version 0.0.1
-// ===============================================
-@mixin prefixer( $name, $argument  ) {
-	-webkit-#{$name}: #{$argument};
-	-ms-#{$name}: #{$argument};
-	-moz-#{$name}: #{$argument};
-	-o-#{$name}: #{$argument};
-	#{$name}: #{$argument};
-}
-$prefix-transform: ('-webkit-', '-ms-', '-moz-', '-o-');
-@mixin transition-transform( $values ) {
-	@each $p in $prefix-transform {
-		@include transition( #{$p}transform $values );
-	}
-}
-
-
 // Version 0.0.2
-// ===============================================
+// =============
 @mixin h-center() {
 	position: absolute;
 	left: 0;
 	right: 0;
 	margin: auto;
 }
+
+
+
+
+// Version 0.0.2
+// =============
 @mixin placeholder {
 	&.placeholder				 { @content }
 	&::-webkit-input-placeholder { @content }
@@ -526,7 +572,3 @@ $prefix-transform: ('-webkit-', '-ms-', '-moz-', '-o-');
 	}
 }
 
-
-
-// Version 0.0.4
-// ===============================================

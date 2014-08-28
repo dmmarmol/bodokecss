@@ -35,6 +35,16 @@
 	}
 }
 
+// 0.0.4
+// ====================
+@function gray( $value, $alpha:1 ) {
+	@if ($alpha == '') {
+		@return rgb( $value, $value, $value );
+	} @else {
+		@return rgba( $value, $value, $value, $alpha );		
+	}
+}
+
 @function img( $path ) {
 	@return url( $IMGPATH + $path);
 }

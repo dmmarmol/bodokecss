@@ -1,4 +1,7 @@
 // _grid.scss
+//
+// Grid version 0.1.1
+// Last update 25/08/14
 
 @import "normalize.min";
 
@@ -12,23 +15,24 @@
 // =============================
 
 // Contenedor
-$container-width: 		93.75%;				// .container width
-$container-max-width: 	960px;				// .container max-width
-$container-full-width:	100%;				// biggest .col width
+$container-width:	 		93.75%;			// .container width
+$container-max-width:	 	960px;			// .container max-width
+$container-full-width:		100%;			// biggest .col width
 // Grilla
-$grid-columns:			12;
-$grid-col-prefix: 		'c';
-$grid-offset-prefix:	'offset';
-$grid-pull-prefix:		'pull';
-$grid-medium-prefix:	'md-';				// Medium screens (menores a 800px)
-$grid-mobile-prefix:	'mobile-';			// Dispositivos mobiles
-$grid-tablet-prefix:	'tablet-';			// Dispositivos mobiles
+$grid-columns:				12;				// Cantidad de columnas base
+$grid-col-prefix:	 		'c';			// Prefijo de las columnas
+$grid-push-left-prefix:		'offset-';		// Empuja desde la izquierda
+$grid-push-right-prefix:	'pull-';		// Empuja desde la derecha
+$grid-medium-prefix:		'md-';			// Medium screens (menores a 800px)
+$grid-mobile-prefix:		'mobile-';		// Dispositivos mobiles
+$grid-tablet-prefix:		'tablet-';		// Dispositivos mobiles
 // Columnas
-$offset:				0.9375em;			// Margen interno de base
-$col-offset:			$offset;			// Margen interno entre columnas
-$m-offset:				$offset;			// Margen interno en mobile
+$offset:					0.9375em;		// Margen interno de base
+$col-offset:				$offset;		// Margen interno entre columnas
+$m-offset:					$offset;		// Margen interno en mobile
 // Ems base
-$base-em:				16px;				// 16px = 1em
+$base-em:					16px;			// 16px = 1em
+
 
 // =====================
 // ESTRUCTURA DEL SITIO
@@ -131,6 +135,12 @@ $base-em:				16px;				// 16px = 1em
 	}
 }
 
+// Clase que permite colapsar la columna
+@mixin fall() {
+	width: 100%;
+	float: none;
+}
+
 // Devuelve el ancho segun la cantidad de columnas
 @function col-width( $col-number, $max-cols: $grid-columns ) {
 	@return ($col-number * 100%) / $max-cols;
@@ -155,7 +165,7 @@ $base-em:				16px;				// 16px = 1em
 // (para compensar la ausencia de columnas a la izquierda)
 @mixin generate-offset( $total-cols, $extra-class:'', $extra-prefix: '' ) {
 	@for $i from 1 through $total-cols {
-		.#{$extra-prefix}#{$grid-offset-prefix}-#{$i}-#{$total-cols}#{$extra-class} {
+		.#{$extra-prefix}#{$grid-push-left-prefix}#{$i}-#{$total-cols}#{$extra-class} {
 			margin-left: col-width($i, $total-cols);
 		}
 	}	
@@ -165,7 +175,7 @@ $base-em:				16px;				// 16px = 1em
 // (para compensar la ausencia de columnas a la derecha)
 @mixin generate-pull( $total-cols, $extra-class:'', $extra-prefix: '' ) {
 	@for $i from 1 through $total-cols {
-		.#{$extra-prefix}#{$grid-pull-prefix}-#{$i}-#{$total-cols}#{$extra-class} {
+		.#{$extra-prefix}#{$grid-push-right-prefix}#{$i}-#{$total-cols}#{$extra-class} {
 			margin-right: col-width($i, $total-cols);
 		}
 	}	
@@ -202,16 +212,18 @@ $base-em:				16px;				// 16px = 1em
 
 		// Las columnas colapsan en esta resolucion
 		.col, .cols, .column, .columns {
-			// @include col($grid-columns);
 			width: 100%;
-			// float: none;
+			// Clase que permite colapsar la columna segun el dispositivo
+			&.#{$grid-medium-prefix}fall {
+				@include fall();
+			}
 		}
 		// Anula los efectos del @include grid-offset();			
-		[class*="offset-"] {
+		[class*="#{$grid-push-left-prefix}"] {
 			margin-left: 0;
 		}
 		// Anula los efectos del @include grid-pull();
-		[class*="pull-"] {
+		[class*="#{$grid-push-right-prefix}"] {
 			margin-right: 0;
 		}
 
@@ -224,21 +236,21 @@ $base-em:				16px;				// 16px = 1em
 		@include generate-pull( $columns, '', $grid-medium-prefix );
 
 
-		.md-center {
+		.#{$grid-medium-prefix}center {
 			display: block;
 			position: relative;
 			margin-left: auto;
 			margin-right: auto;
 			float: none;
 		}
-		.md-a-center {
+		.#{$grid-medium-prefix}a-center {
 			display: block;
 			position: absolute!important;
 			top: 0; right: 0; bottom: 0; left: 0;
 			margin: auto!important;
 			float: none!important;
 		}
-		.md-v-center {
+		.#{$grid-medium-prefix}v-center {
 			display: block;
 			position: absolute;
 			top: 0; right: auto; bottom: 0; left: auto;
@@ -248,16 +260,16 @@ $base-em:				16px;				// 16px = 1em
 
 		// Estructura
 		// =====================
-		.md-left-text { text-align: left; }
-		.md-center-text { text-align: center; }
-		.md-height-auto { height: auto; }
-		.md-fh { height: 100%; }
+		.#{$grid-medium-prefix}left-text { text-align: left; }
+		.#{$grid-medium-prefix}center-text { text-align: center; }
+		.#{$grid-medium-prefix}height-auto { height: auto; }
+		.#{$grid-medium-prefix}fh { height: 100%; }
 
 		// Alineacion
 		// =============================
-		.md-left 		{float: left; }
-		.md-right 		{float: right; }
-		.md-no-float 	{float: none; }
+		.#{$grid-medium-prefix}left 		{float: left; }
+		.#{$grid-medium-prefix}right 		{float: right; }
+		.#{$grid-medium-prefix}no-float 	{float: none; }
 		.hide-md 		{ display: none; }
 		.show-md 		{ display: block; }
 
@@ -275,10 +287,15 @@ $base-em:				16px;				// 16px = 1em
 		// Grilla para tablets
 		// =========================
 		.row {}
-		.col, .cols, .column, .columns {}
-		[class*="offset-"] {}
-		[class*="pull-"] {}
-		[class*="md-"] {
+		.col, .cols, .column, .columns {
+			// Clase que permite colapsar la columna segun el dispositivo
+			&.#{$grid-tablet-prefix}fall {
+				@include fall();
+			}
+		}
+		[class*="#{$grid-push-left-prefix}"] {}
+		[class*="#{$grid-push-right-prefix}"] {}
+		[class*="#{$grid-medium-prefix}"] {
 			width: 100%;
 		}
 
@@ -297,35 +314,37 @@ $base-em:				16px;				// 16px = 1em
 
 		// Estructura
 		// =====================
-		.tablet-center, [class="pull-"], [class="offset-"] {
+		.#{$grid-tablet-prefix}center, 
+		[class="$grid-push-right-prefix"], 
+		[class="$grid-push-left-prefix"] {
 			margin-left: auto;
 			margin-right: auto;
 			float: none;
 			display: block;
 		}
-		.tablet-a-center {
+		.#{$grid-tablet-prefix}a-center {
 			display: block;
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
 			margin: auto;
 		}
-		.tablet-center-text {
+		.#{$grid-tablet-prefix}center-text {
 			text-align: center;
 		}
-		.tablet-height-auto {
+		.#{$grid-tablet-prefix}height-auto {
 			height: auto;
 		}
-		.tablet-fh {
+		.#{$grid-tablet-prefix}fh {
 			height: 100%;
 		}
 
 		// Alineamiento
 		// =====================
-		.tablet-left 		{ float: left; }
-		.tablet-right 		{ float: right; }
-		.tablet-no-float 	{ float: none; }
-		.hide-tablet 		{ display: none; }
-		.show-tablet 		{ display: block; }
+		.#{$grid-tablet-prefix}left 		{ float: left; }
+		.#{$grid-tablet-prefix}right 		{ float: right; }
+		.#{$grid-tablet-prefix}no-float 	{ float: none; }
+		.hide-tablet 						{ display: none; }
+		.show-tablet 						{ display: block; }
 	} // End Tablet Media Query
 
 
@@ -346,7 +365,7 @@ $base-em:				16px;				// 16px = 1em
 			&.row-four 	{ margin-bottom: 1.25em; }
 		}
 		// Las columnas colapsan en mobile
-		.col, .cols, .column, .columns, [class*="md-"] {
+		.col, .cols, .column, .columns, [class*="#{$grid-medium-prefix}"] {
 			display: block;
 			// width: col-width($columns);
 			width: 100%;
@@ -354,13 +373,17 @@ $base-em:				16px;				// 16px = 1em
 			padding-right: $m-offset;
 			margin-left: 0;
 			margin-right: 0;
+			// Clase que permite colapsar la columna segun el dispositivo
+			&.#{$grid-mobile-prefix}fall {
+				@include fall();
+			}
 		}
 		// Anula los efectos del @include grid-offset();			
-		[class*="offset-"] {
+		[class*="#{$grid-push-left-prefix}"] {
 			margin-left: 0;
 		}
 		// Anula los efectos del @include grid-pull();
-		[class*="pull-"] {
+		[class*="#{$grid-push-right-prefix}"] {
 			margin-right: 0;
 		}
 
