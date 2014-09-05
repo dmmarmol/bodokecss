@@ -121,3 +121,14 @@ $input-offset:	1em;
 		}
 	}
 }
+
+
+// ================================
+// ESTADOS
+// ================================
+[onclick], [mouseover], [mouseout] {
+	cursor: pointer;
+}
+[disabled], [disable] {
+	cursor: default;
+}

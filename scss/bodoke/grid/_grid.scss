@@ -3,6 +3,7 @@
 // Grid version 0.1.1
 // Last update 25/08/14
 
+
 @import "normalize.min";
 
 *, *:after, *:before {
@@ -196,7 +197,6 @@ $base-em:					16px;			// 16px = 1em
 
 	
 
-
 	// =========================
 	// Pantallas menores a 800
 	// =========================
@@ -206,8 +206,8 @@ $base-em:					16px;			// 16px = 1em
 		.container {
 			width: 100%;
 			max-width: none;
-			padding-left: $col-offset * 2; 
-			padding-right: $col-offset * 2; 
+			padding-left: $col-offset; 
+			padding-right: $col-offset; 
 		}
 
 		// Las columnas colapsan en esta resolucion
@@ -270,8 +270,10 @@ $base-em:					16px;			// 16px = 1em
 		.#{$grid-medium-prefix}left 		{float: left; }
 		.#{$grid-medium-prefix}right 		{float: right; }
 		.#{$grid-medium-prefix}no-float 	{float: none; }
-		.hide-md 		{ display: none; }
-		.show-md 		{ display: block; }
+		.hide-md 				{ display: none!important; }
+		.show-md 				{ display: block!important; }
+		.show-inline-md 		{ display: inline!important; }
+		.show-inline-block-md 	{ display: inline-block!important; }
 
 	} // End >800 screens Media Query
 
@@ -343,8 +345,11 @@ $base-em:					16px;			// 16px = 1em
 		.#{$grid-tablet-prefix}left 		{ float: left; }
 		.#{$grid-tablet-prefix}right 		{ float: right; }
 		.#{$grid-tablet-prefix}no-float 	{ float: none; }
-		.hide-tablet 						{ display: none; }
-		.show-tablet 						{ display: block; }
+		.hide-tablet 						{ display: none!important; }
+		.show-tablet 						{ display: block!important; }
+		.show-inline-tablet 				{ display: inline!important; }
+		.show-inline-block-tablet 			{ display: inline-block!important; }
+
 	} // End Tablet Media Query
 
 
@@ -442,8 +447,10 @@ $base-em:					16px;			// 16px = 1em
 		table th, table td {
 			padding: 4px;
 		}
-		.hide-mobile 		{ display: none; }
-		.show-mobile 		{ display: block; }
+		.hide-mobile 				{ display: none!important; }
+		.show-mobile 				{ display: block!important; }
+		.show-inline-mobile 		{ display: inline!important; }
+		.show-inline-block-mobile 	{ display: inline-block!important; }
 
 	} // End Mobile Media Query
 

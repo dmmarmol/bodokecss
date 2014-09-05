@@ -30,9 +30,9 @@ $bodoke-prefix:				'bdk';
 
 // Settings & Config
 @import "bodoke/settings/config"; 				// config & variables
-@import "bodoke/settings/fonts"; 				// fonts
 @import "bodoke/settings/mixins"; 				// mixins
 @import "bodoke/settings/functions";			// functions
+@import "bodoke/settings/fonts"; 				// fonts
 @import "bodoke/settings/colors"; 				// colors
 @import "bodoke/grid/grid";						// grid framework
 
