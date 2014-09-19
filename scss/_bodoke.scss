@@ -19,9 +19,16 @@
  * DeveloperBus2014		// 0.0.2
  * Youtube/Edu Gadget	// 0.0.3
  * Google ContentBox	// 0.0.5
+ * 
 */
 
-$bodoke-version:			0.0.5;
+// Bodoke Status - 2014
+// ======================================
+// 19/09 - Upgrade en la grilla
+// 
+// ======================================
+
+$bodoke-version:			0.0.6;
 $bodoke-prefix:				'bdk';
 
 // Compass CSS3 Mixins
@@ -34,7 +41,8 @@ $bodoke-prefix:				'bdk';
 @import "bodoke/settings/functions";			// functions
 @import "bodoke/settings/fonts"; 				// fonts
 @import "bodoke/settings/colors"; 				// colors
-@import "bodoke/grid/grid";						// grid framework
+// @import "bodoke/grid/grid";					// grid framework
+@import "bodoke/grid/grid_1.2";					// grid framework
 
 // Elements
 @import "bodoke/object/buttons";

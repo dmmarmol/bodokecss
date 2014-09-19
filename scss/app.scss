@@ -67,34 +67,39 @@ body {
 
 
 
-// =========================================
+/// =========================================
 // Media Queries
 // =========================================
-// 0.0.4
-@media only screen and (max-width: 1280px ) {
-	// 1280px 
+// 0.0.5
+@media only screen and (min-width: 1025px ) and (max-width: 1280px ) {
+
 }
 
-@media only screen and (max-width: 1024px ) {
+@media only screen and (min-width: 769px) and (max-width: 1024px ) {
 	@import "media/1024";
 }
-
-@media only screen and (max-width: 800px ) {
-	@import "media/800";
+// Only Tablets!!!
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px ) {
+	@import "media/1024_tablet";
 }
+
+@media only screen and (min-width: 641px) and (max-width: 768px ) {
+	@import "media/768"; // Nuevo nombre (ex _800.scss)
+}
+
 
 @media only screen and (max-height: 600px) {
 	@import "media/netbook";
 }
 
 // @media only screen and (max-device-height: 480px) {
-@media only screen and (min-width : 320px) and (max-width : 640px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) {
 	@import "media/mobile";
 }
 
 // 0.0.2
 // @media smartphone in landscape position
-@media only screen and (min-width: 321px) {
+@media only screen and (min-device-width: 321px) {
 	@import "media/mobile-landscape";
 }
 
@@ -103,6 +108,7 @@ body {
 @-moz-document url-prefix() {
 	@import "media/firefox";
 }
+
 
 
 // ============================================

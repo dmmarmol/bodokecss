@@ -1,10 +1,18 @@
 // _bodoke-example.scss
 
+html {
+	height: 100%;
+}
 body.example {
+	height: 100%;
 	padding-bottom: $col-offset * 3;
+	#example-container {
+		min-height: 100%;
+	}
 }
 
 .example-header {
+	height: 60%;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	margin-bottom: 20px;
@@ -31,7 +39,7 @@ body.example {
 	border-bottom: 1px solid hsl(0, 0, 92%);
 
 }
-.mobile {
+.#{$grid-mobile-prefix} {
 	&.col, &.cols, &.column, &.columns {
 		background-color: rgba($color-1, 1);
 	}

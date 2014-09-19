@@ -277,11 +277,19 @@ $default-transition-delay    : false;
 	-webkit-box-orient: vertical; 
 }
 // Cuts a single line of text and add ellipsis
-@mixin truncate-line() {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	-o-text-overflow: ellipsis; /* Prefix for Opera Mini 5.0 - 7.0 */
+@mixin truncate-line($activated: true) {
+	@if $activated == true {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis; /* Prefix for Opera Mini 5.0 - 7.0 */		
+	} @else {
+		// 0.0.5
+		white-space: initial;
+		overflow: visible;
+		text-overflow: none;
+		-o-text-overflow: none; /* Prefix for Opera Mini 5.0 - 7.0 */		
+	}
 }
 @mixin max-lines( $num-of-lines, $line-height:1em, $ellipsis:false ) {
 	line-height: $line-height;
