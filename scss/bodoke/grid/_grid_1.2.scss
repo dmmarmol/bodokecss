@@ -301,8 +301,8 @@ $base-em:					16px;			// 16px = 1em
 			width: 100%;
 			padding-left: $m-offset;
 			padding-right: $m-offset;
-			margin-left: 0;
-			margin-right: 0;
+			// margin-left: 0;
+			// margin-right: 0;
 			// Clase que permite colapsar la columna segun el dispositivo
 			&.#{$grid-mobile-prefix}fall {
 				@include fall();

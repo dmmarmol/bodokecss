@@ -94,3 +94,11 @@
 	}
 	@return $number;
 }
+
+// 0.0.6
+// percent()
+// Calcula el porcentaje indicado del numero indicado
+// ====================
+@function percent( $value, $percent ) {
+	@return ($value * $percent) / 100;
+}

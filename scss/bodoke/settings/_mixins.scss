@@ -267,9 +267,9 @@ $default-transition-delay    : false;
 
 
 
-// ========================
-// LINE CLAMP / CUT STRING
-// ========================
+// ================================
+// LINE CLAMP / CUT STRING / TEXTO
+// ================================
 // Cuts a line and add ellipsis
 @mixin line-clamp( $line ) {
 	display: -webkit-box;
@@ -299,7 +299,21 @@ $default-transition-delay    : false;
 		@include line-clamp( $num-of-lines );
 	}
 }
-
+// 0.0.5
+// Alinea verticalmente un texto (una o multiples lineas)
+@mixin vertical-align-middle( $element ) {
+	& {
+		width: 100%;
+		position: relative;
+		display: table;
+		#{$element} {
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+			@content;
+		}
+	}
+}
 
 
 // ========================
