@@ -14,10 +14,13 @@ $courrier:				'Courrier', 'courrier new', monospace;
 $lucida-sans:			'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 $verdana:				Verdana, Helvetica, Geneva, sans-serif;
 $fontAwesome:			'FontAwesome', sans-serif;
+$arabic:				'Noto Kufi Arabic', serif;
+$arabic-light:			'Noto Naskh Arabic', serif;
 
 $bodoke-font:			'Bodoke';
 
-$text-font:				$verdana;
+$text-font:				$arabic-light;
+$alt-font:				$open-sans; 			// Alternative font
 $number-font:			$lucida-sans;
 $text-condensed:		$fjalla-one;
 
@@ -26,7 +29,7 @@ $text-condensed:		$fjalla-one;
 // FUENTES / TIPOGRAFIA
 // ======================
 $global-font:			$text-font;
-$global-font-size:		14px;
+$global-font-size:		16px;
 $icon-font:				$fontAwesome;
 
 // Carga las fuentes
@@ -52,15 +55,15 @@ $icon-font:				$fontAwesome;
 // FontAwesome
 $fa-font-path:			$FONTPATH;
 $fa-css-prefix:			'fa';
-$fa-version:			4.2.0;
+$fa-version:			'4.2.0';
 
 @font-face {
 	font-family: 'FontAwesome';
-	src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
-	src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
-		 url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
-		 url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
-		 url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+	src: url('#{$fa-font-path}fontawesome-webfont.eot?v=#{$fa-version}');
+	src: url('#{$fa-font-path}fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+		 url('#{$fa-font-path}fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+		 url('#{$fa-font-path}fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+		 url('#{$fa-font-path}fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
 	//src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
 	font-weight: normal;
 	font-style: normal;
@@ -87,3 +90,10 @@ $fa-version:			4.2.0;
 }
 
 
+// Arabic font
+// ========================
+@if ( $text-font == $arabic ) {
+	@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css);
+} @elseif ( $text-font == $arabic-light ) {
+	@import url(http://fonts.googleapis.com/earlyaccess/notonaskharabic.css);
+}

@@ -37,33 +37,38 @@ html {
 	height: 100%;
 	// Descomentar unicamente si la version desktop
 	// es una aplicacion diferente a la mobile
-	/*
-	&, body {
-		min-width: 1000px;
-		min-height: 600px;
-	}
-	*/
+	// &, body {
+	// 	min-width: 1000px;
+	// 	min-height: 600px;
+	// }
 }
 
 body {
 	position: relative;
 	color: $text-color;
-	font-family: 	$global-font; // config.scss
-	font-size: 		$global-font-size; // config.scss
+	font-family: 	$global-font; 		// fonts.scss
+	font-size: 		$global-font-size; 	// config.scss
+	text-align: left;
+	&[dir="rtl"] {
+		font-family: $alt-font;			// fonts.scss		
+		text-align: right;
+	}
 	&.full {
-		&, .container {
-			&, .inner-container {
-				height: 100%;
-			}
+		&, main.container {
+			height: 100%;
 		}
 	}
+}
+
+*:lang(en) {
+	font-family: 	$global-font; 			// fonts.scss	
 }
 
 
 // =======================================
 // SECCIONES Y ELEMENTOS DEL SITIO
 // =======================================
-@import "footer";
+// @import "footer";
 
 
 

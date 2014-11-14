@@ -86,17 +86,17 @@ table {
 			// border-right-color: $border-color;
 			// border-left-color: $border-color;
 			// border-bottom-color: $border-color;
-			&.even 	{ 
+			&:nth-child(even), &.even	{ 
 				$even-bg: darken( $table-bg, 4% );
 				@include background( $even-bg );  
 				// &:hover { 
 					// @include background( darken( $even-bg, 4.5% ) );
 				// }
 			}
+			&:nth-child(odd), &.odd	{ }
 			&:hover { 
 				@include background( darken( $border-color, 2.5% ) ); 
 			}
-			&.odd 	{ }
 		}
 		td {
 			border-right-color: $border-color;

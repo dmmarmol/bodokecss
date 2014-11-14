@@ -3,19 +3,26 @@
 // =================
 // CONFIGURACION
 // =================
-$button-height: 			32px;
-$button-font-size:			13px;
-$button-offset: 			$col-offset;
-$button-radius:				3px;
-$button-pressed-offset:		3px;
-$button-border-width:		$button-pressed-offset;
-$button-default-bg:			$black_90;
-$button-default-text:		$text-color;
-$button-transition-time:	$transition-speed; // config.scss
-$button-colors:				$buttons-color-pallete;	// colors.scss
+$button-height: 					40px; // ex 32px
+$button-font-size:					14px;
+$button-offset: 					1.1em; // ex $col-offset
+$button-radius:						3px;
+$button-border-width:				1px;
+$button-pressed-offset:				$button-border-width;
+$button-default-bg:					$black_90;
+$button-default-text:				$text-color;
+$button-transition-time:			$transition-speed; // config.scss
+$button-colors:						$buttons-color-pallete;	// colors.scss
 
-$button-has-box-shadow:		false;
-$button-has-text-shadow:	false;
+
+// SETTINGS
+$button-has-box-shadow:				false;
+$button-has-text-shadow:			false;
+$button-has-border:					true;
+$button-has-background:				false;
+$button-has-background-gradient:	false;
+$button-has-active-pseudo:			false;
+
 
 // =======================
 // BUTTON COLORS
@@ -25,72 +32,115 @@ $percent:					20%;
 $dark-button-text-color:	$black_97;
 
 @mixin button-color( $name, $color ) {
-	&.#{$name} {
-		@if lightness($color) > lightness(#aaa) {
-			color: $text-color;
-		} @else {
-			color: $dark-button-text-color;
-		}
-
-		// Compass stable release
-		// ============================
-		// - Gradient Button
-		// @include background-image(linear-gradient( center top, $color, darken($color, 10%) ) );
-		
-		// Compass 1.0.0 ALPHA
-		// ============================
-		// - Gradient Button
-		// @include background( linear-gradient( 180deg, $color, darken($color, 10%) ) );
-		
+	&.button-#{$name} {
 		// - Flat Button
-		@include background( $color );
+		@if ( $button-has-background ) {
+			// SI tiene fondo
+			@if ( $button-has-background-gradient == false ) {
+				// Si no tiene fondo como gradiente 
+				@include background( $color );
+			} @else {
+				// Si tiene fondo como gradiente 
+				// Compass stable release
+				// ============================
+				// - Gradient Button
+				// @include background-image(linear-gradient( center top, $color, darken($color, 10%) ) );
+				
+				// Compass 1.0.0 ALPHA
+				// ============================
+				// - Gradient Button
+				// @include background( linear-gradient( 180deg, $color, darken($color, 10%) ) );
+			}
+			@if lightness($color) > lightness(#aaa) {
+				color: $text-color;
+			} @else {
+				color: $dark-button-text-color;
+			}
+			@if ( $button-has-active-pseudo ) {
+				// Tiene fondo, y tiene estado active
+				&:active, &.active {
+					@if ( $button-has-box-shadow ) {
+						@include box-shadow( inset 0 3px 0px 0px darken( $color, 15% ) );
+					}
+				}			
+			}
+			&:hover {
+				@include background( darken($color, 10%) );
+			}
+		} @else {
+			// NO tiene fondo
+			color: $color;
+			@if ( $button-has-active-pseudo ) {
+				&:hover, &:active, &.active {
+					@include background( darken($color, 10%) );
+				}
+			} @elseif ( $button-has-border ) {
+				// Si no tiene fondo, pero tiene borde
+				// en :hover el fondo se muestra transparentado
+				&:hover, &:active, &.active, &.button-bg {
+					@include background( rgba($color, 0.2) );				
+				}
+				// "button-bg" - fuerza al boton (sin fondo) para que lo lleve
+				&.button-bg {
+					&:hover, &:active, &.active {
+						@include background( darken($color, 15%) );
+						@if lightness($color) > lightness(#aaa) {
+							color: $text-color;
+						} @else {
+							color: $dark-button-text-color;
+						}
+					}
+				}
+			}
+		}
 
 		@if ( $button-has-box-shadow ) {
-			// border-color: darken( $color, 15% );
-			@include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) ); }
+			border-color: darken( $color, 15% );
+			// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) ); 
+		}
 		@if ( $button-has-text-shadow ) {
 			// @include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
-			@include text-shadow( 0px 1px 0px rgba( darken( $color, $percent ), $shadow-alpha ) ); }
-		&:hover { 
-			@include background( darken($color, 10%) );
-		}
-		&:active, &.active {
-			@if ( $button-has-box-shadow ) {
-				@include box-shadow( inset 0 3px 0px 0px darken( $color, 15% ) ); }
+			@include text-shadow( 0px 1px 0px rgba( darken( $color, $percent ), $shadow-alpha ) );
 		}
 	}
 }
 @mixin button-group-color( $name, $color ) {
-	&.#{$name} {
+	&.button-#{$name} {
 		.button {
 			@if lightness($color) > lightness(#aaa) {
 				color: $text-color;
 			} @else {
 				color: $dark-button-text-color;
 			}
-			@include background( $color );
+
+			@if ( $button-has-background ) {
+				@include background( $color );
+			}
 			// border-color: darken( $color, 15% );
 			@if ( $button-has-box-shadow ) {
-				@include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) ); }
-			@if ( $button-has-text-shadow ) {
-				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) ); }
-			&:hover { 
-				@include background( darken( $color, 10% ) );
+				@include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
 			}
-			&:active { 
-				@if ( $button-has-box-shadow ) {
-					@include box-shadow( inset 0 3px 0px 0px darken( $color, 15% ) ); }
+			@if ( $button-has-text-shadow ) {
+				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+			}
+			&:hover { 
+				@if ( $button-has-background ) {
+					@include background( darken( $color, 10% ) );
+				}				
+			}
+			@if ( $button-has-active-pseudo ) {
+				&:active { 
+					@if ( $button-has-box-shadow ) {
+						@include box-shadow( inset 0 3px 0px 0px darken( $color, 15% ) );
+					}
+				}
 			}
 		}
 	}	
 }
 // Clear button hover colors
 @mixin clear-hover-color( $name, $color ) {
-	&.#{$name} {
-		@include transition( 
-			background $button-transition-time ease,
-			text-shadow $button-transition-time ease 
-		);
+	&.button-#{$name} {
 		// @include transition( box-shadow $button-transition-time ease );
 		&:hover {
 			@if lightness($color) > lightness(#aaa) {
@@ -98,11 +148,15 @@ $dark-button-text-color:	$black_97;
 			} @else {
 				color: $dark-button-text-color;
 			}
-			@include background( $color );	
+			@if ( $button-has-background ) {
+				@include background( $color );	
+			}
 			@if ( $button-has-text-shadow ) {
-				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) ); }
+				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+			}
 			// @if ( $button-has-box-shadow ) {
-				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) ); }
+				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
+			// }
 		}
 	}
 }
@@ -119,7 +173,11 @@ $dark-button-text-color:	$black_97;
 }
 // Botones sin fondo
 .button.clear {
-	&.hover { // ES CLASE, NO PSEUDO HOVER!
+	&.hover { // ES CLASE, NO PSEUDO CLASS!
+		@include transition( 
+			background $button-transition-time ease,
+			text-shadow $button-transition-time ease 
+		);
 		@each $single-color in $button-colors {
 			@include clear-hover-color( nth($single-color, 1), nth($single-color, 2) );
 		}
@@ -143,22 +201,25 @@ $dark-button-text-color:	$black_97;
 // =================
 // BUTTON SIZES
 // =================
+// A partir de 0.1.0 las clases para los tamaños
+// llevan el prefijo "button-"
+// Lo que antes era en html "button slim" ahora es "button button-slim"
 .button {
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-left: $button-offset;
 	padding-right: $button-offset;
-	&.slim {
+	&.button-slim {
 		padding-left: $button-offset / 2;
 		padding-right: $button-offset / 2;		
 	}
-	&.medium {
+	&.button-medium {
 		padding-left: $button-offset * 1.25;
 		padding-right: $button-offset * 1.25;
 		font-size: 16px;
 		line-height: 40px;
 	}
-	&.large {
+	&.button-large {
 		padding-top: $button-offset / 1.75;
 		padding-bottom: $button-offset / 1.75;
 		padding-left: $button-offset;
@@ -167,8 +228,14 @@ $dark-button-text-color:	$black_97;
 		font-weight: 300;
 		line-height: 20px;
 	}
-	&.big {
-
+	&.button-big {
+		padding-top: $button-offset / 1.5;
+		padding-bottom: $button-offset / 1.5;
+		padding-left: $button-offset * 2;
+		padding-right: $button-offset * 2;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 24px;
 	}
 }
 
@@ -179,7 +246,7 @@ $dark-button-text-color:	$black_97;
 .button-group {
 	padding: 0;
 	margin: 0;
-	line-height: $button-height;
+	line-height: em($button-height);
 	background: transparent;
 	// A simple button inside the group
 	.button {
@@ -198,9 +265,12 @@ $dark-button-text-color:	$black_97;
 			padding-left: $offset;
 			padding-right: $offset;
 		}
-		&:active {
-			// margin-left: -$button-pressed-offset; // Para ocultar el espacio en blanco que genera el translate3d en el eje X que tienen los .button
+		@if ( $button-has-active-pseudo ) {
+			&:active {
+				// margin-left: -$button-pressed-offset; // Para ocultar el espacio en blanco que genera el translate3d en el eje X que tienen los .button
+			}
 		}
+
 	}
 	// And if the button is a link?
 	a.button, button.button {
@@ -226,22 +296,36 @@ $dark-button-text-color:	$black_97;
 	text-decoration: none;
 	text-align: center;
 	line-height: em($button-height);
-	font-size: $button-font-size; // 0.9em
-	border: 0;
+	font-size: em($button-font-size); // 0.9em
 	cursor: pointer;
-	@include background( $button-default-bg );
 	color: $button-default-text;
+	// Border
+	@if ( $button-has-border ) {
+		border-width: $button-border-width;
+		border-style: solid;
+	} @else {
+		border: 0;		
+	}
+	// Background
+	@if ( $button-has-background ) {
+		@include background( $button-default-bg );
+		@include transition( background $button-transition-time ease );
+	}
 	@if ( $button-has-box-shadow ) {
-		@include box-shadow( 0 $button-border-width 0 0 darken($button-default-bg, 25%) ); }
+		@include box-shadow( 0 $button-border-width 0 0 darken($button-default-bg, 25%) );
+	}
 	@include border-radius( $button-radius );
-	@include transition( background $button-transition-time ease );
 	*zoom: 1;
 	&:hover, &:active {
-		background: darken($button-default-bg, 10%);		
+		@if ( $button-has-background ) {
+			background: darken($button-default-bg, 10%);
+		}
 	}
-	&:active, &.active {
-		@include transform( translateY( $button-pressed-offset ) );
-		@include box-shadow( none );
+	@if ( $button-has-active-pseudo ) {
+		&:active, &.active {
+			@include transform( translateY( $button-pressed-offset ) );
+			@include box-shadow( none );
+		}
 	}
 	&:focus {
 		outline: none;
@@ -284,12 +368,13 @@ $dark-button-text-color:	$black_97;
 	}
 	&, a, button {	}
 	// ALIGN
-	&.inline-block { 
+	&.inline-block, &.inline {
 		float: none;
+	}
+	&.inline-block { 
 		display: inline-block; 
 	}
 	&.inline { 
-		float: none;
 		display: inline; 
 	}
 }

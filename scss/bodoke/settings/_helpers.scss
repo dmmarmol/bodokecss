@@ -4,9 +4,7 @@
 // 
 
 .loading {
-	background-image: img('preloader.gif');
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+	background: img('preloader.gif') 50% 50% no-repeat;
 	background-size: 32px 32px;
 	height: 100%;
 	position: relative;
@@ -41,9 +39,11 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	z-index: 100;
 	.error-panel {
 		position: relative;
-		@include transition( opacity $transition-speed ease );
+		@include transition( 
+			opacity $transition-speed ease,
+			background $transition-speed ease
+		);
 		@include border-radius( 5px );
-		@include transition( background $transition-speed ease );
 		// Fondo por default
 		background-color: hsl(0, 0, 80%); 
 		// Colores para el alert/error
@@ -95,6 +95,30 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 
 .float-right, .right { float: right!important; }
 
+// Float if [dir]
+[dir="ltr"] .float-dir { float: left; }
+[dir="rtl"] .float-dir { float: right; }
+// Float if [dir] but inverse
+[dir="ltr"] .float-dir-inv { float: right; }
+[dir="rtl"] .float-dir-inv { float: left; }
+
+// Align box if [dir]
+[dir="ltr"] .inline-block-dir { display: inline-block; text-align: left; }
+[dir="rtl"] .inline-block-dir { display: inline-block; text-align: right; }
+// Align box if [dir] but inverse
+[dir="ltr"] .inline-block-dir-inv { display: inline-block; text-align: right; }
+[dir="rtl"] .inline-block-dir-inv { display: inline-block; text-align: left; }
+
+// Align text if [dir]
+[dir="ltr"] .text-dir { text-align: left; }
+[dir="rtl"] .text-dir { text-align: right; }
+// Align text if [dir] but inverse
+[dir="ltr"] .text-dir-inv { text-align: right; }
+[dir="rtl"] .text-dir-inv { text-align: left; }
+
+
+
+
 .center {
 	display: block!important;
 	margin-left: auto;
@@ -140,6 +164,10 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 .left-text {
 	text-align: left; 
 }
+.upcase-text {
+	text-transform: uppercase;
+}
+
 
 
 

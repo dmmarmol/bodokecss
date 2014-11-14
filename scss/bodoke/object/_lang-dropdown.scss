@@ -1,10 +1,12 @@
 // _lang-dropdown.scss
 
-$lang-opt-height:	32px;
-$lang-opt-width:	48px;
-$lang-opt-bg:		gray(240);
-$lang-opt-hover:	black(0.1);
-$lang-opt-shadow:	true;
+$lang-opt-height:		36px;
+$lang-opt-width:		48px;
+$lang-opt-radius:		3px;
+$lang-opt-default-bg:	white(0.1);
+$lang-opt-bg:			gray(240);
+$lang-opt-hover:		black(0.2);
+$lang-opt-shadow:		true;
 
 .lang {
 	position: relative;
@@ -14,11 +16,16 @@ $lang-opt-shadow:	true;
 	padding: 0;
 	overflow: hidden;
 	z-index: 100;
+	@include border-radius( $lang-opt-radius );
+	@include transition( height $transition-speed ease );
+	@include opacity(0);
 	li, .item {
 		position: relative;
 		float: none;
 		width: $lang-opt-width;
 		height: $lang-opt-height;
+		line-height: $lang-opt-height;
+		font-size: em($lang-opt-height / 3);
 		border: transparent;
 		@include transition( background $transition-speed ease );
 		.icon {
@@ -31,6 +38,7 @@ $lang-opt-shadow:	true;
 			display: block;
 			height: 100%;
 			width: 100%;
+			text-decoration: none;
 		}
 	}
 	&:hover {
@@ -45,9 +53,45 @@ $lang-opt-shadow:	true;
 	}
 }
 
+// =============================
+// Usar siempre este id
+// para el dropdown
+// =============================
+#languages {
+	li {
+		text-align: center;
+		background-color: $lang-opt-default-bg;
+		a {
+			color: white();
+		}
+	}
+	&:hover {
+		li {
+			a {
+				color: black(0.8);
+			}
+		}
+	}
+}
 
+// Right to left
+[dir="rtl"] {
+	#languages { margin-left: $col-offset; }
+}
+// Left to right
+[dir="ltr"], [dir=""]  {
+	#languages { margin-right: $col-offset; }
+}
+
+
+
+// =============================
+// Redefine la clase .lang
+// permite adaptarla a distintos media query
+// =============================
 @mixin lang($height:$lang-opt-height, $width:$lang-opt-width) {
 	.lang {
+		@content; // 0.1.1
 		&, li, .item {
 			@if ( $width == '') {
 				$size: $height;

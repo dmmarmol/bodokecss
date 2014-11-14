@@ -8,8 +8,10 @@
 @mixin bdk-list() {
 	.list {
 		@include list();
+		margin-top: 0;
+		margin-bottom: 0;
 		&, &.vertical, &.vert {
-			margin: 0;
+			// margin: 0;
 			padding-left: 0;
 			&.container {
 				margin-left: auto;
@@ -21,21 +23,45 @@
 				float: none;
 			}
 		}
-		&.horizontal, &.horz {
-			.item { 
+		&.left-horizontal, &.left-horz {
+			.item, li { 
 				float: left; 
 			}
-			&.centered, &.inline {
-				text-align: center;
-				.item {
-					float: none;
-					display: inline-block;				
-				}
+		}
+		&.right-horizontal, &.right-horz {
+			.item, li { 
+				float: right; 
+			}
+		}
+		&.list-centered {
+			text-align: center;
+			.item {
+				float: none;
+				display: inline-block;				
+			}
+		}
+		&.list-inline-block {
+			display: inline-block;
+			li, .item {
+				display: inline-block;
+				margin-left: -0.3em; // inline-block gap fallback
 			}
 		}
 		.item {
 			@include clear();
 		}
+	}	
+	// Si esta especificada la direccion
+	// en la que fluye el texto en el body
+	[dir="rtl"] {
+		&.list-inline-block {
+			text-align: right;
+		}		
+	}
+	[dir="ltr"], [dir=""]  {
+		&.list-inline-block {
+			text-align: left;
+		}		
 	}
 }
 

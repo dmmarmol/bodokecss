@@ -1,5 +1,11 @@
 // _animations.scss
 
+.animated {
+	// -webkit-animation-duration: $animation-duration;
+	// 		animation-duration: $animation-duration;
+	// -webkit-animation-fill-mode: both;
+	// 		animation-fill-mode: both;
+}
 
 // ===================================
 // CONFIGURACIÓN
@@ -7,36 +13,43 @@
 // Activa/Desactiva animaciones
 
 // Fades
-$animation-fadeIn:					false;
-$animation-fadeInLeft:				false;
-$animation-fadeInLeftDisplay:		false;
-$animation-fadeInUp:				false;
-$animation-fadeInFromRightToLeft:	false;
-$animation-fadeInFromLeftToRight:	false;
+$animation-fadeIn:						true;
+// Left
+$animation-fadeInLeft:					true;
+$animation-fadeInLeftDisplay:			false;
+$animation-fadeInLeftBig:				true;
+$animation-fadeInLeftBig-extension:		false; // 0.1.0
+$animation-fadeInFromLeftToRight:		false;
+// Right
+$animation-fadeInRight:					true;
+$animation-fadeInRightBig:				true;
+$animation-fadeInRightBig-extension:	false; // 0.1.0
+$animation-fadeInFromRightToLeft:		false;
+// Up
+$animation-fadeInUp:					false;
 
 // Fades Out
-$animation-fadeOutLeft:				false;
+$animation-fadeOutLeft:					false;
 
 // Efectos
-$animation-bounceUp:				false;
-$animation-pulse:					false;
-$animation-spin:					false;
+$animation-bounceUp:					false;
+$animation-pulse:						false;
+$animation-spin:						false;
 
 // Entradas
-$animation-showFromRight:			false;
-$animation-showFromLeft:			false;
-$animation-fadeFromRight:			false;
-$animation-fadeFromLeft:			false;
-$animation-showSlideDown:			false;
+$animation-showFromRight:				false;
+$animation-showFromLeft:				false;
+$animation-showSlideDown:				false;
 
 // Salidas
-$animation-hideSlideUp:				false;
+$animation-hideSlideUp:					false;
 
 // Delay en las animaciones
-$animation-delay:					true;
-$animation-delay-count:				8;
+$animation-delay:						true;
+$animation-delay-count:					8;
 
-
+// Default duration
+$animation-duration:					1000ms; // 0.1.0
 
 
 
@@ -52,7 +65,7 @@ $animation-delay-count:				8;
 		0% 	 { opacity: 0; }
 		100% { opacity: 1; }
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }
+	.#{$animation-name} { opacity: 0; @include animation( $animation-name $animation-duration ); }
 }
 	
 // Fade In Left - (without affecting display property)
@@ -68,7 +81,7 @@ $animation-delay-count:				8;
 			opacity: 1;
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }
 }
 
 // Fade In Left Display - Afecta a la propiedad display
@@ -86,7 +99,7 @@ $animation-delay-count:				8;
 			display: block;
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }
 }
 
 // Fade in from up
@@ -102,7 +115,7 @@ $animation-delay-count:				8;
 			opacity: 1; 
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }	
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }	
 }
 
 // Fade in form Right to Left
@@ -118,7 +131,7 @@ $animation-delay-count:				8;
 			opacity: 1; 
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }	
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }	
 }
 
 // Fade in form Left to Right
@@ -134,7 +147,7 @@ $animation-delay-count:				8;
 			opacity: 1; 
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }	
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }	
 }
 
 
@@ -153,7 +166,7 @@ $animation-delay-count:				8;
 			opacity: 0;
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }	
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }	
 }
 
 
@@ -173,7 +186,7 @@ $animation-delay-count:				8;
 			@include transform( translate3d(0, -10px, 0) ); 
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }	
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }	
 }
 
 // Spin
@@ -187,7 +200,7 @@ $animation-delay-count:				8;
 			@include transform( rotate(360deg) ); 
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s, true ); }	
+	.#{$animation-name} { @include animation( $animation-name $animation-duration, true ); }	
 }
 
 // Pulse
@@ -204,7 +217,7 @@ $animation-delay-count:				8;
 			@include transform( scale(1) ); 
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }	
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }	
 }
 
 
@@ -223,7 +236,7 @@ $animation-delay-count:				8;
 			@include transform( translateX(0) ); 
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }
 
 	// Show from right - Far distance
 	$animation-name: showFromRight-2;
@@ -235,7 +248,7 @@ $animation-delay-count:				8;
 			@include transform( translateX(0) ); 
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }
 
 	// Show from right - So much far distance
 	$animation-name: showFromRight-3;
@@ -247,7 +260,7 @@ $animation-delay-count:				8;
 			@include transform( translateX(0) ); 
 		}
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }
 
 	// Show from right - Normal Distance
 	$animation-name: showFromRightPos-1;
@@ -255,7 +268,7 @@ $animation-delay-count:				8;
 		0% 	 { left: 6000px; }
 		100% { left: 0; }
 	}
-	.#{$animation-name} { @include animation( $animation-name 1s ); }	
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }	
 
 }
 
@@ -308,10 +321,42 @@ $animation-delay-count:				8;
 // ===========================
 // FADE FROM RIGHT TO POINT
 // ===========================
-@if ( $animation-fadeFromRight ) {
+// Fade In Right - (without affecting display property)
+@if ( $animation-fadeInRight ) {
+	$animation-name: fadeInRight;
+	@include keyframes($animation-name) {
+		0% { 
+			@include transform( translate3d(10px, 0, 0) );
+			opacity: 0;
+		}
+		100% { 
+			@include transform( translate3d(0px, 0, 0) );
+			opacity: 1;
+		}
+	}
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }
+}
+
+
+@if ( $animation-fadeInRightBig ) {
+	$animation-name: 'fadeInRightBig';
+	@include keyframes($animation-name) {
+		0% {
+			@include opacity(0);
+			@include transform(translate3d(2000px, 0, 0));
+		}
+		100% {
+			@include opacity(1);
+			@include transform( none );
+		}
+	}
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 800ms ); }
+}
+
+@if ( $animation-fadeInRightBig-extension ) {
 
 	// FadeIn from left - Normal Distance
-	$animation-name: fadeFromRight-1;
+	$animation-name: fadeInRightBig-1;
 	@include keyframes($animation-name) {
 		0%	 { 
 			@include opacity(0); 
@@ -322,9 +367,9 @@ $animation-delay-count:				8;
 			@include transform( translateX(0) ); 
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name $animation-duration ); }
 	// FadeIn from left - Far distance
-	$animation-name: fadeFromRight-2;
+	$animation-name: fadeInRightBig-2;
 	@include keyframes($animation-name) {
 		0% 	 { 
 			@include opacity(0); 
@@ -335,9 +380,9 @@ $animation-delay-count:				8;
 			@include transform( translateX(0) ); 
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name $animation-duration ); }
 	// FadeIn from left - So much far distance
-	$animation-name: fadeFromRight-3;
+	$animation-name: fadeInRightBig-3;
 	@include keyframes($animation-name) {
 		0% 	 { 
 			@include opacity(0); 
@@ -348,7 +393,7 @@ $animation-delay-count:				8;
 			@include transform( translateX(0) ); 
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name $animation-duration ); }
 
 }
 
@@ -357,10 +402,25 @@ $animation-delay-count:				8;
 // ===========================
 // FADE FROM LEFT TO POINT
 // ===========================
-@if ( $animation-fadeFromLeft ) {
+@if ( $animation-fadeInLeftBig ) {
+	$animation-name: 'fadeInLeftBig';
+	@include keyframes($animation-name) {
+		0% {
+			@include opacity(0);
+			@include transform( translate3d(-2000px, 0, 0) );
+		}
+		100% {
+			@include opacity(1);
+			@include transform( none );
+		}
+	}
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 800ms ); }
+}
+
+@if ( $animation-fadeInLeftBig-extension ) {
 
 	// FadeIn from left - Normal Distance
-	$animation-name: fadeFromLeft-1;
+	$animation-name: fadeInLeftBig-1;
 	@include keyframes($animation-name) {
 		0% 	 { 
 			opacity: 0;
@@ -371,10 +431,10 @@ $animation-delay-count:				8;
 			@include transform( translateX(0) );
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name $animation-duration ); }
 	 
 	// FadeIn from left - Far distance
-	$animation-name: fadeFromLeft-2;
+	$animation-name: fadeInLeftBig-2;
 	@include keyframes($animation-name) {
 		0%	 { 
 			opacity: 0;
@@ -385,10 +445,10 @@ $animation-delay-count:				8;
 			@include transform( translateX(0) );
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name $animation-duration ); }
 	 
 	// FadeIn from left - So much far distance
-	$animation-name: fadeFromLeft-3;
+	$animation-name: fadeInLeftBig-3;
 	@include keyframes($animation-name) {
 		0% 	 { 
 			opacity: 0;
@@ -399,7 +459,7 @@ $animation-delay-count:				8;
 			@include transform( translateX(0) );
 		}
 	}
-	.#{$animation-name} { @include opacity(0); @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include opacity(0); @include animation( $animation-name $animation-duration ); }
 
 }
 
@@ -422,7 +482,7 @@ $animation-delay-count:				8;
 			@include transform( translateY(0) ); 
 		}
 	}	
-	.#{$animation-name} { @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }
 }
 
 
@@ -442,7 +502,7 @@ $animation-delay-count:				8;
 		}
 		100% { @include transform( translateY(-10000px) ); }
 	}	
-	.#{$animation-name} { @include animation( $animation-name 1s ); }
+	.#{$animation-name} { @include animation( $animation-name $animation-duration ); }
 }
 
 
@@ -453,7 +513,10 @@ $animation-delay-count:				8;
 @if ( $animation-delay ) {
 	@for $i from 1 through $animation-delay-count {
 		.delay-#{$i} {
-			@include animation-delay( $i * 1s );
+			@include animation-delay( $i * ($animation-duration / 2) );
+		}
+		.delay-fast-#{$i} {
+			@include animation-delay( $i * ($animation-duration / 4.5) );
 		}
 	}	
 }

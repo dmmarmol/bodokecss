@@ -3,11 +3,6 @@
 
 
 // CLEARFIX
-@mixin collapse( $custom-offset: $col-offset ) {
-	width: auto;
-	margin-right: (-$custom-offset);
-	margin-left: (-$custom-offset);	
-}
 @mixin clear() {
 	*zoom: 1;
 	&:before, &:after { content: ""; display: table; }
@@ -48,6 +43,10 @@
 	padding-left: $offset;
 	padding-right: $offset;
 	float: left;
+}
+@mixin collapse( $custom-offset: $col-offset ) {
+	margin-right: (-$custom-offset);
+	margin-left: (-$custom-offset);	
 }
 
 
@@ -148,13 +147,6 @@ $default-transition-delay    : false;
 // ===================
 // Animations
 // ===================
-@mixin keyframes($animation_name) {
-    @-webkit-keyframes $animation_name { @content; } 
-    @-moz-keyframes $animation_name { @content; } 
-    @-o-keyframes $animation_name { @content; } 
-    @keyframes $animation_name { @content; }
-}
-
 //
 //  Example usage: 
 //  @include animation( animationName 10s 5s, true)
@@ -193,7 +185,7 @@ $default-transition-delay    : false;
 //
 @mixin animation-delay( $value: 0 ) {
 	animation-delay: $value;
-	-webkit-animation-delay: $value; /* Safari and Chrome */
+	-webkit-animation-delay: $value; // Safari and Chrome
 }
 
 
@@ -257,11 +249,11 @@ $default-transition-delay    : false;
 // ========================
 @mixin opacity( $value ) {
 	$ie-value:	$value * 100;
-	opacity: $value; /* CSS3 */
-	// -moz-opacity: $value; /* Older than Firefox 0.9 */
-	// -khtml-opacity: $value; /* Safari 1.x (pre WebKit!) */
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
-	filter: alpha(opacity= $ie-value ); /* IE6+ */
+	opacity: $value; // CSS3
+	// -moz-opacity: $value; // Older than Firefox 0.9
+	// -khtml-opacity: $value; // Safari 1.x (pre WebKit!)
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; // IE 8
+	filter: alpha(opacity= $ie-value ); // IE6+
 	zoom: 1;
 }
 
@@ -291,7 +283,7 @@ $default-transition-delay    : false;
 		-o-text-overflow: none; /* Prefix for Opera Mini 5.0 - 7.0 */		
 	}
 }
-@mixin max-lines( $num-of-lines, $line-height:1em, $ellipsis:false ) {
+@mixin max-lines( $num-of-lines, $line-height:inherit, $ellipsis:false ) {
 	line-height: $line-height;
 	max-height: $num-of-lines * strip-units( $line-height ) * 1em;
 	overflow: hidden;
@@ -314,7 +306,14 @@ $default-transition-delay    : false;
 		}
 	}
 }
-
+// 0.1.0
+// Define la propiedad color
+// y la aplica a todos los elementos descendientes
+@mixin color( $value ) {
+	@content;
+	color: $value;
+	* { &:after, &:before { color: inherit; } }
+}
 
 // ========================
 // TEXT
@@ -474,6 +473,34 @@ $default-text-shadow-spread:	false;
 }
 
 
+// 0.1.0
+// ======================
+// HALF LINE UNDER TEXT
+// ======================
+@mixin half-line($width, $height: 1px, $color:hsl(0,0,97%), $element:'&') {
+	position: relative;
+	#{$element} {
+        display: inline-block;    
+    }
+    #{$element}:before, #{$element}:after {
+        // border-top: 1px solid black;
+        background-color: $color;
+        display: block;
+        height: $height;
+        content: " ";
+        width: $width;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -$height;
+    }
+    #{$element}:after {
+       right: 0;  
+       left: auto; 
+    }
+}
+
+
 // ===================
 // MEDIA QUERIES
 // ===================
@@ -563,6 +590,24 @@ $default-text-shadow-spread:	false;
 	top: 0; right: 0; bottom: 0; left: 0;
 	margin: auto;
 	@if $important { float: none!important; } @else { float: none; } 
+}
+// Version 0.1.0
+// =============
+// Aplicar al contenedor para 
+// alinear verticalmente al descendiente
+@mixin table-v-center( $element ) {
+	&:before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: -0.25em; 
+		height: 100%;
+	}
+	#{$element} {
+		@content;
+		display: inline-block;
+		vertical-align: middle;
+	}
 }
 // Version 0.0.2
 // =============

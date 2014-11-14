@@ -28,31 +28,31 @@ $y-grid: 120px / $grid-size;
 		background-size: ($icon-size * $x-grid) ($icon-size * $y-grid);
 		// background-size: ($icon-size * 22) ($icon-size * 16);
 
-		$usa:		('usa', 'eeuu', 'ee-uu', 'eng', 'estados-unidos', 'silicon-valley', 'sil-valley');
-		$spain:		('spa', 'espana', 'españa', 'spain');
-		$brasil: 	('bra', 'brasil', 'brazil', 'sao-paulo', 'san-pablo', 'rio-de-janeiro');
-		$argentina: ('arg', 'argentina', 'buenos-aires', 'bs-as');
-		$colombia:	('col', 'colombia', 'bogota');
-		$mexico:	('mex', 'mexico', 'mexico-df');
+		$usa:		('usa');
+		$spain:		('spa');
+		$brasil: 	('bra');
+		$argentina: ('arg');
+		$colombia:	('col');
+		$mexico:	('mex');
 
 		&.flag {
 			@each $place in $spain {
-				&.#{$place}	{ background-position: 0 0; }
+				&.flag-#{$place} { background-position: 0 0; }
 			}
 			@each $place in $usa {
-				&.#{$place}	{ background-position: 0 (-$icon-size); }
+				&.flag-#{$place} { background-position: 0 (-$icon-size); }
 			}
 			@each $place in $brasil {
-				&.#{$place}	{ background-position: 0 (-$icon-size * 2); }
+				&.flag-#{$place} { background-position: 0 (-$icon-size * 2); }
 			}
 			@each $place in $argentina {
-				&.#{$place}	{ background-position: 0 (-$icon-size * 3); }
+				&.flag-#{$place} { background-position: 0 (-$icon-size * 3); }
 			}
 			@each $place in $colombia {
-				&.#{$place}	{ background-position: 0 (-$icon-size * 4); }
+				&.flag-#{$place} { background-position: 0 (-$icon-size * 4); }
 			}
 			@each $place in $mexico {
-				&.#{$place}	{ background-position: (-$icon-size) 0; }
+				&.flag-#{$place} { background-position: (-$icon-size) 0; }
 			}
 			// &.big {
 			// 	width: $icon-size * 3;

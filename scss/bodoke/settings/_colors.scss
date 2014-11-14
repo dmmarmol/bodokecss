@@ -31,6 +31,7 @@ $white:				hsl(0, 0, 98%);
 $gray:				$black_95;
 $gray-border:		hsl(0, 0, 90%);
 $gray-dark:			hsl(0, 0, 40%);
+$gray-light:		hsl(0, 0, 80%);
 
 // ======================
 // HOT COLORS
@@ -66,7 +67,7 @@ $google-green: 		#00a25f;
 // ======================
 // (class, color)
 $color-pallete:	(
-	('white', 		$google-gray), 
+	('white', 		white), 
 	('yellow', 		$google-yellow), 
 	('blue', 		$blue),
 	('red', 		$google-red),
@@ -98,7 +99,8 @@ $buttons-color-pallete:	(
 	('blue', 		$light-blue),
 	('red', 		$google-red),
 	('green', 		$green),
-	('gray', 		$google-gray)
+	('gray', 		$google-gray),
+	('white', 		white),
 );
 
 
@@ -140,6 +142,13 @@ $alerts-color-pallete: (
 
 
 // ======================
+// INSTITUCIONAL
+// ======================
+$institutional-color-pallete: (
+	('white', white)
+);
+
+// ======================
 // TEXTOS
 // ======================
 // Texto Negro 			- #3B3B3B
@@ -157,17 +166,14 @@ $color-1:	$cyan;		// Primer color corporativo
 $color-2:	$black_82;  // Segundo color corporativo
 $color-3:	$black_20; 	// Color del texto
 
-* {
-	color: $color-3;
-}
 // Links
-a { 
-	color: $color-1;
-}
+// a { 
+// 	color: $color-1;
+// }
 // Reglas horizontales
-hr { 
-	background-color: $color-2;
-}
+// hr { 
+// 	background-color: $color-2;
+// }
 // Seleccion con el cursor
 ::-moz-selection, ::selection {
 	background: $color-2;

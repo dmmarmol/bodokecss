@@ -7,33 +7,36 @@
  *
  * author: 			Diego Martin Marmol
  * website: 		www.diegomarmol.com.ar
- * version:			0.0.5
+ * version:			0.1.0 
  * release date:	20/05/14	
  * contributors: 	Leonardo Pittelli
  * developed at:	Convoy S.R.L - www.convoy.me
- * Compass:			1.0.0.alpha.20
- * SASS:			3.3.10 (Maptastic Maple)
+ * Compass:			1.0.1 (Polaris)
+ * SASS:			3.4.7 (Selective Steve)
  *
- * Tunemypic.com 		// 0.0.1
- * La Caja				// 0.0.11
- * DeveloperBus2014		// 0.0.2
- * Youtube/Edu Gadget	// 0.0.3
- * Google ContentBox	// 0.0.5
- * 
 */
+// Tunemypic.com 			// 0.0.1
+// La Caja					// 0.0.11
+// DeveloperBus2014			// 0.0.2
+// Youtube/Edu Gadget		// 0.0.3
+// Google ContentBox		// 0.0.5
+// Convoy testapp platform	// 0.1.0 - Nueva grilla
+// DeveloperBus - Egipto	// 0.1.2
 
 // Bodoke Status - 2014
 // ======================================
 // 19/09 - Upgrade en la grilla
-// 
+// 13/09 - First version name 0.1.2 (Amon Aprendice)
+// 13/09 - Nueva feature "comments" para comentarios sociales
+// 14/09 - Gird columns float right if [dir="rtl"] - grid 1.4
 // ======================================
 
-$bodoke-version:			0.0.6;
+$bodoke-version:			0.1.2;
 $bodoke-prefix:				'bdk';
 
 // Compass CSS3 Mixins
 @import "compass/css3";
-@import "compass/css3/images";
+// @import "compass/css3/images";
 
 // Settings & Config
 @import "bodoke/settings/config"; 				// config & variables
@@ -41,8 +44,7 @@ $bodoke-prefix:				'bdk';
 @import "bodoke/settings/functions";			// functions
 @import "bodoke/settings/fonts"; 				// fonts
 @import "bodoke/settings/colors"; 				// colors
-// @import "bodoke/grid/grid";					// grid framework
-@import "bodoke/grid/grid_1.2";					// grid framework
+@import "bodoke/grid/grid";					// grid framework
 
 // Elements
 @import "bodoke/object/buttons";
@@ -55,14 +57,15 @@ $bodoke-prefix:				'bdk';
 @import "bodoke/object/menu";
 @import "bodoke/object/list";
 @import "bodoke/object/input";
+@import "bodoke/object/comments";				// 0.1.2
 @import "bodoke/object/tooltip";
 @import "bodoke/object/dropdown";
+@import "bodoke/object/lang-dropdown.scss";
 @import "bodoke/object/table";
 @import "bodoke/object/lightbox";
 @import "bodoke/object/slider";
 @import "bodoke/object/slide-detail";
 @import "bodoke/object/code";
-@import "bodoke/object/lang-dropdown.scss";
 @import "bodoke/object/bodoke-example"; 		// Comentar antes de empezar un proyecto
 
 // css helpers
