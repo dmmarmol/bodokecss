@@ -15,14 +15,14 @@
 // Fades
 $animation-fadeIn:						true;
 // Left
-$animation-fadeInLeft:					true;
+$animation-fadeInLeft:					false;
 $animation-fadeInLeftDisplay:			false;
-$animation-fadeInLeftBig:				true;
+$animation-fadeInLeftBig:				false;
 $animation-fadeInLeftBig-extension:		false; // 0.1.0
 $animation-fadeInFromLeftToRight:		false;
 // Right
-$animation-fadeInRight:					true;
-$animation-fadeInRightBig:				true;
+$animation-fadeInRight:					false;
+$animation-fadeInRightBig:				false;
 $animation-fadeInRightBig-extension:	false; // 0.1.0
 $animation-fadeInFromRightToLeft:		false;
 // Up
@@ -45,8 +45,10 @@ $animation-showSlideDown:				false;
 $animation-hideSlideUp:					false;
 
 // Delay en las animaciones
-$animation-delay:						true;
+$animation-delay:						false;
 $animation-delay-count:					8;
+$transition-delay:						false;
+$transition-delay-count:				8;
 
 // Default duration
 $animation-duration:					1000ms; // 0.1.0
@@ -518,5 +520,15 @@ $animation-duration:					1000ms; // 0.1.0
 		.delay-fast-#{$i} {
 			@include animation-delay( $i * ($animation-duration / 4.5) );
 		}
-	}	
+	}
+}
+@if ( $transition-delay ) {
+	@for $i from 1 through $transition-delay-count {
+		.transition-delay-#{$i} {
+			@include delay( $i * ($animation-duration / 4.5) );			
+		}
+		.transition-delay-fast-#{$i} {
+			@include delay( $i * ($animation-duration / 4.5) );
+		}
+	}
 }

@@ -92,9 +92,9 @@ $default-transition-delay    : false;
 
 @mixin delay( $value:0 ) {
 	-webkit-transition-delay: $value;
-    -moz-transition-delay: $value;
-    -ms-transition-delay: $value;
-    -o-transition-delay: $value;
+    // -moz-transition-delay: $value;
+    // -ms-transition-delay: $value;
+    // -o-transition-delay: $value;
     transition-delay: $value;
 }
 

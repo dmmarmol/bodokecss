@@ -46,6 +46,11 @@
 				display: inline-block;
 				margin-left: -0.3em; // inline-block gap fallback
 			}
+			&.list-separated {
+				li, .item {
+					margin-left: initial; // inline-block gap fallback					
+				}
+			}
 		}
 		.item {
 			@include clear();

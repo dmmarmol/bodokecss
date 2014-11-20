@@ -19,9 +19,9 @@ $button-colors:						$buttons-color-pallete;	// colors.scss
 $button-has-box-shadow:				false;
 $button-has-text-shadow:			false;
 $button-has-border:					true;
-$button-has-background:				false;
+$button-has-background:				true;
 $button-has-background-gradient:	false;
-$button-has-active-pseudo:			false;
+$button-has-active-pseudo:			true;
 
 
 // =======================
@@ -160,7 +160,6 @@ $dark-button-text-color:	$black_97;
 		}
 	}
 }
-
 
 // ==========================
 // COLORES
@@ -378,7 +377,6 @@ $dark-button-text-color:	$black_97;
 		display: inline; 
 	}
 }
-
 
 // ============================
 // BOTON CON F-ICON DENTRO

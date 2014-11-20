@@ -1,6 +1,7 @@
 // _icons.scss
 
 
+
 // ==================
 // IMAGE ICONS
 // ==================
@@ -77,7 +78,6 @@ $y-grid: 120px / $grid-size;
 @include flag-icons( $md-icon-size );
 
 
-
 // ==================
 // FONT ICONS
 // ==================
@@ -110,3 +110,4 @@ $y-grid: 120px / $grid-size;
 	// Large size icons inside @media query
 	// @include generate_icons( $lg-icon-size, 'lg' );	
 }
+
