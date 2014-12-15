@@ -309,10 +309,14 @@ $default-transition-delay    : false;
 // 0.1.0
 // Define la propiedad color
 // y la aplica a todos los elementos descendientes
-@mixin color( $value ) {
+@mixin color( $value, $and:false ) {
 	@content;
 	color: $value;
-	* { &:after, &:before { color: inherit; } }
+	@if ($and) {
+		* { &:after, &:before, #{$and} { color: inherit; } }
+	} @else {
+		* { &:after, &:before { color: inherit; } }		
+	}
 }
 
 // ========================

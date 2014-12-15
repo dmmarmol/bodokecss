@@ -104,10 +104,63 @@ $input-offset:	1em;
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+	&.input-horizontal {
+		label {
+			line-height: em(38px);
+		}
+	}
+	&.input-vertical {
+		label {
+			display: block;
+			margin-bottom: 1em;
+		}
+	}
 }
 
 .input-box {
 	padding-top: $input-offset;
+}
+
+
+// ================================
+// OPTIONAL & REQUIRED
+// ================================
+$optional-text-color: gray(150);
+.input-row {
+	&.input-optional {
+		label { color: $optional-text-color; }
+		input, textarea {
+			@include placeholder() {
+				color: $optional-text-color;				
+			}
+		}		
+		select {
+			option:first-child, option[selected] {
+				color: $optional-text-color;			
+			}
+		}
+	}
+	&.input-required {
+		label { color: $text-color; }
+		input, textarea {
+			@include placeholder() {
+				color: $text-color;				
+			}
+		}
+		select {
+			color: $text-color;
+			option:first-child, option[selected] {
+			}
+		}
+	}
+}
+
+.optional-comment {
+	text-align: center;
+	color: $optional-text-color;
+	font-size: 0.9em;
+	padding-top: $col-offset;
+	padding-bottom: $col-offset;
 }
 
 

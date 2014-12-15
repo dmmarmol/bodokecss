@@ -9,6 +9,10 @@ $grid-size:	24px;
 $x-grid: 72px / $grid-size;
 $y-grid: 120px / $grid-size;
 
+[class*="#{$bodoke-prefix}-icon"] {
+
+}
+
 .icon {
 	display: block;
 	background-image: icon('countries.png');
