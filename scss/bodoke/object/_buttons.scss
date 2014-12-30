@@ -15,8 +15,8 @@ $button-transition-time:			$transition-speed; // config.scss
 $button-colors:						$buttons-color-pallete;	// colors.scss
 
 // BUTTON NAMES
-$button-prefix:						'button';
-$button-group-prefix:				#{$button-prefix}'-group';
+$button-prefix:						'button';					// Cambias este prefijo y cambia todos
+$button-group-prefix:				'#{$button-prefix}-group';
 
 // SETTINGS
 $button-has-box-shadow:				false;

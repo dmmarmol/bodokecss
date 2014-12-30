@@ -643,3 +643,138 @@ $default-text-shadow-spread:	false;
 	}
 }
 
+
+
+// Version 0.1.4
+// Android style inputs (pre Lollypop)
+// =============
+@mixin android-input-border($color: $gray-border, $width: 1px, $height: 6px) {
+	$bg: linear-gradient($color, $color);
+	@include background(
+		bottom left $bg no-repeat,
+		bottom center $bg repeat-x,
+		bottom right $bg no-repeat
+	);
+	@include background-size(
+		$width $height,
+		$width $width,
+		$width $height
+	);
+}
+
+
+
+// Version 0.1.4
+// Flexbox mixins
+// =============
+@mixin flex-display() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;	
+	display: flex;
+}
+@mixin flex-box-direction($value: normal){
+	// OPTIONS
+	// ====================
+	// normal
+	// reverse
+	// ====================
+    -webkit-box-direction: $value;
+    -moz-box-direction: $value;
+}
+@mixin flex-box-orient($value: horizontal){
+	// OPTIONS
+	// ====================
+	// block-axis
+	// inline-axis
+	// horizontal
+	// vertical
+	// ====================
+    -webkit-box-orient: $value;
+    -moz-box-orient: $value;
+}
+@mixin flex-direction($value: row) {
+	// OPTIONS
+	// ====================
+	// column
+	// column-reverse
+	// row
+	// row-reverse
+	// initial
+	// ====================
+    -webkit-flex-direction: $value;
+    -ms-flex-direction: $value;
+    flex-direction: $value;
+}
+@mixin flex-wrap($value: nowrap) {
+	// OPTIONS
+	// ====================
+	// no-wrap
+	// wrap
+	// wrap-reverse
+	// ====================
+    -webkit-flex-wrap: $value;
+    -ms-flex-wrap: $value;
+    flex-wrap: $value;
+}
+@mixin flex-content($value: flex-start) {
+	// OPTIONS
+	// ====================
+	// flex-end
+	// flex-start
+	// center
+	// space-arround
+	// space-between
+	// initial
+	// ====================
+    -moz-box-pack: $value;
+    -webkit-box-pack: $value;
+    -ms-flex-pack: $value;
+    -webkit-justify-content: $value;
+    justify-content: $value;
+}
+@mixin flex-stretching($value: stretch) {
+	// OPTIONS
+	// ====================
+	// flex-end
+	// flex-start
+	// center
+	// space-arround
+	// space-between
+	// stretch
+	// initial
+	// ====================
+    -webkit-align-content: $value;
+    -ms-flex-line-pack: $value;
+    align-content: $value;
+
+}
+@mixin flex-align($value: center) {
+	// OPTIONS
+	// ====================
+	// flex-end
+	// flex-start
+	// center
+	// baseline
+	// stretch
+	// initial
+	// ====================
+    -webkit-box-align: $value;
+    -moz-box-align: $value;
+    -webkit-align-items: $value;
+    -ms-flex-align: $value;
+    align-items: $value;
+}
+
+// Llamado que solo centra verticalmente
+@mixin flexbox() {
+	@include flex-display();
+	// @include flex-box-direction(); 
+	// @include flex-box-orient(); 
+	@include flex-direction();
+	@include flex-wrap();
+	@include flex-content();
+	@include flex-stretching();
+	@include flex-align();	
+}

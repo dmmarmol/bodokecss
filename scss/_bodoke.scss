@@ -12,7 +12,7 @@
  * contributors: 	Leonardo Pittelli
  * developed at:	Convoy S.R.L - www.convoy.me
  * Compass:			1.0.1 (Polaris)
- * SASS:			3.4.7 (Selective Steve)
+ * SASS:			3.4.9 (Selective Steve)
  *
 */
 
@@ -34,11 +34,11 @@ $bodoke-prefix:				'bdk';
 // Complements
 // ======================================
 @import "bodoke/object/buttons";
-@import 'bodoke/object/buttons-google';	 		// GOOGLE BUTTONS
+// @import 'bodoke/object/buttons-google';	 		// GOOGLE BUTTONS (pre Material Design)
 @import "bodoke/object/icons";
 
 @import "bodoke/object/animations";
-@import "bodoke/object/transformations";		// 0.1.3
+// @import "bodoke/object/transformations";		// 0.1.3
 @import "bodoke/object/titles";
 @import "bodoke/object/text";
 @import "bodoke/object/menu";

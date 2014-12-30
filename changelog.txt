@@ -24,6 +24,8 @@ Changelog
 // 			- Nuevo color "dark" para los botones
 // 11/12	- Cambio a la version 0.1.4 (Amon Ed)
 // 11/12 	- Nuevas funciones de HugoGiraudel.com para manipular listas en SASS
+// 29/12 	- Nuevo flexbox() @mixin
+// 30/12 	- Nuevo android-input-border @mixin para estilizar inputs como en Android
 // ======================================
 //
 // Bodoke Status - 2015

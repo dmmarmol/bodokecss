@@ -54,20 +54,31 @@
 	}
 }
 
-@function img( $path ) {
-	@return url( $IMGPATH + $path);
+
+
+// 0.1.4
+// bgpos()
+// Calcula la posicion del fondo en base a la multiplicacion de un modulo
+// =====================
+@function bgpos($pos, $module, $unit: px){
+	@return -$module * $pos + $unit;
 }
-@function icon( $path ) {
-	@return url( $IMGPATH + 'icon/' + $path);
+
+
+@function img( $path, $refresh:false ) {
+	@return url( $IMGPATH + $path + if($refresh!=false, '?' + $refresh, '') );
 }
-@function placeholder( $path ) {
-	@return url( $IMGPATH + 'placeholder/' + $path);
+@function icon( $path, $refresh:false ) {
+	@return url( $IMGPATH + 'icon/' + $path + if($refresh!=false, '?' + $refresh, '') );
 }
-@function input( $path ) {
-	@return url( $IMGPATH + 'input/' + $path);
+@function placeholder( $path, $refresh:false ) {
+	@return url( $IMGPATH + 'placeholder/' + $path + if($refresh!=false, '?' + $refresh, '') );
 }
-@function bg( $path ) {
-	@return url( $IMGPATH + 'background/' + $path);
+@function input( $path, $refresh:false ) {
+	@return url( $IMGPATH + 'input/' + $path + if($refresh!=false, '?' + $refresh, '') );
+}
+@function bg( $path, $refresh:false ) {
+	@return url( $IMGPATH + 'background/' + $path + if($refresh!=false, '?' + $refresh, '') );
 }
 
 // Strip Number Unit
@@ -103,6 +114,7 @@
 	}
 	@return $number;
 }
+
 
 // 0.0.6
 // percent()

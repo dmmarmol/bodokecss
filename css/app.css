@@ -1,4 +1,4 @@
-/* Bodoke.css ---------- Sexy & simple css framework made in SASS with easy configuration Inlcude FontAwesome!   author: 			Diego Martin Marmol website: 		www.diegomarmol.com.ar version:			0.1.3 (Amon Babel) release date:	20/05/14	 contributors: 	Leonardo Pittelli developed at:	Convoy S.R.L - www.convoy.me Compass:			1.0.1 (Polaris) SASS:			3.4.7 (Selective Steve) 
+/* Bodoke.css ---------- Sexy & simple css framework made in SASS with easy configuration Inlcude FontAwesome!   author: 			Diego Martin Marmol website: 		www.diegomarmol.com.ar version:			0.1.4 (Amon Ed) release date:	20/05/14	 contributors: 	Leonardo Pittelli developed at:	Convoy S.R.L - www.convoy.me Compass:			1.0.1 (Polaris) SASS:			3.4.9 (Selective Steve) 
 */
 @font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.2.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 /* line 73, ../scss/bodoke/settings/_fonts.scss */
@@ -58,7 +58,7 @@
 /* line 88, ../scss/bodoke/settings/_colors.scss */
 .dark-gray-text { color: #666666; }
 
-/* line 178, ../scss/bodoke/settings/_colors.scss */
+/* line 179, ../scss/bodoke/settings/_colors.scss */
 ::-moz-selection, ::selection { background: #d1d1d1; color: #FFF; text-shadow: 1px solid rgba(0, 0, 0, 0.2); }
 
 /*! normalize.css v1.1.2 | MIT License | git.io/normalize */
@@ -283,204 +283,207 @@ iframe { display: block; border: none; background-color: transparent; }
 /* line 144, ../scss/bodoke/grid/_grid.scss */
 [dir="rtl"] .col, [dir="rtl"] .cols, [dir="rtl"] .column, [dir="rtl"] .columns { float: right; }
 
-/* line 35, ../scss/bodoke/object/_buttons.scss */
+/* line 38, ../scss/bodoke/object/_buttons.scss */
 .button.button-yellow { background: #fcb608; color: #f7f7f7; }
-/* line 67, ../scss/bodoke/object/_buttons.scss */
+/* line 71, ../scss/bodoke/object/_buttons.scss */
 .button.button-yellow:hover { background: #ce9403; }
-/* line 35, ../scss/bodoke/object/_buttons.scss */
+/* line 38, ../scss/bodoke/object/_buttons.scss */
 .button.button-blue { background: #55a0cf; color: #f7f7f7; }
-/* line 67, ../scss/bodoke/object/_buttons.scss */
+/* line 71, ../scss/bodoke/object/_buttons.scss */
 .button.button-blue:hover { background: #3588bc; }
-/* line 35, ../scss/bodoke/object/_buttons.scss */
+/* line 38, ../scss/bodoke/object/_buttons.scss */
 .button.button-red { background: #dd4a3a; color: #f7f7f7; }
-/* line 67, ../scss/bodoke/object/_buttons.scss */
+/* line 71, ../scss/bodoke/object/_buttons.scss */
 .button.button-red:hover { background: #c23122; }
-/* line 35, ../scss/bodoke/object/_buttons.scss */
+/* line 38, ../scss/bodoke/object/_buttons.scss */
 .button.button-green { background: #639728; color: #f7f7f7; }
-/* line 67, ../scss/bodoke/object/_buttons.scss */
+/* line 71, ../scss/bodoke/object/_buttons.scss */
 .button.button-green:hover { background: #496f1d; }
-/* line 35, ../scss/bodoke/object/_buttons.scss */
+/* line 38, ../scss/bodoke/object/_buttons.scss */
 .button.button-gray { background: #f2f2f2; color: #333333; }
-/* line 67, ../scss/bodoke/object/_buttons.scss */
+/* line 71, ../scss/bodoke/object/_buttons.scss */
 .button.button-gray:hover { background: #d9d9d9; }
-/* line 35, ../scss/bodoke/object/_buttons.scss */
+/* line 38, ../scss/bodoke/object/_buttons.scss */
+.button.button-dark { background: #373737; color: #f7f7f7; }
+/* line 71, ../scss/bodoke/object/_buttons.scss */
+.button.button-dark:hover { background: #1e1e1e; }
+/* line 38, ../scss/bodoke/object/_buttons.scss */
 .button.button-white { background: white; color: #333333; }
-/* line 67, ../scss/bodoke/object/_buttons.scss */
+/* line 71, ../scss/bodoke/object/_buttons.scss */
 .button.button-white:hover { background: #e6e6e6; }
 
-/* line 175, ../scss/bodoke/object/_buttons.scss */
+/* line 189, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover { -moz-transition: background 0.35s ease, text-shadow 0.35s ease; -o-transition: background 0.35s ease, text-shadow 0.35s ease; -webkit-transition: background 0.35s ease, text-shadow 0.35s ease; transition: background 0.35s ease, text-shadow 0.35s ease; }
-/* line 145, ../scss/bodoke/object/_buttons.scss */
+/* line 159, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.button-yellow:hover { color: #f7f7f7; background: #fcb608; }
-/* line 145, ../scss/bodoke/object/_buttons.scss */
+/* line 159, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.button-blue:hover { color: #f7f7f7; background: #55a0cf; }
-/* line 145, ../scss/bodoke/object/_buttons.scss */
+/* line 159, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.button-red:hover { color: #f7f7f7; background: #dd4a3a; }
-/* line 145, ../scss/bodoke/object/_buttons.scss */
+/* line 159, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.button-green:hover { color: #f7f7f7; background: #639728; }
-/* line 145, ../scss/bodoke/object/_buttons.scss */
+/* line 159, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.button-gray:hover { color: #333333; background: #f2f2f2; }
-/* line 145, ../scss/bodoke/object/_buttons.scss */
+/* line 159, ../scss/bodoke/object/_buttons.scss */
+.button.clear.hover.button-dark:hover { color: #f7f7f7; background: #373737; }
+/* line 159, ../scss/bodoke/object/_buttons.scss */
 .button.clear.hover.button-white:hover { color: #333333; background: white; }
 
-/* line 186, ../scss/bodoke/object/_buttons.scss */
+/* line 200, ../scss/bodoke/object/_buttons.scss */
 .button.link { text-shadow: none; }
-/* line 189, ../scss/bodoke/object/_buttons.scss */
+/* line 203, ../scss/bodoke/object/_buttons.scss */
 .button.link.yellow { color: #fcb608; }
-/* line 189, ../scss/bodoke/object/_buttons.scss */
+/* line 203, ../scss/bodoke/object/_buttons.scss */
 .button.link.blue { color: #55a0cf; }
-/* line 189, ../scss/bodoke/object/_buttons.scss */
+/* line 203, ../scss/bodoke/object/_buttons.scss */
 .button.link.red { color: #dd4a3a; }
-/* line 189, ../scss/bodoke/object/_buttons.scss */
+/* line 203, ../scss/bodoke/object/_buttons.scss */
 .button.link.green { color: #639728; }
-/* line 189, ../scss/bodoke/object/_buttons.scss */
+/* line 203, ../scss/bodoke/object/_buttons.scss */
 .button.link.gray { color: #f2f2f2; }
-/* line 189, ../scss/bodoke/object/_buttons.scss */
+/* line 203, ../scss/bodoke/object/_buttons.scss */
+.button.link.dark { color: #373737; }
+/* line 203, ../scss/bodoke/object/_buttons.scss */
 .button.link.white { color: white; }
 
-/* line 109, ../scss/bodoke/object/_buttons.scss */
+/* line 120, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-yellow .button { color: #f7f7f7; background: #fcb608; }
-/* line 126, ../scss/bodoke/object/_buttons.scss */
+/* line 137, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-yellow .button:hover { background: #ce9403; }
-/* line 109, ../scss/bodoke/object/_buttons.scss */
+/* line 143, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-yellow .button:active, .button-group.button-yellow .button.active { background: #c28b02; }
+/* line 120, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-blue .button { color: #f7f7f7; background: #55a0cf; }
-/* line 126, ../scss/bodoke/object/_buttons.scss */
+/* line 137, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-blue .button:hover { background: #3588bc; }
-/* line 109, ../scss/bodoke/object/_buttons.scss */
+/* line 143, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-blue .button:active, .button-group.button-blue .button.active { background: #3281b2; }
+/* line 120, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-red .button { color: #f7f7f7; background: #dd4a3a; }
-/* line 126, ../scss/bodoke/object/_buttons.scss */
+/* line 137, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-red .button:hover { background: #c23122; }
-/* line 109, ../scss/bodoke/object/_buttons.scss */
+/* line 143, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-red .button:active, .button-group.button-red .button.active { background: #b82f20; }
+/* line 120, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-green .button { color: #f7f7f7; background: #639728; }
-/* line 126, ../scss/bodoke/object/_buttons.scss */
+/* line 137, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-green .button:hover { background: #496f1d; }
-/* line 109, ../scss/bodoke/object/_buttons.scss */
+/* line 143, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-green .button:active, .button-group.button-green .button.active { background: #42651b; }
+/* line 120, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-gray .button { color: #333333; background: #f2f2f2; }
-/* line 126, ../scss/bodoke/object/_buttons.scss */
+/* line 137, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-gray .button:hover { background: #d9d9d9; }
-/* line 109, ../scss/bodoke/object/_buttons.scss */
+/* line 143, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-gray .button:active, .button-group.button-gray .button.active { background: #d2d2d2; }
+/* line 120, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-dark .button { color: #f7f7f7; background: #373737; }
+/* line 137, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-dark .button:hover { background: #1e1e1e; }
+/* line 143, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-dark .button:active, .button-group.button-dark .button.active { background: #171717; }
+/* line 120, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-white .button { color: #333333; background: white; }
-/* line 126, ../scss/bodoke/object/_buttons.scss */
+/* line 137, ../scss/bodoke/object/_buttons.scss */
 .button-group.button-white .button:hover { background: #e6e6e6; }
+/* line 143, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-white .button:active, .button-group.button-white .button.active { background: #dfdfdf; }
 
-/* line 206, ../scss/bodoke/object/_buttons.scss */
+/* line 220, ../scss/bodoke/object/_buttons.scss */
 .button { padding-top: 0; padding-bottom: 0; padding-left: 1.1em; padding-right: 1.1em; }
-/* line 211, ../scss/bodoke/object/_buttons.scss */
+/* line 225, ../scss/bodoke/object/_buttons.scss */
 .button.button-slim { padding-left: 0.55em; padding-right: 0.55em; }
-/* line 215, ../scss/bodoke/object/_buttons.scss */
+/* line 229, ../scss/bodoke/object/_buttons.scss */
 .button.button-medium { padding-left: 1.375em; padding-right: 1.375em; font-size: 16px; line-height: 40px; }
-/* line 221, ../scss/bodoke/object/_buttons.scss */
+/* line 235, ../scss/bodoke/object/_buttons.scss */
 .button.button-large { padding-top: 0.62857em; padding-bottom: 0.62857em; padding-left: 1.1em; padding-right: 1.1em; font-size: 24px; font-weight: 300; line-height: 20px; }
-/* line 230, ../scss/bodoke/object/_buttons.scss */
+/* line 244, ../scss/bodoke/object/_buttons.scss */
 .button.button-big { padding-top: 0.73333em; padding-bottom: 0.73333em; padding-left: 2.2em; padding-right: 2.2em; font-size: 24px; font-weight: 300; line-height: 24px; }
 
-/* line 245, ../scss/bodoke/object/_buttons.scss */
+/* line 259, ../scss/bodoke/object/_buttons.scss */
 .button-group { padding: 0; margin: 0; line-height: 2.5em; background: transparent; }
-/* line 251, ../scss/bodoke/object/_buttons.scss */
+/* line 265, ../scss/bodoke/object/_buttons.scss */
 .button-group .button { border-right: none; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
-/* line 254, ../scss/bodoke/object/_buttons.scss */
+/* line 268, ../scss/bodoke/object/_buttons.scss */
 .button-group .button:first-child { -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px; border-radius: 3px 0 0 3px; }
-/* line 257, ../scss/bodoke/object/_buttons.scss */
+/* line 271, ../scss/bodoke/object/_buttons.scss */
 .button-group .button:last-child { -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0; border-radius: 0 3px 3px 0; }
-/* line 262, ../scss/bodoke/object/_buttons.scss */
+/* line 276, ../scss/bodoke/object/_buttons.scss */
 .button-group .button a, .button-group .button button { display: block; padding-left: 0.9375em; padding-right: 0.9375em; }
-/* line 275, ../scss/bodoke/object/_buttons.scss */
+/* line 289, ../scss/bodoke/object/_buttons.scss */
 .button-group a.button, .button-group button.button { display: block; }
-/* line 280, ../scss/bodoke/object/_buttons.scss */
-.button-group.vertical .button, .button-group.v .button { float: none; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+/* line 294, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-group-vertical .button, .button-group.v .button { float: none; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; }
+/* line 303, ../scss/bodoke/object/_buttons.scss */
+.button-group.button-group-inline .button { display: inline-block; float: none; margin-left: -0.4em; }
 
-/* line 292, ../scss/bodoke/object/_buttons.scss */
+/* line 314, ../scss/bodoke/object/_buttons.scss */
 .button { display: block; float: left; text-decoration: none; text-align: center; line-height: 2.5em; font-size: 0.875em; cursor: pointer; color: #333333; border-width: 1px; border-style: solid; background: #e6e6e6; -moz-transition: background 0.35s ease; -o-transition: background 0.35s ease; -webkit-transition: background 0.35s ease; transition: background 0.35s ease; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; *zoom: 1; }
-/* line 318, ../scss/bodoke/object/_buttons.scss */
+/* line 340, ../scss/bodoke/object/_buttons.scss */
 .button:hover, .button:active { background: #cccccc; }
-/* line 324, ../scss/bodoke/object/_buttons.scss */
+/* line 346, ../scss/bodoke/object/_buttons.scss */
 .button:active, .button.active { -moz-transform: translateY(1px); -ms-transform: translateY(1px); -webkit-transform: translateY(1px); transform: translateY(1px); -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
-/* line 329, ../scss/bodoke/object/_buttons.scss */
+/* line 351, ../scss/bodoke/object/_buttons.scss */
 .button:focus { outline: none; }
-/* line 332, ../scss/bodoke/object/_buttons.scss */
+/* line 354, ../scss/bodoke/object/_buttons.scss */
 .button[disabled], .button.disabled { color: #999; background: #f1f1f1; }
-/* line 337, ../scss/bodoke/object/_buttons.scss */
+/* line 359, ../scss/bodoke/object/_buttons.scss */
 .button.clear { color: #333333; }
-/* line 339, ../scss/bodoke/object/_buttons.scss */
+/* line 361, ../scss/bodoke/object/_buttons.scss */
 .button.clear:active, .button.clear.active { -moz-transform: none; -ms-transform: none; -webkit-transform: none; transform: none; }
-/* line 344, ../scss/bodoke/object/_buttons.scss */
+/* line 366, ../scss/bodoke/object/_buttons.scss */
 .button.link { padding: 0; line-height: inherit; font-size: 0.9em; }
-/* line 349, ../scss/bodoke/object/_buttons.scss */
+/* line 371, ../scss/bodoke/object/_buttons.scss */
 .button.clear, .button.link { height: auto; outline: none; border: 0; background: transparent; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; text-shadow: none; }
-/* line 356, ../scss/bodoke/object/_buttons.scss */
+/* line 378, ../scss/bodoke/object/_buttons.scss */
 .button.clear:hover, .button.link:hover { text-decoration: none; background: transparent; }
-/* line 360, ../scss/bodoke/object/_buttons.scss */
+/* line 382, ../scss/bodoke/object/_buttons.scss */
 .button.clear:active, .button.link:active { -moz-transform: none; -ms-transform: none; -webkit-transform: none; transform: none; }
-/* line 363, ../scss/bodoke/object/_buttons.scss */
+/* line 385, ../scss/bodoke/object/_buttons.scss */
 .button.clear[disabled], .button.clear.disabled, .button.link[disabled], .button.link.disabled { text-decoration: none; color: #999; }
-/* line 370, ../scss/bodoke/object/_buttons.scss */
+/* line 392, ../scss/bodoke/object/_buttons.scss */
 .button.inline-block, .button.inline { float: none; }
-/* line 373, ../scss/bodoke/object/_buttons.scss */
+/* line 395, ../scss/bodoke/object/_buttons.scss */
 .button.inline-block { display: inline-block; }
-/* line 376, ../scss/bodoke/object/_buttons.scss */
+/* line 398, ../scss/bodoke/object/_buttons.scss */
 .button.inline { display: inline; }
 
-/* line 385, ../scss/bodoke/object/_buttons.scss */
-.button .ficon { display: inline-block; font-style: normal; font-weight: normal; top: 0.05em; margin-right: 0.1em; -webkit-font-smoothing: antialiased; }
+/* line 407, ../scss/bodoke/object/_buttons.scss */
+.button .ficon, .button [class*="bdk-icon"] { display: inline-block; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; vertical-align: middle; }
 
-/* line 6, ../scss/bodoke/object/_buttons-google.scss */
-.button.google { padding: 10px 30px; border: solid 1px #3079ed; -moz-border-radius: 2px 2px; -webkit-border-radius: 2px; border-radius: 2px 2px; background: #4d90fe; /* Old browsers */ background: -moz-linear-gradient(top, #4d90fe 0%, #4787ed 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4d90fe), color-stop(100%, #4787ed)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #4d90fe 0%, #4787ed 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #4d90fe 0%, #4787ed 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #4d90fe 0%, #4787ed 100%); /* IE10+ */ background: linear-gradient(to bottom, #4d90fe 0%, #4787ed 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d90fe', endColorstr='#4787ed',GradientType=0 ); /* IE6-9 */ color: #fff; text-decoration: none; cursor: pointer; display: inline-block; text-align: center; font-weight: 400; text-transform: uppercase; font-size: 11px; line-height: 1; -moz-transition: all 0.218s linear; -o-transition: all 0.218s linear; -webkit-transition: all 0.218s linear; transition: all 0.218s linear; }
-/* line 29, ../scss/bodoke/object/_buttons-google.scss */
-.button.google:hover { border: 1px solid #2f5bb7; background: #4d90fe; /* Old browsers */ background: -moz-linear-gradient(top, #4d90fe 0%, #357ae8 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4d90fe), color-stop(100%, #357ae8)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #4d90fe 0%, #357ae8 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #4d90fe 0%, #357ae8 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #4d90fe 0%, #357ae8 100%); /* IE10+ */ background: linear-gradient(to bottom, #4d90fe 0%, #357ae8 100%); /* W3C */ }
-/* line 39, ../scss/bodoke/object/_buttons-google.scss */
-.button.google:active { border: 1px solid #377cea; -moz-box-shadow: inset 0 0 2px 2px #377cea, 0 1px 0 0 #aaa; -webkit-box-shadow: inset 0 0 2px 2px #377cea, 0 1px 0 0 #aaa; box-shadow: inset 0 0 2px 2px #377cea, 0 1px 0 0 #aaa; }
-/* line 43, ../scss/bodoke/object/_buttons-google.scss */
-.button.google:focus { outline: 0; }
-/* line 48, ../scss/bodoke/object/_buttons-google.scss */
-.button.google.gray { padding: 10px 10px; -moz-border-radius: 2px 2px; -webkit-border-radius: 2px; border-radius: 2px 2px; border: solid 1px #dadada; background: #f4f4f4; /* Old browsers */ background: -moz-linear-gradient(top, #f4f4f4 0%, #f1f1f1 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f4f4), color-stop(100%, #f1f1f1)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #f4f4f4 0%, #f1f1f1 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #f4f4f4 0%, #f1f1f1 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #f4f4f4 0%, #f1f1f1 100%); /* IE10+ */ background: linear-gradient(to bottom, #f4f4f4 0%, #f1f1f1 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#f1f1f1',GradientType=0 ); /* IE6-9 */ color: #555; text-decoration: none; cursor: pointer; display: inline-block; text-align: center; font-weight: 700; text-shadow: 0px 1px 1px white; line-height: 1; font-size: 11px; }
-/* line 69, ../scss/bodoke/object/_buttons-google.scss */
-.button.google.gray:hover { color: #222; border: 1px solid #c6c6c4; background: #f8f8f8; /* Old browsers */ background: -moz-linear-gradient(top, #f8f8f8 0%, #f1f1f1 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f8f8), color-stop(100%, #f1f1f1)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #f8f8f8 0%, #f1f1f1 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #f8f8f8 0%, #f1f1f1 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #f8f8f8 0%, #f1f1f1 100%); /* IE10+ */ background: linear-gradient(to bottom, #f8f8f8 0%, #f1f1f1 100%); /* W3C */ }
-/* line 79, ../scss/bodoke/object/_buttons-google.scss */
-.button.google.gray:active { border: 1px solid #c6c6c4; color: #222; -moz-box-shadow: inset 0 0 2px 4px #f1f1f1, 0 1px 0 0 #eeeeee; -webkit-box-shadow: inset 0 0 2px 4px #f1f1f1, 0 1px 0 0 #eeeeee; box-shadow: inset 0 0 2px 4px #f1f1f1, 0 1px 0 0 #eeeeee; }
-/* line 87, ../scss/bodoke/object/_buttons-google.scss */
-.button.google.red { padding: 10px 30px; -moz-border-radius: 2px 2px; -webkit-border-radius: 2px; border-radius: 2px 2px; /*border: solid 0px rgb(153, 153, 153);*/ border: solid 1px transparent; background: #d64937; /* Old browsers */ background: -moz-linear-gradient(top, #d64937 0%, #d14836 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d64937), color-stop(100%, #d14836)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #d64937 0%, #d14836 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #d64937 0%, #d14836 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #d64937 0%, #d14836 100%); /* IE10+ */ background: linear-gradient(to bottom, #d64937 0%, #d14836 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d64937', endColorstr='#d14836',GradientType=0 ); /* IE6-9 */ color: #fff; text-decoration: none; cursor: pointer; display: inline-block; text-align: center; font-weight: 700; text-transform: uppercase; font-size: 11px; line-height: 1; }
-/* line 109, ../scss/bodoke/object/_buttons-google.scss */
-.button.google.red:hover { border: 1px solid #b0281a; background: #dd4b39; /* Old browsers */ background: -moz-linear-gradient(top, #dd4b39 0%, #c53727 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dd4b39), color-stop(100%, #c53727)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top, #dd4b39 0%, #c53727 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top, #dd4b39 0%, #c53727 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top, #dd4b39 0%, #c53727 100%); /* IE10+ */ background: linear-gradient(to bottom, #dd4b39 0%, #c53727 100%); /* W3C */ }
-/* line 119, ../scss/bodoke/object/_buttons-google.scss */
-.button.google.red .button.red:active, .button.google.red .gcb-button.red:active, .button.google.red input[type=submit].red:active { border: 1px solid #b0281a; -moz-box-shadow: inset 0 0 8px 4px #c53727, 0 1px 0 0 #eeeeee; -webkit-box-shadow: inset 0 0 8px 4px #c53727, 0 1px 0 0 #eeeeee; box-shadow: inset 0 0 8px 4px #c53727, 0 1px 0 0 #eeeeee; }
-/* line 126, ../scss/bodoke/object/_buttons-google.scss */
-.button.google.disabled, .button.google[disabled] { background: none; background-image: -moz-linear-gradient(top, rgba(226, 226, 226, 0.14), rgba(34, 34, 34, 0.14)); background-image: -webkit-linear-gradient(top, rgba(226, 226, 226, 0.14), rgba(34, 34, 34, 0.14)); background-image: linear-gradient(to bottom, rgba(226, 226, 226, 0.14), rgba(34, 34, 34, 0.14)); border-color: #f3f3f3; color: #b8b8b8; opacity: 0.65; cursor: default; }
-/* line 135, ../scss/bodoke/object/_buttons-google.scss */
-.button.google.disabled:hover, .button.google.disabled:focus, .button.google[disabled]:hover, .button.google[disabled]:focus { border-color: #f3f3f3; outline: none; }
-
-/* line 12, ../scss/bodoke/object/_icons.scss */
+/* line 16, ../scss/bodoke/object/_icons.scss */
 .icon { display: block; background-image: url("../images/icon/countries.png"); background-position: 0 0; background-repeat: no-repeat; }
 
-/* line 26, ../scss/bodoke/object/_icons.scss */
+/* line 30, ../scss/bodoke/object/_icons.scss */
 .icon { width: 24px; height: 24px; background-size: 72px 120px; }
-/* line 41, ../scss/bodoke/object/_icons.scss */
+/* line 45, ../scss/bodoke/object/_icons.scss */
 .icon.flag.flag-spa { background-position: 0 0; }
-/* line 44, ../scss/bodoke/object/_icons.scss */
+/* line 48, ../scss/bodoke/object/_icons.scss */
 .icon.flag.flag-usa { background-position: 0 -24px; }
-/* line 47, ../scss/bodoke/object/_icons.scss */
+/* line 51, ../scss/bodoke/object/_icons.scss */
 .icon.flag.flag-bra { background-position: 0 -48px; }
-/* line 50, ../scss/bodoke/object/_icons.scss */
+/* line 54, ../scss/bodoke/object/_icons.scss */
 .icon.flag.flag-arg { background-position: 0 -72px; }
-/* line 53, ../scss/bodoke/object/_icons.scss */
+/* line 57, ../scss/bodoke/object/_icons.scss */
 .icon.flag.flag-col { background-position: 0 -96px; }
-/* line 56, ../scss/bodoke/object/_icons.scss */
+/* line 60, ../scss/bodoke/object/_icons.scss */
 .icon.flag.flag-mex { background-position: -24px 0; }
 
-/* line 84, ../scss/bodoke/object/_icons.scss */
+/* line 88, ../scss/bodoke/object/_icons.scss */
 .ficon { font-size: 1.5em; }
-/* line 86, ../scss/bodoke/object/_icons.scss */
-.ficon[disabled], .ficon[disabled="disabled"], .ficon.disabled { cursor: default; opacity: 0.6; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=60); zoom: 1; }
 /* line 90, ../scss/bodoke/object/_icons.scss */
-.ficon.small { font-size: 1em; }
-/* line 91, ../scss/bodoke/object/_icons.scss */
-.ficon.medium { font-size: 2em; }
-/* line 92, ../scss/bodoke/object/_icons.scss */
-.ficon.large { font-size: 2.75em; }
+.ficon[disabled], .ficon[disabled="disabled"], .ficon.disabled { cursor: default; opacity: 0.6; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=60); zoom: 1; }
 /* line 94, ../scss/bodoke/object/_icons.scss */
-.ficon .rounded { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; padding: 3px; }
-/* line 97, ../scss/bodoke/object/_icons.scss */
-.ficon .rounded .medium { padding: 5px; }
+.ficon.small { font-size: 1em; }
+/* line 95, ../scss/bodoke/object/_icons.scss */
+.ficon.medium { font-size: 2em; }
+/* line 96, ../scss/bodoke/object/_icons.scss */
+.ficon.large { font-size: 2.75em; }
 /* line 98, ../scss/bodoke/object/_icons.scss */
+.ficon .rounded { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; padding: 3px; }
+/* line 101, ../scss/bodoke/object/_icons.scss */
+.ficon .rounded .medium { padding: 5px; }
+/* line 102, ../scss/bodoke/object/_icons.scss */
 .ficon .rounded .large { padding: 8px; }
 
 @media only screen and (max-height: 600px) { /* Netbook size icons - Hasta 600 de alto  */ }
@@ -490,7 +493,7 @@ iframe { display: block; border: none; background-color: transparent; }
   100% { opacity: 1; } }
 @keyframes fadeIn { 0% { opacity: 0; }
   100% { opacity: 1; } }
-/* line 68, ../scss/bodoke/object/_animations.scss */
+/* line 70, ../scss/bodoke/object/_animations.scss */
 .fadeIn { opacity: 0; -webkit-animation: fadeIn 1000ms; animation: fadeIn 1000ms; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 
 /* line 4, ../scss/bodoke/object/_titles.scss */
@@ -499,11 +502,11 @@ iframe { display: block; border: none; background-color: transparent; }
 .title span.yellow { color: #fcb608; }
 
 /* line 20, ../scss/bodoke/object/_titles.scss */
-.title.small { font-size: 1.4em; line-height: 1.3em; }
+.title.title-small { font-size: 1.4em; line-height: 1.3em; }
 /* line 26, ../scss/bodoke/object/_titles.scss */
-.title.medium { font-size: 2em; }
+.title.title-medium { font-size: 2em; }
 /* line 29, ../scss/bodoke/object/_titles.scss */
-.title.bigger { font-size: 3.7em; line-height: 1.1em; }
+.title.title-bigger { font-size: 3.7em; line-height: 1.1em; }
 
 /* line 35, ../scss/bodoke/object/_titles.scss */
 h1, h2, h3, h4, h5, h6 { margin-top: 0; }
@@ -588,15 +591,15 @@ nav ul, nav ol { list-style: none; list-style-type: none; list-style-image: none
 
 /* line 8, ../scss/bodoke/object/_input.scss */
 input, select, textarea input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], button[type="submit"], button[type="search"] { -webkit-appearance: none; position: relative; width: auto; font-size: 0.9em; font-weight: 300; border: 1px solid #e6e6e6; background: #FFF; padding-top: 0.5em; padding-bottom: 0.5em; padding-right: 0.9375em; padding-left: 0.9375em; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
-/* line 627, ../scss/bodoke/settings/_mixins.scss */
-input.placeholder, select.placeholder, textarea input[type="date"].placeholder, input[type="datetime"].placeholder, input[type="datetime-local"].placeholder, input[type="email"].placeholder, input[type="month"].placeholder, input[type="number"].placeholder, input[type="password"].placeholder, input[type="search"].placeholder, input[type="tel"].placeholder, input[type="text"].placeholder, input[type="time"].placeholder, input[type="url"].placeholder, input[type="week"].placeholder, button[type="submit"].placeholder, button[type="search"].placeholder { color: #999999; }
-/* line 628, ../scss/bodoke/settings/_mixins.scss */
-input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, button[type="submit"]::-webkit-input-placeholder, button[type="search"]::-webkit-input-placeholder { color: #999999; }
-/* line 629, ../scss/bodoke/settings/_mixins.scss */
-input:-moz-placeholder, select:-moz-placeholder, textarea input[type="date"]:-moz-placeholder, input[type="datetime"]:-moz-placeholder, input[type="datetime-local"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="month"]:-moz-placeholder, input[type="number"]:-moz-placeholder, input[type="password"]:-moz-placeholder, input[type="search"]:-moz-placeholder, input[type="tel"]:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="time"]:-moz-placeholder, input[type="url"]:-moz-placeholder, input[type="week"]:-moz-placeholder, button[type="submit"]:-moz-placeholder, button[type="search"]:-moz-placeholder { color: #999999; }
-/* line 630, ../scss/bodoke/settings/_mixins.scss */
-input::-moz-placeholder, select::-moz-placeholder, textarea input[type="date"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="week"]::-moz-placeholder, button[type="submit"]::-moz-placeholder, button[type="search"]::-moz-placeholder { color: #999999; }
 /* line 631, ../scss/bodoke/settings/_mixins.scss */
+input.placeholder, select.placeholder, textarea input[type="date"].placeholder, input[type="datetime"].placeholder, input[type="datetime-local"].placeholder, input[type="email"].placeholder, input[type="month"].placeholder, input[type="number"].placeholder, input[type="password"].placeholder, input[type="search"].placeholder, input[type="tel"].placeholder, input[type="text"].placeholder, input[type="time"].placeholder, input[type="url"].placeholder, input[type="week"].placeholder, button[type="submit"].placeholder, button[type="search"].placeholder { color: #999999; }
+/* line 632, ../scss/bodoke/settings/_mixins.scss */
+input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, button[type="submit"]::-webkit-input-placeholder, button[type="search"]::-webkit-input-placeholder { color: #999999; }
+/* line 633, ../scss/bodoke/settings/_mixins.scss */
+input:-moz-placeholder, select:-moz-placeholder, textarea input[type="date"]:-moz-placeholder, input[type="datetime"]:-moz-placeholder, input[type="datetime-local"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="month"]:-moz-placeholder, input[type="number"]:-moz-placeholder, input[type="password"]:-moz-placeholder, input[type="search"]:-moz-placeholder, input[type="tel"]:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="time"]:-moz-placeholder, input[type="url"]:-moz-placeholder, input[type="week"]:-moz-placeholder, button[type="submit"]:-moz-placeholder, button[type="search"]:-moz-placeholder { color: #999999; }
+/* line 634, ../scss/bodoke/settings/_mixins.scss */
+input::-moz-placeholder, select::-moz-placeholder, textarea input[type="date"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="week"]::-moz-placeholder, button[type="submit"]::-moz-placeholder, button[type="search"]::-moz-placeholder { color: #999999; }
+/* line 635, ../scss/bodoke/settings/_mixins.scss */
 input:-ms-input-placeholder, select:-ms-input-placeholder, textarea input[type="date"]:-ms-input-placeholder, input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder, button[type="submit"]:-ms-input-placeholder, button[type="search"]:-ms-input-placeholder { color: #999999; }
 /* line 42, ../scss/bodoke/object/_input.scss */
 input:focus, select:focus, textarea input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, button[type="submit"]:focus, button[type="search"]:focus { outline: none; }
@@ -631,19 +634,55 @@ input[type="radio"]:checked, input[type="checkbox"]:checked { border: 4px solid 
 .input-row:after { clear: both; }
 /* line 102, ../scss/bodoke/object/_input.scss */
 .input-row .label-title { color: #333333; margin-top: 0; margin-bottom: 0; }
+/* line 108, ../scss/bodoke/object/_input.scss */
+.input-row.input-horizontal label { line-height: 2.375em; }
+/* line 113, ../scss/bodoke/object/_input.scss */
+.input-row.input-vertical label { display: block; margin-bottom: 1em; }
 
-/* line 109, ../scss/bodoke/object/_input.scss */
+/* line 120, ../scss/bodoke/object/_input.scss */
 .input-box { padding-top: 1em; }
 
-/* line 119, ../scss/bodoke/object/_input.scss */
+/* line 131, ../scss/bodoke/object/_input.scss */
+.input-row.input-optional label { color: #969696; }
+/* line 631, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-optional input.placeholder, .input-row.input-optional textarea.placeholder { color: #969696; }
+/* line 632, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-optional input::-webkit-input-placeholder, .input-row.input-optional textarea::-webkit-input-placeholder { color: #969696; }
+/* line 633, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-optional input:-moz-placeholder, .input-row.input-optional textarea:-moz-placeholder { color: #969696; }
+/* line 634, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-optional input::-moz-placeholder, .input-row.input-optional textarea::-moz-placeholder { color: #969696; }
+/* line 635, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-optional input:-ms-input-placeholder, .input-row.input-optional textarea:-ms-input-placeholder { color: #969696; }
+/* line 138, ../scss/bodoke/object/_input.scss */
+.input-row.input-optional select option:first-child, .input-row.input-optional select option[selected] { color: #969696; }
+/* line 144, ../scss/bodoke/object/_input.scss */
+.input-row.input-required label { color: #333333; }
+/* line 631, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-required input.placeholder, .input-row.input-required textarea.placeholder { color: #333333; }
+/* line 632, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-required input::-webkit-input-placeholder, .input-row.input-required textarea::-webkit-input-placeholder { color: #333333; }
+/* line 633, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-required input:-moz-placeholder, .input-row.input-required textarea:-moz-placeholder { color: #333333; }
+/* line 634, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-required input::-moz-placeholder, .input-row.input-required textarea::-moz-placeholder { color: #333333; }
+/* line 635, ../scss/bodoke/settings/_mixins.scss */
+.input-row.input-required input:-ms-input-placeholder, .input-row.input-required textarea:-ms-input-placeholder { color: #333333; }
+/* line 150, ../scss/bodoke/object/_input.scss */
+.input-row.input-required select { color: #333333; }
+
+/* line 158, ../scss/bodoke/object/_input.scss */
+.optional-comment { text-align: center; color: #969696; font-size: 0.9em; padding-top: 0.9375em; padding-bottom: 0.9375em; }
+
+/* line 172, ../scss/bodoke/object/_input.scss */
 .input-group input:first-child, .input-group button:first-child, .input-group textarea:first-child, .input-group select:first-child { -moz-border-radius: 3px 0 0 3px; -webkit-border-radius: 3px; border-radius: 3px 0 0 3px; border-right: none; }
-/* line 123, ../scss/bodoke/object/_input.scss */
+/* line 176, ../scss/bodoke/object/_input.scss */
 .input-group input:last-child, .input-group button:last-child, .input-group textarea:last-child, .input-group select:last-child { -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0; border-radius: 0 3px 3px 0; border-left: none; }
 
-/* line 134, ../scss/bodoke/object/_input.scss */
+/* line 187, ../scss/bodoke/object/_input.scss */
 [onclick], [mouseover], [mouseout] { cursor: pointer; }
 
-/* line 137, ../scss/bodoke/object/_input.scss */
+/* line 190, ../scss/bodoke/object/_input.scss */
 [disabled], [disable] { cursor: default; }
 
 /* line 3, ../scss/bodoke/object/_comments.scss */
@@ -823,7 +862,7 @@ body.bdk-lightbox-active #bdk-blackout { display: block; }
 .bdk-lightbox { display: none; position: absolute; right: 0; width: 100%; background: white; opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=100); zoom: 1; -moz-border-radius: 0 0 3px 3px; -webkit-border-radius: 0; border-radius: 0 0 3px 3px; -moz-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.75), 0 3px 0 0 rgba(221, 74, 58, 0.9); -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.75), 0 3px 0 0 rgba(221, 74, 58, 0.9); box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.75), 0 3px 0 0 rgba(221, 74, 58, 0.9); }
 /* line 42, ../scss/bodoke/object/_lightbox.scss */
 .bdk-lightbox .close { position: absolute; right: -16px; top: -16px; width: 32px; height: 32px; text-align: center; border: 1px solid #FAFAFA; cursor: pointer; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6); -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6); box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6); background-color: transparent; background-color: rgba(0, 0, 0, 0.9); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000); zoom: 1; }
-/* line 87, ../scss/bodoke/settings/_fonts.scss */
+/* line 88, ../scss/bodoke/settings/_fonts.scss */
 .bdk-lightbox .close [class*=fa] { font-size: 14px; line-height: 30px; display: block; color: white; }
 
 /* line 35, ../scss/bodoke/object/_slider.scss */
@@ -897,9 +936,25 @@ body.bdk-lightbox-active #bdk-blackout { display: block; }
 pre, code { font-family: "Courrier", "courrier new", monospace !important; }
 
 /* line 7, ../scss/bodoke/object/_code.scss */
-pre { white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ white-space: -pre-wrap; /* Opera 4-6 */ white-space: -o-pre-wrap; /* Opera 7 */ word-wrap: break-word; /* Internet Explorer 5.5+ */ white-space: pre-wrap; /* css-3 */ -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: #e6e6e6; -moz-transition: all 0.35s; -o-transition: all 0.35s; -webkit-transition: all 0.35s; transition: all 0.35s; border: 1px solid #b3b3b3; padding: 10px 12px; overflow: auto; text-align: left; }
-/* line 20, ../scss/bodoke/object/_code.scss */
+pre { white-space: -moz-pre-wrap; /* Mozilla, since 1999 */ white-space: -pre-wrap; /* Opera 4-6 */ white-space: -o-pre-wrap; /* Opera 7 */ word-wrap: break-word; /* Internet Explorer 5.5+ */ white-space: pre-wrap; /* css-3 */ -moz-tab-size: 4; -o-tab-size: 4; -webkit-tab-size: 4; -ms-tab-size: 4; tab-size: 4; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background: #e6e6e6; border: 1px solid #b3b3b3; padding: 10px 12px; overflow: auto; text-align: left; font-size: 12px; }
+/* line 25, ../scss/bodoke/object/_code.scss */
 pre:hover { position: relative; z-index: 99; -moz-box-shadow: 0 0 5px 1px #69afeb; -webkit-box-shadow: 0 0 5px 1px #69afeb; box-shadow: 0 0 5px 1px #69afeb; }
+/* line 30, ../scss/bodoke/object/_code.scss */
+pre span { display: inline-block; }
+/* line 33, ../scss/bodoke/object/_code.scss */
+pre span.tab-1 { margin-left: 10px; }
+/* line 33, ../scss/bodoke/object/_code.scss */
+pre span.tab-2 { margin-left: 20px; }
+/* line 33, ../scss/bodoke/object/_code.scss */
+pre span.tab-3 { margin-left: 30px; }
+/* line 33, ../scss/bodoke/object/_code.scss */
+pre span.tab-4 { margin-left: 40px; }
+/* line 33, ../scss/bodoke/object/_code.scss */
+pre span.tab-5 { margin-left: 50px; }
+/* line 37, ../scss/bodoke/object/_code.scss */
+pre span.folder { font-weight: 600; color: #2362ff; }
+/* line 41, ../scss/bodoke/object/_code.scss */
+pre span.com, pre span.comment { color: #a0a0a0; font-style: italic; }
 
 /* line 3, ../scss/bodoke/object/_bodoke-example.scss */
 html { height: 100%; }
@@ -946,19 +1001,19 @@ body.example #example-container { min-height: 100%; }
 .bdk-error .error-panel.warning { background-color: #dd4a3a; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.up { background-color: #dd4a3a; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.right { background-color: #dd4a3a; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #dd4a3a; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.down { background-color: #dd4a3a; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.left { background-color: #dd4a3a; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #dd4a3a; }
 /* line 62, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
@@ -966,19 +1021,19 @@ body.example #example-container { min-height: 100%; }
 .bdk-error .error-panel.alert { background-color: #fcb608; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.up { background-color: #fcb608; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.right { background-color: #fcb608; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #fcb608; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.down { background-color: #fcb608; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.left { background-color: #fcb608; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #fcb608; }
 /* line 62, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
@@ -986,19 +1041,19 @@ body.example #example-container { min-height: 100%; }
 .bdk-error .error-panel.success { background-color: #00a25f; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.up { background-color: #00a25f; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.right { background-color: #00a25f; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #00a25f; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.down { background-color: #00a25f; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 56, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.left { background-color: #00a25f; }
-/* line 427, ../scss/bodoke/settings/_mixins.scss */
+/* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #00a25f; }
 /* line 62, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }

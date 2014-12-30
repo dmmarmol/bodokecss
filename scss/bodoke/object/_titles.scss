@@ -17,16 +17,16 @@
 // Sizes
 // =========================
 .title {
-	&.small {
+	&.title-small {
 		$small: 1.4em;
 		font-size: $small;
 		// line-height: $small * 1.42857143;
 		line-height: 1.3em;
 	}
-	&.medium {
+	&.title-medium {
 		font-size: 2em;
 	}
-	&.bigger {
+	&.title-bigger {
 		font-size: 3.7em;
 		line-height: 1.1em;
 	}
