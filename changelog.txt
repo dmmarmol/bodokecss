@@ -26,6 +26,7 @@ Changelog
 // 11/12 	- Nuevas funciones de HugoGiraudel.com para manipular listas en SASS
 // 29/12 	- Nuevo flexbox() @mixin
 // 30/12 	- Nuevo android-input-border @mixin para estilizar inputs como en Android
+// 30/12 	- "code.scss" <pre> tag estilizado con <span> para comentarios y carpetas
 // ======================================
 //
 // Bodoke Status - 2015
