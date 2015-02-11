@@ -13,7 +13,7 @@
 
 		<!-- SCRIPT -->
 		<!-- <script src="js/vendor/jquery.js" type="text/javascript" charset="utf-8" async defer></script> -->
-		<script src="{{ site.baseurl }}/js/vendor/jquery.min.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="https://cdn.rawgit.com/dmmarmol/bodokecss/master/js/vendor/jquery.min.js" type="text/javascript" charset="utf-8" async defer></script>
 	</head>
 <body class="example">
 
@@ -42,12 +42,35 @@
 
 		<hr>
 
+		<section class="example-content">
+			<div class="row">
+				<div class="c12-12 cols">
+					<h1 class="title big">Estructura de archivos</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="c6-12 cols">
+					<pre>
+						<code>
+<span class="folder">scss</span> <span class="comment">// carpeta con todos los archivos</span>
+	<span class="folder">app</span> <span class="comment">// todos los archivos del sitio van acá</span>
+	<span class="folder">bodoke</span> <span class="comment">// el corazón del bodoke</span>
+	<span class="folder">media</span> <span class="comment">// hojas de scss para cada regla de media queries </span>
+						</code>
+					</pre>
+				</div>
+				<div class="c6-12 cols">
+					<pre></pre>
+				</div>
+			</div>
+		</section>
+
 		<!-- Nueva Grilla -->
 		<section class="example-content">
 			<div class="row">
 				<div class="c12-12 cols">
 					<div class="row">
-						<h2 id="#grid">Grilla</h2>
+						<h2 class="title title-small" id="#grid">Grilla</h2>
 					</div>
 					<div class="row example">
 						<div class="cols c1-12">c1-12</div>
@@ -72,7 +95,7 @@
 			<div class="row">
 				<div class="c12-12 cols">
 					<div class="row">
-						<h2 id="#grid">3 columnas</h2>
+						<h2 class="title title-small" id="#grid">3 columnas</h2>
 					</div>
 					<div class="row example">
 						<div class="c4-12 cols">.c4-12 .cols</div>
@@ -223,7 +246,7 @@
 		<section class="example-content">	
 			<div class="row example">
 				<div class="c3-12 cols">Three cols to the left</div>
-				<div class="c5-12 offset-4-12 cols">Five cols to the right</div>
+				<div class="c5-12 push4-12 cols">Five cols to the right</div>
 			</div>
 		</section>
 
@@ -247,64 +270,109 @@
 		</section>
 
 		<section class="example-content">
-			<h2>Columnas para pantallas chicas <strong>.md-c4-12</strong></h2>
+			<h2>Columnas para pantallas chicas <strong>.md4-12</strong></h2>
 			<div class="row example">
-				<div class="md-c4-12 c4-12 cols">4 Cols md(medium)</div>
-				<div class="md-c4-12 c4-12 cols">4 Cols md(medium)</div>
-				<div class="md-c4-12 c4-12 cols">4 Cols md(medium)</div>
+				<div class="md4-12 c4-12 cols">4 Cols md(medium)</div>
+				<div class="md4-12 c4-12 cols">4 Cols md(medium)</div>
+				<div class="md4-12 c4-12 cols">4 Cols md(medium)</div>
 			</div>
 		</section>
 
 		<section class="example-content">
-			<h2>2 columnas en pantallas chicas y 4 en tablet <strong>.md-c6-12</strong></h2>
+			<h2>2 columnas en pantallas chicas y 4 en tablet <strong>.md6-12</strong></h2>
 			<div class="row example">
-				<div class="md-c6-12 c6-12 cols hide-tablet">6 Cols md(medium)</div>
-				<div class="md-c6-12 c6-12 cols hide-tablet">6 Cols md(medium)</div>
+				<div class="md6-12 c6-12 cols hide-tablet">6 Cols md(medium)</div>
+				<div class="md6-12 c6-12 cols hide-tablet">6 Cols md(medium)</div>
 
-				<div class="tablet-c3-12 c3-12 cols hidden show-tablet">3 Cols tablet</div>
-				<div class="tablet-c3-12 c3-12 cols hidden show-tablet">3 Cols tablet</div>
-				<div class="tablet-c3-12 c3-12 cols hidden show-tablet">3 Cols tablet</div>
-				<div class="tablet-c3-12 c3-12 cols hidden show-tablet">3 Cols tablet</div>
+				<div class="tablet3-12 c3-12 cols hidden show-tablet">3 Cols tablet</div>
+				<div class="tablet3-12 c3-12 cols hidden show-tablet">3 Cols tablet</div>
+				<div class="tablet3-12 c3-12 cols hidden show-tablet">3 Cols tablet</div>
+				<div class="tablet3-12 c3-12 cols hidden show-tablet">3 Cols tablet</div>
 			</div>
-			<h2>3 columnas en escritorio y 2 en tablet <strong>.tablet-c6-12</strong></h2>
+		</section>
+		
+		<section class="example-content">
+			<h2>3 columnas en escritorio y 2 en tablet <strong>.tablet6-12</strong></h2>
 			<div class="row example">
-				<div class="tablet-c6-12 c4-12 cols">4 Cols</div>
-				<div class="tablet-c6-12 c4-12 cols">4 Cols</div>
-				<div class="tablet-c6-12 c4-12 cols hide-tablet">4 Cols</div>
+				<div class="tablet6-12 c4-12 cols">4 Cols</div>
+				<div class="tablet6-12 c4-12 cols">4 Cols</div>
+				<div class="tablet6-12 c4-12 cols hide-tablet">4 Cols</div>
 			</div>
 		</section>
 
 		<section class="example-content">
 			<h2>Columnas para mobile <strong>.mobile</strong></h2>
 			<div class="row example">
-				<div class="mobile-c4-12 c4-12 cols">4 Cols mobile</div>
-				<div class="mobile-c4-12 c4-12 cols">4 Cols mobile</div>
-				<div class="mobile-c4-12 c4-12 cols">4 Cols mobile</div>
+				<div class="mobile4-12 c4-12 cols">4 Cols mobile</div>
+				<div class="mobile4-12 c4-12 cols">4 Cols mobile</div>
+				<div class="mobile4-12 c4-12 cols">4 Cols mobile</div>
 			</div>
 		</section>
 
 		<section class="example-content">
 			<h2>Columnas para tablet <strong>.tablet</strong></h2>
 			<div class="row example">
-				<div class="tablet-c4-12 c4-12 cols">4 Cols tablet</div>
-				<div class="tablet-c4-12 c4-12 cols">4 Cols tablet</div>
-				<div class="tablet-c4-12 c4-12 cols">4 Cols tablet</div>
+				<div class="tablet4-12 c4-12 cols">4 Cols tablet</div>
+				<div class="tablet4-12 c4-12 cols">4 Cols tablet</div>
+				<div class="tablet4-12 c4-12 cols">4 Cols tablet</div>
 			</div>			
 		</section>
 
 		<section class="example-content">
 			<h2>Botones</h2>
-			<div class="row row-one">
-				<button class="button">Boton #1</button>
+			<div class="row row-four">
+				<pre>&lt;button class="button"&gt;</pre>
+				<ul class="list list-inline-block list-separated">
+					<li class="item"><button class="button">Boton #1</button></li>
+					<li class="item"><button class="button button-red large">Boton #2</button></li>
+					<li class="item"><button class="button button-blue">Boton #3</button></li>
+					<li class="item"><button class="button button-green">Boton #4</button></li>
+					<li class="item"><button class="button button-yellow">Boton #5</button></li>
+					<li class="item"><button class="button button-white">Boton #6</button></li>
+				</ul>
 			</div>
-			<div class="row row-one">
-				<button class="button large">Boton #2</button>
+			<div class="row row-four">
+				<ul class="list list-inline-block list-separated">
+					<li class="item"><button class="button button-medium">Boton #1</button></li>
+					<li class="item"><button class="button button-medium button-red">Boton #2</button></li>
+					<li class="item"><button class="button button-medium button-blue">Boton #3</button></li>
+					<li class="item"><button class="button button-medium button-green">Boton #4</button></li>
+					<li class="item"><button class="button button-medium button-yellow">Boton #5</button></li>
+					<li class="item"><button class="button button-medium button-white">Boton #6</button></li>
+				</ul>
 			</div>
-			<div class="row row-one">
-				<button class="button red">Boton #3</button>
+			<div class="row row-four">
+				<ul class="list list-inline-block list-separated">
+					<li class="item"><button class="button button-large">Boton #1</button></li>
+					<li class="item"><button class="button button-large button-red">Boton #2</button></li>
+					<li class="item"><button class="button button-large button-blue">Boton #3</button></li>
+					<li class="item"><button class="button button-large button-green">Boton #4</button></li>
+					<li class="item"><button class="button button-large button-yellow">Boton #5</button></li>
+					<li class="item"><button class="button button-large button-white">Boton #6</button></li>
+				</ul>
+			</div>
+			<div class="row row-four">
+				<ul class="list list-inline-block list-separated">
+					<li class="item"><button class="button button-big">Boton #1</button></li>
+					<li class="item"><button class="button button-big button-red">Boton #2</button></li>
+					<li class="item"><button class="button button-big button-blue">Boton #3</button></li>
+					<li class="item"><button class="button button-big button-green">Boton #4</button></li>
+					<li class="item"><button class="button button-big button-yellow">Boton #5</button></li>
+					<li class="item"><button class="button button-big button-white">Boton #6</button></li>
+				</ul>
 			</div>
 		</section>
 		
+		<section class="example-content">
+			<h2>FontAwesome <small>4.2.0</small></h2>
+			<i class="fa-glass" title="glass"></i>
+			<i class="fa-music" title="music"></i>
+			<i class="fa-flag" title="flag"></i>
+			<i class="fa-repeat" title="repeat"></i>
+			<i class="fa-facebook-square" title="facebook-square"></i>
+			<i class="fa-twitter-square" title="twitter-square"></i>
+		</section>
+
 
 
 		<!--
