@@ -148,3 +148,32 @@
 	}
   	@return null;
 }
+
+// 0.1.4
+// Revierte el orden de una lista
+// ====================
+@function reverse($list, $recursive: false) {
+   $result: ();
+
+   @for $i from length($list)*-1 through -1 {
+      @if type-of(nth($list, abs($i))) == list and $recursive {
+        $result: append($result, reverse(nth($list, abs($i)), $recursive));      
+      }
+
+      @else {
+        $result: append($result, nth($list, abs($i)));
+      }
+   }
+
+   @return $result;
+}
+// 0.1.4
+// Toma una lista, la invierte, devuelve el valor de un item
+// según su correspondiente indice y lo multiplica por 10
+// ====================
+@function z($list, $value) {
+	$reverse: reverse($list);
+	$index: index($reverse, $value);
+	$index: $index * 10;
+	@return $index;
+}

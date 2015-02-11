@@ -31,3 +31,6 @@ Changelog
 //
 // Bodoke Status - 2015
 // ======================================
+// 29/01	- Nueva función "i()" para obtener el indice de una lista y multiplicarlo * 10
+// 30/11 	- Nueva función "reverse()" para invertir orden en las listas de SASS - by http://hugogiraudel.com
+// 09/02	- Renombrada la función "i()" por "z()", para devolver los indices de una lista y usar dentro del z-index.
