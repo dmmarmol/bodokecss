@@ -2,7 +2,7 @@ Bodoke CSS
 ==========
 
 ### Still at development.
-###### Current versión: Beta 0.1.4 (Amon Apprentice)
+###### Current versión: Beta 0.1.4 (Amon Ed)
 
 
 Bodoke is a CSS/SCSS Front-end Framework created for supporting multiple grids in a single project and with a minimum of own design. Is visually clean for you to design with your own custom identity.
