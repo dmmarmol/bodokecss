@@ -7,3 +7,5 @@
 .sass-cache
 *.datastore
 *.blobstore
+*.sublime-project
+*.sublime-workspace
