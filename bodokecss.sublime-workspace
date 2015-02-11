@@ -1,0 +1,1969 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"acc",
+				"accordion-color"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"gcba",
+				"gcba-icon-size"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"acco",
+				"accordion_items"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"footer",
+				"footer-height"
+			],
+			[
+				"field",
+				"field-email"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"scroll",
+				"scrollimateIsMobile"
+			],
+			[
+				"Scr",
+				"scrollimate"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"off",
+				"offsetTop"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"smar",
+				"smartphone"
+			],
+			[
+				"body",
+				"body_css_class"
+			],
+			[
+				"meta",
+				"meta_output"
+			],
+			[
+				"functio",
+				"function_exists"
+			],
+			[
+				"message",
+				"message_error"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"ADMIN",
+				"ADMINURI"
+			],
+			[
+				"active",
+				"active_group"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"notifi",
+				"notification"
+			],
+			[
+				"back-",
+				"background-image"
+			],
+			[
+				"nth",
+				"nth-child"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"sidenav-la",
+				"sidenav-lang-width"
+			],
+			[
+				"side",
+				"sidenav"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"u",
+				"uppercase"
+			],
+			[
+				"new",
+				"new-height"
+			],
+			[
+				"medium-",
+				"medium-width"
+			],
+			[
+				"tranl",
+				"translateX"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"tra",
+				"translateY"
+			],
+			[
+				"google",
+				"google-red"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"mixin",
+				"mixins"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"visi",
+				"visible"
+			],
+			[
+				"ver",
+				"vertical-align"
+			],
+			[
+				"trana",
+				"translateX"
+			],
+			[
+				"thumb",
+				"thumbnail"
+			],
+			[
+				"journal",
+				"journal-pic-width"
+			],
+			[
+				"accot",
+				"account-size"
+			],
+			[
+				"atte",
+				"attendee-pic-size"
+			],
+			[
+				"block",
+				"block_width"
+			],
+			[
+				"nav",
+				"nav-height"
+			],
+			[
+				"attendee",
+				"attendees-list"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"header",
+				"headerBehavior"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"sidebar",
+				"sidebarLeft"
+			],
+			[
+				"pl",
+				"plugin"
+			],
+			[
+				"navigat",
+				"navigation-size"
+			],
+			[
+				"navi",
+				"navigation-size"
+			],
+			[
+				"google-",
+				"google-yellow"
+			],
+			[
+				"left",
+				"left-baseline"
+			],
+			[
+				"baseline",
+				"baseline-offset"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"mexico",
+				"mexico-df"
+			],
+			[
+				"blac",
+				"blackout"
+			],
+			[
+				"messa",
+				"message-height"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"date",
+				"date-line-height"
+			],
+			[
+				"max-",
+				"max-height"
+			],
+			[
+				"goog",
+				"google-red"
+			],
+			[
+				"hsl",
+				"hsl()"
+			],
+			[
+				"animatio",
+				"animation-arguments"
+			],
+			[
+				"city",
+				"city_slug"
+			],
+			[
+				"initial",
+				"initialize"
+			],
+			[
+				"white",
+				"white-space"
+			],
+			[
+				"full",
+				"full-width"
+			],
+			[
+				"opa",
+				"opacity"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"ps",
+				"position"
+			],
+			[
+				"vi",
+				"visibility"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"key",
+				"keyframes"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"featured-",
+				"featured-object"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"chal",
+				"challenges"
+			],
+			[
+				"add_",
+				"add_css"
+			],
+			[
+				"langa",
+				"languages"
+			],
+			[
+				"attac",
+				"attachment-size"
+			],
+			[
+				"ata",
+				"attachment-size"
+			],
+			[
+				"server",
+				"server-ip"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"th-w",
+				"th-width"
+			],
+			[
+				"result",
+				"result-height"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"hi",
+				"hidden"
+			],
+			[
+				"drop",
+				"drop-height"
+			],
+			[
+				"dro",
+				"drop-height"
+			],
+			[
+				"row",
+				"row-size-px"
+			],
+			[
+				"border-r",
+				"border-right-color"
+			],
+			[
+				"b",
+				"black"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"option",
+				"option-size"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"butto",
+				"button-pressed-offset"
+			],
+			[
+				"score",
+				"score-height"
+			],
+			[
+				"f",
+				"font-weight"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"label",
+				"label-count"
+			],
+			[
+				"button-",
+				"button-height"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "changelog.txt",
+			"settings":
+			{
+				"buffer_size": 1823,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/_bodoke.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 14803,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/app.css",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "basic-grid-example.html",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/bodoke/settings/_functions.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/bodoke/settings/_colors.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/bodoke/object/_buttons.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/app.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/bodoke/object/_lightbox.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/bodoke/object/_titles.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"file": "scss/bodoke/object/_code.scss",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 67.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: s",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 505.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/app.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/changelog.txt",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/css/app.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/settings/_colors.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/settings/_fonts.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/grid/_grid.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/settings/_functions.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/settings/_mixins.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/index2.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/_bodoke.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/object/_input.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/settings/_config.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/object/_font-icons.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/object/_list.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/object/_icons.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/object/_menu.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/object/_text.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/object/_titles.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/bodoke/object/_animations.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/app/_index.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/media/_1024_tablet.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss/media/_1024.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/.gitignore",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/_faq.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/_icons.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/bootstrap.plus.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/solicitar-informacion.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/process_form.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/estadisticas.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/css/app.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/navbar.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/mapa-comunas.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/js/jvectormap/jquery-jvectormap-2.0.1.min.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/header.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/mapa.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/head.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/_accordion.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/structure/_footer.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/js/jvectormap/mapa-comunas.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/_map.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/js/main.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/app.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/scripts.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/footer.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/settings/_mixins.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/structure/_header.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/_home.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/_form.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/structure/_main.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/form.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/tab_tab1.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/tab_tab3.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/css/bastrap.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/estructure/_if-ie.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/form.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/estructure/_main.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/estructure/_footer.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/estructure/_header.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/btn-faq.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/settings/_functions.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/../_main.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/estructure/header.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/includes/tab_tab2.php",
+		"/Users/Convoy/Downloads/animate.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/_anim.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/css/bootstrap.plus.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/bodoke/object/_buttons.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/_mixins.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/bodoke/settings/_colors.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/js/jquery.validate.min.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/js/jquery.steps.min.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/index.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/js/jquery.bootstrap.wizard.min.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/bdk_index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/config.rb",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/bodoke/settings/_mixins.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/media/_mobile.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/media/_1024.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/app/_reset.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/bodoke/object/_font-icons.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/bodoke/settings/_helpers.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/_bodoke.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss/bodoke/grid/_grid.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/.gitignore",
+		"/Applications/XAMPP/xamppfiles/htdocs/myApp/www/js/controllers.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/myApp/www/templates/playlist.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/myApp/www/js/app.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/myApp/www/css/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/app/_navigation.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/object/_buttons.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/_apps.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/app/_aplication.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/.sass-cache/d0c45eaba5181d3693d8c0f743d79ac79d42576c/_aplication.scssc",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/app/_error.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/app.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/app/_apps.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/object/_font-icons.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/js/bdk-scrollimate-class.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/14039_developers_egipto/app.yaml",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/_error.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/object/_input.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/_bodoke.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/object/_table.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/_index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/object/_animations.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/grid/_reset.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/grid/_grid_1.2.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/settings/_mixins.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/settings/_colors.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/css/app.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/object/_list.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/media/_mobile.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/grid/_grid-media-mixin.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/js/bdk-scrollimate.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/grid/_grid.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/settings/_fonts.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/media/_1024.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/object/_text.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/object/_animations2.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/settings/_helpers.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/object/_titles.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/settings/_config.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/settings/_functions.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/images/background/section1.jpg",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/app/_reset.scss",
+		"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/static/global/scss/bodoke/grid/_normalize.min.scss"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Applications/XAMPP/xamppfiles/htdocs/bodokecss/scss",
+			"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/scss",
+			"/Applications/XAMPP/xamppfiles/htdocs/myApp/www/templates",
+			"/Applications/XAMPP/xamppfiles/htdocs/13001_todorico/site/app-bodoka",
+			"/Applications/XAMPP/xamppfiles/htdocs/13001_todorico/site/app-bodoka/controllers",
+			"/Applications/XAMPP/xamppfiles/htdocs/13001_todorico/site",
+			"/Applications/XAMPP/xamppfiles/htdocs/14030_lacajamobisite/",
+			"/Applications/XAMPP/xamppfiles/htdocs/bodokecss",
+			"/Applications/XAMPP/xamppfiles/htdocs/14010_developer_bus_2014/challenges/",
+			"/Applications/XAMPP/xamppfiles/htdocs/13072_rapsodia/application",
+			"/Applications/XAMPP/xamppfiles/htdocs/13072_rapsodia/",
+			"/Applications/XAMPP/xamppfiles/htdocs/13072_rapsodia/application/",
+			"/Applications/XAMPP/xamppfiles/htdocs/14018_purosol/wp-content/themes/Savia",
+			"/Applications/XAMPP/htdocs/14014_purosol/wp-content/themes/Savia/",
+			"/Applications/XAMPP/xamppfiles/htdocs/14014_purosol/wp-content/themes/Savia/",
+			"/Applications/XAMPP/xamppfiles/htdocs/13072_rapsodia/",
+			"/Applications/XAMPP/xamppfiles/htdocs/14025_profile_pic/",
+			"/Applications/XAMPP/xamppfiles/htdocs/14025_profile_pic/main/",
+			"/Applications/XAMPP/xamppfiles/htdocs/14010_developer_bus_2014/developerbus2014/",
+			"/Applications/XAMPP/xamppfiles/htdocs/14010_developer_bus_2014/developerbus2014/templates/developerbus2014",
+			"/Applications/XAMPP/xamppfiles/htdocs/14002_portfolio/blog/wp-content/themes/html5-bootstrap",
+			"/Applications/XAMPP/xamppfiles/htdocs/14002_portfolio/blog/wp-content/themes/dmm-blog",
+			"/Applications/XAMPP/xamppfiles/htdocs/14002_portfolio/blog/wp-content/theme/dmm-blog",
+			"/Applications/XAMPP/xamppfiles/htdocs/14002_portfolio/blog/",
+			"/Applications/XAMPP/xamppfiles/htdocs/14002_portfolio/blog/wp-content/themes/dmm-blog",
+			"/Applications/XAMPP/xamppfiles/htdocs/14002_portfolio/blog/",
+			"/Applications/XAMPP/xamppfiles/htdocs/14010_developer_bus_2014"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"comment",
+			"//",
+			"span",
+			"id",
+			"span",
+			"pre",
+			"$l",
+			"$i",
+			"i",
+			"-12",
+			"div",
+			"&",
+			"<h2 ",
+			"button-group-color",
+			"@mixin fa",
+			"$button-prefix",
+			"$button-group-prefix",
+			">2",
+			"2",
+			"-12",
+			"</",
+			"><",
+			"div",
+			"11",
+			"(Amon",
+			"Cactus",
+			"Apprentice",
+			"Amon Camaro",
+			"0.1.3",
+			"lista",
+			"@return",
+			"@",
+			": ;",
+			"//",
+			"nth(",
+			"1))",
+			"'red'",
+			"// border-color",
+			"'",
+			"border-color",
+			"border",
+			"#box-map",
+			"150)",
+			"rb(50,150,50)",
+			"rgb(150,50,50)",
+			"#00FF00",
+			"#FFFF00",
+			"#FF0000",
+			";}",
+			"{",
+			"id=\"box-",
+			"box-",
+			"3px",
+			"{}",
+			"clude transition(",
+			"lude trans",
+			":",
+			"$transition-spee",
+			"display: block;\n		margin-left: auto;\n		margin-right: auto;",
+			"80px",
+			"60px",
+			"flaticon",
+			"id=\"box-",
+			"rollover",
+			"class",
+			"flaticon-",
+			"before",
+			"content",
+			"{ content",
+			"{",
+			"folder}",
+			"${$font",
+			" + ",
+			"font-icon-prefix}-\"",
+			"font-icon",
+			"\"${$font-icon-prefix}-",
+			"\"${$font-icon-prefix}-\"",
+			"${$font",
+			"${$",
+			"flaticon",
+			"${$font-icon-prefi",
+			"small",
+			"p",
+			"vectorMap(",
+			"vectorMap",
+			"vectormap",
+			"vectorMap",
+			"comuna",
+			":",
+			",",
+			"{",
+			"fill:",
+			"fill",
+			"f022b7",
+			"<path",
+			"path",
+			"isCentered",
+			"setScale",
+			"setFocus",
+			"applyTransformParams",
+			"Transform",
+			"transform",
+			"Transform",
+			"transform",
+			"translate",
+			"},",
+			":",
+			":\n			{",
+			"\"name\"",
+			"name",
+			"\",",
+			":",
+			"e",
+			"\"",
+			"{}",
+			"check",
+			"toggleActive()",
+			"toggleActivePath",
+			"<path ",
+			"class=\"",
+			"fill=\"white",
+			"nth(",
+			"'blue'",
+			"<path",
+			")\"><",
+			"index",
+			"$map-stroke-color",
+			"darken"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"includes/template', $this->data",
+			"href=\"<?php echo base_url(); ?>app-bodoka-assets/css/admin/global.css\"",
+			"src=\"<?php echo base_url(); ?>app-bodoka-assets/css/",
+			"src=\"<?php echo base_url(); ?>app-bodoka-assets/js/",
+			"// ",
+			"<div id=\"main-container\" class=\"container full\">",
+			"<div id=\"main-container\" class=\"container\">"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "changelog.txt",
+					"settings":
+					{
+						"buffer_size": 1823,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scss/_bodoke.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 14803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/app.css",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 13660.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "basic-grid-example.html",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scss/bodoke/settings/_functions.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1941.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "scss/bodoke/settings/_colors.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "scss/bodoke/object/_buttons.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 55.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "scss/app.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 541.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "scss/bodoke/object/_lightbox.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "scss/bodoke/object/_titles.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "scss/bodoke/object/_code.scss",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.489755393472,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"functions",
+				"scss/bodoke/settings/_functions.scss"
+			],
+			[
+				"app.css",
+				"css/app.css"
+			],
+			[
+				"app.scss",
+				"scss/app.scss"
+			],
+			[
+				"code",
+				"scss/bodoke/object/_code.scss"
+			],
+			[
+				"title",
+				"scss/bodoke/object/_titles.scss"
+			],
+			[
+				"changelog",
+				"changelog.txt"
+			],
+			[
+				"fonts",
+				"scss/bodoke/settings/_fonts.scss"
+			],
+			[
+				"lightbox.scss",
+				"scss/bodoke/object/_lightbox.scss"
+			],
+			[
+				"color",
+				"scss/bodoke/settings/_colors.scss"
+			],
+			[
+				"input.scss",
+				"scss/bodoke/object/_input.scss"
+			],
+			[
+				"change",
+				"changelog.txt"
+			],
+			[
+				"bodoke.scss",
+				"scss/_bodoke.scss"
+			],
+			[
+				"buttons",
+				"scss/bodoke/object/_buttons.scss"
+			],
+			[
+				"grid.scss",
+				"scss/bodoke/grid/_grid.scss"
+			],
+			[
+				"app.scs",
+				"scss/app.scss"
+			],
+			[
+				"animations",
+				"scss/bodoke/object/_animations.scss"
+			],
+			[
+				"titles",
+				"scss/bodoke/object/_titles.scss"
+			],
+			[
+				"text",
+				"scss/bodoke/object/_text.scss"
+			],
+			[
+				"menu",
+				"scss/bodoke/object/_menu.scss"
+			],
+			[
+				"icon.scss",
+				"scss/bodoke/object/_icons.scss"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"mixins",
+				"scss/bodoke/settings/_mixins.scss"
+			],
+			[
+				"inputscss",
+				"scss/bodoke/object/_input.scss"
+			],
+			[
+				"icons",
+				"scss/bodoke/object/_icons.scss"
+			],
+			[
+				"fonts.scss",
+				"scss/bodoke/settings/_fonts.scss"
+			],
+			[
+				"functions.scss",
+				"scss/settings/_functions.scss"
+			],
+			[
+				"accordion.scss",
+				"scss/_accordion.scss"
+			],
+			[
+				"mixins.scss",
+				"scss/settings/_mixins.scss"
+			],
+			[
+				"plus",
+				"scss/bootstrap.plus.scss"
+			],
+			[
+				"icons.scss",
+				"scss/_icons.scss"
+			],
+			[
+				"footer.scss",
+				"scss/structure/_footer.scss"
+			],
+			[
+				"footer",
+				"includes/footer.php"
+			],
+			[
+				"navbar",
+				"includes/navbar.php"
+			],
+			[
+				"head.php",
+				"includes/head.php"
+			],
+			[
+				"header",
+				"includes/header.php"
+			],
+			[
+				"faq.scss",
+				"scss/_faq.scss"
+			],
+			[
+				"main.scss",
+				"scss/structure/_main.scss"
+			],
+			[
+				"estadisticas",
+				"estadisticas.php"
+			],
+			[
+				"scripts",
+				"includes/scripts.php"
+			],
+			[
+				"head.",
+				"includes/head.php"
+			],
+			[
+				"header.scss",
+				"scss/structure/_header.scss"
+			],
+			[
+				"header.php",
+				"includes/header.php"
+			],
+			[
+				"footer.",
+				"includes/footer.php"
+			],
+			[
+				"form",
+				"includes/form.php"
+			],
+			[
+				"head",
+				"includes/head.php"
+			],
+			[
+				"heade",
+				"includes/header.php"
+			],
+			[
+				"tab1",
+				"includes/tab_tab1.php"
+			],
+			[
+				"tab3",
+				"includes/tab_tab3.php"
+			],
+			[
+				"bastra",
+				"css/bastrap.css"
+			],
+			[
+				"structure/main",
+				"scss/structure/_main.scss"
+			],
+			[
+				"ie",
+				"scss/estructure/_if-ie.scss"
+			],
+			[
+				"form.scss",
+				"scss/_form.scss"
+			],
+			[
+				"footer.php",
+				"includes/footer.php"
+			],
+			[
+				"header.",
+				"includes/header.php"
+			],
+			[
+				"header.css",
+				"scss/estructure/_header.scss"
+			],
+			[
+				"faq.php",
+				"includes/btn-faq.php"
+			],
+			[
+				"form.",
+				"form.php"
+			],
+			[
+				"tab2",
+				"includes/tab_tab2.php"
+			],
+			[
+				"bastrap",
+				"css/bastrap.css"
+			],
+			[
+				"home.scss",
+				"scss/_home.scss"
+			],
+			[
+				"index.",
+				"index.php"
+			],
+			[
+				"faq",
+				"includes/btn-faq.php"
+			],
+			[
+				"index.php",
+				"index.php"
+			],
+			[
+				"boos.css",
+				"css/bootstrap.plus.css"
+			],
+			[
+				"bootstra",
+				"scss/bootstrap.plus.scss"
+			],
+			[
+				"include/head",
+				"includes/head.php"
+			],
+			[
+				"anim",
+				"scss/_anim.scss"
+			],
+			[
+				"helpers.scss",
+				"scss/bodoke/settings/_helpers.scss"
+			],
+			[
+				"mixin.scss",
+				"scss/bodoke/settings/_mixins.scss"
+			],
+			[
+				"buttons.scss",
+				"scss/bodoke/object/_buttons.scss"
+			],
+			[
+				"font-icons",
+				"scss/bodoke/object/_font-icons.scss"
+			],
+			[
+				"1024",
+				"scss/media/_1024.scss"
+			],
+			[
+				"mobile",
+				"scss/media/_mobile.scss"
+			],
+			[
+				"app/reset",
+				"scss/app/_reset.scss"
+			],
+			[
+				"colors.scss",
+				"scss/bodoke/settings/_colors.scss"
+			],
+			[
+				"animation",
+				"scss/bodoke/object/_animations.scss"
+			],
+			[
+				"aplication",
+				"static/global/scss/app/_aplication.scss"
+			],
+			[
+				"animations.scss",
+				"static/global/scss/bodoke/object/_animations.scss"
+			],
+			[
+				"aplica",
+				"static/global/scss/app/_aplication.scss"
+			],
+			[
+				"button.scss",
+				"static/global/scss/bodoke/object/_buttons.scss"
+			],
+			[
+				"error.scss",
+				"static/global/scss/app/_error.scss"
+			],
+			[
+				"input",
+				"static/global/scss/bodoke/object/_input.scss"
+			],
+			[
+				"apps.scss",
+				"static/global/scss/app/_apps.scss"
+			],
+			[
+				"grid1",
+				"static/global/scss/bodoke/grid/_grid_1.2.scss"
+			],
+			[
+				"table.scss",
+				"static/global/scss/bodoke/object/_table.scss"
+			],
+			[
+				"buttons.scs",
+				"static/global/scss/bodoke/object/_buttons.scss"
+			],
+			[
+				"list.scss",
+				"static/global/scss/bodoke/object/_list.scss"
+			],
+			[
+				"1.2",
+				"static/global/scss/bodoke/grid/_grid_1.2.scss"
+			],
+			[
+				"scrollimate",
+				"static/global/js/bdk-scrollimate.js"
+			],
+			[
+				"grid_media",
+				"static/global/scss/bodoke/grid/_grid-media-mixin.scss"
+			],
+			[
+				"grid",
+				"static/global/scss/bodoke/grid/_grid_1.2.scss"
+			],
+			[
+				"bodoke/title",
+				"static/global/scss/bodoke/object/_titles.scss"
+			],
+			[
+				"config",
+				"static/global/scss/bodoke/settings/_config.scss"
+			],
+			[
+				"grid1.2",
+				"static/global/scss/bodoke/grid/_grid_1.2.scss"
+			],
+			[
+				"template",
+				"app-bodoka/views/include/template.php"
+			],
+			[
+				"global.css",
+				"app-bodoka-assets/css/admin/global.css"
+			],
+			[
+				"bodoka/autoload",
+				"app-bodoka/config/autoload.php"
+			],
+			[
+				"admin",
+				"app-bodoka/controllers/admin_products.php"
+			],
+			[
+				"database",
+				"app-bodoka/config/database.php"
+			],
+			[
+				"bodoka/routes",
+				"app-bodoka/config/routes.php"
+			],
+			[
+				"bodoka/constants",
+				"app-bodoka/application/config/constants.php"
+			],
+			[
+				"bodoka/config/config.php",
+				"site/bodoka/application/config/config.php"
+			],
+			[
+				"bodokescss",
+				"scss/_bodoke.scss"
+			],
+			[
+				"b",
+				".sass-cache/e544e1d3bda18dbd1170af16dd245bbad965f5e7/_bodoke.scssc"
+			],
+			[
+				"sidenav",
+				"main/static/global/scss/_side-nav.scss"
+			],
+			[
+				"drop",
+				"main/static/global/scss/bodoke/object/_dropdown.scss"
+			],
+			[
+				"search.scss",
+				"main/static/global/scss/header/_search.scss"
+			],
+			[
+				"768",
+				"main/static/global/scss/media/_768.scss"
+			],
+			[
+				"notification",
+				"main/templates/main/notification.html"
+			],
+			[
+				"notifica",
+				"main/templates/main/notification.html"
+			],
+			[
+				"notificac",
+				"main/static/global/scss/header/_notifications.scss"
+			],
+			[
+				"box-de",
+				"main/static/global/scss/_box-detail.scss"
+			],
+			[
+				"sidenav/detail",
+				"main/static/global/scss/sidenav/_detail.scss"
+			],
+			[
+				"user-data",
+				"main/static/global/scss/header/_user-data.scss"
+			],
+			[
+				"box.scss",
+				"main/static/global/scss/_box.scss"
+			],
+			[
+				"wall.scss",
+				"main/static/global/scss/_wall.scss"
+			],
+			[
+				"slider.scss",
+				"main/static/global/scss/bodoke/object/_slider.scss"
+			],
+			[
+				"subheader.scss",
+				"main/static/global/scss/header/_subheader.scss"
+			],
+			[
+				"sidenav/main",
+				"main/static/global/scss/sidenav/_main.scss"
+			],
+			[
+				"subheader",
+				"main/static/global/scss/header/_subheader.scss"
+			],
+			[
+				"detail.scss",
+				"main/static/global/scss/sidenav/_detail.scss"
+			],
+			[
+				"wall.html",
+				"main/templates/main/wall.html"
+			],
+			[
+				"box-preview",
+				"main/static/global/scss/_box-preview.scss"
+			],
+			[
+				"box-detail.scss",
+				"main/static/global/scss/_box-detail.scss"
+			],
+			[
+				"mobile.scss",
+				"main/static/global/scss/media/_mobile.scss"
+			],
+			[
+				"sidenav.scss",
+				"main/static/global/scss/_side-nav.scss"
+			],
+			[
+				"content.scss",
+				"main/static/global/scss/_content.scss"
+			],
+			[
+				"sidenav/detail.scss",
+				"main/static/global/scss/sidenav/_detail.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"k",
+				"/Applications/XAMPP/xamppfiles/htdocs/14040_kiddies_calendario/kiddies-calendario.sublime-project"
+			],
+			[
+				"",
+				"/Applications/XAMPP/xamppfiles/htdocs/14040_kiddies_calendario/kiddies-calendario.sublime-project"
+			],
+			[
+				"kiddies",
+				"/Applications/XAMPP/xamppfiles/htdocs/14040_kiddies_calendario/kiddies-calendario.sublime-project"
+			],
+			[
+				"kidies",
+				"/Applications/XAMPP/xamppfiles/htdocs/14040_kiddies_calendario/kiddies-calendario.sublime-project"
+			],
+			[
+				"testing",
+				"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/testing-mobile-apps.sublime-project"
+			],
+			[
+				"test",
+				"/Applications/XAMPP/xamppfiles/htdocs/14038_testing_apps_platform/main/testing-mobile-apps.sublime-project"
+			],
+			[
+				"ki",
+				"/Applications/XAMPP/xamppfiles/htdocs/14040_kiddies_calendario/kiddies-calendario.sublime-project"
+			],
+			[
+				"padres",
+				"/Applications/XAMPP/xamppfiles/htdocs/14041_gcba_portal_padres/gcba-padres.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true
+}
