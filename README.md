@@ -10,7 +10,6 @@ Bodoke is a CSS/SCSS Front-end Framework created for supporting multiple grids i
 His base idea is to be responsive and not visualy contaminated. 
 It supports desktop, mobile and tablet websites using semantic clases in html.
 
-Project docs coming soon...
+(un)finished Bodoke site: http://dmmarmol.github.io/bodokecss
 
-(un)stable Bodoke site (still learning how to use jeykill :P)
-http://dmmarmol.github.io/bodokecss
+Project docs coming soon...
