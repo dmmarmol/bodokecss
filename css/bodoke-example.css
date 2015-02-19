@@ -294,19 +294,19 @@ body.example #example-container { min-height: 100%; }
 /* line 34, ../scss/bodoke-example.scss */
 .example-header .container { position: absolute; top: 18%; text-align: center; max-width: 100%; width: 100%; }
 /* line 41, ../scss/bodoke-example.scss */
-.example-header h1 { margin-bottom: 10px; color: white; line-height: 1; text-indent: -4px; font-size: 6.5em; font-weight: 500; font-family: "Bodoke" "Open Sans", sans-serif; }
-/* line 50, ../scss/bodoke-example.scss */
+.example-header h1 { margin-top: 0; margin-bottom: 10px; color: white; line-height: 1; text-indent: -4px; font-size: 6.5em; font-weight: 500; font-family: "Bodoke" "Open Sans", sans-serif; }
+/* line 51, ../scss/bodoke-example.scss */
 .example-header small { color: white; font-size: 1.8em; }
 
-/* line 55, ../scss/bodoke-example.scss */
+/* line 56, ../scss/bodoke-example.scss */
 .example-content { margin-top: 1em; margin-bottom: 4.6875em; padding-left: 0.9375em; padding-right: 0.9375em; padding-bottom: 0.9375em; border-bottom: 1px solid #ebebeb; }
 
-/* line 65, ../scss/bodoke-example.scss */
+/* line 66, ../scss/bodoke-example.scss */
 .mobile.col, .mobile.cols, .mobile.column, .mobile.columns { background-color: #69afeb; }
 
-/* line 70, ../scss/bodoke-example.scss */
+/* line 71, ../scss/bodoke-example.scss */
 .row.example { border-top: 1px solid #b3b3b3; border-bottom: 1px solid #b3b3b3; }
-/* line 73, ../scss/bodoke-example.scss */
+/* line 74, ../scss/bodoke-example.scss */
 .row.example .col, .row.example .cols, .row.example .column, .row.example .columns { padding-top: 8px; padding-bottom: 8px; background: #f2f2f2; border-left: 1px solid #b3b3b3; border-right: 1px solid #b3b3b3; font-weight: 600; color: #595959; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; /* Prefix for Opera Mini 5.0 - 7.0 */ }
-/* line 82, ../scss/bodoke-example.scss */
+/* line 83, ../scss/bodoke-example.scss */
 .row.example .col .col, .row.example .col .cols, .row.example .col .column, .row.example .col .columns, .row.example .cols .col, .row.example .cols .cols, .row.example .cols .column, .row.example .cols .columns, .row.example .column .col, .row.example .column .cols, .row.example .column .column, .row.example .column .columns, .row.example .columns .col, .row.example .columns .cols, .row.example .columns .column, .row.example .columns .columns { padding-top: 0; padding-bottom: 0; border: none; }
