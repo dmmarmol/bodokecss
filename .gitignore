@@ -5,5 +5,9 @@
 .pydevproject
 .settings
 .sass-cache
+.logo
+.start-compass.bat
 *.datastore
 *.blobstore
+*.sublime-project
+*.sublime-workspace

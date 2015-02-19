@@ -32,6 +32,7 @@ table {
 		&:hover {  }
 	}
 	td {
+		position: relative;
 		border: none;
 		// border-right-width: 1px;
 		// border-right-style: solid;
@@ -59,11 +60,11 @@ table {
 @mixin table-color( $color-name, $color ) {
 	$table-bg: 		saturate( lighten( $color, 10% ), 10% );
 	$border-color:	darken( $table-bg, 10% );
-	&.#{$color-name} {
+	&.table-#{$color-name} {
 		thead {
 			th {
-				@include gradient( darken( $table-bg, 20%), darken( $table-bg, 30% ) );
-				// @include background( darken( $table-bg, 30% ) );
+				// @include gradient( darken( $table-bg, 20%), darken( $table-bg, 30% ) );
+				@include background( darken( $table-bg, 30% ) );
 			}
 		}
 		tbody, th {
@@ -85,17 +86,17 @@ table {
 			// border-right-color: $border-color;
 			// border-left-color: $border-color;
 			// border-bottom-color: $border-color;
-			&.even 	{ 
+			&:nth-child(even), &.even	{ 
 				$even-bg: darken( $table-bg, 4% );
 				@include background( $even-bg );  
 				// &:hover { 
 					// @include background( darken( $even-bg, 4.5% ) );
 				// }
 			}
+			&:nth-child(odd), &.odd	{ }
 			&:hover { 
 				@include background( darken( $border-color, 2.5% ) ); 
 			}
-			&.odd 	{ }
 		}
 		td {
 			border-right-color: $border-color;
@@ -103,8 +104,12 @@ table {
 	}	
 }
 
+
+// ==================
+// TABLE COLORS
+// ==================
 table {
-	@include table-color( 'blue', $google-light-blue );
-	@include table-color( 'dark-blue', $dark-blue );
-	@include table-color( 'light-gray', $google-gray );
+	@each $single-color in $tables-color-pallete {
+		@include table-color(  nth($single-color, 1), nth($single-color, 2) );
+	}
 }

@@ -1,0 +1,36 @@
+Changelog
+
+// Tunemypic.com 			// 0.0.1
+// La Caja					// 0.0.11
+// DeveloperBus2014			// 0.0.2
+// Youtube/Edu Gadget		// 0.0.3
+// Google ContentBox		// 0.0.5
+// Convoy testapp platform	// 0.1.0 - Nueva grilla
+// DeveloperBus - Egipto	// 0.1.2 (Amon Carolina)
+// Status update			// 0.1.3 (Amon Demian)
+// GCBA - Padres			// 0.1.4 (Amon Ed)
+
+// Bodoke Status - 2014
+// ======================================
+// 20/05 - Nacimiento	 
+// 19/09 - Upgrade en la grilla
+// 13/11 - Primera version con nombre: 0.1.2 (Amon Carolina)
+// 13/11 - Nuevo objeto "comments", para comentarios en redes sociales
+// 14/11 - Las columnas de la grilla ahora cambian su dirección de flotado dependiendo si [dir="rtl"] - grid 1.4
+// 17/11 - Actualizacion y organizacion del framework 0.1.3
+// 20/11 - Nueva "_transformations.scss" que define clases para animar objetos pero solo con la propiedad "transform", sin utilizar keyframes.
+// 25/11 - Proyecto GCBA padres
+// 			- @mixin color() ahora afecta también a todos los descendientes que sean <a>"
+// 			- Nuevo color "dark" para los botones
+// 11/12	- Cambio a la version 0.1.4 (Amon Ed)
+// 11/12 	- Nuevas funciones de HugoGiraudel.com para manipular listas en SASS
+// 29/12 	- Nuevo flexbox() @mixin
+// 30/12 	- Nuevo android-input-border @mixin para estilizar inputs como en Android
+// 30/12 	- "code.scss" <pre> tag estilizado con <span> para comentarios y carpetas
+// ======================================
+//
+// Bodoke Status - 2015
+// ======================================
+// 29/01	- Nueva función "i()" para obtener el indice de una lista y multiplicarlo * 10
+// 30/11 	- Nueva función "reverse()" para invertir orden en las listas de SASS - by http://hugogiraudel.com
+// 09/02	- Renombrada la función "i()" por "z()", para devolver los indices de una lista y usar dentro del z-index.

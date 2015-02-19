@@ -1,0 +1,74 @@
+// _list.scss
+
+@mixin list() {
+	@include clear();
+	list-style: none;
+}
+
+@mixin bdk-list() {
+	.list {
+		@include list();
+		margin-top: 0;
+		margin-bottom: 0;
+		&, &.vertical, &.vert {
+			// margin: 0;
+			padding-left: 0;
+			&.container {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.item {
+				margin: 0;
+				display: block;
+				float: none;
+			}
+		}
+		&.left-horizontal, &.left-horz {
+			.item, li { 
+				float: left; 
+			}
+		}
+		&.right-horizontal, &.right-horz {
+			.item, li { 
+				float: right; 
+			}
+		}
+		&.list-centered {
+			text-align: center;
+			.item {
+				float: none;
+				display: inline-block;				
+			}
+		}
+		&.list-inline-block {
+			display: inline-block;
+			li, .item {
+				display: inline-block;
+				margin-left: -0.3em; // inline-block gap fallback
+			}
+			&.list-separated {
+				li, .item {
+					margin-left: initial; // inline-block gap fallback					
+				}
+			}
+		}
+		.item {
+			@include clear();
+		}
+	}	
+	// Si esta especificada la direccion
+	// en la que fluye el texto en el body
+	[dir="rtl"] {
+		&.list-inline-block {
+			text-align: right;
+		}		
+	}
+	[dir="ltr"], [dir=""]  {
+		&.list-inline-block {
+			text-align: left;
+		}		
+	}
+}
+
+// Crea las listas
+@include bdk-list();

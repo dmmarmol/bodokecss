@@ -1,7 +1,7 @@
 // colors.scss
 
 // ======================
-// COLORES
+// COLORS
 // ======================
 // Borde Gris 			- #D2D2D2
 // Borde Gris Claro		- #ECECEC
@@ -11,46 +11,143 @@
 // Amarillo 			- #fcb608
 // Verde 				- #00a25f
 
-// ======================
-// ESCALA DE GRISES
-// ======================
-$black_15:		hsl(0, 0, 15%);
-$black_20:		hsl(0, 0, 20%); // dark-gray
-$black_27:		hsl(0, 0, 27%); // #444
-$black_60:		hsl(0, 0, 60%);
-$black_65:		hsl(0, 0, 65%); // gray
-$black_82:		hsl(0, 0, 82%); // light-gray
-$black_90:		hsl(0, 0, 90%);
-$black_95:		hsl(0, 0, 95%);
-$black_97:		hsl(0, 0, 97%);
-
 
 
 // ======================
-// CALIDOS
+// GRAYSCALE
 // ======================
-$red: 			#dd4a3a;
-$yellow: 		#fcb608;
-$orange:		#ff9900;
+$black_15:			hsl(0, 0, 15%);
+$black_20:			hsl(0, 0, 20%); // dark-gray
+$black_27:			hsl(0, 0, 27%); // #444
+$black_60:			hsl(0, 0, 60%);
+$black_65:			hsl(0, 0, 65%); // gray
+$black_82:			hsl(0, 0, 82%); // light-gray
+$black_90:			hsl(0, 0, 90%);
+$black_95:			hsl(0, 0, 95%);
+$black_97:			hsl(0, 0, 97%);
+
+$white:				hsl(0, 0, 98%);
+
+$gray:				$black_95;
+$gray-border:		hsl(0, 0, 90%);
+$gray-dark:			hsl(0, 0, 40%);
+$gray-light:		hsl(0, 0, 80%);
+
+// ======================
+// HOT COLORS
+// ======================
+$red: 				#dd4a3a;
+$yellow: 			#fcb608;
+$orange:			#ff9900;
 
 
 // ======================
-// FRIOS
+// COLD COLORS
 // ======================
-$cyan: 			#69afeb;
-$blue:			#2362ff;
-$dark-blue:		#37477D;
-$green: 		#00a25f;
+$cyan: 				#69afeb;
+$dark-blue:			#37477D;
+$green: 			#639728; // #649827;
+$pale-blue:			#07A3AA;
+$navy-blue:			#1079bb; // La Caja
+$blue:				#2362ff;
+$light-blue:		#55a0cf;
+// $blue:				dark($navy-blue);
 
 
-// BORRAR
-$google-gray:		$black_97;
-$google-blue:		$blue;
-$google-light-blue:	$cyan;
+
+$google-gray:		$gray;
+$google-blue:		#2362ff;
 $google-red: 		$red;
 $google-yellow:		$yellow;
-$google-green: 		$green;
+$google-green: 		#00a25f;
 
+
+// ======================
+// FULL COLOR PALLETE
+// ======================
+// (class, color)
+$color-pallete:	(
+	('white', 		white), 
+	('yellow', 		$google-yellow), 
+	('blue', 		$blue),
+	('red', 		$google-red),
+	('green', 		$green),
+	('pale-blue', 	$pale-blue),
+	('light-gray', 	#fafafa),
+	('gray', 		$google-gray),
+	('dark-gray', 	$gray-dark)
+);
+// Background Colors
+@each $color in $color-pallete {
+	.#{nth($color, 1)} {
+		background-color: nth($color, 2);					
+	}
+}
+// Text Colors
+@each $color in $color-pallete {
+	.#{nth($color, 1)}-text {
+		color: nth($color, 2);					
+	}
+}
+
+// ======================
+// BUTTON COLOR PALLETE
+// ======================
+// (class, color)
+$buttons-color-pallete:	(
+	('yellow', 		$google-yellow), 
+	('blue', 		$light-blue),
+	('red', 		$google-red),
+	('green', 		$green),
+	('gray', 		$google-gray),
+	('dark', 		#373737),
+	('white', 		white)
+);
+
+
+// ======================
+// TITLES COLOR PALLETE
+// ======================
+// (class, color)
+$titles-color-pallete:	(
+	('yellow', 		$google-yellow), 
+	('blue', 		$blue),
+	('red', 		$google-red),
+	('green', 		$green),
+	('gray', 		$google-gray)
+);
+
+
+// ======================
+// TABLES COLOR PALLETE
+// ======================
+// (class, color)
+$tables-color-pallete:	(
+	('yellow', 		$google-yellow), 
+	('blue', 		$blue),
+	('red', 		$google-red),
+	('green', 		$green),
+	('gray', 		$google-gray)
+);
+
+
+// ======================
+// ALERTAS
+// ======================
+$alerts-color-pallete: (
+	('warning', $red),
+	('alert', $yellow),
+	('success', $google-green)
+);
+
+
+
+// ======================
+// INSTITUCIONAL
+// ======================
+$institutional-color-pallete: (
+	('white', white)
+);
 
 // ======================
 // TEXTOS
@@ -62,6 +159,7 @@ $text-color:			$black_20;
 
 
 
+
 // ==============================
 // COLORES GENERALES APLICADOS
 // ==============================
@@ -69,17 +167,14 @@ $color-1:	$cyan;		// Primer color corporativo
 $color-2:	$black_82;  // Segundo color corporativo
 $color-3:	$black_20; 	// Color del texto
 
-* {
-	color: $color-3;
-}
 // Links
-a { 
-	color: $color-1;
-}
+// a { 
+// 	color: $color-1;
+// }
 // Reglas horizontales
-hr { 
-	background-color: $color-2;
-}
+// hr { 
+// 	background-color: $color-2;
+// }
 // Seleccion con el cursor
 ::-moz-selection, ::selection {
 	background: $color-2;
