@@ -177,3 +177,30 @@
 	$index: $index * 10;
 	@return $index;
 }
+
+
+// 0.1.5
+// Imprime los valores de una lista como un "consoe.log()"
+// ====================
+@function debugList($list) {
+  $result: #{"[ "};
+
+  @each $item in $list {
+    @if length($item) > 1 {
+      $result: $result#{debug($item)};
+    }
+    @else {
+      $result: $result#{$item};
+    }
+    @if index($list, $item) != length($list) {
+      $result: $result#{", "};
+    }
+  } 
+
+  $result: $result#{" ]"};
+
+  @return $result;
+}
+
+$list: (a b (c d (e f ( (g h (i j k)) l m))));
+$debug: debug($list);
