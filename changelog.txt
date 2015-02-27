@@ -9,7 +9,7 @@ Changelog
 // DeveloperBus - Egipto	// 0.1.2 (Amon Carolina)
 // Status update			// 0.1.3 (Amon Demian)
 // GCBA - Padres			// 0.1.4 (Amon Ed)
-// Codigoquemero			// 0.1.5 (Amon Funk)
+// Codigoquemero			// 0.1.5 (Amon Fabian)
 
 // Bodoke Status - 2014
 // ======================================
