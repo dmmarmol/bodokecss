@@ -80,8 +80,8 @@ $fa-version:			'4.2.0';
 	-moz-osx-font-smoothing: grayscale;
 }
 
-@import "../object/font-icons-variables";
-@import "../object/font-icons";
+@import "../component/font-icons-variables";
+@import "../component/font-icons";
 
 
 @mixin fa {

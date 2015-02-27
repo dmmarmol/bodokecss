@@ -21,7 +21,6 @@ $bodoke-prefix:				'bdk';
 
 // Compass CSS3 Mixins
 @import "compass/css3";
-// @import "compass/css3/images";
 
 // Settings & Config
 @import "bodoke/settings/config"; 				// config & variables
@@ -33,27 +32,25 @@ $bodoke-prefix:				'bdk';
 
 // Complements
 // ======================================
-@import "bodoke/object/buttons";
-// @import 'bodoke/object/buttons-google';	 		// GOOGLE BUTTONS (pre Material Design)
-@import "bodoke/object/icons";
+@import "bodoke/component/buttons";
+// @import 'bodoke/component/buttons-google';	 		// GOOGLE BUTTONS (pre Material Design)
+@import "bodoke/component/icons";
 
-@import "bodoke/object/animations";
-// @import "bodoke/object/transformations";		// 0.1.3
-@import "bodoke/object/titles";
-@import "bodoke/object/text";
-@import "bodoke/object/menu";
-@import "bodoke/object/list";
-@import "bodoke/object/input";
-@import "bodoke/object/comments";				// 0.1.2
-@import "bodoke/object/tooltip";
-@import "bodoke/object/dropdown";
-@import "bodoke/object/lang-dropdown.scss";
-@import "bodoke/object/table";
-@import "bodoke/object/lightbox";
-@import "bodoke/object/slider";
-@import "bodoke/object/slide-detail";
-@import "bodoke/object/code";
-@import "bodoke/object/bodoke-example"; 		// Comentar antes de empezar un proyecto
-
+@import "bodoke/component/animations";
+// @import "bodoke/component/transformations";		// 0.1.3
+@import "bodoke/component/titles";
+@import "bodoke/component/text";
+@import "bodoke/component/menu";
+@import "bodoke/component/list";
+@import "bodoke/component/input";
+@import "bodoke/component/comments";				// 0.1.2
+@import "bodoke/component/tooltip";
+@import "bodoke/component/dropdown";
+@import "bodoke/component/lang-dropdown.scss";
+@import "bodoke/component/table";
+@import "bodoke/component/lightbox";
+@import "bodoke/component/slider";
+@import "bodoke/component/slide-detail";
+@import "bodoke/component/code";
 // css helpers
 @import "bodoke/settings/helpers"; 	
