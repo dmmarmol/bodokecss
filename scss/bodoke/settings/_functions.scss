@@ -154,7 +154,6 @@
 // ====================
 @function reverse($list, $recursive: false) {
    $result: ();
-
    @for $i from length($list)*-1 through -1 {
       @if type-of(nth($list, abs($i))) == list and $recursive {
         $result: append($result, reverse(nth($list, abs($i)), $recursive));      
@@ -164,7 +163,6 @@
         $result: append($result, nth($list, abs($i)));
       }
    }
-
    @return $result;
 }
 // 0.1.4
