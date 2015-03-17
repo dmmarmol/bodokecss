@@ -543,9 +543,9 @@ $default-text-shadow-spread:	false;
 		@if $version == 8 {
 			$version: '.lt-ie9';
 		} @elseif $version == 7 {
-			$version: '.lt-ie8 .lt-ie9';
+			$version: '.lt-ie8, .lt-ie9';
 		} @elseif $version == 6 {
-			$version: '.lt-ie7 .lt-ie8 .lt-ie9';
+			$version: '.lt-ie7, .lt-ie8, .lt-ie9';
 		}
 	html.ie {
 		@if $version != false {

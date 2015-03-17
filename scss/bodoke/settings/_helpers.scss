@@ -3,23 +3,30 @@
 // Helper clases
 // 
 
+$loading-text:			'Cargando';
+$loading-size:			32px;
+$loading-top-offset:	70px;
+
 .loading {
-	background: img('preloader.gif') 50% 50% no-repeat;
-	background-size: 32px 32px;
+	background-image: img('loader01.gif');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: $loading-size $loading-size;
 	height: 100%;
 	position: relative;
-	min-height: 32px * 4;
+	min-height: $loading-size * 4;
 	&:before {
-		content: 'Loading...'!important;
+		content: $loading-text'...'!important;
 		position: absolute!important;
-		height: 20px;
+		height: $loading-size / 2;
 		margin: auto;
-		top: 0;
-		left: 0; right: 0; bottom: 0; top: 80px;
+		left: 0; right: 0; bottom: 0; top: $loading-top-offset;
 		width: 100px!important;
-		font-size: 14px;
+		font-size: 0.8em;
 		font-weight: bold;
 		text-align: center;
+		color: gray(40);
+		overflow: hidden;
 	}
 	.fade-container {
 		opacity: 1;

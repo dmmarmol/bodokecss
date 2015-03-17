@@ -79,13 +79,13 @@ $color-pallete:	(
 );
 // Background Colors
 @each $color in $color-pallete {
-	.#{nth($color, 1)} {
+	.bg-#{nth($color, 1)} {
 		background-color: nth($color, 2);					
 	}
 }
 // Text Colors
 @each $color in $color-pallete {
-	.#{nth($color, 1)}-text {
+	.text-#{nth($color, 1)} {
 		color: nth($color, 2);					
 	}
 }

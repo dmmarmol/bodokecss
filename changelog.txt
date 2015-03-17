@@ -29,9 +29,11 @@ Changelog
 // 30/12 	- Nuevo android-input-border @mixin para estilizar inputs como en Android
 // 30/12 	- "code.scss" <pre> tag estilizado con <span> para comentarios y carpetas
 // ======================================
-//
+
 // Bodoke Status - 2015
 // ======================================
 // 29/01	- Nueva función "i()" para obtener el indice de una lista y multiplicarlo * 10
 // 30/11 	- Nueva función "reverse()" para invertir orden en las listas de SASS - by http://hugogiraudel.com
 // 09/02	- Renombrada la función "i()" por "z()", para devolver los indices de una lista y usar dentro del z-index.
+// 02/03	- Nueva función "c()" para tomar los colores definidos previamente en el array "$color-pallete" ("_colors.scss").
+// 10/03	- "_colors.scss": renombradas las clases que dan color de fondo y color de texto según los colores del array "$color-pallete".

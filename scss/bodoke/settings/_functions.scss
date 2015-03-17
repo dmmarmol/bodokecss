@@ -202,3 +202,30 @@
 
 // $list: (a b (c d (e f ( (g h (i j k)) l m))));
 // $debug: debug($list);
+
+// 0.1.5
+// @param $color_name: Nombre del color
+// @param $color_list: Paleta de colores | default: $color-pallete
+//
+// Devuelve un color del array $color-pallete
+// en base al nombre del color 
+// ====================
+@function c($color_name, $color_list: $color-pallete) {
+	$r: '';
+
+	@for $i from 1 through length($color_list) {
+		$color: nth($color_list, $i);
+		$color_list_name: nth($color, 1);
+		$color_list_value: nth($color, 2);
+		// @debug $color_list_name;
+		// @debug $color_list_name + ' '+ $color_name;
+		@if ( $color_name == $color_list_name ) {
+			$r: $color_list_value;
+		}
+	}
+	@if ( $r != '' ) {
+		@return $r;
+	} @else {
+		@warn 'No existe un color con ese nombre definido en la paleta de colores';
+	}
+}
