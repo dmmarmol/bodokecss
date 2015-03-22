@@ -39,9 +39,9 @@
 // devuelve un color segun el indice
 // del array $institutional-color-pallete de colors.scss
 // ====================
-// @function color($key) {
-// 	@return map-get($institutional-color-pallete, $key);
-// }
+@function color($key) {
+	@return map-get($institutional-color-pallete, $key);
+}
  
 
 // 0.0.4
