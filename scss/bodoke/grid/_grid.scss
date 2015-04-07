@@ -18,8 +18,9 @@
 // =============================
 
 // Contenedor
-$container-width:	 		93.75%;			// .container width
-$container-max-width:	 	1260px;			// .container max-width
+$container:					'container';	// container classname
+$container-width:	 		93.75%;			// container width
+$container-max-width:	 	1260px;			// container max-width
 $container-full-width:		100%;			// biggest .col width
 // Grilla
 $grid-columns:				12;				// Cantidad de columnas base
@@ -66,11 +67,11 @@ $base-em:					16px;			// 16px = 1em
 	// Clearfix
 	@include clear();
 }
-.row-half 	{ margin-bottom:0.5em; }
-.row-one 	{ margin-bottom:1em; }
-.row-two 	{ margin-bottom:2em; }
-.row-three 	{ margin-bottom:3em; }
-.row-four 	{ margin-bottom:4em; }
+.row-half 	{ margin-bottom: $offset / 2; }
+.row-one 	{ margin-bottom: $offset; }
+.row-two 	{ margin-bottom: $offset * 2; }
+.row-three 	{ margin-bottom: $offset * 3; }
+.row-four 	{ margin-bottom: $offset * 4; }
 
 // Sections & Content Blocks
 .section {
@@ -78,7 +79,7 @@ $base-em:					16px;			// 16px = 1em
 	display: block;
 }
 
-.container {
+.#{$container} {
 	position: relative;
 	width: $container-width;
 	max-width: $container-max-width;
@@ -86,13 +87,7 @@ $base-em:					16px;			// 16px = 1em
 	margin-right: auto;
 	padding-left: $col-offset;
 	padding-right: $col-offset;
-	&.full {
-		width: 100%;
-		max-width: none;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.inner-container {
+	.inner-#{$container} {
 		padding-left: $col-offset;
 		padding-right: $col-offset;
 	}
@@ -108,6 +103,13 @@ $base-em:					16px;			// 16px = 1em
 		margin-right: 0;
 		margin-left: -$col-offset;
 	}
+}
+.#{$container}-full {
+	@extend .#{$container};
+	width: 100%;
+	max-width: none;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 // Debe permanecer vacia 

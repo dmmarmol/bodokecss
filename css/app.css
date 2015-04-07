@@ -1,62 +1,62 @@
-/* Bodoke.css ---------- Sexy & simple css framework made in SASS with easy configuration Inlcude FontAwesome!   author: 			Diego Martin Marmol website: 		www.diegomarmol.com.ar version:			0.1.4 (Amon Ed) release date:	20/05/14	 contributors: 	Leonardo Pittelli developed at:	Convoy S.R.L - www.convoy.me Compass:			1.0.1 (Polaris) SASS:			3.4.9 (Selective Steve) 
+/* Bodoke.css ---------- Sexy & simple css framework made in SASS with easy configuration Inlcude FontAwesome!   author: 			Diego Martin Marmol website: 		www.diegomarmol.com.ar version:			0.1.5 (Amon Fabian) release date:	20/05/14	 contributors: 	Leonardo Pittelli developed at:	Convoy S.R.L - www.convoy.me Compass:			1.0.1 (Polaris) SASS:			3.4.9 (Selective Steve) 
 */
 @font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.2.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 /* line 73, ../scss/bodoke/settings/_fonts.scss */
 [class*="fa"]:before { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 /* line 82, ../scss/bodoke/settings/_colors.scss */
-.white { background-color: white; }
+.bg-white { background-color: white; }
 
 /* line 82, ../scss/bodoke/settings/_colors.scss */
-.yellow { background-color: #fcb608; }
+.bg-yellow { background-color: #fcb608; }
 
 /* line 82, ../scss/bodoke/settings/_colors.scss */
-.blue { background-color: #2362ff; }
+.bg-blue { background-color: #2362ff; }
 
 /* line 82, ../scss/bodoke/settings/_colors.scss */
-.red { background-color: #dd4a3a; }
+.bg-red { background-color: #dd4a3a; }
 
 /* line 82, ../scss/bodoke/settings/_colors.scss */
-.green { background-color: #639728; }
+.bg-green { background-color: #639728; }
 
 /* line 82, ../scss/bodoke/settings/_colors.scss */
-.pale-blue { background-color: #07A3AA; }
+.bg-pale-blue { background-color: #07A3AA; }
 
 /* line 82, ../scss/bodoke/settings/_colors.scss */
-.light-gray { background-color: #fafafa; }
+.bg-light-gray { background-color: #fafafa; }
 
 /* line 82, ../scss/bodoke/settings/_colors.scss */
-.gray { background-color: #f2f2f2; }
+.bg-gray { background-color: #f2f2f2; }
 
 /* line 82, ../scss/bodoke/settings/_colors.scss */
-.dark-gray { background-color: #666666; }
+.bg-dark-gray { background-color: #666666; }
 
 /* line 88, ../scss/bodoke/settings/_colors.scss */
-.white-text { color: white; }
+.text-white { color: white; }
 
 /* line 88, ../scss/bodoke/settings/_colors.scss */
-.yellow-text { color: #fcb608; }
+.text-yellow { color: #fcb608; }
 
 /* line 88, ../scss/bodoke/settings/_colors.scss */
-.blue-text { color: #2362ff; }
+.text-blue { color: #2362ff; }
 
 /* line 88, ../scss/bodoke/settings/_colors.scss */
-.red-text { color: #dd4a3a; }
+.text-red { color: #dd4a3a; }
 
 /* line 88, ../scss/bodoke/settings/_colors.scss */
-.green-text { color: #639728; }
+.text-green { color: #639728; }
 
 /* line 88, ../scss/bodoke/settings/_colors.scss */
-.pale-blue-text { color: #07A3AA; }
+.text-pale-blue { color: #07A3AA; }
 
 /* line 88, ../scss/bodoke/settings/_colors.scss */
-.light-gray-text { color: #fafafa; }
+.text-light-gray { color: #fafafa; }
 
 /* line 88, ../scss/bodoke/settings/_colors.scss */
-.gray-text { color: #f2f2f2; }
+.text-gray { color: #f2f2f2; }
 
 /* line 88, ../scss/bodoke/settings/_colors.scss */
-.dark-gray-text { color: #666666; }
+.text-dark-gray { color: #666666; }
 
 /* line 179, ../scss/bodoke/settings/_colors.scss */
 ::-moz-selection, ::selection { background: #d1d1d1; color: #FFF; text-shadow: 1px solid rgba(0, 0, 0, 0.2); }
@@ -227,60 +227,61 @@ iframe { display: block; border: none; background-color: transparent; }
 /* line 11, ../scss/bodoke/grid/_grid.scss */
 *, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 47, ../scss/bodoke/grid/_grid.scss */
+/* line 48, ../scss/bodoke/grid/_grid.scss */
 .row { width: auto; margin-right: -0.9375em; margin-left: -0.9375em; *zoom: 1; }
-/* line 52, ../scss/bodoke/grid/_grid.scss */
+/* line 53, ../scss/bodoke/grid/_grid.scss */
 .row.collapse { margin-right: 0; margin-left: 0; }
-/* line 57, ../scss/bodoke/grid/_grid.scss */
+/* line 58, ../scss/bodoke/grid/_grid.scss */
 .row.collapse-right { margin-right: -0.9375em; margin-left: 0 !important; }
-/* line 62, ../scss/bodoke/grid/_grid.scss */
+/* line 63, ../scss/bodoke/grid/_grid.scss */
 .row.collapse-left { margin-left: -0.9375em; margin-right: 0 !important; }
 /* line 8, ../scss/bodoke/settings/_mixins.scss */
 .row:before, .row:after { content: ""; display: table; }
 /* line 9, ../scss/bodoke/settings/_mixins.scss */
 .row:after { clear: both; }
 
-/* line 69, ../scss/bodoke/grid/_grid.scss */
-.row-half { margin-bottom: 0.5em; }
-
 /* line 70, ../scss/bodoke/grid/_grid.scss */
-.row-one { margin-bottom: 1em; }
+.row-half { margin-bottom: 0.46875em; }
 
 /* line 71, ../scss/bodoke/grid/_grid.scss */
-.row-two { margin-bottom: 2em; }
+.row-one { margin-bottom: 0.9375em; }
 
 /* line 72, ../scss/bodoke/grid/_grid.scss */
-.row-three { margin-bottom: 3em; }
+.row-two { margin-bottom: 1.875em; }
 
 /* line 73, ../scss/bodoke/grid/_grid.scss */
-.row-four { margin-bottom: 4em; }
+.row-three { margin-bottom: 2.8125em; }
 
-/* line 76, ../scss/bodoke/grid/_grid.scss */
+/* line 74, ../scss/bodoke/grid/_grid.scss */
+.row-four { margin-bottom: 3.75em; }
+
+/* line 77, ../scss/bodoke/grid/_grid.scss */
 .section { position: relative; display: block; }
 
-/* line 81, ../scss/bodoke/grid/_grid.scss */
-.container { position: relative; width: 93.75%; max-width: 1260px; margin-left: auto; margin-right: auto; padding-left: 0.9375em; padding-right: 0.9375em; }
-/* line 89, ../scss/bodoke/grid/_grid.scss */
-.container.full { width: 100%; max-width: none; margin-left: auto; margin-right: auto; }
-/* line 95, ../scss/bodoke/grid/_grid.scss */
-.container .inner-container { padding-left: 0.9375em; padding-right: 0.9375em; }
-/* line 99, ../scss/bodoke/grid/_grid.scss */
-.container.collapse { padding-left: 0; padding-right: 0; }
-/* line 103, ../scss/bodoke/grid/_grid.scss */
-.container.collapse-right { margin-right: -0.9375em; margin-left: 0; }
-/* line 107, ../scss/bodoke/grid/_grid.scss */
-.container.collapse-left { margin-right: 0; margin-left: -0.9375em; }
+/* line 82, ../scss/bodoke/grid/_grid.scss */
+.container, .container-full { position: relative; width: 93.75%; max-width: 1260px; margin-left: auto; margin-right: auto; padding-left: 0.9375em; padding-right: 0.9375em; }
+/* line 90, ../scss/bodoke/grid/_grid.scss */
+.container .inner-container, .container-full .inner-container { padding-left: 0.9375em; padding-right: 0.9375em; }
+/* line 94, ../scss/bodoke/grid/_grid.scss */
+.container.collapse, .collapse.container-full { padding-left: 0; padding-right: 0; }
+/* line 98, ../scss/bodoke/grid/_grid.scss */
+.container.collapse-right, .collapse-right.container-full { margin-right: -0.9375em; margin-left: 0; }
+/* line 102, ../scss/bodoke/grid/_grid.scss */
+.container.collapse-left, .collapse-left.container-full { margin-right: 0; margin-left: -0.9375em; }
 
-/* line 123, ../scss/bodoke/grid/_grid.scss */
+/* line 107, ../scss/bodoke/grid/_grid.scss */
+.container-full { width: 100%; max-width: none; margin-left: auto; margin-right: auto; }
+
+/* line 125, ../scss/bodoke/grid/_grid.scss */
 .col, .cols, .column, .columns { position: relative; display: block; padding-left: 0.9375em; padding-right: 0.9375em; float: left; }
-/* line 131, ../scss/bodoke/grid/_grid.scss */
+/* line 133, ../scss/bodoke/grid/_grid.scss */
 .col.collapse, .cols.collapse, .column.collapse, .columns.collapse { padding-left: 0; padding-right: 0; }
-/* line 135, ../scss/bodoke/grid/_grid.scss */
+/* line 137, ../scss/bodoke/grid/_grid.scss */
 .col.collapse-right, .cols.collapse-right, .column.collapse-right, .columns.collapse-right { padding-right: 0; }
-/* line 138, ../scss/bodoke/grid/_grid.scss */
+/* line 140, ../scss/bodoke/grid/_grid.scss */
 .col.collapse-left, .cols.collapse-left, .column.collapse-left, .columns.collapse-left { padding-left: 0; }
 
-/* line 144, ../scss/bodoke/grid/_grid.scss */
+/* line 146, ../scss/bodoke/grid/_grid.scss */
 [dir="rtl"] .col, [dir="rtl"] .cols, [dir="rtl"] .column, [dir="rtl"] .columns { float: right; }
 
 /* line 38, ../scss/bodoke/component/_buttons.scss */
@@ -559,7 +560,7 @@ nav ul, nav ol { list-style: none; list-style-type: none; list-style-image: none
 /* line 13, ../scss/bodoke/component/_list.scss */
 .list, .list.vertical, .list.vert { padding-left: 0; }
 /* line 16, ../scss/bodoke/component/_list.scss */
-.list.container, .list.vertical.container, .list.vert.container { margin-left: auto; margin-right: auto; }
+.list.container, .list.container-full, .list.vertical.container, .list.vertical.container-full, .list.vert.container, .list.vert.container-full { margin-left: auto; margin-right: auto; }
 /* line 20, ../scss/bodoke/component/_list.scss */
 .list .item, .list.vertical .item, .list.vert .item { margin: 0; display: block; float: none; }
 /* line 27, ../scss/bodoke/component/_list.scss */
@@ -725,21 +726,22 @@ ul.bdk-comments, .list.bdk-comments { margin-left: 0; margin-top: 0; padding-lef
 /* line 97, ../scss/bodoke/component/_comments.scss */
 [dir="rtl"] .bdk-comments .user-interactions { text-align: left; padding-left: 0.9375em; left: 0; }
 
-/* line 3, ../scss/bodoke/component/_dropdown.scss */
-.dropdown { list-style-image: none; list-style-type: none; position: relative; min-width: 150px; margin: 0; padding: 0; cursor: pointer; color: #333333; background-color: #e6e6e6; -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6); -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6); }
-/* line 17, ../scss/bodoke/component/_dropdown.scss */
-.dropdown .handler, .dropdown li, .dropdown > div, .dropdown .item { line-height: 2.4em; padding-left: 0.9375em; padding-right: 0.9375em; background-color: #f2f2f2; }
-/* line 24, ../scss/bodoke/component/_dropdown.scss */
+/* 	Estructura  	.dropdown(.item) 		*element* 		.list 			.item */
+/* line 12, ../scss/bodoke/component/_dropdown.scss */
+.dropdown { list-style: none; position: relative; margin: 0; padding: 0; cursor: pointer; color: #333333; background-color: #e6e6e6; -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6); -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6); box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6); }
+/* line 25, ../scss/bodoke/component/_dropdown.scss */
+.dropdown .handler, .dropdown li, .dropdown > div, .dropdown .item { list-style: none; line-height: 2.4em; padding-left: 0.9375em; padding-right: 0.9375em; background-color: #f2f2f2; }
+/* line 33, ../scss/bodoke/component/_dropdown.scss */
 .dropdown li:hover, .dropdown .item:hover { background-color: white; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-/* line 29, ../scss/bodoke/component/_dropdown.scss */
-.dropdown .handler { position: relative; background-color: #00a25f; color: #FFF; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7); z-index: 2; }
-/* line 35, ../scss/bodoke/component/_dropdown.scss */
+/* line 38, ../scss/bodoke/component/_dropdown.scss */
+.dropdown .handler { display: inline-block; position: relative; color: #FFF; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7); z-index: 2; }
+/* line 45, ../scss/bodoke/component/_dropdown.scss */
 .dropdown .handler .icon { position: absolute; right: 6px; top: 6px; }
-/* line 47, ../scss/bodoke/component/_dropdown.scss */
+/* line 57, ../scss/bodoke/component/_dropdown.scss */
 .dropdown.open .list { display: block; opacity: 1; visibility: visible; -moz-transform: translateY(0); -ms-transform: translateY(0); -webkit-transform: translateY(0); transform: translateY(0); }
-/* line 54, ../scss/bodoke/component/_dropdown.scss */
+/* line 64, ../scss/bodoke/component/_dropdown.scss */
 .dropdown .list { position: absolute; opacity: 0; visibility: hidden; -moz-transition: all 0.25s ease; -o-transition: all 0.25s ease; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; -moz-transform: translateY(-3px); -ms-transform: translateY(-3px); -webkit-transform: translateY(-3px); transform: translateY(-3px); width: 100%; border-top: 1px solid rgba(0, 0, 0, 0.6); -moz-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.6); -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.6); box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.6); z-index: 1; }
-/* line 65, ../scss/bodoke/component/_dropdown.scss */
+/* line 75, ../scss/bodoke/component/_dropdown.scss */
 .dropdown .list a { display: block; color: #333333; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
 
 /* line 11, ../scss/bodoke/component/_lang-dropdown.scss */
@@ -956,393 +958,393 @@ pre span.folder { font-weight: 600; color: #2362ff; }
 /* line 41, ../scss/bodoke/component/_code.scss */
 pre span.com, pre span.comment { color: #a0a0a0; font-style: italic; }
 
-/* line 6, ../scss/bodoke/settings/_helpers.scss */
-.loading { background: url("../images/preloader.gif") 50% 50% no-repeat; background-size: 32px 32px; height: 100%; position: relative; min-height: 128px; }
-/* line 12, ../scss/bodoke/settings/_helpers.scss */
-.loading:before { content: "Loading..." !important; position: absolute !important; height: 20px; margin: auto; top: 0; left: 0; right: 0; bottom: 0; top: 80px; width: 100px !important; font-size: 14px; font-weight: bold; text-align: center; }
-/* line 24, ../scss/bodoke/settings/_helpers.scss */
+/* line 10, ../scss/bodoke/settings/_helpers.scss */
+.loading { background-image: url("../images/loader01.gif"); background-position: 50% 50%; background-repeat: no-repeat; background-size: 32px 32px; height: 100%; position: relative; min-height: 128px; }
+/* line 18, ../scss/bodoke/settings/_helpers.scss */
+.loading:before { content: "Cargando" "..." !important; position: absolute !important; height: 16px; margin: auto; left: 0; right: 0; bottom: 0; top: 70px; width: 100px !important; font-size: 0.8em; font-weight: bold; text-align: center; color: #282828; overflow: hidden; }
+/* line 31, ../scss/bodoke/settings/_helpers.scss */
 .loading .fade-container { opacity: 1; position: relative; min-height: 300px; }
 
-/* line 38, ../scss/bodoke/settings/_helpers.scss */
+/* line 45, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error { z-index: 100; }
-/* line 40, ../scss/bodoke/settings/_helpers.scss */
+/* line 47, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel { position: relative; -moz-transition: opacity 0.35s ease, background 0.35s ease; -o-transition: opacity 0.35s ease, background 0.35s ease; -webkit-transition: opacity 0.35s ease, background 0.35s ease; transition: opacity 0.35s ease, background 0.35s ease; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: #cccccc; }
-/* line 51, ../scss/bodoke/settings/_helpers.scss */
+/* line 58, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning { background-color: #dd4a3a; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.up { background-color: #dd4a3a; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.right { background-color: #dd4a3a; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #dd4a3a; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.down { background-color: #dd4a3a; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.left { background-color: #dd4a3a; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #dd4a3a; }
-/* line 62, ../scss/bodoke/settings/_helpers.scss */
+/* line 69, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
-/* line 51, ../scss/bodoke/settings/_helpers.scss */
+/* line 58, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert { background-color: #fcb608; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.up { background-color: #fcb608; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.right { background-color: #fcb608; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #fcb608; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.down { background-color: #fcb608; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.left { background-color: #fcb608; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #fcb608; }
-/* line 62, ../scss/bodoke/settings/_helpers.scss */
+/* line 69, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
-/* line 51, ../scss/bodoke/settings/_helpers.scss */
+/* line 58, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success { background-color: #00a25f; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.up { background-color: #00a25f; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.right { background-color: #00a25f; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #00a25f; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.down { background-color: #00a25f; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 56, ../scss/bodoke/settings/_helpers.scss */
+/* line 63, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.left { background-color: #00a25f; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #00a25f; }
-/* line 62, ../scss/bodoke/settings/_helpers.scss */
+/* line 69, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
-/* line 71, ../scss/bodoke/settings/_helpers.scss */
+/* line 78, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { width: 100%; margin: 0; padding-top: 0.9375em; padding-bottom: 0.9375em; text-align: center; font-family: "Courrier", "courrier new", monospace; font-weight: 300; font-size: 12px; line-height: 14px; }
 
-/* line 94, ../scss/bodoke/settings/_helpers.scss */
+/* line 101, ../scss/bodoke/settings/_helpers.scss */
 .float-left, .left { float: left !important; }
 
-/* line 96, ../scss/bodoke/settings/_helpers.scss */
+/* line 103, ../scss/bodoke/settings/_helpers.scss */
 .float-right, .right { float: right !important; }
 
-/* line 99, ../scss/bodoke/settings/_helpers.scss */
+/* line 106, ../scss/bodoke/settings/_helpers.scss */
 [dir="ltr"] .float-dir { float: left; }
 
-/* line 100, ../scss/bodoke/settings/_helpers.scss */
+/* line 107, ../scss/bodoke/settings/_helpers.scss */
 [dir="rtl"] .float-dir { float: right; }
 
-/* line 102, ../scss/bodoke/settings/_helpers.scss */
+/* line 109, ../scss/bodoke/settings/_helpers.scss */
 [dir="ltr"] .float-dir-inv { float: right; }
 
-/* line 103, ../scss/bodoke/settings/_helpers.scss */
+/* line 110, ../scss/bodoke/settings/_helpers.scss */
 [dir="rtl"] .float-dir-inv { float: left; }
 
-/* line 106, ../scss/bodoke/settings/_helpers.scss */
+/* line 113, ../scss/bodoke/settings/_helpers.scss */
 [dir="ltr"] .inline-block-dir { display: inline-block; text-align: left; }
 
-/* line 107, ../scss/bodoke/settings/_helpers.scss */
+/* line 114, ../scss/bodoke/settings/_helpers.scss */
 [dir="rtl"] .inline-block-dir { display: inline-block; text-align: right; }
 
-/* line 109, ../scss/bodoke/settings/_helpers.scss */
+/* line 116, ../scss/bodoke/settings/_helpers.scss */
 [dir="ltr"] .inline-block-dir-inv { display: inline-block; text-align: right; }
 
-/* line 110, ../scss/bodoke/settings/_helpers.scss */
+/* line 117, ../scss/bodoke/settings/_helpers.scss */
 [dir="rtl"] .inline-block-dir-inv { display: inline-block; text-align: left; }
 
-/* line 113, ../scss/bodoke/settings/_helpers.scss */
+/* line 120, ../scss/bodoke/settings/_helpers.scss */
 [dir="ltr"] .text-dir { text-align: left; }
 
-/* line 114, ../scss/bodoke/settings/_helpers.scss */
+/* line 121, ../scss/bodoke/settings/_helpers.scss */
 [dir="rtl"] .text-dir { text-align: right; }
 
-/* line 116, ../scss/bodoke/settings/_helpers.scss */
+/* line 123, ../scss/bodoke/settings/_helpers.scss */
 [dir="ltr"] .text-dir-inv { text-align: right; }
 
-/* line 117, ../scss/bodoke/settings/_helpers.scss */
+/* line 124, ../scss/bodoke/settings/_helpers.scss */
 [dir="rtl"] .text-dir-inv { text-align: left; }
 
-/* line 122, ../scss/bodoke/settings/_helpers.scss */
+/* line 129, ../scss/bodoke/settings/_helpers.scss */
 .center { display: block !important; margin-left: auto; margin-right: auto; float: none !important; }
 
-/* line 128, ../scss/bodoke/settings/_helpers.scss */
+/* line 135, ../scss/bodoke/settings/_helpers.scss */
 .a-center { display: block; position: absolute !important; top: 0; right: 0; bottom: 0; left: 0; margin: auto !important; float: none !important; }
 
-/* line 135, ../scss/bodoke/settings/_helpers.scss */
+/* line 142, ../scss/bodoke/settings/_helpers.scss */
 .v-center { display: block; position: absolute; top: 0; right: auto; bottom: 0; left: auto; margin: auto; float: none; }
 
-/* line 148, ../scss/bodoke/settings/_helpers.scss */
+/* line 155, ../scss/bodoke/settings/_helpers.scss */
 .inline { display: inline; float: none; }
 
-/* line 152, ../scss/bodoke/settings/_helpers.scss */
+/* line 159, ../scss/bodoke/settings/_helpers.scss */
 .strong, .bold { font-weight: bold; }
 
-/* line 155, ../scss/bodoke/settings/_helpers.scss */
+/* line 162, ../scss/bodoke/settings/_helpers.scss */
 .italic { font-style: italic; }
 
-/* line 158, ../scss/bodoke/settings/_helpers.scss */
+/* line 165, ../scss/bodoke/settings/_helpers.scss */
 .center-text { text-align: center; }
 
-/* line 161, ../scss/bodoke/settings/_helpers.scss */
+/* line 168, ../scss/bodoke/settings/_helpers.scss */
 .right-text { text-align: right; }
 
-/* line 164, ../scss/bodoke/settings/_helpers.scss */
+/* line 171, ../scss/bodoke/settings/_helpers.scss */
 .left-text { text-align: left; }
 
-/* line 167, ../scss/bodoke/settings/_helpers.scss */
+/* line 174, ../scss/bodoke/settings/_helpers.scss */
 .upcase-text { text-transform: uppercase; }
 
-/* line 177, ../scss/bodoke/settings/_helpers.scss */
+/* line 184, ../scss/bodoke/settings/_helpers.scss */
 .block { display: block; }
 
-/* line 180, ../scss/bodoke/settings/_helpers.scss */
+/* line 187, ../scss/bodoke/settings/_helpers.scss */
 .inline-block { display: inline-block; *zoom: 1; *display: inline; }
 
-/* line 185, ../scss/bodoke/settings/_helpers.scss */
+/* line 192, ../scss/bodoke/settings/_helpers.scss */
 .clear-both { clear: both; float: none; }
 
-/* line 195, ../scss/bodoke/settings/_helpers.scss */
+/* line 202, ../scss/bodoke/settings/_helpers.scss */
 .none, [hidden], .hidden, .hide, .no-desktop { display: none !important; }
 
-/* line 199, ../scss/bodoke/settings/_helpers.scss */
+/* line 206, ../scss/bodoke/settings/_helpers.scss */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-/* line 208, ../scss/bodoke/settings/_helpers.scss */
+/* line 215, ../scss/bodoke/settings/_helpers.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
 
-/* line 220, ../scss/bodoke/settings/_helpers.scss */
+/* line 227, ../scss/bodoke/settings/_helpers.scss */
 .invisible { visibility: hidden; }
 
-/* line 224, ../scss/bodoke/settings/_helpers.scss */
+/* line 231, ../scss/bodoke/settings/_helpers.scss */
 .visuallyvisible { clip: auto; width: auto; height: auto; overflow: visible; left: 0; }
 
-/* line 231, ../scss/bodoke/settings/_helpers.scss */
+/* line 238, ../scss/bodoke/settings/_helpers.scss */
 .fh, .full-height { height: 100%; }
 
-/* line 246, ../scss/bodoke/settings/_helpers.scss */
+/* line 253, ../scss/bodoke/settings/_helpers.scss */
 .clear, .clearfix { *zoom: 1; }
-/* line 248, ../scss/bodoke/settings/_helpers.scss */
+/* line 255, ../scss/bodoke/settings/_helpers.scss */
 .clear:before, .clear:after, .clearfix:before, .clearfix:after { content: ""; display: table; }
-/* line 249, ../scss/bodoke/settings/_helpers.scss */
+/* line 256, ../scss/bodoke/settings/_helpers.scss */
 .clear:after, .clearfix:after { clear: both; }
 
-/* line 257, ../scss/bodoke/settings/_helpers.scss */
+/* line 264, ../scss/bodoke/settings/_helpers.scss */
 .panel { position: relative; background-color: #f2f2f2; border: 1px solid #e6e6e6; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding-top: 0.46875em; padding-bottom: 0.46875em; padding-left: 0.46875em; padding-right: 0.46875em; }
-/* line 266, ../scss/bodoke/settings/_helpers.scss */
+/* line 273, ../scss/bodoke/settings/_helpers.scss */
 .panel.cols, .panel.cols, .panel.column, .panel.columns { padding-left: 0.9375em; padding-right: 0.9375em; }
 
-@media only screen and (max-width: 739px) { /* line 273, ../scss/bodoke/settings/_helpers.scss */
+@media only screen and (max-width: 739px) { /* line 280, ../scss/bodoke/settings/_helpers.scss */
   .panel.cols, .panel.cols, .panel.column, .panel.columns { padding-left: 0.9375em; padding-right: 0.9375em; } }
-/* line 282, ../scss/bodoke/settings/_helpers.scss */
+/* line 289, ../scss/bodoke/settings/_helpers.scss */
 .alert { display: block; }
 
-/* line 289, ../scss/bodoke/settings/_helpers.scss */
+/* line 296, ../scss/bodoke/settings/_helpers.scss */
 .warning { background-color: #dd4a3a; color: white; }
 
-/* line 289, ../scss/bodoke/settings/_helpers.scss */
+/* line 296, ../scss/bodoke/settings/_helpers.scss */
 .alert { background-color: #fcb608; color: white; }
 
-/* line 289, ../scss/bodoke/settings/_helpers.scss */
+/* line 296, ../scss/bodoke/settings/_helpers.scss */
 .success { background-color: #00a25f; color: white; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c1-12 { width: 8.33333%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c2-12 { width: 16.66667%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c3-12 { width: 25%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c4-12 { width: 33.33333%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c5-12 { width: 41.66667%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c6-12 { width: 50%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c7-12 { width: 58.33333%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c8-12 { width: 66.66667%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c9-12 { width: 75%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c10-12 { width: 83.33333%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c11-12 { width: 91.66667%; }
 
-/* line 174, ../scss/bodoke/grid/_grid.scss */
+/* line 176, ../scss/bodoke/grid/_grid.scss */
 .c12-12 { width: 100%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push1-12 { margin-left: 8.33333%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push2-12 { margin-left: 16.66667%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push3-12 { margin-left: 25%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push4-12 { margin-left: 33.33333%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push5-12 { margin-left: 41.66667%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push6-12 { margin-left: 50%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push7-12 { margin-left: 58.33333%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push8-12 { margin-left: 66.66667%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push9-12 { margin-left: 75%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push10-12 { margin-left: 83.33333%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push11-12 { margin-left: 91.66667%; }
 
-/* line 185, ../scss/bodoke/grid/_grid.scss */
+/* line 187, ../scss/bodoke/grid/_grid.scss */
 .push12-12 { margin-left: 100%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull1-12 { margin-right: 8.33333%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull2-12 { margin-right: 16.66667%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull3-12 { margin-right: 25%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull4-12 { margin-right: 33.33333%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull5-12 { margin-right: 41.66667%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull6-12 { margin-right: 50%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull7-12 { margin-right: 58.33333%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull8-12 { margin-right: 66.66667%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull9-12 { margin-right: 75%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull10-12 { margin-right: 83.33333%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull11-12 { margin-right: 91.66667%; }
 
-/* line 195, ../scss/bodoke/grid/_grid.scss */
+/* line 197, ../scss/bodoke/grid/_grid.scss */
 .pull12-12 { margin-right: 100%; }
 
-@media only screen and (max-width: 800px) { /* line 222, ../scss/bodoke/grid/_grid.scss */
-  .container { width: 100%; max-width: none; padding-left: 0.9375em; padding-right: 0.9375em; }
-  /* line 230, ../scss/bodoke/grid/_grid.scss */
+@media only screen and (max-width: 800px) { /* line 224, ../scss/bodoke/grid/_grid.scss */
+  .container, .container-full { width: 100%; max-width: none; padding-left: 0.9375em; padding-right: 0.9375em; }
+  /* line 232, ../scss/bodoke/grid/_grid.scss */
   .col, .cols, .column, .columns { width: 100%; }
-  /* line 233, ../scss/bodoke/grid/_grid.scss */
+  /* line 235, ../scss/bodoke/grid/_grid.scss */
   .col.mdfall, .cols.mdfall, .column.mdfall, .columns.mdfall { width: 100%; float: none; }
-  /* line 238, ../scss/bodoke/grid/_grid.scss */
+  /* line 240, ../scss/bodoke/grid/_grid.scss */
   [class*="push"] { margin-left: 0; }
-  /* line 242, ../scss/bodoke/grid/_grid.scss */
+  /* line 244, ../scss/bodoke/grid/_grid.scss */
   [class*="pull"] { margin-right: 0; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md1-12 { width: 8.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md2-12 { width: 16.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md3-12 { width: 25%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md4-12 { width: 33.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md5-12 { width: 41.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md6-12 { width: 50%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md7-12 { width: 58.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md8-12 { width: 66.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md9-12 { width: 75%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md10-12 { width: 83.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md11-12 { width: 91.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .md12-12 { width: 100%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push1-12 { margin-left: 8.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push2-12 { margin-left: 16.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push3-12 { margin-left: 25%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push4-12 { margin-left: 33.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push5-12 { margin-left: 41.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push6-12 { margin-left: 50%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push7-12 { margin-left: 58.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push8-12 { margin-left: 66.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push9-12 { margin-left: 75%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push10-12 { margin-left: 83.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push11-12 { margin-left: 91.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .md-push12-12 { margin-left: 100%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull1-12 { margin-right: 8.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull2-12 { margin-right: 16.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull3-12 { margin-right: 25%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull4-12 { margin-right: 33.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull5-12 { margin-right: 41.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull6-12 { margin-right: 50%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull7-12 { margin-right: 58.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull8-12 { margin-right: 66.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull9-12 { margin-right: 75%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull10-12 { margin-right: 83.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull11-12 { margin-right: 91.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .md-pull12-12 { margin-right: 100%; }
   /* line 41, ../scss/bodoke/grid/_grid-media-mixin.scss */
   .md-center { margin-left: auto; margin-right: auto; float: none; display: block; }
@@ -1372,81 +1374,81 @@ pre span.com, pre span.comment { color: #a0a0a0; font-style: italic; }
   .show-inline-md { display: inline !important; }
   /* line 80, ../scss/bodoke/grid/_grid-media-mixin.scss */
   .show-inline-block-md { display: inline-block !important; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { /* line 273, ../scss/bodoke/grid/_grid.scss */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { /* line 275, ../scss/bodoke/grid/_grid.scss */
   .col.tabletfall, .cols.tabletfall, .column.tabletfall, .columns.tabletfall { width: 100%; float: none; }
-  /* line 279, ../scss/bodoke/grid/_grid.scss */
+  /* line 281, ../scss/bodoke/grid/_grid.scss */
   [class*="md"] { width: 100%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet1-12 { width: 8.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet2-12 { width: 16.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet3-12 { width: 25%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet4-12 { width: 33.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet5-12 { width: 41.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet6-12 { width: 50%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet7-12 { width: 58.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet8-12 { width: 66.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet9-12 { width: 75%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet10-12 { width: 83.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet11-12 { width: 91.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .tablet12-12 { width: 100%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push1-12 { margin-left: 8.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push2-12 { margin-left: 16.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push3-12 { margin-left: 25%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push4-12 { margin-left: 33.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push5-12 { margin-left: 41.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push6-12 { margin-left: 50%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push7-12 { margin-left: 58.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push8-12 { margin-left: 66.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push9-12 { margin-left: 75%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push10-12 { margin-left: 83.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push11-12 { margin-left: 91.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .tablet-push12-12 { margin-left: 100%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull1-12 { margin-right: 8.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull2-12 { margin-right: 16.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull3-12 { margin-right: 25%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull4-12 { margin-right: 33.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull5-12 { margin-right: 41.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull6-12 { margin-right: 50%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull7-12 { margin-right: 58.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull8-12 { margin-right: 66.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull9-12 { margin-right: 75%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull10-12 { margin-right: 83.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull11-12 { margin-right: 91.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .tablet-pull12-12 { margin-right: 100%; }
   /* line 32, ../scss/bodoke/grid/_grid-media-mixin.scss */
   .tablet-center, [class="$grid-push-right-prefix"], [class="$grid-push-left-prefix"] { margin-left: auto; margin-right: auto; float: none; display: block; }
@@ -1476,99 +1478,99 @@ pre span.com, pre span.comment { color: #a0a0a0; font-style: italic; }
   .show-inline-tablet { display: inline !important; }
   /* line 80, ../scss/bodoke/grid/_grid-media-mixin.scss */
   .show-inline-block-tablet { display: inline-block !important; } }
-@media only screen and (min-device-width: 320px) and (max-device-width: 640px) { /* line 298, ../scss/bodoke/grid/_grid.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) { /* line 300, ../scss/bodoke/grid/_grid.scss */
   .row { margin-left: -0.9375em; margin-right: -0.9375em; }
-  /* line 301, ../scss/bodoke/grid/_grid.scss */
-  .row.row-one { margin-bottom: 0.50em; }
-  /* line 302, ../scss/bodoke/grid/_grid.scss */
-  .row.row-two { margin-bottom: 0.75em; }
   /* line 303, ../scss/bodoke/grid/_grid.scss */
-  .row.row-three { margin-bottom: 1em; }
+  .row.row-one { margin-bottom: 0.50em; }
   /* line 304, ../scss/bodoke/grid/_grid.scss */
+  .row.row-two { margin-bottom: 0.75em; }
+  /* line 305, ../scss/bodoke/grid/_grid.scss */
+  .row.row-three { margin-bottom: 1em; }
+  /* line 306, ../scss/bodoke/grid/_grid.scss */
   .row.row-four { margin-bottom: 1.25em; }
-  /* line 307, ../scss/bodoke/grid/_grid.scss */
+  /* line 309, ../scss/bodoke/grid/_grid.scss */
   .col, .cols, .column, .columns, [class*="md"] { display: block; width: 100%; padding-left: 0.9375em; padding-right: 0.9375em; }
-  /* line 316, ../scss/bodoke/grid/_grid.scss */
+  /* line 318, ../scss/bodoke/grid/_grid.scss */
   .col.mobilefall, .cols.mobilefall, .column.mobilefall, .columns.mobilefall, [class*="md"].mobilefall { width: 100%; float: none; }
-  /* line 321, ../scss/bodoke/grid/_grid.scss */
+  /* line 323, ../scss/bodoke/grid/_grid.scss */
   [class*="push"] { margin-left: 0; }
-  /* line 325, ../scss/bodoke/grid/_grid.scss */
+  /* line 327, ../scss/bodoke/grid/_grid.scss */
   [class*="pull"] { margin-right: 0; }
-  /* line 330, ../scss/bodoke/grid/_grid.scss */
-  .container:not(.mobile) { width: 100%; padding-left: 0.9375em; padding-right: 0.9375em; }
-  /* line 337, ../scss/bodoke/grid/_grid.scss */
+  /* line 332, ../scss/bodoke/grid/_grid.scss */
+  .container:not(.mobile), .container-full:not(.mobile) { width: 100%; padding-left: 0.9375em; padding-right: 0.9375em; }
+  /* line 339, ../scss/bodoke/grid/_grid.scss */
   table th, table td { padding: 4px; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile1-12 { width: 8.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile2-12 { width: 16.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile3-12 { width: 25%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile4-12 { width: 33.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile5-12 { width: 41.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile6-12 { width: 50%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile7-12 { width: 58.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile8-12 { width: 66.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile9-12 { width: 75%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile10-12 { width: 83.33333%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile11-12 { width: 91.66667%; }
-  /* line 170, ../scss/bodoke/grid/_grid.scss */
+  /* line 172, ../scss/bodoke/grid/_grid.scss */
   .mobile12-12 { width: 100%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push1-12 { margin-left: 8.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push2-12 { margin-left: 16.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push3-12 { margin-left: 25%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push4-12 { margin-left: 33.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push5-12 { margin-left: 41.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push6-12 { margin-left: 50%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push7-12 { margin-left: 58.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push8-12 { margin-left: 66.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push9-12 { margin-left: 75%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push10-12 { margin-left: 83.33333%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push11-12 { margin-left: 91.66667%; }
-  /* line 185, ../scss/bodoke/grid/_grid.scss */
+  /* line 187, ../scss/bodoke/grid/_grid.scss */
   .mobile-push12-12 { margin-left: 100%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull1-12 { margin-right: 8.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull2-12 { margin-right: 16.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull3-12 { margin-right: 25%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull4-12 { margin-right: 33.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull5-12 { margin-right: 41.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull6-12 { margin-right: 50%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull7-12 { margin-right: 58.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull8-12 { margin-right: 66.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull9-12 { margin-right: 75%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull10-12 { margin-right: 83.33333%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull11-12 { margin-right: 91.66667%; }
-  /* line 195, ../scss/bodoke/grid/_grid.scss */
+  /* line 197, ../scss/bodoke/grid/_grid.scss */
   .mobile-pull12-12 { margin-right: 100%; }
   /* line 41, ../scss/bodoke/grid/_grid-media-mixin.scss */
   .mobile-center { margin-left: auto; margin-right: auto; float: none; display: block; }
@@ -1606,7 +1608,7 @@ body { position: relative; color: #333333; font-family: "Open Sans", sans-serif;
 /* line 52, ../scss/app.scss */
 body[dir="rtl"] { font-family: Verdana, Helvetica, Geneva, sans-serif; text-align: right; }
 /* line 57, ../scss/app.scss */
-body.full, body.full main.container { height: 100%; }
+body.full, body.full main.container, body.full main.container-full { height: 100%; }
 
 /* line 63, ../scss/app.scss */
 *:lang(en) { font-family: "Open Sans", sans-serif; }

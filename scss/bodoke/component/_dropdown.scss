@@ -1,13 +1,21 @@
 // _dropdown.scss
 
+/*
+ *	Estructura
+ *
+ *	.dropdown(.item)
+ *		*element*
+ *		.list
+ *			.item
+ */
+
 .dropdown {
 	$drop-height:	2.4em;
 	$drop-bg:		$black_90;
 	$drop-shadow:	black(0.6);
-	list-style-image: none;
-	list-style-type: none;
+	list-style: none;
 	position: relative;
-	min-width: 150px;
+	// min-width: 150px;
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
@@ -15,6 +23,7 @@
 	background-color: $drop-bg;
 	@include box-shadow( 0 1px 3px 0 $drop-shadow );
 	.handler, li, > div, .item {
+		list-style: none;
 		line-height: $drop-height;
 		padding-left: $col-offset;
 		padding-right: $col-offset;
@@ -27,8 +36,9 @@
 		}
 	}
 	.handler {
+		display: inline-block;
 		position: relative;
-		background-color: $google-green;
+		// background-color: $google-green;
 		color: #FFF;
 		@include text-shadow( 0 1px 0 black(0.7) );
 		z-index: 2;
