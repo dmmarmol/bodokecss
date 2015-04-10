@@ -29,7 +29,9 @@ $icon-size:				$px-icon-size;
 // UNIDADES DE ESPACIADO
 // ======================
 // Columnas
-$offset:					0.9375em;		// Margen interno de base
+$offset:					$base-em;		// Margen interno de base
+$em-offset:					0.9375em;		// Margen interno de base
+
 $col-offset:				$offset;		// Margen interno entre columnas
 $m-offset:					$offset;		// Margen interno en mobile
 $half-offset: 				$offset / 2;	// 1/2 del $offset

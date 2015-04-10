@@ -33,7 +33,7 @@ $(document).ready(function(){
 	});
 	// Click to open
 	$('.dropdown .handler').click(function(){
-		$(this).parent('.dropdown').toggleClass('open');
+		$(this).parents('.dropdown').toggleClass('open');
 	});
 
 });

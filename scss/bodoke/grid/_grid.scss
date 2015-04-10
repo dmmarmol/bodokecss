@@ -30,14 +30,6 @@ $grid-push-right-prefix:	'pull';			// Empuja desde la derecha
 $grid-medium-prefix:		'md';			// Medium screens (menores a 800px)
 $grid-tablet-prefix:		'tablet';		// Tablets
 $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
-// Columnas
-$offset:					0.9375em;		// Margen interno de base
-$col-offset:				$offset;		// Margen interno entre columnas
-$m-offset:					$offset;		// Margen interno en mobile
-$half-offset: 				$offset / 2;	// 1/2 del $offset
-$third-offset: 				$offset / 3;	// 1/3 del $offset
-// Ems base
-$base-em:					16px;			// 16px = 1em
 
 
 // =====================
@@ -57,12 +49,12 @@ $base-em:					16px;			// 16px = 1em
 	// La .row come solo el padding derecho de las columnas
 	&.collapse-right {
 		margin-right: (-$col-offset);
-		margin-left: 0!important;
+		margin-left: 0;
 	}
 	// La .row come solo el padding izquierdo de las columnas
 	&.collapse-left {
 		margin-left: (-$col-offset);
-		margin-right: 0!important;
+		margin-right: 0;
 	}
 	// Clearfix
 	@include clear();
@@ -165,6 +157,11 @@ $base-em:					16px;			// 16px = 1em
 	// *width:	expression(Math.floor( col-width( $col-number ) * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + "px");
 }
 
+// Rows
+@mixin generate-rows( $offset ) {
+
+}
+
 // Columnas
 @mixin generate-cols( $total-cols, $extra-prefix: '', $separator: '' ) {
 	@for $i from 1 through $total-cols {
@@ -214,18 +211,27 @@ $base-em:					16px;			// 16px = 1em
 	@include generate-pull( $columns );
 
 	
-
 	// =========================
 	// Pantallas menores a 800
 	// =========================
 	@media only screen and (max-width: 800px) {
 		// @import "grid-800";
 
-		.container {
+		.#{$container}, .#{$container}-full {
 			width: 100%;
 			max-width: none;
 			padding-left: $col-offset; 
 			padding-right: $col-offset; 
+		}
+
+		// Rows
+		.row {
+			&.collapse,
+			&.collapse-right,
+			&.collapse-left {
+				margin-right: (-$col-offset);
+				margin-left: (-$col-offset);			
+			}			
 		}
 
 		// Las columnas colapsan en esta resolucion
@@ -234,6 +240,12 @@ $base-em:					16px;			// 16px = 1em
 			// Clase que permite colapsar la columna segun el dispositivo
 			&.#{$grid-medium-prefix}fall {
 				@include fall();
+			}
+			&.collapse,
+			&.collapse-right,
+			&.collapse-left {
+				padding-right: $col-offset;
+				padding-left: $col-offset;
 			}
 		}
 		// Anula los efectos del @include grid-offset();			
@@ -266,15 +278,30 @@ $base-em:					16px;			// 16px = 1em
 	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 		
 		.container.tablet {}
+		.#{$container}-full.tablet {}
 		
 		// Grilla para tablets
 		// =========================
-		.row {}
+		// Rows
+		.row {
+			&.collapse,
+			&.collapse-right,
+			&.collapse-left {
+				margin-right: (-$col-offset);
+				margin-left: (-$col-offset);			
+			}			
+		}
 		.col, .cols, .column, .columns {
 			// Clase que permite colapsar la columna segun el dispositivo
 			&.#{$grid-tablet-prefix}fall {
 				@include fall();
 			}
+			&.collapse,
+			&.collapse-right,
+			&.collapse-left {
+				padding-right: $col-offset;
+				padding-left: $col-offset;
+			}			
 		}
 		[class*="#{$grid-push-left-prefix}"] {}
 		[class*="#{$grid-push-right-prefix}"] {}
@@ -297,6 +324,7 @@ $base-em:					16px;			// 16px = 1em
 
 		// Grilla para mobile
 		// =========================
+		// Rows		
 		.row {
 			margin-left: -$m-offset;
 			margin-right: -$m-offset;
@@ -304,6 +332,13 @@ $base-em:					16px;			// 16px = 1em
 			&.row-two 	{ margin-bottom: 0.75em; }
 			&.row-three { margin-bottom: 1em; }
 			&.row-four 	{ margin-bottom: 1.25em; }
+			
+			&.collapse,
+			&.collapse-right,
+			&.collapse-left {
+				margin-right: (-$m-offset);
+				margin-left: (-$m-offset);			
+			}			
 		}
 		// Las columnas colapsan en mobile
 		.col, .cols, .column, .columns, [class*="#{$grid-medium-prefix}"] {
@@ -317,6 +352,12 @@ $base-em:					16px;			// 16px = 1em
 			// Clase que permite colapsar la columna segun el dispositivo
 			&.#{$grid-mobile-prefix}fall {
 				@include fall();
+			}
+			&.collapse,
+			&.collapse-right,
+			&.collapse-left {
+				padding-right: $m-offset;
+				padding-left: $m-offset;
 			}
 		}
 		// Anula los efectos del @include grid-offset();			
