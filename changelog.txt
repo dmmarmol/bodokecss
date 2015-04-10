@@ -10,14 +10,23 @@ Changelog
 // Status update			// 0.1.3 (Amon Demian)
 // GCBA - Padres			// 0.1.4 (Amon Ed)
 // Codigoquemero			// 0.1.5 (Amon Fabian)
-// PortalMed				// 
+// PortalMed				// 0.1.6 (Amon Gabriel)
 
 
 // Bodoke Status - 2015
 // ======================================
-// 07/04	- Update .dropdown
-// 07/04	- Modulo para las medidas de espaciado en las .row-* con $offset
-// 07/04	- Nueva variable para el nombre de la clase $container. Nueva clase #{$container}-full
+// 10/04	- 0.2.0 (Baako Hagen);
+// 10/04	- Update "parent()" -> "parents()" en "bdk-dropdown.js"
+//			- Removido: hover por default en los '.item'
+// 			- Update "bodoke/component/dropdown"
+//			- Nuevo "_burger.scss" - https://github.com/jorenvanhee/sass-burger/
+// 09/04	- Update "bodoke/grid/_reset.scss"
+// 08/04	- 0.1.6 (Amon Gabriel)
+// 			- $offset variable ahora se mide en pixeles y no en ems ($base-em)
+// 07/04	- Update "bodoke/grid/_grid.scss"
+// 			- Update "bodoke/component/dropdown"
+// 			- Modulo para las medidas de espaciado en las .row-* con $offset
+// 			- Nueva variable para el nombre de la clase $container. Nueva clase #{$container}-full
 // 10/03	- "_colors.scss": renombradas las clases que dan color de fondo y color de texto según los colores del array "$color-pallete".
 // 02/03	- Nueva función "c()" para tomar los colores definidos previamente en el array "$color-pallete" ("_colors.scss").
 // 09/02	- Renombrada la función "i()" por "z()", para devolver los indices de una lista y usar dentro del z-index.
@@ -28,10 +37,10 @@ Changelog
 // Bodoke Status - 2014
 // ======================================
 // 30/12 	- "code.scss" <pre> tag estilizado con <span> para comentarios y carpetas
-// 30/12 	- Nuevo android-input-border @mixin para estilizar inputs como en Android
+// 			- Nuevo android-input-border @mixin para estilizar inputs como en Android
 // 29/12 	- Nuevo flexbox() @mixin
 // 11/12 	- Nuevas funciones de HugoGiraudel.com para manipular listas en SASS
-// 11/12 	- Cambio a la version 0.1.4 (Amon Ed)
+// 11/12 	- 0.1.4 (Amon Ed)
 // 25/11 	- Proyecto GCBA padres
 // 		 	- Nuevo color "dark" para los botones
 // 		 	- @mixin color() ahora afecta también a todos los descendientes que sean <a>"
