@@ -29,14 +29,6 @@ $grid-push-right-prefix:	'pull';			// Empuja desde la derecha
 $grid-medium-prefix:		'md';			// Medium screens (menores a 800px)
 $grid-tablet-prefix:		'tablet';		// Tablets
 $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
-// Columnas
-$offset:					0.9375em;		// Margen interno de base
-$col-offset:				$offset;		// Margen interno entre columnas
-$m-offset:					$offset;		// Margen interno en mobile
-$half-offset: 				$offset / 2;	// 1/2 del $offset
-$third-offset: 				$offset / 3;	// 1/3 del $offset
-// Ems base
-$base-em:					16px;			// 16px = 1em
 
 
 // =====================

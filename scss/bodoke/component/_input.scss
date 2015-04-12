@@ -181,6 +181,24 @@ $optional-text-color: gray(150);
 }
 
 
+
+
+// ================================
+// COMPLEX INPUT
+// ================================
+.input-complex {
+	position: relative;
+	[type="submit"], [role="button"], .button, .icon, .ficon, i {
+		padding: 0;
+		margin: 0;
+		position: absolute;
+		border: 0;
+		background-color: none;
+		@include border-radius(0);
+		z-index: 100;
+	}
+}
+
 // ================================
 // ESTADOS
 // ================================
