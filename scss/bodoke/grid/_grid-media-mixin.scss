@@ -26,6 +26,24 @@
 	@include generate-push( $columns, $media-type, '-' );
 	@include generate-pull( $columns, $media-type, '-' );
 
+	.row {
+		&.#{$media-type}-collapse {
+			margin-right: 0;
+			margin-left: 0;
+		}
+		&.#{$media-type}-collapse-right { margin-left: 0; }
+		&.#{$media-type}-collapse-left 	{ margin-right: 0; }
+	}
+
+	.col, .cols, .column, .columns {
+		&.#{$media-type}-collapse { 
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&.#{$media-type}-collapse-right { padding-right: 0; }
+		&.#{$media-type}-collapse-left { padding-left: 0; }
+	}
+
 	// Estructura
 	// =====================
 	@if ( $media-type == $grid-tablet-prefix ) {

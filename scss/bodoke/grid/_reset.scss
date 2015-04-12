@@ -1,11 +1,16 @@
-//
-// _reset.scss
-// Reset Stylesheet
-//
+/*
+ * _reset.scss
+ *
+ * Reset Stylesheet
+*/
 
 // General Resets
 *:focus {
 	outline: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 // =====================
