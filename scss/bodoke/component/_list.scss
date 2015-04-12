@@ -10,7 +10,7 @@
 		@include list();
 		margin-top: 0;
 		margin-bottom: 0;
-		&, &.vertical, &.vert {
+		&, &.list-vertical, &.vert {
 			// margin: 0;
 			padding-left: 0;
 			&.container {
