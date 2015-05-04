@@ -1,8 +1,12 @@
-// _grid.scss
-//
-// Grid version 1.4.0
-// Last update 14/09/14
-
+/* 
+ * _grid.scss
+ *
+ * "The grid, the final frontier..."
+ *
+ * @version 2.0
+ * @since 0.1.1
+ * @created 19/09/14
+ */
 
 @import "normalize.min";
 @import "reset";
@@ -30,6 +34,7 @@ $grid-push-right-prefix:	'pull';			// Empuja desde la derecha
 $grid-medium-prefix:		'md';			// Medium screens (menores a 800px)
 $grid-tablet-prefix:		'tablet';		// Tablets
 $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
+$grid-offset:				$offset;		// Valor modular para los espacios en la grilla
 
 
 // =====================
@@ -39,8 +44,8 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 // Rows
 .row {
 	width: auto;
-	margin-right: (-$col-offset);
-	margin-left: (-$col-offset);	
+	margin-right: (-$grid-offset);
+	margin-left: (-$grid-offset);	
 	// La .row no come los paddings de las columnas
 	&.collapse {
 		margin-right: 0;
@@ -48,22 +53,22 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 	}
 	// La .row come solo el padding derecho de las columnas
 	&.collapse-right {
-		margin-right: (-$col-offset);
+		margin-right: (-$grid-offset);
 		margin-left: 0;
 	}
 	// La .row come solo el padding izquierdo de las columnas
 	&.collapse-left {
-		margin-left: (-$col-offset);
+		margin-left: (-$grid-offset);
 		margin-right: 0;
 	}
 	// Clearfix
 	@include clear();
 }
-.row-half 	{ margin-bottom: $offset / 2; }
-.row-one 	{ margin-bottom: $offset; }
-.row-two 	{ margin-bottom: $offset * 2; }
-.row-three 	{ margin-bottom: $offset * 3; }
-.row-four 	{ margin-bottom: $offset * 4; }
+.row-half 	{ margin-bottom: $grid-offset / 2; }
+.row-one 	{ margin-bottom: $grid-offset; }
+.row-two 	{ margin-bottom: $grid-offset * 2; }
+.row-three 	{ margin-bottom: $grid-offset * 3; }
+.row-four 	{ margin-bottom: $grid-offset * 4; }
 
 // Sections & Content Blocks
 .section {
@@ -77,23 +82,23 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 	max-width: $container-max-width;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: $col-offset;
-	padding-right: $col-offset;
+	padding-left: $grid-offset;
+	padding-right: $grid-offset;
 	.inner-#{$container} {
-		padding-left: $col-offset;
-		padding-right: $col-offset;
+		padding-left: $grid-offset;
+		padding-right: $grid-offset;
 	}
 	&.collapse {
 		padding-left: 0;
 		padding-right: 0;		
 	}
 	&.collapse-right {
-		margin-right: -$col-offset;
+		margin-right: -$grid-offset;
 		margin-left: 0;
 	}
 	&.collapse-left {
 		margin-right: 0;
-		margin-left: -$col-offset;
+		margin-left: -$grid-offset;
 	}
 }
 .#{$container}-full {
@@ -117,8 +122,8 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 .col, .cols, .column, .columns {
 	position: relative;
 	display: block;
-	padding-left: $col-offset;
-	padding-right: $col-offset;
+	padding-left: $grid-offset;
+	padding-right: $grid-offset;
 	float: left;
 	&:first-child {}
 	&:last-child {}
@@ -158,7 +163,7 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 }
 
 // Rows
-@mixin generate-rows( $offset ) {
+@mixin generate-rows( $grid-offset ) {
 
 }
 
@@ -220,8 +225,8 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 		.#{$container}, .#{$container}-full {
 			width: 100%;
 			max-width: none;
-			padding-left: $col-offset; 
-			padding-right: $col-offset; 
+			padding-left: $grid-offset; 
+			padding-right: $grid-offset; 
 		}
 
 		// Rows
@@ -229,8 +234,8 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 			&.collapse,
 			&.collapse-right,
 			&.collapse-left {
-				margin-right: (-$col-offset);
-				margin-left: (-$col-offset);			
+				margin-right: (-$grid-offset);
+				margin-left: (-$grid-offset);			
 			}			
 		}
 
@@ -244,8 +249,8 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 			&.collapse,
 			&.collapse-right,
 			&.collapse-left {
-				padding-right: $col-offset;
-				padding-left: $col-offset;
+				padding-right: $grid-offset;
+				padding-left: $grid-offset;
 			}
 		}
 		// Anula los efectos del @include grid-offset();			
@@ -287,8 +292,8 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 			&.collapse,
 			&.collapse-right,
 			&.collapse-left {
-				margin-right: (-$col-offset);
-				margin-left: (-$col-offset);			
+				margin-right: (-$grid-offset);
+				margin-left: (-$grid-offset);			
 			}			
 		}
 		.col, .cols, .column, .columns {
@@ -299,8 +304,8 @@ $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
 			&.collapse,
 			&.collapse-right,
 			&.collapse-left {
-				padding-right: $col-offset;
-				padding-left: $col-offset;
+				padding-right: $grid-offset;
+				padding-left: $grid-offset;
 			}			
 		}
 		[class*="#{$grid-push-left-prefix}"] {}

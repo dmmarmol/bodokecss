@@ -1,3 +1,4 @@
+/*  is-brightness()  Evalua el color de fondo pasado en el primer parametro y elije color claro u obscuro segun su luminosidad @param 1 - $color a evaluar  @param 2 - $bright-color @param 3 - $dark-color @since 0.2.0 */
 @font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.2.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 /* line 73, ../scss/bodoke/settings/_fonts.scss */
 [class*="fa"]:before { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -56,9 +57,10 @@
 /* line 88, ../scss/bodoke/settings/_colors.scss */
 .text-dark-gray { color: #666666; }
 
-/* line 179, ../scss/bodoke/settings/_colors.scss */
+/* line 190, ../scss/bodoke/settings/_colors.scss */
 ::-moz-selection, ::selection { background: #d1d1d1; color: #FFF; text-shadow: 1px solid rgba(0, 0, 0, 0.2); }
 
+/*  _grid.scss  "The grid, the final frontier..."  @version 2.0 @since 0.1.1 @created 19/09/14 */
 /*! normalize.css v1.1.2 | MIT License | git.io/normalize */
 /* line 3, ../scss/bodoke/grid/_normalize.min.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
@@ -213,80 +215,85 @@ textarea { overflow: auto; vertical-align: top; }
 /* line 3, ../scss/bodoke/grid/_normalize.min.scss */
 table { border-collapse: collapse; border-spacing: 0; }
 
-/* line 7, ../scss/bodoke/grid/_reset.scss */
+/* _reset.scss  Reset Stylesheet
+*/
+/* line 8, ../scss/bodoke/grid/_reset.scss */
 *:focus { outline: none; }
 
-/* line 14, ../scss/bodoke/grid/_reset.scss */
-iframe { display: block; border: none; background-color: transparent; }
+/* line 11, ../scss/bodoke/grid/_reset.scss */
+a { text-decoration: none; color: inherit; }
 
 /* line 19, ../scss/bodoke/grid/_reset.scss */
+iframe { display: block; border: none; background-color: transparent; }
+
+/* line 24, ../scss/bodoke/grid/_reset.scss */
 [onclick] { cursor: pointer; }
 
-/* line 11, ../scss/bodoke/grid/_grid.scss */
+/* line 15, ../scss/bodoke/grid/_grid.scss */
 *, *:after, *:before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 40, ../scss/bodoke/grid/_grid.scss */
-.row { width: auto; margin-right: -16px; margin-left: -16px; *zoom: 1; }
 /* line 45, ../scss/bodoke/grid/_grid.scss */
-.row.collapse { margin-right: 0; margin-left: 0; }
+.row { width: auto; margin-right: -16px; margin-left: -16px; *zoom: 1; }
 /* line 50, ../scss/bodoke/grid/_grid.scss */
-.row.collapse-right { margin-right: -16px; margin-left: 0 !important; }
+.row.collapse { margin-right: 0; margin-left: 0; }
 /* line 55, ../scss/bodoke/grid/_grid.scss */
-.row.collapse-left { margin-left: -16px; margin-right: 0 !important; }
+.row.collapse-right { margin-right: -16px; margin-left: 0; }
+/* line 60, ../scss/bodoke/grid/_grid.scss */
+.row.collapse-left { margin-left: -16px; margin-right: 0; }
 /* line 8, ../scss/bodoke/settings/_mixins.scss */
 .row:before, .row:after { content: ""; display: table; }
 /* line 9, ../scss/bodoke/settings/_mixins.scss */
 .row:after { clear: both; }
 
-/* line 62, ../scss/bodoke/grid/_grid.scss */
+/* line 67, ../scss/bodoke/grid/_grid.scss */
 .row-half { margin-bottom: 8px; }
 
-/* line 63, ../scss/bodoke/grid/_grid.scss */
+/* line 68, ../scss/bodoke/grid/_grid.scss */
 .row-one { margin-bottom: 16px; }
 
-/* line 64, ../scss/bodoke/grid/_grid.scss */
+/* line 69, ../scss/bodoke/grid/_grid.scss */
 .row-two { margin-bottom: 32px; }
 
-/* line 65, ../scss/bodoke/grid/_grid.scss */
+/* line 70, ../scss/bodoke/grid/_grid.scss */
 .row-three { margin-bottom: 48px; }
 
-/* line 66, ../scss/bodoke/grid/_grid.scss */
+/* line 71, ../scss/bodoke/grid/_grid.scss */
 .row-four { margin-bottom: 64px; }
 
-/* line 69, ../scss/bodoke/grid/_grid.scss */
+/* line 74, ../scss/bodoke/grid/_grid.scss */
 .section { position: relative; display: block; }
 
-/* line 74, ../scss/bodoke/grid/_grid.scss */
+/* line 79, ../scss/bodoke/grid/_grid.scss */
 .container, .container-full { position: relative; width: 93.75%; max-width: 1260px; margin-left: auto; margin-right: auto; padding-left: 16px; padding-right: 16px; }
-/* line 82, ../scss/bodoke/grid/_grid.scss */
+/* line 87, ../scss/bodoke/grid/_grid.scss */
 .container .inner-container, .container-full .inner-container { padding-left: 16px; padding-right: 16px; }
-/* line 86, ../scss/bodoke/grid/_grid.scss */
+/* line 91, ../scss/bodoke/grid/_grid.scss */
 .container.collapse, .collapse.container-full { padding-left: 0; padding-right: 0; }
-/* line 90, ../scss/bodoke/grid/_grid.scss */
+/* line 95, ../scss/bodoke/grid/_grid.scss */
 .container.collapse-right, .collapse-right.container-full { margin-right: -16px; margin-left: 0; }
-/* line 94, ../scss/bodoke/grid/_grid.scss */
+/* line 99, ../scss/bodoke/grid/_grid.scss */
 .container.collapse-left, .collapse-left.container-full { margin-right: 0; margin-left: -16px; }
 
-/* line 99, ../scss/bodoke/grid/_grid.scss */
+/* line 104, ../scss/bodoke/grid/_grid.scss */
 .container-full { width: 100%; max-width: none; margin-left: auto; margin-right: auto; }
 
-/* line 117, ../scss/bodoke/grid/_grid.scss */
+/* line 122, ../scss/bodoke/grid/_grid.scss */
 .col, .cols, .column, .columns { position: relative; display: block; padding-left: 16px; padding-right: 16px; float: left; }
-/* line 125, ../scss/bodoke/grid/_grid.scss */
+/* line 130, ../scss/bodoke/grid/_grid.scss */
 .col.collapse, .cols.collapse, .column.collapse, .columns.collapse { padding-left: 0; padding-right: 0; }
-/* line 129, ../scss/bodoke/grid/_grid.scss */
+/* line 134, ../scss/bodoke/grid/_grid.scss */
 .col.collapse-right, .cols.collapse-right, .column.collapse-right, .columns.collapse-right { padding-right: 0; }
-/* line 132, ../scss/bodoke/grid/_grid.scss */
+/* line 137, ../scss/bodoke/grid/_grid.scss */
 .col.collapse-left, .cols.collapse-left, .column.collapse-left, .columns.collapse-left { padding-left: 0; }
 
-/* line 138, ../scss/bodoke/grid/_grid.scss */
+/* line 143, ../scss/bodoke/grid/_grid.scss */
 [dir="rtl"] .col, [dir="rtl"] .cols, [dir="rtl"] .column, [dir="rtl"] .columns { float: right; }
 
 /* line 14, ../scss/bodoke-example.scss */
 html { height: 100%; }
 
 /* line 17, ../scss/bodoke-example.scss */
-body.example { height: 100%; padding-bottom: 48px; }
+body.example { height: 100%; padding-bottom: 2.8125em; }
 /* line 20, ../scss/bodoke-example.scss */
 body.example #example-container { min-height: 100%; }
 
@@ -300,7 +307,7 @@ body.example #example-container { min-height: 100%; }
 .example-header small { color: white; font-size: 1.8em; }
 
 /* line 56, ../scss/bodoke-example.scss */
-.example-content { margin-top: 1em; margin-bottom: 80px; padding-left: 16px; padding-right: 16px; padding-bottom: 16px; border-bottom: 1px solid #ebebeb; }
+.example-content { margin-top: 1em; margin-bottom: 4.6875em; padding-left: 0.9375em; padding-right: 0.9375em; padding-bottom: 0.9375em; border-bottom: 1px solid #ebebeb; }
 
 /* line 66, ../scss/bodoke-example.scss */
 .mobile.col, .mobile.cols, .mobile.column, .mobile.columns { background-color: #69afeb; }
