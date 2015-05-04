@@ -35,9 +35,9 @@ $button-has-active-pseudo:			true;
 // =======================
 // BUTTON COLORS
 // =======================
-$shadow-alpha: 				0.8;
-$percent:					20%;
-$dark-button-text-color:	$black_97;
+$shadow-alpha: 						0.8;
+$percent:							20%;
+$dark-button-text-color:			$black_97;
 
 @mixin button-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name}, [role="button"] {
@@ -234,17 +234,17 @@ $dark-button-text-color:	$black_97;
 	padding-bottom: 0;
 	padding-left: $button-offset;
 	padding-right: $button-offset;
-	&.#{$button-prefix}-slim, [role="button"] {
+	&.#{$button-prefix}-slim {
 		padding-left: $button-offset / 2;
 		padding-right: $button-offset / 2;		
 	}
-	&.#{$button-prefix}-medium, [role="button"] {
+	&.#{$button-prefix}-medium {
 		padding-left: $button-offset * 1.25;
 		padding-right: $button-offset * 1.25;
 		font-size: 16px;
 		line-height: 40px;
 	}
-	&.#{$button-prefix}-large, [role="button"] {
+	&.#{$button-prefix}-large {
 		padding-top: $button-offset / 1.75;
 		padding-bottom: $button-offset / 1.75;
 		padding-left: $button-offset;
@@ -253,7 +253,7 @@ $dark-button-text-color:	$black_97;
 		font-weight: 300;
 		line-height: 20px;
 	}
-	&.#{$button-prefix}-big, [role="button"] {
+	&.#{$button-prefix}-big {
 		padding-top: $button-offset / 1.5;
 		padding-bottom: $button-offset / 1.5;
 		padding-left: $button-offset * 2;
@@ -302,7 +302,7 @@ $dark-button-text-color:	$black_97;
 		display: block;		
 	}
 	// What happens if the group turns vertical?
-	&.#{$button-group-prefix}-vertical, &.v {
+	&.#{$button-group-prefix}-vertical {
 		.#{$button-prefix}, [role="button"] {
 			float: none;
 			@include border-radius( 0 );
