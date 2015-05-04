@@ -36,21 +36,37 @@ $loading-top-offset:	70px;
 }
 
 
+// ====================
+// PANELES
+// ====================
+[class*="-panel"] {
+	z-index: 100;
+	.message {
+		width: 100%;
+		margin: 0;
+		margin-bottom: $col-offset;
+		padding-top: $col-offset;
+		padding-bottom: $col-offset;
+		text-align: center;
+		font-family: $courrier;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 14px;
+	}
+}
 
-// ====================
-// ERRORS
-// ====================
-// bdk-error
+/*
+ * Error panel
+ */
 $error-arrow-directions: ('up', 'right', 'down', 'left');
 .#{$bodoke-prefix}-error {
-	z-index: 100;
 	.error-panel {
 		position: relative;
+		@include border-radius( 5px );
 		@include transition( 
 			opacity $transition-speed ease,
 			background $transition-speed ease
 		);
-		@include border-radius( 5px );
 		// Fondo por default
 		background-color: hsl(0, 0, 80%); 
 		// Colores para el alert/error
@@ -73,25 +89,103 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 					color: white();
 				}
 			}
-		}
-
-		.message {
-			width: 100%;
-			margin: 0;
-			padding-top: $col-offset;
-			padding-bottom: $col-offset;
-			text-align: center;
-			font-family: $courrier;
-			font-weight: 300;
-			font-size: 12px;
-			line-height: 14px;
-		}
+		}		
 	}
 }
 
-// ====================
-// HELPERS
-// ====================
+.clean-panel {
+	display: block;
+	padding-top: $col-offset * 3;
+	padding-bottom: $col-offset * 3;
+	padding-left: $col-offset;
+	padding-right: $col-offset;
+	color: gray(100);
+	background-color: c('gray');
+	@include border-radius( 5px );
+	@include text-shadow(0 1px 0 white(0.8) );		
+}
+
+
+
+/* 
+ * MODAL BOX
+ *
+ */
+.modal-box {
+	background-color: gray(250);
+	@include box-shadow( 0 0 60px -17px black(0.3) );
+	padding: ($col-offset * 2) ($col-offset * 3);
+	width: 35%;
+	min-width: 400px;
+	border: 1px solid $gray-light;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	margin: ($col-offset * 3) auto;
+	.modal-title, .modal-text {
+		position: relative;
+	}
+	.modal-title {
+		text-align: center;
+		font-size: 1.9em;
+		line-height: 1.9em;
+		font-weight: 300;
+		margin-top: 0;
+		margin-bottom: $offset / 2;
+	}
+	.modal-text {
+		text-align: center;
+		font-size: 0.8em;
+		line-height: 1.5em;
+		margin-bottom: $offset * 2;
+		.button, .button-link {
+			font-size: inherit;
+		}
+	}
+}
+@include mobile() {
+	.modal-box { 
+		width: 95%;
+		min-width: initial;
+	}
+}
+
+/* 
+ * Login / Conectarse
+ *
+ * Soporta conexion con redes sociales
+ */
+.modal-box.login-box {
+	.social-icon-list {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: $offset;
+	}
+	.social-icon {
+		$social-icon-size: $icon-size * 1.5;
+		display: inline-block;
+		width: $social-icon-size;
+		height: $social-icon-size;
+		font-size: $icon-size;
+		margin-right: $offset / 2;
+		@include border-radius(3px);
+		&:last-child { margin-right: 0; }
+		.ficon { 
+			font-size: 1em;
+			vertical-align: middle;
+			display: inline-block;
+			color: white;
+		}
+		&.google { 
+			background-color: c('google-plus', $social-color-pallete);
+		}
+		&.twitter { 
+			background-color: c('twitter', $social-color-pallete);
+		}
+		&.facebook { 
+			background-color: c('facebook', $social-color-pallete);
+		}	
+	}
+}
 
 
 

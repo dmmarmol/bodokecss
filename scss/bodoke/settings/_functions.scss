@@ -243,3 +243,23 @@
 		@warn 'No existe un color con ese nombre definido en la paleta de colores';
 	}
 }
+
+
+/* 
+ * is-brightness()
+ *
+ * Evalua el color de fondo pasado en el primer parametro y elije color claro u obscuro segun su luminosidad
+ * @param 1 - $color a evaluar 
+ * @param 2 - $bright-color
+ * @param 3 - $dark-color
+ * @since 0.2.0
+ */ 
+@function is-brightness($bgcolor, $bright-color: white, $dark-color: $text-color) {
+	$r: $bright-color;
+	@if lightness($bgcolor) > lightness(#aaa) {
+		$r: $bright-color;
+	} @else {
+		$r: $dark-color;
+	}
+	@return $r;
+}

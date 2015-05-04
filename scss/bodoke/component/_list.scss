@@ -10,7 +10,7 @@
 		@include list();
 		margin-top: 0;
 		margin-bottom: 0;
-		&, &.list-vertical, &.vert {
+		&, &.list-vertical, &.list-vert {
 			// margin: 0;
 			padding-left: 0;
 			&.container {
@@ -45,6 +45,7 @@
 			li, .item {
 				display: inline-block;
 				margin-left: -0.3em; // inline-block gap fallback
+				&:first-child { margin-left: 0; }
 			}
 			&.list-separated {
 				li, .item {

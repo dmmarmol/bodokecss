@@ -15,10 +15,27 @@ Changelog
 
 // Bodoke Status - 2015
 // ======================================
+// 04/05	- Update en "_buttons.scss": Se ajustaron clases para los tamaños 
+// 28/04	- Update en "_buttons.scss" y "_helpers.scss"
+			- "_input.scss" - Ahora las columnas aplicadas a las ".input-row" procesan mejor los paddings a ambos lados permitiendo alinearse mejor entre distintos anchos de columnas sin depender de un ".row"
+// 27/04	- Update "bodoke/settings/_helpers.scss" 
+			- Nuevos ".clean-panel" para mensajes de "Contenido vacio" o alertas no intrusivas
+			- Nuevos ".modal-box" para maquetar mensajes estilo pop-up pero relativos.
+// 27/04	- Update "bodoke/component/_input.scss" 
+			- [role="button"] solo tiene efecto para los 'input' o 'button'
+			- Division en los estilos compartidos entre los inputs y los botones
+// 27/04	- Update "bodoke/component/_buttons.scss" - Clases de alineamiento con prefijo #{$button-prefix}
+// 22/04	- Update "bodoke/component/_input.scss" - Soporte para [role="button"]
+// 22/04	- Clase 'bdk-input' en "bodoke/component/_input.scss"
+// 22/04	- Update en "bodoke/grid/_grid.scss". Nuevo 'offset' particular de la grilla.
+// 21/04 	- Update en "bodoke/component/_comments.scss". Sectores ordenados con comentarios y ejemplo de estructura
+// 17/04 	- lista con colores de redes sociales en "_colors.scss" -> $social-color-pallete;
+// 15/04	- Nueva función "is-brightness()". Evalua el color de fondo pasado en el primer parametro y elije color claro u obscuro segun su luminosidad
+// 14/04	- .list-inline-block li:first-child() con "margin-left: 0;". Previene que se salga del contenedor
 // 10/04	- 0.2.0 (Baako Hagen);
 // 10/04	- Update "parent()" -> "parents()" en "bdk-dropdown.js"
 //			- Removido: hover por default en los '.item'
-// 			- Update "bodoke/component/dropdown"
+// 			- Update "bodoke/component/_dropdown.scss"
 //			- Nuevo "_burger.scss" - https://github.com/jorenvanhee/sass-burger/
 // 09/04	- Update "bodoke/grid/_reset.scss"
 // 08/04	- 0.1.6 (Amon Gabriel)
