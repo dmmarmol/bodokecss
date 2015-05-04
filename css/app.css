@@ -723,99 +723,104 @@ input[type="radio"]:checked, input[type="checkbox"]:checked { border: 4px solid 
 /* line 232, ../scss/bodoke/component/_input.scss */
 .input-group input:last-child, .input-group button:last-child, .input-group textarea:last-child, .input-group select:last-child { -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0; border-radius: 0 3px 3px 0; border-left: none; }
 
-/* line 243, ../scss/bodoke/component/_input.scss */
+/* line 245, ../scss/bodoke/component/_input.scss */
+.input-complex { position: relative; }
+/* line 247, ../scss/bodoke/component/_input.scss */
+.input-complex [type="submit"], .input-complex [role="button"], .input-complex .button, .input-complex .icon, .input-complex .ficon, .input-complex i { padding: 0; margin: 0; position: absolute; border: 0; background-color: none; -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; z-index: 100; }
+
+/* line 261, ../scss/bodoke/component/_input.scss */
 [onclick], [mouseover], [mouseout] { cursor: pointer; }
 
-/* line 246, ../scss/bodoke/component/_input.scss */
+/* line 264, ../scss/bodoke/component/_input.scss */
 [disabled], [disable] { cursor: default; }
 
 /*  Input con errores  */
-/* line 259, ../scss/bodoke/component/_input.scss */
+/* line 277, ../scss/bodoke/component/_input.scss */
 input.input-error, select.input-error, textarea.input-error { border-width: 2px; border-style: solid; border-color: #dd4a3a; }
 
-/* line 259, ../scss/bodoke/component/_input.scss */
+/* line 277, ../scss/bodoke/component/_input.scss */
 .input-row.input-error input[type="checkbox"].input-error.input-error, .input-row.input-error input[type="radio"].input-error.input-error { border-width: 2px; border-style: solid; border-color: #dd4a3a; }
-/* line 259, ../scss/bodoke/component/_input.scss */
+/* line 277, ../scss/bodoke/component/_input.scss */
 .input-row.input-error select.input-error, .input-row.input-error textarea.input-error { border-width: 2px; border-style: solid; border-color: #dd4a3a; }
 
 /*  Label con errores  */
-/* line 286, ../scss/bodoke/component/_input.scss */
+/* line 304, ../scss/bodoke/component/_input.scss */
 label.input-error, .input-row .label-title.input-error { color: #dd4a3a; font-weight: bold; }
 
 /*  Mensaje de error */
-/* line 295, ../scss/bodoke/component/_input.scss */
+/* line 313, ../scss/bodoke/component/_input.scss */
 p.error-message { display: block; color: white; background-color: #dd4a3a; -moz-box-shadow: 0 1px 0 0 #ba2f20; -webkit-box-shadow: 0 1px 0 0 #ba2f20; box-shadow: 0 1px 0 0 #ba2f20; font-weight: 500; padding-top: 0.46875em; padding-bottom: 0.46875em; padding-left: 0.9375em; padding-right: 0.9375em; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; text-shadow: 0 1px 1px #ba2f20; }
 
-/* line 308, ../scss/bodoke/component/_input.scss */
+/* line 326, ../scss/bodoke/component/_input.scss */
 .error-message { width: 100%; font-size: 0.8em; line-height: 1.5em; margin-bottom: 1.40625em; }
-/* line 313, ../scss/bodoke/component/_input.scss */
+/* line 331, ../scss/bodoke/component/_input.scss */
 .error-message-inline { background: transparent; display: inline-block; margin-top: 4px; font-size: 0.8em; padding-left: 3px; color: #dd4a3a; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
 
-/* line 331, ../scss/bodoke/component/_input.scss */
+/* line 349, ../scss/bodoke/component/_input.scss */
 .bdk-error { z-index: 100; }
-/* line 333, ../scss/bodoke/component/_input.scss */
+/* line 351, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel { position: relative; -moz-transition: opacity 0.35s ease; -o-transition: opacity 0.35s ease; -webkit-transition: opacity 0.35s ease; transition: opacity 0.35s ease; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-transition: background 0.35s ease; -o-transition: background 0.35s ease; -webkit-transition: background 0.35s ease; transition: background 0.35s ease; background-color: #cccccc; }
-/* line 342, ../scss/bodoke/component/_input.scss */
+/* line 360, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.warning { background-color: #dd4a3a; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.warning.arrow.up { background-color: #dd4a3a; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.warning.arrow.right { background-color: #dd4a3a; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #dd4a3a; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.warning.arrow.down { background-color: #dd4a3a; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.warning.arrow.left { background-color: #dd4a3a; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #dd4a3a; }
-/* line 353, ../scss/bodoke/component/_input.scss */
+/* line 371, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel .message { color: white; }
-/* line 342, ../scss/bodoke/component/_input.scss */
+/* line 360, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.alert { background-color: #fcb608; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.alert.arrow.up { background-color: #fcb608; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.alert.arrow.right { background-color: #fcb608; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #fcb608; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.alert.arrow.down { background-color: #fcb608; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.alert.arrow.left { background-color: #fcb608; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #fcb608; }
-/* line 353, ../scss/bodoke/component/_input.scss */
+/* line 371, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel .message { color: white; }
-/* line 342, ../scss/bodoke/component/_input.scss */
+/* line 360, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.success { background-color: #00a25f; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.success.arrow.up { background-color: #00a25f; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.success.arrow.right { background-color: #00a25f; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #00a25f; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.success.arrow.down { background-color: #00a25f; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
-/* line 347, ../scss/bodoke/component/_input.scss */
+/* line 365, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel.success.arrow.left { background-color: #00a25f; }
 /* line 431, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #00a25f; }
-/* line 353, ../scss/bodoke/component/_input.scss */
+/* line 371, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel .message { color: white; }
-/* line 362, ../scss/bodoke/component/_input.scss */
+/* line 380, ../scss/bodoke/component/_input.scss */
 .bdk-error .error-panel .message { width: 100%; margin: 0; padding-top: 0.9375em; padding-bottom: 0.9375em; text-align: center; font-family: "Courrier", "courrier new", monospace; font-weight: 300; font-size: 12px; line-height: 14px; }
 
 /*  _comments.scss  Maqueta los comentarios de usuarios @since 0.1.2  Estructura 	<contenedor> 		<user-image> 			<img /> 		</user-image> 		<user-comment> 	 		<user-name> 	 		</user-name> 	 		<p class="user-message"></p> 		</user-comment> 	</contenedor> */
