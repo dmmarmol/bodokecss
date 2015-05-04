@@ -3,6 +3,20 @@
 // ======================
 // Functions
 // ======================
+
+/* 
+ * col-width()
+ *
+ * Devuelve el ancho porcentual segun la cantidad de columnas
+ * @param $col-number
+ * @param $max-cols
+ * @since 0.1
+ */
+@function col-width( $col-number, $max-cols: $grid-columns ) {
+	@return ($col-number * 100%) / $max-cols;
+}
+
+
 @function black( $opacity:1, $output:'rgba' ) {
 	@if $opacity != 1 {
 		@return rgba(0, 0, 0, $opacity);
