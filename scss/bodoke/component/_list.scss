@@ -1,4 +1,14 @@
-// _list.scss
+/**
+ * _list.scss
+ *
+ * Stylize the native HTML lists (<ul>, <ol> and <li>) cleaning their aspect
+ * and giving them a basic design
+ *
+ * @since 0.1
+ */
+
+$bdk-item-class:		'.item';
+$wordpress-item-class:	'.menu-item'; // Agregado para wordpress (tiene que ir con punto)
 
 @mixin list() {
 	@include clear();
@@ -10,50 +20,50 @@
 		@include list();
 		margin-top: 0;
 		margin-bottom: 0;
-		&, &.list-vertical, &.list-vert {
+		&, &.list-vertical, &.list-vert {			
 			// margin: 0;
 			padding-left: 0;
 			&.container {
 				margin-left: auto;
 				margin-right: auto;
 			}
-			.item {
+			#{$bdk-item-class}, #{$wordpress-item-class} {
 				margin: 0;
 				display: block;
 				float: none;
 			}
 		}
 		&.left-horizontal, &.left-horz {
-			.item, li { 
+			#{$bdk-item-class}, #{$wordpress-item-class}, li {
 				float: left; 
 			}
 		}
 		&.right-horizontal, &.right-horz {
-			.item, li { 
+			#{$bdk-item-class}, #{$wordpress-item-class}, li { 
 				float: right; 
 			}
 		}
 		&.list-centered {
 			text-align: center;
-			.item {
+			#{$bdk-item-class}, #{$wordpress-item-class}, li {
 				float: none;
 				display: inline-block;				
 			}
 		}
 		&.list-inline-block {
 			display: inline-block;
-			li, .item {
+			#{$bdk-item-class}, #{$wordpress-item-class}, li {
 				display: inline-block;
 				margin-left: -0.3em; // inline-block gap fallback
 				&:first-child { margin-left: 0; }
 			}
 			&.list-separated {
-				li, .item {
+				#{$bdk-item-class}, #{$wordpress-item-class}, li {
 					margin-left: initial; // inline-block gap fallback					
 				}
 			}
 		}
-		.item {
+		#{$bdk-item-class}, #{$wordpress-item-class}, li {
 			@include clear();
 		}
 	}	
