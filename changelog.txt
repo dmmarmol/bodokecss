@@ -15,6 +15,7 @@ Changelog
 
 // Bodoke Status - 2015
 // ======================================
+// 04/05	- Update en "_list.scss": Compatible con los menu nativos de wordpress
 // 04/05	- Update en "_buttons.scss": Se ajustaron clases para los tamaños 
 // 28/04	- Update en "_buttons.scss" y "_helpers.scss"
 			- "_input.scss" - Ahora las columnas aplicadas a las ".input-row" procesan mejor los paddings a ambos lados permitiendo alinearse mejor entre distintos anchos de columnas sin depender de un ".row"
