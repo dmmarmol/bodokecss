@@ -318,9 +318,9 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 }
 
 
-.invisible {
-	visibility: hidden;
-}
+.invisible { visibility: hidden; }
+
+.transparent { @include opacity(0); }
 
 .visuallyvisible {
 	clip: auto;

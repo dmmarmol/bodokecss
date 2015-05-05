@@ -1,4 +1,4 @@
-/* 
+/**
  * _buttons.scss
  *
  * @since 0.1
@@ -236,13 +236,20 @@ $dark-button-text-color:			$black_97;
 	padding-right: $button-offset;
 	&.#{$button-prefix}-slim {
 		padding-left: $button-offset / 2;
-		padding-right: $button-offset / 2;		
+		padding-right: $button-offset / 2;
+		line-height: $button-height * 0.9;
+		.ficon, i {
+			font-size: 0.9em;
+		}
 	}
 	&.#{$button-prefix}-medium {
 		padding-left: $button-offset * 1.25;
 		padding-right: $button-offset * 1.25;
 		font-size: 16px;
-		line-height: 40px;
+		line-height: $button-height * 1.2;
+		.ficon, i {
+			font-size: 1.2em;
+		}
 	}
 	&.#{$button-prefix}-large {
 		padding-top: $button-offset / 1.75;
@@ -252,6 +259,9 @@ $dark-button-text-color:			$black_97;
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 20px;
+		.ficon, i {
+			font-size: 1.4em;
+		}
 	}
 	&.#{$button-prefix}-big {
 		padding-top: $button-offset / 1.5;
@@ -261,6 +271,9 @@ $dark-button-text-color:			$black_97;
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 24px;
+		.ficon, i {
+			font-size: 1.8em;
+		}
 	}
 }
 
@@ -319,6 +332,17 @@ $dark-button-text-color:			$black_97;
 		}
 	}
 }
+// =================
+// BUTTON GROUP SIZES
+// =================
+.#{$button-group-prefix} {
+	.#{$button-prefix}-slim {}
+	.#{$button-prefix}-medium {}
+	.#{$button-prefix}-large {}
+	.#{$button-prefix}-big {}
+}
+
+
 
 // =================
 // EL BOTON

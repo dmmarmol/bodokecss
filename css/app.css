@@ -291,7 +291,7 @@ iframe { display: block; border: none; background-color: transparent; }
 /* line 143, ../scss/bodoke/grid/_grid.scss */
 [dir="rtl"] .col, [dir="rtl"] .cols, [dir="rtl"] .column, [dir="rtl"] .columns { float: right; }
 
-/*  _buttons.scss  @since 0.1  */
+/**  _buttons.scss  @since 0.1  */
 /* line 43, ../scss/bodoke/component/_buttons.scss */
 .button.button-yellow, .button [role="button"], [role="button"].button-yellow, [role="button"] [role="button"] { background: #fcb608; color: #f7f7f7; }
 /* line 76, ../scss/bodoke/component/_buttons.scss */

@@ -9,8 +9,8 @@ p {
 
 p {
 	&.lead {
-		margin-bottom: 20px;
-		font-size: 1.2em;
+		margin-bottom: $offset;
+		font-size: 1.1em;
 		font-weight: 200;
 		line-height: 1.4;
 	}
