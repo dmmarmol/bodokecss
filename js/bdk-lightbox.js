@@ -7,7 +7,7 @@ var lbox = '.bdk-lightbox';
 
 function openlbox(id) {
 	$('body').toggleClass('lightbox-active');
-	$(element'-'+id).fadeIn(function(){
+	$(element+'-'+id).fadeIn(function(){
 		lighbox_open = true;		
 	});
 }
