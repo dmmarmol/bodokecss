@@ -1,7 +1,8 @@
-// bodoke.lightbox.js
+// bdk-lightbox.js
 
 var lighbox_open;
 var element = $('#bdk-lightbox');
+var lbox = '.bdk-lightbox';
 
 
 function openlbox(id) {
@@ -11,7 +12,7 @@ function openlbox(id) {
 	});
 }
 function closelbox() {
-	$('.lightbox').fadeOut(function(){
+	$('.bdk-lightbox').fadeOut(function(){
 		lighbox_open = false;
 		// $('.blackout').fadeOut();
 		$('body').removeClass('lightbox-active');
@@ -26,7 +27,7 @@ $(document).ready(function(){
 	});
 
 	// Close Button
-	$('.lightbox .close').click(function(e){
+	$('.bdk-lightbox .close').click(function(e){
 		closelbox();
 	});
 	$(document).keyup(function(e) {
@@ -36,7 +37,7 @@ $(document).ready(function(){
 	});
 	// Outside Close
 	var mouse_is_outside;
-	$('.lightbox').hover(function(){ 
+	$('.bdk-lightbox').hover(function(){ 
 		mouse_is_outside = false;
 	}, function(){ 
 		mouse_is_outside = true;
