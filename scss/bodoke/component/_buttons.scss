@@ -195,14 +195,25 @@ $dark-button-text-color:			$black_97;
 // Botones sin fondo
 .#{$button-prefix}, [role="button"] {
 	&.#{$button-prefix}-clear {
-		&.hover { // ES CLASE, NO PSEUDO CLASS!
-			@include transition( 
-				background $button-transition-time ease,
-				text-shadow $button-transition-time ease 
-			);
-			@each $single-color in $button-colors {
-				@include clear-hover-color( nth($single-color, 1), nth($single-color, 2) );
-			}
+		@include transition( 
+			background $button-transition-time ease,
+			text-shadow $button-transition-time ease 
+		);
+		@each $single-color in $button-colors {
+			@include clear-hover-color( nth($single-color, 1), nth($single-color, 2) );
+		}
+	}
+}
+// Botones sin fondo pero con hover
+.#{$button-prefix}, [role="button"] {
+	&.#{$button-prefix}-clean {
+		background-color: transparent;
+		@include transition( 
+			background $button-transition-time ease,
+			text-shadow $button-transition-time ease 
+		);
+		@each $single-color in $button-colors {
+			@include clear-hover-color( nth($single-color, 1), nth($single-color, 2) );
 		}
 	}
 }
@@ -234,6 +245,9 @@ $dark-button-text-color:			$black_97;
 	padding-bottom: 0;
 	padding-left: $button-offset;
 	padding-right: $button-offset;
+	.ficon, i {
+		font-size: 1.05em;
+	}
 	&.#{$button-prefix}-slim {
 		padding-left: $button-offset / 2;
 		padding-right: $button-offset / 2;
@@ -325,10 +339,12 @@ $dark-button-text-color:			$black_97;
 	}
 	// Or what if the buttons are inline-aligned?
 	&.#{$button-group-prefix}-inline {
+		display: inline-block;
+		float: none;
 		.#{$button-prefix}, [role="button"] {
 			display: inline-block;
 			float: none;
-			margin-left: -0.4em;
+			margin-left: -0.3em;
 		}
 	}
 }
@@ -444,6 +460,7 @@ $dark-button-text-color:			$black_97;
 	}
 }
 
+
 // ============================
 // BOTON CON F-ICON DENTRO
 // ============================
@@ -457,5 +474,10 @@ $dark-button-text-color:			$black_97;
 	}
 	[class*="#{$bodoke-prefix}-icon"] {
 
+	}
+	.text {
+		display: inline-block;
+		vertical-align: middle;	
+		font-size: 1em;	
 	}
 }
