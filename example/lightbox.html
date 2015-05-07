@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie lt-ie9"> <![endif]-->
+<!--[if IE]>           <html class="no-js ie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<title>Bodoke Lightbox | Framework</title>
+
+		<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/css/app.css" />
+		<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/css/bodoke-example.css" />
+		<!-- Only in prod. This should be deleted when you work by your own -->
+		<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/fonts/FontAwesome.otf" />
+		<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/fonts/fontawesome-webfont.eot" />
+		<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/fonts/fontawesome-webfont.svg">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/fonts/fontawesome-webfont.ttf">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/fonts/fontawesome-webfont.woff">
+
+		<!-- SCRIPT -->
+		<!-- <script src="js/vendor/jquery.js" type="text/javascript" charset="utf-8" async defer></script> -->
+		<script src="https://cdn.rawgit.com/dmmarmol/bodokecss/master/js/vendor/jquery.min.js" type="text/javascript" charset="utf-8" async defer></script>
+		
+		<!-- Bodoke Lightbox Script -->
+		<script src="https://cdn.rawgit.com/dmmarmol/bodokecss/master/js/bdk-lightbox.js" type="text/javascript" charset="utf-8" async defer></script>
+	</head>
+<body class="example">
+
+	<div class="container">
+		<p>Some random & funny text</p>
+		<a href="#" class="button" onclick="openlbox('example');">Open Lightbox</a>
+
+		<!-- Lightbox Area -->
+		<div class="blackout">
+			<div class="container">
+
+				<div id="example" class="lightbox">
+					<div class="close" title="{% trans 'Cerrar' %}" onclick="closelbox()">
+					    <i class="fa-times"></i>
+					</div>
+					<p>Praesent adipiscing vestibulum scelerisque magnis donec parturient inceptos laoreet et a vulputate vestibulum posuere dui nisi vestibulum mus curabitur pretium potenti quam vestibulum ante mi a eget vel.Duis netus eget ultrices consectetur odio suscipit.</p>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+		
+</body>
+</html>
