@@ -1,7 +1,7 @@
 // bodoke.lightbox.js
 
 var lighbox_open;
-var element = $('#lightbox');
+var element = $('#bdk-lightbox');
 
 
 function openlbox(id) {
