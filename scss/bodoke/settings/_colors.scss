@@ -77,18 +77,6 @@ $color-pallete:	(
 	('gray', 		$google-gray),
 	('dark-gray', 	$gray-dark)
 );
-// Background Colors
-@each $color in $color-pallete {
-	.bg-#{nth($color, 1)} {
-		background-color: nth($color, 2);					
-	}
-}
-// Text Colors
-@each $color in $color-pallete {
-	.text-#{nth($color, 1)} {
-		color: nth($color, 2);					
-	}
-}
 
 
 // ==============================
@@ -108,6 +96,7 @@ $social-color-pallete: (
 $buttons-color-pallete:	(
 	('yellow', 		$google-yellow), 
 	('blue', 		$light-blue),
+	('dark-blue', 	$blue),
 	('red', 		$google-red),
 	('green', 		$green),
 	('gray', 		$google-gray),
@@ -170,6 +159,21 @@ $text-color:			$black_20;
 
 
 
+/**
+ * COLOR CLASESS
+ */
+// Background Colors
+@each $color in $color-pallete {
+	.bg-#{nth($color, 1)} {
+		background-color: nth($color, 2);
+	}
+}
+// Text Colors
+@each $color in $color-pallete {
+	.text-#{nth($color, 1)} {
+		color: nth($color, 2);					
+	}
+}
 
 // ==============================
 // COLORES GENERALES APLICADOS
