@@ -604,19 +604,19 @@ nav ul, nav ol { list-style: none; list-style-type: none; list-style-image: none
 /* line 22, ../scss/bodoke/component/_menu.scss */
 .menu ul, .menu ol, .menu nav { margin: 0; padding: 0; }
 /* line 26, ../scss/bodoke/component/_menu.scss */
-.menu.fixed { position: fixed; }
-/* line 27, ../scss/bodoke/component/_menu.scss */
-.menu.absolute { position: absolute; }
-/* line 28, ../scss/bodoke/component/_menu.scss */
-.menu.static { position: static; }
-/* line 30, ../scss/bodoke/component/_menu.scss */
-.menu.top { top: 0; }
+.menu.menu-fixed { position: fixed; top: 0; left: 0; }
 /* line 31, ../scss/bodoke/component/_menu.scss */
-.menu.left { left: 0; }
+.menu.menu-absolute { position: absolute; }
 /* line 32, ../scss/bodoke/component/_menu.scss */
-.menu.bottom { bottom: 0; }
-/* line 33, ../scss/bodoke/component/_menu.scss */
-.menu.right { right: 0; }
+.menu.menu-static { position: static; }
+/* line 34, ../scss/bodoke/component/_menu.scss */
+.menu.menu-top { top: 0; }
+/* line 35, ../scss/bodoke/component/_menu.scss */
+.menu.menu-left { left: 0; }
+/* line 36, ../scss/bodoke/component/_menu.scss */
+.menu.menu-bottom { bottom: 0; }
+/* line 37, ../scss/bodoke/component/_menu.scss */
+.menu.menu-right { right: 0; }
 
 /** _list.scss  Stylize the native HTML lists (<ul>, <ol> and <li>) cleaning their aspect and giving them a basic design  @since 0.1 */
 /* line 19, ../scss/bodoke/component/_list.scss */
