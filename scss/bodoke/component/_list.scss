@@ -15,71 +15,80 @@ $wordpress-item-class:	'.menu-item'; // Agregado para wordpress (tiene que ir co
 	list-style: none;
 }
 
-@mixin bdk-list() {
-	.list {
-		@include list();
-		margin-top: 0;
-		margin-bottom: 0;
-		&, &.list-vertical, &.list-vert {			
-			// margin: 0;
-			padding-left: 0;
-			&.container {
-				margin-left: auto;
-				margin-right: auto;
-			}
-			#{$bdk-item-class}, #{$wordpress-item-class} {
-				margin: 0;
-				display: block;
-				float: none;
-			}
+
+/**
+ * List items align
+ * Mixin that set the clases for the items alignment inside a .list
+ * @param {string} $item-class It should include the dot '.'
+ */
+@mixin list-items-align($item-class:'') {
+	&, &.list-vertical, &.list-vert {			
+		// margin: 0;
+		padding-left: 0;
+		&.container {
+			margin-left: auto;
+			margin-right: auto;
 		}
-		&.left-horizontal, &.left-horz {
-			#{$bdk-item-class}, #{$wordpress-item-class}, li {
-				float: left; 
-			}
+		#{$bdk-item-class}, #{$wordpress-item-class} {
+			margin: 0;
+			display: block;
+			float: none;
 		}
-		&.right-horizontal, &.right-horz {
-			#{$bdk-item-class}, #{$wordpress-item-class}, li { 
-				float: right; 
-			}
-		}
-		&.list-centered {
-			text-align: center;
-			#{$bdk-item-class}, #{$wordpress-item-class}, li {
-				float: none;
-				display: inline-block;				
-			}
-		}
-		&.list-inline-block {
-			display: inline-block;
-			#{$bdk-item-class}, #{$wordpress-item-class}, li {
-				display: inline-block;
-				margin-left: -0.3em; // inline-block gap fallback
-				&:first-child { margin-left: 0; }
-			}
-			&.list-separated {
-				#{$bdk-item-class}, #{$wordpress-item-class}, li {
-					margin-left: initial; // inline-block gap fallback					
-				}
-			}
-		}
-		#{$bdk-item-class}, #{$wordpress-item-class}, li {
-			@include clear();
-		}
-	}	
-	// Si esta especificada la direccion
-	// en la que fluye el texto en el body
-	[dir="rtl"] {
-		&.list-inline-block {
-			text-align: right;
-		}		
 	}
-	[dir="ltr"], [dir=""]  {
-		&.list-inline-block {
-			text-align: left;
-		}		
+	&.left-horizontal, &.left-horz {
+		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} {
+			float: left; 
+		}
+	}
+	&.right-horizontal, &.right-horz {
+		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} { 
+			float: right; 
+		}
+	}
+	&.list-centered {
+		text-align: center;
+		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} {
+			float: none;
+			display: inline-block;				
+		}
+	}
+	&.list-inline-block {
+		display: inline-block;
+		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} {
+			display: inline-block;
+			margin-left: -0.3em; // inline-block gap fallback
+			&:first-child { margin-left: 0; }
+		}
+		&.list-separated {
+			#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} {
+				margin-left: initial; // inline-block gap fallback					
+			}
+		}
 	}
 }
 
-// Crea las listas
-@include bdk-list();
+.list {
+	@include list();
+	margin-top: 0;
+	margin-bottom: 0;
+	/*
+	 * Set the List items align
+	 */
+	@include list-items-align();
+
+	#{$bdk-item-class}, #{$wordpress-item-class}, li {
+		@include clear();
+	}
+}	
+// Si esta especificada la direccion
+// en la que fluye el texto en el body
+[dir="rtl"] {
+	&.list-inline-block {
+		text-align: right;
+	}		
+}
+[dir="ltr"], [dir=""]  {
+	&.list-inline-block {
+		text-align: left;
+	}		
+}
