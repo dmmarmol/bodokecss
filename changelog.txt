@@ -15,6 +15,11 @@ Changelog
 
 // Bodoke Status - 2015
 // ======================================
+// 08/05 	- Update en "_menu.scss": Reformulacion de los menu. Ya no necesitan de la clase ".list" para funcionar
+			- @mixin para alinear .items dentro de .menu en "_list.scss"
+			- Update en "_buttons.scss": '.button-clear' sujeto a si posee borde o no
+			- Nuevo "js/bdk-menu" para el comportamiento de los '.menu'
+			- Nuevo en "_buttons.scss": @mixin menu-button-color() para los botones que estan dentro de '.menu'
 // 06/05 	- Update en "_buttons.scss": Nuevo '.button-clean' -> Botones sin fondo pero con hover
 // 05/05 	- Nuevo helper en "_helpers.scss" '.transparent' vuelve al elemento con "opaicity:0;"
 // 			- Update en "_buttons.scss": Se ajustaron los tamaños de font-icons dentro de diferentes tamaños de botones 
