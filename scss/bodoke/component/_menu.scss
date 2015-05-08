@@ -23,14 +23,18 @@ nav {
 			margin: 0; padding: 0;
 		}
 		// Position
-		&.fixed 	{ position: fixed; }
-		&.absolute	{ position: absolute; }			
-		&.static	{ position: static; }			
+		&.menu-fixed 		{ 
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		&.menu-absolute		{ position: absolute; }			
+		&.menu-static		{ position: static; }			
 		// Coordinates
-		&.top 		{ top: 0; }
-		&.left 		{ left: 0; }
-		&.bottom 	{ bottom: 0; }
-		&.right 	{ right: 0; }
+		&.menu-top 			{ top: 0; }
+		&.menu-left 		{ left: 0; }
+		&.menu-bottom 		{ bottom: 0; }
+		&.menu-right 		{ right: 0; }
 	}	
 }
 
