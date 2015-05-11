@@ -1,21 +1,26 @@
 // bdk-lightbox.js
 
-var lighbox_open;
-var element = $('#bdk-lightbox');
-var lbox = '.bdk-lightbox';
+var lightbox_open,
+	mouse_is_outside;
 
+var bdk_lightbox = 'bdk-lightbox';
+var bdk_lightbox_open_class = bdk_lightbox+'-active';
+var bdk_blackout = '#bdk-blackout';
 
 function openlbox(id) {
-	$('body').toggleClass('lightbox-active');
-	$(element+'-'+id).fadeIn(function(){
-		lighbox_open = true;		
+	$('body').toggleClass(bdk_lightbox_open_class);
+	$('#'+bdk_lightbox+'-'+id).fadeIn(function(){
+		lightbox_open = true;		
 	});
 }
 function closelbox() {
-	$('.bdk-lightbox').fadeOut(function(){
-		lighbox_open = false;
-		// $('.blackout').fadeOut();
-		$('body').removeClass('lightbox-active');
+	$('.'+bdk_lightbox).fadeOut(function(){
+		lightbox_open = false;
+		
+		$(bdk_blackout).fadeOut(function(){
+			$('body').removeClass(bdk_lightbox_open_class);
+			$(this).removeAttr('style');
+		});
 	});
 }
 $(document).ready(function(){
@@ -27,22 +32,26 @@ $(document).ready(function(){
 	});
 
 	// Close Button
-	$('.bdk-lightbox .close').click(function(e){
+	$('.'+bdk_lightbox+' .close').click(function(e){
 		closelbox();
 	});
 	$(document).keyup(function(e) {
-		if (e.keyCode == 27 && lighbox_open) { 
+		if (e.keyCode == 27 && lightbox_open) { 
 			closelbox();
 		} // esc
 	});
-	// Outside Close
-	var mouse_is_outside;
-	$('.bdk-lightbox').hover(function(){ 
+	
+	/**
+	 * Outside Close
+	 * The lightbox is closed if the user clicks outside it
+	 */ 
+	$('.'+bdk_lightbox).hover(function(){ 
 		mouse_is_outside = false;
 	}, function(){ 
 		mouse_is_outside = true;
 	});
-	$("#blackout").click(function(){ 
+	
+	$(bdk_blackout).click(function(){ 
 		if (mouse_is_outside) {
 			closelbox();
 		}

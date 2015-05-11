@@ -11,10 +11,14 @@ Changelog
 // GCBA - Padres			// 0.1.4 (Amon Ed)
 // Codigoquemero			// 0.1.5 (Amon Fabian)
 // PortalMed				// 0.1.6 (Amon Gabriel)
+// Codigoquemero			// 0.2.2 (Baako Hagen)
+// Status Update 			// 0.2.3 (Baako Icarus)
 
 
 // Bodoke Status - 2015
 // ======================================
+// 11/05	- 0.2.3 (Baako Icarus)
+// 		 	- Update en "_lightbox.scss": Prefijos para clases, alineado con 'bdk-lightbox.js'
 // 08/05 	- Update en "_menu.scss": Reformulacion de los menu. Ya no necesitan de la clase ".list" para funcionar
 			- @mixin para alinear .items dentro de .menu en "_list.scss"
 			- Update en "_buttons.scss": '.button-clear' sujeto a si posee borde o no

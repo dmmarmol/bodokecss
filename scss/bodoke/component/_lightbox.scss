@@ -1,8 +1,21 @@
-// _lightbox.scss
+/**
+ * _lightbox.scss
+ *
+ * Styling for the lightbox and the blackout.
+ * The functionality can be found at 'js/bdk-lightbox.js'
+ */
 
-// _lightbox.scss
+$bdk-blackout:			'##{$bodoke-prefix}-blackout';
+$bdk-lightbox:			'.#{$bodoke-prefix}-lightbox';
+$bdk-lightbox_update:	#{$bdk-lightbox}'-active';
 
-##{$bodoke-prefix}-blackout {
+/**
+ * #blackout
+ * There should be only one at the bottom of the file
+ * Just over the closed <body> tag.
+ * It must contain all the .bdk-lighbox elements.
+ */
+#{$bdk-blackout} {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -15,15 +28,23 @@
 	@include transition(all $transition-speed ease);
 }
 
-// This activate the blackout
-body.#{$bodoke-prefix}-lightbox-active {
+/** 
+ * This activates the blackout
+ * (The class toggle functionality is on the 'js/bdk-lightbox.js' file)
+ */
+#{$bdk-lightbox_update} {
 	overflow: hidden;
-	##{$bodoke-prefix}-blackout { 
+	#{$bdk-blackout} { 
 		display: block; 
 	}
 }
 
-.#{$bodoke-prefix}-lightbox {
+/**
+ * The lightbox element
+ * '.bdk-lightbox' - Contains all the data
+ * Every type of data is available. The HTML is the limit!
+ */
+#{$bdk-lightbox} {
 	display: none;
 	position: absolute;
 	right: 0;
