@@ -7,7 +7,7 @@
 
 $bdk-blackout:			'##{$bodoke-prefix}-blackout';
 $bdk-lightbox:			'.#{$bodoke-prefix}-lightbox';
-$bdk-lightbox_update:	#{$bdk-lightbox}'-active';
+$bdk-lightbox_update:	'#{$bdk-lightbox}-active';
 
 /**
  * #blackout
