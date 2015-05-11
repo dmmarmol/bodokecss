@@ -11,6 +11,6 @@
 *.blobstore
 *.sublime-project
 *.sublime-workspace
-.node_modules
-.out
+node_modules
+out
 *.log
