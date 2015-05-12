@@ -13,4 +13,5 @@
 *.sublime-workspace
 node_modules
 out
+sassdoc
 *.log

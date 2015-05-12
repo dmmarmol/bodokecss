@@ -17,6 +17,7 @@ Changelog
 
 // Bodoke Status - 2015
 // ======================================
+// 12/05	- Update en "_texto.scss"
 // 11/05	- 0.2.3 (Baako Icarus)
 // 		 	- Update en "_lightbox.scss": Prefijos para clases, alineado con 'bdk-lightbox.js'
 // 08/05 	- Update en "_menu.scss": Reformulacion de los menu. Ya no necesitan de la clase ".list" para funcionar
