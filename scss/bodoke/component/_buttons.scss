@@ -1,18 +1,18 @@
-/**
- * _buttons.scss
- *
- * @since 0.1
- * 
- */
+////
+/// @group Buttons
+/// @since 0.1
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+////
 
-// =================
-// CONFIGURACION
-// =================
+
+/// Button total height
+/// @type Int $button-height [40px] - the button height in pixels
 $button-height: 					em(40px); // ex 32px
+/// Button font size
 $button-font-size:					em(12px);
 $button-offset: 					1.1em; // ex $col-offset
 $button-radius:						3px;
-$button-border-width:				1px;
+$button-border-width:				0px;
 $button-pressed-offset:				$button-border-width;
 $button-default-bg:					$black_90;
 $button-default-text:				$text-color;
@@ -22,9 +22,6 @@ $button-colors:						$buttons-color-pallete;	// colors.scss
 // BUTTON NAMES
 $button-prefix:						'button';					// Cambias este prefijo y cambia todos
 $button-group-prefix:				'#{$button-prefix}-group';
-
-// BUTTON TYPES
-$button-menu-border-width:			4px;
 
 // SETTINGS
 $button-has-box-shadow:				false;
@@ -43,7 +40,7 @@ $percent:							20%;
 $dark-button-text-color:			$black_97;
 
 @mixin button-color( $name, $color ) {
-	&.#{$button-prefix}-#{$name} {
+	&.#{$button-prefix}-#{$name}, [role="button"] {
 		// - Flat Button
 		@if ( $button-has-background ) {
 			// SI tiene fondo
@@ -165,7 +162,7 @@ $dark-button-text-color:			$black_97;
 }
 // Clear button hover colors
 @mixin clear-hover-color( $name, $color ) {
-	&.#{$button-prefix}-#{$name} {
+	&.#{$button-prefix}-#{$name}, [role="button"] {
 		// @include transition( box-shadow $button-transition-time ease );
 		&:hover {
 			@if lightness($color) > lightness(#aaa) {
@@ -176,8 +173,30 @@ $dark-button-text-color:			$black_97;
 			@if ( $button-has-background ) {
 				@include background( $color );	
 			}
-			@if ( $button-has-border ) {
-				border-color: $color;
+			@if ( $button-has-text-shadow ) {
+				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+			}
+			// @if ( $button-has-box-shadow ) {
+				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
+			// }
+		}
+	}
+}
+
+/// Clean button hover colors
+/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
+/// @param {string} $color - color value (from $button-colors)
+/// @since 0.2.0
+@mixin clean-hover-color( $name, $color ) {
+	&.#{$button-prefix}-#{$name} {
+		&:hover {
+			@if lightness($color) > lightness(#aaa) {
+				color: $text-color;
+			} @else {
+				color: $dark-button-text-color;
+			}
+			@if ( $button-has-background ) {
+				@include background( $color );	
 			}
 			@if ( $button-has-text-shadow ) {
 				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
@@ -188,79 +207,6 @@ $dark-button-text-color:			$black_97;
 		}
 	}
 }
-/**
- * Color for .menu .buttons
- * @param {string} $name The name of the color (will be the color class sufix)
- * @param {string} $color The color value
- */
-@mixin menu-button-color( $name, $color ) {
-	&.#{$button-prefix}-#{$name} {
-		@if ( $button-has-background ) {
-			// If the #{$button-prefix} had background, then this buttons wouldn't have
-			@include background(none);
-		}
-		@if ( $button-has-active-pseudo ) {
-			// Tiene fondo, y tiene estado active
-			&:active,
-			&.active {
-				@if ( $button-has-box-shadow ) {
-					@include box-shadow( inset 0 3px 0px 0px darken( $color, 15% ) );
-				}
-			}			
-		}
-		
-		// NO tiene fondo
-		@if lightness($color) > lightness(#aaa) {
-			color: $text-color;
-		} @else {
-			color: $dark-button-text-color;
-		}
-
-		// HOVER 
-		&, &.#{$button-prefix}-bg {
-			&:hover {
-				border-bottom-color: $color;
-				@if ($button-has-background == false) {
-					// Si los #{$button-prefix} NO TIENEN fondo, los botones del menu SI
-					@include background( $color );				
-				}
-			}
-		}
-		// ACTIVE
-		&, &.#{$button-prefix}-bg {
-			&:active, &.active {
-				border-bottom-color: darken($color, 10%);
-				@if ($button-has-background == false) {
-					// Si los #{$button-prefix} NO TIENEN fondo, los botones del menu SI
-					@include background( darken($color, 10%) );
-				}
-			}
-		}
-		// "button-bg" - fuerza al boton (sin fondo) para que lo lleve
-		&.#{$button-prefix}-bg {
-			&:hover,
-			&:active,
-			&.active {
-				@include background( darken($color, 15%) );
-				@if lightness($color) > lightness(#aaa) {
-					color: $text-color;
-				} @else {
-					color: $dark-button-text-color;
-				}
-			}
-		}
-
-		@if ( $button-has-box-shadow ) {
-			border-color: darken( $color, 15% );
-			// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) ); 
-		}
-		@if ( $button-has-text-shadow ) {
-			// @include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
-			@include text-shadow( 0px 1px 0px rgba( darken( $color, $percent ), $shadow-alpha ) );
-		}
-	}
-}
-
 
 // ==========================
 // COLORES
@@ -283,17 +229,17 @@ $dark-button-text-color:			$black_97;
 		}
 	}
 }
-// Botones sin fondo pero con hover
+// Botones sin fondo, pero con hover
 .#{$button-prefix}, [role="button"] {
 	&.#{$button-prefix}-clean {
+		color: $text-color;
 		background-color: transparent;
-		border-color: transparent;
 		@include transition( 
 			background $button-transition-time ease,
 			text-shadow $button-transition-time ease 
 		);
 		@each $single-color in $button-colors {
-			@include clear-hover-color( nth($single-color, 1), nth($single-color, 2) );
+			@include clean-hover-color( nth($single-color, 1), nth($single-color, 2) );
 		}
 	}
 }
@@ -306,16 +252,6 @@ $dark-button-text-color:			$black_97;
 		}		
 	}
 }
-/**
- * Buttons that will be inside '.menu'
- */
-.#{$button-prefix}, [role="button"] {
-	&.#{$button-prefix}-menu {
-		@each $single-color in $button-colors {
-			@include menu-button-color( nth($single-color, 1), nth($single-color, 2) );
-		}			
-	}
-}
 // Botones en grupo
 .#{$button-group-prefix} {
 	@each $single-color in $button-colors {
@@ -324,12 +260,10 @@ $dark-button-text-color:			$black_97;
 }
 
 
-// =================
-// BUTTON SIZES
-// =================
-// A partir de 0.1.0 las clases para los tamaños
-// llevan el prefijo "button-"
-// Lo que antes era en html "button slim" ahora es "button button-slim"
+/// BUTTON SIZES
+/// A partir de 0.1.0 las clases para los tamaños
+/// llevan el prefijo "button-"
+/// Lo que antes era en html "button slim" ahora es "button button-slim"
 .#{$button-prefix}, [role="button"] {
 	padding-top: 0;
 	padding-bottom: 0;
@@ -337,6 +271,8 @@ $dark-button-text-color:			$black_97;
 	padding-right: $button-offset;
 	.ficon, i {
 		font-size: 1.05em;
+		&:first-child { margin-right: 0.65em; }
+		&:last-child { margin-left: 0.65em; }
 	}
 	&.#{$button-prefix}-slim {
 		padding-left: $button-offset / 2;
@@ -344,6 +280,8 @@ $dark-button-text-color:			$black_97;
 		line-height: $button-height * 0.9;
 		.ficon, i {
 			font-size: 0.9em;
+			&:first-child { margin-right: 0.8em; }
+			&:last-child { margin-left: 0.8em; }
 		}
 	}
 	&.#{$button-prefix}-medium {
@@ -353,6 +291,8 @@ $dark-button-text-color:			$black_97;
 		line-height: $button-height * 1.2;
 		.ficon, i {
 			font-size: 1.2em;
+			&:first-child { margin-right: 1.05em; }
+			&:last-child { margin-left: 1.05em; }
 		}
 	}
 	&.#{$button-prefix}-large {
@@ -365,6 +305,8 @@ $dark-button-text-color:			$black_97;
 		line-height: 20px;
 		.ficon, i {
 			font-size: 1.4em;
+			&:first-child { margin-right: 1.1em; }
+			&:last-child { margin-left: 1.1em; }
 		}
 	}
 	&.#{$button-prefix}-big {
@@ -377,6 +319,8 @@ $dark-button-text-color:			$black_97;
 		line-height: 24px;
 		.ficon, i {
 			font-size: 1.8em;
+			&:first-child { margin-right: 1.2em; }
+			&:last-child { margin-left: 1.2em; }
 		}
 	}
 }
@@ -449,22 +393,6 @@ $dark-button-text-color:			$black_97;
 }
 
 
-/**
- * BUTTON MENU
- * Buttons preprared to work as a child of '.menu' 
- */
-.#{$button-prefix} {
-	&.#{$button-prefix}-menu {
-		@include border-radius(0);
-		// BORDER
-		border: none;
-		border-bottom-width: $button-menu-border-width;
-		border-bottom-style: solid;
-		border-bottom-color: transparent;
-		// TRANSITION
-		@include transition( border-color $transition-speed ease );
-	}
-}
 
 // =================
 // EL BOTON

@@ -9,7 +9,7 @@ $input-padding-y:		( $input-height - ($input-height / 2) ) / 2;
 $input-line-height: 	( $input-height - ($input-height / 2) );
 
 // INPUTS
-input, select, textarea 
+input, select, textarea,
 input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],
@@ -45,7 +45,7 @@ input[type="week"],
 
 
 // INPUTS
-input, select, textarea 
+input, select, textarea,
 input[type="date"],
 input[type="datetime"],
 input[type="datetime-local"],
