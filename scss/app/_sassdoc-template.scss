@@ -1,0 +1,14 @@
+//// 
+/// Template file for sassdoc.com documentation system
+//
+/// @name this-is-an-example-mixin
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+/// @link http://sassdoc.com/
+/// @since 1.0
+////
+@mixin this-is-an-example-mixin() {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}

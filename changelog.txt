@@ -17,6 +17,7 @@ Changelog
 
 // Bodoke Status - 2015
 // ======================================
+// 15/05 	- Update en "_dropdown.scss" - Adaptado para sassdoc
 // 12/05	- Update en "_texto.scss"
 // 11/05	- 0.2.3 (Baako Icarus)
 // 		 	- Update en "_lightbox.scss": Prefijos para clases, alineado con 'bdk-lightbox.js'

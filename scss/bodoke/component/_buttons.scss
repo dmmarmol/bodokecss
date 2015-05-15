@@ -9,8 +9,9 @@
 /// @type Int $button-height [40px] - the button height in pixels
 $button-height: 					em(40px); // ex 32px
 /// Button font size
+/// @type Int $button-height [12px] - Button font-size in pixels
 $button-font-size:					em(12px);
-$button-offset: 					1.1em; // ex $col-offset
+$button-offset: 					1.1em;
 $button-radius:						3px;
 $button-border-width:				0px;
 $button-pressed-offset:				$button-border-width;
@@ -39,6 +40,13 @@ $shadow-alpha: 						0.8;
 $percent:							20%;
 $dark-button-text-color:			$black_97;
 
+
+
+/// Button colors
+/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
+/// @param {string} $color - color value (from $button-colors)
+/// @since 0.0.1
+/// @group Buttons
 @mixin button-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name}, [role="button"] {
 		// - Flat Button
@@ -112,7 +120,6 @@ $dark-button-text-color:			$black_97;
 				}
 			}
 		}
-
 		@if ( $button-has-box-shadow ) {
 			border-color: darken( $color, 15% );
 			// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) ); 
@@ -123,6 +130,65 @@ $dark-button-text-color:			$black_97;
 		}
 	}
 }
+
+/// Clear button hover colors - Don't confuse it with 'Clean button'
+/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
+/// @param {string} $color - color value (from $button-colors)
+/// @since 0.1.1
+/// @group Buttons
+@mixin button-clear-color( $name, $color ) {
+	&.#{$button-prefix}-#{$name}, [role="button"] {
+		// @include transition( box-shadow $button-transition-time ease );
+		&:hover {
+			@if lightness($color) > lightness(#aaa) {
+				color: $text-color;
+			} @else {
+				color: $dark-button-text-color;
+			}
+			@if ( $button-has-background ) {
+				@include background( $color );	
+			}
+			@if ( $button-has-text-shadow ) {
+				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+			}
+			// @if ( $button-has-box-shadow ) {
+				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
+			// }
+		}
+	}
+}
+
+/// Clean button hover colors - Don't confuse it with 'Clear button'
+/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
+/// @param {string} $color - color value (from $button-colors)
+/// @since 0.2.0
+/// @group Buttons
+@mixin button-clean-color( $name, $color ) {
+	&.#{$button-prefix}-#{$name} {
+		&:hover {
+			@if lightness($color) > lightness(#aaa) {
+				color: $text-color;
+			} @else {
+				color: $dark-button-text-color;
+			}
+			@if ( $button-has-background ) {
+				@include background( $color );	
+			}
+			@if ( $button-has-text-shadow ) {
+				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+			}
+			// @if ( $button-has-box-shadow ) {
+				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
+			// }
+		}
+	}
+}
+
+/// Buttons inside button-groups colors
+/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
+/// @param {string} $color - color value (from $button-colors)
+/// @since 0.1.2
+/// @group Buttons
 @mixin button-group-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name} {
 		.#{$button-prefix}, [role="button"] {
@@ -160,53 +226,8 @@ $dark-button-text-color:			$black_97;
 		}
 	}	
 }
-// Clear button hover colors
-@mixin clear-hover-color( $name, $color ) {
-	&.#{$button-prefix}-#{$name}, [role="button"] {
-		// @include transition( box-shadow $button-transition-time ease );
-		&:hover {
-			@if lightness($color) > lightness(#aaa) {
-				color: $text-color;
-			} @else {
-				color: $dark-button-text-color;
-			}
-			@if ( $button-has-background ) {
-				@include background( $color );	
-			}
-			@if ( $button-has-text-shadow ) {
-				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
-			}
-			// @if ( $button-has-box-shadow ) {
-				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
-			// }
-		}
-	}
-}
 
-/// Clean button hover colors
-/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
-/// @param {string} $color - color value (from $button-colors)
-/// @since 0.2.0
-@mixin clean-hover-color( $name, $color ) {
-	&.#{$button-prefix}-#{$name} {
-		&:hover {
-			@if lightness($color) > lightness(#aaa) {
-				color: $text-color;
-			} @else {
-				color: $dark-button-text-color;
-			}
-			@if ( $button-has-background ) {
-				@include background( $color );	
-			}
-			@if ( $button-has-text-shadow ) {
-				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
-			}
-			// @if ( $button-has-box-shadow ) {
-				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
-			// }
-		}
-	}
-}
+
 
 // ==========================
 // COLORES
@@ -225,7 +246,7 @@ $dark-button-text-color:			$black_97;
 			text-shadow $button-transition-time ease 
 		);
 		@each $single-color in $button-colors {
-			@include clear-hover-color( nth($single-color, 1), nth($single-color, 2) );
+			@include button-clear-color( nth($single-color, 1), nth($single-color, 2) );
 		}
 	}
 }
@@ -239,7 +260,7 @@ $dark-button-text-color:			$black_97;
 			text-shadow $button-transition-time ease 
 		);
 		@each $single-color in $button-colors {
-			@include clean-hover-color( nth($single-color, 1), nth($single-color, 2) );
+			@include button-clean-color( nth($single-color, 1), nth($single-color, 2) );
 		}
 	}
 }
