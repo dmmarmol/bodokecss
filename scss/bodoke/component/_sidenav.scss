@@ -1,0 +1,56 @@
+////
+/// _sidenav.scss
+/// Sidebar/Sidenav navigation for pages
+/// Can handle inside <ul>, <ol> and <li>
+/// @group Component
+/// @example
+/// @since 0.2.3
+////
+
+
+$bdk-sidenav:			'.sidenav';
+
+#{$bdk-sidenav} {
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	&, &.sidenav-vertical {
+		.item {
+			float: none;
+			clear: both;
+		}		
+	}
+	.item {
+		.inner-item {
+			border-bottom: 1px solid gray(225);
+		}
+		a {
+			padding-left: $offset;
+			padding-right: $offset;
+			width: 100%;
+			display: block;
+			line-height: 3.8em;
+			font-size: 0.8em;
+			&:hover {
+				background-color: gray(235);
+			}
+		}
+		.text, .ficon {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.ficon {
+			font-size: 1.1em;			
+			margin-right: $col-offset / 2;
+		}
+	}
+}
+
+
+#{$bdk-sidenav} {
+	&.box-clear {
+		background-color: transparent;
+		@include box-shadow( none );
+	}
+}

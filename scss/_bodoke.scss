@@ -7,7 +7,7 @@
  *
  * author: 			Diego Martin Marmol | @dmmarmol
  * website: 		www.diegomarmol.com.ar
- * version:			0.2.3 (Baako Icarus)
+ * version:			0.2.7 (Baako Maarav)
  * release date:	20/05/14	
  * contributors: 	Leonardo Pittelli | @leopittelli
  * developed at:	Convoy S.R.L - www.convoy.me
@@ -16,7 +16,7 @@
  *
 */
 
-$bodoke-version:			0.2.3;
+$bodoke-version:			0.2.7;
 $bodoke-prefix:				'bdk';
 
 // Compass CSS3 Mixins
@@ -44,6 +44,7 @@ $bodoke-prefix:				'bdk';
 @import "bodoke/component/list";
 @import "bodoke/component/menu";
 @import "bodoke/component/input";
+@import "bodoke/component/sidenav";					// 0.2.7
 @import "bodoke/component/comments";				// 0.1.2
 @import "bodoke/component/tooltip";
 @import "bodoke/component/dropdown";

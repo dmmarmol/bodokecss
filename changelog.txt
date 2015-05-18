@@ -13,10 +13,13 @@ Changelog
 // PortalMed				// 0.1.6 (Amon Gabriel)
 // Codigoquemero			// 0.2.2 (Baako Hagen)
 // Status Update 			// 0.2.3 (Baako Icarus)
+// Status Update 			// 0.2.7 (Baako Maarav)
 
 
 // Bodoke Status - 2015
 // ======================================
+// 18/05 	- Nueva version 0.2.7
+			- Nuevo "_sidenav.scss" para estilizar menues verticales como <aside> content
 // 15/05 	- Update en "_dropdown.scss" - Adaptado para sassdoc
 // 12/05	- Update en "_texto.scss"
 // 11/05	- 0.2.3 (Baako Icarus)
