@@ -3,13 +3,25 @@
 /// Sidebar/Sidenav navigation for pages
 /// Can handle inside <ul>, <ol> and <li>
 /// @group Component
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
 /// @example
+/// <nav class="sidenav nav">
+/// 	<ul class="list">
+/// 		<li class="item">
+///				<!-- /* whatever content you want here */ -->
+/// 		</li>
+/// 		<li class="item">
+///				<!-- /* whatever content you want here too :) */ -->
+/// 		</li>
+/// 	</ul>
+/// </nav>
 /// @since 0.2.3
 ////
 
-
+/// @type String
 $bdk-sidenav:			'.sidenav';
 
+/// @name Bodoke Sidenav
 #{$bdk-sidenav} {
 	padding-top: 0;
 	padding-left: 0;
@@ -48,8 +60,15 @@ $bdk-sidenav:			'.sidenav';
 }
 
 
+/// Sidenav Colors
+/// Default
 #{$bdk-sidenav} {
-	&.box-clear {
+	background-color: gray(245);
+	@include box-shadow( 0 0 10px -2px black(0.3) );
+}
+/// Transparent
+#{$bdk-sidenav} {
+	&#{$bdk-sidenav}-clear {
 		background-color: transparent;
 		@include box-shadow( none );
 	}

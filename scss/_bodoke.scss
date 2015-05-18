@@ -44,8 +44,9 @@ $bodoke-prefix:				'bdk';
 @import "bodoke/component/list";
 @import "bodoke/component/menu";
 @import "bodoke/component/input";
-@import "bodoke/component/sidenav";					// 0.2.7
 @import "bodoke/component/comments";				// 0.1.2
+@import "bodoke/component/sidenav";					// 0.2.7
+@import "bodoke/component/modals";					// 0.2.8
 @import "bodoke/component/tooltip";
 @import "bodoke/component/dropdown";
 @import "bodoke/component/lang-dropdown.scss";

@@ -19,6 +19,9 @@ Changelog
 // Bodoke Status - 2015
 // ======================================
 // 18/05 	- Nueva version 0.2.7
+			- Update en "_input.scss"
+			- Update en "_list.scss"
+			- Nuevo "_modals.scss" para bloques de contenido despegados del fondo
 			- Nuevo "_sidenav.scss" para estilizar menues verticales como <aside> content
 // 15/05 	- Update en "_dropdown.scss" - Adaptado para sassdoc
 // 12/05	- Update en "_texto.scss"

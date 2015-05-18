@@ -1,8 +1,9 @@
- /**
- * _input.scss
- *
- * @since 0.1
- */
+////
+/// _input.scss
+///
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+/// @since 0.2.8
+////
 
 $input-height: 			1.8em;
 $input-padding-y:		( $input-height - ($input-height / 2) ) / 2;
@@ -71,14 +72,23 @@ button[type="search"],
 }
 
 
+/// @name Labels
+/// @group Form
+/// @since 0.2.8
+label {
+	font-size: 0.8em;
+	line-height: 1em;
+	&[for] {
+		cursor: pointer;
+	}
+}
 
+/// @name Buttons
+/// @group Form
+/// @since 0.1.2
 button {
-	&:focus {
-		outline: none;
-	}
-	&.button { 
-		border: none;
-	}
+	&:focus { outline: none; }
+	&.button { border: none; }
 }
 input, select {
 	line-height: $input-line-height;	
@@ -107,6 +117,7 @@ sup, .sup {
 	font-weight: 600;
 }
 
+
 // ================================
 // RADIO AND CHECK BUTTONS
 // ================================
@@ -127,6 +138,7 @@ input[type="checkbox"] {
 // ================================
 // INPUT STRUCTURE
 // ================================
+/// @type integer
 $input-offset:	1em;
 .input-row {
 	margin-bottom: $input-offset;
@@ -137,8 +149,49 @@ $input-offset:	1em;
 		margin-bottom: 0;
 	}
 	&.input-horizontal {
+		width: 100%;
+		position: relative;
+		label, input, select, textarea,
+		input[type="date"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="email"],
+		input[type="month"],
+		input[type="number"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="text"],
+		input[type="time"],
+		input[type="url"],
+		input[type="week"],
+		#{$bodoke-prefix}-input, {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: -0.3em;
+		}
 		label {
-			line-height: em(38px);
+			line-height: $input-height / 1.25;
+			padding-right: $offset / 2;
+			width: 25%;
+			text-align: right;
+		}
+		input, select, textarea,
+		input[type="date"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="email"],
+		input[type="month"],
+		input[type="number"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="text"],
+		input[type="time"],
+		input[type="url"],
+		input[type="week"],
+		#{$bodoke-prefix}-input, {
+			width: 75%;
 		}
 	}
 	&.input-vertical {

@@ -1,11 +1,10 @@
-/**
- * _list.scss
- *
- * Stylize the native HTML lists (<ul>, <ol> and <li>) cleaning their aspect
- * and giving them a basic design
- *
- * @since 0.1
- */
+////
+/// Stylize the native HTML lists (<ul>, <ol> and <li>) cleaning their aspect and giving them a basic design
+/// @group Component
+/// @file _list.scss
+/// @since 0.2.8
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+////
 
 $bdk-item-class:		'.item';
 $wordpress-item-class:	'.menu-item'; // Agregado para wordpress (tiene que ir con punto)
@@ -16,12 +15,11 @@ $wordpress-item-class:	'.menu-item'; // Agregado para wordpress (tiene que ir co
 }
 
 
-/**
- * List items align
- * Mixin that set the clases for the items alignment inside a .list
- * @param {string} $item-class It should include the dot '.'
- */
+/// Mixin that set the clases for the items alignment inside a .list
+/// @name List items align
+/// @param {string} $item-class It should include the dot '.'
 @mixin list-items-align($item-class:'') {
+	/// Vertical
 	&, &.list-vertical, &.list-vert {			
 		// margin: 0;
 		padding-left: 0;
@@ -35,15 +33,15 @@ $wordpress-item-class:	'.menu-item'; // Agregado para wordpress (tiene que ir co
 			float: none;
 		}
 	}
+
+	/// Inlined
 	&.left-horizontal, &.left-horz {
-		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} {
-			float: left; 
-		}
+		text-align: left;
+		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} { }
 	}
 	&.right-horizontal, &.right-horz {
-		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} { 
-			float: right; 
-		}
+		text-align: right;
+		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} { }
 	}
 	&.list-centered {
 		text-align: center;
@@ -65,15 +63,27 @@ $wordpress-item-class:	'.menu-item'; // Agregado para wordpress (tiene que ir co
 			}
 		}
 	}
+
+	/// Floated
+	&.float-left-horizontal, &.float-left-horz {
+		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} { 
+			float: left; 
+		}
+	}		
+	&.float-right-horizontal, &.float-right-horz {
+		#{$bdk-item-class}, #{$wordpress-item-class}, li, #{$item-class} { 
+			float: right; 
+		}
+	}
 }
 
 .list {
 	@include list();
 	margin-top: 0;
 	margin-bottom: 0;
-	/*
-	 * Set the List items align
-	 */
+	//
+	// Set the List items align @mixin
+	//
 	@include list-items-align();
 
 	#{$bdk-item-class}, #{$wordpress-item-class}, li {
