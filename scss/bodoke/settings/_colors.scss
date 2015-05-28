@@ -137,7 +137,9 @@ $tables-color-pallete:	(
 $alerts-color-pallete: (
 	('warning', $red),
 	('alert', $yellow),
-	('success', $google-green)
+	('success', c('green') ),
+	('error', c('red') ),
+	('quiet', gray(225) ),
 );
 
 

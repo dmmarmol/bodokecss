@@ -11,7 +11,7 @@
 ///				<!-- /* whatever content you want here */ -->
 /// 		</li>
 /// 		<li class="item">
-///				<!-- /* whatever content you want here too :) */ -->
+///				<a href="http://www.google.com.ar">This is an example</a>
 /// 		</li>
 /// 	</ul>
 /// </nav>
@@ -34,7 +34,7 @@ $bdk-sidenav:			'.sidenav';
 		}		
 	}
 	.item {
-		.inner-item {
+		.inner-item, a {
 			border-bottom: 1px solid gray(225);
 		}
 		a {
@@ -58,6 +58,23 @@ $bdk-sidenav:			'.sidenav';
 		}
 	}
 }
+
+
+//
+/// Sidenav active item
+//
+#{$bdk-sidenav} {
+	.item.active {
+		background-color: $color-1;
+		color: white;
+		.inner-item, a {
+			&:hover {
+				background-color: darken( $color-1, 10% );
+			}			
+		}
+	}
+}
+
 
 
 /// Sidenav Colors
