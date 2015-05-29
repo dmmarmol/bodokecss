@@ -20,6 +20,8 @@ Changelog
 // Bodoke Status - 2015
 // ======================================
 // 29/05 	- Nuevo "bdk-rating.js" para controlar puntajes en post (uncomplete)
+			- "bdk-lightbox.js" -> processlbox()
+			- "_list.scss" Ahora las listas por default son horizontales y mostradas como 'inline-block'
 // 27/05 	- Update en "_sidenav.scss" - new active state
 // 20/05 	- ## Primer año del Bodoke! ##
 // 18/05 	- Nueva version 0.2.7

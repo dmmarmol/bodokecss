@@ -3,8 +3,19 @@
  * @constructor
  * @desc Open and closes the lightbox
  * @example
+ * <div id="bdk-blackout">
+ * 	<div class="bdk-lightbox" id="bdk-lightbox-lightbox-id">
+ * 		<div class="close" title="{% trans 'Cerrar' %}" onclick='refreshIframeOnClose("send_message_iframe")'>
+ * 		    <i class="ficon fa-times"></i>
+ * 		</div>
+ * 		<div>
+ *			<!-- // Some random content! -->
+ * 		</div>
+ * 	</div>
+ * </div>
  * @group bdk-lightbox
  * @param {string} [list_element=.star-list'] - DOM element that holds the rating elements (stars)
+ * @since 0.3.0
  * @return {void}
  */
 
@@ -25,9 +36,13 @@ function openlbox(id) {
 function closelbox() {
 	$('.'+bdk_lightbox).fadeOut(function(){
 		bdk_lightbox_open = false;
+		$(this).find('.alert').fadeOut();
 		
 		$(bdk_blackout).fadeOut(function(){
 			// $(this).removeClass(bdk_lightbox_anim_class);
+			/**
+			 * Close the curent alert process
+			 */
 			$('body').removeClass(bdk_lightbox_open_class);
 			$(this).removeAttr('style');
 		});
@@ -46,7 +61,7 @@ function processlbox(id) {
 	var alertMessage = '<span class="text">Procesando...</span>';
 		
 	alert.className += ' alert panel alert-quiet h-center';
-	alert.innerHTML = alert.innerHTML + alertIcon + alertMessage;
+	alert.innerHTML = alert.innerHTML + alertMessage + alertIcon;
 
 	$('#'+bdk_lightbox+'-'+id).prepend(alert);
 }

@@ -1,20 +1,37 @@
-/**
- * _lightbox.scss
- *
- * Styling for the lightbox and the blackout.
- * The functionality can be found at 'js/bdk-lightbox.js'
- */
+////
+/// Styling for the lightbox and the blackout.
+/// The functionality can be found at 'js/bdk-lightbox.js'
+/// @group Lightbox
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+/// @example
+/// <div id="bdk-blackout">
+/// 	<div class="bdk-lightbox" id="bdk-lightbox-lightbox-id">
+/// 		<div class="close" title="{% trans 'Cerrar' %}" onclick='refreshIframeOnClose("send_message_iframe")'>
+/// 		    <i class="ficon fa-times"></i>
+/// 		</div>
+/// 		<div>
+///				<!-- // Some random content! -->
+/// 		</div>
+/// 	</div>
+/// </div>
+////
 
-$bdk-blackout:			'##{$bodoke-prefix}-blackout';
-$bdk-lightbox:			'.#{$bodoke-prefix}-lightbox';
-$bdk-lightbox_update:	'#{$bdk-lightbox}-active';
+/// Blackout name
+/// @type String $bdk-blackout ['#bdk-blackout'] - Blackout Id
+$bdk-blackout:				'##{$bodoke-prefix}-blackout';
+/// Lightbox
+/// @type String $bdk-lightbox ['.bdk-lightbox'] - Lightbox classname
+$bdk-lightbox:				'.#{$bodoke-prefix}-lightbox';
+/// Lightbox
+/// @type String $bdk-lightbox-open-class ['.bdk-active'] - Classname for the body when the lightbox is open
+$bdk-lightbox-open-class:	'#{$bdk-lightbox}-active';
 
-/**
- * #blackout
- * There should be only one at the bottom of the file
- * Just over the closed <body> tag.
- * It must contain all the .bdk-lighbox elements.
- */
+//
+/// #blackout
+/// There should be only one at the bottom of the file
+/// Just over the closed <body> tag.
+/// It must contain all the .bdk-lighbox elements.
+//
 #{$bdk-blackout} {
 	display: none;
 	position: fixed;
@@ -28,22 +45,22 @@ $bdk-lightbox_update:	'#{$bdk-lightbox}-active';
 	@include transition(all $transition-speed ease);
 }
 
-/** 
- * This activates the blackout
- * (The class toggle functionality is on the 'js/bdk-lightbox.js' file)
- */
-#{$bdk-lightbox_update} {
+// 
+/// This activates the blackout
+/// (The class toggle functionality is on the 'js/bdk-lightbox.js' file)
+//
+#{$bdk-lightbox-open-class} {
 	overflow: hidden;
 	#{$bdk-blackout} { 
 		display: block; 
 	}
 }
 
-/**
- * The lightbox element
- * '.bdk-lightbox' - Contains all the data
- * Every type of data is available. The HTML is the limit!
- */
+//
+/// The lightbox element
+/// '.bdk-lightbox' - Contains all the data
+/// Every type of data is available. The HTML is the limit!
+//
 #{$bdk-lightbox} {
 	display: none;
 	position: absolute;
@@ -62,20 +79,21 @@ $bdk-lightbox_update:	'#{$bdk-lightbox}-active';
 	// padding-left: $col-offset * 3;
 	.close {
 		$close-icon-size: 32px;
+		$close-icon-border-size: 2px;
 		position: absolute;
 		right: -$close-icon-size / 2;
 		top: -$close-icon-size / 2;
 		width: $close-icon-size;
 		height: $close-icon-size;
 		text-align: center;
-		border: 2px solid #FAFAFA;
+		border: $close-icon-border-size solid #FAFAFA;
 		cursor: pointer;
 		@include border-radius(50%);
 		@include box-shadow( 0 1px 1px 0 black(0.6) );
 		@include bdk-background( black, .9);
 		@include fa {
 			font-size: ($icon-size / 2) + 2px;
-			line-height: $close-icon-size - 2px;
+			line-height: $close-icon-size - ($close-icon-border-size * 2); // 
 			display: block;
 			color: white;
 		}
@@ -83,9 +101,35 @@ $bdk-lightbox_update:	'#{$bdk-lightbox}-active';
 }
 
 
+//
+/// @name Lightbox media
+/// media elements inside the $bdk-lightbox
+//
+#{$bdk-lightbox} {
+	iframe {
+		width: 100%;
+	}
+}
 
 
-
-
-
-
+//
+/// @name Lightbox alert
+/// media elements inside the $bdk-lightbox
+//
+#{$bdk-lightbox} {
+	.alert {
+		width: 30%;
+		display: block;
+		float: none;
+		bottom: 3em;
+  		text-align: center;
+		@include h-center;
+		.text {
+			width: 100%;
+			display: block;
+		}
+		.ficon {
+			@include animation( spin $animation-duration, true );
+		}
+	}
+}

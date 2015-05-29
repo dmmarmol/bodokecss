@@ -1,13 +1,37 @@
 ////
 /// _input.scss
 ///
+/// @group Inputs
 /// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
 /// @since 0.2.8
 ////
 
-$input-height: 			1.8em;
-$input-padding-y:		( $input-height - ($input-height / 2) ) / 2;
-$input-line-height: 	( $input-height - ($input-height / 2) );
+$input-height: 				1.8em;
+$input-padding-y:			( $input-height - ($input-height / 2) ) / 2.2;
+$input-line-height: 		( $input-height - ($input-height / 2) );
+$bdk-input-border-color: $gray-border;
+
+/// Basic styling for all the input/textarea/select
+/// @name bdk-input()
+/// @since 0.3.0
+@mixin bdk-input() {
+	padding-top: $input-padding-y;
+	padding-bottom: $input-padding-y;
+	padding-right: $col-offset;
+	padding-left: $col-offset;
+	-webkit-appearance: none;
+	position: relative;
+	width: auto;
+	font-size: 0.85em;
+	font-weight: 300;	
+	border: 1px solid $bdk-input-border-color;
+	background: #FFF;	
+	@include box-shadow( none );
+	@include border-radius( 5px );
+	@include placeholder {
+		color: hsl(0, 0, 60%);
+	}
+}
 
 // INPUTS
 input, select, textarea,
@@ -26,22 +50,7 @@ input[type="url"],
 input[type="week"],
 #{$bodoke-prefix}-input,
 {
-	padding-top: $input-padding-y;
-	padding-bottom: $input-padding-y;
-	padding-right: $col-offset;
-	padding-left: $col-offset;
-	-webkit-appearance: none;
-	position: relative;
-	width: auto;
-	font-size: 0.85em;
-	font-weight: 300;	
-	border: 1px solid $gray-border;
-	background: #FFF;	
-	@include box-shadow( none );
-	@include border-radius( 5px );
-	@include placeholder {
-		color: hsl(0, 0, 60%);
-	}
+	@include bdk-input();
 }
 
 
@@ -112,7 +121,7 @@ sup, .sup {
 .q {
 	position: relative;
 	bottom: 3px;
-	color: $gray-border;
+	color: $bdk-input-border-color;
 	font-size: 10px;
 	font-weight: 600;
 }
@@ -134,6 +143,17 @@ input[type="checkbox"] {
 	}
 }
 
+
+
+/// @name bdk-group-label
+/// @since 0.3.0
+/// General styles for the <label> tag when it's inside an '.input-group' / '.input-horizontal'
+/// Sets the height (same as the inputs) and inner spacing
+@mixin bdk-group-label() {
+	line-height: $input-height / 1.15;
+	padding-right: $offset / 2;
+	font-weight: 500;
+}
 
 // ================================
 // INPUT STRUCTURE
@@ -170,9 +190,8 @@ $input-offset:	1em;
 			vertical-align: middle;
 			margin-left: -0.3em;
 		}
-		label {
-			line-height: $input-height / 1.25;
-			padding-right: $offset / 2;
+		label {		
+			@include bdk-group-label();
 			width: 25%;
 			text-align: right;
 		}
@@ -265,11 +284,12 @@ $optional-text-color: gray(150);
 }
 
 
-// ================================
-// INPUT GROUP
-// ================================
+//
+/// @name Input group
+/// Group of inputs inside a div that fits togheter leaving no spaces between them
+//
 .input-group {
-	input, button, [role="button"], .#{$button-prefix}, textarea, select {
+	input, button, [role="button"], .#{$button-prefix}, textarea, select, label {
 		display: inline-block;
 		vertical-align: middle;
 		float: none;
@@ -277,11 +297,20 @@ $optional-text-color: gray(150);
 		&:first-child {
 			@include border-radius( $button-radius 0 0 $button-radius );
 			border-right: none;
+			margin-left: 0;
 		}
 		&:last-child {
 			@include border-radius( 0 $button-radius $button-radius 0 );
 			border-left: none;
 		}
+	}
+	label {
+		&:first-child {
+			border-right: 1px solid $bdk-input-border-color;			
+		}
+		@include bdk-input();
+		@include bdk-group-label();
+		line-height: 1.175em;
 	}
 }
 
@@ -289,9 +318,25 @@ $optional-text-color: gray(150);
 // ================================
 // ESTADOS
 // ================================
-[onclick], [mouseover], [mouseout] {
-	cursor: pointer;
-}
-[disabled], [disable] {
-	cursor: default;
+// INPUTS
+input,
+select,
+textarea,
+button,
+#{$bodoke-prefix}-input,
+[role="button"] {
+	&[onclick],
+	&[mouseover],
+	&[mouseout] {
+		cursor: pointer;
+	}
+	&[disabled],
+	&[disable],
+	&[readonly] {
+		cursor: default;
+		background-color: $bdk-input-border-color;
+		border-color: darken( $bdk-input-border-color, 10% );
+		color: gray(100);
+		@include text-shadow( 1px 0 0 white(0.9) );
+	}		
 }
