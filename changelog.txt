@@ -14,16 +14,19 @@ Changelog
 // Codigoquemero			// 0.2.2 (Baako Hagen)
 // Status Update 			// 0.2.3 (Baako Icarus)
 // Status Update 			// 0.2.7 (Baako Maarav)
+// Status Update 			// 0.3.0 (Caesar Odysseus)
 
 
 // Bodoke Status - 2015
 // ======================================
+// 29/05 	- Nuevo "bdk-rating.js" para controlar puntajes en post (uncomplete)
 // 27/05 	- Update en "_sidenav.scss" - new active state
+// 20/05 	- ## Primer año del Bodoke! ##
 // 18/05 	- Nueva version 0.2.7
 			- Update en "_input.scss"
 			- Update en "_list.scss"
 			- Nuevo "_modal.scss" para bloques de contenido despegados del fondo
-			- Nuevo "_sidenav.scss" para estilizar menues verticales como <aside> content
+			- Nuevo "_sidenav.scss" para estilizar menus verticales como <aside> content
 // 15/05 	- Update en "_dropdown.scss" - Adaptado para sassdoc
 // 12/05	- Update en "_texto.scss"
 // 11/05	- 0.2.3 (Baako Icarus)
