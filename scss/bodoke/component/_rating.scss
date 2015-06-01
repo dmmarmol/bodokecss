@@ -1,0 +1,84 @@
+////
+/// @group Component
+/// @file _rating.scss
+/// @since 0.3.1
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+/// @example
+/// <div class="bdk-rating">
+/// 	<ul class="list list-inline-block" data-rating="(include the original rating here)">
+///         <li class="item">
+///             <label for="star-1-input">
+///                 <i class="ficon fa-star star-full"></i>
+///                 <i class="ficon fa-star-half-o star-half"></i>
+///                 <i class="ficon fa-star-o star-empty"></i>
+///             </label>
+///             <input type="radio" class="hidden" id="star-1-input" name="rating" value="1" />
+///         </li>
+///         <li class="item">
+///             <label for="star-2-input">
+///                 <i class="ficon fa-star star-full"></i>
+///                 <i class="ficon fa-star-half-o star-half"></i>
+///                 <i class="ficon fa-star-o star-empty"></i>
+///             </label>
+///             <input type="radio" class="hidden" id="star-2-input" name="rating" value="2" />
+///         </li>
+///         <li class="item">
+///             <label for="star-3-input">
+///                 <i class="ficon fa-star star-full"></i>
+///                 <i class="ficon fa-star-half-o star-half"></i>
+///                 <i class="ficon fa-star-o star-empty"></i>
+///             </label>
+///             <input type="radio" class="hidden" id="star-3-input" name="rating" value="3" />
+///         </li>
+///         <li class="item">
+///             <label for="star-4-input">
+///                 <i class="ficon fa-star star-full"></i>
+///                 <i class="ficon fa-star-half-o star-half"></i>
+///                 <i class="ficon fa-star-o star-empty"></i>
+///             </label>
+///             <input type="radio" class="hidden" id="star-4-input" name="rating" value="4" />
+///         </li>
+///         <li class="item">
+///             <label for="star-5-input">
+///                 <i class="ficon fa-star star-full"></i>
+///                 <i class="ficon fa-star-half-o star-half"></i>
+///                 <i class="ficon fa-star-o star-empty"></i>
+///             </label>
+///             <input type="radio" class="hidden" id="star-5-input" name="rating" value="5" />
+///         </li>
+/// 	</ul>
+/// </div>
+////
+
+$bdk-rating:	'.#{$bodoke-prefix}-rating';
+
+$bdk-rating {
+	position: relative;
+	text-align: left;
+	display: inline-block;
+	vertical-align: middle;
+	.star-list, .list {
+		display: inline-block;
+		vertical-align: middle;
+		position: relative;
+	}
+	.item {
+		padding-right: 3px;
+		font-size: 0.8em;
+		color: $color-1;
+		.star-full 	{ display: none; }
+		.star-empty { display: block; }
+		.star-half 	{ display: none; }
+		&.full {
+			.star-full 	{ display: block; }
+			.star-empty { display: none; }			
+			.star-half 	{ display: none; }			
+		}
+		&.half {
+			.star-full 	{ display: none; }
+			.star-empty { display: none; }			
+			.star-half 	{ display: block; }			
+		}
+	}
+	.ficon {}
+}

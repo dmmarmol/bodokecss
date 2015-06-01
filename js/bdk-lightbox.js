@@ -14,6 +14,7 @@
  * 	</div>
  * </div>
  * @group bdk-lightbox
+ * @see _lightbox.scss
  * @param {string} [list_element=.star-list'] - DOM element that holds the rating elements (stars)
  * @since 0.3.0
  * @return {void}
