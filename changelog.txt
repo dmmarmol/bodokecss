@@ -19,6 +19,7 @@ Changelog
 
 // Bodoke Status - 2015
 // ======================================
+// 02/05 	- Nuevos colores de redes sociales en "_colors.scss" y "_modals.scss"
 // 29/05 	- Nuevo "bdk-rating.js" para controlar puntajes en post (uncomplete)
 			- "bdk-lightbox.js" -> processlbox()
 			- "_list.scss" Ahora las listas por default son horizontales y mostradas como 'inline-block'

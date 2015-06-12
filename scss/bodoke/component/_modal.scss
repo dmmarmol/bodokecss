@@ -87,19 +87,16 @@ $bdk-modal-box:			'.modal-box';
 		&:last-child { margin-right: 0; }
 		.ficon { 
 			font-size: 1em;
+			line-height: 1em;
 			vertical-align: middle;
 			display: inline-block;
 			color: white;
 		}
-		&.google { 
-			background-color: c('google-plus', $social-color-pallete);
+		@each $name, $color in $social-color-pallete {
+			&.#{$name} {
+				background-color: $color;
+			}
 		}
-		&.twitter { 
-			background-color: c('twitter', $social-color-pallete);
-		}
-		&.facebook { 
-			background-color: c('facebook', $social-color-pallete);
-		}	
 	}
 }
 

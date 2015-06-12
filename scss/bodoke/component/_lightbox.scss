@@ -18,13 +18,19 @@
 
 /// Blackout name
 /// @type String $bdk-blackout ['#bdk-blackout'] - Blackout Id
-$bdk-blackout:				'##{$bodoke-prefix}-blackout';
+$bdk-blackout:					'##{$bodoke-prefix}-blackout';
 /// Lightbox
 /// @type String $bdk-lightbox ['.bdk-lightbox'] - Lightbox classname
-$bdk-lightbox:				'.#{$bodoke-prefix}-lightbox';
+$bdk-lightbox:					'.#{$bodoke-prefix}-lightbox';
 /// Lightbox
 /// @type String $bdk-lightbox-open-class ['.bdk-active'] - Classname for the body when the lightbox is open
-$bdk-lightbox-open-class:	'#{$bdk-lightbox}-active';
+$bdk-lightbox-open-class:		'#{$bdk-lightbox}-active';
+/// Close Icon size
+/// @type Integer $bdk-close-icon-size [32px] - Size (width & height) for the .close icon
+$bdk-close-icon-size: 			32px;
+/// Close Icon border-width
+/// @type Integer $bdk-close-icon-border-size [2px] - border-width for the .close icon
+$bdk-close-icon-border-size: 	2px;
 
 //
 /// #blackout
@@ -78,25 +84,24 @@ $bdk-lightbox-open-class:	'#{$bdk-lightbox}-active';
 	// padding-right: $col-offset * 3;
 	// padding-left: $col-offset * 3;
 	.close {
-		$close-icon-size: 32px;
-		$close-icon-border-size: 2px;
 		position: absolute;
-		right: -$close-icon-size / 2;
-		top: -$close-icon-size / 2;
-		width: $close-icon-size;
-		height: $close-icon-size;
+		right: -$bdk-close-icon-size / 2;
+		top: -$bdk-close-icon-size / 2;
+		width: $bdk-close-icon-size;
+		height: $bdk-close-icon-size;
 		text-align: center;
-		border: $close-icon-border-size solid #FAFAFA;
+		border: $bdk-close-icon-border-size solid #FAFAFA;
 		cursor: pointer;
 		@include border-radius(50%);
 		@include box-shadow( 0 1px 1px 0 black(0.6) );
 		@include bdk-background( black, .9);
 		@include fa {
 			font-size: ($icon-size / 2) + 2px;
-			line-height: $close-icon-size - ($close-icon-border-size * 2); // 
+			line-height: $bdk-close-icon-size - ($bdk-close-icon-border-size * 2); // 
 			display: block;
 			color: white;
 		}
+		z-index: 9999;
 	}
 }
 
@@ -130,6 +135,23 @@ $bdk-lightbox-open-class:	'#{$bdk-lightbox}-active';
 		}
 		.ficon {
 			@include animation( spin $animation-duration, true );
+		}
+	}
+}
+
+
+//
+/// Media query rules for the lightboxes
+//
+@include mobile() {
+	#{$bdk-lightbox} {
+		min-width: initial;
+		max-width: 100%;
+	}
+	#{$bdk-lightbox} {
+		.close {
+			right: $bdk-close-icon-size / 2;
+			top: $bdk-close-icon-size / 2;
 		}
 	}
 }

@@ -45,8 +45,8 @@ $dark-button-text-color:			$black_97;
 /// Button colors
 /// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
 /// @param {string} $color - color value (from $button-colors)
+/// @see .#{$button-prefix}-clear
 /// @since 0.0.1
-/// @group Buttons
 @mixin button-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name}, [role="button"] {
 		// - Flat Button
@@ -131,11 +131,11 @@ $dark-button-text-color:			$black_97;
 	}
 }
 
-/// Clear button hover colors - Don't confuse it with 'Clean button'
+/// Clear button hover colors
 /// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
 /// @param {string} $color - color value (from $button-colors)
+/// @see .#{$button-prefix}-clear
 /// @since 0.1.1
-/// @group Buttons
 @mixin button-clear-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name}, [role="button"] {
 		// @include transition( box-shadow $button-transition-time ease );
@@ -158,11 +158,11 @@ $dark-button-text-color:			$black_97;
 	}
 }
 
-/// Clean button hover colors - Don't confuse it with 'Clear button'
+/// Clean button hover colors
 /// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
 /// @param {string} $color - color value (from $button-colors)
+/// @see .#{$button-prefix}-clean
 /// @since 0.2.0
-/// @group Buttons
 @mixin button-clean-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name} {
 		&:hover {
@@ -187,8 +187,8 @@ $dark-button-text-color:			$black_97;
 /// Buttons inside button-groups colors
 /// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
 /// @param {string} $color - color value (from $button-colors)
+/// @see .#{$button-prefix}-group
 /// @since 0.1.2
-/// @group Buttons
 @mixin button-group-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name} {
 		.#{$button-prefix}, [role="button"] {
@@ -355,6 +355,8 @@ $dark-button-text-color:			$black_97;
 	margin: 0;
 	line-height: $button-height;
 	background: transparent;
+	@include clear();
+	overflow: auto;
 	// A simple button inside the group
 	.#{$button-prefix}, [role="button"] {
 		border-right: none;
