@@ -6,29 +6,33 @@
 /// @since 0.2.8
 ////
 
-$input-height: 				1.8em;
+$input-height: 				2.4em;
 $input-padding-y:			( $input-height - ($input-height / 2) ) / 2.2;
 $input-line-height: 		( $input-height - ($input-height / 2) );
-$bdk-input-border-color: $gray-border;
+$bdk-input-border-color: 	$gray-border;
+$input-offset:				$offset;
 
 /// Basic styling for all the input/textarea/select
 /// @name bdk-input()
 /// @since 0.3.0
 @mixin bdk-input() {
-	padding-top: $input-padding-y;
-	padding-bottom: $input-padding-y;
+	padding-top: 0; // $input-padding-y;
+	padding-bottom: 0; // $input-padding-y;
 	padding-right: $col-offset;
 	padding-left: $col-offset;
 	-webkit-appearance: none;
 	position: relative;
 	width: auto;
-	font-size: 0.85em;
+	font-size: 0.75em; // 0.85em;
+	height: $input-height; // 2.4em; // Vacio
+	line-height: 1em;
 	font-weight: 300;	
 	border: 1px solid $bdk-input-border-color;
 	background: #FFF;	
 	@include box-shadow( none );
 	@include border-radius( 5px );
 	@include placeholder {
+		line-height: inherit;
 		color: hsl(0, 0, 60%);
 	}
 }
@@ -50,7 +54,11 @@ input[type="url"],
 input[type="week"],
 #{$bodoke-prefix}-input,
 {
-	@include bdk-input();
+	@include bdk-input();	
+}
+textarea {
+	padding-top: $input-padding-y;
+	padding-bottom: $input-padding-y;
 }
 
 
@@ -99,14 +107,11 @@ button {
 	&:focus { outline: none; }
 	&.button { border: none; }
 }
-input, select {
-	line-height: $input-line-height;	
-}
+// input, select {
+// 	line-height: $input-height;	
+// }
 select {
 	height: $input-height;
-}
-input {
-
 }
 
 
@@ -144,15 +149,14 @@ input[type="checkbox"] {
 }
 
 
-
 /// @name bdk-group-label
 /// @since 0.3.0
 /// General styles for the <label> tag when it's inside an '.input-group' / '.input-horizontal'
 /// Sets the height (same as the inputs) and inner spacing
 @mixin bdk-group-label() {
-	line-height: $input-height / 1.15;
 	padding-right: $offset / 2;
 	font-weight: 500;
+	line-height: $input-height;
 }
 
 // ================================
@@ -196,16 +200,16 @@ $input-offset:	1em;
 }
 
 
-/* 
- * Si funciona como columnas
- */
+// 
+/// Si funciona como columnas
+//
 .input-row {
 	&.cols {
-		padding-left: $grid-offset / 2;
-		padding-right: $grid-offset / 2;
-		&.c#{$grid-columns}-#{$grid-columns} {
-			padding-left: $grid-offset / 1.5;
-			padding-right: $grid-offset / 1.5;
+		padding-left: $input-offset / 2;
+		padding-right: $input-offset / 2;
+		&.c#{$grid-max-cols}-#{$grid-max-cols} {
+			padding-left: $input-offset / 1.5;
+			padding-right: $input-offset / 1.5;
 		}
 	}	
 }
@@ -226,7 +230,6 @@ $input-offset:	1em;
 		}
 	}
 }
-
 
 .input-box {
 	padding-top: $input-offset;
@@ -301,9 +304,21 @@ $optional-text-color: gray(150);
 		}
 		@include bdk-input();
 		@include bdk-group-label();
-		line-height: 1.175em;
+		// line-height: 1.175em;
 	}
 }
+// 
+@include mobile() {
+	.input-group {
+		input, button, [role="button"], .#{$button-prefix}, textarea, select, label {
+			// margin-left: 0;
+			// width: 100%;
+			// display: block;
+		}
+	}
+}
+
+
 
 
 // ================================

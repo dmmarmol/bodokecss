@@ -19,7 +19,12 @@ Changelog
 
 // Bodoke Status - 2015
 // ======================================
-// 02/05 	- Nuevos colores de redes sociales en "_colors.scss" y "_modals.scss"
+// 19/06 	- Preparando el bodokecss para soportar el desarrollo de aplicaciones externas
+// 			- Nuevo archivo que reune la configuración principal del bodokecss "settings/_settings.scss"
+// 19/06 	- Nuevo "components/social/_button-social.scss" para maquetar botones de redes sociales.
+// 18/06 	- Update en "_input.scss"			
+// 02/06 	- Nuevos colores de redes sociales en "_colors.scss" y "_modals.scss"
+// 01/06 	- Nueva version 0.3.0 (Caesar Odysseus)
 // 29/05 	- Nuevo "bdk-rating.js" para controlar puntajes en post (uncomplete)
 			- "bdk-lightbox.js" -> processlbox()
 			- "_list.scss" Ahora las listas por default son horizontales y mostradas como 'inline-block'

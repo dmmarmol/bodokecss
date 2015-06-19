@@ -172,23 +172,6 @@ $institutional-color-pallete: (
 $text-color:			$black_20;
 
 
-
-/**
- * COLOR CLASESS
- */
-// Background Colors
-@each $color in $color-pallete {
-	.bg-#{nth($color, 1)} {
-		background-color: nth($color, 2);
-	}
-}
-// Text Colors
-@each $color in $color-pallete {
-	.text-#{nth($color, 1)} {
-		color: nth($color, 2);					
-	}
-}
-
 // ==============================
 // COLORES GENERALES APLICADOS
 // ==============================

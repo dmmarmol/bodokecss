@@ -18,7 +18,7 @@ $wp-item-class:		'.menu-item'; // Added for Wordpress compatibilty (requires a d
 
 /// Mixin that set the clases for the items alignment inside a .list
 /// @name List items align
-/// @param {string} $item-class It should include the dot '.'
+/// @param {string} $item-class Extra class for custom items. It should include the dot '.'
 @mixin list-items-align($item-class:'') {
 	//
 	/// Horizontal
@@ -73,7 +73,7 @@ $wp-item-class:		'.menu-item'; // Added for Wordpress compatibilty (requires a d
 			margin-right: auto;
 		}
 		#{$bdk-item-class}, #{$wp-item-class} {
-			margin: 0;
+			// margin: 0;
 			display: block;
 			float: none;
 		}

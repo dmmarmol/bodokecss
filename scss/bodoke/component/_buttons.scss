@@ -5,34 +5,6 @@
 ////
 
 
-/// Button total height
-/// @type Int $button-height [40px] - the button height in pixels
-$button-height: 					em(40px); // ex 32px
-/// Button font size
-/// @type Int $button-height [12px] - Button font-size in pixels
-$button-font-size:					em(12px);
-$button-offset: 					1.1em;
-$button-radius:						3px;
-$button-border-width:				0px;
-$button-pressed-offset:				$button-border-width;
-$button-default-bg:					$black_90;
-$button-default-text:				$text-color;
-$button-transition-time:			$transition-speed; // config.scss
-$button-colors:						$buttons-color-pallete;	// colors.scss
-
-// BUTTON NAMES
-$button-prefix:						'button';					// Cambias este prefijo y cambia todos
-$button-group-prefix:				'#{$button-prefix}-group';
-
-// SETTINGS
-$button-has-box-shadow:				false;
-$button-has-text-shadow:			false;
-$button-has-border:					none;
-$button-has-background:				true;
-$button-has-background-gradient:	false;
-$button-has-active-pseudo:			true;
-
-
 // =======================
 // BUTTON COLORS
 // =======================

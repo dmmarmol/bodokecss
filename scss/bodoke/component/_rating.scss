@@ -52,7 +52,7 @@
 
 $bdk-rating:	'.#{$bodoke-prefix}-rating';
 
-$bdk-rating {
+#{$bdk-rating} {
 	position: relative;
 	text-align: left;
 	display: inline-block;

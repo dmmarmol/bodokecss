@@ -4,11 +4,7 @@
 @import "compass/css3";
 
 // Settings & Config
-@import "bodoke/settings/config"; 				// config & variables
-@import "bodoke/settings/mixins"; 				// mixins
-@import "bodoke/settings/functions";			// functions
-@import "bodoke/settings/fonts"; 				// fonts
-@import "bodoke/settings/colors"; 				// colors
+@import "bodoke/settings/settings";				// Bodoke core settings
 @import "bodoke/grid/grid";						// grid framework
 
 html {

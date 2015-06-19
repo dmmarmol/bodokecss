@@ -4,14 +4,13 @@
 ////
 
 
-/* 
- * col-width()
- *
- * Devuelve el ancho porcentual segun la cantidad de columnas
- * @param $col-number
- * @param $max-cols
- * @since 0.1
- */
+// 
+/// col-width()
+/// Devuelve el ancho porcentual segun la cantidad de columnas
+/// @param $col-number
+/// @param $max-cols
+/// @since 0.1
+//
 @function col-width( $col-number, $max-cols: $grid-columns ) {
 	@return ($col-number * 100%) / $max-cols;
 }
@@ -100,31 +99,22 @@
 }
 
 // $base-em:	16px;
-@function em($target, $round: false, $context: $base-em) {
-	@if $target == 0 { 
-		@return 0;
-	}
+@function em($target, $context: $base-em) {
+	@if $target == 0 { @return 0; }
+	$context: strip-units( $context );
 	$number: strip-units( $target );
-	$number: ($number * $context) + 0px;
-	@if $round == 'round' {
-		$number: round($number);
-	} @elseif $round == 'floor' {
-		$number: floor($number);
-	} @elseif $round == 'ceil' {
-		$number: ceil($number);
-	}
-	@return $target / $context + 0em;
+	// @warn 'target '+$target;
+	// @warn 'number '+$number;
+	// @warn 'context '+$context;
+	$number: ($number / $context) + 0em;
+	// @return $target / $context + 0em;
+	@return $number;
 }
-@function px($target, $round: false, $context: $base-em){
+@function px($target, $context: $base-em){
+	@if $target == 0 { @return 0; }
+	$context: strip-units( $context );
 	$number: strip-units( $target );
 	$number: ($number * $context) + 0px;
-	@if $round == 'round' {
-		$number: round($number);
-	} @elseif $round == 'floor' {
-		$number: floor($number);
-	} @elseif $round == 'ceil' {
-		$number: ceil($number);
-	}
 	@return $number;
 }
 
@@ -245,13 +235,10 @@
 }
 
 
-/* 
- * list()
- *
- * Devuelve el valor de una lista bi-dimensional segun un string
- */
- 
-
+// 
+/// list()
+/// Devuelve el valor de una lista bi-dimensional segun un string
+//
 // @function list($item, $list) {
 // 	$r: '';
 // 	@for $i from 1 through length($list) {

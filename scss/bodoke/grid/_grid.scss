@@ -1,12 +1,11 @@
-/* 
- * _grid.scss
- *
- * "The grid, the final frontier..."
- *
- * @version 2.1
- * @since 0.1.1
- * @created 19/09/14
- */
+//// 
+/// _grid.scss
+/// "The grid, the final frontier..."
+///
+/// @version 2.5
+/// @since 0.1.1
+/// @created 19/09/14
+////
 
 @import "normalize";
 @import "reset";
@@ -27,14 +26,14 @@ $container-width:	 		93.75%;			// container width
 $container-max-width:	 	1260px;			// container max-width
 $container-full-width:		100%;			// biggest .col width
 // Grilla
-$grid-columns:				12;				// Cantidad de columnas base
+$grid-columns:				$grid-max-cols;	// Cantidad de columnas base | @see 'settings/config.scss'
 $grid-col-prefix:	 		'c';			// Prefijo de las columnas
 $grid-push-left-prefix:		'push';			// Empuja desde la izquierda
 $grid-push-right-prefix:	'pull';			// Empuja desde la derecha
 $grid-medium-prefix:		'md';			// Medium screens (menores a 800px)
 $grid-tablet-prefix:		'tablet';		// Tablets
 $grid-mobile-prefix:		'mobile';		// Dispositivos mobiles
-$grid-offset:				$offset;		// Valor modular para los espacios en la grilla
+$grid-offset:				$offset;		// Valor modular para los espacios en la grilla | @see 'settings/config.scss'
 
 
 // =====================

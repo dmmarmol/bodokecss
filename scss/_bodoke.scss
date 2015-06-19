@@ -16,24 +16,14 @@
  *
 */
 
-$bodoke-version:			0.3.1;
-$bodoke-prefix:				'bdk';
-
-// Compass CSS3 Mixins
-@import "compass/css3";
-
 // Settings & Config
-@import "bodoke/settings/config"; 				// config & variables
-@import "bodoke/settings/mixins"; 				// mixins
-@import "bodoke/settings/functions";			// functions
-@import "bodoke/settings/fonts"; 				// fonts
-@import "bodoke/settings/colors"; 				// colors
-@import "bodoke/grid/grid";						// grid framework
+@import "bodoke/settings/settings";					// Bodoke core settings
+@import "bodoke/grid/grid";							// grid framework
 
 // Complements
 // ======================================
 @import "bodoke/component/buttons";
-// @import 'bodoke/component/buttons-google';	// GOOGLE BUTTONS (pre Material Design)
+// @import 'bodoke/component/buttons-google';		// GOOGLE BUTTONS (pre Material Design)
 @import "bodoke/component/icons";
 
 @import "bodoke/component/animations";
@@ -44,9 +34,8 @@ $bodoke-prefix:				'bdk';
 @import "bodoke/component/list";
 @import "bodoke/component/menu";
 @import "bodoke/component/input";
-@import "bodoke/component/comments";				// 0.1.2
 @import "bodoke/component/sidenav";					// 0.2.7
-@import "bodoke/component/modals";					// 0.2.8
+@import "bodoke/component/modal";					// 0.2.8
 @import "bodoke/component/tooltip";
 @import "bodoke/component/dropdown";
 @import "bodoke/component/lang-dropdown.scss";
@@ -56,6 +45,10 @@ $bodoke-prefix:				'bdk';
 @import "bodoke/component/slide-detail";
 @import "bodoke/component/code";
 @import "bodoke/component/rating";					// 0.3.1
+
+// Social stuff
+@import "bodoke/component/social/buttons-social";	// 0.1.2
+@import "bodoke/component/social/comments";			// 0.1.2
 
 // CSS helpers
 // ======================================
