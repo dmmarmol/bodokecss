@@ -74,6 +74,7 @@ $wp-item-class:		'.menu-item'; // Added for Wordpress compatibilty (requires a d
 		}
 		#{$bdk-item-class}, #{$wp-item-class} {
 			// margin: 0;
+			margin-left: 0; // inline-block gap fallback
 			display: block;
 			float: none;
 		}
