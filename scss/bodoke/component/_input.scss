@@ -23,9 +23,10 @@ $input-offset:				$offset;
 	-webkit-appearance: none;
 	position: relative;
 	width: auto;
+	min-width: 100%;
 	font-size: 0.75em; // 0.85em;
 	height: $input-height; // 2.4em; // Vacio
-	line-height: 1em;
+	line-height: $input-height;
 	font-weight: 300;	
 	border: 1px solid $bdk-input-border-color;
 	background: #FFF;	

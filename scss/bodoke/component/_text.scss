@@ -9,10 +9,16 @@ p {
 
 p {
 	&.lead {
-		margin-bottom: $offset;
+		margin-bottom: $em-offset;
 		font-size: 1.1em;
 		font-weight: 200;
-		line-height: 1.4;
+		line-height: 1.4em;
+	}
+	&.primary {
+		margin-bottom: $em-offset;
+		font-size: 1.4em;
+		font-weight: 300;
+		line-height: 1.8em;
 	}
 }
 
