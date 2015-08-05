@@ -27,7 +27,7 @@ _________________
 ## [Unreleased] - unreleased
 
 #### Updated
-- Preparando el bodokecss para soportar el desarrollo de aplicaciones externas `django-dkb-forms`
+- Preparando el bodokecss para soportar el desarrollo de aplicaciones externas [`django-dkb-forms`](https://github.com/ConvoyHQ/django-bdk-forms)
 - Update en `_input.scss`			
 
 #### Added
