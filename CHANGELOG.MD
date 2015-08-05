@@ -1,7 +1,7 @@
 # Changelog
 
 All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/).
+This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Changelog](http://keepachangelog.com/CHANGELOG.md).
 
 ### Projects involved
 * Tunemypic.com 			// V: 0.0.1
@@ -151,13 +151,13 @@ _________________
 
 
 ## [0.1.2] - 2015-11-13
-### Changed
+#### Changed
 - Primera version con nombre: `Amon Carolina`
-### Added
+#### Added
 - `_comments.scss` Nuevo componente para comentarios en redes sociales
 
 ## [0.0.11] - 2015-09-19
-### Changed
+#### Changed
 - Upgrade en la grilla
 
 ## [0.0.1] - 2015-05-20
