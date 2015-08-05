@@ -72,6 +72,11 @@
     text-overflow: ""; // Hide the default down arrow
     background: transparent;
 }
+@mixin reset-input() {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;		
+}
 
 
 
