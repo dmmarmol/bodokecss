@@ -53,112 +53,112 @@ _________________
 	* Update en `_dropdown.scss` - Adaptado para sassdoc
 * 12/05	
 	* Update en `_texto.scss`
-* 11/05	
-	* 0.2.3 (Baako Icarus)
- 	* Update en `_lightbox.scss`: Prefijos para clases, alineado con 'bdk-lightbox.js'
-* 08/05 	
-	* Update en `_menu.scss`: Reformulacion de los menu. Ya no necesitan de la clase `.list` para funcionar
-	* @mixin para alinear .items dentro de .menu en `_list.scss`
-	* Update en `_buttons.scss`: '.button-clear' sujeto a si posee borde o no
-	* Nuevo `js/bdk-menu` para el comportamiento de los '.menu'
-	* Nuevo en `_buttons.scss`: @mixin menu-button-color() para los botones que estan dentro de '.menu'
-* 06/05 	
-	* Update en `_buttons.scss`: Nuevo '.button-clean' -> Botones sin fondo pero con hover
-* 05/05 	
-	* Nuevo helper en `_helpers.scss` '.transparent' vuelve al elemento con `opaicity:0;`
-	* Update en `_buttons.scss`: Se ajustaron los tamaños de font-icons dentro de diferentes tamaños de botones 
-* 04/05	
-	* Update en `_buttons.scss`: Se ajustaron clases para los tamaños 
-	* Update en `_list.scss`: Compatible con los menu nativos de wordpress
-* 28/04	
-	* Update en `_buttons.scss` y `_helpers.scss`
-	* `_input.scss` - Ahora las columnas aplicadas a las `.input-row` procesan mejor los paddings a ambos lados permitiendo alinearse mejor entre distintos anchos de columnas sin depender de un `.row`
-* 27/04	
-	* Update `bodoke/settings/_helpers.scss` 
-	* Nuevos `.clean-panel` para mensajes de `Contenido vacio` o alertas no intrusivas
-	* Nuevos `.modal-box` para maquetar mensajes estilo pop-up pero relativos.
-* 27/04	- Update `bodoke/component/_input.scss` 
-	* `[role="button"]` solo tiene efecto para los 'input' o 'button'
-	* Division en los estilos compartidos entre los inputs y los botones
-* 27/04	
-	* Update `bodoke/component/_buttons.scss` - Clases de alineamiento con prefijo `#{$button-prefix}`
-* 22/04	
-	* Update `bodoke/component/_input.scss` - Soporte para `[role="button"]`
-* 22/04	
-	* Clase `bdk-input` en `bodoke/component/_input.scss`
-* 22/04	
-	* Update en `bodoke/gid/_grid.scss`. Nuevo offset particular de la grilla.
-* 21/04 	
-	* Update en `bodoke/component/_comments.scss`. Sectores ordenados con comentarios y ejemplo de estructura
-* 17/04 	
-	* lista con colores de redes sociales en `_colors.scss` -> $social-color-pallete;
-* 15/04	
-	* Nueva función `is-brightness()`. Evalua el color de fondo pasado en el primer parametro y elije color claro u obscuro segun su luminosidad
-* 14/04	
-	* `.list-inline-block` `li:first-child()` con `margin-left: 0;`. Previene que se salga del contenedor
-* 10/04	
-	* 0.2.0 (Baako Hagen);
-* 10/04	
-	* Update "parent()" -> "parents()" en `bdk-dropdown.js`
-	* Removido: hover por default en los `.item`
- 	* Update `bodoke/component/_dropdown.scss`
-	* Nuevo `_burger.scss` - [Repository](https://github.com/jorenvanhee/sass-burger/)
-* 09/04	
-	* Update `bodoke/grid/_reset.scss`
-* 08/04	
-	* 0.1.6 (Amon Gabriel)
-	* $offset variable ahora se mide en pixeles y no en ems ($base-em)
-* 07/04	
-	* Update `bodoke/grid/_grid.scss`
-	* Update `bodoke/component/dropdown`
-	* Modulo para las medidas de espaciado en las `.row-*` con $offset
-	* Nueva variable para el nombre de la clase `$container`. Nueva clase `#{$container}-full`
-* 10/03	
-	* `_colors.scss`: renombradas las clases que dan color de fondo y color de texto según los colores del array "$color-pallete".
-* 02/03	
-	* Nueva función `c()` para tomar los colores definidos previamente en el array `$color-pallete` (`_colors.scss`).
-* 09/02	
-	* Renombrada la función `i()` por `z()`, para devolver los indices de una lista y usar dentro del z-index.
-* 30/11 
-	* Nueva función `reverse()` para invertir orden en las listas de SASS - by [link](http://hugogiraudel.com)
-* 29/01	
-	* Nueva función `i()` para obtener el indice de una lista y multiplicarlo * 10
-
-
-### Bodoke Status - 2014
-
-* 30/12 
-	* `code.scss` `<pre>` tag estilizado con `<span>` para comentarios y carpetas
-	* Nuevo android-input-border @mixin para estilizar inputs como en Android
-* 29/12 
-	* Nuevo flexbox() @mixin
-* 11/12 
-	* Nuevas funciones de HugoGiraudel.com para manipular listas en SASS
-* 11/12 
-	* 0.1.4 (Amon Ed)
-* 25/11 
-	* Proyecto GCBA padres
- 	* Nuevo color "dark" para los botones
- 	* @mixin color() ahora afecta también a todos los descendientes que sean `<a>`
-* 20/11 
-	* Nueva "_transformations.scss" que define clases para animar objetos pero solo con la propiedad "transform", sin utilizar keyframes.
-* 17/11 
-	* Actualizacion y organizacion del framework 0.1.3
-* 14/11 
-	* Las columnas de la grilla ahora cambian su dirección de flotado dependiendo si [dir="rtl"] - grid 1.4
-* 13/11 
 
 
 
-## [0.1.2] - 2015-11-13
+## [0.2.0 Baako Icarus] - 2015-05-11
+#### Deleted
+#### Updated
+- `"component/_lightbox.scss"`: Prefijos para clases, alineados con `"bdk-lightbox.js"`
+- `"component/_menu.scss"`: Reformulacion de los menu. Ya no necesitan de la clase `.list` para funcionar
+- `"component/_buttons.scss"`: '.button-clear' sujeto a si posee borde o no
+- `"component/_buttons.scss"`: Nuevo '.button-clean' -> Botones sin fondo pero con hover
+- `"component/_buttons.scss"`: Se ajustaron los tamaños de font-icons dentro de diferentes tamaños de botones 
+- `"component/_buttons.scss"`: Se ajustaron clases para los tamaños 
+- `"component/_list.scss"`: Compatible con los menu nativos de wordpress
+- `"component/_input.scss"` - Ahora las columnas aplicadas a las `.input-row` procesan mejor los paddings a ambos lados permitiendo alinearse mejor entre distintos anchos de columnas sin depender de un `.row`
+- Update `"settings/_helpers.scss"` 
+- Update `"component/_input.scss"`
+- `[role="button"]` solo tiene efecto para los tags `<input>` o `<button>`
+- Division en las hojas de estilos compartidos entre los inputs y los botones
+- `"component/_buttons.scss"` - Clases de alineamiento con prefijo (Ej.: `.#{$button-prefix}-inline-block`)
+- `"component/_input.scss"` - Soporte para `[role="button"]`
+- `"gid/_grid.scss"`. Nuevo offset particular de la grilla.
+- `"component/_comments.scss"`. Sectores ordenados con comentarios y ejemplo de estructura
+
+#### Added
+- `@mixin` para alinear .items dentro de .menu en `"_list.scss"`
+- `"js/bdk-menu"` para el comportamiento de los `.menu`
+- `"_buttons.scss"`: `@mixin menu-button-color()` para los botones que estan dentro de `.menu`
+- helper en `"_helpers.scss"` `.transparent` vuelve al elemento con `opaicity:0;`
+- `.clean-panel` para mensajes de `Contenido vacio` o alertas no intrusivas
+- `.modal-box` para maquetar mensajes estilo pop-up pero relativos.
+- Nueva clase `.bdk-input` en `"component/_input.scss"`
+- Lista con colores de redes sociales en `"component/_colors.scss"` -> $social-color-pallete;
+- Nueva función `is-brightness()`. Evalua el color de fondo pasado en el primer parametro y elije color claro u obscuro segun su luminosidad
+- `.list-inline-block` `li:first-child()` con `margin-left: 0;`. Previene que se salga del contenedor
+
+
+## [0.2.0 Baako Hagen] - 2015-04-10
+#### Deleted
+- No hay más hover por default en los `.item`
+
+#### Updated
+- `bodoke/grid/_reset.scss`
+- `bdk-dropdown.js` ("parent()" is now "parents()")
+- `bodoke/component/_dropdown.scss`
+
+#### Added 	
+- `_burger.scss` - [Repository](https://github.com/jorenvanhee/sass-burger/)
+
+
+## [0.1.6 Amon Gabriel] - 2015-04-08
+#### Updated
+- `bodoke/grid/_grid.scss`
+- `bodoke/component/dropdown`
+- `$offset` variable ahora se mide en pixeles y no en ems ($base-em)
+
+#### Changed
+- `_colors.scss`: renombradas las clases que dan color de fondo y color de texto según los colores de la lista `$color-pallete`.
+- Renombrada la función `i()` por `z()`, para devolver los indices de una lista y usar dentro del z-index.
+
+#### Added
+- Modulo para las medidas de espaciado en las `.row-*` con $offset
+- Nueva variable para el nombre de la clase `$container`. Nueva clase `#{$container}-full`
+- Nueva función `c()` para tomar los colores definidos previamente en el array `$color-pallete` (`_colors.scss`).
+- Nueva función `reverse()` para invertir orden en las listas de SASS - by [HugoGiraudel.com](http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/)
+- Nueva función `i()` para obtener el indice de una lista y multiplicarlo * 10
+
+
+## [0.1.4 Amon Ed] - 2014-12-30
+#### Changed
+- `code.scss` `<pre>` tag estilizado con `<span>` para comentarios y carpetas
+- Nuevo `@mixin android-input-border` para estilizar inputs como en Android
+
+#### Added
+- Nuevas funciones de [HugoGiraudel.com](http://hugogiraudel.com/2013/08/12/sass-functions/) para manipular listas en SASS
+- Nuevo `@mixin flexbox();`
+
+
+## [0.1.3 Amon Demian] - 2014-11-25
+#### Changed
+- Actualizacion y organizacion del framework 0.1.3
+
+#### Added
+- Nueva `_transformations.scss` que define clases para animar objetos pero solo con la propiedad `transform`, sin utilizar keyframes.
+- Proyecto GCBA padres
+- Nuevo color `dark` para los botones (`.button-dark`)
+- `@mixin color();` ahora afecta también a todos los descendientes que sean `<a>`
+
+
+## [0.1.2 Amon Carolina] - 2014-11-17
 #### Changed
 - Primera version con nombre: `Amon Carolina`
+- Las columnas de la grilla ahora cambian su dirección de flotado dependiendo si [dir="rtl"] - grid 1.4
+
 #### Added
 - `_comments.scss` Nuevo componente para comentarios en redes sociales
 
-## [0.0.11] - 2015-09-19
+
+## [0.1.0] 
+#### Changed
+- New Grid
+
+
+## [0.0.11] - 2014-09-19
 #### Changed
 - Upgrade en la grilla
 
-## [0.0.1] - 2015-05-20
+
+## [0.0.1] - 2014-05-20
 - Nacimiento / BodokeCSS was born
