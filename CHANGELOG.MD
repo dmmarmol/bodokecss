@@ -24,40 +24,45 @@ _________________
 
 ### Bodoke Status - 2015
 
-* 19/06 	
-	* Preparando el bodokecss para soportar el desarrollo de aplicaciones externas `django-dkb-forms`
-	* Nuevo archivo que reune la configuración principal del bodokecss settings/_settings.scss
-* 19/06 	
-	* Nuevo `components/social/_button-social.scss` para maquetar botones de redes sociales.
-* 18/06
-	* Update en `_input.scss`			
-* 02/06
-	* Nuevos colores de redes sociales en `_colors.scss` y `_modals.scss`
-* 01/06
-	* Nueva version 0.3.0 (Caesar Odysseus)
-* 29/05
-	* Nuevo `bdk-rating.js` para controlar puntajes en post (incomplete)
-	* `bdk-lightbox.js` -> processlbox()
-	* `_list.scss` Ahora las listas por default son horizontales y mostradas como 'inline-block'
-* 27/05 	
-	* Update en `_sidenav.scss` - new active state
-* 20/05 	
-	* ## Primer año del Bodoke! ##
-* 18/05 	
-	* Nueva version 0.2.7
-	* Update en `_input.scss`
-	* Update en `_list.scss`
-	* Nuevo `_modal.scss` para bloques de contenido despegados del fondo
-	* Nuevo `_sidenav.scss` para estilizar menus verticales como <aside> content
-* 15/05 
-	* Update en `_dropdown.scss` - Adaptado para sassdoc
-* 12/05	
-	* Update en `_texto.scss`
+## [Unreleased] - unreleased
+
+#### Updated
+- Preparando el bodokecss para soportar el desarrollo de aplicaciones externas `django-dkb-forms`
+- Update en `_input.scss`			
+
+#### Added
+- Nuevo archivo que reune la configuración principal del bodokecss `"settings/_settings.scss"`
+- Nuevo `"components/social/_button-social.scss"` para maquetar botones de redes sociales.
+- Nuevos colores de redes sociales en `"settings/_colors.scss"` y `"components/_modals.scss"`
+
+	
+## [0.3.0 Baako Caesar Odysseus] - 2015-06-01
+#### Updated
+- `_list.scss` Ahora las listas por default son horizontales y mostradas como `inline-block`
+- `"component/_sidenav.scss"` - new active state
+#### Added
+- `bdk-rating.js` para controlar puntajes en post (incomplete)
+- `bdk-lightbox.js` -> processlbox()
 
 
+---
+# [2015-20-05] Primer año del Bodoke!
+---
 
-## [0.2.0 Baako Icarus] - 2015-05-11
-#### Deleted
+
+## [0.2.7 Baako Maarav] - 2015-05-18
+#### Updated
+- Update en `"component/_input.scss"`
+- Update en `"component/_list.scss"`
+- Update en `"component/_dropdown.scss"` - Adaptado para [sassdoc](sassdoc.com)
+- Update en `"component/_texto.scss"`
+
+#### Added
+- `"component/_modal.scss"`: bloques de contenido despegados del fondo
+- `"component/_sidenav.scss"`: estilizar menus verticales como <aside> content
+
+
+## [0.2.3 Baako Icarus] - 2015-05-11
 #### Updated
 - `"component/_lightbox.scss"`: Prefijos para clases, alineados con `"bdk-lightbox.js"`
 - `"component/_menu.scss"`: Reformulacion de los menu. Ya no necesitan de la clase `.list` para funcionar
