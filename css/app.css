@@ -669,7 +669,6 @@ p.primary { margin-bottom: 0.9375em; font-size: 1.4em; font-weight: 300; line-he
 /* line 13, ../scss/bodoke/settings/_mixins.scss */
 .list .item:after, .list .menu-item:after, .list li:after { clear: both; }
 
-/** _menu.scss  Create the layout for standards types of menus @since 0.1 */
 /* line 12, ../scss/bodoke/component/_menu.scss */
 nav ul, nav ol { list-style: none; list-style-type: none; list-style-image: none; padding-left: 0; }
 
