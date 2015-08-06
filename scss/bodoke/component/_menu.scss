@@ -11,7 +11,7 @@ nav {
 }
 
 @mixin bdk-menu() {
-	.menu {
+	.menu, [class*="menu"] {
 		position: relative;
 		display: block;
 		// width: 100%;
