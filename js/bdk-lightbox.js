@@ -1,24 +1,74 @@
-// bodoke.lightbox.js
+/**
+ * bdk-lightbox.js
+ * @constructor
+ * @desc Open and closes the lightbox
+ * @example
+ * <div id="bdk-blackout">
+ * 	<div class="bdk-lightbox" id="bdk-lightbox-lightbox-id">
+ * 		<div class="close" title="{% trans 'Cerrar' %}" onclick='refreshIframeOnClose("send_message_iframe")'>
+ * 		    <i class="ficon fa-times"></i>
+ * 		</div>
+ * 		<div>
+ *			<!-- // Some random content! -->
+ * 		</div>
+ * 	</div>
+ * </div>
+ * @group bdk-lightbox
+ * @see _lightbox.scss
+ * @param {string} [list_element=.star-list'] - DOM element that holds the rating elements (stars)
+ * @since 0.3.0
+ * @return {void}
+ */
 
-var lighbox_open;
-var element = $('#lightbox');
+var bdk_lightbox_open,
+	mouse_is_outside;
 
+var bdk_lightbox = 'bdk-lightbox';
+var bdk_lightbox_anim_class = 'fadeInUp';
+var bdk_lightbox_open_class = bdk_lightbox+'-active';
+var bdk_blackout = '#bdk-blackout';
 
 function openlbox(id) {
-	$('body').toggleClass('lightbox-active');
-	$(element'-'+id).fadeIn(function(){
-		lighbox_open = true;		
-	});
+	$('body').toggleClass(bdk_lightbox_open_class);
+	$('#'+bdk_lightbox+'-'+id).fadeIn(function(){
+		bdk_lightbox_open = true;		
+	});//.addClass(bdk_lightbox_anim_class);
 }
 function closelbox() {
-	$('.lightbox').fadeOut(function(){
-		lighbox_open = false;
-		// $('.blackout').fadeOut();
-		$('body').removeClass('lightbox-active');
+	$('.'+bdk_lightbox).fadeOut(function(){
+		bdk_lightbox_open = false;
+		$(this).find('.alert').fadeOut();
+		
+		$(bdk_blackout).fadeOut(function(){
+			// $(this).removeClass(bdk_lightbox_anim_class);
+			/**
+			 * Close the curent alert process
+			 */
+			$('body').removeClass(bdk_lightbox_open_class);
+			$(this).removeAttr('style');
+		});
 	});
 }
-$(document).ready(function(){
+/**
+ * processlbox()
+ * This function is going to be trigger before the 'lightbox' is closing
+ * @param {string} 
+ * @see closelbox()
+ * @return {void}
+ */
+function processlbox(id) {
+	var alert = document.createElement('div');
+	var alertIcon = '<i class="ficon fa-circle-o-notch"></i>';
+	var alertMessage = '<span class="text">Procesando...</span>';
+		
+	alert.className += ' alert panel alert-quiet h-center';
+	alert.innerHTML = alert.innerHTML + alertMessage + alertIcon;
 
+	$('#'+bdk_lightbox+'-'+id).prepend(alert);
+}
+
+
+$(document).ready(function(){
 	// $('.openlbox').click(bindlbox);
 	$('*[lightbox]').click(function(){
 		var id = $(this).attr('lightbox');
@@ -26,22 +76,26 @@ $(document).ready(function(){
 	});
 
 	// Close Button
-	$('.lightbox .close').click(function(e){
+	$('.'+bdk_lightbox+' .close').click(function(e){
 		closelbox();
 	});
 	$(document).keyup(function(e) {
-		if (e.keyCode == 27 && lighbox_open) { 
+		if (e.keyCode == 27 && lightbox_open) { 
 			closelbox();
 		} // esc
 	});
-	// Outside Close
-	var mouse_is_outside;
-	$('.lightbox').hover(function(){ 
+	
+	/**
+	 * Outside Close
+	 * The lightbox is closed if the user clicks outside it
+	 */ 
+	$('.'+bdk_lightbox).hover(function(){ 
 		mouse_is_outside = false;
 	}, function(){ 
 		mouse_is_outside = true;
 	});
-	$("#blackout").click(function(){ 
+	
+	$(bdk_blackout).click(function(){ 
 		if (mouse_is_outside) {
 			closelbox();
 		}

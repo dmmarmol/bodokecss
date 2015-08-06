@@ -1,0 +1,21 @@
+////
+/// _settings.scss
+/// BodokeCSS Core settings
+/// Include this file on the top of every new Bodoke application
+/// @example
+/// @import "bodoke/settings/settings";
+////
+
+
+$bodoke-version:			0.3.1;
+$bodoke-prefix:				'bdk';
+
+// Compass CSS3 Mixins
+@import "compass/css3";
+
+// Settings & Config
+@import "mixins"; 					// mixins
+@import "functions";				// functions
+@import "colors";  					// colors
+@import "config"; 					// config & variables
+@import "fonts"; 					// fonts

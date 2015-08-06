@@ -1,12 +1,12 @@
-/* 
-* _768.scss
-* Resoluciones hasta 768px
-*/
+//// 
+/// _800.scss
+/// Resoluciones hasta 768px
+////
 
 // Aca hay que incluir como un @mixin todas las reglas
 // que deban funcionar en resoluciones menores a 800px de ancho
-// Ej.: @include media-768-footer;
+// Ej.: @include media-800-footer;
 
 // ======================================================================
 
-// @include media-1024-footer();
+// @include media-800-footer();

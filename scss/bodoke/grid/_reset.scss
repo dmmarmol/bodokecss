@@ -1,16 +1,32 @@
-/*
- * _reset.scss
- *
- * Reset Stylesheet
-*/
+////
+/// _reset.scss
+/// Reset Stylesheet
+///
+/// @group Reset
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+////
+
+/// Viewport meta valid for the W3C 
+@viewport{
+    zoom: 1.0;
+    width: device-width;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+hr {
+	height: 0px;
+	border: none;
+	border-top: 1px solid $gray-border;
+	margin: 1em 0;
+}
 
 // General Resets
 *:focus {
 	outline: none;
-}
-a {
-	text-decoration: none;
-	color: inherit;
 }
 
 // =====================
@@ -24,3 +40,5 @@ iframe {
 [onclick] {
 	cursor: pointer;
 }
+
+

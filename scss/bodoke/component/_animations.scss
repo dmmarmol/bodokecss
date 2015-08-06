@@ -27,7 +27,9 @@ $animation-fadeInRightBig:				false;
 $animation-fadeInRightBig-extension:	false; // 0.1.0
 $animation-fadeInFromRightToLeft:		false;
 // Up
-$animation-fadeInUp:					false;
+$animation-fadeInUp:					true;  // 0.2.0
+// Bottom
+$animation-fadeInBottom:				false;
 
 // Fades Out
 $animation-fadeOutLeft:					false;

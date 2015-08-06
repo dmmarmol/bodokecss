@@ -11,12 +11,44 @@ Changelog
 // GCBA - Padres			// 0.1.4 (Amon Ed)
 // Codigoquemero			// 0.1.5 (Amon Fabian)
 // PortalMed				// 0.1.6 (Amon Gabriel)
+// Codigoquemero			// 0.2.2 (Baako Hagen)
+// Status Update 			// 0.2.3 (Baako Icarus)
+// Status Update 			// 0.2.7 (Baako Maarav)
+// Status Update 			// 0.3.0 (Caesar Odysseus)
 
 
 // Bodoke Status - 2015
 // ======================================
-// 04/05	- Update en "_list.scss": Compatible con los menu nativos de wordpress
+// 19/06 	- Preparando el bodokecss para soportar el desarrollo de aplicaciones externas
+// 			- Nuevo archivo que reune la configuración principal del bodokecss "settings/_settings.scss"
+// 19/06 	- Nuevo "components/social/_button-social.scss" para maquetar botones de redes sociales.
+// 18/06 	- Update en "_input.scss"			
+// 02/06 	- Nuevos colores de redes sociales en "_colors.scss" y "_modals.scss"
+// 01/06 	- Nueva version 0.3.0 (Caesar Odysseus)
+// 29/05 	- Nuevo "bdk-rating.js" para controlar puntajes en post (uncomplete)
+			- "bdk-lightbox.js" -> processlbox()
+			- "_list.scss" Ahora las listas por default son horizontales y mostradas como 'inline-block'
+// 27/05 	- Update en "_sidenav.scss" - new active state
+// 20/05 	- ## Primer año del Bodoke! ##
+// 18/05 	- Nueva version 0.2.7
+			- Update en "_input.scss"
+			- Update en "_list.scss"
+			- Nuevo "_modal.scss" para bloques de contenido despegados del fondo
+			- Nuevo "_sidenav.scss" para estilizar menus verticales como <aside> content
+// 15/05 	- Update en "_dropdown.scss" - Adaptado para sassdoc
+// 12/05	- Update en "_texto.scss"
+// 11/05	- 0.2.3 (Baako Icarus)
+// 		 	- Update en "_lightbox.scss": Prefijos para clases, alineado con 'bdk-lightbox.js'
+// 08/05 	- Update en "_menu.scss": Reformulacion de los menu. Ya no necesitan de la clase ".list" para funcionar
+			- @mixin para alinear .items dentro de .menu en "_list.scss"
+			- Update en "_buttons.scss": '.button-clear' sujeto a si posee borde o no
+			- Nuevo "js/bdk-menu" para el comportamiento de los '.menu'
+			- Nuevo en "_buttons.scss": @mixin menu-button-color() para los botones que estan dentro de '.menu'
+// 06/05 	- Update en "_buttons.scss": Nuevo '.button-clean' -> Botones sin fondo pero con hover
+// 05/05 	- Nuevo helper en "_helpers.scss" '.transparent' vuelve al elemento con "opaicity:0;"
+// 			- Update en "_buttons.scss": Se ajustaron los tamaños de font-icons dentro de diferentes tamaños de botones 
 // 04/05	- Update en "_buttons.scss": Se ajustaron clases para los tamaños 
+//			- Update en "_list.scss": Compatible con los menu nativos de wordpress
 // 28/04	- Update en "_buttons.scss" y "_helpers.scss"
 			- "_input.scss" - Ahora las columnas aplicadas a las ".input-row" procesan mejor los paddings a ambos lados permitiendo alinearse mejor entre distintos anchos de columnas sin depender de un ".row"
 // 27/04	- Update "bodoke/settings/_helpers.scss" 

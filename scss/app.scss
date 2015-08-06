@@ -83,12 +83,12 @@ body {
 	@import "media/1024";
 }
 // Only Tablets!!!
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px ) {
+@media only screen and (min-device-width: 801px) and (max-device-width: 1024px ) {
 	@import "media/1024_tablet";
 }
 
-@media only screen and (min-width: 641px) and (max-width: 768px ) {
-	@import "media/768"; // Nuevo nombre (ex _800.scss)
+@media only screen and (min-width: 641px) and (max-width: 800px ) {
+	@import "media/800"; // Nuevo nombre (ex _800.scss)
 }
 
 

@@ -11,3 +11,7 @@
 *.blobstore
 *.sublime-project
 *.sublime-workspace
+node_modules
+out
+sassdoc
+*.log

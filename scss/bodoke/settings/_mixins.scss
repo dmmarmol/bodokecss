@@ -1,15 +1,19 @@
-// _mixins.scss
+//// 
+/// _mixins.scss
+/// @group Mixins
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+////
 
-
-
-// CLEARFIX
+/// @name Clearfix
+/// @since 0.3
+/// @param none
 @mixin clear() {
 	*zoom: 1;
 	&:before, &:after { content: ""; display: table; }
 	&:after { clear: both; }
 }
-// Version 0.0.1
-// =============
+/// Adds each prefix to the property that is passed to the mixin
+/// @since 0.0.1
 @mixin prefixer( $name, $argument  ) {
 	-webkit-#{$name}: #{$argument};
 	-ms-#{$name}: #{$argument};
@@ -22,21 +26,27 @@
 		@include transition( #{$p}transform $values );
 	}
 }
-// Version 0.0.4
-// =============
+/// @since 0.0.4
+/// User Select
+/// 
 @mixin user-select( $value ) {
 	@each $p in $prefix-user-select {
 		#{$p}user-select: $value;
 	}
 	user-select: $value;
 }
-// Version 0.0.4
-// =============
+/// Creates a .row element
+/// @group Grid
+/// @since 0.0.4
 @mixin row($offset: $col-offset) {
 	width: auto;
 	margin-right: (-$offset);
 	margin-left: (-$offset);
 }
+/// Creates a .col/.column element
+/// @name Columns
+/// @group Grid
+/// @since 0.0.4
 @mixin cols($offset: $col-offset) {
 	position: relative;
 	display: block;
@@ -44,7 +54,10 @@
 	padding-right: $offset;
 	float: left;
 }
-@mixin collapse( $custom-offset: $col-offset ) {
+/// Collapses an element substracting his x-axis margins
+/// @group Grid
+/// @since 0.0.4
+@mixin collapse( $custom-offset: $em-offset ) {
 	margin-right: (-$custom-offset);
 	margin-left: (-$custom-offset);	
 }
@@ -58,6 +71,11 @@
     -moz-appearance: none;
     text-overflow: ""; // Hide the default down arrow
     background: transparent;
+}
+@mixin reset-input() {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;		
 }
 
 
@@ -103,7 +121,7 @@ $default-transition-delay    : false;
 // ===============================================
 // Background
 // ===============================================
-// Version 0.0.2
+/// @since 0.0.2
 // =============
 // - nuevo nombre bdk-background()
 @mixin bdk-background($color, $alpha:1) {
@@ -329,13 +347,13 @@ $default-text-shadow-v-offset:	0px;
 $default-text-shadow-blur:	 	1px;
 $default-text-shadow-spread:	false;
 
-// Version 0.0.1
+/// @since 0.0.1
 // =============
 // - Multiple text shadow
 @mixin text-drop-shadow( $values... ) {
 	text-shadow: $values;
 }
-// Version 0.0.1
+/// @since 0.0.1
 // =============
 @mixin text-stroke($stroke-width, $stroke-color: false, $stroke-fill: auto) {
 	-webkit-text-stroke-width: $stroke-width;
@@ -558,7 +576,7 @@ $default-text-shadow-spread:	false;
 	}
 }
 
-// Version 0.0.4
+/// @since 0.0.4
 // =============
 // - Media query para capturar un espectro entre dos (2) anchos
 @mixin media-between-width( $min-width, $max-width: 1680px ) {
@@ -573,7 +591,7 @@ $default-text-shadow-spread:	false;
 // ALIGNMENT
 // =======================
 
-// Version 0.0.1
+/// @since 0.0.1
 // =============
 @mixin center($important: false){
 	margin-left: auto;
@@ -595,7 +613,7 @@ $default-text-shadow-spread:	false;
 	margin: auto;
 	@if $important { float: none!important; } @else { float: none; } 
 }
-// Version 0.1.0
+/// @since 0.1.0
 // =============
 // Aplicar al contenedor para 
 // alinear verticalmente al descendiente
@@ -613,7 +631,7 @@ $default-text-shadow-spread:	false;
 		vertical-align: middle;
 	}
 }
-// Version 0.0.2
+/// @since 0.0.2
 // =============
 @mixin h-center() {
 	position: absolute;
@@ -625,7 +643,7 @@ $default-text-shadow-spread:	false;
 
 
 
-// Version 0.0.2
+/// @since 0.0.2
 // =============
 @mixin placeholder {
 	&.placeholder				 { @content }
@@ -645,7 +663,7 @@ $default-text-shadow-spread:	false;
 
 
 
-// Version 0.1.4
+/// @since 0.1.4
 // Android style inputs (pre Lollypop)
 // =============
 @mixin android-input-border($color: $gray-border, $width: 1px, $height: 6px) {
@@ -664,7 +682,7 @@ $default-text-shadow-spread:	false;
 
 
 
-// Version 0.1.4
+/// @since 0.1.4
 // Flexbox mixins
 // =============
 @mixin flex-display() {

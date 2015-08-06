@@ -1,9 +1,10 @@
-// bdk-animate-on-scroll.js
-/*
- * Agrega/Quita animaciones dependiendo de
- * cuanto scrolleo el usuario
+/**
+ * bdk-scrollimate.js
+ * @constructor
+ * Agrega/Quita animaciones dependiendo de cuanto scrolleo el usuario
  */ 
 
+ 
 var w = $(window);
 var	windows_height = w.height() * 1.1;
 // var isTouch = Modernizr.touch();

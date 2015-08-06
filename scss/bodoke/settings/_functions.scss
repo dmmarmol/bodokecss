@@ -1,21 +1,19 @@
-// _functions.scss
+////
+/// @file _functions.scss
+/// Usefull set of functions for the user
+////
 
-// ======================
-// Functions
-// ======================
 
-/* 
- * col-width()
- *
- * Devuelve el ancho porcentual segun la cantidad de columnas
- * @param $col-number
- * @param $max-cols
- * @since 0.1
- */
+// 
+/// col-width()
+/// Devuelve el ancho porcentual segun la cantidad de columnas
+/// @param $col-number
+/// @param $max-cols
+/// @since 0.1
+//
 @function col-width( $col-number, $max-cols: $grid-columns ) {
 	@return ($col-number * 100%) / $max-cols;
 }
-
 
 @function black( $opacity:1, $output:'rgba' ) {
 	@if $opacity != 1 {
@@ -49,16 +47,16 @@
 	}
 }
 
-// 0.1.1
-// devuelve un color segun el indice
-// del array $institutional-color-pallete de colors.scss
+/// @since 0.1.1
+/// devuelve un color segun el indice
+/// del array $institutional-color-pallete de colors.scss
 // ====================
 @function color($key) {
 	@return map-get($institutional-color-pallete, $key);
 }
  
 
-// 0.0.4
+/// @since 0.0.4
 // ====================
 @function gray( $value, $alpha:1 ) {
 	@if ($alpha == '') {
@@ -70,9 +68,9 @@
 
 
 
-// 0.1.4
-// bgpos()
-// Calcula la posicion del fondo en base a la multiplicacion de un modulo
+/// @since 0.1.4
+/// bgpos()
+/// Calcula la posicion del fondo en base a la multiplicacion de un modulo
 // =====================
 @function bgpos($pos, $module, $unit: px){
 	@return -$module * $pos + $unit;
@@ -101,31 +99,22 @@
 }
 
 // $base-em:	16px;
-@function em($target, $round: false, $context: $base-em) {
-	@if $target == 0 { 
-		@return 0;
-	}
+@function em($target, $context: $base-em) {
+	@if $target == 0 { @return 0; }
+	$context: strip-units( $context );
 	$number: strip-units( $target );
-	$number: ($number * $context) + 0px;
-	@if $round == 'round' {
-		$number: round($number);
-	} @elseif $round == 'floor' {
-		$number: floor($number);
-	} @elseif $round == 'ceil' {
-		$number: ceil($number);
-	}
-	@return $target / $context + 0em;
+	// @warn 'target '+$target;
+	// @warn 'number '+$number;
+	// @warn 'context '+$context;
+	$number: ($number / $context) + 0em;
+	// @return $target / $context + 0em;
+	@return $number;
 }
-@function px($target, $round: false, $context: $base-em){
+@function px($target, $context: $base-em){
+	@if $target == 0 { @return 0; }
+	$context: strip-units( $context );
 	$number: strip-units( $target );
 	$number: ($number * $context) + 0px;
-	@if $round == 'round' {
-		$number: round($number);
-	} @elseif $round == 'floor' {
-		$number: floor($number);
-	} @elseif $round == 'ceil' {
-		$number: ceil($number);
-	}
 	@return $number;
 }
 
@@ -226,6 +215,7 @@
 // ====================
 @function c($color_name, $color_list: $color-pallete) {
 	$r: '';
+	// @warn $color_list;
 
 	@for $i from 1 through length($color_list) {
 		$color: nth($color_list, $i);
@@ -245,21 +235,25 @@
 }
 
 
-/* 
- * is-brightness()
- *
- * Evalua el color de fondo pasado en el primer parametro y elije color claro u obscuro segun su luminosidad
- * @param 1 - $color a evaluar 
- * @param 2 - $bright-color
- * @param 3 - $dark-color
- * @since 0.2.0
- */ 
-@function is-brightness($bgcolor, $bright-color: white, $dark-color: $text-color) {
-	$r: $bright-color;
-	@if lightness($bgcolor) > lightness(#aaa) {
-		$r: $bright-color;
-	} @else {
-		$r: $dark-color;
-	}
-	@return $r;
-}
+// 
+/// list()
+/// Devuelve el valor de una lista bi-dimensional segun un string
+//
+// @function list($item, $list) {
+// 	$r: '';
+// 	@for $i from 1 through length($list) {
+// 		$index: nth($list, $i);
+// 		$item_list_name: nth($index, 1);		// Value 1
+// 		$item_list_value: nth($index, 2);
+// 		// @debug $color_list_name;
+// 		// @debug $color_list_name + ' '+ $color_name;
+// 		@if ( $item == $color_list_name ) {
+// 			$r: $color_list_value;
+// 		}
+// 	}
+// 	@if ( $r != '' ) {
+// 		@return $r;
+// 	} @else {
+// 		@warn 'No existe un color con ese nombre definido en la paleta de colores';
+// 	}
+// }

@@ -1,35 +1,8 @@
-/* 
- * _buttons.scss
- *
- * @since 0.1
- * 
- */
-
-// =================
-// CONFIGURACION
-// =================
-$button-height: 					em(40px); // ex 32px
-$button-font-size:					em(12px);
-$button-offset: 					1.1em; // ex $col-offset
-$button-radius:						3px;
-$button-border-width:				1px;
-$button-pressed-offset:				$button-border-width;
-$button-default-bg:					$black_90;
-$button-default-text:				$text-color;
-$button-transition-time:			$transition-speed; // config.scss
-$button-colors:						$buttons-color-pallete;	// colors.scss
-
-// BUTTON NAMES
-$button-prefix:						'button';					// Cambias este prefijo y cambia todos
-$button-group-prefix:				'#{$button-prefix}-group';
-
-// SETTINGS
-$button-has-box-shadow:				false;
-$button-has-text-shadow:			false;
-$button-has-border:					none;
-$button-has-background:				true;
-$button-has-background-gradient:	false;
-$button-has-active-pseudo:			true;
+////
+/// @group Buttons
+/// @since 0.1
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+////
 
 
 // =======================
@@ -39,6 +12,13 @@ $shadow-alpha: 						0.8;
 $percent:							20%;
 $dark-button-text-color:			$black_97;
 
+
+
+/// Button colors
+/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
+/// @param {string} $color - color value (from $button-colors)
+/// @see .#{$button-prefix}-clear
+/// @since 0.0.1
 @mixin button-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name}, [role="button"] {
 		// - Flat Button
@@ -112,7 +92,6 @@ $dark-button-text-color:			$black_97;
 				}
 			}
 		}
-
 		@if ( $button-has-box-shadow ) {
 			border-color: darken( $color, 15% );
 			// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) ); 
@@ -123,6 +102,65 @@ $dark-button-text-color:			$black_97;
 		}
 	}
 }
+
+/// Clear button hover colors
+/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
+/// @param {string} $color - color value (from $button-colors)
+/// @see .#{$button-prefix}-clear
+/// @since 0.1.1
+@mixin button-clear-color( $name, $color ) {
+	&.#{$button-prefix}-#{$name}, [role="button"] {
+		// @include transition( box-shadow $button-transition-time ease );
+		&:hover {
+			@if lightness($color) > lightness(#aaa) {
+				color: $text-color;
+			} @else {
+				color: $dark-button-text-color;
+			}
+			@if ( $button-has-background ) {
+				@include background( $color );	
+			}
+			@if ( $button-has-text-shadow ) {
+				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+			}
+			// @if ( $button-has-box-shadow ) {
+				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
+			// }
+		}
+	}
+}
+
+/// Clean button hover colors
+/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
+/// @param {string} $color - color value (from $button-colors)
+/// @see .#{$button-prefix}-clean
+/// @since 0.2.0
+@mixin button-clean-color( $name, $color ) {
+	&.#{$button-prefix}-#{$name} {
+		&:hover {
+			@if lightness($color) > lightness(#aaa) {
+				color: $text-color;
+			} @else {
+				color: $dark-button-text-color;
+			}
+			@if ( $button-has-background ) {
+				@include background( $color );	
+			}
+			@if ( $button-has-text-shadow ) {
+				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
+			}
+			// @if ( $button-has-box-shadow ) {
+				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
+			// }
+		}
+	}
+}
+
+/// Buttons inside button-groups colors
+/// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
+/// @param {string} $color - color value (from $button-colors)
+/// @see .#{$button-prefix}-group
+/// @since 0.1.2
 @mixin button-group-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name} {
 		.#{$button-prefix}, [role="button"] {
@@ -160,28 +198,8 @@ $dark-button-text-color:			$black_97;
 		}
 	}	
 }
-// Clear button hover colors
-@mixin clear-hover-color( $name, $color ) {
-	&.#{$button-prefix}-#{$name}, [role="button"] {
-		// @include transition( box-shadow $button-transition-time ease );
-		&:hover {
-			@if lightness($color) > lightness(#aaa) {
-				color: $text-color;
-			} @else {
-				color: $dark-button-text-color;
-			}
-			@if ( $button-has-background ) {
-				@include background( $color );	
-			}
-			@if ( $button-has-text-shadow ) {
-				@include text-shadow( 0 1px 0 darken( rgba( $color, 0.8), 20% ) );
-			}
-			// @if ( $button-has-box-shadow ) {
-				// @include box-shadow( 0 $button-border-width 0 0 darken( $color, 15% ) );
-			// }
-		}
-	}
-}
+
+
 
 // ==========================
 // COLORES
@@ -195,14 +213,26 @@ $dark-button-text-color:			$black_97;
 // Botones sin fondo
 .#{$button-prefix}, [role="button"] {
 	&.#{$button-prefix}-clear {
-		&.hover { // ES CLASE, NO PSEUDO CLASS!
-			@include transition( 
-				background $button-transition-time ease,
-				text-shadow $button-transition-time ease 
-			);
-			@each $single-color in $button-colors {
-				@include clear-hover-color( nth($single-color, 1), nth($single-color, 2) );
-			}
+		@include transition( 
+			background $button-transition-time ease,
+			text-shadow $button-transition-time ease 
+		);
+		@each $single-color in $button-colors {
+			@include button-clear-color( nth($single-color, 1), nth($single-color, 2) );
+		}
+	}
+}
+// Botones sin fondo, pero con hover
+.#{$button-prefix}, [role="button"] {
+	&.#{$button-prefix}-clean {
+		color: $text-color;
+		background-color: transparent;
+		@include transition( 
+			background $button-transition-time ease,
+			text-shadow $button-transition-time ease 
+		);
+		@each $single-color in $button-colors {
+			@include button-clean-color( nth($single-color, 1), nth($single-color, 2) );
 		}
 	}
 }
@@ -223,26 +253,40 @@ $dark-button-text-color:			$black_97;
 }
 
 
-// =================
-// BUTTON SIZES
-// =================
-// A partir de 0.1.0 las clases para los tamaños
-// llevan el prefijo "button-"
-// Lo que antes era en html "button slim" ahora es "button button-slim"
+/// BUTTON SIZES
+/// A partir de 0.1.0 las clases para los tamaños
+/// llevan el prefijo "button-"
+/// Lo que antes era en html "button slim" ahora es "button button-slim"
 .#{$button-prefix}, [role="button"] {
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-left: $button-offset;
 	padding-right: $button-offset;
+	.ficon, i {
+		font-size: 1.05em;
+		&:first-child { margin-right: 0.65em; }
+		&:last-child { margin-left: 0.65em; }
+	}
 	&.#{$button-prefix}-slim {
 		padding-left: $button-offset / 2;
-		padding-right: $button-offset / 2;		
+		padding-right: $button-offset / 2;
+		line-height: $button-height * 0.9;
+		.ficon, i {
+			font-size: 0.9em;
+			&:first-child { margin-right: 0.8em; }
+			&:last-child { margin-left: 0.8em; }
+		}
 	}
 	&.#{$button-prefix}-medium {
 		padding-left: $button-offset * 1.25;
 		padding-right: $button-offset * 1.25;
 		font-size: 16px;
-		line-height: 40px;
+		line-height: $button-height * 1.2;
+		.ficon, i {
+			font-size: 1.2em;
+			&:first-child { margin-right: 1.05em; }
+			&:last-child { margin-left: 1.05em; }
+		}
 	}
 	&.#{$button-prefix}-large {
 		padding-top: $button-offset / 1.75;
@@ -252,6 +296,11 @@ $dark-button-text-color:			$black_97;
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 20px;
+		.ficon, i {
+			font-size: 1.4em;
+			&:first-child { margin-right: 1.1em; }
+			&:last-child { margin-left: 1.1em; }
+		}
 	}
 	&.#{$button-prefix}-big {
 		padding-top: $button-offset / 1.5;
@@ -261,6 +310,11 @@ $dark-button-text-color:			$black_97;
 		font-size: 24px;
 		font-weight: 300;
 		line-height: 24px;
+		.ficon, i {
+			font-size: 1.8em;
+			&:first-child { margin-right: 1.2em; }
+			&:last-child { margin-left: 1.2em; }
+		}
 	}
 }
 
@@ -273,6 +327,8 @@ $dark-button-text-color:			$black_97;
 	margin: 0;
 	line-height: $button-height;
 	background: transparent;
+	@include clear();
+	overflow: auto;
 	// A simple button inside the group
 	.#{$button-prefix}, [role="button"] {
 		border-right: none;
@@ -312,13 +368,26 @@ $dark-button-text-color:			$black_97;
 	}
 	// Or what if the buttons are inline-aligned?
 	&.#{$button-group-prefix}-inline {
+		display: inline-block;
+		float: none;
 		.#{$button-prefix}, [role="button"] {
 			display: inline-block;
 			float: none;
-			margin-left: -0.4em;
+			margin-left: -0.3em;
 		}
 	}
 }
+// =================
+// BUTTON GROUP SIZES
+// =================
+.#{$button-group-prefix} {
+	.#{$button-prefix}-slim {}
+	.#{$button-prefix}-medium {}
+	.#{$button-prefix}-large {}
+	.#{$button-prefix}-big {}
+}
+
+
 
 // =================
 // EL BOTON
@@ -420,6 +489,7 @@ $dark-button-text-color:			$black_97;
 	}
 }
 
+
 // ============================
 // BOTON CON F-ICON DENTRO
 // ============================
@@ -433,5 +503,10 @@ $dark-button-text-color:			$black_97;
 	}
 	[class*="#{$bodoke-prefix}-icon"] {
 
+	}
+	.text {
+		display: inline-block;
+		vertical-align: middle;	
+		font-size: 1em;	
 	}
 }

@@ -1,30 +1,28 @@
-/* 
- * _comments.scss
- *
- * Maqueta los comentarios de usuarios
- * @since 0.1.2
- *
- * Estructura
- * 	<contenedor>
- * 		<user-image>
- *			<img />
- * 		</user-image>
- * 		<user-comment>
- *	 		<user-name>
- *	 		</user-name>
- *	 		<p class="user-message"></p>
- * 		</user-comment>
- * 	</contenedor>
- */
+//// 
+/// _comments.scss
+///
+/// Maqueta los comentarios de usuarios
+/// @since 0.1.2
+/// @group Social
+/// @example
+/// <contenedor>
+/// 	<user-image>
+/// 	<img />
+/// 	</user-image>
+/// 	<user-comment>
+/// 		<user-name>
+/// 		</user-name>
+/// 		<p class="user-message"></p>
+/// 	</user-comment>
+/// </contenedor>
+////
 
 $comments-avatar-size:	50px;
 
-
-/* 
- * Comments list
- *
- * Class for the <ul> or <ol> tag wich hold the .bdk-comments elements
- */
+// 
+/// Comments list
+/// Class for the <ul> or <ol> tag wich hold the .bdk-comments elements
+//
 ul.#{$bodoke-prefix}-comments,
 .list.#{$bodoke-prefix}-comments {
 	margin-left: 0;
@@ -37,11 +35,10 @@ ul.#{$bodoke-prefix}-comments,
 
 
 
-/* 
- * User comment / bdk-comment
- *
- * The HTML element that contain all of the comment structure
- */
+// 
+/// User comment / bdk-comment
+/// The HTML element that contain all of the comment structure
+//
 .#{$bodoke-prefix}-comment {
 	position: relative;
 	@include clear();
@@ -57,11 +54,10 @@ ul.#{$bodoke-prefix}-comments,
 
 
 
-/* 
- * User image / Profile image
- *
- * The profile-pic or avatar from the user who post the comment
- */
+// 
+/// User image / Profile image
+/// The profile-pic or avatar from the user who post the comment
+//
 .#{$bodoke-prefix}-comment {
 	.user-image {
 		width: $comments-avatar-size;
@@ -76,13 +72,12 @@ ul.#{$bodoke-prefix}-comments,
 
 
 
-/* 
- * The comment area / User comment
- *
- * Contain the user-name and the user-message
- * is pushed to the right giving the necesary space
- * to the profile pic (user-image)
- */
+// 
+/// The comment area / User comment
+/// Contain the user-name and the user-message
+/// is pushed to the right giving the necesary space
+/// to the profile pic (user-image)
+//
 .#{$bodoke-prefix}-comment {
 	// Comentario
 	.user-comment {
@@ -108,11 +103,10 @@ ul.#{$bodoke-prefix}-comments,
 
 
 
-/* 
- * User name / Nombre de usuario
- *
- * The username of the user who commented
- */
+// 
+/// User name / Nombre de usuario
+/// The username of the user who commented
+//
 .#{$bodoke-prefix}-comment {
 	// Nombre del usuario
 	.user-name {
@@ -124,11 +118,10 @@ ul.#{$bodoke-prefix}-comments,
 
 
 
-/* 
- * Comment date
- *
- * The time when the comment was submited
- */
+// 
+/// Comment date
+/// The time when the comment was submited
+//
 .#{$bodoke-prefix}-comment {
 	// Fecha del comentario
 	.user-comment-date {
@@ -146,11 +139,10 @@ ul.#{$bodoke-prefix}-comments,
 
 
 
-/* 
- * Comment date
- *
- * The time when the comment was submited
- */
+// 
+/// Comment date
+/// The time when the comment was submited
+//
 .#{$bodoke-prefix}-comments {	
 	// Interacciones con el mensaje/comentario
 	.user-interactions {
@@ -175,8 +167,9 @@ ul.#{$bodoke-prefix}-comments,
 
 
 
-// Change margin if [dir]
-// ========================
+// 
+/// Change margin if [dir]
+// 
 [dir="ltr"] .#{$bodoke-prefix}-comments {
 	.user-image, .user-comment {
 		// float: left;
