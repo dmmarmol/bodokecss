@@ -38,7 +38,7 @@ _________________
 - Nuevo `"components/social/_button-social.scss"` para maquetar botones de redes sociales.
 - Nuevos colores de redes sociales en `"settings/_colors.scss"` y `"components/_modals.scss"`
 	
-## [0.3.0 Baako Caesar Odysseus] - 2015-06-01
+## [0.3.0 Caesar Odysseus] - 2015-06-01
 #### Updated
 - `_list.scss` Ahora las listas por default son horizontales y mostradas como `inline-block`
 - `"component/_sidenav.scss"` - new active state
