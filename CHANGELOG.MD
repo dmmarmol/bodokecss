@@ -31,7 +31,7 @@ _________________
 - Update en `_input.scss`			
 - Update en la declaración de `media-query` para dispositivos moviles
 - `"component/_menu.scss": clase `.menu` ahora se define en encabezado del archivo bajo la variable `$bdk-menu`
-- `"grid/_grid.scss": file-level annotations al estandar de [sassdoc.com](http://sassdoc.com)
+- `"grid/_grid.scss"`: file-level annotations al estandar de [sassdoc.com](http://sassdoc.com)
 
 #### Added
 - Nuevo archivo que reune la configuración principal del bodokecss `"settings/_settings.scss"`
