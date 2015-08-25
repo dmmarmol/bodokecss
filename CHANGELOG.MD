@@ -28,7 +28,8 @@ _________________
 
 #### Updated
 - Preparando el bodokecss para soportar el desarrollo de aplicaciones externas [`django-dkb-forms`](https://github.com/ConvoyHQ/django-bdk-forms)
-- Update en `_input.scss`			
+- Update en `"component/_input.scss"`
+- Fixed typo in `"component/_modal.scss"`
 
 #### Added
 - Nuevo archivo que reune la configuración principal del bodokecss `"settings/_settings.scss"`
