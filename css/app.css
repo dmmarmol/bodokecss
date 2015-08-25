@@ -5,8 +5,27 @@
 ::-moz-selection, ::selection { background: #d1d1d1; color: #FFF; text-shadow: 1px solid rgba(0, 0, 0, 0.2); }
 
 @font-face { font-family: 'FontAwesome'; src: url("../fonts/fontawesome-webfont.eot?v=4.2.0"); src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
-/* line 73, ../scss/bodoke/settings/_fonts.scss */
-[class*="fa"]:before { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+/* line 75, ../scss/bodoke/settings/_fonts.scss */
+[class*="fa"]:before { display: inline-block; font-family: FontAwesome; font-style: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+@font-face { font-family: "bodoke-fontastic"; src: url("../fonts/bodoke-fontastic/bodoke-fontastic.eot"); src: url("../fonts/bodoke-fontastic/bodoke-fontastic.eot?#iefix") format("embedded-opentype"), url("../fonts/bodoke-fontastic/bodoke-fontastic.woff") format("woff"), url("../fonts/bodoke-fontastic/bodoke-fontastic.ttf") format("truetype"), url("../fonts/bodoke-fontastic/bodoke-fontastic.svg#bodoke-fontastic") format("svg"); font-weight: normal; font-style: normal; }
+/* line 20, ../fonts/bodoke-fontastic/_bodoke-fontastic.scss */
+.bdk-icon, [class^="bdk-icon"]:before, [class*="bdk-icon"]:before { display: inline-block; font-family: "bodoke-fontastic"; font-style: normal; font-weight: normal; speak: none; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* line 17, ../fonts/bodoke-fontastic/_bodoke-fontastic-icons.scss */
+.bdk-icon-times:before, .bdk-icon-close:before { content: "a"; }
+
+/* line 20, ../fonts/bodoke-fontastic/_bodoke-fontastic-icons.scss */
+.bdk-icon-bell:before { content: "b"; }
+
+/* line 22, ../fonts/bodoke-fontastic/_bodoke-fontastic-icons.scss */
+.bdk-icon-phone-tube:before { content: "e"; }
+
+/* line 24, ../fonts/bodoke-fontastic/_bodoke-fontastic-icons.scss */
+.bdk-icon-bars:before { content: "f"; }
+
+/* line 26, ../fonts/bodoke-fontastic/_bodoke-fontastic-icons.scss */
+.bdk-icon-bars-negative:before { content: "g"; }
 
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
@@ -601,7 +620,7 @@ p.lead { margin-bottom: 0.9375em; font-size: 1.1em; font-weight: 200; line-heigh
 /* line 17, ../scss/bodoke/component/_text.scss */
 p.primary { margin-bottom: 0.9375em; font-size: 1.4em; font-weight: 300; line-height: 1.8em; }
 
-/** Bullet Labels  Pequeños avisos que se utilizan para advertir sobre un contenido destacado pero sin ser invasivo  */
+/** Bullet Labels  Peque├▒os avisos que se utilizan para advertir sobre un contenido destacado pero sin ser invasivo  */
 /* line 40, ../scss/bodoke/component/_text.scss */
 .bullet-label { display: inline-block; vertical-align: middle; padding: 3px 6px; font-size: 8px; font-weight: 500; line-height: 1em; text-transform: uppercase; background-color: #f2f2f2; margin-left: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6); -webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6); box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6); }
 
@@ -643,92 +662,92 @@ p.primary { margin-bottom: 0.9375em; font-size: 1.4em; font-weight: 300; line-he
 .list.float-left-horizontal .item, .list.float-left-horizontal .menu-item, .list.float-left-horizontal li, .list.float-left-horz .item, .list.float-left-horz .menu-item, .list.float-left-horz li { float: left; }
 /* line 92, ../scss/bodoke/component/_list.scss */
 .list.float-right-horizontal .item, .list.float-right-horizontal .menu-item, .list.float-right-horizontal li, .list.float-right-horz .item, .list.float-right-horz .menu-item, .list.float-right-horz li { float: right; }
-/* line 125, ../scss/bodoke/component/_list.scss */
+/* line 122, ../scss/bodoke/component/_list.scss */
 .list .item, .list .menu-item, .list li { *zoom: 1; }
 /* line 12, ../scss/bodoke/settings/_mixins.scss */
 .list .item:before, .list .item:after, .list .menu-item:before, .list .menu-item:after, .list li:before, .list li:after { content: ""; display: table; }
 /* line 13, ../scss/bodoke/settings/_mixins.scss */
 .list .item:after, .list .menu-item:after, .list li:after { clear: both; }
 
-/** _menu.scss  Create the layout for standards types of menus @since 0.1 */
 /* line 12, ../scss/bodoke/component/_menu.scss */
 nav ul, nav ol { list-style: none; list-style-type: none; list-style-image: none; padding-left: 0; }
 
 /*  The menu */
-/* line 25, ../scss/bodoke/component/_menu.scss */
-.menu { position: relative; display: block; padding: 0; margin: 0; list-style-type: none; list-style-image: none; }
-/* line 33, ../scss/bodoke/component/_menu.scss */
-.menu.active { background-color: white; -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4); box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4); }
-/* line 37, ../scss/bodoke/component/_menu.scss */
-.menu.active .item, .menu.active .item a, .menu.active .item .button, .menu.active .item [role="button"] { color: #333333; }
-/* line 42, ../scss/bodoke/component/_menu.scss */
-.menu ul, .menu ol, .menu nav { padding-left: 0; margin-top: 0; margin-bottom: 0; }
+/* line 23, ../scss/bodoke/component/_menu.scss */
+.menu, [class*=".menu"] { position: relative; display: block; padding: 0; margin: 0; list-style-type: none; list-style-image: none; }
+/* line 31, ../scss/bodoke/component/_menu.scss */
+.menu.active, [class*=".menu"].active { background-color: white; -moz-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4); box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4); }
+/* line 35, ../scss/bodoke/component/_menu.scss */
+.menu.active .item, .menu.active .item a, .menu.active .item .button, .menu.active .item [role="button"], [class*=".menu"].active .item, [class*=".menu"].active .item a, [class*=".menu"].active .item .button, [class*=".menu"].active .item [role="button"] { color: #333333; }
+/* line 40, ../scss/bodoke/component/_menu.scss */
+.menu ul, .menu ol, .menu nav, [class*=".menu"] ul, [class*=".menu"] ol, [class*=".menu"] nav { padding-left: 0; margin-top: 0; margin-bottom: 0; }
 
-/**  Menu position Define the .menu position on the page */
-/* line 56, ../scss/bodoke/component/_menu.scss */
-.menu.menu-fixed, .menu.menu-fixed-top { position: fixed; top: 0; left: 0; z-index: 99999; }
-/* line 61, ../scss/bodoke/component/_menu.scss */
-.menu.menu-fixed-top { width: 100%; }
-/* line 66, ../scss/bodoke/component/_menu.scss */
-.menu.menu-absolute { position: absolute; }
+/**  Menu position Define the menu position on the page */
+/* line 54, ../scss/bodoke/component/_menu.scss */
+.menu.menu-fixed, .menu.menu-fixed-top, [class*=".menu"].menu-fixed, [class*=".menu"].menu-fixed-top { position: fixed; top: 0; left: 0; z-index: 99999; }
+/* line 59, ../scss/bodoke/component/_menu.scss */
+.menu.menu-fixed-top, [class*=".menu"].menu-fixed-top { width: 100%; }
+/* line 64, ../scss/bodoke/component/_menu.scss */
+.menu.menu-absolute, [class*=".menu"].menu-absolute { position: absolute; }
+/* line 65, ../scss/bodoke/component/_menu.scss */
+.menu.menu-static, [class*=".menu"].menu-static { position: static; }
 /* line 67, ../scss/bodoke/component/_menu.scss */
-.menu.menu-static { position: static; }
+.menu.menu-top, [class*=".menu"].menu-top { top: 0; }
+/* line 68, ../scss/bodoke/component/_menu.scss */
+.menu.menu-left, [class*=".menu"].menu-left { left: 0; }
 /* line 69, ../scss/bodoke/component/_menu.scss */
-.menu.menu-top { top: 0; }
+.menu.menu-bottom, [class*=".menu"].menu-bottom { bottom: 0; }
 /* line 70, ../scss/bodoke/component/_menu.scss */
-.menu.menu-left { left: 0; }
-/* line 71, ../scss/bodoke/component/_menu.scss */
-.menu.menu-bottom { bottom: 0; }
-/* line 72, ../scss/bodoke/component/_menu.scss */
-.menu.menu-right { right: 0; }
+.menu.menu-right, [class*=".menu"].menu-right { right: 0; }
 
 /** Menu alingment Set the .menu .item(s) alignment inside the .menu */
 /* line 27, ../scss/bodoke/component/_list.scss */
-.menu { display: inline-block; }
+.menu, [class*=".menu"] { display: inline-block; }
 /* line 29, ../scss/bodoke/component/_list.scss */
-.menu .item, .menu .menu-item, .menu li { display: inline-block; margin-left: -0.3em; }
+.menu .item, .menu .menu-item, .menu li, [class*=".menu"] .item, [class*=".menu"] .menu-item, [class*=".menu"] li { display: inline-block; margin-left: -0.3em; }
 /* line 32, ../scss/bodoke/component/_list.scss */
-.menu .item:first-child, .menu .menu-item:first-child, .menu li:first-child { margin-left: 0; }
+.menu .item:first-child, .menu .menu-item:first-child, .menu li:first-child, [class*=".menu"] .item:first-child, [class*=".menu"] .menu-item:first-child, [class*=".menu"] li:first-child { margin-left: 0; }
 /* line 36, ../scss/bodoke/component/_list.scss */
-.menu.list-separated .item, .menu.list-separated .menu-item, .menu.list-separated li { margin-left: initial; }
+.menu.list-separated .item, .menu.list-separated .menu-item, .menu.list-separated li, [class*=".menu"].list-separated .item, [class*=".menu"].list-separated .menu-item, [class*=".menu"].list-separated li { margin-left: initial; }
 /* line 40, ../scss/bodoke/component/_list.scss */
-.menu.list-centered { text-align: center; }
+.menu.list-centered, [class*=".menu"].list-centered { text-align: center; }
 /* line 42, ../scss/bodoke/component/_list.scss */
-.menu.list-centered .item, .menu.list-centered .menu-item, .menu.list-centered li { float: none; display: inline-block; }
+.menu.list-centered .item, .menu.list-centered .menu-item, .menu.list-centered li, [class*=".menu"].list-centered .item, [class*=".menu"].list-centered .menu-item, [class*=".menu"].list-centered li { float: none; display: inline-block; }
 /* line 50, ../scss/bodoke/component/_list.scss */
-.menu.left-horizontal, .menu.left-horz, .menu.list-left { text-align: left; }
+.menu.left-horizontal, .menu.left-horz, .menu.list-left, [class*=".menu"].left-horizontal, [class*=".menu"].left-horz, [class*=".menu"].list-left { text-align: left; }
 /* line 59, ../scss/bodoke/component/_list.scss */
-.menu.right-horizontal, .menu.right-horz, .menu.list-right { text-align: right; }
+.menu.right-horizontal, .menu.right-horz, .menu.list-right, [class*=".menu"].right-horizontal, [class*=".menu"].right-horz, [class*=".menu"].list-right { text-align: right; }
 /* line 69, ../scss/bodoke/component/_list.scss */
-.menu.list-vertical, .menu.list-vert { padding-left: 0; }
+.menu.list-vertical, .menu.list-vert, [class*=".menu"].list-vertical, [class*=".menu"].list-vert { padding-left: 0; }
 /* line 71, ../scss/bodoke/component/_list.scss */
-.menu.list-vertical.container, .menu.list-vertical.container-full, .menu.list-vert.container, .menu.list-vert.container-full { margin-left: auto; margin-right: auto; }
+.menu.list-vertical.container, .menu.list-vertical.container-full, .menu.list-vert.container, .menu.list-vert.container-full, [class*=".menu"].list-vertical.container, [class*=".menu"].list-vertical.container-full, [class*=".menu"].list-vert.container, [class*=".menu"].list-vert.container-full { margin-left: auto; margin-right: auto; }
 /* line 75, ../scss/bodoke/component/_list.scss */
-.menu.list-vertical .item, .menu.list-vertical .menu-item, .menu.list-vert .item, .menu.list-vert .menu-item { margin-left: 0; display: block; float: none; }
+.menu.list-vertical .item, .menu.list-vertical .menu-item, .menu.list-vert .item, .menu.list-vert .menu-item, [class*=".menu"].list-vertical .item, [class*=".menu"].list-vertical .menu-item, [class*=".menu"].list-vert .item, [class*=".menu"].list-vert .menu-item { margin-left: 0; display: block; float: none; }
 /* line 87, ../scss/bodoke/component/_list.scss */
-.menu.float-left-horizontal .item, .menu.float-left-horizontal .menu-item, .menu.float-left-horizontal li, .menu.float-left-horz .item, .menu.float-left-horz .menu-item, .menu.float-left-horz li { float: left; }
+.menu.float-left-horizontal .item, .menu.float-left-horizontal .menu-item, .menu.float-left-horizontal li, .menu.float-left-horz .item, .menu.float-left-horz .menu-item, .menu.float-left-horz li, [class*=".menu"].float-left-horizontal .item, [class*=".menu"].float-left-horizontal .menu-item, [class*=".menu"].float-left-horizontal li, [class*=".menu"].float-left-horz .item, [class*=".menu"].float-left-horz .menu-item, [class*=".menu"].float-left-horz li { float: left; }
 /* line 92, ../scss/bodoke/component/_list.scss */
-.menu.float-right-horizontal .item, .menu.float-right-horizontal .menu-item, .menu.float-right-horizontal li, .menu.float-right-horz .item, .menu.float-right-horz .menu-item, .menu.float-right-horz li { float: right; }
+.menu.float-right-horizontal .item, .menu.float-right-horizontal .menu-item, .menu.float-right-horizontal li, .menu.float-right-horz .item, .menu.float-right-horz .menu-item, .menu.float-right-horz li, [class*=".menu"].float-right-horizontal .item, [class*=".menu"].float-right-horizontal .menu-item, [class*=".menu"].float-right-horizontal li, [class*=".menu"].float-right-horz .item, [class*=".menu"].float-right-horz .menu-item, [class*=".menu"].float-right-horz li { float: right; }
 
 /*  Menu item */
-/* line 89, ../scss/bodoke/component/_menu.scss */
-.menu .item { height: 100%; font-size: 1.2em; font-size: 500; }
-/* line 95, ../scss/bodoke/component/_menu.scss */
-.menu .item, .menu .item a, .menu .item .button, .menu .item [role="button"] { line-height: 48px; }
+/* line 87, ../scss/bodoke/component/_menu.scss */
+.menu .item, [class*=".menu"] .item { height: 100%; font-size: 1.2em; font-size: 500; }
+/* line 93, ../scss/bodoke/component/_menu.scss */
+.menu .item, .menu .item a, .menu .item .button, .menu .item [role="button"], [class*=".menu"] .item, [class*=".menu"] .item a, [class*=".menu"] .item .button, [class*=".menu"] .item [role="button"] { line-height: 48px; }
+
 /* line 99, ../scss/bodoke/component/_menu.scss */
-.menu-fixed, .menu.menu-fixed-top, .menu-fixed-top { min-height: 48px; }
+.menu-fixed, .menu.menu-fixed-top, [class*=".menu"].menu-fixed-top, .menu-fixed-top { min-height: 48px; }
 
 /* line 41, ../scss/bodoke/component/_input.scss */
 input, select, textarea, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], bdk-input { padding-top: 0; padding-bottom: 0; padding-right: 0.9375em; padding-left: 0.9375em; -webkit-appearance: none; position: relative; font-size: 0.75em; height: 2.4em; line-height: 2.4em; border: 1px solid #e6e6e6; background: #FFF; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
-/* line 644, ../scss/bodoke/settings/_mixins.scss */
+/* line 649, ../scss/bodoke/settings/_mixins.scss */
 input.placeholder, select.placeholder, textarea.placeholder, input[type="date"].placeholder, input[type="datetime"].placeholder, input[type="datetime-local"].placeholder, input[type="email"].placeholder, input[type="month"].placeholder, input[type="number"].placeholder, input[type="password"].placeholder, input[type="search"].placeholder, input[type="tel"].placeholder, input[type="text"].placeholder, input[type="time"].placeholder, input[type="url"].placeholder, input[type="week"].placeholder, bdk-input.placeholder { line-height: inherit; color: #999999; }
-/* line 645, ../scss/bodoke/settings/_mixins.scss */
+/* line 650, ../scss/bodoke/settings/_mixins.scss */
 input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, bdk-input::-webkit-input-placeholder { line-height: inherit; color: #999999; }
-/* line 646, ../scss/bodoke/settings/_mixins.scss */
+/* line 651, ../scss/bodoke/settings/_mixins.scss */
 input:-moz-placeholder, select:-moz-placeholder, textarea:-moz-placeholder, input[type="date"]:-moz-placeholder, input[type="datetime"]:-moz-placeholder, input[type="datetime-local"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="month"]:-moz-placeholder, input[type="number"]:-moz-placeholder, input[type="password"]:-moz-placeholder, input[type="search"]:-moz-placeholder, input[type="tel"]:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="time"]:-moz-placeholder, input[type="url"]:-moz-placeholder, input[type="week"]:-moz-placeholder, bdk-input:-moz-placeholder { line-height: inherit; color: #999999; }
-/* line 647, ../scss/bodoke/settings/_mixins.scss */
+/* line 652, ../scss/bodoke/settings/_mixins.scss */
 input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="week"]::-moz-placeholder, bdk-input::-moz-placeholder { line-height: inherit; color: #999999; }
-/* line 648, ../scss/bodoke/settings/_mixins.scss */
+/* line 653, ../scss/bodoke/settings/_mixins.scss */
 input:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder, bdk-input:-ms-input-placeholder { line-height: inherit; color: #999999; }
 
 /* line 59, ../scss/bodoke/component/_input.scss */
@@ -812,29 +831,29 @@ input[type="radio"] { -moz-border-radius: 50%; -webkit-border-radius: 50%; borde
 
 /* line 293, ../scss/bodoke/component/_input.scss */
 .input-row.input-optional label { color: #969696; }
-/* line 644, ../scss/bodoke/settings/_mixins.scss */
+/* line 649, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-optional input.placeholder, .input-row.input-optional textarea.placeholder { color: #969696; }
-/* line 645, ../scss/bodoke/settings/_mixins.scss */
+/* line 650, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-optional input::-webkit-input-placeholder, .input-row.input-optional textarea::-webkit-input-placeholder { color: #969696; }
-/* line 646, ../scss/bodoke/settings/_mixins.scss */
+/* line 651, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-optional input:-moz-placeholder, .input-row.input-optional textarea:-moz-placeholder { color: #969696; }
-/* line 647, ../scss/bodoke/settings/_mixins.scss */
+/* line 652, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-optional input::-moz-placeholder, .input-row.input-optional textarea::-moz-placeholder { color: #969696; }
-/* line 648, ../scss/bodoke/settings/_mixins.scss */
+/* line 653, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-optional input:-ms-input-placeholder, .input-row.input-optional textarea:-ms-input-placeholder { color: #969696; }
 /* line 300, ../scss/bodoke/component/_input.scss */
 .input-row.input-optional select option:first-child, .input-row.input-optional select option[selected] { color: #969696; }
 /* line 306, ../scss/bodoke/component/_input.scss */
 .input-row.input-required label { color: #333333; }
-/* line 644, ../scss/bodoke/settings/_mixins.scss */
+/* line 649, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-required input.placeholder, .input-row.input-required textarea.placeholder { color: #333333; }
-/* line 645, ../scss/bodoke/settings/_mixins.scss */
+/* line 650, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-required input::-webkit-input-placeholder, .input-row.input-required textarea::-webkit-input-placeholder { color: #333333; }
-/* line 646, ../scss/bodoke/settings/_mixins.scss */
+/* line 651, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-required input:-moz-placeholder, .input-row.input-required textarea:-moz-placeholder { color: #333333; }
-/* line 647, ../scss/bodoke/settings/_mixins.scss */
+/* line 652, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-required input::-moz-placeholder, .input-row.input-required textarea::-moz-placeholder { color: #333333; }
-/* line 648, ../scss/bodoke/settings/_mixins.scss */
+/* line 653, ../scss/bodoke/settings/_mixins.scss */
 .input-row.input-required input:-ms-input-placeholder, .input-row.input-required textarea:-ms-input-placeholder { color: #333333; }
 /* line 312, ../scss/bodoke/component/_input.scss */
 .input-row.input-required select { color: #333333; }
@@ -852,15 +871,15 @@ input[type="radio"] { -moz-border-radius: 50%; -webkit-border-radius: 50%; borde
 .input-group label { padding-top: 0; padding-bottom: 0; padding-right: 0.9375em; padding-left: 0.9375em; -webkit-appearance: none; position: relative; font-size: 0.75em; height: 2.4em; line-height: 2.4em; border: 1px solid #e6e6e6; background: #FFF; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; padding-right: 8px; font-weight: 500; line-height: 2.4em; }
 /* line 350, ../scss/bodoke/component/_input.scss */
 .input-group label:first-child { border-right: 1px solid #e6e6e6; }
-/* line 644, ../scss/bodoke/settings/_mixins.scss */
+/* line 649, ../scss/bodoke/settings/_mixins.scss */
 .input-group label.placeholder { line-height: inherit; color: #999999; }
-/* line 645, ../scss/bodoke/settings/_mixins.scss */
+/* line 650, ../scss/bodoke/settings/_mixins.scss */
 .input-group label::-webkit-input-placeholder { line-height: inherit; color: #999999; }
-/* line 646, ../scss/bodoke/settings/_mixins.scss */
+/* line 651, ../scss/bodoke/settings/_mixins.scss */
 .input-group label:-moz-placeholder { line-height: inherit; color: #999999; }
-/* line 647, ../scss/bodoke/settings/_mixins.scss */
+/* line 652, ../scss/bodoke/settings/_mixins.scss */
 .input-group label::-moz-placeholder { line-height: inherit; color: #999999; }
-/* line 648, ../scss/bodoke/settings/_mixins.scss */
+/* line 653, ../scss/bodoke/settings/_mixins.scss */
 .input-group label:-ms-input-placeholder { line-height: inherit; color: #999999; }
 
 /* line 382, ../scss/bodoke/component/_input.scss */
@@ -1092,7 +1111,7 @@ table.table-gray td { border-right-color: #e8e3e3; }
 /* line 86, ../scss/bodoke/component/_lightbox.scss */
 .bdk-lightbox .close { position: absolute; right: -16px; top: -16px; width: 32px; height: 32px; text-align: center; border: 2px solid #FAFAFA; cursor: pointer; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6); -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6); box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.6); background-color: transparent; background-color: rgba(0, 0, 0, 0.9); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6000000,endColorstr=#E6000000); zoom: 1; z-index: 9999; }
 /* line 88, ../scss/bodoke/settings/_fonts.scss */
-.bdk-lightbox .close [class*=fa] { font-size: 14px; line-height: 28px; display: block; color: white; }
+.bdk-lightbox .close [class*="fa"] { font-size: 14px; line-height: 28px; display: block; color: white; }
 
 /* line 114, ../scss/bodoke/component/_lightbox.scss */
 .bdk-lightbox iframe { width: 100%; }
@@ -1166,9 +1185,9 @@ table.table-gray td { border-right-color: #e8e3e3; }
 .slide-detail .back { display: block; position: absolute; left: -12px; top: 50px; width: 24px; height: 24px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-box-shadow: 0 0 1 3px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 0 0 1 3px rgba(0, 0, 0, 0.4); box-shadow: 0 0 1 3px rgba(0, 0, 0, 0.4); background: black, 0.9; z-index: 2; }
 /* line 41, ../scss/bodoke/component/_slide-detail.scss */
 .slide-detail .detail-image { position: relative; margin-bottom: 0.9375em; }
-/* line 229, ../scss/bodoke/settings/_mixins.scss */
+/* line 234, ../scss/bodoke/settings/_mixins.scss */
 .slide-detail .detail-image:before { padding-top: 50%; content: ''; display: block; }
-/* line 236, ../scss/bodoke/settings/_mixins.scss */
+/* line 241, ../scss/bodoke/settings/_mixins.scss */
 .slide-detail .detail-image img { position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; }
 /* line 49, ../scss/bodoke/component/_slide-detail.scss */
 .slide-detail .g-plus-button { position: absolute; right: -15px; bottom: 20px; z-index: 10; }
@@ -1225,7 +1244,7 @@ pre span.com, pre span.comment { color: #a0a0a0; font-style: italic; }
 .bdk-rating .item.half .star-half { display: block; }
 
 /* line 30, ../scss/bodoke/component/social/_buttons-social.scss */
-.social-button { display: inline-block; float: left; position: relative; width: 100%; max-width: 150px; height: 33.6px; padding-left: 0.625em; padding-right: 0.625em; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background-color: #eeeeee; -moz-transition: box-shadow 0.35s ease-in; -o-transition: box-shadow 0.35s ease-in; -webkit-transition: box-shadow 0.35s ease-in; transition: box-shadow 0.35s ease-in; }
+.social-button { display: inline-block; float: left; position: relative; width: 100%; max-width: 200px; height: 33.6px; padding-left: 0.625em; padding-right: 0.625em; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; background-color: #eeeeee; -moz-transition: box-shadow 0.35s ease-in; -o-transition: box-shadow 0.35s ease-in; -webkit-transition: box-shadow 0.35s ease-in; transition: box-shadow 0.35s ease-in; }
 /* line 43, ../scss/bodoke/component/social/_buttons-social.scss */
 .social-button > .ficon { font-size: 0.9em; margin-right: 0.3125em; }
 /* line 47, ../scss/bodoke/component/social/_buttons-social.scss */
@@ -1444,19 +1463,19 @@ ul.bdk-comments, .list.bdk-comments { margin-left: 0; margin-top: 0; padding-lef
 .bdk-error .error-panel.warning { background-color: #dd4a3a; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.up { background-color: #dd4a3a; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.right { background-color: #dd4a3a; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #dd4a3a; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.down { background-color: #dd4a3a; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.warning.arrow.left { background-color: #dd4a3a; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.warning.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #dd4a3a; }
 /* line 132, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
@@ -1464,19 +1483,19 @@ ul.bdk-comments, .list.bdk-comments { margin-left: 0; margin-top: 0; padding-lef
 .bdk-error .error-panel.alert { background-color: #fcb608; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.up { background-color: #fcb608; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.right { background-color: #fcb608; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #fcb608; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.down { background-color: #fcb608; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.alert.arrow.left { background-color: #fcb608; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.alert.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #fcb608; }
 /* line 132, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
@@ -1484,19 +1503,19 @@ ul.bdk-comments, .list.bdk-comments { margin-left: 0; margin-top: 0; padding-lef
 .bdk-error .error-panel.success { background-color: #639728; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.up { background-color: #639728; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.right { background-color: #639728; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #639728; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.down { background-color: #639728; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.success.arrow.left { background-color: #639728; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.success.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #639728; }
 /* line 132, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
@@ -1504,19 +1523,19 @@ ul.bdk-comments, .list.bdk-comments { margin-left: 0; margin-top: 0; padding-lef
 .bdk-error .error-panel.error { background-color: #dd4a3a; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.error.arrow.up { background-color: #dd4a3a; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.error.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.error.arrow.right { background-color: #dd4a3a; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.error.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #dd4a3a; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.error.arrow.down { background-color: #dd4a3a; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.error.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.error.arrow.left { background-color: #dd4a3a; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.error.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #dd4a3a; }
 /* line 132, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: white; }
@@ -1524,19 +1543,19 @@ ul.bdk-comments, .list.bdk-comments { margin-left: 0; margin-top: 0; padding-lef
 .bdk-error .error-panel.quiet { background-color: #e1e1e1; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.quiet.arrow.up { background-color: #e1e1e1; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.quiet.arrow.up:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.quiet.arrow.right { background-color: #e1e1e1; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.quiet.arrow.right:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; left: 100%; top: 50%; margin-top: -8px; border-left-color: #e1e1e1; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.quiet.arrow.down { background-color: #e1e1e1; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.quiet.arrow.down:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; }
 /* line 126, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel.quiet.arrow.left { background-color: #e1e1e1; }
-/* line 444, ../scss/bodoke/settings/_mixins.scss */
+/* line 449, ../scss/bodoke/settings/_mixins.scss */
 .bdk-error .error-panel.quiet.arrow.left:after { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: transparent; border-width: 8px; right: 100%; top: 50%; margin-top: -8px; border-right-color: #e1e1e1; }
 /* line 132, ../scss/bodoke/settings/_helpers.scss */
 .bdk-error .error-panel .message { color: #333333; }
@@ -2181,7 +2200,7 @@ body.full, body.full main.container, body.full main.container-full { height: 100
 @media only screen and (min-width: 769px) and (max-width: 1024px) { /*  _1024.scss Resoluciones hasta 1024px */ }
 @media only screen and (min-device-width: 801px) and (max-device-width: 1024px) { /*  _1024_tablet.scss Resoluciones hasta 1024 de ancho en tablets */ }
 @media only screen and (max-height: 600px) { /*  _netbook.scss Resoluciones hasta 600px de alto */ }
-@media only screen and (min-width: 320px) and (max-width: 640px) { /*  _mobile.scss Resoluciones para mobile */ }
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) { /*  _mobile.scss Resoluciones para mobile */ }
 @media only screen and (min-device-width: 321px) { /*  _mobile-landscape.scss Resoluciones para mobile en landscape */ }
 @-moz-document url-prefix() {}
 @media print { /* _print.scss Print Styles */

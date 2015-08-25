@@ -29,15 +29,17 @@ _________________
 #### Updated
 - Preparando el bodokecss para soportar el desarrollo de aplicaciones externas [`django-dkb-forms`](https://github.com/ConvoyHQ/django-bdk-forms)
 - Update en `"component/_input.scss"`
+- Update en la declaración de `media-query` para dispositivos moviles
+- `"component/_menu.scss": clase `.menu` ahora se define en encabezado del archivo bajo la variable `$bdk-menu`
+- `"grid/_grid.scss"`: file-level annotations al estandar de [sassdoc.com](http://sassdoc.com)
 - Fixed typo in `"component/_modal.scss"`
 
 #### Added
 - Nuevo archivo que reune la configuración principal del bodokecss `"settings/_settings.scss"`
 - Nuevo `"components/social/_button-social.scss"` para maquetar botones de redes sociales.
 - Nuevos colores de redes sociales en `"settings/_colors.scss"` y `"components/_modals.scss"`
-
 	
-## [0.3.0 Baako Caesar Odysseus] - 2015-06-01
+## [0.3.0 Caesar Odysseus] - 2015-06-01
 #### Updated
 - `_list.scss` Ahora las listas por default son horizontales y mostradas como `inline-block`
 - `"component/_sidenav.scss"` - new active state

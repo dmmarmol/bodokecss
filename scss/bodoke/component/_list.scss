@@ -112,16 +112,13 @@ $wp-item-class:		'.menu-item'; // Added for Wordpress compatibilty (requires a d
 /// The list
 /// @name List
 /// @since 0.1
-@warn '[BETA TESTING] new "_list.scss"';
+// @warn '[BETA TESTING] new "_list.scss"';
 .list {
 	@include list();
 	margin-top: 0;
-	margin-bottom: 0;
-	//
-	// Set the List items align @mixin
-	//
+	margin-bottom: 0;	
+	// Set the List items align by @mixin	
 	@include list-items-align();
-
 	#{$bdk-item-class}, #{$wp-item-class}, li {
 		@include clear();
 	}
