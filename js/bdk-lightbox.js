@@ -52,7 +52,8 @@ function closelbox() {
 /**
  * processlbox()
  * This function is going to be trigger before the 'lightbox' is closing
- * @param {string} 
+ * Create and show an alert box while the lightbox is under proccess
+ * @param {string} id The id of the lightbox were this will be appended
  * @see closelbox()
  * @return {void}
  */
@@ -69,13 +70,14 @@ function processlbox(id) {
 
 
 $(document).ready(function(){
-	// $('.openlbox').click(bindlbox);
 	$('*[lightbox]').click(function(){
 		var id = $(this).attr('lightbox');
 		openlbox( id );
 	});
 
-	// Close Button
+	/*
+	 * CLOSE BUTTON
+	 */
 	$('.'+bdk_lightbox+' .close').click(function(e){
 		closelbox();
 	});
@@ -85,8 +87,8 @@ $(document).ready(function(){
 		} // esc
 	});
 	
-	/**
-	 * Outside Close
+	/*
+	 * OUTSIDE CLOSE
 	 * The lightbox is closed if the user clicks outside it
 	 */ 
 	$('.'+bdk_lightbox).hover(function(){ 
@@ -100,5 +102,4 @@ $(document).ready(function(){
 			closelbox();
 		}
 	});
-
 });
