@@ -33,6 +33,7 @@ _________________
 - `"component/_menu.scss": clase `.menu` ahora se define en encabezado del archivo bajo la variable `$bdk-menu`
 - `"grid/_grid.scss"`: file-level annotations al estandar de [sassdoc.com](http://sassdoc.com)
 - Fixed typo in `"component/_modal.scss"`
+- Fixed typo in `"js/bdk-lightbox.js"`
 
 #### Added
 - Nuevo archivo que reune la configuración principal del bodokecss `"settings/_settings.scss"`
@@ -41,15 +42,15 @@ _________________
 	
 ## [0.3.0 Caesar Odysseus] - 2015-06-01
 #### Updated
-- `_list.scss` Ahora las listas por default son horizontales y mostradas como `inline-block`
+- `"component/_list.scss"` Ahora las listas por default son horizontales y mostradas como `inline-block`
 - `"component/_sidenav.scss"` - new active state
 #### Added
 - `bdk-rating.js` para controlar puntajes en post (incomplete)
-- `bdk-lightbox.js` -> processlbox()
+- `bdk-lightbox.js` -> processlbox(). Function to be triggered before the 'lightbox' is closing
 
 
 ---
-# [2015-20-05] Primer año del Bodoke!
+#### [2015-20-05] Primer año del Bodoke!
 ---
 
 
