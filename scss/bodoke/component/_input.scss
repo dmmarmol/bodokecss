@@ -13,7 +13,7 @@ $bdk-input-border-color: 	$gray-border;
 $input-offset:				$offset;
 
 /// Basic styling for all the input/textarea/select
-/// @name bdk-input()
+/// @name bdk-input
 /// @since 0.3.0
 @mixin bdk-input() {
 	padding-top: 0; // $input-padding-y;

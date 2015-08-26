@@ -44,7 +44,6 @@
 	margin-left: (-$offset);
 }
 /// Creates a .col/.column element
-/// @name Columns
 /// @group Grid
 /// @since 0.0.4
 @mixin cols($offset: $col-offset) {

@@ -1,16 +1,14 @@
 ////
-/// @file _functions.scss
+/// Custom BDK Functions
 /// Usefull set of functions for the user
 ////
 
 
-// 
 /// col-width()
 /// Devuelve el ancho porcentual segun la cantidad de columnas
-/// @param $col-number
-/// @param $max-cols
+/// @param {int} $col-number - The Column number
+/// @param {int} $max-cols - Max grid columns
 /// @since 0.1
-//
 @function col-width( $col-number, $max-cols: $grid-columns ) {
 	@return ($col-number * 100%) / $max-cols;
 }
@@ -50,14 +48,15 @@
 /// @since 0.1.1
 /// devuelve un color segun el indice
 /// del array $institutional-color-pallete de colors.scss
-// ====================
 @function color($key) {
 	@return map-get($institutional-color-pallete, $key);
 }
  
 
+/// Atajo para generar un color en escala de grises en base a un valor entre 0 y 255
+/// @example gray(125) = rgb(125, 125, 125);
+/// @example gray(125, 0.2) = rgba(125, 125, 125, 0.2);
 /// @since 0.0.4
-// ====================
 @function gray( $value, $alpha:1 ) {
 	@if ($alpha == '') {
 		@return rgb( $value, $value, $value );
@@ -70,8 +69,7 @@
 
 /// @since 0.1.4
 /// bgpos()
-/// Calcula la posicion del fondo en base a la multiplicacion de un modulo
-// =====================
+/// Calcula la posicion del fondo en base a la multiplicacion de un modulo=
 @function bgpos($pos, $module, $unit: px){
 	@return -$module * $pos + $unit;
 }

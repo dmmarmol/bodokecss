@@ -17,7 +17,6 @@ $dark-button-text-color:			$black_97;
 /// Button colors
 /// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
 /// @param {string} $color - color value (from $button-colors)
-/// @see .#{$button-prefix}-clear
 /// @since 0.0.1
 @mixin button-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name}, [role="button"] {
@@ -106,7 +105,6 @@ $dark-button-text-color:			$black_97;
 /// Clear button hover colors
 /// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
 /// @param {string} $color - color value (from $button-colors)
-/// @see .#{$button-prefix}-clear
 /// @since 0.1.1
 @mixin button-clear-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name}, [role="button"] {
@@ -133,7 +131,6 @@ $dark-button-text-color:			$black_97;
 /// Clean button hover colors
 /// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
 /// @param {string} $color - color value (from $button-colors)
-/// @see .#{$button-prefix}-clean
 /// @since 0.2.0
 @mixin button-clean-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name} {
@@ -159,7 +156,6 @@ $dark-button-text-color:			$black_97;
 /// Buttons inside button-groups colors
 /// @param {string} $name - Name of the color (from $button-colors) that will be used as a class prefix
 /// @param {string} $color - color value (from $button-colors)
-/// @see .#{$button-prefix}-group
 /// @since 0.1.2
 @mixin button-group-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name} {

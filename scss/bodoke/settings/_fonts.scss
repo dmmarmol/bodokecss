@@ -71,7 +71,7 @@ $fa-version:			'4.2.0';
 }
 
 /// Font Awesome Icons
-/// @version #{$fa-version}
+/// @since #{$fa-version}
 [class*="#{$fa-css-prefix}"]:before {
 	display: inline-block;
 	font-family: FontAwesome;
@@ -89,10 +89,10 @@ $fa-version:			'4.2.0';
 }
 
 
-/// 0.1.3z
-/// @mixin renombrado a "ficon()"
+/// mixin renombrado a "ficon()"
 /// Por default apunta a todas las clases con prefijo "fa-"
 /// pero puede extenderse a "bdk-icon-" para iconos propios (custom build)
+/// @since 0.1.3
 @mixin ficon($bdk-icon:false) {
 	@if ( $bdk-icon ) {
 		[class*="#{$fa-css-prefix}"], [class*="#{$bodoke-prefix}-icon"] {
