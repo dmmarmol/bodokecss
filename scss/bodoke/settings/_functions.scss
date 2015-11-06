@@ -233,6 +233,27 @@
 }
 
 
+
+/// ifcolor()
+/// Imprime el valor del color contrastando con el valor del color de fondo
+/// @see $text-color
+/// @see $bright-text-color
+/// @param {int | function } $bg-color - Color de fondo del elemento
+/// @param {int | function } $dark-color - Color oscuro
+/// @param {int | function } $bright-color - Color Claro
+@function ifcolor($bg-color, $dark-color: $text-color, $bright-color: $bright-text-color) {
+	$lightness: lightness($bg-color);
+	$treshold:	lightness(#aaa);
+	@if ( $lightness > $treshold ) {
+		@return $dark-color;
+	}
+	@else {
+		@return $bright-color;	
+	}
+}
+
+
+
 // 
 /// list()
 /// Devuelve el valor de una lista bi-dimensional segun un string
