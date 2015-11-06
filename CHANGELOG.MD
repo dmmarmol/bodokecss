@@ -4,21 +4,25 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Changelog](http://keepachangelog.com/CHANGELOG.md).
 
 ### Projects involved
-* Tunemypic.com 			// V: 0.0.1
-* La Caja					// V: 0.0.11
-* DevBus2014				// V: 0.0.2
-* Youtube/Edu Gadget		// V: 0.0.3
-* Google ContentBox			// V: 0.0.5
-* Convoy testapp platform	// V: 0.1.0 - New Grid
-* DevBus - Egipto			// V: 0.1.2 (Amon Carolina)
-* Status update				// V: 0.1.3 (Amon Demian)
-* GCBA - Padres				// V: 0.1.4 (Amon Ed)
-* Codigoquemero				// V: 0.1.5 (Amon Fabian)
-* Mundoconsulta				// V: 0.1.6 (Amon Gabriel)
-* Codigoquemero v2			// V: 0.2.2 (Baako Hagen)
+* [Tunemypic.com](http://Tunemypic.com) 							// V: 0.0.1
+* La Caja															// V: 0.0.11
+* DevBus2014														// V: 0.0.2
+* [Youtube/Edu Gadget](http://youtube.com/educacion)				// V: 0.0.3
+* [Google ContentBox](https://github.com/google/contentbox)			// V: 0.0.5
+* [Convoy testapp platform](http://audits-platform.appspot.com/)	// V: 0.1.0 - New Grid
+* DevBus - Egipto													// V: 0.1.2 (Amon Carolina)
+* Status update														// V: 0.1.3 (Amon Demian)
+* GCBA - Padres														// V: 0.1.4 (Amon Ed)
+* [Codigoquemero](http://codigoquemero.com.ar)						// V: 0.1.5 (Amon Fabian)
+* [Mundoconsulta](http://mundoconsulta.com)							// V: 0.1.6 (Amon Gabriel)
+* [Codigoquemero v2](http://codigoquemero.com.ar)					// V: 0.2.2 (Baako Hagen)
 * Status Update 			// V: 0.2.3 (Baako Icarus)
 * Status Update 			// V: 0.2.7 (Baako Maarav)
 * Status Update 			// V: 0.3.0 (Caesar Odysseus)
+* Status Update 			// V: 0.4.0 (Daan Yaffa)  
+	* Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
+* Status Update 			// V: 0.5.0 (Eagle Imani)  
+	* BodokeCSS is Mobile First
 
 _________________
 
@@ -26,6 +30,10 @@ _________________
 
 ## [Unreleased] - unreleased
 
+## [0.5.0 Eagle Imani ]  - 2015-11-09
+#### Updated
+
+## [0.4.0 Daan Yaffa] - 2015-10-01
 #### Updated
 - Preparando el bodokecss para soportar el desarrollo de aplicaciones externas [`django-dkb-forms`](https://github.com/ConvoyHQ/django-bdk-forms)
 - Update en `"component/_input.scss"`
@@ -34,11 +42,18 @@ _________________
 - `"grid/_grid.scss"`: file-level annotations al estandar de [sassdoc.com](http://sassdoc.com)
 - Fixed typo in `"component/_modal.scss"`
 - Fixed typo in `"js/bdk-lightbox.js"`
+- `-webkit-` prefix deprecated in `box-shadow()` & `border-radius()` mixins 
+- Mejoras en el `@mixin line-clamp()`
+- Fixed typo on `@mixin screen()`
+- Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
 
 #### Added
 - Nuevo archivo que reune la configuración principal del bodokecss `"settings/_settings.scss"`
 - Nuevo `"components/social/_button-social.scss"` para maquetar botones de redes sociales.
 - Nuevos colores de redes sociales en `"settings/_colors.scss"` y `"components/_modals.scss"`
+- Nuevo `@mixin z($list)` que ordena automaticamente los elementos en el eje *Z* de acuerdo al orden que tengan en una lista que se debe pasar como primer parametro
+- Nueva funcion `ifcolor()`: imprime el color de texto según el color de fondo que se pase como parametro
+- Nuevo `@mixin animation-count($times)`: enumera la cantidad de veces que se repite una animación.
 	
 ## [0.3.0 Caesar Odysseus] - 2015-06-01
 #### Updated
@@ -159,7 +174,7 @@ _________________
 - `_comments.scss` Nuevo componente para comentarios en redes sociales
 
 
-## [0.1.0] 
+## [0.1.0]
 #### Changed
 - New Grid
 
