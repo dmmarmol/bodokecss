@@ -15,3 +15,7 @@ node_modules
 out
 sassdoc
 *.log
+
+# Backup Files
+.backup
+*.backup
