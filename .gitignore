@@ -21,3 +21,6 @@ sassdoc
 # Backup Files
 .backup
 *.backup
+
+# Vendor & Plugins
+plugins
