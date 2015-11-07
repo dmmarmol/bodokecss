@@ -16,6 +16,7 @@ var gutil 			= require('gulp-util');
 var paths = {
 	sass: [ './scss/bodoke/**/*.scss' ],
 	bodokeapp: [ './scss/bodoke/app.scss' ],
+	bodokeexample: [ './scss/bodoke/bodoke-example.scss' ],
 	css: [ './src/css/**/*.css' ],
 	compiledcss: './src/css/',
 	scripts: [
@@ -29,7 +30,7 @@ var paths = {
 // gutil.log( paths.php );
 
 // TASK
-gulp.task('default', ['sass', 'watch'], function() {
+gulp.task('default', ['bdk-scss', 'watch'], function() {
 	
 });
 
@@ -37,12 +38,24 @@ gulp.task('default', ['sass', 'watch'], function() {
 gulp.task('watch', function () {
 	livereload.listen();
     gulp.watch( [paths.html, paths.php], ['reload']);	
-    gulp.watch( [paths.sass], ['sass']);	
+    gulp.watch( [paths.sass], ['bdk-scss']);	
 });
 
-// COMPILA TODO EL SCSS
-gulp.task('sass', function () {
+// Comple bodoke.scss
+gulp.task('bdk-scss', function () {
 	gulp.src( paths.bodokeapp )
+		.pipe(sass().on('error', sass.logError))
+		.pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+		.pipe(gulp.dest( paths.compiledcss ))
+		.pipe(livereload());
+});
+
+// Comple bodoke.scss
+gulp.task('bdkexample-scss', function () {
+	gulp.src( paths.bodokeexample )
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
             browsers: ['last 2 versions'],
