@@ -1,0 +1,124 @@
+////
+/// Stylize the native HTML lists (<ul>, <ol> and <li>) cleaning their aspect and giving them a basic design
+/// @group Component
+/// @since 0.3.0
+/// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
+////
+
+$bdk-item-class:	'.item';
+$wp-item-class:		'.menu-item'; // Added for Wordpress compatibilty (requires a dot prefix)
+
+/// Mixin that init the list
+/// @since 0.1.4
+@mixin list() {
+	@include clear();
+	list-style: none;
+}
+
+/// Mixin that set the clases for the items alignment inside a .list
+/// @name List items align
+/// @param {string} $item-class Extra class for custom items. It should include the dot '.'
+@mixin list-items-align($item-class:'') {
+	//
+	/// Horizontal
+	//
+	/// inline-block (default)
+	& {
+		display: inline-block;
+		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} {
+			display: inline-block;
+			margin-left: -0.3em; // inline-block gap fallback
+			&:first-child { margin-left: 0; }
+		}
+	}
+	&.list-separated {
+		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} {
+			margin-left: initial; // inline-block gap fallback					
+		}
+	}
+	&.list-centered {
+		text-align: center;
+		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} {
+			float: none;
+			display: inline-block;				
+		}
+	}
+	/// Left aligned
+	/// @deprecated '.left-horizontal'
+	/// @deprecated '.left-horz'
+	&.left-horizontal, 
+	&.left-horz, 
+	&.list-left {
+		text-align: left;
+		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} { }
+	}
+	/// Right aligned
+	/// @deprecated '.right-horizontal'
+	/// @deprecated '.right-horz'
+	&.right-horizontal, 
+	&.right-horz, 
+	&.list-right {
+		text-align: right;
+		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} { }
+	}
+
+	//
+	/// Vertical | Not floated
+	//
+	&.list-vertical, &.list-vert {			
+		padding-left: 0;
+		&.container {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#{$bdk-item-class}, #{$wp-item-class} {
+			// margin: 0;
+			margin-left: 0; // inline-block gap fallback
+			display: block;
+			float: none;
+		}
+	}
+	
+	//
+	/// Floated
+	//
+	&.float-left-horizontal, &.float-left-horz {
+		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} { 
+			float: left; 
+		}
+	}		
+	&.float-right-horizontal, &.float-right-horz {
+		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} { 
+			float: right; 
+		}
+	}
+}
+
+// Si esta especificada la direccion
+// en la que fluye el texto en el body
+[dir="rtl"] {
+	.list, .list-inline-block {
+		text-align: right;
+	}		
+}
+[dir="ltr"], [dir=""]  {
+	.list, .list-inline-block {
+		text-align: left;
+	}		
+}
+
+
+/// The list
+/// @name List
+/// @since 0.1
+// @warn '[BETA TESTING] new "_list.scss"';
+.list {
+	@include list();
+	margin-top: 0;
+	margin-bottom: 0;	
+	// Set the List items align by @mixin	
+	@include list-items-align();
+	#{$bdk-item-class}, #{$wp-item-class}, li {
+		@include clear();
+	}
+}

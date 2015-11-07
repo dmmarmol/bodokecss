@@ -1,0 +1,20 @@
+// _transformations.scss
+
+.scrollimate {
+	@include transition( all $transition-speed );
+}
+.translateFadeIn {
+	@include opacity(0);	
+}
+.translateRightBig {
+	@include transform( translate3d(2000px, 0, 0) );
+	@include opacity(0);
+}
+.translateLeftBig {
+	@include transform( translate3d(-2000px, 0, 0) );
+	@include opacity(0);
+}
+.translating {
+	@include opacity(1);
+	@include transform( 0 );
+}

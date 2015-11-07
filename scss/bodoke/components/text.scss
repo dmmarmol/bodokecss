@@ -1,0 +1,52 @@
+// _text.scss
+
+
+p {
+	font-size: 0.9em;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+p {
+	&.lead {
+		margin-bottom: $em-offset;
+		font-size: 1.1em;
+		font-weight: 200;
+		line-height: 1.4em;
+	}
+	&.primary {
+		margin-bottom: $em-offset;
+		font-size: 1.4em;
+		font-weight: 300;
+		line-height: 1.8em;
+	}
+}
+
+@mixin media-paragraph-landscape {
+	p {
+		font-size: 1em;
+		line-height: 1.6em;
+	}
+}
+
+
+/**
+ * Bullet Labels
+ *
+ * Pequeños avisos que se utilizan para advertir sobre
+ * un contenido destacado pero sin ser invasivo
+ *
+ */
+.bullet-label {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 3px 6px;
+	font-size: 8px;
+	font-weight: 500;
+	line-height: 1em;
+	text-transform: uppercase;
+	background-color: c('gray');
+	margin-left: 3px;
+	@include border-radius( 3px );
+	@include box-shadow( 0 0 1px 0 black(0.6) );
+}

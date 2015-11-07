@@ -1,0 +1,104 @@
+////
+/// _config.scss
+/// Global variables for the BodokeCSS core
+/// @since 0.0.1
+////
+
+
+// ======================
+// PATHS
+// ======================
+$IMGPATH: 					'../images/';
+$FONTPATH:					'../fonts/';
+
+
+// ======================
+// UNIDADES BASICAS
+// ======================
+// Ems base
+$base-em:					16px; // 16px = 1em
+// Tiempo
+$transition-speed:			0.35s;
+// Icons
+$px-icon-size:				24px;
+$em-icon-size:				em($px-icon-size / $base-em);
+// Icon sizes
+$md-icon-size:				$px-icon-size;
+$sm-icon-size:				16px;
+$icon-size:					$px-icon-size;
+// Border radius global
+$master-radius:				3px;
+
+// ======================
+// UNIDADES DE ESPACIADO
+// ======================
+// Columnas
+$offset:					$base-em;		// Margen interno de base
+$em-offset:					0.9375em;		// Margen interno de base
+
+$col-offset:				$em-offset;		// Margen interno entre columnas
+$m-offset:					$em-offset;		// Margen interno en mobile
+$half-offset: 				$em-offset / 2;	// 1/2 del $offset
+$third-offset: 				$em-offset / 3;	// 1/3 del $offset
+
+
+// ======================
+// RESOLUCIONES
+// ======================
+// Aspect Ratio
+$ratio-square:			4 / 3;
+$ratio-wide:			16 / 3;
+$aureo: 				(1 + sqrt(5) ) / 2;
+// Viewport Widths
+$screen-very-old:		800px;
+$screen-old:			1024px;
+$screen-laptop:			1366px;
+$screen-netbook:		600px;
+
+
+
+// ======================
+// PREFIJOX / PREFIX
+// ======================
+$prefix-css: 			('-webkit-', '-ms-', '-moz-', '-o-', 'khtml');
+$prefix-transform: 		('-webkit-', '-ms-', '-moz-', '-o-');
+$prefix-user-select: 	('-webkit-', '-ms-', '-moz-', '-khtml-');
+
+
+// ======================
+/// GRID CONFIG
+/// Many of these variables has been moved out from "grid/_grid.scss" 
+/// in order to give an easy access to other applications that uses BodokeCSS
+// ======================
+$grid-offset:				$offset; 		// Grid offset size
+$grid-max-cols:				12;				// Max number of colums
+
+
+// ======================
+/// BUTTON NAMES
+/// Many of these variables has been moved out from "components/_buttons.scss" 
+/// in order to give an easy access to other applications that uses BodokeCSS
+// ======================
+$button-prefix:						'button';					// Cambias este prefijo y cambia todos
+$button-group-prefix:				'#{$button-prefix}-group';
+
+/// @type Int $button-height [40px] - the button height in pixels
+$button-height: 					em(40px); // ex 32px
+/// @type Int $button-height [12px] - Button font-size in pixels
+$button-font-size:					em(12px);
+$button-offset: 					1.1em;
+$button-radius:						3px;
+$button-border-width:				0px;
+$button-pressed-offset:				$button-border-width;
+$button-default-bg:					hsl(0,0,90%);
+$button-default-text:				$text-color;
+$button-transition-time:			$transition-speed; // config.scss
+$button-colors:						$buttons-color-pallete;	// colors.scss
+
+// SETTINGS
+$button-has-box-shadow:				false;
+$button-has-text-shadow:			false;
+$button-has-border:					none;
+$button-has-background:				true;
+$button-has-background-gradient:	false;
+$button-has-active-pseudo:			true;
