@@ -20,8 +20,8 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 * Status Update 			// V: 0.2.7 (Baako Maarav)
 * Status Update 			// V: 0.3.0 (Caesar Odysseus)
 * Status Update 			// V: 0.4.0 (Daan Yaffa)  
-	* Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
 * Status Update 			// V: 0.5.0 (Eagle Imani)  
+* Status Update 			// V: X.X.X (unreleased)  
 	* BodokeCSS is Mobile First
 
 _________________
@@ -30,8 +30,11 @@ _________________
 
 ## [Unreleased] - unreleased
 
-## [0.5.0 Eagle Imani ]  - 2015-11-09
+## [0.5.0 Eagle Imani ] - unreleased
 #### Updated
+- Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
+#### Added
+- Gulp.js for sass compiling
 
 ## [0.4.0 Daan Yaffa] - 2015-10-01
 #### Updated

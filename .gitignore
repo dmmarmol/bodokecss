@@ -9,12 +9,14 @@
 .start-compass.bat
 *.datastore
 *.blobstore
-*.sublime-project
-*.sublime-workspace
 node_modules
 out
 sassdoc
 *.log
+
+# Sublime Text files
+*.sublime-project
+*.sublime-workspace
 
 # Backup Files
 .backup
