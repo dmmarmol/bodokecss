@@ -30,7 +30,7 @@ _________________
 
 ## [Unreleased] - unreleased
 
-## [0.5.0 Eagle Imani ] - unreleased
+## [0.5.0 Eagle Imani] - unreleased
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
 #### Added
