@@ -1,0 +1,69 @@
+/**
+ * Bodoke.css
+ * ----------
+ * Sexy & simple css framework made in SASS with easy configuration
+ * Inlcude FontAwesome!
+ *
+ *
+ * author: 			Diego Martin Marmol | @dmmarmol
+ * website: 		http://diegomarmol.com.ar
+ * version:			0.5.0 Eagle Imani
+ * release date:	20/05/14	
+ * contributors: 	Leonardo Pittelli | @leopittelli
+ * developed at:	Convoy S.R.L - www.convoy.me
+ * Compiler:		gulp-sass "^2.1.0"
+ *
+*/
+
+// 1. Settings & Config
+/// Bodoke core settings
+@import 
+	"utils/settings.scss";	
+
+// 2. Vendors
+@import	
+	"vendor/normalize";
+
+// 3. Base Stuff
+@import
+	"base/fonts",
+	"base/helpers.scss";
+
+// 4. Layout-related
+@import	
+	"layout/grid.scss";
+
+// 5. Components
+@import	"components/buttons.scss";
+// @import	"components/buttons-google";		
+@import	"components/icons.scss";
+// @import	"components/animations.scss";
+// @import	"components/transformations.scss";		
+// @import	"components/burger.scss";					
+@import	"components/titles.scss";
+@import	"components/text.scss";
+@import	"components/list.scss";
+@import	"components/menu.scss";
+@import	"components/input.scss";
+// @import	"components/sidenav.scss";					
+// @import	"components/modal.scss";					
+// @import	"components/tooltip.scss";
+// @import	"components/dropdown.scss";
+// @import	"components/lang-dropdown.scss";
+@import	"components/table.scss";
+// @import	"components/lightbox.scss";
+// @import	"components/slider.scss";
+// @import	"components/slide-detail.scss";
+// @import	"components/code.scss";
+// @import	"components/rating.scss";
+
+// 5.2 Social stuff
+// @import "components/social/buttons-social.scss";
+// @import "components/social/comments.scss";
+
+
+// 6. Page-specific styles
+// @import "pages/home";
+
+// 7. Themes
+// @import "themes/default";
