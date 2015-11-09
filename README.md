@@ -2,10 +2,10 @@ Bodoke CSS
 ==========
 
 ### Still at development.
-###### Current versión: Beta 0.3.1 (Caesar Odysseus)
+###### Last release: [Beta 0.4.0 (Daan Yaffa)](https://github.com/dmmarmol/bodokecss/releases/tag/0.4.0)
 
 
-Bodoke is a CSS/SCSS Front-end Framework created for supporting multiple grids in a single project with a minimum of custom design.  
+Bodoke it's a CSS Front-end Framework made with SASS, created for supporting multiple grids in a single project with a minimum of custom design.  
 It's a layout starter project nice and ready for you to design with your own custom identity.
 
 The base idea of this project is to be responsive and not visualy contaminated.
