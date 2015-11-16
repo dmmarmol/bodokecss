@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Changelog](http://keepachangelog.com/CHANGELOG.md).
 
 ### Projects involved
-* [Tunemypic.com](http://Tunemypic.com) 							// V: 0.0.1
+* [Tunemypic.com](http://tunemypic.mx/) 							// V: 0.0.1
 * La Caja															// V: 0.0.11
 * DevBus2014														// V: 0.0.2
 * [Youtube/Edu Gadget](http://youtube.com/educacion)				// V: 0.0.3
@@ -30,12 +30,12 @@ _________________
 
 ## [0.5.0 Eagle Imani] - unreleased
 #### Updated
-- Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
-#### Added
+- Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)  
+#### Added  
 - Gulp.js for sass compiling
 - `@function map-push()`: adds item to list in map.
 - `@mixin animation-steps()`: Animate spritesheets with CSS
-#### Deleted
+#### Deleted  
 - `@mixin prefixer()` removed. Prefixes are placed now by `gulp-autoprefixer`
 
 ## [0.4.0 Daan Yaffa] - 2015-10-01
