@@ -38,7 +38,7 @@ _________________
 - `@mixin animation-steps()`: Animate spritesheets with CSS
 
 #### Deleted  
-- `@mixin prefixer()` removed. Prefixes are placed now by `gulp-autoprefixer`
+- `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
 
 ## [0.4.0 Daan Yaffa] - 2015-10-01
 #### Updated
