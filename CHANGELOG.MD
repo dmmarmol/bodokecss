@@ -40,7 +40,7 @@ _________________
 
 ## [0.4.0 Daan Yaffa] - 2015-10-01
 #### Updated
-- Preparando el bodokecss para soportar el desarrollo de aplicaciones externas [`django-dkb-forms`](https://github.com/ConvoyHQ/django-bdk-forms)
+- Preparando el bodokecss para soportar el desarrollo de aplicaciones externas [`django-bdk-forms`](https://github.com/ConvoyHQ/django-bdk-forms)
 - Update en `"component/_input.scss"`
 - Update en la declaración de `media-query` para dispositivos moviles
 - `"component/_menu.scss"`: clase `.menu` ahora se define en encabezado del archivo bajo la variable `$bdk-menu`
