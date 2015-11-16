@@ -31,10 +31,12 @@ _________________
 ## [0.5.0 Eagle Imani] - unreleased
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)  
+
 #### Added  
 - Gulp.js for sass compiling
 - `@function map-push()`: adds item to list in map.
 - `@mixin animation-steps()`: Animate spritesheets with CSS
+
 #### Deleted  
 - `@mixin prefixer()` removed. Prefixes are placed now by `gulp-autoprefixer`
 
