@@ -33,7 +33,7 @@ _________________
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)  
 
 #### Added  
-- Gulp.js for sass compiling
+- [`Gulp.js`](http://gulpjs.com/) for sass compiling
 - `@function map-push()`: adds item to list in map.
 - `@mixin animation-steps()`: Animate spritesheets with CSS
 
