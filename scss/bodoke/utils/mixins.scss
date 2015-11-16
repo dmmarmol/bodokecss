@@ -13,17 +13,6 @@
 	&:after { clear: both; }
 }
 
-/// Adds each prefix to the property that is passed to the mixin
-/// @group Mixins
-/// @since 0.0.1
-@mixin prefixer( $name, $argument  ) {
-	-webkit-#{$name}: #{$argument};
-	-ms-#{$name}: #{$argument};
-	-moz-#{$name}: #{$argument};
-	-o-#{$name}: #{$argument};
-	#{$name}: #{$argument};
-}
-
 /// Creates a .row element
 /// @group Grid Mixins
 /// @since 0.0.4
@@ -199,6 +188,38 @@
 @mixin animation-delay( $value: 0 ) {
 	animation-delay: $value;
 	-webkit-animation-delay: $value; // Safari and Chrome
+}
+
+
+
+/// Animation Steps
+/// @since 0.5.0
+/// @group Animation Mixins
+/// @param {string} $animation-name
+/// @param {map} $settings - Frame animation settings
+@mixin animation-steps( $animation-name, $settings: (e:e) ) {
+	// @debug type-of( $settings ); 
+	@if ( type-of( $settings ) == map  ) {
+		@if ( function-exists( map-push ) ) {			
+			$settings: map-push((
+				width: 100px,
+				height: 100px,
+				duration: 1s,
+				frames: 1,
+				sprite: 'http://placehold.it/100x100',
+			), $settings );	
+			// @debug $settings;
+			width: map-get( $settings, width);
+			height: map-get( $settings, height);
+			background-image: url( map-get( $settings, sprite ) );    
+		    -webkit-animation: #{$animation-name} map-get( $settings, duration ) steps( map-get( $settings, frames ) ) infinite;
+		            animation: #{$animation-name} map-get( $settings, duration ) steps( map-get( $settings, frames ) ) infinite;
+		} @else {
+			@warn "`@function map-push()` is not defined";
+		}
+	} @else {
+		 @warn "`$settings` is not a map type object";
+	}
 }
 
 
