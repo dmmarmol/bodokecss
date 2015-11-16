@@ -175,7 +175,7 @@ _________________
 ## [0.1.2 Amon Carolina] - 2014-11-17
 #### Changed
 - Primera version con nombre: `Amon Carolina`
-- Las columnas de la grilla ahora cambian su dirección de flotado dependiendo si [dir="rtl"] - grid 1.4
+- Las columnas de la grilla ahora cambian su dirección de flotado dependiendo del atributo `[dir="rtl"]` en `<body>` - grid v1.4
 
 #### Added
 - `_comments.scss` Nuevo componente para comentarios en redes sociales
