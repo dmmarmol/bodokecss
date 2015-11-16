@@ -276,3 +276,19 @@
 // 		@warn 'No existe un color con ese nombre definido en la paleta de colores';
 // 	}
 // }
+
+
+// ============================================
+// SCSS MAPS
+// ============================================
+
+
+/// Push Function
+/// Map-push function (adds item to list in map)
+/// @since 0.5.0
+/// @group Function Maps
+/// @param {map} $map - Scss map
+/// @param {map} $new-map - New map
+@function map-push( $map, $new-map ) {
+  @return map-merge( $map, $new-map );
+}
