@@ -185,7 +185,7 @@
 /// Single animation delay property
 /// @since 0.0.1
 /// @group Animation Mixins
-@mixin animation-delay( $value: 0 ) {
+@mixin animation-delay( $value... ) {
 	animation-delay: $value;
 	-webkit-animation-delay: $value; // Safari and Chrome
 }
@@ -197,6 +197,14 @@
 /// @group Animation Mixins
 /// @param {string} $animation-name
 /// @param {map} $settings - Frame animation settings
+/// @example
+/// @include animation-steps( someAnimation, $settings: (
+/// 	width: 1920px,
+/// 	height: 1080px,
+/// 	sprite: '../img/animation/raindrops.png',
+/// 	frames: 4,
+/// 	duration: .5s
+/// ));
 @mixin animation-steps( $animation-name, $settings: (e:e) ) {
 	// @debug type-of( $settings ); 
 	@if ( type-of( $settings ) == map  ) {
@@ -220,6 +228,18 @@
 	} @else {
 		 @warn "`$settings` is not a map type object";
 	}
+}
+
+
+/// Enables Hardware Acceleration
+/// @since 0.5.0
+/// @group Animation Mixins
+/// @param integer $perspective
+@mixin hardwareAcceleration($perspective:1000) {
+	-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+	-webkit-perspective: $perspective;
+			perspective: 1000;
 }
 
 
@@ -269,6 +289,7 @@
 		}
 	}
 }
+
 /// Calculate the aspect ratio
 /// @group Mixins
 /// @since 0.0.1

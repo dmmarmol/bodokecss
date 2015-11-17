@@ -149,8 +149,8 @@ $tables-color-pallete:	(
 $alerts-color-pallete: (
 	('warning', $red),
 	('alert', $yellow),
-	('success', c('green') ),
-	('error', c('red') ),
+	('success', getColor('green') ),
+	('error', getColor('red') ),
 	('quiet', gray(225) ),
 );
 
