@@ -11,7 +11,15 @@ It's a layout starter project nice and ready for you to design with your own cus
 The base idea of this project is to be responsive and not visualy contaminated.
 It supports desktop, mobile and tablet websites using semantic clases in html.
 
+### Support
+* IE > 8
+* Chrome > 30
+* Firefox > 30
+* Safari
+* Opera
+
 (un)finished Bodoke site: http://dmmarmol.github.io/bodokecss
+
 **Changelog:** [Here](https://github.com/dmmarmol/bodokecss/blob/master/CHANGELOG.MD)
 
-Project docs coming soon... But if you are breave enough, you can check the code for yourself (it's documented!)
+Project docs coming soon... But if you are brave enough, you can check the code for yourself (it's documented!)

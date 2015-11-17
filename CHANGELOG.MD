@@ -31,11 +31,16 @@ _________________
 ## [0.5.0 Eagle Imani] - unreleased
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)  
+- `@mixin animation-delay()` accepts multiple values
+- `@function c()` renamed to `getColor()`
 
 #### Added  
 - [`Gulp.js`](http://gulpjs.com/) for sass compiling
 - `@function map-push()`: adds item to list in map.
+- `@function map-deep-get()`: fetch deeply nested values from a map by [HugoGiraudel](https://css-tricks.com/snippets/sass/deep-getset-maps/).
+- `@function map-deep-set`: Set a deeply nested key inside a map.
 - `@mixin animation-steps()`: Animate spritesheets with CSS
+- `@mixin hardwareAcceleration()`: Allows hardware acceleration on animations
 
 #### Deleted  
 - `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
@@ -66,6 +71,7 @@ _________________
 #### Updated
 - `"component/_list.scss"` Ahora las listas por default son horizontales y mostradas como `inline-block`
 - `"component/_sidenav.scss"` - new active state
+
 #### Added
 - `bdk-rating.js` para controlar puntajes en post (incomplete)
 - `bdk-lightbox.js` -> processlbox(). Function to be triggered before the 'lightbox' is closing
