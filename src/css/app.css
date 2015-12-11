@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * Bodoke.css
  * ----------
@@ -1649,13 +1648,6 @@ p.primary {
   font-weight: 300;
   line-height: 1.8em; }
 
-/**
- * Bullet Labels
- *
- * Pequeños avisos que se utilizan para advertir sobre
- * un contenido destacado pero sin ser invasivo
- *
- */
 .bullet-label {
   display: inline-block;
   vertical-align: middle;

@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Changelog](http://keepachangelog.com/CHANGELOG.md).
 
 ### Projects involved
-* [Tunemypic.com](http://Tunemypic.com) 							// V: 0.0.1
+* [Tunemypic.com](http://tunemypic.mx/) 							// V: 0.0.1
 * La Caja															// V: 0.0.11
 * DevBus2014														// V: 0.0.2
 * [Youtube/Edu Gadget](http://youtube.com/educacion)				// V: 0.0.3
@@ -20,29 +20,42 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 * Status Update 			// V: 0.2.7 (Baako Maarav)
 * Status Update 			// V: 0.3.0 (Caesar Odysseus)
 * Status Update 			// V: 0.4.0 (Daan Yaffa)  
-* Status Update 			// V: 0.5.0 (Eagle Imani)  
-* Status Update 			// V: X.X.X (unreleased)  
+* Status Update 			// V: 0.5.0 (Eagle Imani) - [unreleased] 
+* Status Update 			// V: X.X.X [unreleased]
 	* BodokeCSS is Mobile First
 
 _________________
 
 ### Bodoke Status - 2015
 
-## [Unreleased] - unreleased
-
 ## [0.5.0 Eagle Imani] - unreleased
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
+- `@mixin animation-delay()` accepts multiple values
+- `@function c()` renamed to `getColor()`
 - `vendor` dir renamed to `lib`
 #### Added
 - Gulp.js for sass compiling
 
+
+#### Added  
+- [`Gulp.js`](http://gulpjs.com/) for sass compiling
+- `@function map-push()`: adds item to list in map.
+- `@function map-deep-get()`: fetch deeply nested values from a map by [HugoGiraudel](https://css-tricks.com/snippets/sass/deep-getset-maps/).
+- `@function map-deep-set`: Set a deeply nested key inside a map.
+- `@mixin animation-steps()`: Animate spritesheets with CSS
+- `@mixin hardwareAcceleration()`: Allows hardware acceleration on animations
+
+#### Deleted  
+- `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
+>>>>>>> 2dd3bfc93aed3b539db92adc2b68d68f0f3a8274
+
 ## [0.4.0 Daan Yaffa] - 2015-10-01
 #### Updated
-- Preparando el bodokecss para soportar el desarrollo de aplicaciones externas [`django-dkb-forms`](https://github.com/ConvoyHQ/django-bdk-forms)
+- Preparando el bodokecss para soportar el desarrollo de aplicaciones externas [`django-bdk-forms`](https://github.com/ConvoyHQ/django-bdk-forms)
 - Update en `"component/_input.scss"`
 - Update en la declaración de `media-query` para dispositivos moviles
-- `"component/_menu.scss": clase `.menu` ahora se define en encabezado del archivo bajo la variable `$bdk-menu`
+- `"component/_menu.scss"`: clase `.menu` ahora se define en encabezado del archivo bajo la variable `$bdk-menu`
 - `"grid/_grid.scss"`: file-level annotations al estandar de [sassdoc.com](http://sassdoc.com)
 - Fixed typo in `"component/_modal.scss"`
 - Fixed typo in `"js/bdk-lightbox.js"`
@@ -63,6 +76,7 @@ _________________
 #### Updated
 - `"component/_list.scss"` Ahora las listas por default son horizontales y mostradas como `inline-block`
 - `"component/_sidenav.scss"` - new active state
+
 #### Added
 - `bdk-rating.js` para controlar puntajes en post (incomplete)
 - `bdk-lightbox.js` -> processlbox(). Function to be triggered before the 'lightbox' is closing
@@ -172,7 +186,7 @@ _________________
 ## [0.1.2 Amon Carolina] - 2014-11-17
 #### Changed
 - Primera version con nombre: `Amon Carolina`
-- Las columnas de la grilla ahora cambian su dirección de flotado dependiendo si [dir="rtl"] - grid 1.4
+- Las columnas de la grilla ahora cambian su dirección de flotado dependiendo del atributo `[dir="rtl"]` en `<body>` - grid v1.4
 
 #### Added
 - `_comments.scss` Nuevo componente para comentarios en redes sociales

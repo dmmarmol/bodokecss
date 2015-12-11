@@ -4,11 +4,11 @@
 ////
 
 
-/// col-width()
 /// Devuelve el ancho porcentual segun la cantidad de columnas
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @since 0.1
 /// @param {int} $col-number - The Column number
 /// @param {int} $max-cols - Max grid columns
-/// @since 0.1
 @function col-width( $col-number, $max-cols: $grid-columns ) {
 	@return ($col-number * 100%) / $max-cols;
 }
@@ -45,18 +45,18 @@
 	}
 }
 
-/// @since 0.1.1
 /// devuelve un color segun el indice
 /// del array $institutional-color-pallete de colors.scss
+/// @since 0.1.1
 @function color($key) {
 	@return map-get($institutional-color-pallete, $key);
 }
  
 
 /// Atajo para generar un color en escala de grises en base a un valor entre 0 y 255
+/// @since 0.0.4
 /// @example gray(125) = rgb(125, 125, 125);
 /// @example gray(125, 0.2) = rgba(125, 125, 125, 0.2);
-/// @since 0.0.4
 @function gray( $value, $alpha:1 ) {
 	@if ($alpha == '') {
 		@return rgb( $value, $value, $value );
@@ -96,7 +96,14 @@
 	@return $number / ($number * 0 + 1);
 }
 
-// $base-em:	16px;
+
+
+/// Convert PX value to EM
+/// @since 0.0.1
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @acces public
+/// @param {int} $target
+/// @param {int} $context [$base-em] - Base em value (1em = $base-em)
 @function em($target, $context: $base-em) {
 	@if $target == 0 { @return 0; }
 	$context: strip-units( $context );
@@ -108,6 +115,13 @@
 	// @return $target / $context + 0em;
 	@return $number;
 }
+
+/// Convert EM value to PX
+/// @since 0.0.1
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @acces public
+/// @param {int} $target
+/// @param {int} $context [$base-em] - Base em value (1em = $base-em)
 @function px($target, $context: $base-em){
 	@if $target == 0 { @return 0; }
 	$context: strip-units( $context );
@@ -117,30 +131,41 @@
 }
 
 
-// 0.0.6
-// percent()
-// Calcula el porcentaje indicado del numero indicado
-// ====================
+/// Calcula el porcentaje indicado del numero indicado
+/// @since 0.0.6
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @acces public
+/// @param {int} $value - Numero a calcular
+/// @param {int} $percent - Porcentaje
 @function percent( $value, $percent ) {
 	@return ($value * $percent) / 100;
 }
 
 
-// 0.1.4
-// HugoGiraudel.com/2013/08/08/advanced-sass-list-functions/
-// Funciones para el manejo complejo de listas
-// ====================
-
-// Devuelve el primer valor de una lista
+/// Devuelve el primer valor de una lista
+/// @since 0.1.4
+/// @author [Hugo Giraudel](HugoGiraudel.com/2013/08/08/advanced-sass-list-functions/)
+/// @acces public
+/// @param {list} $list - List
 @function first($list) {
 	@return nth($list, 1);
 }
-// Devuelve el ultimo valor de una lista
+
+/// Devuelve el ultimo valor de una lista
+/// @since 0.1.4
+/// @author [Hugo Giraudel](HugoGiraudel.com/2013/08/08/advanced-sass-list-functions/)
+/// @acces public
+/// @param {list} $list - List
 @function last($list) {
 	@return nth($list, length($list));
 }
 
-// Last index of value "x"
+/// Last index of value "x"
+/// @since 0.1.4
+/// @author [Hugo Giraudel](HugoGiraudel.com/2013/08/08/advanced-sass-list-functions/)
+/// @acces public
+/// @param {list} $list - List
+/// @param {string} $value - desired value
 @function last-index($list, $value) {
 	@for $i from length($list)*-1 through -1 {
 		@if nth($list, abs($i)) == $value {
@@ -150,9 +175,12 @@
   	@return null;
 }
 
-// 0.1.4
-// Revierte el orden de una lista
-// ====================
+/// Revierte el orden de una lista
+/// @since 0.1.4
+/// @author [Hugo Giraudel](HugoGiraudel.com/2013/08/08/advanced-sass-list-functions/)
+/// @acces public
+/// @param {list} $list - List
+/// @param {bool} $recursive
 @function reverse($list, $recursive: false) {
    $result: ();
    @for $i from length($list)*-1 through -1 {
@@ -166,10 +194,15 @@
    }
    @return $result;
 }
-// 0.1.4
-// Toma una lista, la invierte, devuelve el valor de un item
-// según su correspondiente indice y lo multiplica por 10
-// ====================
+
+
+/// Toma una lista, la invierte, devuelve el valor de un item
+/// según su correspondiente indice y lo multiplica por 10
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @since 0.1.4
+/// @param {list} $list - The list
+/// @param {string} $value - Value inside the list
+/// @return {int} - z-index value
 @function z($list, $value) {
 	$reverse: reverse($list);
 	$index: index($reverse, $value);
@@ -201,26 +234,19 @@
   @return $result;
 }
 
-// $list: (a b (c d (e f ( (g h (i j k)) l m))));
-// $debug: debug($list);
 
-// 0.1.5
-// @param $color_name: Nombre del color
-// @param $color_list: Paleta de colores | default: $color-pallete
-//
-// Devuelve un color del array $color-pallete
-// en base al nombre del color 
-// ====================
-@function c($color_name, $color_list: $color-pallete) {
+/// Devuelve un color del array $color-pallete en base al nombre del color
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @since 0.1.5
+/// @param {string} $color_name - Color name inside `$color_list`
+/// @param {list} $color_list [$color-pallete] - Color pallete SASS list
+/// @return {*} - Color value
+@function getColor($color_name, $color_list: $color-pallete) {
 	$r: '';
-	// @warn $color_list;
-
 	@for $i from 1 through length($color_list) {
 		$color: nth($color_list, $i);
 		$color_list_name: nth($color, 1);
 		$color_list_value: nth($color, 2);
-		// @debug $color_list_name;
-		// @debug $color_list_name + ' '+ $color_name;
 		@if ( $color_name == $color_list_name ) {
 			$r: $color_list_value;
 		}
@@ -236,11 +262,13 @@
 
 /// ifcolor()
 /// Imprime el valor del color contrastando con el valor del color de fondo
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
 /// @see $text-color
 /// @see $bright-text-color
 /// @param {int | function } $bg-color - Color de fondo del elemento
 /// @param {int | function } $dark-color - Color oscuro
 /// @param {int | function } $bright-color - Color Claro
+/// @return {*} - Color value
 @function ifcolor($bg-color, $dark-color: $text-color, $bright-color: $bright-text-color) {
 	$lightness: lightness($bg-color);
 	$treshold:	lightness(#aaa);
@@ -276,3 +304,83 @@
 // 		@warn 'No existe un color con ese nombre definido en la paleta de colores';
 // 	}
 // }
+
+
+// ============================================
+// SCSS MAPS
+// ============================================
+
+
+/// Push Function
+/// Map-push function (adds item to list in map)
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @since 0.5.0
+/// @group Function Maps
+/// @param {map} $map - Scss map
+/// @param {map} $new-map - New map
+/// @return {*} - Map
+@function map-push( $map, $new-map ) {
+  @return map-merge( $map, $new-map );
+}
+
+/// Map deep get
+/// @author Hugo Giraudel
+/// @access public
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+
+/// Deep set function to set a value in nested maps
+/// @author Hugo Giraudel
+/// @access public
+/// @param {Map} $map - Map
+/// @param {List} $keys -  Key chaine
+/// @param {*} $value - Value to assign
+/// @return {Map}
+@function map-deep-set($map, $keys, $value) {
+  $maps: ($map,);
+  $result: null;
+  
+  // If the last key is a map already
+  // Warn the user we will be overriding it with $value
+  @if type-of(nth($keys, -1)) == "map" {
+    @warn "The last key you specified is a map; it will be overrided with `#{$value}`.";
+  }
+  
+  // If $keys is a single key
+  // Just merge and return
+  @if length($keys) == 1 {
+    @return map-merge($map, ($keys: $value));
+  }
+  
+  // Loop from the first to the second to last key from $keys
+  // Store the associated map to this key in the $maps list
+  // If the key doesn't exist, throw an error
+  @for $i from 1 through length($keys) - 1 {
+    $current-key: nth($keys, $i);
+    $current-map: nth($maps, -1);
+    $current-get: map-get($current-map, $current-key);
+    @if $current-get == null {
+      @error "Key `#{$key}` doesn't exist at current level in map.";
+    }
+    $maps: append($maps, $current-get);
+  }
+  
+  // Loop from the last map to the first one
+  // Merge it with the previous one
+  @for $i from length($maps) through 1 {
+    $current-map: nth($maps, $i);
+    $current-key: nth($keys, $i);
+    $current-val: if($i == length($maps), $value, $result);
+    $result: map-merge($current-map, ($current-key: $current-val));
+  }
+  
+  // Return result
+  @return $result;
+}

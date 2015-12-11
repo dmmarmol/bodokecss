@@ -93,7 +93,7 @@ input[type="submit"],
 button[type="submit"],
 button[type="search"],
 [role="button"], {
-	background-color: c('green');
+	background-color: getColor('green');
 	color: white;
 }
 

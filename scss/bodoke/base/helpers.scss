@@ -145,7 +145,7 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	padding-left: $col-offset;
 	padding-right: $col-offset;
 	color: gray(100);
-	background-color: c('gray');
+	background-color: getColor('gray');
 	@include border-radius( 5px );
 	@include text-shadow(0 1px 0 white(0.8) );		
 }
