@@ -7,21 +7,24 @@
 
 // Lista de fuentes para utilizar
 // ==============================
-$open-sans:				'Open Sans', sans-serif;
-$open-sans-condensed:	'Open Sans Condensed', sans-serif;
-$fjalla-one:			'Fjalla One', sans-serif;
+$open-sans:				'Open Sans';
+$open-sans-condensed:	'Open Sans Condensed';
+$fjalla-one:			'Fjalla One';
 $courrier:				'Courrier', 'courrier new', monospace;
-$lucida-sans:			'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
-$verdana:				Verdana, Helvetica, Geneva, sans-serif;
-$fontAwesome:			'FontAwesome', sans-serif;
+$lucida-sans:			'Lucida Sans Unicode', 'Lucida Grande';
+$verdana:				Verdana, Helvetica, Geneva;
+$fontAwesome:			'FontAwesome';
 $arabic:				'Noto Kufi Arabic', serif;
 $arabic-light:			'Noto Naskh Arabic', serif;
 
 $bodoke-font:			'Bodoke';
 $bodoke-font-icon:		'bodoke-fontastic';
 
-$text-font:				$open-sans;
-$alt-font:				$verdana; 			// Alternative font
+$type-sans:				sans-serif;
+$type-serif:			serif;
+
+$text-font:				$open-sans, $type-sans;
+$alt-font:				$verdana, $type-sans;		// Alternative font
 $number-font:			$lucida-sans;
 $text-condensed:		$fjalla-one;
 
@@ -101,7 +104,7 @@ $fa-version:			'4.2.0';
 	} @else {
 		[class*="#{$fa-css-prefix}"] {
 			@content;
-		}		
+		}
 	}
 }
 
@@ -114,7 +117,7 @@ $fa-version:			'4.2.0';
 // Arabic font
 // ========================
 @if ( $text-font == $arabic ) {
-	@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css);
+	@import url(http://fonts.googleapis.com/earlyaccess/notokufiarabic.css);
 } @elseif ( $text-font == $arabic-light ) {
 	@import url(http://fonts.googleapis.com/earlyaccess/notonaskharabic.css);
 }

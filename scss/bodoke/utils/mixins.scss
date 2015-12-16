@@ -53,7 +53,6 @@
 /// @see http://compass-style.org/reference/compass/css3/box_shadow/
 @mixin box-shadow( $values... ) {
 	box-shadow: $values;
-	// -webkit-box-shadow: $values;
 }
 
 /// Border Radius
@@ -62,7 +61,6 @@
 /// @since 0.3.7
 @mixin border-radius( $radius: 5px ) {
 	border-radius: $radius;	
-	// -webkit-border-radius: $radius;
 }
 
 
@@ -71,18 +69,18 @@
 // TRANTISION
 // ===============================================
 
-/// DELAY TRANSITION
+/// Apply delay to a transition
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
 /// @group Transition Mixins
 /// @since 0.1.0
-@mixin delay( $value:0 ) {
+/// @param {int} $value - Time value
+@mixin transition-delay( $value:0 ) {
 	-webkit-transition-delay: $value;
-    // -moz-transition-delay: $value;
-    // -ms-transition-delay: $value;
-    // -o-transition-delay: $value;
-	transition-delay: $value;
+			transition-delay: $value;
 }
 
 /// TRANSITION THE TRANSFORM PROPERTY
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
 /// @group Transition Mixins
 /// @since 0.2.0
 /// @param $values {string} | String containing the values of the transition property
@@ -235,7 +233,7 @@
 /// @since 0.5.0
 /// @group Animation Mixins
 /// @param integer $perspective
-@mixin hardwareAcceleration($perspective:1000) {
+@mixin enableHardwareAcceleration($perspective:1000) {
 	-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
 	-webkit-perspective: $perspective;

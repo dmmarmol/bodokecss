@@ -4,24 +4,24 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Changelog](http://keepachangelog.com/CHANGELOG.md).
 
 ### Projects involved
-* [Tunemypic.com](http://tunemypic.mx/) 							// V: 0.0.1
-* La Caja															// V: 0.0.11
-* DevBus2014														// V: 0.0.2
-* [Youtube/Edu Gadget](http://youtube.com/educacion)				// V: 0.0.3
-* [Google ContentBox](https://github.com/google/contentbox)			// V: 0.0.5
-* [Convoy testapp platform](http://audits-platform.appspot.com/)	// V: 0.1.0 - New Grid
-* DevBus - Egipto													// V: 0.1.2 (Amon Carolina)
-* Status update														// V: 0.1.3 (Amon Demian)
-* GCBA - Padres														// V: 0.1.4 (Amon Ed)
-* [Codigoquemero](http://codigoquemero.com.ar)						// V: 0.1.5 (Amon Fabian)
-* [Mundoconsulta](http://mundoconsulta.com)							// V: 0.1.6 (Amon Gabriel)
-* [Codigoquemero v2](http://codigoquemero.com.ar)					// V: 0.2.2 (Baako Hagen)
-* Status Update 			// V: 0.2.3 (Baako Icarus)
-* Status Update 			// V: 0.2.7 (Baako Maarav)
-* Status Update 			// V: 0.3.0 (Caesar Odysseus)
-* Status Update 			// V: 0.4.0 (Daan Yaffa)  
-* Status Update 			// V: 0.5.0 (Eagle Imani) - [unreleased] 
-* Status Update 			// V: X.X.X [unreleased]
+* [Tunemypic.com](http://tunemypic.mx/) // V: 0.0.1
+* La Caja // V: 0.0.11
+* DevBus2014 // V: 0.0.2
+* [Youtube/Edu Gadget](http://youtube.com/educacion) // V: 0.0.3
+* [Google ContentBox](https://github.com/google/contentbox) // V: 0.0.5
+* [Convoy testapp platform](http://audits-platform.appspot.com/) // V: 0.1.0 - New Grid
+* DevBus - Egipto // V: 0.1.2 (Amon Carolina)
+* Status update // V: 0.1.3 (Amon Demian)
+* GCBA - Padres	// V: 0.1.4 (Amon Ed)
+* [Codigoquemero](http://codigoquemero.com.ar) // V: 0.1.5 (Amon Fabian)
+* [Mundoconsulta](http://mundoconsulta.com)	// V: 0.1.6 (Amon Gabriel)
+* [Codigoquemero v2](http://codigoquemero.com.ar) // V: 0.2.2 (Baako Hagen)
+* Status Update // V: 0.2.3 (Baako Icarus)
+* Status Update // V: 0.2.7 (Baako Maarav)
+* Status Update // V: 0.3.0 (Caesar Odysseus)
+* Status Update // V: 0.4.0 (Daan Yaffa)  
+* Status Update // V: 0.5.0 (Eagle Imani) - [unreleased]
+* Status Update // V: X.X.X [unreleased]
 	* BodokeCSS is Mobile First
 
 _________________
@@ -33,14 +33,17 @@ _________________
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)  
 - `@mixin animation-delay()` accepts multiple values
 - `@function c()` renamed to `getColor()`
+- `@mixin delay` renamed to `@mixin transition-delay`
+- native `.loading` class renamed using the `$bdk-prefix` -> `.bdk-loading` allowing the designer to use the initial class
 
 #### Added  
 - [`Gulp.js`](http://gulpjs.com/) for sass compiling
+- `@function map-set()`: set new value to a key inside a map.
 - `@function map-push()`: adds item to list in map.
 - `@function map-deep-get()`: fetch deeply nested values from a map by [HugoGiraudel](https://css-tricks.com/snippets/sass/deep-getset-maps/).
 - `@function map-deep-set`: Set a deeply nested key inside a map.
 - `@mixin animation-steps()`: Animate spritesheets with CSS
-- `@mixin hardwareAcceleration()`: Allows hardware acceleration on animations
+- `@mixin enableHardwareAcceleration()`: Allows hardware acceleration on animations
 
 #### Deleted  
 - `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
@@ -54,7 +57,7 @@ _________________
 - `"grid/_grid.scss"`: file-level annotations al estandar de [sassdoc.com](http://sassdoc.com)
 - Fixed typo in `"component/_modal.scss"`
 - Fixed typo in `"js/bdk-lightbox.js"`
-- `-webkit-` prefix deprecated in `box-shadow()` & `border-radius()` mixins 
+- `-webkit-` prefix deprecated in `box-shadow()` & `border-radius()` mixins
 - Mejoras en el `@mixin line-clamp()`
 - Fixed typo on `@mixin screen()`
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
@@ -66,7 +69,7 @@ _________________
 - Nuevo `@mixin z($list)` que ordena automaticamente los elementos en el eje *Z* de acuerdo al orden que tengan en una lista que se debe pasar como primer parametro
 - Nueva funcion `ifcolor()`: imprime el color de texto según el color de fondo que se pase como parametro
 - Nuevo `@mixin animation-count($times)`: enumera la cantidad de veces que se repite una animación.
-	
+
 ## [0.3.0 Caesar Odysseus] - 2015-06-01
 #### Updated
 - `"component/_list.scss"` Ahora las listas por default son horizontales y mostradas como `inline-block`
@@ -100,11 +103,11 @@ _________________
 - `"component/_menu.scss"`: Reformulacion de los menu. Ya no necesitan de la clase `.list` para funcionar
 - `"component/_buttons.scss"`: '.button-clear' sujeto a si posee borde o no
 - `"component/_buttons.scss"`: Nuevo '.button-clean' -> Botones sin fondo pero con hover
-- `"component/_buttons.scss"`: Se ajustaron los tamaños de font-icons dentro de diferentes tamaños de botones 
-- `"component/_buttons.scss"`: Se ajustaron clases para los tamaños 
+- `"component/_buttons.scss"`: Se ajustaron los tamaños de font-icons dentro de diferentes tamaños de botones
+- `"component/_buttons.scss"`: Se ajustaron clases para los tamaños
 - `"component/_list.scss"`: Compatible con los menu nativos de wordpress
 - `"component/_input.scss"` - Ahora las columnas aplicadas a las `.input-row` procesan mejor los paddings a ambos lados permitiendo alinearse mejor entre distintos anchos de columnas sin depender de un `.row`
-- Update `"settings/_helpers.scss"` 
+- Update `"settings/_helpers.scss"`
 - Update `"component/_input.scss"`
 - `[role="button"]` solo tiene efecto para los tags `<input>` o `<button>`
 - Division en las hojas de estilos compartidos entre los inputs y los botones

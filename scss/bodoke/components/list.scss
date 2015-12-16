@@ -82,14 +82,19 @@ $wp-item-class:		'.menu-item'; // Added for Wordpress compatibilty (requires a d
 	//
 	/// Floated
 	//
+	&.float-left-horizontal, &.float-left-horz, &.float-right-horizontal, &.float-right-horz {
+		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} { 
+			margin-left: 0; // inline-block gap fallback		
+		}
+	}
 	&.float-left-horizontal, &.float-left-horz {
 		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} { 
-			float: left; 
+			float: left;
 		}
 	}		
 	&.float-right-horizontal, &.float-right-horz {
 		#{$bdk-item-class}, #{$wp-item-class}, li, #{$item-class} { 
-			float: right; 
+			float: right;
 		}
 	}
 }

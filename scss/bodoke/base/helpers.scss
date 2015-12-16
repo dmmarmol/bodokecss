@@ -31,7 +31,7 @@ $loading-text:			'Cargando';
 $loading-size:			32px;
 $loading-top-offset:	70px;
 
-.loading {
+.#{$bodoke-prefix}-loading {
 	background-image: img('loader01.gif');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;

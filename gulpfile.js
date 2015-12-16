@@ -41,7 +41,7 @@ gulp.task('watch', function () {
     gulp.watch( [paths.sass], ['bdk-scss']);	
 });
 
-// Comple bodoke.scss
+// Comple app.scss
 gulp.task('bdk-scss', function () {
 	gulp.src( paths.bodokeapp )
 		.pipe(sass().on('error', sass.logError))

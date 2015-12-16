@@ -310,6 +310,18 @@
 // SCSS MAPS
 // ============================================
 
+/// map-set function (not included with Sass)
+/// @since 0.5.0
+/// @group Function Maps
+/// @author [Miriam Suzanne](http://oddbird.net/2013/10/19/map-merge/)
+/// @access public
+/// @param {map} $map - Selected map
+/// @param {*} $key - New key
+/// @param {*} $value - New value
+@function map-set($map, $key, $value) {
+  $new: ($key: $value);
+  @return map-merge($map, $new);
+}
 
 /// Push Function
 /// Map-push function (adds item to list in map)
@@ -324,6 +336,8 @@
 }
 
 /// Map deep get
+/// @since 0.5.0
+/// @group Function Maps
 /// @author Hugo Giraudel
 /// @access public
 /// @param {Map} $map - Map
