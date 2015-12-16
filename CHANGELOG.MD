@@ -30,12 +30,16 @@ _________________
 
 ## [0.5.0 Eagle Imani] - unreleased
 #### Updated
-- Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)  
+- Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
 - `@mixin animation-delay()` accepts multiple values
 - `@function c()` renamed to `getColor()`
 - `@mixin delay` renamed to `@mixin transition-delay`
 - native `.loading` class renamed using the `$bdk-prefix` -> `.bdk-loading` allowing the designer to use the initial class
 - `scss/bodoke/vendor` dir renamed to `scss/bodoke/lib` for avoiding `.gitignore`
+#### Added
+- Gulp.js for sass compiling
+
+>>>>>>> 75cc5dc89847285aabfa6c3764bf2a74c2866f55
 
 #### Added  
 - [`Gulp.js`](http://gulpjs.com/) for sass compiling
@@ -48,6 +52,7 @@ _________________
 
 #### Deleted  
 - `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
+>>>>>>> 2dd3bfc93aed3b539db92adc2b68d68f0f3a8274
 
 ## [0.4.0 Daan Yaffa] - 2015-10-01
 #### Updated
