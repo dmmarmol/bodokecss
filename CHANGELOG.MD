@@ -35,6 +35,7 @@ _________________
 - `@function c()` renamed to `getColor()`
 - `@mixin delay` renamed to `@mixin transition-delay`
 - native `.loading` class renamed using the `$bdk-prefix` -> `.bdk-loading` allowing the designer to use the initial class
+- `scss/bodoke/vendor` dir renamed to `scss/bodoke/lib` for avoiding `.gitignore`
 
 #### Added  
 - [`Gulp.js`](http://gulpjs.com/) for sass compiling
