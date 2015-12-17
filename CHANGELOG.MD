@@ -36,6 +36,8 @@ _________________
 - `@mixin delay` renamed to `@mixin transition-delay`
 - native `.loading` class renamed using the `$bdk-prefix` -> `.bdk-loading` allowing the designer to use the initial class
 - `scss/bodoke/vendor` dir renamed to `scss/bodoke/lib` for avoiding `.gitignore`
+- `@mixin bdk-background()` renamed to `background()` because *Bodoke* doesn't need an external mixin library.
+- `@mixin animation()` now supports custom `animation-iteration-count` as the second parameter
 #### Added
 - Gulp.js for sass compiling
 

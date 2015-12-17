@@ -1,4 +1,4 @@
-//// 
+////
 /// _mixins.scss
 /// @group Mixins
 /// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
@@ -38,7 +38,7 @@
 /// @since 0.0.4
 @mixin collapse( $custom-offset: $em-offset ) {
 	margin-right: (-$custom-offset);
-	margin-left: (-$custom-offset);	
+	margin-left: (-$custom-offset);
 }
 
 
@@ -60,7 +60,7 @@
 /// @group Shadow Mixins
 /// @since 0.3.7
 @mixin border-radius( $radius: 5px ) {
-	border-radius: $radius;	
+	border-radius: $radius;
 }
 
 
@@ -98,9 +98,9 @@
 // ===============================================
 
 /// Color de fondo con fallbacks y pollyfils
-/// @group Background Mixins 
+/// @group Background Mixins
 /// @since 0.0.2
-@mixin bdk-background($color, $alpha:1) {
+@mixin background($color, $alpha:1) {
 	$rgba: rgba(0, 0, 0, 0);
 	@if $color != transparent {
 		$rgba: rgba($color, $alpha);
@@ -114,7 +114,7 @@
 }
 
 /// GRADIENT BACKGROUND
-/// @group Background Mixins 
+/// @group Background Mixins
 /// @since 0.0.2
 @mixin gradient($from, $to) {
 	background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
@@ -123,12 +123,12 @@
 }
 
 /// Convert To GRAYSCALE
-/// @group Background Mixins 
+/// @group Background Mixins
 /// @since 0.0.2
 @mixin grayscale( $action:'show', $hover:false) {
 	@if $action == 'hide' or $action == 'remove' {
 		filter: none;
-		-webkit-filter: grayscale(0);		
+		-webkit-filter: grayscale(0);
 	} @else {
 		filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
 		filter: gray; /* IE6-9 */
@@ -153,8 +153,8 @@
 /// @example @include animation( animationName 10s 5s, true)
 /// @group Animation Mixins
 /// @since 0.0.1
-@mixin animation( $animation-arguments, $repeat: false) {
-	// 
+@mixin animation( $animation-arguments, $repeat: 1) {
+	//
 	// animation-name
 	// animation-duration
 	// animation-timing-function
@@ -169,10 +169,14 @@
 	} @else {
 		-webkit-animation: $animation-arguments;
 		animation: $animation-arguments;
-		@if $repeat == false {
+		// Si es un numero
+		// @debug '$repeat: #{$repeat} es numero: #{type-of($repeat) == number}';
+		@if ( type-of($repeat) == number ) {
 			// this prevents the animation from restarting!
-			-webkit-animation-fill-mode: forwards; 
+			-webkit-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
+			-webkit-animation-iteration-count: $repeat;
+			animation-iteration-count: $repeat;
 		} @else {
 			-webkit-animation-iteration-count: infinite;
 			animation-iteration-count: infinite;
@@ -204,20 +208,20 @@
 /// 	duration: .5s
 /// ));
 @mixin animation-steps( $animation-name, $settings: (e:e) ) {
-	// @debug type-of( $settings ); 
+	// @debug type-of( $settings );
 	@if ( type-of( $settings ) == map  ) {
-		@if ( function-exists( map-push ) ) {			
+		@if ( function-exists( map-push ) ) {
 			$settings: map-push((
 				width: 100px,
 				height: 100px,
 				duration: 1s,
 				frames: 1,
 				sprite: 'http://placehold.it/100x100',
-			), $settings );	
+			), $settings );
 			// @debug $settings;
 			width: map-get( $settings, width);
 			height: map-get( $settings, height);
-			background-image: url( map-get( $settings, sprite ) );    
+			background-image: url( map-get( $settings, sprite ) );
 		    -webkit-animation: #{$animation-name} map-get( $settings, duration ) steps( map-get( $settings, frames ) ) infinite;
 		            animation: #{$animation-name} map-get( $settings, duration ) steps( map-get( $settings, frames ) ) infinite;
 		} @else {
@@ -265,22 +269,22 @@
 
 	// Wrapper
 	position: relative;
-	&:before { 
-		padding-top: $value; 			
+	&:before {
+		padding-top: $value;
 		content: '';
-		display: block;            
+		display: block;
 	}
 	// Content
 	@if $element != false {
 		#{$element} {
-			position: absolute; 
+			position: absolute;
 			top: 0; left: 0; bottom: 0; right: 0;
 			width: 100%;
-			height: 100%; 			
+			height: 100%;
 		}
 	} @else {
 		> * {
-			position: absolute; 
+			position: absolute;
 			top: 0; left: 0; bottom: 0; right: 0;
 			width: 100%;
 			height: 100%;
@@ -292,7 +296,7 @@
 /// @group Mixins
 /// @since 0.0.1
 @function calculate-ratio( $num1, $num2:false ){
-	@return ( $num2 / $num1 ) * 100%;		
+	@return ( $num2 / $num1 ) * 100%;
 }
 
 /// OPACITY WITH IE8 SUPPORT
@@ -338,7 +342,7 @@
 @mixin half-line($width, $height: 1px, $color:hsl(0,0,97%), $element:'&') {
 	position: relative;
 	#{$element} {
-        display: inline-block;    
+        display: inline-block;
     }
     #{$element}:before, #{$element}:after {
         // border-top: 1px solid black;
@@ -353,8 +357,8 @@
         margin-top: -$height;
     }
     #{$element}:after {
-       right: 0;  
-       left: auto; 
+       right: 0;
+       left: auto;
     }
 }
 
@@ -377,12 +381,12 @@
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		-o-text-overflow: ellipsis; /* Prefix for Opera Mini 5.0 - 7.0 */		
-	} @else {		
+		-o-text-overflow: ellipsis; /* Prefix for Opera Mini 5.0 - 7.0 */
+	} @else {
 		white-space: initial;
 		overflow: visible;
 		text-overflow: none;
-		-o-text-overflow: none; /* Prefix for Opera Mini 5.0 - 7.0 */		
+		-o-text-overflow: none; /* Prefix for Opera Mini 5.0 - 7.0 */
 	}
 }
 
@@ -407,7 +411,7 @@
 	@if ($and) {
 		* { &:after, &:before, #{$and} { color: inherit; } }
 	} @else {
-		* { &:after, &:before { color: inherit; } }		
+		* { &:after, &:before { color: inherit; } }
 	}
 }
 
@@ -417,7 +421,7 @@
 // MEDIA QUERIES
 // ======================================
 
-/// Hasta 1024px 
+/// Hasta 1024px
 /// @group Media Query Mixins
 /// @since 0.0.4
 @mixin screen( $screen: 1024px, $condition: 'max-width' ) {
@@ -476,7 +480,7 @@
 	html.ie {
 		@if $version != false {
 			&#{$version} {
-				@content;				
+				@content;
 			}
 		} @else {
 			@content;
@@ -505,9 +509,9 @@
 /// @since 0.0.1
 @mixin center($important: false){
 	margin-left: auto;
-	margin-right: auto; 
+	margin-right: auto;
 	float: none;
-	display: block;	
+	display: block;
 }
 
 /// ABSLUTE VERTICAL ALIGN
@@ -515,10 +519,10 @@
 /// @since 0.0.1
 @mixin v-center($important: false){
 	display: block;
-	@if $important { position: absolute!important; } @else { position: absolute; } 
+	@if $important { position: absolute!important; } @else { position: absolute; }
 	top: 0; right: auto; bottom: 0; left: auto;
 	margin: auto;
-	@if $important { float: none!important; } @else { float: none; } 
+	@if $important { float: none!important; } @else { float: none; }
 }
 
 /// ABSLUTE VERTICAL & HORIZONTAL ALIGN
@@ -526,13 +530,13 @@
 /// @since 0.0.1
 @mixin a-center($important: false){
 	display: block;
-	@if $important { position: absolute!important; } @else { position: absolute; } 
+	@if $important { position: absolute!important; } @else { position: absolute; }
 	top: 0; right: 0; bottom: 0; left: 0;
 	margin: auto;
-	@if $important { float: none!important; } @else { float: none; } 
+	@if $important { float: none!important; } @else { float: none; }
 }
 
-/// Aplicar estilos al contenedor para 
+/// Aplicar estilos al contenedor para
 /// alinear verticalmente al descendiente
 /// @group Align Mixins
 /// @since 0.1.0
@@ -541,7 +545,7 @@
 		content: '';
 		display: inline-block;
 		vertical-align: middle;
-		margin-right: -0.25em; 
+		margin-right: -0.25em;
 		height: 100%;
 	}
 	#{$element} {
@@ -647,7 +651,7 @@
 @mixin reset-input() {
 	appearance: none;
 	-moz-appearance: none;
-	-webkit-appearance: none;		
+	-webkit-appearance: none;
 }
 
 /// User Select
@@ -669,7 +673,7 @@
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
-	display: -webkit-flex;	
+	display: -webkit-flex;
 	display: flex;
 }
 @mixin flex-box-direction($value: normal){
@@ -768,13 +772,13 @@
 // Llamado que solo centra verticalmente
 @mixin flexbox() {
 	@include flex-display();
-	// @include flex-box-direction(); 
-	// @include flex-box-orient(); 
+	// @include flex-box-direction();
+	// @include flex-box-orient();
 	@include flex-direction();
 	@include flex-wrap();
 	@include flex-content();
 	@include flex-stretching();
-	@include flex-align();	
+	@include flex-align();
 }
 
 
@@ -805,7 +809,7 @@
 				bottom: 100%;
 				@if $position != 'default' {
 					left: $position; }
-				@else { 
+				@else {
 					left: 50%; }
 			} @elseif $direction == 'right' {
 				left: 100%;
@@ -862,7 +866,7 @@
 			} @elseif $direction == 'left' {
 				border-right-color: $border-color;
 			}
-		}		
+		}
 	} @else {
 		// If there is no border
 		&:after {
@@ -879,11 +883,11 @@
 				bottom: 100%;
 				@if $position != 'default' {
 					left: $position; }
-				@else { 
+				@else {
 					left: 50%; }
 				margin-left: -$size;
 				border-bottom-color: $color;
-				
+
 			} @elseif $direction == 'right' {
 				left: 100%;
 				@if $position != 'default' {

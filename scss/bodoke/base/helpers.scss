@@ -18,7 +18,7 @@
 // Text Colors
 @each $color in $color-pallete {
 	.text-#{nth($color, 1)} {
-		color: nth($color, 2);					
+		color: nth($color, 2);
 	}
 }
 
@@ -27,9 +27,9 @@
 // ==========================
 /// PRE LOADER / LOADING
 // ==========================
-$loading-text:			'Cargando';
-$loading-size:			32px;
-$loading-top-offset:	70px;
+$loading-text:			'Cargando' !default;
+$loading-size:			32px !default;
+$loading-top-offset:	70px !default;
 
 .#{$bodoke-prefix}-loading {
 	background-image: img('loader01.gif');
@@ -69,9 +69,9 @@ $loading-top-offset:	70px;
 	border: 1px solid hsl(0, 0, 90%);
 	@include border-radius( 5px );
 	padding-top: $col-offset / 2;
-	padding-bottom: $col-offset / 2;		
+	padding-bottom: $col-offset / 2;
 	padding-left: $col-offset / 2;
-	padding-right: $col-offset / 2;		
+	padding-right: $col-offset / 2;
 	&.cols, &.cols, &.column, &.columns {
 		padding-left: $col-offset;
 		padding-right: $col-offset;
@@ -114,7 +114,7 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 			background $transition-speed ease
 		;
 		// Fondo por default
-		background-color: hsl(0, 0, 80%); 
+		background-color: hsl(0, 0, 80%);
 		// Colores para el alert/error
 		@each $alert in $alerts-color-pallete {
 			&.#{nth( $alert, 1 )} {
@@ -123,7 +123,7 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 				&.arrow {
 					@each $direction in $error-arrow-directions {
 						&.#{$direction} {
-							@include arrow(nth($alert, 2), 8px, $direction);					
+							@include arrow(nth($alert, 2), 8px, $direction);
 						}
 					}
 				}
@@ -135,7 +135,7 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 					color: white();
 				}
 			}
-		}		
+		}
 	}
 }
 .clean-panel {
@@ -147,7 +147,7 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	color: gray(100);
 	background-color: getColor('gray');
 	@include border-radius( 5px );
-	@include text-shadow(0 1px 0 white(0.8) );		
+	@include text-shadow(0 1px 0 white(0.8) );
 }
 
 
@@ -225,10 +225,10 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	text-align: center;
 }
 .right-text {
-	text-align: right; 
+	text-align: right;
 }
 .left-text {
-	text-align: left; 
+	text-align: left;
 }
 .upcase-text {
 	text-transform: uppercase;
@@ -348,5 +348,5 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 // Tablet Devices (Layout, Modifications, etc)
 // ==========================================================================
 @media only screen and (min-width: 720px) and (max-width: 999px) {
-	
+
 }
