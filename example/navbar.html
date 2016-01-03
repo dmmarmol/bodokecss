@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie lt-ie9"> <![endif]-->
+<!--[if IE]>           <html class="no-js ie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+	<title>Bodoke Lightbox | Framework</title>
+
+	<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/src/css/app.css" />
+	<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/src/css/bodoke-example.css" />
+	<!-- Only in prod. This should be deleted when you work by your own -->
+	<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/src/fonts/FontAwesome.otf" />
+	<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/src/fonts/fontawesome-webfont.eot" />
+	<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/src/fonts/fontawesome-webfont.svg">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/src/fonts/fontawesome-webfont.ttf">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/dmmarmol/bodokecss/master/src/fonts/fontawesome-webfont.woff">
+
+	<!-- SCRIPT -->
+	<!-- <script src="js/vendor/jquery.js" type="text/javascript" charset="utf-8" async defer></script> -->
+	<script src="https://cdn.rawgit.com/dmmarmol/bodokecss/master/src/js/vendor/jquery.min.js" type="text/javascript" defer></script>
+	<!-- Bodoke Lightbox Script -->
+	<script src="https://cdn.rawgit.com/dmmarmol/bodokecss/master/src/js/bdk-lightbox.js" type="text/javascript" defer></script>
+	
+</head>
+<body class="example">
+
+	<nav class="navbar {% block nav_class %}{% endblock %} c12-12">
+		<div class="navbar-header">
+			<div class="button-holder">
+		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		            <span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		        </button>
+			</div>
+	        <a class="navbar-brand" href="{{siteUrl('/')}}">Brand</a>
+	        <div class="search">
+				<form action="search" method="get">
+					<input 	class="-clear" type="text" name="query" 
+							value="" placeholder="Search">
+					<button class="button button-clear" type="submit" name="submit">
+						<i class='fa fa-search'></i>
+					</button>
+				</form>
+			</div>
+	    </div>
+		<ul class="nav top-nav list list-horizontal navbar-collapse navbar-ex1-collapse">
+			<li class="item">
+				<a class="button" href="Example Link 1" title="Example Link 1">Example Link 1</a>
+			</li>
+			<li class="item">
+				<a class="button" href="Example Link 2" title="Example Link 2">Example Link 2</a>
+			</li><!-- -->
+			<li class="item">
+				<a class="button" href="Example Link 3" title="Example Link 3">Example Link 3</a>
+			</li><!-- -->
+			<li class="item">
+				<a class="button" href="Example Link 4" title="Example Link 4">Example Link 4</a>
+			</li>
+			<li class="item">
+				<a class="button button-clear button-facebook" href="#" target="_blank">
+					<i class="fa fa-facebook-square"></i>
+					<span class="button-collapsed-text">Facebook</span>
+				</a>
+			</li>
+			<li class="item">
+				<a class="button button-clear button-instagram" href="#" target="_blank">
+					<i class="fa fa-instagram"></i>
+					<span class="button-collapsed-text">Instagram</span>
+				</a>
+			</li>			
+			<li class="item search">
+				<form action="search" method="get">
+					<input 	class="-clear" type="text" name="query" 
+							value="" placeholder="Search">
+					<button class="button button-clear" type="submit" name="submit">
+						<i class='fa fa-search'></i>
+					</button>
+				</form>
+			</li>
+		</ul>
+	</nav>
+
+
+</body>
+</html>
