@@ -10,7 +10,9 @@
 // =======================
 $shadow-alpha: 0.8;
 $percent: 20%;
-$dark-button-text-color: $text-color;
+$dark-button-text-color: #FAFAFA;
+// Humbral que luminosidad separa un boton oscuro de uno claro
+$button-lightness-treshold: #858585;
 
 
 
@@ -38,7 +40,7 @@ $dark-button-text-color: $text-color;
 				// - Gradient Button
 				// background-color: linear-gradient( 180deg, $color, darken($color, 10%) );
 			}
-			@if lightness($color) > lightness(#aaa) {
+			@if lightness($color) > lightness($button-lightness-treshold) {
 				color: $text-color;
 			} @else {
 				color: $dark-button-text-color;
@@ -82,7 +84,7 @@ $dark-button-text-color: $text-color;
 					&:active,
 					&.active {
 						background-color: darken($color, 15%);
-						@if lightness($color) > lightness(#aaa) {
+						@if lightness($color) > lightness($button-lightness-treshold) {
 							color: $text-color;
 						} @else {
 							color: $dark-button-text-color;
@@ -110,7 +112,7 @@ $dark-button-text-color: $text-color;
 	&.#{$button-prefix}-#{$name}, [role="button"] {
 		// @include transition( box-shadow $button-transition-time ease );
 		&:hover {
-			@if lightness($color) > lightness(#aaa) {
+			@if lightness($color) > lightness($button-lightness-treshold) {
 				color: $text-color;
 			} @else {
 				color: $dark-button-text-color;
@@ -135,10 +137,12 @@ $dark-button-text-color: $text-color;
 @mixin button-clean-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name} {
 		&:hover {
-			@if lightness($color) > lightness(#aaa) {
+			@if lightness($color) > lightness($button-lightness-treshold) {
 				color: $text-color;
+				// @debug $name': Dark color '$text-color;
 			} @else {
 				color: $dark-button-text-color;
+				// @debug $name': Light color '$dark-button-text-color;
 			}
 			@if ( $button-has-background ) {
 				background-color: $color 	
@@ -160,7 +164,7 @@ $dark-button-text-color: $text-color;
 @mixin button-group-color( $name, $color ) {
 	&.#{$button-prefix}-#{$name} {
 		.#{$button-prefix}, [role="button"] {
-			@if lightness($color) > lightness(#aaa) {
+			@if lightness($color) > lightness($button-lightness-treshold) {
 				color: $text-color;
 			} @else {
 				color: $dark-button-text-color;
@@ -387,8 +391,8 @@ $dark-button-text-color: $text-color;
 // EL BOTON
 // =================
 .#{$button-prefix}, [role="button"] {
-	display: block;
-	float: left;
+	display: inline-block;
+	vertical-align: baseline;
 	text-decoration: none;
 	text-align: center;
 	line-height: $button-height;
@@ -475,8 +479,9 @@ $dark-button-text-color: $text-color;
 	&.#{$button-prefix}-inline-block, &.#{$button-prefix}-inline {
 		float: none;
 	}
-	&.#{$button-prefix}-inline-block { 
-		display: inline-block; 
+	&.#{$button-prefix}-block { 
+		display: block; 
+		float: left;
 	}
 	&.#{$button-prefix}-inline { 
 		display: inline; 

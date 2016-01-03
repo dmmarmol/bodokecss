@@ -34,10 +34,11 @@ _________________
 - `@mixin animation-delay()` accepts multiple values
 - `@function c()` renamed to `getColor()`
 - `@mixin delay` renamed to `@mixin transition-delay`
-- native `.loading` class renamed using the `$bdk-prefix` -> `.bdk-loading` allowing the designer to use the initial class
+- native `.loading` class renamed using the `$bdk-prefix` -> `.bdk-loading`
 - `scss/bodoke/vendor` dir renamed to `scss/bodoke/lib` for avoiding `.gitignore`
 - `@mixin bdk-background()` renamed to `background()` because *Bodoke* doesn't need an external mixin library.
 - `@mixin animation()` now supports custom `animation-iteration-count` as the second parameter
+- `@mixin screen()` has one parameter and is more flexible: The developer can write a list of media-query rules in the CSS way. Eg: `(max-width: 800px)`
 #### Added
 - Gulp.js for sass compiling
 

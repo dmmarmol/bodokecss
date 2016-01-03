@@ -421,11 +421,11 @@
 // MEDIA QUERIES
 // ======================================
 
-/// Hasta 1024px
 /// @group Media Query Mixins
 /// @since 0.0.4
-@mixin screen( $screen: 1024px, $condition: 'max-width' ) {
-	@media only screen and (#{$condition}: $screen) {
+/// @param {string} $rules | Traditional list of rules applied to the media query
+@mixin screen( $rules ) {
+	@media only screen and #{$rules} {
 		@content;
 	}
 }
@@ -434,7 +434,7 @@
 /// @group Media Query Mixins
 /// @since 0.0.4
 @mixin netbook() {
-	@include screen( 600px, 'max-height' ) {
+	@include screen( (max-height: 600px) ) {
 		@content;
 	}
 }
@@ -452,7 +452,7 @@
 /// @group Media Query Mixins
 /// @since 0.0.4
 @mixin max-screen-height( $height ) {
-	@include screen( $height, 'max-height' ) {
+	@include screen( (max-height: $height) ) {
 		@content;
 	}
 }
