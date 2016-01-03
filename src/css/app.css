@@ -1,17 +1,17 @@
 /**
  * Bodoke.css
  * ----------
- * Sexy & simple css framework made in SASS with a super-easy configuration!
- * Allows multiple floated guides and inlcudes FontAwesome!
+ * Sexy & simple css framework made in SASS with easy configuration
+ * Inlcude FontAwesome!
  *
  *
- * @author:			  Diego Martin Marmol | @dmmarmol
- * @website: 		  http://diegomarmol.com.ar
- * @version:		  0.5.0 Eagle Imani
- * release date:	20/05/14	
+ * author: 			Diego Martin Marmol | @dmmarmol
+ * website: 		[http://diegomarmol.com.ar](http://diegomarmol.com.ar)
+ * version:			0.5.0 Eagle Imani
+ * release date:	20/05/14
  * contributors: 	Leonardo Pittelli | @leopittelli
  * developed at:	Convoy S.R.L - www.convoy.me
- * compiler:		  gulp-sass "^2.1.0"
+ * Compiler:		gulp-sass "^2.1.0"
  *
 */
 ::-moz-selection, ::-moz-selection {
@@ -548,7 +548,7 @@ th {
 .text-dark-gray {
   color: #666666; }
 
-.loading {
+.bdk-loading {
   background-image: url("../images/loader01.gif");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -556,7 +556,7 @@ th {
   height: 100%;
   position: relative;
   min-height: 128px; }
-  .loading:before {
+  .bdk-loading:before {
     content: "Cargando" "..." !important;
     position: absolute !important;
     height: 16px;
@@ -571,7 +571,7 @@ th {
     text-align: center;
     color: #282828;
     overflow: hidden; }
-  .loading .fade-container {
+  .bdk-loading .fade-container {
     opacity: 1;
     position: relative;
     min-height: 300px; }
@@ -1176,9 +1176,176 @@ th {
 [dir="rtl"] .col, [dir="rtl"] .cols, [dir="rtl"] .column, [dir="rtl"] .columns {
   float: right; }
 
+.navbar .sr-only {
+  display: none; }
+
+.navbar {
+  background-color: #262626;
+  height: 4.5em;
+  padding-left: 0.9375em;
+  padding-right: 0.9375em; }
+  .navbar.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0; }
+  .navbar .nav, .navbar .navbar-header {
+    height: 100% !important;
+    display: table; }
+  .navbar .navbar-header .navbar-brand {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle; }
+  .navbar .item, .navbar li {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle; }
+  .navbar a, .navbar .button {
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: #cccccc; }
+    .navbar a:hover, .navbar .button:hover {
+      color: white; }
+  .navbar i.fa {
+    font-size: 2em;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0; }
+  .navbar .search {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle; }
+    .navbar .search form {
+      float: right; }
+    .navbar .search input, .navbar .search [type="text"] {
+      background-color: #cccccc;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      transition: background-color 0.35s ease; }
+      .navbar .search input:focus, .navbar .search [type="text"]:focus {
+        background-color: white;
+        border-color: #e6e6e6; }
+    .navbar .search .button {
+      font-size: 1em;
+      line-height: 1em;
+      text-align: center;
+      padding: 0 0.46875em;
+      color: #cccccc; }
+      .navbar .search .button:hover i, .navbar .search .button:hover .fa {
+        color: white; }
+      .navbar .search .button i, .navbar .search .button .fa {
+        font-size: 1em;
+        margin: 0; }
+
+@media only screen and (max-width: 768px) {
+  .navbar-header {
+    width: 100%; }
+    .navbar-header .button-holder {
+      position: relative;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 1.875em;
+      max-width: 0.75em; }
+    .navbar-header .navbar-toggle {
+      height: 1em;
+      width: 1em;
+      background-color: transparent;
+      border: 1px solid #cccccc;
+      background-color: transparent;
+      background-image: none;
+      border-radius: 2px; }
+      .navbar-header .navbar-toggle:focus {
+        outline: 0; }
+      .navbar-header .navbar-toggle .icon-bar {
+        display: block;
+        width: 97%;
+        height: 1px;
+        margin: 4px auto;
+        background-color: #cccccc; }
+    .navbar-header .search {
+      display: table-cell; }
+  .navbar-collapse {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: #262626;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    max-height: 0;
+    display: block !important;
+    height: auto !important;
+    transition: max-height 0.35s ease-out; }
+    .navbar-collapse .item {
+      display: block;
+      margin-left: 0; }
+      .navbar-collapse .item a, .navbar-collapse .item .button {
+        text-align: left;
+        width: 100%;
+        padding-top: 0.46875em;
+        padding-bottom: 0.46875em;
+        border-bottom: 1px solid #404040; }
+      .navbar-collapse .item .button {
+        background-color: transparent;
+        color: white; }
+      .navbar-collapse .item:hover {
+        font-weight: bold; }
+      .navbar-collapse .item.search {
+        display: none; }
+    .navbar-collapse .button-collapsed-text {
+      display: inline;
+      font-size: 1em;
+      margin-left: 0.5em; }
+    .navbar-collapse.collapse.in {
+      display: block !important;
+      height: auto !important;
+      max-height: 250px;
+      padding-top: 0.9375em;
+      padding-bottom: 0.9375em; }
+    .navbar-collapse.in {
+      overflow-y: visible; }
+    .navbar-collapse .collapsing {
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      transition-timing-function: ease;
+      transition-duration: .35s;
+      transition-property: height, visibility; } }
+
+@media only screen and (min-width: 769px) {
+  .navbar-header {
+    float: left;
+    margin-right: 1.875em; }
+    .navbar-header .navbar-toggle {
+      display: none; }
+    .navbar-header .search {
+      display: none; }
+  .navbar .nav {
+    width: auto;
+    margin: 0; }
+  .navbar .navbar-collapse .button-collapsed-text {
+    display: none; }
+  .navbar .search {
+    padding-left: 1.875em; } }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar-header {
+    float: left; } }
+
+.button-facebook:hover i {
+  color: #3b5998; }
+
+.button-instagram:hover i {
+  color: #517fa4; }
+
 .button.button-yellow, .button [role="button"], [role="button"].button-yellow, [role="button"] [role="button"] {
   background-color: #fcb608;
-  color: #444; }
+  color: #FAFAFA; }
   .button.button-yellow:hover, .button [role="button"]:hover, [role="button"].button-yellow:hover, [role="button"] [role="button"]:hover {
     background-color: #ce9403; }
   .button.button-yellow:active, .button [role="button"]:active, [role="button"].button-yellow:active, [role="button"] [role="button"]:active {
@@ -1210,7 +1377,7 @@ th {
 
 .button.button-green, .button [role="button"], [role="button"].button-green, [role="button"] [role="button"] {
   background-color: #639728;
-  color: #444; }
+  color: #FAFAFA; }
   .button.button-green:hover, .button [role="button"]:hover, [role="button"].button-green:hover, [role="button"] [role="button"]:hover {
     background-color: #496f1d; }
   .button.button-green:active, .button [role="button"]:active, [role="button"].button-green:active, [role="button"] [role="button"]:active {
@@ -1226,7 +1393,7 @@ th {
 
 .button.button-dark, .button [role="button"], [role="button"].button-dark, [role="button"] [role="button"] {
   background-color: #373737;
-  color: #444; }
+  color: #FAFAFA; }
   .button.button-dark:hover, .button [role="button"]:hover, [role="button"].button-dark:hover, [role="button"] [role="button"]:hover {
     background-color: #1e1e1e; }
   .button.button-dark:active, .button [role="button"]:active, [role="button"].button-dark:active, [role="button"] [role="button"]:active {
@@ -1243,7 +1410,7 @@ th {
 .button.button-clear, [role="button"].button-clear {
   transition: background 0.35s ease, text-shadow 0.35s ease; }
   .button.button-clear.button-yellow:hover, .button.button-clear [role="button"]:hover, [role="button"].button-clear.button-yellow:hover, [role="button"].button-clear [role="button"]:hover {
-    color: #444;
+    color: #FAFAFA;
     background-color: #fcb608; }
   .button.button-clear.button-blue:hover, .button.button-clear [role="button"]:hover, [role="button"].button-clear.button-blue:hover, [role="button"].button-clear [role="button"]:hover {
     color: #444;
@@ -1255,13 +1422,13 @@ th {
     color: #444;
     background-color: #dd4a3a; }
   .button.button-clear.button-green:hover, .button.button-clear [role="button"]:hover, [role="button"].button-clear.button-green:hover, [role="button"].button-clear [role="button"]:hover {
-    color: #444;
+    color: #FAFAFA;
     background-color: #639728; }
   .button.button-clear.button-gray:hover, .button.button-clear [role="button"]:hover, [role="button"].button-clear.button-gray:hover, [role="button"].button-clear [role="button"]:hover {
     color: #444;
     background-color: #f2f2f2; }
   .button.button-clear.button-dark:hover, .button.button-clear [role="button"]:hover, [role="button"].button-clear.button-dark:hover, [role="button"].button-clear [role="button"]:hover {
-    color: #444;
+    color: #FAFAFA;
     background-color: #373737; }
   .button.button-clear.button-white:hover, .button.button-clear [role="button"]:hover, [role="button"].button-clear.button-white:hover, [role="button"].button-clear [role="button"]:hover {
     color: #444;
@@ -1272,7 +1439,7 @@ th {
   background-color: transparent;
   transition: background 0.35s ease, text-shadow 0.35s ease; }
   .button.button-clean.button-yellow:hover, [role="button"].button-clean.button-yellow:hover {
-    color: #444;
+    color: #FAFAFA;
     background-color: #fcb608; }
   .button.button-clean.button-blue:hover, [role="button"].button-clean.button-blue:hover {
     color: #444;
@@ -1284,13 +1451,13 @@ th {
     color: #444;
     background-color: #dd4a3a; }
   .button.button-clean.button-green:hover, [role="button"].button-clean.button-green:hover {
-    color: #444;
+    color: #FAFAFA;
     background-color: #639728; }
   .button.button-clean.button-gray:hover, [role="button"].button-clean.button-gray:hover {
     color: #444;
     background-color: #f2f2f2; }
   .button.button-clean.button-dark:hover, [role="button"].button-clean.button-dark:hover {
-    color: #444;
+    color: #FAFAFA;
     background-color: #373737; }
   .button.button-clean.button-white:hover, [role="button"].button-clean.button-white:hover {
     color: #444;
@@ -1316,7 +1483,7 @@ th {
     color: white; }
 
 .button-group.button-yellow .button, .button-group.button-yellow [role="button"] {
-  color: #444;
+  color: #FAFAFA;
   background-color: #fcb608; }
   .button-group.button-yellow .button:hover, .button-group.button-yellow [role="button"]:hover {
     background-color: #ce9403; }
@@ -1348,7 +1515,7 @@ th {
     background-color: #b82f20; }
 
 .button-group.button-green .button, .button-group.button-green [role="button"] {
-  color: #444;
+  color: #FAFAFA;
   background-color: #639728; }
   .button-group.button-green .button:hover, .button-group.button-green [role="button"]:hover {
     background-color: #496f1d; }
@@ -1364,7 +1531,7 @@ th {
     background-color: #d2d2d2; }
 
 .button-group.button-dark .button, .button-group.button-dark [role="button"] {
-  color: #444;
+  color: #FAFAFA;
   background-color: #373737; }
   .button-group.button-dark .button:hover, .button-group.button-dark [role="button"]:hover {
     background-color: #1e1e1e; }
@@ -1477,8 +1644,8 @@ th {
       margin-left: -0.3em; }
 
 .button, [role="button"] {
-  display: block;
-  float: left;
+  display: inline-block;
+  vertical-align: baseline;
   text-decoration: none;
   text-align: center;
   line-height: 2.5em;
@@ -1533,8 +1700,9 @@ th {
       color: #999; }
   .button.button-inline-block, .button.button-inline, [role="button"].button-inline-block, [role="button"].button-inline {
     float: none; }
-  .button.button-inline-block, [role="button"].button-inline-block {
-    display: inline-block; }
+  .button.button-block, [role="button"].button-block {
+    display: block;
+    float: left; }
   .button.button-inline, [role="button"].button-inline {
     display: inline; }
 
@@ -1704,6 +1872,8 @@ p.primary {
       margin-left: 0;
       display: block;
       float: none; }
+  .list.float-left-horizontal .item, .list.float-left-horizontal .menu-item, .list.float-left-horizontal li, .list.float-left-horz .item, .list.float-left-horz .menu-item, .list.float-left-horz li, .list.float-right-horizontal .item, .list.float-right-horizontal .menu-item, .list.float-right-horizontal li, .list.float-right-horz .item, .list.float-right-horz .menu-item, .list.float-right-horz li {
+    margin-left: 0; }
   .list.float-left-horizontal .item, .list.float-left-horizontal .menu-item, .list.float-left-horizontal li, .list.float-left-horz .item, .list.float-left-horz .menu-item, .list.float-left-horz li {
     float: left; }
   .list.float-right-horizontal .item, .list.float-right-horizontal .menu-item, .list.float-right-horizontal li, .list.float-right-horz .item, .list.float-right-horz .menu-item, .list.float-right-horz li {
@@ -1808,6 +1978,9 @@ nav ul, nav ol {
     margin-left: 0;
     display: block;
     float: none; }
+
+.menu.float-left-horizontal .item, .menu.float-left-horizontal .menu-item, .menu.float-left-horizontal li, .menu.float-left-horz .item, .menu.float-left-horz .menu-item, .menu.float-left-horz li, .menu.float-right-horizontal .item, .menu.float-right-horizontal .menu-item, .menu.float-right-horizontal li, .menu.float-right-horz .item, .menu.float-right-horz .menu-item, .menu.float-right-horz li, [class*=".menu"].float-left-horizontal .item, [class*=".menu"].float-left-horizontal .menu-item, [class*=".menu"].float-left-horizontal li, [class*=".menu"].float-left-horz .item, [class*=".menu"].float-left-horz .menu-item, [class*=".menu"].float-left-horz li, [class*=".menu"].float-right-horizontal .item, [class*=".menu"].float-right-horizontal .menu-item, [class*=".menu"].float-right-horizontal li, [class*=".menu"].float-right-horz .item, [class*=".menu"].float-right-horz .menu-item, [class*=".menu"].float-right-horz li {
+  margin-left: 0; }
 
 .menu.float-left-horizontal .item, .menu.float-left-horizontal .menu-item, .menu.float-left-horizontal li, .menu.float-left-horz .item, .menu.float-left-horz .menu-item, .menu.float-left-horz li, [class*=".menu"].float-left-horizontal .item, [class*=".menu"].float-left-horizontal .menu-item, [class*=".menu"].float-left-horizontal li, [class*=".menu"].float-left-horz .item, [class*=".menu"].float-left-horz .menu-item, [class*=".menu"].float-left-horz li {
   float: left; }

@@ -434,7 +434,7 @@
 /// @group Media Query Mixins
 /// @since 0.0.4
 @mixin netbook() {
-	@include screen( (max-height: 600px) ) {
+	@include screen( '(max-height: 600px)' ) {
 		@content;
 	}
 }

@@ -39,12 +39,8 @@ _________________
 - `@mixin bdk-background()` renamed to `background()` because *Bodoke* doesn't need an external mixin library.
 - `@mixin animation()` now supports custom `animation-iteration-count` as the second parameter
 - `@mixin screen()` has one parameter and is more flexible: The developer can write a list of media-query rules in the CSS way. Eg: `(max-width: 800px)`
+
 #### Added
-- Gulp.js for sass compiling
-
->>>>>>> 75cc5dc89847285aabfa6c3764bf2a74c2866f55
-
-#### Added  
 - [`Gulp.js`](http://gulpjs.com/) for sass compiling
 - `@function map-set()`: set new value to a key inside a map.
 - `@function map-push()`: adds item to list in map.
@@ -52,10 +48,11 @@ _________________
 - `@function map-deep-set`: Set a deeply nested key inside a map.
 - `@mixin animation-steps()`: Animate spritesheets with CSS
 - `@mixin enableHardwareAcceleration()`: Allows hardware acceleration on animations
+- New native `.navbar` defined. Uses the same sintax and layout that [Bootstrap 3](http://getbootstrap.com/components/#navbar)
 
 #### Deleted  
 - `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
->>>>>>> 2dd3bfc93aed3b539db92adc2b68d68f0f3a8274
+
 
 ## [0.4.0 Daan Yaffa] - 2015-10-01
 #### Updated
