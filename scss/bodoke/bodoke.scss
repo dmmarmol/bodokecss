@@ -18,46 +18,46 @@
 
 // 1. Settings & Config
 /// Bodoke core settings
-@import "utils/settings.scss";
+@import "utils/settings";
 
 // 2. Libraries
 @import "lib/normalize";
 
 // 3. Base Stuff
 @import "base/fonts";
-@import "base/helpers.scss";
+@import "base/helpers";
 
 // 4. Layout-related
-@import "layout/grid.scss";
-@import "layout/navbar.scss";
+@import "layout/grid";
+@import "layout/navbar";
 
 // 5. Components
-@import	"components/buttons.scss";
+@import	"components/buttons";
 // @import	"components/buttons-google";
-@import	"components/icons.scss";
-// @import	"components/animations.scss";
-// @import	"components/transformations.scss";
-// @import	"components/burger.scss";
-@import	"components/titles.scss";
-@import	"components/text.scss";
-@import	"components/list.scss";
-@import	"components/menu.scss";
-@import	"components/input.scss";
-// @import	"components/sidenav.scss";
-// @import	"components/modal.scss";
-// @import	"components/tooltip.scss";
-// @import	"components/dropdown.scss";
-// @import	"components/lang-dropdown.scss";
-@import	"components/table.scss";
-// @import	"components/lightbox.scss";
-// @import	"components/slider.scss";
-// @import	"components/slide-detail.scss";
-// @import	"components/code.scss";
-// @import	"components/rating.scss";
+@import	"components/icons";
+// @import	"components/animations";
+// @import	"components/transformations";
+// @import	"components/burger";
+@import	"components/titles";
+@import	"components/text";
+@import	"components/list";
+@import	"components/menu";
+@import	"components/input";
+// @import	"components/sidenav";
+// @import	"components/modal";
+// @import	"components/tooltip";
+// @import	"components/dropdown";
+// @import	"components/lang-dropdown";
+@import	"components/table";
+// @import	"components/lightbox";
+// @import	"components/slider";
+// @import	"components/slide-detail";
+// @import	"components/code";
+// @import	"components/rating";
 
 // 5.2 Social stuff
-// @import "components/social/buttons-social.scss";
-// @import "components/social/comments.scss";
+// @import "components/social/buttons-social";
+// @import "components/social/comments";
 
 
 // 6. Page-specific styles
