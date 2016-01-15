@@ -108,7 +108,7 @@ $navbar-menu-toggle-button-size: 	$em-offset * 2;
 // Hasta 768px
 // Despliega el menu colapsado para mobile/tablet
 ///
-@include screen( '(max-width: 768px)' ) {
+@include screen( '(max-device-width: 768px)' ) {
 	// Muestra el boton
 	.navbar-header {
 		width: 100%;
@@ -141,7 +141,16 @@ $navbar-menu-toggle-button-size: 	$em-offset * 2;
 		}
 		// Muestra el buscador de la derecha
 		.search {
-			display: table-cell;			
+			display: table-cell;
+			form {
+				max-width: (320px / 3);
+			}
+			input {				
+				width: 100%; // Ocupa todo el ancho del form
+			}
+			.button {
+				display: none;
+			}		
 		}
 	}
 

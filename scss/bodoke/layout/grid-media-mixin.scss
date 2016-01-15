@@ -97,4 +97,13 @@
 	.show-#{$media-type} 				{ display: block!important; }
 	.show-inline-#{$media-type} 		{ display: inline!important; }
 	.show-inline-block-#{$media-type}	{ display: inline-block!important; }
+
+	// Espaciado de filas
+	// =====================
+	@each $space, $value in $row-bottom-spaces {
+		.row-#{$media-type}-#{$space} {
+			margin-bottom: $value;
+		}
+	}
+
 }

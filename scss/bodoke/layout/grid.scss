@@ -6,8 +6,6 @@
 /// @since Version 2.5
 ////
 
-@import "grid-media-mixin"; // Nueva grilla para los media queries
-
 *, *:after, *:before {
 	box-sizing: border-box;
 }
@@ -60,11 +58,21 @@ $grid-offset:				$offset;		// Valor modular para los espacios en la grilla | @se
 	// Clearfix
 	@include clear();
 }
-.row-half 	{ margin-bottom: $grid-offset / 2; }
-.row-one 	{ margin-bottom: $grid-offset; }
-.row-two 	{ margin-bottom: $grid-offset * 2; }
-.row-three 	{ margin-bottom: $grid-offset * 3; }
-.row-four 	{ margin-bottom: $grid-offset * 4; }
+
+$row-bottom-spaces: (
+	half: 	$em-offset / 2,
+	one: 	$em-offset,
+	two: 	$em-offset * 2,
+	three: 	$em-offset * 3,
+	four: 	$em-offset * 4,
+	five: 	$em-offset * 5,
+	six: 	$em-offset * 6,
+);
+@each $space, $value in $row-bottom-spaces {
+	.row-#{$space} {
+		margin-bottom: $value;
+	}
+}
 
 // Sections & Content Blocks
 .section {
@@ -163,7 +171,8 @@ $grid-offset:				$offset;		// Valor modular para los espacios en la grilla | @se
 
 }
 
-// Columnas
+/// Columnas
+/// @return '.c12-12' | '.md12-12' | '.tablet12-12'
 @mixin generate-cols( $total-cols, $extra-prefix: '', $separator: '' ) {
 	@for $i from 1 through $total-cols {
 		@if ( $extra-prefix != '' ) {
@@ -198,6 +207,21 @@ $grid-offset:				$offset;		// Valor modular para los espacios en la grilla | @se
 	}	
 }
 
+
+@import "grid-media-mixin"; // Nueva grilla para los media queries
+
+/// Ocultar / Mostrar
+/// Segun dispositivo
+// ====================
+.show-#{$grid-medium-prefix} { display: none; }
+.show-#{$grid-tablet-prefix} { display: none; }
+.show-#{$grid-mobile-prefix} { display: none; }
+
+.hide-#{$grid-medium-prefix} { display: inherit; }
+.hide-#{$grid-tablet-prefix} { display: inherit; }
+.hide-#{$grid-mobile-prefix} { display: inherit; }
+
+
 // Mixin para generar la grilla
 @mixin grid( $total-cols: $grid-columns ) {
 	$columns: '';
@@ -213,10 +237,11 @@ $grid-offset:				$offset;		// Valor modular para los espacios en la grilla | @se
 
 	
 	// =========================
-	// Pantallas menores a 800
+	// Pantallas menores a 768
+	// - Medium -
 	// =========================
-	@media only screen and (max-width: 800px) {
-		// @import "grid-800";
+	@media only screen and (max-width: 768px) {
+		// @import "grid-768";
 
 		.#{$container}, .#{$container}-full {
 			width: 100%;
@@ -257,13 +282,17 @@ $grid-offset:				$offset;		// Valor modular para los espacios en la grilla | @se
 		[class*="#{$grid-push-right-prefix}"] {
 			margin-right: 0;
 		}
-
-		// Ancho de columnas que se ejecuta cuando la resolucion
-		// Es menor a 800
+				
+		/// Ocultar / Mostrar
+		/// Segun dispositivo
 		// ====================
-		// @include generate-cols( $columns, $grid-medium-prefix );
-		// @include generate-push( $columns, $grid-medium-prefix );
-		// @include generate-pull( $columns, $grid-medium-prefix );
+		// .show-#{$grid-medium-prefix} { display: block; }
+		.show-#{$grid-tablet-prefix} { display: none; }
+		.show-#{$grid-mobile-prefix} { display: none; }
+
+		// .hide-#{$grid-medium-prefix} { display: none; }
+		.hide-#{$grid-tablet-prefix} { display: block; }
+		.hide-#{$grid-mobile-prefix} { display: block; }
 
 		// Clases comunes
 		// ====================
@@ -275,6 +304,7 @@ $grid-offset:				$offset;		// Valor modular para los espacios en la grilla | @se
 	// =============================================
 	// Tablet Devices (Layout, Modifications, etc)
 	// iPads (portrait and landscape)
+	// - Tablet -
 	// =============================================
 	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 		
@@ -309,6 +339,17 @@ $grid-offset:				$offset;		// Valor modular para los espacios en la grilla | @se
 		[class*="#{$grid-medium-prefix}"] {
 			width: 100%;
 		}
+
+		/// Ocultar / Mostrar
+		/// Segun dispositivo
+		// ====================
+		.show-#{$grid-medium-prefix} { display: none; }
+		// .show-#{$grid-tablet-prefix} { display: block; }
+		.show-#{$grid-mobile-prefix} { display: none; }
+
+		.hide-#{$grid-medium-prefix} { display: block; }
+		// .hide-#{$grid-tablet-prefix} { display: none; }
+		.hide-#{$grid-mobile-prefix} { display: block; }
 
 		// Clases comunes
 		// ====================
@@ -381,6 +422,17 @@ $grid-offset:				$offset;		// Valor modular para los espacios en la grilla | @se
 		table th, table td {
 			padding: 4px;
 		}
+
+		/// Ocultar / Mostrar
+		/// Segun dispositivo
+		// ====================
+		.show-#{$grid-medium-prefix} { display: none; }
+		.show-#{$grid-tablet-prefix} { display: none; }
+		// .show-#{$grid-mobile-prefix} { display: block; }
+
+		.hide-#{$grid-medium-prefix} { display: none; }
+		.hide-#{$grid-tablet-prefix} { display: none; }
+		// .hide-#{$grid-mobile-prefix} { display: block; }
 
 		// Clases comunes
 		// ====================

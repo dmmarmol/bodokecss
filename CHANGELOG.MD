@@ -39,6 +39,9 @@ _________________
 - `@mixin bdk-background()` renamed to `background()` because *Bodoke* doesn't need an external mixin library.
 - `@mixin animation()` now supports custom `animation-iteration-count` as the second parameter
 - `@mixin screen()` has one parameter and is more flexible: The developer can write a list of media-query rules in the CSS way. Eg: `(max-width: 800px)`
+- [FontAwesome](http://fontawesome.io) `4.5.0`
+- Show/Hide classes for desktop, mobile, tablet and medium screens `@see grid.scss`
+- `titles.scss`
 
 #### Added
 - [`Gulp.js`](http://gulpjs.com/) for sass compiling
@@ -49,6 +52,7 @@ _________________
 - `@mixin animation-steps()`: Animate spritesheets with CSS
 - `@mixin enableHardwareAcceleration()`: Allows hardware acceleration on animations
 - New native `.navbar` defined. Uses the same sintax and layout that [Bootstrap 3](http://getbootstrap.com/components/#navbar)
+- *Card* components (material design style) in `component/_cards.scss`
 
 #### Deleted  
 - `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)

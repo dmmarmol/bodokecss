@@ -1,4 +1,7 @@
-// _titles.scss
+////
+/// _titles.scss
+/// Serie de estilos globales para los titulos
+////
 
 
 .title {
@@ -6,6 +9,8 @@
 	font-size: $normal;
 	line-height: 1em;
 	font-weight: 300;
+	margin-top: 0.6em;
+	margin-bottom: 0.8em;
 	span {
 		&.yellow { color: $yellow; }
 	}
@@ -17,16 +22,16 @@
 // Sizes
 // =========================
 .title {
-	&.title-small {
+	&.-small {
 		$small: 1.4em;
 		font-size: $small;
 		// line-height: $small * 1.42857143;
 		line-height: 1.3em;
 	}
-	&.title-medium {
+	&.-medium {
 		font-size: 2em;
 	}
-	&.title-bigger {
+	&.-bigger {
 		font-size: 3.7em;
 		line-height: 1.1em;
 	}
@@ -39,10 +44,28 @@ h1,h2,h3,h4,h5,h6 {
 // =========================
 // Colors
 // =========================
+/// Colores para los titulos
+/// @example <h1 class="title -red">Awesome Title!</h1> 
 .title {
 	@each $single-color in $titles-color-pallete {
-		&.#{nth($single-color, 1)} {
+		$classname: '.-#{nth($single-color, 1)}';
+		&#{$classname} {
 			color: nth($single-color, 2);
 		} 
+	}
+}
+
+
+///
+// Estilos
+///
+.title {
+	&.-underline {
+		border-bottom: 1px solid $gray-dark;
+		// padding-left: $offset / 2;
+		// padding-right: $offset / 2;
+		margin-left: $offset;
+		margin-right: $offset;
+		padding-bottom:  0.25em;
 	}
 }
