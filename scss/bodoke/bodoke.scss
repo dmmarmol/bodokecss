@@ -18,21 +18,21 @@
 
 // 1. Settings & Config
 /// Bodoke core settings
-@import "utils/settings.scss";
+@import "utils/settings";
 
 // 2. Libraries
 @import "lib/normalize";
 
 // 3. Base Stuff
 @import "base/fonts";
-@import "base/helpers.scss";
+@import "base/helpers";
 
 // 4. Layout-related
-@import "layout/grid.scss";
-@import "layout/navbar.scss";
+@import "layout/grid";
+@import "layout/navbar";
 
 // 5. Components
-@import	"components/buttons.scss";
+@import	"components/buttons";
 // @import	"components/buttons-google";
 @import	"components/icons.scss";
 // @import	"components/animations.scss";
@@ -57,8 +57,8 @@
 @import	"components/_cards.scss";
 
 // 5.2 Social stuff
-// @import "components/social/buttons-social.scss";
-// @import "components/social/comments.scss";
+// @import "components/social/buttons-social";
+// @import "components/social/comments";
 
 
 // 6. Page-specific styles

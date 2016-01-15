@@ -11,6 +11,8 @@ $input-padding-y:			( $input-height - ($input-height / 2) ) / 2.2;
 $input-line-height: 		( $input-height - ($input-height / 2) );
 $bdk-input-border-color: 	$gray-border;
 $input-offset:				$offset;
+$input-row:					'.form-group'; // ex '.input-row'
+$input-label:				'.control-label'; // ex '.label-title'
 
 /// Basic styling for all the input/textarea/select
 /// @name bdk-input
@@ -23,7 +25,7 @@ $input-offset:				$offset;
 	-webkit-appearance: none;
 	position: relative;
 	// width: auto;
-	font-size: 0.75em; // 0.85em;
+	font-size: 0.85em;
 	height: $input-height; // 2.4em; // Vacio
 	line-height: $input-height;
 	// font-weight: 300;	
@@ -57,8 +59,27 @@ input[type="week"],
 	@include bdk-input();	
 }
 textarea {
+	height: auto;
 	padding-top: $input-padding-y;
 	padding-bottom: $input-padding-y;
+}
+
+/// Radio & Checkbox buttons
+input[type="radio"], 
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+/// Clear Input
+/// Clean design input
+input, select, textarea,
+#{$bodoke-prefix}-input {
+	&.-clear {
+		background: transparent;
+		border: none;
+		border-radius: 0;
+		border-bottom: 1px solid $bdk-input-border-color;
+	}
 }
 
 
@@ -106,6 +127,10 @@ label {
 	&[for] {
 		cursor: pointer;
 	}
+	small, .hint {
+		text-transform: uppercase;
+		color: lighten($text-color, 20%);
+	}
 }
 
 /// @name Buttons
@@ -126,10 +151,13 @@ select {
 // ================================
 // REQUIREMENTS AND INFO
 // ================================
-sup, .sup {
+%required {
 	top: 0;
 	color: $red;
-	font-size: 14px;
+	font-size: 14px;	
+}
+sup, .sup {
+	@extend %required;
 }
 //
 /// Inidication
@@ -161,8 +189,8 @@ input[type="checkbox"] {
 		border-color: #DADADA;
 	}
 }
-input[type="checkbox"] { @include border-radius(3px); }
-input[type="radio"] { @include border-radius(50%); }
+input[type="checkbox"] { border-radius: 3px; }
+input[type="radio"] { border-radius: 50%; }
 
 
 /// @name bdk-group-label
@@ -170,6 +198,7 @@ input[type="radio"] { @include border-radius(50%); }
 /// General styles for the <label> tag when it's inside an '.input-group' / '.input-horizontal'
 /// Sets the height (same as the inputs) and inner spacing
 @mixin bdk-group-label() {
+	font-size: 1em;
 	padding-right: $offset / 2;
 	font-weight: 500;
 	line-height: $input-height;
@@ -180,10 +209,10 @@ input[type="radio"] { @include border-radius(50%); }
 // ================================
 /// @type integer
 $input-offset:	1em;
-.input-row {
+#{$input-row} {
 	margin-bottom: $input-offset;
 	@include clear;
-	.label-title {
+	#{$input-label} {
 		color: $text-color;
 		margin-top: 0;
 		margin-bottom: 0;
@@ -208,10 +237,29 @@ $input-offset:	1em;
 			// min-width: 75%;
 		}
 	}
-	&.input-vertical {
-		label {
+	&, &.input-vertical {
+		label, #{$input-label} {
 			display: block;
 			margin-bottom: 1em;
+			font-weight: 600;
+		}
+		input[type="date"],
+		input[type="datetime"],
+		input[type="datetime-local"],
+		input[type="email"],
+		input[type="month"],
+		input[type="number"],
+		input[type="password"],
+		input[type="search"],
+		input[type="tel"],
+		input[type="text"],
+		input[type="time"],
+		input[type="url"],
+		input[type="week"],
+		select, textarea,
+		#{$bodoke-prefix}-input,
+		{
+			min-width: 100%;
 		}
 	}
 	// BUTTONS
@@ -224,26 +272,34 @@ $input-offset:	1em;
 }
 
 
-.input-row-inline {
-	position: relative;
-	display: inline-block;
-	vertical-align: baseline;
-	label, input, select, textarea,
-	#{$bodoke-prefix}-input, {
+#{$input-row} {
+ 	&-inline {
+		position: relative;
 		display: inline-block;
 		vertical-align: baseline;
-		margin-left: 0;
-		min-width: initial;
-		float: none;
-	}
-	///
-	label, .label-title {
-		padding-right: $em-offset;
-	}
-	/// Inidication
-	.q {
-		position: absolute;
-		top: 100%;
+		label, input, select, textarea,
+		#{$bodoke-prefix}-input, {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 0;
+			min-width: initial;
+			float: none;
+		}
+		///
+		label, #{$input-label} {
+			padding-right: $em-offset;
+		}
+		/// Inidication
+		.q {
+			position: absolute;
+			top: 100%;
+		}
+		input[type="radio"], input[type="checkbox"] {
+			& + label, #{$input-label} {
+				line-height: 1em;
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 
@@ -251,7 +307,7 @@ $input-offset:	1em;
 // 
 /// Si funciona como columnas
 //
-.input-row {
+#{$input-row} {
 	&.cols {
 		padding-left: $input-offset / 2;
 		padding-right: $input-offset / 2;
@@ -264,7 +320,7 @@ $input-offset:	1em;
 
 
 @include mobile() {
-	.input-row {
+	#{$input-row} {
 		&.input-horizontal {
 			label, input, select, textarea,
 			#{$bodoke-prefix}-input, {		
@@ -288,7 +344,7 @@ $input-offset:	1em;
 // OPTIONAL & REQUIRED
 // ================================
 $optional-text-color: gray(150);
-.input-row {
+#{$input-row} {
 	&.input-optional {
 		label { color: $optional-text-color; }
 		input, textarea {
@@ -302,11 +358,12 @@ $optional-text-color: gray(150);
 			}
 		}
 	}
-	&.input-required {
-		label { color: $text-color; }
-		input, textarea {
-			@include placeholder() {
-				color: $text-color;				
+	&.required {
+		label { 
+			color: $text-color;
+			&:after {
+				content: ' *';
+				@extend %required;
 			}
 		}
 		select {

@@ -41,7 +41,8 @@ _________________
 - `@mixin screen()` has one parameter and is more flexible: The developer can write a list of media-query rules in the CSS way. Eg: `(max-width: 800px)`
 - [FontAwesome](http://fontawesome.io) `4.5.0`
 - Show/Hide classes for desktop, mobile, tablet and medium screens `@see grid.scss`
-- `titles.scss`
+- `titles.scss`, `helpers.scss` updated
+- Updated **FontAwesome** `v4.45`
 
 #### Added
 - [`Gulp.js`](http://gulpjs.com/) for sass compiling
