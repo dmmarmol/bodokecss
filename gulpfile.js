@@ -9,7 +9,8 @@ var gulp 			= require('gulp');
 var sass 			= require('gulp-sass');
 var livereload		= require('gulp-livereload');
 var autoprefixer 	= require('gulp-autoprefixer');
-var gutil 			= require('gulp-util');
+var gutil 			= require('gulp-util'); // https://www.npmjs.com/package/gulp-util/
+var debug 			= require('gulp-debug'); // https://www.npmjs.com/package/gulp-debug/
 
 var bodoke 			= './scss/bodoke/';
 var src 			= './src/';
@@ -39,8 +40,14 @@ gulp.task('default', ['bdk-scss', 'watch'], function() {
 // WATCH SCSS TASK
 gulp.task('watch', function () {
 	livereload.listen();
-    gulp.watch( [paths.html, paths.php], ['reload']);	
-    gulp.watch( [paths.sass], ['bdk-scss']);	
+    gulp.watch( [paths.html, paths.php], ['reload']).on('change', function(file){
+    	gulp.src(file.path)
+    		.pipe(debug({title: 'Updated:'}));
+    });	
+    gulp.watch( [paths.sass], ['bdk-scss']).on('change', function(file){
+    	gulp.src(file.path)
+    		.pipe(debug({title: 'Updated:'}));
+    });	
 });
 
 // Comple app.scss
