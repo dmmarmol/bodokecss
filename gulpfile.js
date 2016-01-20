@@ -30,6 +30,18 @@ var paths = {
 	php: [src+'**/*.php']
 }
 
+var AUTOPREFIXER_BROWSERS = [
+	'ie >= 8',
+	'ie_mob >= 8',
+	'ff >= 30',
+	'chrome >= 34',
+	'safari >= 7',
+	'opera >= 23',
+	'ios >= 7',
+	'android >= 4.4',
+	'bb >= 10'
+];
+
 // gutil.log( paths.php );
 
 // TASK
@@ -55,7 +67,7 @@ gulp.task('bdk-scss', function () {
 	gulp.src( paths.bodokeapp )
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: AUTOPREFIXER_BROWSERS,
             cascade: false
         }))
 		.pipe(gulp.dest( paths.compiledcss ))
@@ -67,7 +79,7 @@ gulp.task('bdkexample-scss', function () {
 	gulp.src( paths.bodokeexample )
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: AUTOPREFIXER_BROWSERS,
             cascade: false
         }))
 		.pipe(gulp.dest( paths.compiledcss ))

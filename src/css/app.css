@@ -1430,6 +1430,7 @@ th {
     background: #cccccc; }
   .button:active, .button.active, [role="button"]:active, [role="button"].active {
     -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
     transform: translateY(0px);
     box-shadow: none; }
   .button:focus, [role="button"]:focus {
@@ -1441,6 +1442,7 @@ th {
     color: #444; }
     .button.button-clear:active, .button.button-clear.active, [role="button"].button-clear:active, [role="button"].button-clear.active {
       -webkit-transform: none;
+      -ms-transform: none;
       transform: none; }
   .button.button-link, [role="button"].button-link {
     padding: 0;
@@ -1461,6 +1463,7 @@ th {
       background-color: transparent; }
     .button.button-clear:active, .button.button-link:active, [role="button"].button-clear:active, [role="button"].button-link:active {
       -webkit-transform: none;
+      -ms-transform: none;
       transform: none; }
     .button.button-clear[disabled], .button.button-clear.disabled, .button.button-link[disabled], .button.button-link.disabled, [role="button"].button-clear[disabled], [role="button"].button-clear.disabled, [role="button"].button-link[disabled], [role="button"].button-link.disabled {
       text-decoration: none;
