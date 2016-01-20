@@ -12,11 +12,14 @@ The base idea of this project is to be responsive and not visualy contaminated.
 It supports desktop, mobile and tablet websites using semantic clases in html.
 
 ### Support
-* IE > 8
-* Chrome > 30
-* Firefox > 30
-* Safari
-* Opera
+* IE >= 8
+* FF >= 30
+* Chrome >= 34
+* Safari >= 7
+* Opera >= 23
+* IOS >= 7
+* Android >= 4.4
+* BB >= 10
 
 (un)finished Bodoke site: http://dmmarmol.github.io/bodokecss
 
