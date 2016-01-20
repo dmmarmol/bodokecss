@@ -1,7 +1,7 @@
 // _grid.scss
 
 *, *:after, *:before {
-	@include box-sizing( border-box );
+	box-sizing: border-box;
 }
 
 // =============================
