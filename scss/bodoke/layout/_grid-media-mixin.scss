@@ -48,8 +48,8 @@
 	// =====================
 	@if ( $media-type == $grid-tablet-prefix ) {
 		.#{$media-type}-center, 
-		[class="#{$grid-push-right-prefix}"], 
-		[class="#{$grid-push-left-prefix}"] {
+		[class*="#{$grid-push-right-prefix}"], 
+		[class*="#{$grid-push-left-prefix}"] {
 			margin-left: auto;
 			margin-right: auto;
 			float: none;
