@@ -16,6 +16,10 @@
  *
 */
 
+$app-version:		'0.5.0';
+$bdk-prefix:		'bdk-';
+
+
 // 1. Settings & Config
 /// Bodoke core settings
 @import "utils/settings";
