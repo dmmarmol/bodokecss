@@ -26,9 +26,22 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 
 _________________
 
+### Bodoke Status - 2016
+
 ### Bodoke Status - 2015
 
 ## [0.5.0 Eagle Imani] - unreleased
+#### SCSS
+- New `.navbar` module (uses the same syntax that [bootstrap3 .navbar](http://getbootstrap.com/components/#navbar))
+- New `sass-maps` functions
+	- `@function map-set()`
+	- `@function map-push()`
+	- `@function map-deep-get()`
+	- `@function map-deep-set()`
+- No more prefixes through `@mixins`
+#### Build tools
+Now using *Gulp.js* 
+
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
 - `@mixin animation-delay()` accepts multiple values
@@ -49,11 +62,12 @@ _________________
 - `@function map-set()`: set new value to a key inside a map.
 - `@function map-push()`: adds item to list in map.
 - `@function map-deep-get()`: fetch deeply nested values from a map by [HugoGiraudel](https://css-tricks.com/snippets/sass/deep-getset-maps/).
-- `@function map-deep-set`: Set a deeply nested key inside a map.
+- `@function map-deep-set()`: Set a deeply nested key inside a map.
 - `@mixin animation-steps()`: Animate spritesheets with CSS
 - `@mixin enableHardwareAcceleration()`: Allows hardware acceleration on animations
 - New native `.navbar` defined. Uses the same sintax and layout that [Bootstrap 3](http://getbootstrap.com/components/#navbar)
 - *Card* components (material design style) in `component/_cards.scss`
+- `.show-x` & `.hide-x` classes for show/hide content (where `x` could be `mobile`, `medium` or `tablet`)
 
 #### Deleted  
 - `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
