@@ -2787,8 +2787,8 @@ table.table-gray td {
   .col.tablet-collapse-left, .cols.tablet-collapse-left, .column.tablet-collapse-left, .columns.tablet-collapse-left {
     padding-left: 0; }
   .tablet-center,
-  [class="$grid-push-right-prefix"],
-  [class="$grid-push-left-prefix"] {
+  [class="pull"],
+  [class="push"] {
     margin-left: auto;
     margin-right: auto;
     float: none;
