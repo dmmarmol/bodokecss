@@ -1,0 +1,154 @@
+// colors.scss
+
+// ======================
+// COLORS
+// ======================
+// Borde Gris 			- #D2D2D2
+// Borde Gris Claro		- #ECECEC
+// Celeste oscuro		- #5093CC
+// Celeste 				- #69afeb
+// Rojo 				- #dd4a3a
+// Amarillo 			- #fcb608
+// Verde 				- #00a25f
+
+
+
+// ======================
+// GRAYSCALE
+// ======================
+$black_15:			hsl(0, 0, 15%);
+$black_20:			hsl(0, 0, 20%); // dark-gray
+$black_27:			hsl(0, 0, 27%); // #444
+$black_60:			hsl(0, 0, 60%);
+$black_65:			hsl(0, 0, 65%); // gray
+$black_82:			hsl(0, 0, 82%); // light-gray
+$black_90:			hsl(0, 0, 90%);
+$black_95:			hsl(0, 0, 95%);
+$black_97:			hsl(0, 0, 97%);
+
+
+
+// ======================
+// HOT COLORS
+// ======================
+$red: 				#dd4a3a;
+$yellow: 			#fcb608;
+$orange:			#ff9900;
+
+
+// ======================
+// COLD COLORS
+// ======================
+$cyan: 				#69afeb;
+$blue:				#2362ff;
+$dark-blue:			#37477D;
+$green: 			#00a25f;
+$pale-blue:			#07A3AA;
+
+
+$google-gray:		$black_95;
+$google-blue:		$cyan;
+$google-red: 		$red;
+$google-yellow:		$yellow;
+$google-green: 		$green;
+
+
+// ======================
+// FULL COLOR PALLETE
+// ======================
+// (class, color)
+$color-pallete:	(
+	('white', 		$google-gray), 
+	('yellow', 		$google-yellow), 
+	('blue', 		$google-blue),
+	('red', 		$google-red),
+	('green', 		$google-green),
+	('pale-blue', 	$pale-blue),
+	('gray', 		$google-gray)
+);
+
+
+// ======================
+// BUTTON COLOR PALLETE
+// ======================
+// (class, color)
+$buttons-color-pallete:	(
+	('yellow', 		$google-yellow), 
+	('blue', 		$google-blue),
+	('red', 		$google-red),
+	('green', 		$google-green),
+	('gray', 		$google-gray)
+);
+
+
+// ======================
+// TITLES COLOR PALLETE
+// ======================
+// (class, color)
+$titles-color-pallete:	(
+	('yellow', 		$google-yellow), 
+	('blue', 		$google-blue),
+	('red', 		$google-red),
+	('green', 		$google-green),
+	('gray', 		$google-gray)
+);
+
+
+// ======================
+// TABLES COLOR PALLETE
+// ======================
+// (class, color)
+$tables-color-pallete:	(
+	('yellow', 		$google-yellow), 
+	('blue', 		$google-blue),
+	('red', 		$google-red),
+	('green', 		$google-green),
+	('gray', 		$google-gray)
+);
+
+
+// ======================
+// ALERTAS
+// ======================
+$alerts-color-pallete: (
+	('warning', $red),
+	('alert', $yellow),
+	('success', $green)
+);
+
+
+
+// ======================
+// TEXTOS
+// ======================
+// Texto Negro 			- #3B3B3B
+// Texto Negro 			- #444
+// Texto Gris 			- #91959C
+$text-color:			$black_20;
+
+
+
+// ==============================
+// COLORES GENERALES APLICADOS
+// ==============================
+$color-1:	$cyan;		// Primer color corporativo 
+$color-2:	$black_82;  // Segundo color corporativo
+$color-3:	$black_20; 	// Color del texto
+
+* {
+	color: $color-3;
+}
+// Links
+a { 
+	color: $color-1;
+}
+// Reglas horizontales
+hr { 
+	background-color: $color-2;
+}
+// Seleccion con el cursor
+::-moz-selection, ::selection {
+	background: $color-2;
+	color: #FFF;
+	text-shadow: 1px solid black(0.2);
+}

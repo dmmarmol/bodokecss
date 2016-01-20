@@ -1,0 +1,446 @@
+// _mixins.scss
+
+
+
+// CLEARFIX
+@mixin collapse( $custom-offset: $col-offset ) {
+	width: auto;
+	margin-right: (-$custom-offset);
+	margin-left: (-$custom-offset);	
+}
+@mixin clear() {
+	*zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+
+// ======================
+// Resets
+// ======================
+@mixin reset-moz-select() {
+    -moz-appearance: none;
+    text-overflow: ""; // Hide the default down arrow
+    background: transparent;
+}
+
+
+
+// ======================
+// Mixins
+// ======================
+$default-text-shadow-color :	#aaaaaa;
+$default-text-shadow-h-offset:	0px;
+$default-text-shadow-v-offset:	0px;
+$default-text-shadow-blur:	 	1px;
+$default-text-shadow-spread:	false;
+@mixin text-drop-shadow( $values... ) {
+	text-shadow: $values;
+}
+
+// Box Shadow
+// ===============================================
+$default-box-shadow-color:		#333333;
+$default-box-shadow-h-offset:	0px;
+$default-box-shadow-v-offset:	0px;
+$default-box-shadow-blur:		5px;
+$default-box-shadow-spread:		false;
+$default-box-shadow-inset:		false;
+@mixin drop-shadow( $values... ) {
+	box-shadow: $values;
+	-webkit-box-shadow: $values;
+}
+
+// Border Radius
+// ===============================================
+$default-border-radius: 5px;
+
+
+// Trantision
+// ===============================================
+$default-transition-property : all;
+$default-transition-duration : 1s;
+$default-transition-function : false;
+$default-transition-delay    : false;
+
+@mixin delay( $value:0 ) {
+	-webkit-transition-delay: $value;
+    -moz-transition-delay: $value;
+    -ms-transition-delay: $value;
+    -o-transition-delay: $value;
+    transition-delay: $value;
+}
+
+// Background
+// ===============================================
+@mixin background($color, $alpha:1) {
+	$rgba: rgba(0, 0, 0, 0);
+	@if $color != transparent {
+		$rgba: rgba($color, $alpha);
+	}
+	$ie-hex-str: ie-hex-str($rgba);
+
+	background-color: transparent;
+	background-color: $rgba;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$ie-hex-str},endColorstr=#{$ie-hex-str});
+	zoom: 1;
+}
+// GRADIENT
+@mixin gradient($from, $to) {
+	background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background: -moz-linear-gradient(top,  $from, $to);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+}
+// Convert To GRAYSCALE
+@mixin grayscale( $action:'show', $hover:false) {
+	@if $action == 'hide' or $action == 'remove' {
+		filter: none;
+		-webkit-filter: grayscale(0);		
+	} @else {
+		filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+		filter: gray; /* IE6-9 */
+		-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+		@if $hover == 'hover' {
+			&:hover {
+				filter: none;
+				-webkit-filter: grayscale(0);
+			}
+		}
+	}
+}
+
+
+
+// ===================
+// Animations
+// ===================
+@mixin keyframes($animation_name) {
+    @-webkit-keyframes $animation_name { @content; } 
+    @-moz-keyframes $animation_name { @content; } 
+    @-o-keyframes $animation_name { @content; } 
+    @keyframes $animation_name { @content; }
+}
+
+/*
+    Example usage: 
+    @include animation( animationName 10s 5s, true)
+ */
+@mixin animation( $animation-arguments, $repeat: false) {
+	/* 
+	 * animation-name
+	 * animation-duration
+	 * animation-timing-function
+	 * animation-delay
+	 * animation-iteration-count
+	 * animation-direction.
+	 */
+
+	@if $animation-arguments == none {
+		// There is no animation
+		-webkit-animation: none;
+		animation: none;
+	} @else {
+		-webkit-animation: $animation-arguments;
+		animation: $animation-arguments;
+		@if $repeat == false {
+			// this prevents the animation from restarting!
+			-webkit-animation-fill-mode: forwards; 
+			animation-fill-mode: forwards;
+		} @else {
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+		}
+	}
+}
+
+/* 
+ * Animation Delay
+ * Single animation delay property
+ */
+@mixin animation-delay( $value: 0 ) {
+	animation-delay: $value;
+	-webkit-animation-delay: $value; /* Safari and Chrome */
+}
+
+
+// ======================
+// Aspect Ratio
+// ======================
+/* 
+ * Calculate aspect ratio for images
+ *
+ * The image/video needs to be inside a container
+ * @include the @mixin in the container and asign
+ * the element to be affected in the second argument.
+ *
+ * @args
+ * $value: Custom value in percentage
+ * $element: The <tag> element to be affected by the aspect ratio
+ */
+@mixin aspect-ratio($value, $element: false){
+
+	// Ratios
+	$widescreen: 	calculate-ratio(16, 9);	// 56.25%
+	$traditional: 	calculate-ratio(4, 3);	// 75c%
+
+	// Wrapper
+	position: relative;
+	// width: 100%;
+	&:before { 
+		padding-top: $value; 			
+		content: '';
+		display: block;            
+	}
+	// Content
+	@if $element != false {
+		#{$element} {
+			position: absolute; 
+			top: 0; left: 0; bottom: 0; right: 0;
+			width: 100%;
+			height: 100%; 			
+		}
+	} @else {
+		> * {
+			position: absolute; 
+			top: 0; left: 0; bottom: 0; right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+@function calculate-ratio( $num1, $num2:false ){
+	// Regla de 3 simplificada
+	@return ( $num2 / $num1 ) * 100%;		
+	// Regla de 3
+	// @return ($num2 * 100) / $num1
+}
+
+
+// ========================
+// OPACITY WITH IE8 SUPPORT
+// ========================
+@mixin opacity( $value ) {
+	$ie-value:	$value * 100;
+	opacity: $value; /* CSS3 */
+	// -moz-opacity: $value; /* Older than Firefox 0.9 */
+	// -khtml-opacity: $value; /* Safari 1.x (pre WebKit!) */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+	filter: alpha(opacity= $ie-value ); /* IE6+ */
+	zoom: 1;
+}
+
+
+// ========================
+// LINE CLAMP / CUT STRING
+// ========================
+@mixin line-clamp( $line ) {
+	display: -webkit-box;
+	-webkit-line-clamp: $line;
+	-webkit-box-orient: vertical; 
+}
+@mixin truncate-line( $width:100% ) {
+	width: $width;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis; /* Prefix for Opera Mini 5.0 - 7.0 */
+}
+@mixin max-lines( $num-of-lines, $line-height:1em, $ellipsis:false ) {
+	line-height: $line-height;
+	max-height: $num-of-lines * strip-units( $line-height ) * 1em;
+	overflow: hidden;
+	@if ( $ellipsis ) {
+		@include line-clamp( $num-of-lines );
+	}
+}
+
+
+
+// ===================
+// ARROW BOX
+// ===================
+@mixin arrow( $color, $size: 10px, $direction: 'top', $position: 'default', $border: none, $border-color: none ) {
+	/**
+	 * $color:			Hex, rgb, rgba
+	 * $size:			value of the arrow height in pixels			|default: 10px
+	 * $direction:		'top', 'right', 'bottom', 'left'			|default: false
+	 * $position:		value of the arrow position in percent 		|default: 'default'
+	 * $border:			value of the arrow border width in pixels 	|default: 'none'
+	 * $border-color:	Hex, rgb, rgba 								|default: #444
+	*/
+
+	background-color: $color;
+	@if $border != none {
+		// Have border
+		border: $border solid $border-color;
+
+		&:after, &:before {
+			@if $direction == 'top' {
+				bottom: 100%;
+				@if $position != 'default' {
+					left: $position; }
+				@else { 
+					left: 50%; }
+			} @elseif $direction == 'right' {
+				left: 100%;
+				@if $position != 'default' {
+					top: $position; }
+				@else {
+					top: 50%; }
+			} @elseif $direction == 'bottom' {
+				top: 100%;
+				@if $position != 'default' {
+					left: $position; }
+				@else {
+					left: 50%; }
+			} @elseif $direction == 'left' {
+				right: 100%;
+				@if $position != 'default' {
+					top: $position; }
+				@else {
+					top: 50%; }
+			}
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+		// La proporcion Aurea
+		$border-size: $size + round( $border * 1.41421356 );
+		&:after {
+			border-color: transparent;
+			border-width: $size;
+			margin-left: -$size;
+			@if $direction == 'top' {
+				border-bottom-color: $color;
+			} @elseif $direction == 'right' {
+				border-left-color: $color;
+			} @elseif $direction == 'bottom' {
+				border-top-color: $color;
+			} @elseif $direction == 'left' {
+				border-right-color: $color;
+			}
+		}
+		&:before {
+			border-color: transparent;
+			border-width: $border-size;
+			margin-left: (-$border-size);
+			@if $direction == 'top' {
+				border-bottom-color: $border-color;
+			} @elseif $direction == 'right' {
+				border-left-color: $border-color;
+			} @elseif $direction == 'bottom' {
+				border-top-color: $border-color;
+			} @elseif $direction == 'left' {
+				border-right-color: $border-color;
+			}
+		}		
+	} @else {
+		// If there is no border
+		&:after {
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+			border-color: transparent;
+			border-width: $size;
+			// What direction?
+			@if $direction == 'top' {
+				bottom: 100%;
+				@if $position != 'default' {
+					left: $position; }
+				@else { 
+					left: 50%; }
+				margin-left: -$size;
+				border-bottom-color: $color;
+				
+			} @elseif $direction == 'right' {
+				left: 100%;
+				@if $position != 'default' {
+					top: $position; }
+				@else {
+					top: 50%; }
+				margin-top: -$size;
+				border-left-color: $color;
+			} @elseif $direction == 'bottom' {
+				top: 100%;
+				@if $position != 'default' {
+					left: $position; }
+				@else {
+					left: 50%; }
+				margin-left: -$size;
+				border-top-color: $color;
+			} @elseif $direction == 'left' {
+				right: 100%;
+				@if $position != 'default' {
+					top: $position; }
+				@else {
+					top: 50%; }
+				margin-top: -$size;
+				border-right-color: $color;
+			}
+		}
+	}
+}
+
+
+// ===================
+// MEDIA QUERIES
+// ===================
+@mixin screen( $screen: 1024px, $condition: 'max-width' ) {
+	@media only screen and ($condition: $screen) {
+		/* 
+		 * Hasta 1024px 
+		 */
+		@content;
+	}
+}
+@mixin netbook() {
+	// $netbook: 600px;
+	@include screen( 600px, 'max-height' ) {
+		@content;
+	}
+}
+@mixin mobile( $width:739px ) {
+	@media only screen and (max-width: $width) {
+		@content;
+	}
+}
+@mixin max-screen-height( $height ) {
+	@include screen( $height, 'max-height' ) {
+		@content;
+	}
+}
+@mixin firefox() {
+	/*
+	 * Firefox Only Styling
+	*/
+	@-moz-document url-prefix() {
+		@content;
+	}
+}
+/*
+ * Target all the IE versions
+ */
+@mixin ie($version:false) {
+		@if $version == 8 {
+			$version: '.lt-ie9';
+		} @elseif $version == 7 {
+			$version: '.lt-ie8 .lt-ie9';
+		} @elseif $version == 6 {
+			$version: '.lt-ie7 .lt-ie8 .lt-ie9';
+		}
+	html.ie {
+		@if $version != false {
+			&#{$version} {
+				@content;				
+			}
+		} @else {
+			@content;
+		}
+	}
+}
