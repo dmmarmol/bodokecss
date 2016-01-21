@@ -32,8 +32,10 @@ Project docs coming soon... But if you are brave enough, you can check the code 
 
 ### How it works?
 
-Right after the `body` tag, you could place a `.container` class if you want to prevent that the content touches the viewport.
+Right after the `body` tag, you could place a `.container` class if you want to prevent the content from touching the viewport.
+
 Inside the `.container` you can place as many `.row`s you want and inside of each one of them it's mandatory that you put at least one `.col` (or `.column/.columns/.cols`)
+
 specifying their width with the col-size classes (eg: `.c6-12` will make that block fill half of the `.row` available space)
 ```
 <body>
