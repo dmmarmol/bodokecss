@@ -14,11 +14,13 @@
     "bodokecss",
     "css",
     "scss",
-    "framewokr",
+    "framework",
     "sass",
     "lightweight",
     "footprint",
-    "responsive"
+    "responsive",
+    "boilerplate",
+    "layout"
   ],
   "author": "Diego Martin Marmol",
   "license": "ISC",
@@ -34,7 +36,6 @@
     "gulp-sass": "^2.1.0",
     "gulp-util": "^3.0.7",
     "node-bourbon": "^4.2.3",
-    "node-neat": "^1.7.2",
-    "sass-deprecate": "^1.0.3"
+    "node-neat": "^1.7.2"
   }
 }
