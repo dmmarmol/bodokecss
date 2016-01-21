@@ -20,7 +20,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 * Status Update // V: 0.2.7 (Baako Maarav)
 * Status Update // V: 0.3.0 (Caesar Odysseus)
 * Status Update // V: 0.4.0 (Daan Yaffa)  
-* Status Update // V: 0.5.0 (Eagle Imani) - [unreleased]
+* Status Update // V: 0.5.0 (Eagle Imani)
 * Status Update // V: X.X.X [unreleased]
 	* BodokeCSS is Mobile First
 
@@ -28,20 +28,11 @@ _________________
 
 ### Bodoke Status - 2016
 
+
+
 ### Bodoke Status - 2015
 
-## [0.5.0 Eagle Imani] - unreleased
-#### SCSS
-- New `.navbar` module (uses the same syntax that [bootstrap3 .navbar](http://getbootstrap.com/components/#navbar))
-- New `sass-maps` functions
-	- `@function map-set()`
-	- `@function map-push()`
-	- `@function map-deep-get()`
-	- `@function map-deep-set()`
-- No more prefixes through `@mixins`
-#### Build tools
-Now using *Gulp.js* 
-
+## [0.5.0 Eagle Imani] - 2016-01-21
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
 - `@mixin animation-delay()` accepts multiple values
