@@ -28,3 +28,20 @@ It supports desktop, mobile and tablet websites using semantic clases in html.
 **Changelog:** [Here](https://github.com/dmmarmol/bodokecss/blob/master/CHANGELOG.MD)
 
 Project docs coming soon... But if you are brave enough, you can check the code for yourself (it's documented!)
+
+
+### How it works?
+
+Right after the `body` tag, you could place a `.container` class if you want to prevent that the content touches the viewport.
+Inside the `.container` you can place as many `.row`s you want and inside of each one of them it's mandatory that you put at least one `.col` (or `.column/.columns/.cols`)
+specifying their width with the col-size classes (eg: `.c6-12` will make that block fill half of the `.row` available space)
+```
+<body>
+	<main class="container">
+		<div class="row">
+			<div class="c6-12 cols">Half row content</div>
+			<div class="c6-12 cols">Half row content</div>
+		</div>
+	</main>
+</body>
+```
