@@ -28,6 +28,9 @@ _________________
 
 ### Bodoke Status - 2016
 
+## [0.5.1 Eagle Imani] - 2016-02-01
+#### Added
+- `@mixin material-shadow($level)` add material design `box-shadow` to the elements. You can pass an `int` for `$level` as an argument `(min: 1, max: 6)` choosing the distance between the element and the bottom (in Z).
 
 
 ### Bodoke Status - 2015
