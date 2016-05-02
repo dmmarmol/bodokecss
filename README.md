@@ -31,7 +31,7 @@ It supports desktop, mobile and tablet websites using semantic clases in html.
 * Link `"app.css"` inside your `<head>` tag
 
 
-```
+``` html
 <head>
 	<title>Bodoke Rocks \m/</title>
 	<link rel="stylesheet" type="text/css" href="src/css/app.css"> 
@@ -56,7 +56,7 @@ The `.container` class is the one whe keeps the content centered and makes your 
 Then you can put as many `.row`s as you want inside the `.container` and it's mandatory that you put at least one `.col` (or `.column/.columns/.cols`) inside of each one of them.
 
 Set the column width using the column-size classes (eg: `.c6-12` will make that block fill half of the `.row` available space)
-```
+``` html
 <body>
 	<main class="container">
 		<div class="row">
