@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 * Status Update // V: 0.3.0 (Caesar Odysseus)
 * Status Update // V: 0.4.0 (Daan Yaffa)  
 * Status Update // V: 0.5.0 (Eagle Imani)
+* [Canvas](http://www.canvas.com.ar) // V 0.5.0
 * Status Update // V: X.X.X [unreleased]
 	* BodokeCSS is Mobile First
 
