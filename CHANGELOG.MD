@@ -36,7 +36,7 @@ _________________
 
 ### Bodoke Status - 2015
 
-## [0.5.0 Eagle Imani] - 2016-01-21
+## [0.5.0 Not named yet] - 2016-01-21
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
 - `@mixin animation-delay()` accepts multiple values
