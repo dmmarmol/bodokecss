@@ -13,7 +13,7 @@ It's a layout starter project nice and ready for you to design with your own cus
 The base idea of this project is to be responsive and not visualy contaminated. 
 It supports desktop, mobile and tablet websites using semantic clases in html.
 
-### Support
+## Support
 * IE >= 8
 * Firefox >= 30
 * Chrome >= 34
