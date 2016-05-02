@@ -17,8 +17,8 @@ var src 			= './src/';
 
 // ROUTES
 var paths = {
-	sass: [ bodoke+'**/*.scss' ],
-	bodokeapp: [ bodoke+'app.scss' ],
+	sass: [ './scss/**/*.scss' ],
+	bodokeapp: [ './scss/app.scss' ],
 	bodokeexample: [ bodoke+'bodoke-example.scss' ],
 	css: [ src+'css/**/*.css' ],
 	compiledcss: src+'css/',
