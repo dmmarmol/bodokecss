@@ -29,14 +29,14 @@ _________________
 
 ### Bodoke Status - 2016
 
-## [0.5.1 Eagle Imani] - 2016-02-01
+## [0.5.1 Not named yet] - 2016-02-01
 #### Added
 - `@mixin material-shadow($level)` add material design `box-shadow` to the elements. You can pass an `int` for `$level` as an argument `(min: 1, max: 6)` choosing the distance between the element and the bottom (in Z).
-
+- `BodokeCSS` is now a `bower dependecy`
 
 ### Bodoke Status - 2015
 
-## [0.5.0 Not named yet] - 2016-01-21
+## [0.5.0 Eagle Imani] - 2016-01-21
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
 - `@mixin animation-delay()` accepts multiple values
