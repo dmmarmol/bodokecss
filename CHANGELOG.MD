@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 * Status Update // V: 0.3.0 (Caesar Odysseus)
 * Status Update // V: 0.4.0 (Daan Yaffa)  
 * Status Update // V: 0.5.0 (Eagle Imani)
+* [Canvas - Calzado Urbano](http://canvas.com.ar) // V: 0.5.X (Eagle X)
 * Status Update // V: X.X.X [unreleased]
 	* BodokeCSS is Mobile First
 
@@ -28,9 +29,21 @@ _________________
 
 ### Bodoke Status - 2016
 
-## [0.5.1 Eagle Imani] - 2016-02-01
+## [0.5.2] - 2016-05-19
 #### Added
 - `@mixin material-shadow($level)` add material design `box-shadow` to the elements. You can pass an `int` for `$level` as an argument `(min: 1, max: 6)` choosing the distance between the element and the bottom (in Z).
+- `@function keyExist` Check if a key is present inside a list and return the key
+- `@mixin stop-animation()` and `@mixin infinite-animation()` for animations in `animations.scss`
+- `variables.scss`
+
+#### Updated
+- `animations.scss` fixed interpolation issue
+- `navbar.scss` structure adapted to support Bootstrap 3 `.navbar`
+
+
+#### Deleted
+- Duplicated `_fonts.scss` file
+- Duplicated `settings/` dir
 
 
 ### Bodoke Status - 2015

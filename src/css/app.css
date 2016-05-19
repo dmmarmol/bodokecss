@@ -7,11 +7,11 @@
  *
  * author: 			Diego Martin Marmol | @dmmarmol
  * website: 		[http://diegomarmol.com.ar](http://diegomarmol.com.ar)
- * version:			0.5.0 Eagle Imani
+ * version:			0.5.2 Eagle Imani
  * release date:	20/05/14
  * contributors: 	Leonardo Pittelli | @leopittelli
- * developed at:	Convoy S.R.L - www.convoy.me
- * Compiler:		gulp-sass "^2.1.0"
+ * developed at:	CVY S.R.L - www.cvy.mobi
+ * compiler:		gulp-sass "^2.1.0"
  *
 */
 ::-moz-selection, ::-moz-selection {
@@ -467,9 +467,9 @@ th {
   font-weight: normal;
   font-style: normal; }
 
-.bdk-icon,
-[class^="bdk-icon"]:before,
-[class*="bdk-icon"]:before {
+.bdk--icon,
+[class^="bdk--icon"]:before,
+[class*="bdk--icon"]:before {
   display: inline-block;
   font-family: "bodoke-fontastic";
   font-style: normal;
@@ -478,20 +478,20 @@ th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.bdk-icon-times:before,
-.bdk-icon-close:before {
+.bdk--icon-times:before,
+.bdk--icon-close:before {
   content: "a"; }
 
-.bdk-icon-bell:before {
+.bdk--icon-bell:before {
   content: "b"; }
 
-.bdk-icon-phone-tube:before {
+.bdk--icon-phone-tube:before {
   content: "e"; }
 
-.bdk-icon-bars:before {
+.bdk--icon-bars:before {
   content: "f"; }
 
-.bdk-icon-bars-negative:before {
+.bdk--icon-bars-negative:before {
   content: "g"; }
 
 .bg-white {
@@ -548,7 +548,7 @@ th {
 .text-dark-gray {
   color: #666666; }
 
-.bdk-loading {
+.bdk--loading {
   background-image: url("../images/loader01.gif");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -556,7 +556,7 @@ th {
   height: 100%;
   position: relative;
   min-height: 128px; }
-  .bdk-loading:before {
+  .bdk--loading:before {
     content: "Cargando" "..." !important;
     position: absolute !important;
     height: 16px;
@@ -571,7 +571,7 @@ th {
     text-align: center;
     color: #282828;
     overflow: hidden; }
-  .bdk-loading .fade-container {
+  .bdk--loading .fade-container {
     opacity: 1;
     position: relative;
     min-height: 300px; }
@@ -1476,7 +1476,7 @@ th {
   .button.button-inline, [role="button"].button-inline {
     display: inline; }
 
-.button .ficon, .button [class*="bdk-icon"], [role="button"] .ficon, [role="button"] [class*="bdk-icon"] {
+.button .ficon, .button [class*="bdk--icon"], [role="button"] .ficon, [role="button"] [class*="bdk--icon"] {
   display: inline-block;
   font-style: normal;
   font-weight: normal;
@@ -1835,7 +1835,7 @@ input[type="text"],
 input[type="time"],
 input[type="url"],
 input[type="week"],
-bdk-input {
+bdk--input {
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 0.9375em;
@@ -1863,7 +1863,7 @@ bdk-input {
   input[type="time"].placeholder,
   input[type="url"].placeholder,
   input[type="week"].placeholder,
-  bdk-input.placeholder {
+  bdk--input.placeholder {
     line-height: inherit;
     color: #999999; }
   input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder,
@@ -1880,7 +1880,7 @@ bdk-input {
   input[type="time"]::-webkit-input-placeholder,
   input[type="url"]::-webkit-input-placeholder,
   input[type="week"]::-webkit-input-placeholder,
-  bdk-input::-webkit-input-placeholder {
+  bdk--input::-webkit-input-placeholder {
     line-height: inherit;
     color: #999999; }
   input:-moz-placeholder, select:-moz-placeholder, textarea:-moz-placeholder,
@@ -1897,7 +1897,7 @@ bdk-input {
   input[type="time"]:-moz-placeholder,
   input[type="url"]:-moz-placeholder,
   input[type="week"]:-moz-placeholder,
-  bdk-input:-moz-placeholder {
+  bdk--input:-moz-placeholder {
     line-height: inherit;
     color: #999999; }
   input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder,
@@ -1914,7 +1914,7 @@ bdk-input {
   input[type="time"]::-moz-placeholder,
   input[type="url"]::-moz-placeholder,
   input[type="week"]::-moz-placeholder,
-  bdk-input::-moz-placeholder {
+  bdk--input::-moz-placeholder {
     line-height: inherit;
     color: #999999; }
   input:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-placeholder,
@@ -1931,7 +1931,7 @@ bdk-input {
   input[type="time"]:-ms-input-placeholder,
   input[type="url"]:-ms-input-placeholder,
   input[type="week"]:-ms-input-placeholder,
-  bdk-input:-ms-input-placeholder {
+  bdk--input:-ms-input-placeholder {
     line-height: inherit;
     color: #999999; }
 
@@ -1945,7 +1945,7 @@ input[type="checkbox"] {
   cursor: pointer; }
 
 input.-clear, select.-clear, textarea.-clear,
-bdk-input.-clear {
+bdk--input.-clear {
   background: transparent;
   border: none;
   border-radius: 0;
@@ -1965,7 +1965,7 @@ input[type="text"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="week"]:focus,
-bdk-input:focus,
+bdk--input:focus,
 button[type="submit"]:focus,
 button[type="search"]:focus,
 [role="button"]:focus {
@@ -2044,7 +2044,7 @@ input[type="radio"] {
     width: 100%;
     position: relative; }
     .form-group.input-horizontal label, .form-group.input-horizontal input, .form-group.input-horizontal select, .form-group.input-horizontal textarea,
-    .form-group.input-horizontal bdk-input {
+    .form-group.input-horizontal bdk--input {
       display: inline-block;
       vertical-align: middle;
       margin-left: -0.3em;
@@ -2073,7 +2073,7 @@ input[type="radio"] {
   .form-group input[type="url"],
   .form-group input[type="week"],
   .form-group select, .form-group textarea,
-  .form-group bdk-input, .form-group.input-vertical input[type="date"],
+  .form-group bdk--input, .form-group.input-vertical input[type="date"],
   .form-group.input-vertical input[type="datetime"],
   .form-group.input-vertical input[type="datetime-local"],
   .form-group.input-vertical input[type="email"],
@@ -2087,7 +2087,7 @@ input[type="radio"] {
   .form-group.input-vertical input[type="url"],
   .form-group.input-vertical input[type="week"],
   .form-group.input-vertical select, .form-group.input-vertical textarea,
-  .form-group.input-vertical bdk-input {
+  .form-group.input-vertical bdk--input {
     min-width: 100%; }
   .form-group input[type="submit"], .form-group button[type="submit"],
   .form-group button[type="search"], .form-group [role="button"] {
@@ -2100,7 +2100,7 @@ input[type="radio"] {
   display: inline-block;
   vertical-align: baseline; }
   .form-group-inline label, .form-group-inline input, .form-group-inline select, .form-group-inline textarea,
-  .form-group-inline bdk-input {
+  .form-group-inline bdk--input {
     display: inline-block;
     vertical-align: middle;
     margin-left: 0;
@@ -2124,7 +2124,7 @@ input[type="radio"] {
 
 @media only screen and (max-width: 739px) {
   .form-group.input-horizontal label, .form-group.input-horizontal input, .form-group.input-horizontal select, .form-group.input-horizontal textarea,
-  .form-group.input-horizontal bdk-input {
+  .form-group.input-horizontal bdk--input {
     width: 100%;
     display: block; }
   .form-group.input-horizontal label {
@@ -2229,9 +2229,9 @@ textarea[mouseout],
 button[onclick],
 button[mouseover],
 button[mouseout],
-bdk-input[onclick],
-bdk-input[mouseover],
-bdk-input[mouseout],
+bdk--input[onclick],
+bdk--input[mouseover],
+bdk--input[mouseout],
 [role="button"][onclick],
 [role="button"][mouseover],
 [role="button"][mouseout] {
@@ -2247,9 +2247,9 @@ textarea[readonly],
 button[disabled],
 button[disable],
 button[readonly],
-bdk-input[disabled],
-bdk-input[disable],
-bdk-input[readonly],
+bdk--input[disabled],
+bdk--input[disable],
+bdk--input[readonly],
 [role="button"][disabled],
 [role="button"][disable],
 [role="button"][readonly] {
