@@ -310,6 +310,22 @@
 // SCSS MAPS
 // ============================================
 
+
+/// @since 0.5.1
+/// @group Function Maps
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @access public
+/// @param {*} $key - Key inside the list
+/// @param {*} $list - SASS List
+/// Check if a key is present inside a list and return the key
+/// Evalua si un indice existe dentro de un map
+@function keyExist($list, $key) {
+	@if map-has-key($list, $key) {
+		@return map-get($list, $key);
+	}
+}
+
+
 /// map-set function (not included with Sass)
 /// @since 0.5.0
 /// @group Function Maps

@@ -3,13 +3,6 @@
 /// Estilos para la barra de navegación superior
 ////
 
-$navbar:							'.navbar';
-$navbar-height: 					4.5em;
-$navbar-background: 				$black_15;
-$navbar-border-color: 				lighten($black_15, 10%);
-/// @type Tamaño (x,y) del boton que activa/desactiva el menu
-$navbar-menu-toggle-button-size: 	$em-offset * 2;
-
 @mixin nav-button-vertical-align() {
 	position: relative;
 	display: table-cell;
@@ -27,7 +20,7 @@ $navbar-menu-toggle-button-size: 	$em-offset * 2;
 		top: 0;
 		left: 0;		
 	}
-	background-color: $navbar-background;
+	background-color: $navbar-default-bg;
 	height: $navbar-height;
 	padding-left: $em-offset;
 	padding-right: $em-offset;
@@ -52,9 +45,9 @@ $navbar-menu-toggle-button-size: 	$em-offset * 2;
 	a, .button {
 		text-transform: uppercase;
 		font-size: 0.75em;		
-		color: $gray-light;
+		color: $navbar-default-link-color;
 		&:hover { 
-			color: white;
+			color: $navbar-default-link-hover-color;
 			// background-color: transparent;
 		}
 	}
@@ -73,13 +66,13 @@ $navbar-menu-toggle-button-size: 	$em-offset * 2;
 			float: right;
 		}
 		input, [type="text"] {
-			background-color: $gray-light;
+			background-color: $bdk-navbar-search-bg;
 			border: 1px solid transparent;
 			border-radius: 3px;
 			transition: background-color $transition-speed ease;
 			&:focus {
 				background-color: white;
-				border-color: $gray-border;
+				border-color: $bdk-navbar-search-border;
 			}
 		}
 		// Usualmente contiene un icono con una lupa
@@ -115,7 +108,7 @@ $navbar-menu-toggle-button-size: 	$em-offset * 2;
 		// Contenedor del boton (lo centra verticalmente)
 		.button-holder {
 			@include nav-button-vertical-align();			
-			font-size: $navbar-menu-toggle-button-size;
+			font-size: $bdk-navbar-menu-toggle-button-size;
 			max-width: 0.75em;
 		}
 		// El botton para abrir y cerrar el menu
@@ -163,7 +156,7 @@ $navbar-menu-toggle-button-size: 	$em-offset * 2;
 		margin-right: -$em-offset;
 		padding-right: 15px;
 		padding-left: 15px;
-		background-color: $navbar-background;
+		background-color: $navbar-default-bg;
 		// overflow-x: visible;
 		overflow: hidden;
 		// overflow: scroll;
@@ -182,7 +175,7 @@ $navbar-menu-toggle-button-size: 	$em-offset * 2;
 				width: 100%;
 				padding-top: $em-offset / 2;
 				padding-bottom: $em-offset / 2;
-				border-bottom: 1px solid $navbar-border-color;
+				border-bottom: 1px solid $navbar-default-border;
 			}
 			.button {
 				background-color: transparent;

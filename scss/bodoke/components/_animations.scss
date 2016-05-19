@@ -1,4 +1,7 @@
-// _animations.scss
+////
+/// _animations.scss
+///
+////
 
 
 .animated {
@@ -6,6 +9,20 @@
 	// 		animation-duration: $animation-duration;
 	// -webkit-animation-fill-mode: both;
 	// 		animation-fill-mode: both;
+}
+
+/// @since 0.5.2
+/// @author [Diego Martín Mármol](http://diegomarmol.com.ar)
+/// @group Animation Mixins
+@mixin end-animation() {
+	animation-fill-mode: forwards;
+}
+
+/// @since 0.5.2
+/// @author [Diego Martín Mármol](http://diegomarmol.com.ar)
+/// @group Animation Mixins
+@mixin infinite-animation() {
+	animation-fill-mode: infinite;
 }
 
 // ===================================
@@ -48,7 +65,7 @@ $animation-showSlideDown:				false;
 $animation-hideSlideUp:					false;
 
 // Delay en las animaciones
-$animation-delay:						false;
+$animation-delay:						true;
 $animation-delay-count:					8;
 $transition-delay:						false;
 $transition-delay-count:				8;
@@ -66,7 +83,7 @@ $animation-duration:					1000ms; // 0.1.0
 // Fade In - (without affecting display property)
 @if ( $animation-fadeIn ) {
 	$animation-name: fadeIn;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { opacity: 0; }
 		100% { opacity: 1; }
 	}
@@ -76,7 +93,7 @@ $animation-duration:					1000ms; // 0.1.0
 // Fade In Left - (without affecting display property)
 @if ( $animation-fadeInLeft ) {
 	$animation-name: fadeInLeft;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% { 
 			transform: translate3d(-10px, 0, 0);
 			opacity: 0;
@@ -92,7 +109,7 @@ $animation-duration:					1000ms; // 0.1.0
 // Fade In Left Display - Afecta a la propiedad display
 @if ( $animation-fadeInLeftDisplay ) {
 	$animation-name: fadeInLeftDisplay;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% { 
 			transform: translate3d(-10px, 0, 0);
 			opacity: 0;
@@ -110,9 +127,9 @@ $animation-duration:					1000ms; // 0.1.0
 // Fade in from up
 @if ( $animation-fadeInUp ) {
 	$animation-name: fadeInUp;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0%	 { 
-			transform: translateY(-10px);
+			transform: translateY(10px);
 			opacity: 0; 
 		}
 		100% { 
@@ -120,13 +137,13 @@ $animation-duration:					1000ms; // 0.1.0
 			opacity: 1; 
 		}
 	}
-	.#{$animation-name} { animation: $animation-name $animation-duration; }	
+	.#{$animation-name} { opacity: 0; animation: $animation-name $animation-duration; }	
 }
 
 // Fade in form Right to Left
 @if ( $animation-fadeInFromRightToLeft ) {
 	$animation-name: fadeInFromRightToLeft;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0%	 { 
 			transform: translateX(50px);
 			opacity: 0; 
@@ -142,7 +159,7 @@ $animation-duration:					1000ms; // 0.1.0
 // Fade in form Left to Right
 @if ( $animation-fadeInFromLeftToRight ) {
 	$animation-name: fadeInFromLeftToRight;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0%	 { 
 			transform: translateX(-50px);
 			opacity: 0; 
@@ -161,7 +178,7 @@ $animation-duration:					1000ms; // 0.1.0
 // Fade Out to the left
 @if ( $animation-fadeOutLeft ) {
 	$animation-name: fadeOutLeft;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0%	 { 
 			transform: translateX(5px);
 			opacity: 1;
@@ -180,7 +197,7 @@ $animation-duration:					1000ms; // 0.1.0
 // Bounce Up
 @if ( $animation-bounceUp ) {
 	$animation-name: bounceUp;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0%	 { 
 			transform: translate3d(0, -10px, 0); 
 		}
@@ -197,7 +214,7 @@ $animation-duration:					1000ms; // 0.1.0
 // Spin
 @if ( $animation-spin ) {
 	$animation-name: spin;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 {
 			transform: rotate(0); 
 		}
@@ -211,7 +228,7 @@ $animation-duration:					1000ms; // 0.1.0
 // Pulse
 @if ( $animation-pulse ) {
 	$animation-name: pulse;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 {
 			transform: scale(1); 
 		}
@@ -233,7 +250,7 @@ $animation-duration:					1000ms; // 0.1.0
 
 	// Show from right - Normal Distance
 	$animation-name: showFromRight-1;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0%	 { 
 			transform: translateX(6000px); 
 		}
@@ -245,7 +262,7 @@ $animation-duration:					1000ms; // 0.1.0
 
 	// Show from right - Far distance
 	$animation-name: showFromRight-2;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			transform: translateX(8500px); 
 		}
@@ -257,7 +274,7 @@ $animation-duration:					1000ms; // 0.1.0
 
 	// Show from right - So much far distance
 	$animation-name: showFromRight-3;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			transform: translateX(15000px); 
 		}
@@ -269,7 +286,7 @@ $animation-duration:					1000ms; // 0.1.0
 
 	// Show from right - Normal Distance
 	$animation-name: showFromRightPos-1;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { left: 6000px; }
 		100% { left: 0; }
 	}
@@ -285,7 +302,7 @@ $animation-duration:					1000ms; // 0.1.0
 	
 	// Show from left - Normal Distance
 	$animation-name: showFromLeft-1;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			transform: translateX(-6000px); 
 		}
@@ -297,7 +314,7 @@ $animation-duration:					1000ms; // 0.1.0
 	
 	// Show from left - Far distance
 	$animation-name: showFromLeft-2;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0%	 { 
 			transform: translateX(-8500px);
 		}
@@ -309,7 +326,7 @@ $animation-duration:					1000ms; // 0.1.0
 	
 	// Show from left - So much far distance
 	$animation-name: showFromLeft-3;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			transform: translateX(-15000px); 
 		}
@@ -329,7 +346,7 @@ $animation-duration:					1000ms; // 0.1.0
 // Fade In Right - (without affecting display property)
 @if ( $animation-fadeInRight ) {
 	$animation-name: fadeInRight;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% { 
 			transform: translate3d(10px, 0, 0);
 			opacity: 0;
@@ -345,7 +362,7 @@ $animation-duration:					1000ms; // 0.1.0
 
 @if ( $animation-fadeInRightBig ) {
 	$animation-name: 'fadeInRightBig';
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% {
 			@include opacity(0);
 			@include transform(translate3d(2000px, 0, 0));
@@ -362,7 +379,7 @@ $animation-duration:					1000ms; // 0.1.0
 
 	// FadeIn from left - Normal Distance
 	$animation-name: fadeInRightBig-1;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0%	 { 
 			@include opacity(0); 
 			transform: translateX(6000px); 
@@ -375,7 +392,7 @@ $animation-duration:					1000ms; // 0.1.0
 	.#{$animation-name} { @include opacity(0); animation: $animation-name $animation-duration; }
 	// FadeIn from left - Far distance
 	$animation-name: fadeInRightBig-2;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			@include opacity(0); 
 			transform: translateX(8500px); 
@@ -388,7 +405,7 @@ $animation-duration:					1000ms; // 0.1.0
 	.#{$animation-name} { @include opacity(0); animation: $animation-name $animation-duration; }
 	// FadeIn from left - So much far distance
 	$animation-name: fadeInRightBig-3;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			@include opacity(0); 
 			transform: translateX(15000px); 
@@ -409,7 +426,7 @@ $animation-duration:					1000ms; // 0.1.0
 // ===========================
 @if ( $animation-fadeInLeftBig ) {
 	$animation-name: 'fadeInLeftBig';
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% {
 			@include opacity(0);
 			transform: translate3d(-2000px, 0, 0);
@@ -426,7 +443,7 @@ $animation-duration:					1000ms; // 0.1.0
 
 	// FadeIn from left - Normal Distance
 	$animation-name: fadeInLeftBig-1;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			opacity: 0;
 			transform: translateX(-6000px);
@@ -440,7 +457,7 @@ $animation-duration:					1000ms; // 0.1.0
 	 
 	// FadeIn from left - Far distance
 	$animation-name: fadeInLeftBig-2;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0%	 { 
 			opacity: 0;
 			transform: translateX(-8500px);
@@ -454,7 +471,7 @@ $animation-duration:					1000ms; // 0.1.0
 	 
 	// FadeIn from left - So much far distance
 	$animation-name: fadeInLeftBig-3;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			opacity: 0;
 			transform: translateX(-15000px);
@@ -475,7 +492,7 @@ $animation-duration:					1000ms; // 0.1.0
 // ===========================
 @if ( $animation-showSlideDown ) {
 	$animation-name: showSlideUp;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			@include opacity(0);
 			transform: translateY(-10000px);
@@ -498,7 +515,7 @@ $animation-duration:					1000ms; // 0.1.0
 // ===========================
 @if ( $animation-hideSlideUp ) {
 	$animation-name: hideSlideUp;
-	@keyframes $animation-name {
+	@keyframes #{$animation-name} {
 		0% 	 { 
 			transform: translateY(0); 
 		}
