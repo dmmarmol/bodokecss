@@ -3,39 +3,38 @@
 /// Hoja de estilos para la aplicacion/sitio web
 ////
 
+
+
 // =======================================
 // BODOKE
-// Incluye bodoke.css
+// Include bodoke.scss
 // =======================================
-@import "bodoke";
-
+@import "bodoke/bodoke";
 
 
 // =======================================
-// ---------------------------------------
-// ESTILOS GLOBALES
-// Aca debe ir generada la(s) grillas
-// mas algun estilo que abarque 
-// al <html>, <body> o las <section>
-// ---------------------------------------
+// Place all your sass dependecies here in order to generate only one css file
+// @import "path/to/your/dependency";
 // =======================================
 
 
-// ================================
-// GRILLA(S)
-// ================================
 
-// Genera una grilla de 12 columnas
+// =======================================
+// GLOBALS
+// Init your multiple grids here
+// and add global stlyes for '<html>', '<body>' or '<section>'
+// =======================================
+
+// Standard twelve columns grid
 @include grid(12);
+// If you want multiple grids, include the mixin inside a custom global class
+// e.g. .another-grid { @include grid(8); } 
 
 
 
-/**
- * Your design begins here :)
- */
-// ================================
-// GLOBALES
-// ================================
+///
+// Your design begins here :)
+///
 html {
 	height: 100%;
 	// Descomentar unicamente si la version desktop
@@ -74,6 +73,7 @@ body {
 // @import "footer";
 
 
+
 /// =========================================
 // Media Queries
 // =========================================
@@ -83,37 +83,37 @@ body {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px ) {
-	@import "media/1024";
+	@import "bodoke/media/1024";
 }
 // Only Tablets!!!
 @media only screen and (min-device-width: 801px) and (max-device-width: 1024px ) {
-	@import "media/1024_tablet";
+	@import "bodoke/media/1024_tablet";
 }
 
 @media only screen and (min-width: 641px) and (max-width: 800px ) {
-	@import "media/800"; // Nuevo nombre (ex _800.scss)
+	@import "bodoke/media/800"; // Nuevo nombre (ex _800.scss)
 }
 
 
 @media only screen and (max-height: 600px) {
-	@import "media/netbook";
+	@import "bodoke/media/netbook";
 }
 
 // @media only screen and (max-device-height: 480px) {
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) {
-	@import "media/mobile";
+	@import "bodoke/media/mobile";
 }
 
 // 0.0.2
 // @media smartphone in landscape position
 @media only screen and (min-device-width: 321px) {
-	@import "media/mobile-landscape";
+	@import "bodoke/media/mobile-landscape";
 }
 
 // 0.0.3
 // @media para estilos que funcionan solo en Firefox
 @-moz-document url-prefix() {
-	@import "media/firefox";
+	@import "bodoke/media/firefox";
 }
 
 
@@ -122,5 +122,5 @@ body {
 // Print styles
 // ============================================
 @media print {
-	@import "media/print";
+	@import "bodoke/media/print";
 }

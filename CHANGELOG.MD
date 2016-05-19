@@ -30,8 +30,10 @@ _________________
 ### Bodoke Status - 2016
 
 ## [0.5.2] - 2016-05-19
+
 #### Added
 - `@mixin material-shadow($level)` add material design `box-shadow` to the elements. You can pass an `int` for `$level` as an argument `(min: 1, max: 6)` choosing the distance between the element and the bottom (in Z).
+- `BodokeCSS` is now a `bower dependecy`
 - `@function keyExist` Check if a key is present inside a list and return the key
 - `@mixin stop-animation()` and `@mixin infinite-animation()` for animations in `animations.scss`
 - `variables.scss`
@@ -39,7 +41,6 @@ _________________
 #### Updated
 - `animations.scss` fixed interpolation issue
 - `navbar.scss` structure adapted to support Bootstrap 3 `.navbar`
-
 
 #### Deleted
 - Duplicated `_fonts.scss` file

@@ -1,0 +1,32 @@
+{
+  "name": "bodokecss",
+  "description": "Bodoke is a CSS/SCSS Front-end Framework created for supporting multiple grids in a single project. With a minimum of design, it's visually clean and ready to be designed and customized with your site identity.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Diego Martin Marmol <diegomartinmarmol@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bodokecss",
+    "css",
+    "scss",
+    "framework",
+    "sass",
+    "lightweight",
+    "footprint",
+    "responsive",
+    "boilerplate",
+    "layout"
+  ],
+  "homepage": "https://github.com/dmmarmol/bodokecss",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
