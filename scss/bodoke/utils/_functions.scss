@@ -130,6 +130,18 @@
 	@return $number;
 }
 
+/// Convert Rem to Ems
+/// @since 0.5.3
+/// @group Units function group
+/// @author [Diego Martín Mármol](http://diegomarmol.com.ar)
+/// @param {int} $target
+/// @param {int} $context [$base-em] - Base em value (1em = $base-em)
+@function rem-to-em($target, $context: $base-em) {
+	@if $target == 0 { @return 0; }
+	$remSize: strip-units($target);
+	@return #{$remSize}em;
+}
+
 
 /// Calcula el porcentaje indicado del numero indicado
 /// @since 0.0.6

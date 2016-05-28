@@ -37,6 +37,7 @@ _________________
 - `@function keyExist` Check if a key is present inside a list and return the key
 - `@mixin stop-animation()` and `@mixin infinite-animation()` for animations in `animations.scss`
 - `variables.scss`
+- `@function rem-to-em` Converts *rem* to *ems*
 
 #### Updated
 - `animations.scss` fixed interpolation issue
