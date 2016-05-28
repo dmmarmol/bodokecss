@@ -67,15 +67,15 @@ $google-green: 		#00a25f;
 // ======================
 // (class, color)
 $color-pallete:	(
-	('white', 		white), 
-	('yellow', 		$google-yellow), 
-	('blue', 		$blue),
-	('red', 		$google-red),
-	('green', 		$green),
-	('pale-blue', 	$pale-blue),
-	('light-gray', 	#fafafa),
-	('gray', 		$google-gray),
-	('dark-gray', 	$gray-dark)
+	white: 			#fff, 
+	yellow: 		$google-yellow, 
+	blue: 			$blue,
+	red: 			$google-red,
+	green: 			$green,
+	pale-blue: 		$pale-blue,
+	light-gray: 	#fafafa,
+	gray: 			$google-gray,
+	dark-gray: 		$gray-dark
 );
 
 
@@ -83,21 +83,21 @@ $color-pallete:	(
 // SOCIAL NETWORK COLOR PALLETE
 // ==============================
 $social-color-pallete: (
-	('facebook', 		rgb(59, 89, 152) ),
-	('twitter', 		rgb(0, 172, 237) ),
-	('google-plus',		rgb(221, 75, 57) ),
-	('youtube', 		rgb(187, 0, 0) ),
-	('linkedin', 		rgb(0, 123, 182) ),
-	('instagram', 		rgb(81, 127, 164) ),
-	('pinterest', 		rgb(203, 32, 39) ),
-	('vine', 			rgb(0, 191, 143) ),
-	('snapchat', 		rgb(255, 252, 0) ),
-	('quora', 			rgb(168, 36, 0) ),
-	('flickr', 			rgb(255, 0, 132) ),
-	('tumblr', 			rgb(50, 80, 109) ),
-	('vk', 				rgb(69, 102, 142) ),
-	('vimeo', 			rgb(170, 212, 80) ),
-	('foursquare', 		rgb(0, 114, 177) ),
+	facebook: 		rgb(59, 89, 152),
+	twitter: 		rgb(0, 172, 237),
+	google-plus:	rgb(221, 75, 57),
+	youtube: 		rgb(187, 0, 0),
+	linkedin: 		rgb(0, 123, 182),
+	instagram: 		rgb(81, 127, 164),
+	pinterest: 		rgb(203, 32, 39),
+	vine: 			rgb(0, 191, 143),
+	snapchat: 		rgb(255, 252, 0),
+	quora: 			rgb(168, 36, 0),
+	flickr: 		rgb(255, 0, 132),
+	tumblr: 		rgb(50, 80, 109),
+	vk: 			rgb(69, 102, 142),
+	vimeo: 			rgb(170, 212, 80),
+	foursquare: 	rgb(0, 114, 177)
 );
 
 
@@ -106,14 +106,14 @@ $social-color-pallete: (
 // ======================
 // (class, color)
 $buttons-color-pallete:	(
-	('yellow', 		$google-yellow), 
-	('blue', 		$light-blue),
-	('dark-blue', 	$blue),
-	('red', 		$google-red),
-	('green', 		$green),
-	('gray', 		$google-gray),
-	('dark', 		#373737),
-	('white', 		white)
+	yellow: 		$google-yellow, 
+	blue: 			$light-blue,
+	dark-blue: 		$blue,
+	red: 			$google-red,
+	green: 			$green,
+	gray: 			$google-gray,
+	dark: 			#373737,
+	white: 			white
 );
 
 
@@ -122,24 +122,24 @@ $buttons-color-pallete:	(
 // ======================
 // (class, color)
 $titles-color-pallete:	(
-	('yellow', 		$google-yellow), 
-	('blue', 		$blue),
-	('red', 		$google-red),
-	('green', 		$green),
-	('gray', 		$google-gray)
+	yellow:			$google-yellow, 
+	blue: 			$blue,
+	red: 			$google-red,
+	green: 			$green,
+	gray: 			$google-gray
 );
 
 
 // ======================
 // TABLES COLOR PALLETE
 // ======================
-// (class, color)
+// (class, color
 $tables-color-pallete:	(
-	('yellow', 		$google-yellow), 
-	('blue', 		$blue),
-	('red', 		$google-red),
-	('green', 		$green),
-	('gray', 		$google-gray)
+	yellow:			$google-yellow, 
+	blue: 			$blue,
+	red: 			$google-red,
+	green: 			$green,
+	gray: 			$google-gray
 );
 
 
@@ -147,11 +147,11 @@ $tables-color-pallete:	(
 // ALERTAS
 // ======================
 $alerts-color-pallete: (
-	('warning', $red),
-	('alert', $yellow),
-	('success', getColor('green') ),
-	('error', getColor('red') ),
-	('quiet', gray(225) ),
+	warning:		$red,
+	alert:	 		$yellow,
+	success:		getColor(green),
+	error:	 		getColor(red),
+	quiet:	 		gray(225)
 );
 
 
@@ -160,7 +160,7 @@ $alerts-color-pallete: (
 // INSTITUCIONAL
 // ======================
 $institutional-color-pallete: (
-	('white', white)
+	white: 		white
 );
 
 // ======================

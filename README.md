@@ -66,3 +66,7 @@ Set the column width using the column-size classes (eg: `.c6-12` will make that 
 	</main>
 </body>
 ```
+
+## Getting Started
+
+``map-set($your-list)``

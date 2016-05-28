@@ -22,6 +22,8 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 * Status Update // V: 0.4.0 (Daan Yaffa)  
 * Status Update // V: 0.5.0 (Eagle Imani)
 * [Canvas - Calzado Urbano](http://canvas.com.ar) // V: 0.5.X (Eagle X)
+* Status Update // V: 0.5.2 - TAG
+* Status Update // V: 0.5.5 - TAG
 * Status Update // V: X.X.X [unreleased]
 	* BodokeCSS is Mobile First
 
@@ -29,8 +31,22 @@ _________________
 
 ### Bodoke Status - 2016
 
-## [0.5.2] - 2016-05-19
+## [0.5.5] - 2016-05-28
+#### Added
+- `isMap($map)` function. Check if the given object is a [Sass map](https://www.viget.com/articles/sass-maps-are-awesome)
 
+#### Updated
+- The colors in `colors.scss` are now Sass maps
+- `getColor()` function now search through Sass maps instead of lists
+
+#### Deleted
+- `app.scss` and now everything is contained in `bodoke.scss`
+- `scss/object` dir
+- `src/js/plugins` dir
+
+
+
+## [0.5.2] - 2016-05-19
 #### Added
 - `@mixin material-shadow($level)` add material design `box-shadow` to the elements. You can pass an `int` for `$level` as an argument `(min: 1, max: 6)` choosing the distance between the element and the bottom (in Z).
 - `BodokeCSS` is now a `bower dependecy`
@@ -173,7 +189,7 @@ _________________
 - `bodoke/component/_dropdown.scss`
 
 #### Added 	
-- `_burger.scss` - [Repository](https://github.com/jorenvanhee/sass-burger/)
+- `_burger.scss` by [jorenvanhee](https://github.com/jorenvanhee/sass-burger/)
 
 
 ## [0.1.6 Amon Gabriel] - 2015-04-08
@@ -193,6 +209,8 @@ _________________
 - Nueva función `reverse()` para invertir orden en las listas de SASS - by [HugoGiraudel.com](http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/)
 - Nueva función `i()` para obtener el indice de una lista y multiplicarlo * 10
 
+
+### Bodoke Status - 2014
 
 ## [0.1.4 Amon Ed] - 2014-12-30
 #### Changed

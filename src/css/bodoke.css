@@ -495,7 +495,7 @@ th {
   content: "g"; }
 
 .bg-white {
-  background-color: white; }
+  background-color: #fff; }
 
 .bg-yellow {
   background-color: #fcb608; }
@@ -522,7 +522,7 @@ th {
   background-color: #666666; }
 
 .text-white {
-  color: white; }
+  color: #fff; }
 
 .text-yellow {
   color: #fcb608; }
@@ -641,7 +641,6 @@ th {
   padding-left: 0.9375em;
   padding-right: 0.9375em;
   color: #646464;
-  background-color: #f2f2f2;
   border-radius: 5px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
 
@@ -1642,7 +1641,6 @@ p.primary {
   font-weight: 500;
   line-height: 1em;
   text-transform: uppercase;
-  background-color: #f2f2f2;
   margin-left: 3px;
   border-radius: 3px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6); }
@@ -1975,7 +1973,6 @@ input[type="submit"],
 button[type="submit"],
 button[type="search"],
 [role="button"] {
-  background-color: #639728;
   color: white; }
 
 label {

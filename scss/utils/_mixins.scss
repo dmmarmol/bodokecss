@@ -425,6 +425,7 @@
 /// @since 0.0.4
 /// @param {string} $rules | Traditional list of rules applied to the media query
 @mixin screen( $rules ) {
+	// @debug 'media query';
 	@media only screen and #{$rules} {
 		@content;
 	}
@@ -489,10 +490,11 @@
 }
 
 /// Media query para capturar un espectro entre dos (2) anchos
+/// Between measures
 /// @group Media Query Mixins
 /// @since 0.0.4
-@mixin media-between-width( $min-width, $max-width: 1680px ) {
-	@media only screen and (min-width: $min-width) and (max-width: $max-width ) {
+@mixin media-between( $min-width, $max-width: 1680px ) {
+	@media only screen and ($min-width) and ($max-width) {
 		@content;
 	}
 }

@@ -249,31 +249,32 @@
 
 /// Devuelve un color del array $color-pallete en base al nombre del color
 /// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
-/// @since 0.1.5
-/// @param {string} $color_name - Color name inside `$color_list`
-/// @param {list} $color_list [$color-pallete] - Color pallete SASS list
+/// @since 0.5.5
+/// @param {string} $color - Color key inside `$map`
+/// @param {list} $map [$color-pallete] - Color pallete SASS map
 /// @return {*} - Color value
-@function getColor($color_name, $color_list: $color-pallete) {
-	$r: '';
-	@for $i from 1 through length($color_list) {
-		$color: nth($color_list, $i);
-		$color_list_name: nth($color, 1);
-		$color_list_value: nth($color, 2);
-		@if ( $color_name == $color_list_name ) {
-			$r: $color_list_value;
+@function getColor($color, $map: $color-pallete) {
+	// @debug keyExist( $map, $color );
+	@if ( isMap($map) ) {
+		$color-in-map: map-get($map, $color);
+		@if ( $color-in-map == '' ) {
+			@warn '#{$color} no ha devuelto ningún valor o no existe';
+		} @else {
+			@if ( $color-in-map != false ) {
+				// @debug $color-in-map;
+				@return map-get($map, $color);
+			} @else {
+				@warn 'No existe un color con ese nombre definido en la paleta de colores';			
+			}
 		}
-	}
-	@if ( $r != '' ) {
-		@return $r;
 	} @else {
-		@warn 'No existe un color con ese nombre definido en la paleta de colores';
+		@warn '#{$map} No es un Objeto del tipo Mapa';
 	}
 }
 
 
-
 /// ifcolor()
-/// Imprime el valor del color contrastando con el valor del color de fondo
+/// Imprime el valor del color contrastando con el valor del primer argumento
 /// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
 /// @see $text-color
 /// @see $bright-text-color
@@ -294,35 +295,32 @@
 
 
 
-// 
-/// list()
 /// Devuelve el valor de una lista bi-dimensional segun un string
-//
-// @function list($item, $list) {
-// 	$r: '';
-// 	@for $i from 1 through length($list) {
-// 		$index: nth($list, $i);
-// 		$item_list_name: nth($index, 1);		// Value 1
-// 		$item_list_value: nth($index, 2);
-// 		// @debug $color_list_name;
-// 		// @debug $color_list_name + ' '+ $color_name;
-// 		@if ( $item == $color_list_name ) {
-// 			$r: $color_list_value;
-// 		}
-// 	}
-// 	@if ( $r != '' ) {
-// 		@return $r;
-// 	} @else {
-// 		@warn 'No existe un color con ese nombre definido en la paleta de colores';
-// 	}
-// }
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @since 0.5.5
+@function list($item, $list) {
+	$r: '';
+	@for $i from 1 through length($list) {
+		$index: nth($list, $i);
+		$item_list_name: nth($index, 1);		// Value 1
+		$item_list_value: nth($index, 2);
+		// @debug $color_list_name;
+		// @debug $color_list_name + ' '+ $color_name;
+		@if ( $item == $color_list_name ) {
+			$r: $color_list_value;
+		}
+	}
+	@if ( $r != '' ) {
+		@return $r;
+	} @else {
+		@warn 'No existe un valor con ese nombre definido dentro de la lista';
+	}
+}
 
 
 // ============================================
 // SCSS MAPS
 // ============================================
-
-
 /// @since 0.5.1
 /// @group Function Maps
 /// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
@@ -335,6 +333,16 @@
 	@if map-has-key($list, $key) {
 		@return map-get($list, $key);
 	}
+}
+
+/// @since 0.5.5
+/// @group Function Maps
+/// @author [Diego Martin Marmol](http://diegomarmol.com.ar)
+/// @access public
+/// @param {*} $map - Map to be evaluated
+/// Check if an element is a map and return true or false
+@function isMap($map) {
+	@return type-of( $map ) == map;
 }
 
 
@@ -425,4 +433,24 @@
   
   // Return result
   @return $result;
+}
+
+
+
+// ============================================
+// MEDIA QUERIES
+// ============================================
+@function until( $value, $isDevice:false ) {
+	@if ( $isDevice == false ) {
+		@return 'max-width: #{$value}';		
+	} @else {
+		@return 'max-device-width: #{$value}';
+	}
+}
+@function since( $value, $isDevice:false ) {
+	@if ( $isDevice == false ) {
+		@return 'min-width: #{$value}';		
+	} @else {
+		@return 'min-device-width: #{$value}';
+	}
 }
