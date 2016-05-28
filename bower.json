@@ -1,6 +1,6 @@
 {
   "name": "bodokecss",
-  "description": "Bodoke is a CSS/SCSS Front-end Framework created for supporting multiple grids in a single project. With a minimum of design, it's visually clean and ready to be designed and customized with your site identity.",
+  "description": "Bodoke is a CSS/SCSS Front-end Framework created for supporting multiple grids in a single project.",
   "main": "gulpfile.js",
   "version": "0.5.5",
   "authors": [
@@ -29,8 +29,8 @@
     "bower_components",
     "test",
     "tests",
-    "scss/bodoke/README.md",
-    "scss/bodoke/bodoke-example.scss"
+    "scss/README.md",
+    "scss/bodoke-example.scss"
   ],
   "dependencies": {
     "jquery": ">=1.10.2"
