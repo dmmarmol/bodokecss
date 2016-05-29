@@ -23,32 +23,6 @@ It supports desktop, mobile and tablet websites using semantic clases in html.
 * Android >= 4.4
 * Blackberry browser >= 10
 
-
-## Getting Started
-
-* Install bower `npm install -g bower`
-* Install BodokeCSS `bower install bodokecss`
-* Link `"app.css"` inside your `<head>` tag
-
-
-``` html
-<head>
-	<title>Bodoke Rocks \m/</title>
-	<link rel="stylesheet" type="text/css" href="src/css/app.css"> 
-</head>
-<body>
-	<!-- What does 'Bodoke' means?, what was this guy thinking? -->
-</body>
-```
-
-
-(un)finished Bodoke site: http://dmmarmol.github.io/bodokecss
-
-**Changelog:** [Here](https://github.com/dmmarmol/bodokecss/blob/master/CHANGELOG.MD)
-
-Project docs coming soon... But if you are brave enough, you can check the code for yourself (it's documented!)
-
-
 ## How it works?
 
 The `.container` class is the one whe keeps the content centered and makes your site look beautiful. You need to place it right after the `body` tag if you want to prevent the content from touching the viewport.
@@ -67,14 +41,69 @@ Set the column width using the column-size classes (eg: `.c6-12` will make that 
 </body>
 ```
 
-## Getting Started
-(this obviously need to be completed =D)
+(un)finished Bodoke site: http://dmmarmol.github.io/bodokecss
 
-The best way is via **Bower**
+**Changelog:** [Here](https://github.com/dmmarmol/bodokecss/blob/master/CHANGELOG.MD)
+
+Project docs coming soon... But if you are brave enough, you can check the code for yourself (it's self documented!)
+
+## Getting Started
+
+#### Install bower 
+```sh
+npm install -g bower
+```
+#### Install BodokeCSS
 ```sh
 bower i bodokecss --save
 ```
+#### Clone it
 In your `bower_components` dir, clone the `bodokecss` into your **assets** or **scss** folder (preferably `scss/`)
+
+-------------
+
+## Integrate Bodoke into your site
+
+### 1) Link into your html
+```html
+<head>
+	<title>Bodoke Rocks \m/</title>
+	<link rel="stylesheet" type="text/css" href="css/bodoke.css"> 
+</head>
+<body>
+	<!-- What does 'Bodoke' means?, what was this guy thinking? -->
+</body>
+```
+
+### 2) Include into your sass flow
+
+*Assuming your site structure it's something like this:*
+```
+/project
+|-- *.html
+|-- *.php
+|-- /bower_components
+    |-- bodokecss --> Copy this folder
+|-- /src
+    |-- css
+        |-- css
+    |-- js
+    |-- images
+|-- /scss
+    |-- bodokecss --> And paste it here
+    |   |-- app.scss
+```
+
+Then at the top of your main scss (eg. `app.scss`) file include the next line:
+
+```scss
+@import "bodokecss/bodoke";
+```
+You can easily customize or expand Bodoke inside `bodokecss/bodoke.scss` by commenting or uncommenting each `@import` component. *I do not recommend to uncomment the items before 5. (Compnents)*.
+
+-------------
+
+## Compile SCSS files
 
 #### Using Gulp
 
@@ -92,7 +121,7 @@ var sass 			= require('gulp-sass');
 var autoprefixer 	= require('gulp-autoprefixer');
 
 gulp.task('bdk', function () {
-    gulp.src( './scss/bodoke.scss' ) // Set this route according to your project
+    gulp.src( '.scss/**/*.scss' ) // Set this according the route to your project
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
             browsers: AUTOPREFIXER_BROWSERS,
@@ -103,6 +132,5 @@ gulp.task('bdk', function () {
 ```
 
 Now Open the **Terminal** or **CMD**, run `gulp bdk` and your CSS will be up and running!
-
 
 ``map-set($your-list)``

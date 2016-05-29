@@ -17,7 +17,7 @@ var SRC 			= './src/';
 
 // ROUTES
 var DIR = {
-	SASS: 			[ './scss/**/*.scss' ],
+	SASS: 			[ BODOKE+'/**/*.scss' ],
 	BODOKEAPP: 		[ BODOKE+'/bodoke.scss' ],
 	BODOKEEXAMPLE: 	[ BODOKE+'/bodoke-example.scss' ],
 	CSS: 			{

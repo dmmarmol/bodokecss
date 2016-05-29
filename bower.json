@@ -29,8 +29,9 @@
     "bower_components",
     "test",
     "tests",
-    "scss/README.md",
-    "scss/bodoke-example.scss"
+    "bodokecss/README.md",
+    "bodokecss/bodoke-example.scss",
+    "bodokecss.sublime-project",
   ],
   "dependencies": {
     "jquery": ">=1.10.2"

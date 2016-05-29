@@ -38,6 +38,7 @@ _________________
 #### Updated
 - The colors in `colors.scss` are now Sass maps
 - `getColor()` function now search through Sass maps instead of lists
+- `./scss` dir renamed to `./bodokecss` 
 
 #### Deleted
 - `app.scss` and now everything is contained in `bodoke.scss`
