@@ -2,7 +2,7 @@ Bodoke CSS
 ==========
 
 ### Still at development.
-###### Last release: [0.5.0 (Eagle Imani)](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.0)
+###### Last release: [0.5.51 (Eagle Nadím)](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.51)
 
 
 Bodoke it's a CSS Front-end Framework created with SASS/SCSS, made for supporting multiple grids in a single project with a minimum of custom design.  

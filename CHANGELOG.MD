@@ -24,12 +24,17 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 * [Canvas - Calzado Urbano](http://canvas.com.ar) // V: 0.5.X (Eagle X)
 * Status Update // V: 0.5.2 - TAG
 * Status Update // V: 0.5.5 - TAG
+* Status Update // V: 0.5.51 (Eagle Nadím)
 * Status Update // V: X.X.X [unreleased]
 	* BodokeCSS is Mobile First
 
 _________________
 
 ### Bodoke Status - 2016
+
+## [0.5.51 Eagle Nadím] - 2016-05-29
+#### Updated
+- `./scss` dir renamed to `./bodokecss` 
 
 ## [0.5.5] - 2016-05-28
 #### Added
@@ -38,7 +43,6 @@ _________________
 #### Updated
 - The colors in `colors.scss` are now Sass maps
 - `getColor()` function now search through Sass maps instead of lists
-- `./scss` dir renamed to `./bodokecss` 
 
 #### Deleted
 - `app.scss` and now everything is contained in `bodoke.scss`
