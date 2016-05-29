@@ -86,7 +86,6 @@ In your `bower_components` dir, clone the `bodokecss` into your **assets** or **
     |-- bodokecss --> Copy this folder
 |-- /src
     |-- css
-        |-- css
     |-- js
     |-- images
 |-- /scss
