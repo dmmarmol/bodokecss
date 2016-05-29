@@ -68,5 +68,41 @@ Set the column width using the column-size classes (eg: `.c6-12` will make that 
 ```
 
 ## Getting Started
+(this obviously need to be completed =D)
+
+The best way is via **Bower**
+```sh
+bower i bodokecss --save
+```
+In your `bower_components` dir, clone the `bodokecss` into your **assets** or **scss** folder (preferably `scss/`)
+
+#### Using Gulp
+
+To make this work, you need to have already installed **[node](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/)** and **[gulp](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/)**
+
+After Node was installed, run:
+```sh
+npm install gulp gulp-sass gulp-autoprefixer --save-dev
+```
+
+If you are a gulp user (if not, then let me tell you are losing valuable time) copy and paste this `task` into your `gulpfile.js` *(see: [blog.diegomarmol.com.ar](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/))*
+```js
+var gulp 			= require('gulp');
+var sass 			= require('gulp-sass');
+var autoprefixer 	= require('gulp-autoprefixer');
+
+gulp.task('bdk', function () {
+    gulp.src( './scss/bodoke.scss' ) // Set this route according to your project
+		.pipe(sass().on('error', sass.logError))
+		.pipe(autoprefixer({
+            browsers: AUTOPREFIXER_BROWSERS,
+            cascade: false
+        }))
+		.pipe(gulp.dest( './path/to/your/css/folder' ));
+});
+```
+
+Now Open the **Terminal** or **CMD**, run `gulp bdk` and your CSS will be up and running!
+
 
 ``map-set($your-list)``
