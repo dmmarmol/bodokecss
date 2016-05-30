@@ -41,8 +41,6 @@ Set the column width using the column-size classes (eg: `.c6-12` will make that 
 </body>
 ```
 
-(un)finished Bodoke site: http://dmmarmol.github.io/bodokecss
-
 **Changelog:** [Here](https://github.com/dmmarmol/bodokecss/blob/master/CHANGELOG.MD)
 
 Project docs coming soon... But if you are brave enough, you can check the code for yourself (it's self documented!)
@@ -107,13 +105,13 @@ You can easily customize or expand Bodoke inside `bodokecss/bodoke.scss` by comm
 #### Using Gulp
 
 To make this work, you need to have already installed **[node](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/)** and **[gulp](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/)**
+If you are a gulp user (if not, then let me tell you are losing valuable time) copy and paste this `task` into your `gulpfile.js` *(see: [blog.diegomarmol.com.ar](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/))*
 
 After Node was installed, run:
 ```sh
 npm install gulp gulp-sass gulp-autoprefixer --save-dev
 ```
 
-If you are a gulp user (if not, then let me tell you are losing valuable time) copy and paste this `task` into your `gulpfile.js` *(see: [blog.diegomarmol.com.ar](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/))*
 ```js
 var gulp 			= require('gulp');
 var sass 			= require('gulp-sass');
