@@ -105,6 +105,7 @@ You can easily customize or expand Bodoke inside `bodokecss/bodoke.scss` by comm
 #### Using Gulp
 
 To make this work, you need to have already installed **[node](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/)** and **[gulp](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/)**
+
 If you are a gulp user (if not, then let me tell you are losing valuable time) copy and paste this `task` into your `gulpfile.js` *(see: [blog.diegomarmol.com.ar](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/))*
 
 After Node was installed, run:
