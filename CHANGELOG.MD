@@ -32,18 +32,18 @@ _________________
 
 ### Bodoke Status - 2016
 
-## [0.5.6 Eagle X] - 2016
-#### Add
+## 0.5.6 Eagle X - 2016
+#### Added
 - `bodokecss/src/` dir for the assets of your site (eg. Fonts, Background images, etc).
 - `bodokecss/lib-extension` for overriding a section of any vendor/lib (eg. `bootstrap-extension.scss`)
 - `README.md` files for each dir inside `bodokecss/`
 
 
-## [0.5.51 Eagle Nadím] - 2016-05-29
+## [0.5.51 Eagle Nadím](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.51) - 2016-05-29
 #### Updated
 - `./scss` dir renamed to `./bodokecss`
 
-## [0.5.5] - 2016-05-28
+## 0.5.5](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.5) - 2016-05-28
 #### Added
 - `isMap($map)` function. Check if the given object is a [Sass map](https://www.viget.com/articles/sass-maps-are-awesome)
 
@@ -57,7 +57,7 @@ _________________
 - `src/js/plugins` dir
 
 
-## [0.5.2] - 2016-05-9
+## [0.5.2](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.2) - 2016-05-9
 #### Added
 - `@mixin material-shadow($level)` add material design `box-shadow` to the elements. You can pass an `int` for `$level` as an argument `(min: 1, max: 6)` choosing the distance between the element and the bottom (in Z).
 - `BodokeCSS` is now a `bower dependecy`
@@ -77,7 +77,7 @@ _________________
 
 ### Bodoke Status - 2015
 
-## [0.5.0 Eagle Imani] - 2016-01-21
+## [0.5.0 Eagle Imani](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.0) - 2016-01-21
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
 - `@mixin animation-delay()` accepts multiple values
@@ -109,7 +109,7 @@ _________________
 - `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
 
 
-## [0.4.0 Daan Yaffa] - 2015-10-01
+## [0.4.0 Daan Yaffa](https://github.com/dmmarmol/bodokecss/releases/tag/0.4.0) - 2015-10-01
 #### Updated
 - Preparando el bodokecss para soportar el desarrollo de aplicaciones externas [`django-bdk-forms`](https://github.com/ConvoyHQ/django-bdk-forms)
 - Update en `"component/_input.scss"`
@@ -131,7 +131,7 @@ _________________
 - Nueva funcion `ifcolor()`: imprime el color de texto según el color de fondo que se pase como parametro
 - Nuevo `@mixin animation-count($times)`: enumera la cantidad de veces que se repite una animación.
 
-## [0.3.0 Caesar Odysseus] - 2015-06-01
+## 0.3.0 Caesar Odysseus - 2015-06-01
 #### Updated
 - `"component/_list.scss"` Ahora las listas por default son horizontales y mostradas como `inline-block`
 - `"component/_sidenav.scss"` - new active state
@@ -146,7 +146,7 @@ _________________
 ---
 
 
-## [0.2.7 Baako Maarav] - 2015-05-18
+## 0.2.7 Baako Maarav - 2015-05-18
 #### Updated
 - Update en `"component/_input.scss"`
 - Update en `"component/_list.scss"`
@@ -158,7 +158,7 @@ _________________
 - `"component/_sidenav.scss"`: estilizar menus verticales como <aside> content
 
 
-## [0.2.3 Baako Icarus] - 2015-05-11
+## 0.2.3 Baako Icarus - 2015-05-11
 #### Updated
 - `"component/_lightbox.scss"`: Prefijos para clases, alineados con `"bdk-lightbox.js"`
 - `"component/_menu.scss"`: Reformulacion de los menu. Ya no necesitan de la clase `.list` para funcionar
@@ -190,7 +190,7 @@ _________________
 - `.list-inline-block` `li:first-child()` con `margin-left: 0;`. Previene que se salga del contenedor
 
 
-## [0.2.0 Baako Hagen] - 2015-04-10
+## 0.2.0 Baako Hagen - 2015-04-10
 #### Deleted
 - No hay más hover por default en los `.item`
 
@@ -203,7 +203,7 @@ _________________
 - `_burger.scss` by [jorenvanhee](https://github.com/jorenvanhee/sass-burger/)
 
 
-## [0.1.6 Amon Gabriel] - 2015-04-08
+## 0.1.6 Amon Gabriel - 2015-04-08
 #### Updated
 - `bodoke/grid/_grid.scss`
 - `bodoke/component/dropdown`
@@ -223,7 +223,7 @@ _________________
 
 ### Bodoke Status - 2014
 
-## [0.1.4 Amon Ed] - 2014-12-30
+## 0.1.4 Amon Ed - 2014-12-30
 #### Changed
 - `code.scss` `<pre>` tag estilizado con `<span>` para comentarios y carpetas
 - Nuevo `@mixin android-input-border` para estilizar inputs como en Android
@@ -233,7 +233,7 @@ _________________
 - Nuevo `@mixin flexbox();`
 
 
-## [0.1.3 Amon Demian] - 2014-11-25
+## 0.1.3 Amon Demian - 2014-11-25
 #### Changed
 - Actualizacion y organizacion del framework 0.1.3
 
@@ -244,7 +244,7 @@ _________________
 - `@mixin color();` ahora afecta también a todos los descendientes que sean `<a>`
 
 
-## [0.1.2 Amon Carolina] - 2014-11-17
+## 0.1.2 Amon Carolina - 2014-11-17
 #### Changed
 - Primera version con nombre: `Amon Carolina`
 - Las columnas de la grilla ahora cambian su dirección de flotado dependiendo del atributo `[dir="rtl"]` en `<body>` - grid v1.4
@@ -253,15 +253,15 @@ _________________
 - `_comments.scss` Nuevo componente para comentarios en redes sociales
 
 
-## [0.1.0]
+## 0.1.0]
 #### Changed
 - New Grid
 
 
-## [0.0.11] - 2014-09-19
+## 0.0.11 - 2014-09-19
 #### Changed
 - Upgrade en la grilla
 
 
-## [0.0.1] - 2014-05-20
+## 0.0.1 - 2014-05-20
 - Nacimiento / BodokeCSS was born
