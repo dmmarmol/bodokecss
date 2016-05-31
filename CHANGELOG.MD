@@ -43,7 +43,7 @@ _________________
 #### Updated
 - `./scss` dir renamed to `./bodokecss`
 
-## 0.5.5](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.5) - 2016-05-28
+## [0.5.5](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.5) - 2016-05-28
 #### Added
 - `isMap($map)` function. Check if the given object is a [Sass map](https://www.viget.com/articles/sass-maps-are-awesome)
 
