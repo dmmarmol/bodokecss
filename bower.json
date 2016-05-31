@@ -29,7 +29,6 @@
     "bower_components",
     "test",
     "tests",
-    "bodokecss/README.md",
     "bodokecss/bodoke-example.scss",
     "bodokecss.sublime-project",
   ],

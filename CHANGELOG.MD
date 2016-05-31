@@ -32,9 +32,16 @@ _________________
 
 ### Bodoke Status - 2016
 
+## [0.5.6 Eagle X] - 2016
+#### Add
+- `bodokecss/src/` dir for the assets of your site (eg. Fonts, Background images, etc).
+- `bodokecss/lib-extension` for overriding a section of any vendor/lib (eg. `bootstrap-extension.scss`)
+- `README.md` files for each dir inside `bodokecss/`
+
+
 ## [0.5.51 Eagle Nadím] - 2016-05-29
 #### Updated
-- `./scss` dir renamed to `./bodokecss` 
+- `./scss` dir renamed to `./bodokecss`
 
 ## [0.5.5] - 2016-05-28
 #### Added
@@ -50,8 +57,7 @@ _________________
 - `src/js/plugins` dir
 
 
-
-## [0.5.2] - 2016-05-19
+## [0.5.2] - 2016-05-9
 #### Added
 - `@mixin material-shadow($level)` add material design `box-shadow` to the elements. You can pass an `int` for `$level` as an argument `(min: 1, max: 6)` choosing the distance between the element and the bottom (in Z).
 - `BodokeCSS` is now a `bower dependecy`
