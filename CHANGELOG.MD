@@ -75,8 +75,6 @@ _________________
 - Duplicated `settings/` dir
 
 
-### Bodoke Status - 2015
-
 ## [0.5.0 Eagle Imani](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.0) - 2016-01-21
 #### Updated
 - Project architecture adapted according to [HugoGiraudel Sass boilerplate template](https://github.com/HugoGiraudel/sass-boilerplate)
@@ -107,6 +105,7 @@ _________________
 
 #### Deleted  
 - `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
+
 
 
 ## [0.4.0 Daan Yaffa](https://github.com/dmmarmol/bodokecss/releases/tag/0.4.0) - 2015-10-01
@@ -220,8 +219,6 @@ _________________
 - Nueva función `reverse()` para invertir orden en las listas de SASS - by [HugoGiraudel.com](http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/)
 - Nueva función `i()` para obtener el indice de una lista y multiplicarlo * 10
 
-
-### Bodoke Status - 2014
 
 ## 0.1.4 Amon Ed - 2014-12-30
 #### Changed
