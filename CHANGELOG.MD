@@ -30,7 +30,6 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 
 _________________
 
-### Bodoke Status - 2016
 
 ## [UNRELEASED]
 #### Added
