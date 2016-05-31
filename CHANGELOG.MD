@@ -32,7 +32,7 @@ _________________
 
 ### Bodoke Status - 2016
 
-## 0.5.6 Eagle X - 2016
+## [UNRELEASED]
 #### Added
 - `bodokecss/src/` dir for the assets of your site (eg. Fonts, Background images, etc).
 - `bodokecss/lib-extension` for overriding a section of any vendor/lib (eg. `bootstrap-extension.scss`)
