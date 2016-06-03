@@ -24,7 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 * [Canvas - Calzado Urbano](http://canvas.com.ar) // V: 0.5.X (Eagle X)
 * Status Update // V: 0.5.2 - TAG
 * Status Update // V: 0.5.5 - TAG
-* Status Update // V: 0.5.51 (Eagle Nadím)
+* Status Update // V: 0.5.52 (Eagle Nadím)
 * Status Update // V: X.X.X [unreleased]
 	* BodokeCSS is Mobile First
 
@@ -38,9 +38,10 @@ _________________
 - `README.md` files for each dir inside `bodokecss/`
 
 
-## [0.5.51 Eagle Nadím](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.51) - 2016-05-29
+## [0.5.52 Eagle Nadím](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.51) - 2016-05-29
 #### Updated
 - `./scss` dir renamed to `./bodokecss`
+- `bower.json` fixed typo
 
 ## [0.5.5](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.5) - 2016-05-28
 #### Added
