@@ -30,7 +30,7 @@
     "test",
     "tests",
     "bodokecss/bodoke-example.scss",
-    "bodokecss.sublime-project",
+    "bodokecss.sublime-project"
   ],
   "dependencies": {
     "jquery": ">=1.10.2"
