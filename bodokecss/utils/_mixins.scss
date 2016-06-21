@@ -116,10 +116,50 @@
 /// GRADIENT BACKGROUND
 /// @group Background Mixins
 /// @since 0.0.2
-@mixin gradient($from, $to) {
-	background: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
-	background: -moz-linear-gradient(top,  $from, $to);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from}', endColorstr='#{$to}');
+/// @param {map} $settings - Gradient settings
+/// @mixin gradient($from, $to, $direction: to bottom) {
+@mixin gradient( $settings:(e:e) ) {
+	@if ( isMap( $settings ) ) {
+		@if ( function-exists( map-push ) ) {
+			$settings: map-push((
+				from: 		( color: #000 ), 
+				to: 		( color: #FFF ),
+				direction: 	to bottom
+			), $settings );
+		}
+	}
+	$from: 			map-get( $settings, from );
+	$from-color: 	map-get( $from, color );
+
+	$to: 			map-get( $settings, to );
+	$to-color:		map-get( $to, color );
+
+	$start: 		0%;		// Could be overriden
+	$end: 			100%;	// Could be overriden
+
+	@if ( keyExist( $from, start ) ) { 
+		$start: map-get( $from, start );
+	}
+	@if ( keyExist( $to, end ) ) {
+		$end: map-get( $from, end );
+	}
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$from-color}', endColorstr='#{$to-color}');
+	background-color: $from-color; /* Fallback */
+	background: linear-gradient(map-get( $settings, direction ), $from-color $start, $to-color $end);
+}
+
+/// RADIAL GRADIENT
+/// @group Background Mixins
+/// @since 0.5.52
+@mixin radial-gradient($from, $to) {
+	background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+	background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+	background-color: $from;
 }
 
 /// Convert To GRAYSCALE
@@ -209,7 +249,7 @@
 /// ));
 @mixin animation-steps( $animation-name, $settings: (e:e) ) {
 	// @debug type-of( $settings );
-	@if ( type-of( $settings ) == map  ) {
+	@if ( isMap( $settings ) ) {
 		@if ( function-exists( map-push ) ) {
 			$settings: map-push((
 				width: 100px,

@@ -218,8 +218,12 @@
 @function z($list, $value) {
 	$reverse: reverse($list);
 	$index: index($reverse, $value);
-	$index: $index * 10;
-	@return $index;
+	@if $index == '' {
+	    @warn "No $index found for `#{$index}` in #{$list}";
+  	} @else {
+		$index: $index * 10; // Multiply by 10 just to keep a safe distance between elements
+		@return $index;  		
+  	}
 }
 
 
@@ -330,9 +334,7 @@
 /// Check if a key is present inside a list and return the key
 /// Evalua si un indice existe dentro de un map
 @function keyExist($list, $key) {
-	@if map-has-key($list, $key) {
-		@return map-get($list, $key);
-	}
+	@return map-has-key($list, $key);
 }
 
 /// @since 0.5.5

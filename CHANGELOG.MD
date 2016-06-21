@@ -36,6 +36,16 @@ _________________
 - `bodokecss/src/` dir for the assets of your site (eg. Fonts, Background images, etc).
 - `bodokecss/lib-extension` for overriding a section of any vendor/lib (eg. `bootstrap-extension.scss`)
 - `README.md` files for each dir inside `bodokecss/`
+- `@mixin radial-gradient`
+
+#### Updated
+- `@mixin gradient` now uses sass maps as argument, leaving the rest to `gulp-autoprefixer`
+- Fixed issue with `@function keyExist()`
+- `_text.scss`
+- `_buttons.scss` using `@function ifColor()` to determine text color depending on the background
+
+#### Deleted
+- `bodoke-fontastic` font files and scss
 
 
 ## [0.5.52 Eagle Nadím](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.51) - 2016-05-29
