@@ -37,6 +37,7 @@ _________________
 - `bodokecss/lib-extension` for overriding a section of any vendor/lib (eg. `bootstrap-extension.scss`)
 - `README.md` files for each dir inside `bodokecss/`
 - `@mixin radial-gradient`
+- `_media-queries.scss`: New stylesheet with all the neccesary media-query types
 
 #### Updated
 - `@mixin gradient` now uses sass maps as argument, leaving the rest to `gulp-autoprefixer`
@@ -46,6 +47,7 @@ _________________
 
 #### Deleted
 - `bodoke-fontastic` font files and scss
+- `media/` dir
 
 
 ## [0.5.52 Eagle Nadím](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.51) - 2016-05-29

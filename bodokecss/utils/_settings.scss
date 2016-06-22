@@ -6,7 +6,7 @@
 /// @import "bodoke/settings/settings";
 ////
 
-$bodoke-version:			0.5.52;
+$bodoke-version:			0.5.6;
 $bodoke-prefix:				'bdk-';
 
 // Settings & Config
@@ -16,3 +16,4 @@ $bodoke-prefix:				'bdk-';
 @import "config"; 					// config & variables
 @import "variables";				// variables
 @import "reset";					// reset
+@import "media-queries";			// media-queries
