@@ -539,7 +539,48 @@
 	}
 }
 
+/// Bootstrap Helpers for Media Queries managment
+/// @group Media Query Mixins
+/// @since 0.5.52
+/// @param {string} $breakpoint | Bootstrap name for viewport ['xsmall'/'xs', 'small'/'sm', 'medium'/'md', 'large'/'lg']
+/// @param {string} $limit [null] | Max or Min width
+@mixin respond-to($breakpoint, $limit:null) {
+	@if $breakpoint == "xsmall" or $breakpoint == "xs" {
+		// @warn "Respond to #{$screen-xs-max}";
+		@if ( $limit ) {
+			@media (#{$limit}-width: #{$screen-xs-max}) { @content; }
+		} @else {
+			@media (max-width: #{$screen-xs-max}) { @content; }
+		}
+	}
 
+	@if $breakpoint == "small" or $breakpoint == "sm" {
+		// @warn "Respond to #{$screen-sm-max}";
+		@if ( $limit ) {
+			@media (#{$limit}-width: #{$screen-sm-max}) { @content; }
+		} @else {
+			@media (max-width: #{$screen-sm-max}) { @content; }
+		}
+	}
+
+	@else if $breakpoint == "medium" or $breakpoint == "md" {
+		// @warn "Respond to #{$screen-md-max}";
+		@if ( $limit ) {
+			@media (#{$limit}-width: #{$screen-md-max}) { @content; }
+		} @else {
+			@media (max-width: #{$screen-md-max}) { @content; }
+		}
+	}
+
+	@else if $breakpoint == "large" or $breakpoint == "lg" {
+		// @warn "Respond to #{$screen-lg-min}";
+		@if ( $limit ) {
+			@media (#{$limit}-width: #{$screen-lg-min}) { @content; }
+		} @else {
+			@media (min-width: #{$screen-lg-min}) { @content; }
+		}
+	}
+}
 
 
 // ========================================

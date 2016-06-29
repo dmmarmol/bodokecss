@@ -38,6 +38,7 @@ _________________
 - `README.md` files for each dir inside `bodokecss/`
 - `@mixin radial-gradient`
 - `_media-queries.scss`: New stylesheet with all the neccesary media-query types
+- `@respond-to($screen, $limit)`, a Bootstrap `@mixin` for Media Queries managment. Just pass `'xs', 'sm', 'md' or 'lg'` as an argument and all the code inside will have effect inside that resolution
 
 #### Updated
 - `@mixin gradient` now uses sass maps as argument, leaving the rest to `gulp-autoprefixer`
