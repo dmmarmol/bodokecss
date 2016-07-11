@@ -686,7 +686,7 @@
 /// PLACEHOLDERS
 /// @group Form Mixins
 /// @since 0.0.2
-@mixin placeholder {
+@mixin bdk-placeholder {
 	&.placeholder				 { @content }
 	&::-webkit-input-placeholder { @content }
 	&:-moz-placeholder           { @content }
