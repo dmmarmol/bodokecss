@@ -33,7 +33,7 @@ $input-label:				'.control-label'; // ex '.label-title'
 	background: #FFF;	
 	@include box-shadow( none );
 	@include border-radius( 5px );
-	@include placeholder {
+	@include bdk-placeholder {
 		line-height: inherit;
 		color: hsl(0, 0, 60%);
 	}
@@ -348,7 +348,7 @@ $optional-text-color: gray(150);
 	&.input-optional {
 		label { color: $optional-text-color; }
 		input, textarea {
-			@include placeholder() {
+			@include bdk-placeholder() {
 				color: $optional-text-color;				
 			}
 		}		
