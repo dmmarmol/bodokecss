@@ -45,6 +45,7 @@ _________________
 - Fixed issue with `@function keyExist()`
 - `_text.scss`
 - `_buttons.scss` using `@function ifColor()` to determine text color depending on the background
+- `@mixin placeholder` renamed to `@mixin bdk-placeholder` (avoiding collision with `bootstrap`)
 
 #### Deleted
 - `bodoke-fontastic` font files and scss
