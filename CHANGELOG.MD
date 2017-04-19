@@ -19,19 +19,29 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 * Status Update // V: 0.2.3 (Baako Icarus)
 * Status Update // V: 0.2.7 (Baako Maarav)
 * Status Update // V: 0.3.0 (Caesar Odysseus)
-* Status Update // V: 0.4.0 (Daan Yaffa)  
+* Status Update // V: 0.4.0 (Daan Yaffa)
 * Status Update // V: 0.5.0 (Eagle Imani)
 * [Canvas - Calzado Urbano](http://canvas.com.ar) // V: 0.5.X (Eagle X)
 * Status Update // V: 0.5.2 - TAG
 * Status Update // V: 0.5.5 - TAG
 * Status Update // V: 0.5.52 (Eagle Nadím)
+* Status Update // V: 0.5.6
 * Status Update // V: X.X.X [unreleased]
 	* BodokeCSS is Mobile First
 
 _________________
 
+## [0.5.6 - UNRELEASED]
+#### Added
+- Registered *bodokecss* as an npm package (now run `npm install bodokecss --save`)
 
-## [UNRELEASED]
+#### Updated
+- Renamed `src/` to `dist/` and `bodokecss/` to `src/`
+
+#### Deleted
+- `src/images` dir
+
+## [0.5.X - Changes without version name]
 #### Added
 - `bodokecss/src/` dir for the assets of your site (eg. Fonts, Background images, etc).
 - `bodokecss/lib-extension` for overriding a section of any vendor/lib (eg. `bootstrap-extension.scss`)
@@ -117,7 +127,7 @@ _________________
 - *Card* components (material design style) in `component/_cards.scss`
 - `.show-x` & `.hide-x` classes for show/hide content (where `x` could be `mobile`, `medium` or `tablet`)
 
-#### Deleted  
+#### Deleted
 - `@mixin prefixer()` removed. Prefixes are placed now by [`gulp-autoprefixer`](https://www.npmjs.com/package/gulp-autoprefixer)
 
 
@@ -212,7 +222,7 @@ _________________
 - `bdk-dropdown.js` ("parent()" is now "parents()")
 - `bodoke/component/_dropdown.scss`
 
-#### Added 	
+#### Added
 - `_burger.scss` by [jorenvanhee](https://github.com/jorenvanhee/sass-burger/)
 
 
