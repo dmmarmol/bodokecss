@@ -1,0 +1,19 @@
+////
+/// _settings.scss
+/// BodokeCSS Core settings
+/// Include this file on the top of every new Bodoke application
+/// @example
+/// @import "bodoke/settings/settings";
+////
+
+$bodoke-version:			0.5.52;
+$bodoke-prefix:				'bdk-';
+
+// Settings & Config
+@import "mixins"; 					// mixins
+@import "functions";				// functions
+@import "colors";  					// colors
+@import "config"; 					// config & variables
+@import "variables";				// variables
+@import "reset";					// reset
+@import "media-queries";			// media-queries

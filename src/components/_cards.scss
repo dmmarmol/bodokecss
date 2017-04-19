@@ -1,0 +1,14 @@
+////
+/// _cards.scss
+/// Cards/Tarjetas estilo material design
+////
+
+$card:		'.card';
+
+#{$card} {
+	padding: ($offset) ($offset * 2);
+	position: relative;
+	background-color: white;	
+	box-shadow: 0 2px 2px -1px black(0.4);
+	@include clear();
+}
