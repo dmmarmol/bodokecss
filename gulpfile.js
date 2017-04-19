@@ -13,7 +13,7 @@ var gutil 			= require('gulp-util'); // https://www.npmjs.com/package/gulp-util/
 var debug 			= require('gulp-debug'); // https://www.npmjs.com/package/gulp-debug/
 
 var BODOKE 			= './scss';
-var SRC 			= './src/';
+var SRC 			= './dist/';
 
 // ROUTES
 var DIR = {
@@ -25,7 +25,7 @@ var DIR = {
 		FILES: 		SRC+'css/**/*.css'
 	},
 	SCRIPTS: {
-		FOLDER: 	SRC+'js',	
+		FOLDER: 	SRC+'js',
 		FILES: 		[SRC+'js/**/*.js', '!'+SRC+'js/**/config.js'],
 	},
 	HTML: 			[SRC+'**/*.html'],
@@ -48,7 +48,7 @@ var AUTOPREFIXER_BROWSERS = [
 
 // TASK
 gulp.task('default', ['bdk-scss', 'watch'], function() {
-	
+
 });
 
 // WATCH SCSS TASK
@@ -57,11 +57,11 @@ gulp.task('watch', function () {
     gulp.watch( [DIR.HTML, DIR.PHP], ['reload']).on('change', function(file){
     	gulp.src(file.path)
     		.pipe(debug({title: 'Updated:'}));
-    });	
+    });
     gulp.watch( [DIR.SASS], ['bdk-scss']).on('change', function(file){
     	gulp.src(file.path)
     		.pipe(debug({title: 'Updated:'}));
-    });	
+    });
 });
 
 // Comple app.scss
