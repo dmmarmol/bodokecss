@@ -25,3 +25,6 @@ sassdoc
 
 # Vendor & Plugins
 plugins
+
+# Builds
+build/
