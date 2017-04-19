@@ -11,15 +11,15 @@ var livereload		= require('gulp-livereload');
 var autoprefixer 	= require('gulp-autoprefixer');
 var gutil 			= require('gulp-util'); // https://www.npmjs.com/package/gulp-util/
 var debug 			= require('gulp-debug'); // https://www.npmjs.com/package/gulp-debug/
+var del 			= require('del');
 
-var BODOKE 			= './scss';
+var BODOKE 			= './src';
 var SRC 			= './dist/';
 
 // ROUTES
 var DIR = {
 	SASS: 			[ BODOKE+'/**/*.scss' ],
 	BODOKEAPP: 		[ BODOKE+'/bodoke.scss' ],
-	BODOKEEXAMPLE: 	[ BODOKE+'/bodoke-example.scss' ],
 	CSS: 			{
 		FOLDER: 	SRC+'css',
 		FILES: 		SRC+'css/**/*.css'
@@ -30,6 +30,11 @@ var DIR = {
 	},
 	HTML: 			[SRC+'**/*.html'],
 	PHP: 			[SRC+'**/*.php']
+}
+
+var BUILD = {
+	MAIN: [].concat(BODOKE, './gulpfile.js'),
+	FILES: [].concat(DIR.SASS, DIR.CSS.FILES, DIR.HTML)
 }
 
 var AUTOPREFIXER_BROWSERS = [
@@ -76,18 +81,16 @@ gulp.task('bdk-scss', function () {
 		.pipe(livereload());
 });
 
-// Comple bodoke.scss
-gulp.task('bdkexample-scss', function () {
-	gulp.src( DIR.BODOKEEXAMPLE )
-		.pipe(sass().on('error', sass.logError))
-		.pipe(autoprefixer({
-            browsers: AUTOPREFIXER_BROWSERS,
-            cascade: false
-        }))
-		.pipe(gulp.dest( DIR.CSS.FOLDER ))
-		.pipe(livereload());
-});
-
 gulp.task('reload', function() {
 	livereload.reload();
+});
+
+gulp.task('build', function() {
+	del.sync('./build');
+	console.log('- REMOVED Build Dir');
+	gulp.src(BUILD.MAIN).pipe(gulp.dest('./build/'));
+	console.log('- CREATED '+BODOKE+' dir');
+	gulp.src(BUILD.FILES).pipe(gulp.dest('./build/'+BODOKE));
+	console.log('- CREATED '+BUILDDIR+' dir');
+	console.log('- BUILD bodokecss');
 });

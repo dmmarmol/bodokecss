@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/dmmarmol/bodokecss",
   "devDependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-debug": "^2.1.2",
