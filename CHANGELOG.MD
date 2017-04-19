@@ -34,6 +34,7 @@ _________________
 ## [0.5.6 - UNRELEASED]
 #### Added
 - Registered *bodokecss* as an npm package (now run `npm install bodokecss --save`)
+- Build task with gulp
 
 #### Updated
 - Renamed `src/` to `dist/` and `bodokecss/` to `src/`
