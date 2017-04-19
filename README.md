@@ -5,12 +5,12 @@ Bodoke CSS
 ###### Last release: [0.5.51 (Eagle Nadím)](https://github.com/dmmarmol/bodokecss/releases/tag/0.5.51)
 
 
-Bodoke it's a CSS Front-end Framework created with SASS/SCSS, made for supporting multiple grids in a single project with a minimum of custom design.  
+Bodoke it's a CSS Front-end Framework created with SASS/SCSS, made for supporting multiple grids in a single project with a minimum of custom design.
 It's a layout starter project nice and ready for you to design with your own custom identity.
 
 *BodokeCSS* was born as a testing project where i can try any new CSS feature and practice the [CSSOOP](https://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/) model.
 
-The base idea of this project is to be responsive and not visualy contaminated. 
+The base idea of this project is to be responsive and not visualy contaminated.
 It supports desktop, mobile and tablet websites using semantic clases in html.
 
 ## Support
@@ -47,16 +47,15 @@ Project docs coming soon... But if you are brave enough, you can check the code 
 
 ## Getting Started
 
-#### Install bower 
+You need to have previously installed [npm](https://docs.npmjs.com/cli/install)
+
+#### Install via npm
 ```sh
-npm install -g bower
+npm install --save bodokecss
 ```
-#### Install BodokeCSS
-```sh
-bower i bodokecss --save
-```
+
 #### Clone it
-In your `bower_components` dir, clone the `bodokecss` into your **assets** or **scss** folder (preferably `scss/`)
+Clone the `bodokecss` from your `node_modules` folder into your **assets** or **scss** folder (preferably `scss/`) but it will depend on your project structure
 
 -------------
 
@@ -66,7 +65,7 @@ In your `bower_components` dir, clone the `bodokecss` into your **assets** or **
 ```html
 <head>
 	<title>Bodoke Rocks \m/</title>
-	<link rel="stylesheet" type="text/css" href="css/bodoke.css"> 
+	<link rel="stylesheet" type="text/css" href="css/bodoke.css">
 </head>
 <body>
 	<!-- What does 'Bodoke' means?, what was this guy thinking? -->
@@ -80,7 +79,7 @@ In your `bower_components` dir, clone the `bodokecss` into your **assets** or **
 /project
 |-- *.html
 |-- *.php
-|-- /bower_components
+|-- /node_modules
     |-- bodokecss --> Copy this folder
 |-- /src
     |-- css
@@ -94,9 +93,9 @@ In your `bower_components` dir, clone the `bodokecss` into your **assets** or **
 Then at the top of your main scss (eg. `app.scss`) file include the next line:
 
 ```scss
-@import "bodokecss/bodoke";
+@import "build/src/bodoke";
 ```
-You can easily customize or expand Bodoke inside `bodokecss/bodoke.scss` by commenting or uncommenting each `@import` component. *I do not recommend to uncomment the items before 5. (Compnents)*.
+You can easily customize or expand Bodoke inside `build/src/bodoke.scss` by commenting or uncommenting each `@import` component. *I do not recommend to uncomment the items before 5. (Compnents)*.
 
 -------------
 
@@ -106,7 +105,7 @@ You can easily customize or expand Bodoke inside `bodokecss/bodoke.scss` by comm
 
 To make this work, you need to have already installed **[node](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/)** and **[gulp](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/)**
 
-If you are a gulp user (if not, then let me tell you are losing valuable time) copy and paste this `task` into your `gulpfile.js` *(see: [blog.diegomarmol.com.ar](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/))*
+If you are a gulp user copy and paste this `task` into your `gulpfile.js` *(see: [blog.diegomarmol.com.ar](http://blog.diegomarmol.com.ar/getting-started-with-node-js-and-gulp-js/))*
 
 After Node was installed, run:
 ```sh
@@ -130,5 +129,3 @@ gulp.task('bdk', function () {
 ```
 
 Now Open the **Terminal** or **CMD**, run `gulp bdk` and your CSS will be up and running!
-
-``map-set($your-list)``

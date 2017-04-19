@@ -28,6 +28,10 @@ var DIR = {
 		FOLDER: 	SRC+'js',
 		FILES: 		[SRC+'js/**/*.js', '!'+SRC+'js/**/config.js'],
 	},
+	FONTS: {
+		FOLDER: 	SRC+'fonts',
+		FILES: 		SRC+'fonts/**/*'
+	},
 	HTML: 			[SRC+'**/*.html'],
 	PHP: 			[SRC+'**/*.php']
 }
@@ -88,9 +92,25 @@ gulp.task('reload', function() {
 gulp.task('build', function() {
 	del.sync('./build');
 	console.log('- REMOVED Build Dir');
+
+	/**
+	 * Create the build/
+	 */
 	gulp.src(BUILD.MAIN).pipe(gulp.dest('./build/'));
+
+	/**
+	 * Copy dist/
+	 */
+	gulp.src(DIR.SCRIPTS.FILES).pipe(gulp.dest('./build/'+SRC+'/js'));
+	gulp.src(DIR.FONTS.FILES).pipe(gulp.dest('./build/'+SRC+'/fonts'));
+	gulp.src(DIR.CSS.FILES).pipe(gulp.dest('./build/'+SRC+'/css'));
+
+	/**
+	 * Copy src/
+	 */
 	console.log('- CREATED '+BODOKE+' dir');
 	gulp.src(BUILD.FILES).pipe(gulp.dest('./build/'+BODOKE));
-	console.log('- CREATED '+BUILDDIR+' dir');
+	console.log('- CREATED '+BUILD.FILES+' dir');
+
 	console.log('- BUILD bodokecss');
 });
