@@ -19,6 +19,10 @@ sassdoc
 *.sublime-project
 *.sublime-workspace
 
+# Formatting
+.editorconfig
+.jsbeautifyrc
+
 # Backup Files
 .backup
 *.backup
