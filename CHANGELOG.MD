@@ -31,7 +31,11 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep A Ch
 
 _________________
 
-## [0.5.6 - UNRELEASED]
+## [0.5.7 - 2017-08-17]((https://github.com/dmmarmol/bodokecss/releases/tag/0.5.7))
+#### Updated
+- Remove references in `functions.scss` to variables outside of the file scope
+
+## [0.5.6 - 2017-04-18]((https://github.com/dmmarmol/bodokecss/releases/tag/0.5.6))
 #### Added
 - Registered *bodokecss* as an npm package (now run `npm install bodokecss --save`)
 - Build task with gulp

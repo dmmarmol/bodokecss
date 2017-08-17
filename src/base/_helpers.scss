@@ -3,9 +3,6 @@
 /// that aren complex enough to have it's own stylesheet
 /// @group Helpers
 ////
-
-
-
 // ==========================
 /// COLOR CLASESS
 // ==========================
@@ -15,22 +12,20 @@
 		background-color: nth($color, 2);
 	}
 }
+
 // Text Colors
 @each $color in $color-pallete {
 	.text-#{nth($color, 1)} {
-		color: nth($color, 2);					
+		color: nth($color, 2);
 	}
 }
-
-
 
 // ==========================
 /// PRE LOADER / LOADING
 // ==========================
-$loading-text:			'Cargando';
-$loading-size:			32px;
-$loading-top-offset:	70px;
-
+$loading-text: 'Cargando';
+$loading-size: 32px;
+$loading-top-offset: 70px;
 .#{$bodoke-prefix}-loading {
 	background-image: img('loader01.gif');
 	background-position: 50% 50%;
@@ -44,7 +39,10 @@ $loading-top-offset:	70px;
 		position: absolute!important;
 		height: $loading-size / 2;
 		margin: auto;
-		left: 0; right: 0; bottom: 0; top: $loading-top-offset;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: $loading-top-offset;
 		width: 100px!important;
 		font-size: 0.8em;
 		font-weight: bold;
@@ -59,7 +57,6 @@ $loading-top-offset:	70px;
 	}
 }
 
-
 // ====================
 // PANELES
 // ====================
@@ -67,39 +64,39 @@ $loading-top-offset:	70px;
 	position: relative;
 	background-color: $black_95;
 	border: 1px solid hsl(0, 0, 90%);
-	@include border-radius( 5px );
+	@include border-radius( 5px);
 	padding-top: $col-offset / 2;
-	padding-bottom: $col-offset / 2;		
+	padding-bottom: $col-offset / 2;
 	padding-left: $col-offset;
-	padding-right: $col-offset;		
+	padding-right: $col-offset;
 	&.cols, &.cols, &.column, &.columns {
 		padding-left: $col-offset;
 		padding-right: $col-offset;
-	}
-	// Mensaje (opcional)
+	} // Mensaje (opcional)
 	.message {
 		width: 100%;
-		margin-bottom: 0;		
+		margin-bottom: 0;
 		padding-top: $col-offset / 2;
-		padding-bottom: $col-offset / 2;		
+		padding-bottom: $col-offset / 2;
 		font-weight: 300;
 		font-size: 0.9em;
 		line-height: 1.2em;
-	}
-	// Colores para el alert/error
+	} // Colores para el alert/error
 	@each $alert in $alerts-color-pallete {
 		&.#{nth( $alert, 1 )} {
-			background-color: nth($alert, 2);			
+			background-color: nth($alert, 2);
 			.message {
-				@if lightness( nth($alert,2) ) > lightness(#aaa) {
+				@if lightness( nth($alert, 2)) > lightness(#aaa) {
 					color: $text-color;
-				} @else {
+				}
+				@else {
 					color: white();
 				}
 			}
 		}
-	}		
+	}
 }
+
 @include mobile() {
 	.panel {
 		&.cols, &.cols, &.column, &.columns {
@@ -108,23 +105,22 @@ $loading-top-offset:	70px;
 		}
 	}
 }
+
 [class*="-panel"] {
 	z-index: 100;
 }
 
+
 /*
  * Error panel
  */
+
 $error-arrow-directions: ('up', 'right', 'down', 'left');
 .error-panel {
 	position: relative;
-	@include border-radius( 5px );
-	transition:
-		opacity $transition-speed ease,
-		background $transition-speed ease
-	;
-	// Fondo por default
-	background-color: hsl(0, 0, 80%); 
+	@include border-radius( 5px);
+	transition: opacity $transition-speed ease, background $transition-speed ease; // Fondo por default
+	background-color: hsl(0, 0, 80%);
 }
 
 .clean-panel {
@@ -134,43 +130,79 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	padding-left: $col-offset;
 	padding-right: $col-offset;
 	color: gray(100);
-	background-color: getColor('gray');
-	@include border-radius( 5px );
-	@include text-shadow(0 1px 0 white(0.8) );		
+	background-color: $gray;
+	@include border-radius( 5px);
+	@include text-shadow(0 1px 0 white(0.8));
 }
-
-
 
 // =============================
 // ALIGNMENT CLASSES
 // =============================
-.float-left, .left { float: left!important; }
+.float-left, .left {
+	float: left!important;
+}
 
-.float-right, .right { float: right!important; }
+.float-right, .right {
+	float: right!important;
+}
 
 // Float if [dir]
-[dir="ltr"] .float-dir { float: left; }
-[dir="rtl"] .float-dir { float: right; }
+[dir="ltr"] .float-dir {
+	float: left;
+}
+
+[dir="rtl"] .float-dir {
+	float: right;
+}
+
 // Float if [dir] but inverse
-[dir="ltr"] .float-dir-inv { float: right; }
-[dir="rtl"] .float-dir-inv { float: left; }
+[dir="ltr"] .float-dir-inv {
+	float: right;
+}
+
+[dir="rtl"] .float-dir-inv {
+	float: left;
+}
 
 // Align box if [dir]
-[dir="ltr"] .inline-block-dir { display: inline-block; text-align: left; }
-[dir="rtl"] .inline-block-dir { display: inline-block; text-align: right; }
+[dir="ltr"] .inline-block-dir {
+	display: inline-block;
+	text-align: left;
+}
+
+[dir="rtl"] .inline-block-dir {
+	display: inline-block;
+	text-align: right;
+}
+
 // Align box if [dir] but inverse
-[dir="ltr"] .inline-block-dir-inv { display: inline-block; text-align: right; }
-[dir="rtl"] .inline-block-dir-inv { display: inline-block; text-align: left; }
+[dir="ltr"] .inline-block-dir-inv {
+	display: inline-block;
+	text-align: right;
+}
+
+[dir="rtl"] .inline-block-dir-inv {
+	display: inline-block;
+	text-align: left;
+}
 
 // Align text if [dir]
-[dir="ltr"] .text-dir { text-align: left; }
-[dir="rtl"] .text-dir { text-align: right; }
+[dir="ltr"] .text-dir {
+	text-align: left;
+}
+
+[dir="rtl"] .text-dir {
+	text-align: right;
+}
+
 // Align text if [dir] but inverse
-[dir="ltr"] .text-dir-inv { text-align: right; }
-[dir="rtl"] .text-dir-inv { text-align: left; }
+[dir="ltr"] .text-dir-inv {
+	text-align: right;
+}
 
-
-
+[dir="rtl"] .text-dir-inv {
+	text-align: left;
+}
 
 .center {
 	display: block!important;
@@ -178,24 +210,32 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	margin-right: auto;
 	float: none!important;
 }
+
 .a-center {
 	display: block;
 	position: absolute!important;
-	top: 0; right: 0; bottom: 0; left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	margin: auto!important;
 	float: none!important;
 }
+
 .v-center {
 	display: block;
 	position: absolute;
-	top: 0; right: auto; bottom: 0; left: auto;
+	top: 0;
+	right: auto;
+	bottom: 0;
+	left: auto;
 	margin: auto;
 	float: none;
 }
+
 .h-center {
 	@include h-center();
 }
-
 
 // ====================
 // TEXT
@@ -205,24 +245,23 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	float: none;
 }
 
-
 // =============================
 // OBJECT BEHAVIOR
 // =============================
 .block {
 	display: block;
 }
+
 .inline-block {
 	display: inline-block;
 	*zoom: 1;
 	*display: inline;
 }
+
 .clear-both {
 	clear: both;
 	float: none;
 }
-
-
 
 // ==============================
 // OBJECT VISIBILITY
@@ -240,8 +279,7 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	padding: 0;
 	position: absolute;
 	width: 1px;
-	&.focusable:active,
-	&.focusable:focus {
+	&.focusable:active, &.focusable:focus {
 		clip: auto;
 		height: auto;
 		margin: 0;
@@ -251,10 +289,13 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	}
 }
 
+.invisible {
+	visibility: hidden;
+}
 
-.invisible { visibility: hidden; }
-
-.transparent { @include opacity(0); }
+.transparent {
+	@include opacity(0);
+}
 
 .visuallyvisible {
 	clip: auto;
@@ -263,59 +304,51 @@ $error-arrow-directions: ('up', 'right', 'down', 'left');
 	overflow: visible;
 	left: 0;
 }
+
 .fh, .full-height {
 	height: 100%;
 }
 
-
-
 // ====================
 // IMAGES
 // ====================
-
-
-
 // ====================
 // Micro Clearfix
 // ====================
 .clear, .clearfix {
 	*zoom: 1;
-	&:before, &:after { content: ""; display: table; }
-	&:after { clear: both; }
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
 }
-
-
 
 // ====================
 // CAJAS DE COLORES
 // ====================
-
-
-
 // Alert
 .alert {
-	display: block;
-	// background-color: #ffc;
+	display: block; // background-color: #ffc;
 	// padding: 8px;
 	// @include border-radius( 5px );
 }
+
 @each $alert in $alerts-color-pallete {
 	.#{nth( $alert, 1 )} {
 		background-color: nth($alert, 2);
-		@if lightness( nth($alert,2) ) > lightness(#aaa) {
+		@if lightness( nth($alert, 2)) > lightness(#aaa) {
 			color: $text-color;
-		} @else {
+		}
+		@else {
 			color: white();
 		}
 	}
 }
 
-
-
-
 // ==========================================================================
 // Tablet Devices (Layout, Modifications, etc)
 // ==========================================================================
-@media only screen and (min-width: 720px) and (max-width: 999px) {
-	
-}
+@media only screen and (min-width: 720px) and (max-width: 999px) {}

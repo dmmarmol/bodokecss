@@ -6,7 +6,7 @@
  *
  *
  * author: 			Diego Martin Marmol | @dmmarmol
- * website: 		[http://diegomarmol.com.ar](http://diegomarmol.com.ar)
+ * website: 		[http://diegomarmol.com](http://diegomarmol.com)
  * version:			0.5.2 Eagle Imani
  * release date:	20/05/14
  * contributors: 	Leonardo Pittelli | @leopittelli
@@ -460,40 +460,6 @@ th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-@font-face {
-  font-family: "bodoke-fontastic";
-  src: url("../fonts/bodoke-fontastic/bodoke-fontastic.eot");
-  src: url("../fonts/bodoke-fontastic/bodoke-fontastic.eot?#iefix") format("embedded-opentype"), url("../fonts/bodoke-fontastic/bodoke-fontastic.woff") format("woff"), url("../fonts/bodoke-fontastic/bodoke-fontastic.ttf") format("truetype"), url("../fonts/bodoke-fontastic/bodoke-fontastic.svg#bodoke-fontastic") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-.bdk--icon,
-[class^="bdk--icon"]:before,
-[class*="bdk--icon"]:before {
-  display: inline-block;
-  font-family: "bodoke-fontastic";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.bdk--icon-times:before,
-.bdk--icon-close:before {
-  content: "a"; }
-
-.bdk--icon-bell:before {
-  content: "b"; }
-
-.bdk--icon-phone-tube:before {
-  content: "e"; }
-
-.bdk--icon-bars:before {
-  content: "f"; }
-
-.bdk--icon-bars-negative:before {
-  content: "g"; }
-
 .bg-white {
   background-color: #fff; }
 
@@ -617,7 +583,7 @@ th {
     .panel.quiet .message {
       color: #444; }
 
-@media only screen and (max-width: 739px) {
+@media (max-device-width: 768px) {
   .panel.cols, .panel.cols, .panel.column, .panel.columns {
     padding-left: 0.9375em;
     padding-right: 0.9375em; } }
@@ -641,6 +607,7 @@ th {
   padding-left: 0.9375em;
   padding-right: 0.9375em;
   color: #646464;
+  background-color: #f2f2f2;
   border-radius: 5px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
 
@@ -725,24 +692,6 @@ th {
 .inline {
   display: inline;
   float: none; }
-
-.strong, .bold {
-  font-weight: bold; }
-
-.italic {
-  font-style: italic; }
-
-.center-text {
-  text-align: center; }
-
-.right-text {
-  text-align: right; }
-
-.left-text {
-  text-align: left; }
-
-.upcase-text {
-  text-transform: uppercase; }
 
 .block {
   display: block; }
@@ -1119,7 +1068,7 @@ th {
 
 .button.button-blue, .button [role="button"], [role="button"].button-blue, [role="button"] [role="button"] {
   background-color: #55a0cf;
-  color: #444; }
+  color: #FAFAFA; }
   .button.button-blue:hover, .button [role="button"]:hover, [role="button"].button-blue:hover, [role="button"] [role="button"]:hover {
     background-color: #3588bc; }
   .button.button-blue:active, .button [role="button"]:active, [role="button"].button-blue:active, [role="button"] [role="button"]:active {
@@ -1127,15 +1076,15 @@ th {
 
 .button.button-dark-blue, .button [role="button"], [role="button"].button-dark-blue, [role="button"] [role="button"] {
   background-color: #2362ff;
-  color: #444; }
+  color: #FAFAFA; }
   .button.button-dark-blue:hover, .button [role="button"]:hover, [role="button"].button-dark-blue:hover, [role="button"] [role="button"]:hover {
     background-color: #0044ef; }
   .button.button-dark-blue:active, .button [role="button"]:active, [role="button"].button-dark-blue:active, [role="button"] [role="button"]:active {
-    background-color: #003dd5; }
+    background-color: #003dd6; }
 
 .button.button-red, .button [role="button"], [role="button"].button-red, [role="button"] [role="button"] {
   background-color: #dd4a3a;
-  color: #444; }
+  color: #FAFAFA; }
   .button.button-red:hover, .button [role="button"]:hover, [role="button"].button-red:hover, [role="button"] [role="button"]:hover {
     background-color: #c23122; }
   .button.button-red:active, .button [role="button"]:active, [role="button"].button-red:active, [role="button"] [role="button"]:active {
@@ -1532,6 +1481,9 @@ th {
     .ficon .rounded .large {
       padding: 8px; }
 
+@media only screen and (max-height: 640px) {
+  /* Netbook size icons - Hasta 600 de alto  */ }
+
 .title {
   font-size: 2.8em;
   line-height: 1em;
@@ -1543,37 +1495,37 @@ th {
 
 h6.title {
   font-size: 0.9em; }
-  @media only screen and (max-width: 739px) {
+  @media (max-device-width: 768px) {
     h6.title {
       font-size: 0.825em; } }
 
 h5.title {
   font-size: 1.1em; }
-  @media only screen and (max-width: 739px) {
+  @media (max-device-width: 768px) {
     h5.title {
       font-size: 1.05em; } }
 
 h4.title {
   font-size: 1.5em; }
-  @media only screen and (max-width: 739px) {
+  @media (max-device-width: 768px) {
     h4.title {
       font-size: 1.425em; } }
 
 h3.title {
   font-size: 2em; }
-  @media only screen and (max-width: 739px) {
+  @media (max-device-width: 768px) {
     h3.title {
       font-size: 1.95em; } }
 
 h2.title {
   font-size: 2.5em; }
-  @media only screen and (max-width: 739px) {
+  @media (max-device-width: 768px) {
     h2.title {
       font-size: 2.625em; } }
 
 h1.title {
   font-size: 3em; }
-  @media only screen and (max-width: 739px) {
+  @media (max-device-width: 768px) {
     h1.title {
       font-size: 3.45em; } }
 
@@ -1617,23 +1569,18 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.25em; }
 
 p {
-  font-size: 0.9em;
+  font-size: 1em;
+  line-height: 1.4em;
   margin-top: 0;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.75em; }
 
 p.lead {
   margin-bottom: 0.9375em;
-  font-size: 1.1em;
-  font-weight: 200;
+  font-size: 1.3em;
+  font-weight: 300;
   line-height: 1.4em; }
 
-p.primary {
-  margin-bottom: 0.9375em;
-  font-size: 1.4em;
-  font-weight: 300;
-  line-height: 1.8em; }
-
-.bullet-label {
+.label {
   display: inline-block;
   vertical-align: middle;
   padding: 3px 6px;
@@ -1641,9 +1588,28 @@ p.primary {
   font-weight: 500;
   line-height: 1em;
   text-transform: uppercase;
+  background-color: #f2f2f2;
   margin-left: 3px;
   border-radius: 3px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.6); }
+
+.strong, .bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-uppercase {
+  text-transform: uppercase; }
 
 [dir="rtl"] .list, [dir="rtl"] .list-inline-block {
   text-align: right; }
@@ -1819,21 +1785,7 @@ nav ul, nav ol {
 .menu-fixed, .menu.menu-fixed-top, [class*=".menu"].menu-fixed-top, .menu-fixed-top {
   min-height: 48px; }
 
-input, select, textarea,
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
-bdk--input {
+input, select, textarea, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], bdk--input {
   padding-top: 0;
   padding-bottom: 0;
   padding-right: 0.9375em;
@@ -1847,89 +1799,19 @@ bdk--input {
   background: #FFF;
   box-shadow: none;
   border-radius: 5px; }
-  input.placeholder, select.placeholder, textarea.placeholder,
-  input[type="date"].placeholder,
-  input[type="datetime"].placeholder,
-  input[type="datetime-local"].placeholder,
-  input[type="email"].placeholder,
-  input[type="month"].placeholder,
-  input[type="number"].placeholder,
-  input[type="password"].placeholder,
-  input[type="search"].placeholder,
-  input[type="tel"].placeholder,
-  input[type="text"].placeholder,
-  input[type="time"].placeholder,
-  input[type="url"].placeholder,
-  input[type="week"].placeholder,
-  bdk--input.placeholder {
+  input.placeholder, select.placeholder, textarea.placeholder, input[type="date"].placeholder, input[type="datetime"].placeholder, input[type="datetime-local"].placeholder, input[type="email"].placeholder, input[type="month"].placeholder, input[type="number"].placeholder, input[type="password"].placeholder, input[type="search"].placeholder, input[type="tel"].placeholder, input[type="text"].placeholder, input[type="time"].placeholder, input[type="url"].placeholder, input[type="week"].placeholder, bdk--input.placeholder {
     line-height: inherit;
     color: #999999; }
-  input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder,
-  input[type="date"]::-webkit-input-placeholder,
-  input[type="datetime"]::-webkit-input-placeholder,
-  input[type="datetime-local"]::-webkit-input-placeholder,
-  input[type="email"]::-webkit-input-placeholder,
-  input[type="month"]::-webkit-input-placeholder,
-  input[type="number"]::-webkit-input-placeholder,
-  input[type="password"]::-webkit-input-placeholder,
-  input[type="search"]::-webkit-input-placeholder,
-  input[type="tel"]::-webkit-input-placeholder,
-  input[type="text"]::-webkit-input-placeholder,
-  input[type="time"]::-webkit-input-placeholder,
-  input[type="url"]::-webkit-input-placeholder,
-  input[type="week"]::-webkit-input-placeholder,
-  bdk--input::-webkit-input-placeholder {
+  input::-webkit-input-placeholder, select::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input[type="date"]::-webkit-input-placeholder, input[type="datetime"]::-webkit-input-placeholder, input[type="datetime-local"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, input[type="month"]::-webkit-input-placeholder, input[type="number"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="search"]::-webkit-input-placeholder, input[type="tel"]::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="time"]::-webkit-input-placeholder, input[type="url"]::-webkit-input-placeholder, input[type="week"]::-webkit-input-placeholder, bdk--input::-webkit-input-placeholder {
     line-height: inherit;
     color: #999999; }
-  input:-moz-placeholder, select:-moz-placeholder, textarea:-moz-placeholder,
-  input[type="date"]:-moz-placeholder,
-  input[type="datetime"]:-moz-placeholder,
-  input[type="datetime-local"]:-moz-placeholder,
-  input[type="email"]:-moz-placeholder,
-  input[type="month"]:-moz-placeholder,
-  input[type="number"]:-moz-placeholder,
-  input[type="password"]:-moz-placeholder,
-  input[type="search"]:-moz-placeholder,
-  input[type="tel"]:-moz-placeholder,
-  input[type="text"]:-moz-placeholder,
-  input[type="time"]:-moz-placeholder,
-  input[type="url"]:-moz-placeholder,
-  input[type="week"]:-moz-placeholder,
-  bdk--input:-moz-placeholder {
+  input:-moz-placeholder, select:-moz-placeholder, textarea:-moz-placeholder, input[type="date"]:-moz-placeholder, input[type="datetime"]:-moz-placeholder, input[type="datetime-local"]:-moz-placeholder, input[type="email"]:-moz-placeholder, input[type="month"]:-moz-placeholder, input[type="number"]:-moz-placeholder, input[type="password"]:-moz-placeholder, input[type="search"]:-moz-placeholder, input[type="tel"]:-moz-placeholder, input[type="text"]:-moz-placeholder, input[type="time"]:-moz-placeholder, input[type="url"]:-moz-placeholder, input[type="week"]:-moz-placeholder, bdk--input:-moz-placeholder {
     line-height: inherit;
     color: #999999; }
-  input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder,
-  input[type="date"]::-moz-placeholder,
-  input[type="datetime"]::-moz-placeholder,
-  input[type="datetime-local"]::-moz-placeholder,
-  input[type="email"]::-moz-placeholder,
-  input[type="month"]::-moz-placeholder,
-  input[type="number"]::-moz-placeholder,
-  input[type="password"]::-moz-placeholder,
-  input[type="search"]::-moz-placeholder,
-  input[type="tel"]::-moz-placeholder,
-  input[type="text"]::-moz-placeholder,
-  input[type="time"]::-moz-placeholder,
-  input[type="url"]::-moz-placeholder,
-  input[type="week"]::-moz-placeholder,
-  bdk--input::-moz-placeholder {
+  input::-moz-placeholder, select::-moz-placeholder, textarea::-moz-placeholder, input[type="date"]::-moz-placeholder, input[type="datetime"]::-moz-placeholder, input[type="datetime-local"]::-moz-placeholder, input[type="email"]::-moz-placeholder, input[type="month"]::-moz-placeholder, input[type="number"]::-moz-placeholder, input[type="password"]::-moz-placeholder, input[type="search"]::-moz-placeholder, input[type="tel"]::-moz-placeholder, input[type="text"]::-moz-placeholder, input[type="time"]::-moz-placeholder, input[type="url"]::-moz-placeholder, input[type="week"]::-moz-placeholder, bdk--input::-moz-placeholder {
     line-height: inherit;
     color: #999999; }
-  input:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-placeholder,
-  input[type="date"]:-ms-input-placeholder,
-  input[type="datetime"]:-ms-input-placeholder,
-  input[type="datetime-local"]:-ms-input-placeholder,
-  input[type="email"]:-ms-input-placeholder,
-  input[type="month"]:-ms-input-placeholder,
-  input[type="number"]:-ms-input-placeholder,
-  input[type="password"]:-ms-input-placeholder,
-  input[type="search"]:-ms-input-placeholder,
-  input[type="tel"]:-ms-input-placeholder,
-  input[type="text"]:-ms-input-placeholder,
-  input[type="time"]:-ms-input-placeholder,
-  input[type="url"]:-ms-input-placeholder,
-  input[type="week"]:-ms-input-placeholder,
-  bdk--input:-ms-input-placeholder {
+  input:-ms-input-placeholder, select:-ms-input-placeholder, textarea:-ms-input-placeholder, input[type="date"]:-ms-input-placeholder, input[type="datetime"]:-ms-input-placeholder, input[type="datetime-local"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, input[type="month"]:-ms-input-placeholder, input[type="number"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="search"]:-ms-input-placeholder, input[type="tel"]:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="time"]:-ms-input-placeholder, input[type="url"]:-ms-input-placeholder, input[type="week"]:-ms-input-placeholder, bdk--input:-ms-input-placeholder {
     line-height: inherit;
     color: #999999; }
 
@@ -1938,41 +1820,20 @@ textarea {
   padding-top: 0.54545em;
   padding-bottom: 0.54545em; }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
   cursor: pointer; }
 
-input.-clear, select.-clear, textarea.-clear,
-bdk--input.-clear {
+input.-clear, select.-clear, textarea.-clear, bdk--input.-clear {
   background: transparent;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #e6e6e6; }
 
-input:focus, select:focus, textarea:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="email"]:focus,
-input[type="month"]:focus,
-input[type="number"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="text"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-input[type="week"]:focus,
-bdk--input:focus,
-button[type="submit"]:focus,
-button[type="search"]:focus,
-[role="button"]:focus {
+input:focus, select:focus, textarea:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, bdk--input:focus,
+button[type="submit"]:focus, button[type="search"]:focus, [role="button"]:focus {
   outline: none; }
 
-input[type="submit"],
-button[type="submit"],
-button[type="search"],
-[role="button"] {
+input[type="submit"], button[type="submit"], button[type="search"], [role="button"] {
   color: white; }
 
 label {
@@ -2007,14 +1868,12 @@ sup, .sup, .form-group.required label:after {
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
   width: 16px;
   height: 16px;
   display: inline-block;
   vertical-align: middle; }
-  input[type="radio"]:checked,
-  input[type="checkbox"]:checked {
+  input[type="radio"]:checked, input[type="checkbox"]:checked {
     border: 4px solid white;
     background-color: #69afeb;
     border-color: #DADADA; }
@@ -2040,8 +1899,7 @@ input[type="radio"] {
   .form-group.input-horizontal {
     width: 100%;
     position: relative; }
-    .form-group.input-horizontal label, .form-group.input-horizontal input, .form-group.input-horizontal select, .form-group.input-horizontal textarea,
-    .form-group.input-horizontal bdk--input {
+    .form-group.input-horizontal label, .form-group.input-horizontal input, .form-group.input-horizontal select, .form-group.input-horizontal textarea, .form-group.input-horizontal bdk--input {
       display: inline-block;
       vertical-align: middle;
       margin-left: -0.3em;
@@ -2056,38 +1914,9 @@ input[type="radio"] {
     display: block;
     margin-bottom: 1em;
     font-weight: 600; }
-  .form-group input[type="date"],
-  .form-group input[type="datetime"],
-  .form-group input[type="datetime-local"],
-  .form-group input[type="email"],
-  .form-group input[type="month"],
-  .form-group input[type="number"],
-  .form-group input[type="password"],
-  .form-group input[type="search"],
-  .form-group input[type="tel"],
-  .form-group input[type="text"],
-  .form-group input[type="time"],
-  .form-group input[type="url"],
-  .form-group input[type="week"],
-  .form-group select, .form-group textarea,
-  .form-group bdk--input, .form-group.input-vertical input[type="date"],
-  .form-group.input-vertical input[type="datetime"],
-  .form-group.input-vertical input[type="datetime-local"],
-  .form-group.input-vertical input[type="email"],
-  .form-group.input-vertical input[type="month"],
-  .form-group.input-vertical input[type="number"],
-  .form-group.input-vertical input[type="password"],
-  .form-group.input-vertical input[type="search"],
-  .form-group.input-vertical input[type="tel"],
-  .form-group.input-vertical input[type="text"],
-  .form-group.input-vertical input[type="time"],
-  .form-group.input-vertical input[type="url"],
-  .form-group.input-vertical input[type="week"],
-  .form-group.input-vertical select, .form-group.input-vertical textarea,
-  .form-group.input-vertical bdk--input {
+  .form-group input[type="date"], .form-group input[type="datetime"], .form-group input[type="datetime-local"], .form-group input[type="email"], .form-group input[type="month"], .form-group input[type="number"], .form-group input[type="password"], .form-group input[type="search"], .form-group input[type="tel"], .form-group input[type="text"], .form-group input[type="time"], .form-group input[type="url"], .form-group input[type="week"], .form-group select, .form-group textarea, .form-group bdk--input, .form-group.input-vertical input[type="date"], .form-group.input-vertical input[type="datetime"], .form-group.input-vertical input[type="datetime-local"], .form-group.input-vertical input[type="email"], .form-group.input-vertical input[type="month"], .form-group.input-vertical input[type="number"], .form-group.input-vertical input[type="password"], .form-group.input-vertical input[type="search"], .form-group.input-vertical input[type="tel"], .form-group.input-vertical input[type="text"], .form-group.input-vertical input[type="time"], .form-group.input-vertical input[type="url"], .form-group.input-vertical input[type="week"], .form-group.input-vertical select, .form-group.input-vertical textarea, .form-group.input-vertical bdk--input {
     min-width: 100%; }
-  .form-group input[type="submit"], .form-group button[type="submit"],
-  .form-group button[type="search"], .form-group [role="button"] {
+  .form-group input[type="submit"], .form-group button[type="submit"], .form-group button[type="search"], .form-group [role="button"] {
     display: inline-block;
     margin-left: 0;
     float: none; }
@@ -2096,8 +1925,7 @@ input[type="radio"] {
   position: relative;
   display: inline-block;
   vertical-align: baseline; }
-  .form-group-inline label, .form-group-inline input, .form-group-inline select, .form-group-inline textarea,
-  .form-group-inline bdk--input {
+  .form-group-inline label, .form-group-inline input, .form-group-inline select, .form-group-inline textarea, .form-group-inline bdk--input {
     display: inline-block;
     vertical-align: middle;
     margin-left: 0;
@@ -2119,9 +1947,8 @@ input[type="radio"] {
     padding-left: 0.66667em;
     padding-right: 0.66667em; }
 
-@media only screen and (max-width: 739px) {
-  .form-group.input-horizontal label, .form-group.input-horizontal input, .form-group.input-horizontal select, .form-group.input-horizontal textarea,
-  .form-group.input-horizontal bdk--input {
+@media (max-device-width: 768px) {
+  .form-group.input-horizontal label, .form-group.input-horizontal input, .form-group.input-horizontal select, .form-group.input-horizontal textarea, .form-group.input-horizontal bdk--input {
     width: 100%;
     display: block; }
   .form-group.input-horizontal label {
@@ -2216,40 +2043,10 @@ input[type="radio"] {
     line-height: inherit;
     color: #999999; }
 
-input[onclick], input[mouseover], input[mouseout],
-select[onclick],
-select[mouseover],
-select[mouseout],
-textarea[onclick],
-textarea[mouseover],
-textarea[mouseout],
-button[onclick],
-button[mouseover],
-button[mouseout],
-bdk--input[onclick],
-bdk--input[mouseover],
-bdk--input[mouseout],
-[role="button"][onclick],
-[role="button"][mouseover],
-[role="button"][mouseout] {
+input[onclick], input[mouseover], input[mouseout], select[onclick], select[mouseover], select[mouseout], textarea[onclick], textarea[mouseover], textarea[mouseout], button[onclick], button[mouseover], button[mouseout], bdk--input[onclick], bdk--input[mouseover], bdk--input[mouseout], [role="button"][onclick], [role="button"][mouseover], [role="button"][mouseout] {
   cursor: pointer; }
 
-input[disabled], input[disable], input[readonly],
-select[disabled],
-select[disable],
-select[readonly],
-textarea[disabled],
-textarea[disable],
-textarea[readonly],
-button[disabled],
-button[disable],
-button[readonly],
-bdk--input[disabled],
-bdk--input[disable],
-bdk--input[readonly],
-[role="button"][disabled],
-[role="button"][disable],
-[role="button"][readonly] {
+input[disabled], input[disable], input[readonly], select[disabled], select[disable], select[readonly], textarea[disabled], textarea[disable], textarea[readonly], button[disabled], button[disable], button[readonly], bdk--input[disabled], bdk--input[disable], bdk--input[readonly], [role="button"][disabled], [role="button"][disable], [role="button"][readonly] {
   cursor: default;
   background-color: #e6e6e6;
   border-color: #cccccc;
@@ -3049,56 +2846,10 @@ body {
   body[dir="rtl"] {
     font-family: Verdana, Helvetica, Geneva, sans-serif;
     text-align: right; }
-  body.full, body.full main.container, body.full main.container-full {
+  body.full,
+  body.full main.container,
+  body.full main.container-full {
     height: 100%; }
 
 *:lang(en) {
   font-family: "Open Sans", sans-serif; }
-
-@-moz-document url-prefix() {}@media print {
-  /*
-* _print.scss
-* Print Styles
-*/
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important; }
-  a,
-  a:visited {
-    text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  /*
- * Don't show links for images, or javascript/internal links
- */
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: ""; }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */ }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  img {
-    max-width: 100% !important; }
-  @page {
-    margin: 0.5cm; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; } }

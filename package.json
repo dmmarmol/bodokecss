@@ -1,40 +1,40 @@
 {
-  "name": "bodokecss",
-  "version": "0.5.6",
-  "description": "Bodoke is a CSS/SCSS Front-end Framework created for supporting multiple grids in a single project. With a minimum of design, it's visually clean from the scratch ready to be designed with your own identity.",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dmmarmol/bodokecss.git"
-  },
-  "keywords": [
-    "bodokecss",
-    "css",
-    "scss",
-    "framework",
-    "sass",
-    "lightweight",
-    "footprint",
-    "responsive",
-    "boilerplate",
-    "layout"
-  ],
-  "author": "Diego Martin Marmol",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dmmarmol/bodokecss/issues"
-  },
-  "homepage": "https://github.com/dmmarmol/bodokecss",
-  "devDependencies": {
-    "del": "^2.2.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-debug": "^2.1.2",
-    "gulp-livereload": "^3.8.1",
-    "gulp-sass": "^2.1.0",
-    "gulp-util": "^3.0.7"
-  }
+    "name": "bodokecss",
+    "version": "0.5.7",
+    "description": "Bodoke is a CSS/SCSS Front-end Framework created for supporting multiple grids in a single project. With a minimum of design, it's visually clean from the scratch ready to be designed with your own identity.",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dmmarmol/bodokecss.git"
+    },
+    "keywords": [
+        "bodokecss",
+        "css",
+        "scss",
+        "framework",
+        "sass",
+        "lightweight",
+        "footprint",
+        "responsive",
+        "boilerplate",
+        "layout"
+    ],
+    "author": "Diego Martin Marmol",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dmmarmol/bodokecss/issues"
+    },
+    "homepage": "https://github.com/dmmarmol/bodokecss",
+    "devDependencies": {
+        "del": "^2.2.2",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^3.1.0",
+        "gulp-debug": "^2.1.2",
+        "gulp-livereload": "^3.8.1",
+        "gulp-sass": "^2.1.0",
+        "gulp-util": "^3.0.7"
+    }
 }

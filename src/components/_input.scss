@@ -5,15 +5,13 @@
 /// @author [Diego Martin Marmol](http://twitter.com/dmmarmol)
 /// @since 0.2.8
 ////
-
-$input-height: 				2.4em;
-$input-padding-y:			( $input-height - ($input-height / 2) ) / 2.2;
-$input-line-height: 		( $input-height - ($input-height / 2) );
-$bdk-input-border-color: 	$gray-border;
-$input-offset:				$offset;
-$input-row:					'.form-group'; // ex '.input-row'
-$input-label:				'.control-label'; // ex '.label-title'
-
+$input-height: 2.4em;
+$input-padding-y: ( $input-height - ($input-height / 2)) / 2.2;
+$input-line-height: ( $input-height - ($input-height / 2));
+$bdk-input-border-color: $gray-border;
+$input-offset: $offset;
+$input-row: '.form-group'; // ex '.input-row'
+$input-label: '.control-label'; // ex '.label-title'
 /// Basic styling for all the input/textarea/select
 /// @name bdk-input
 /// @since 0.3.0
@@ -23,16 +21,14 @@ $input-label:				'.control-label'; // ex '.label-title'
 	padding-right: $col-offset;
 	padding-left: $col-offset;
 	-webkit-appearance: none;
-	position: relative;
-	// width: auto;
+	position: relative; // width: auto;
 	font-size: 0.85em;
 	height: $input-height; // 2.4em; // Vacio
-	line-height: $input-height;
-	// font-weight: 300;	
+	line-height: $input-height; // font-weight: 300;
 	border: 1px solid $bdk-input-border-color;
-	background: #FFF;	
-	@include box-shadow( none );
-	@include border-radius( 5px );
+	background: #FFF;
+	@include box-shadow( none);
+	@include border-radius( 5px);
 	@include bdk-placeholder {
 		line-height: inherit;
 		color: hsl(0, 0, 60%);
@@ -40,24 +36,10 @@ $input-label:				'.control-label'; // ex '.label-title'
 }
 
 // INPUTS
-input, select, textarea,
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
-#{$bodoke-prefix}-input,
-{
-	@include bdk-input();	
+input, select, textarea, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], #{$bodoke-prefix}-input, {
+	@include bdk-input();
 }
+
 textarea {
 	height: auto;
 	padding-top: $input-padding-y;
@@ -65,15 +47,13 @@ textarea {
 }
 
 /// Radio & Checkbox buttons
-input[type="radio"], 
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
 	cursor: pointer;
 }
 
 /// Clear Input
 /// Clean design input
-input, select, textarea,
-#{$bodoke-prefix}-input {
+input, select, textarea, #{$bodoke-prefix}-input {
 	&.-clear {
 		background: transparent;
 		border: none;
@@ -82,39 +62,17 @@ input, select, textarea,
 	}
 }
 
-
 // INPUTS
-input, select, textarea,
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="time"],
-input[type="url"],
-input[type="week"],
-#{$bodoke-prefix}-input,
-// BUTTONS
-button[type="submit"],
-button[type="search"],
-[role="button"],
-{
-	&:focus { 
-		outline: none; 
+input, select, textarea, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], #{$bodoke-prefix}-input, // BUTTONS
+button[type="submit"], button[type="search"], [role="button"], {
+	&:focus {
+		outline: none;
 	}
 }
 
 // BUTTONS
-input[type="submit"],
-button[type="submit"],
-button[type="search"],
-[role="button"], {
-	background-color: getColor('green');
+input[type="submit"], button[type="submit"], button[type="search"], [role="button"], {
+	background-color: getColor('green', $color-pallete);
 	color: white;
 }
 
@@ -137,16 +95,20 @@ label {
 /// @group Form
 /// @since 0.1.2
 button {
-	&:focus { outline: none; }
-	&.button { border: none; }
+	&:focus {
+		outline: none;
+	}
+	&.button {
+		border: none;
+	}
 }
+
 // input, select {
-// 	line-height: $input-height;	
+// 	line-height: $input-height;
 // }
 select {
 	height: $input-height;
 }
-
 
 // ================================
 // REQUIREMENTS AND INFO
@@ -154,31 +116,30 @@ select {
 %required {
 	top: 0;
 	color: $red;
-	font-size: 14px;	
+	font-size: 14px;
 }
+
 sup, .sup {
 	@extend %required;
 }
+
 //
 /// Inidication
 //
 .q {
 	position: relative;
-	display: inline-block;
-	// bottom: 3px;
-	color: darken( $bdk-input-border-color, 15% );
+	display: inline-block; // bottom: 3px;
+	color: darken( $bdk-input-border-color, 15%);
 	font-size: 0.7em;
 	font-weight: 600;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
 }
 
-
 // ================================
 // RADIO AND CHECK BUTTONS
 // ================================
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
 	width: 16px;
 	height: 16px;
 	display: inline-block;
@@ -189,9 +150,14 @@ input[type="checkbox"] {
 		border-color: #DADADA;
 	}
 }
-input[type="checkbox"] { border-radius: 3px; }
-input[type="radio"] { border-radius: 50%; }
 
+input[type="checkbox"] {
+	border-radius: 3px;
+}
+
+input[type="radio"] {
+	border-radius: 50%;
+}
 
 /// @name bdk-group-label
 /// @since 0.3.0
@@ -208,7 +174,7 @@ input[type="radio"] { border-radius: 50%; }
 // INPUT STRUCTURE
 // ================================
 /// @type integer
-$input-offset:	1em;
+$input-offset: 1em;
 #{$input-row} {
 	margin-bottom: $input-offset;
 	@include clear;
@@ -216,24 +182,21 @@ $input-offset:	1em;
 		color: $text-color;
 		margin-top: 0;
 		margin-bottom: 0;
-	}	
+	}
 	&.input-horizontal {
 		width: 100%;
 		position: relative;
-		label, input, select, textarea,
-		#{$bodoke-prefix}-input, {
+		label, input, select, textarea, #{$bodoke-prefix}-input, {
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: -0.3em;
 			min-width: initial;
 		}
-		label {		
-			@include bdk-group-label();
-			// min-width: 25%;
+		label {
+			@include bdk-group-label(); // min-width: 25%;
 			text-align: right;
 		}
-		input, select, textarea,
-		#{$bodoke-prefix}-input, {
+		input, select, textarea, #{$bodoke-prefix}-input, {
 			// min-width: 75%;
 		}
 	}
@@ -243,53 +206,32 @@ $input-offset:	1em;
 			margin-bottom: 1em;
 			font-weight: 600;
 		}
-		input[type="date"],
-		input[type="datetime"],
-		input[type="datetime-local"],
-		input[type="email"],
-		input[type="month"],
-		input[type="number"],
-		input[type="password"],
-		input[type="search"],
-		input[type="tel"],
-		input[type="text"],
-		input[type="time"],
-		input[type="url"],
-		input[type="week"],
-		select, textarea,
-		#{$bodoke-prefix}-input,
-		{
+		input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select, textarea, #{$bodoke-prefix}-input, {
 			min-width: 100%;
 		}
-	}
-	// BUTTONS
-	input[type="submit"], button[type="submit"],
-	button[type="search"], [role="button"] {
+	} // BUTTONS
+	input[type="submit"], button[type="submit"], button[type="search"], [role="button"] {
 		display: inline-block;
 		margin-left: 0;
 		float: none;
 	}
 }
 
-
 #{$input-row} {
- 	&-inline {
+	&-inline {
 		position: relative;
 		display: inline-block;
 		vertical-align: baseline;
-		label, input, select, textarea,
-		#{$bodoke-prefix}-input, {
+		label, input, select, textarea, #{$bodoke-prefix}-input, {
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: 0;
 			min-width: initial;
 			float: none;
-		}
-		///
+		} ///
 		label, #{$input-label} {
 			padding-right: $em-offset;
-		}
-		/// Inidication
+		} /// Inidication
 		.q {
 			position: absolute;
 			top: 100%;
@@ -303,8 +245,7 @@ $input-offset:	1em;
 	}
 }
 
-
-// 
+//
 /// Si funciona como columnas
 //
 #{$input-row} {
@@ -315,15 +256,13 @@ $input-offset:	1em;
 			padding-left: $input-offset / 1.5;
 			padding-right: $input-offset / 1.5;
 		}
-	}	
+	}
 }
-
 
 @include mobile() {
 	#{$input-row} {
 		&.input-horizontal {
-			label, input, select, textarea,
-			#{$bodoke-prefix}-input, {		
+			label, input, select, textarea, #{$bodoke-prefix}-input, {
 				width: 100%;
 				display: block;
 			}
@@ -339,27 +278,28 @@ $input-offset:	1em;
 	padding-top: $input-offset;
 }
 
-
 // ================================
 // OPTIONAL & REQUIRED
 // ================================
 $optional-text-color: gray(150);
 #{$input-row} {
 	&.input-optional {
-		label { color: $optional-text-color; }
+		label {
+			color: $optional-text-color;
+		}
 		input, textarea {
 			@include bdk-placeholder() {
-				color: $optional-text-color;				
+				color: $optional-text-color;
 			}
-		}		
+		}
 		select {
 			option:first-child, option[selected] {
-				color: $optional-text-color;			
+				color: $optional-text-color;
 			}
 		}
 	}
 	&.required {
-		label { 
+		label {
 			color: $text-color;
 			&:after {
 				content: ' *';
@@ -368,8 +308,7 @@ $optional-text-color: gray(150);
 		}
 		select {
 			color: $text-color;
-			option:first-child, option[selected] {
-			}
+			option:first-child, option[selected] {}
 		}
 	}
 }
@@ -382,7 +321,6 @@ $optional-text-color: gray(150);
 	padding-bottom: $col-offset;
 }
 
-
 //
 /// @name Input group
 /// Group of inputs inside a div that fits togheter leaving no spaces between them
@@ -394,25 +332,25 @@ $optional-text-color: gray(150);
 		float: none;
 		margin-left: -0.4em;
 		&:first-child {
-			@include border-radius( $button-radius 0 0 $button-radius );
+			@include border-radius( $button-radius 0 0 $button-radius);
 			border-right: none;
 			margin-left: 0;
 		}
 		&:last-child {
-			@include border-radius( 0 $button-radius $button-radius 0 );
+			@include border-radius( 0 $button-radius $button-radius 0);
 			border-left: none;
 		}
 	}
 	label {
 		&:first-child {
-			border-right: 1px solid $bdk-input-border-color;			
+			border-right: 1px solid $bdk-input-border-color;
 		}
 		@include bdk-input();
-		@include bdk-group-label();
-		// line-height: 1.175em;
+		@include bdk-group-label(); // line-height: 1.175em;
 	}
 }
-// 
+
+//
 @include mobile() {
 	.input-group {
 		input, button, [role="button"], .#{$button-prefix}, textarea, select, label {
@@ -423,31 +361,19 @@ $optional-text-color: gray(150);
 	}
 }
 
-
-
-
 // ================================
 // ESTADOS
 // ================================
 // INPUTS
-input,
-select,
-textarea,
-button,
-#{$bodoke-prefix}-input,
-[role="button"] {
-	&[onclick],
-	&[mouseover],
-	&[mouseout] {
+input, select, textarea, button, #{$bodoke-prefix}-input, [role="button"] {
+	&[onclick], &[mouseover], &[mouseout] {
 		cursor: pointer;
 	}
-	&[disabled],
-	&[disable],
-	&[readonly] {
+	&[disabled], &[disable], &[readonly] {
 		cursor: default;
 		background-color: $bdk-input-border-color;
-		border-color: darken( $bdk-input-border-color, 10% );
+		border-color: darken( $bdk-input-border-color, 10%);
 		color: gray(100);
-		@include text-shadow( 1px 0 0 white(0.9) );
-	}		
+		@include text-shadow( 1px 0 0 white(0.9));
+	}
 }
