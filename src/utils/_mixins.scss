@@ -8,8 +8,7 @@
 /// @param none
 @mixin clear() {
 	*zoom: 1;
-	&:before,
-	&:after {
+	&:before, &:after {
 		content: "";
 		display: table;
 	}
@@ -78,17 +77,6 @@
 	transition-delay: $value;
 }
 
-/// TRANSITION THE TRANSFORM PROPERTY
-/// @author [Diego Martin Marmol](http://diegomarmol.com)
-/// @group Transition Mixins
-/// @since 0.2.0
-/// @param $values {string} | String containing the values of the transition property
-@mixin transition-transform( $values) {
-	@each $p in $prefix-transform {
-		@include transition( #{$p}transform $values);
-	}
-}
-
 // ===============================================
 // BACKGROUND
 // ===============================================
@@ -119,7 +107,7 @@
 		}
 	}
 	$from: map-get( $settings, from);
-	$from-color : map-get( $from, color);
+	$from-color: map-get( $from, color);
 	$to: map-get( $settings, to);
 	$to-color: map-get( $to, color);
 	$start: 0%; // Could be overriden
@@ -241,10 +229,8 @@
 			width: map-get( $settings, width);
 			height: map-get( $settings, height);
 			background-image: url(map-get( $settings, sprite ));
-			-webkit-animation: #{$animation-name} map-get( $settings,
-			duration) steps( map-get( $settings, frames)) infinite;
-			animation: #{$animation-name} map-get( $settings,
-			duration) steps( map-get( $settings, frames)) infinite;
+			-webkit-animation: #{$animation-name} map-get( $settings, duration) steps( map-get( $settings, frames)) infinite;
+			animation: #{$animation-name} map-get( $settings, duration) steps( map-get( $settings, frames)) infinite;
 		}
 		@else {
 			@warn "`@function map-push()` is not defined";
@@ -282,8 +268,7 @@
 /// an element to be affected in the second argument.
 /// @param {int} $value | Custom value in percentage
 /// @param {string} $element | The <tag> element to be affected by the aspect ratio
-@mixin aspect-ratio($value,
-$element: false) {
+@mixin aspect-ratio($value, $element: false) {
 	// Ratios
 	$widescreen: calculate-ratio(16, 9); // 56.25%
 	$traditional: calculate-ratio(4, 3); // 75c%
@@ -306,7 +291,7 @@ $element: false) {
 		}
 	}
 	@else {
-		>* {
+		> * {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -321,8 +306,7 @@ $element: false) {
 /// Calculate the aspect ratio
 /// @group Mixins
 /// @since 0.0.1
-@function calculate-ratio( $num1,
-$num2:false) {
+@function calculate-ratio( $num1, $num2:false) {
 	@return ( $num2 / $num1) * 100%;
 }
 
@@ -352,9 +336,7 @@ $num2:false) {
 /// TEXT STROKE
 /// @group Text Mixins
 /// @since 0.0.1
-@mixin text-stroke($stroke-width,
-$stroke-color: false,
-$stroke-fill: auto) {
+@mixin text-stroke($stroke-width, $stroke-color: false, $stroke-fill: auto) {
 	-webkit-text-stroke-width: $stroke-width;
 	-webkit-text-stroke-color: $stroke-color;
 	-webkit-text-fill-color: $stroke-fill;
@@ -364,16 +346,12 @@ $stroke-fill: auto) {
 /// Dibuja una linea en medio del eje Y (vertical) del elemento
 /// @group Text Mixins
 /// @since 0.1.0
-@mixin half-line($width,
-$height: 1px,
-$color:hsl(0, 0, 97%),
-$element:'&') {
+@mixin half-line($width, $height: 1px, $color:hsl(0, 0, 97%), $element:'&') {
 	position: relative;
 	#{$element} {
 		display: inline-block;
 	}
-	#{$element}:before,
-	#{$element}:after {
+	#{$element}:before, #{$element}:after {
 		// border-top: 1px solid black;
 		background-color: $color;
 		display: block;
@@ -425,9 +403,7 @@ $element:'&') {
 /// Maximo de lineas visibles en un texto
 /// @group Text Mixins
 /// @since 0.0.5
-@mixin max-lines( $num-of-lines,
-$line-height:inherit,
-$ellipsis:false) {
+@mixin max-lines( $num-of-lines, $line-height:inherit, $ellipsis:false) {
 	line-height: $line-height;
 	max-height: $num-of-lines * strip-units( $line-height) * 1em;
 	overflow: hidden;
@@ -439,23 +415,19 @@ $ellipsis:false) {
 /// Define la propiedad color y la aplica a todos sus descendientes
 /// @group Text Mixins
 /// @since 0.1.0
-@mixin color( $value,
-$and:false) {
+@mixin color( $value, $and:false) {
 	@content;
 	color: $value;
 	@if ($and) {
 		* {
-			&:after,
-			&:before,
-			#{$and} {
+			&:after, &:before, #{$and} {
 				color: inherit;
 			}
 		}
 	}
 	@else {
 		* {
-			&:after,
-			&:before {
+			&:after, &:before {
 				color: inherit;
 			}
 		}
@@ -540,8 +512,7 @@ $and:false) {
 /// Between measures
 /// @group Media Query Mixins
 /// @since 0.0.4
-@mixin media-between( $min-width,
-$max-width: 1680px) {
+@mixin media-between( $min-width, $max-width: 1680px) {
 	@media only screen and ($min-width) and ($max-width) {
 		@content;
 	}
@@ -552,8 +523,7 @@ $max-width: 1680px) {
 /// @since 0.5.52
 /// @param {string} $breakpoint | Bootstrap name for viewport ['xsmall'/'xs', 'small'/'sm', 'medium'/'md', 'large'/'lg']
 /// @param {string} $limit [null] | Max or Min width
-@mixin respond-to($breakpoint,
-$limit:null) {
+@mixin respond-to($breakpoint, $limit:null) {
 	@if $breakpoint=="xsmall" or $breakpoint=="xs" {
 		// @warn "Respond to #{$screen-xs-max}";
 		@if ( $limit) {
@@ -723,8 +693,7 @@ $limit:null) {
 @mixin z($list) {
 	@each $z in $list {
 		#{$z} {
-			z-index: z($list,
-			'#{$z}');
+			z-index: z($list, '#{$z}');
 		}
 	}
 }
@@ -754,10 +723,7 @@ $limit:null) {
 }
 
 @mixin reset-search() {
-	&::-webkit-search-decoration,
-	&::-webkit-search-cancel-button,
-	&::-webkit-search-results-button,
-	&::-webkit-search-results-decoration {
+	&::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration {
 		@content;
 	}
 }
@@ -765,16 +731,10 @@ $limit:null) {
 /// Android style inputs (pre Lollypop)
 /// @group Form Mixins
 /// @since 0.1.4
-@mixin android-input-border($color: $gray-border,
-$width: 1px,
-$height: 6px) {
+@mixin android-input-border($color: $gray-border, $width: 1px, $height: 6px) {
 	$bg: linear-gradient($color, $color);
-	@include background( bottom left $bg no-repeat,
-	bottom center $bg repeat-x,
-	bottom right $bg no-repeat);
-	@include background-size( $width $height,
-	$width $width,
-	$width $height);
+	@include background( bottom left $bg no-repeat, bottom center $bg repeat-x, bottom right $bg no-repeat);
+	@include background-size( $width $height, $width $width, $width $height);
 }
 
 /// RESET MOZILLA SELECT TAG
@@ -795,148 +755,13 @@ $height: 6px) {
 	-webkit-appearance: none;
 }
 
-/// User Select
-/// @group Mixins
-/// @since 0.0.4
-@mixin user-select( $value) {
-	@each $p in $prefix-user-select {
-		#{$p}user-select: $value;
-	}
-	user-select: $value;
-}
-
-/// @since 0.1.4
-// Flexbox mixins
-// =============
-@mixin flex-display() {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-}
-
-@mixin flex-box-direction($value: normal) {
-	// OPTIONS
-	// ====================
-	// normal
-	// reverse
-	// ====================
-	-webkit-box-direction: $value;
-	-moz-box-direction: $value;
-}
-
-@mixin flex-box-orient($value: horizontal) {
-	// OPTIONS
-	// ====================
-	// block-axis
-	// inline-axis
-	// horizontal
-	// vertical
-	// ====================
-	-webkit-box-orient: $value;
-	-moz-box-orient: $value;
-}
-
-@mixin flex-direction($value: row) {
-	// OPTIONS
-	// ====================
-	// column
-	// column-reverse
-	// row
-	// row-reverse
-	// initial
-	// ====================
-	-webkit-flex-direction: $value;
-	-ms-flex-direction: $value;
-	flex-direction: $value;
-}
-
-@mixin flex-wrap($value: nowrap) {
-	// OPTIONS
-	// ====================
-	// no-wrap
-	// wrap
-	// wrap-reverse
-	// ====================
-	-webkit-flex-wrap: $value;
-	-ms-flex-wrap: $value;
-	flex-wrap: $value;
-}
-
-@mixin flex-content($value: flex-start) {
-	// OPTIONS
-	// ====================
-	// flex-end
-	// flex-start
-	// center
-	// space-arround
-	// space-between
-	// initial
-	// ====================
-	-moz-box-pack: $value;
-	-webkit-box-pack: $value;
-	-ms-flex-pack: $value;
-	-webkit-justify-content: $value;
-	justify-content: $value;
-}
-
-@mixin flex-stretching($value: stretch) {
-	// OPTIONS
-	// ====================
-	// flex-end
-	// flex-start
-	// center
-	// space-arround
-	// space-between
-	// stretch
-	// initial
-	// ====================
-	-webkit-align-content: $value;
-	-ms-flex-line-pack: $value;
-	align-content: $value;
-}
-
-@mixin flex-align($value: center) {
-	// OPTIONS
-	// ====================
-	// flex-end
-	// flex-start
-	// center
-	// baseline
-	// stretch
-	// initial
-	// ====================
-	-webkit-box-align: $value;
-	-moz-box-align: $value;
-	-webkit-align-items: $value;
-	-ms-flex-align: $value;
-	align-items: $value;
-}
-
-// Llamado que solo centra verticalmente
-@mixin flexbox() {
-	@include flex-display(); // @include flex-box-direction();
-	// @include flex-box-orient();
-	@include flex-direction();
-	@include flex-wrap();
-	@include flex-content();
-	@include flex-stretching();
-	@include flex-align();
-}
-
 // ========================================
 // MISCELANEOUS
 // ========================================
 /// ARROW BOX
 /// @group Misc Mixins
 /// @since 0.0.1
-@mixin arrow( $color,
-$size: 10px,
-$direction: 'top',
-$position: 'default',
-$border: none,
-$border-color: none) {
+@mixin arrow( $color, $size: 10px, $direction: 'top', $position: 'default', $border: none, $border-color: none) {
 	//
 	// $color:			Hex, rgb, rgba
 	// $size:			value of the arrow height in pixels			|default: 10px
@@ -949,8 +774,7 @@ $border-color: none) {
 	@if $border !=none {
 		// Have border
 		border: $border solid $border-color;
-		&:after,
-		&:before {
+		&:after, &:before {
 			@if $direction=='top' {
 				bottom: 100%;
 				@if $position !='default' {
@@ -994,7 +818,7 @@ $border-color: none) {
 			position: absolute;
 			pointer-events: none;
 		} // La proporcion Aurea
-		$border-size: $size+round( $border * 1.41421356);
+		$border-size: $size + round( $border * 1.41421356);
 		&:after {
 			border-color: transparent;
 			border-width: $size;
